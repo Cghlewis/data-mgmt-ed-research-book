@@ -1,0 +1,7 @@
+book_filename: "data-mgmt-ed-research-book"
+new_session: true
+before_chapter_script: _common.R
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
