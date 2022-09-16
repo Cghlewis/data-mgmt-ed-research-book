@@ -33,46 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -99,13 +59,13 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-\usepackage{booktabs}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
+\usepackage[style=apa,]{biblatex}
+\addbibresource{book.bib}
+\addbibresource{packages.bib}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
@@ -117,25 +77,8 @@
 
 \title{Data Management in Large-Scale Education Research}
 \author{Crystal Lewis}
-\date{2022-09-15}
+\date{2022-09-16}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -143,279 +86,323 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter{About}\label{about}}
+\hypertarget{preamble}{%
+\chapter{Preamble}\label{preamble}}
 
-This is the in-progress version of \emph{Data Management in Large-Scale Education Research}. To see a previous version of this material in module format, visit this \href{https://cghlewis.github.io/mpsi-data-training/}{website}.
+This is the in-progress version of \emph{Data Management in Large-Scale Education Research}. To see a previous version of this material, please visit this \href{https://cghlewis.github.io/mpsi-data-training/}{website}.
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
+\emph{The results of educational research studies are only as accurate as the data used to produce them.}
+\emph{- Aleata Hubbard} \autocite{hubbard_data_2017}
 
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+In 2013, without knowing that the term research data management existed, I accepted a job as a Research Associate with a prevention science research center. My job was to coordinate the collection and management of data for federally funded randomized controlled trial efficacy studies taking place in K-12 schools, along with a team of PIs, other full-time staff, part-time data collectors, and graduate students. While I had some experience analyzing and working with education data, i.e.~ECKLS-K, I had no experience running research grants, collecting original data, or managing research data, but I was excited to learn.
 
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
+In my time in that position I learned to plan, schedule, and track data collection activities, create data collection tools, organize and document data inputs, and produce usable data outputs; but I didn't learn to do these things through any formal training. There were no books, courses, or workshops that I learned from. I learned from colleagues and a large amount of trial and error. Since then, as I have met more PIs, data managers, and project coordinators in education research, I realize that this is a common method for learning data management (mentoring and ``winging it''). And while learning data management through these informal methods helps us get by, what these type of training methods really lack are standards, leading to inconsistencies across the field \autocite{borghi_promoting_2022}.
 
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
+\hypertarget{why-this-book}{%
+\section{Why this book}\label{why-this-book}}
 
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
+Research data management is becoming more complicated. We are collecting more data, in sometimes very novel ways, and using more complex technologies, all while increasing the visibility of our work with the push for data sharing and open science practices \autocite{briney_data_2015}. Ad hoc data management practices may have worked for us in the past, but now others need to understand our processes as well, requiring researchers to be more thoughtful in planning their data management routines.
 
-You can render the HTML version of this example book without changing anything:
+\hypertarget{lack-of-training-resources-and-standards}{%
+\subsection{Lack of training, resources, and standards}\label{lack-of-training-resources-and-standards}}
+
+In order to implement thoughtful and standardized data management practices, researchers need training. Yet there is a clear lack of data management training in higher education. In a survey of 274 psychology researchers, Borghi and Van Gulick \autocite{borghi_data_2021} found that only 33\% of respondents learned data management from college level coursework, while 64\% learned from collaborators, and 52\% learned from self-education. In their survey of 202 education researchers (PIs and Co-PIs), Ceviren and Logan \autocite{ceviren_ceviren_logan_ehe_forum_2022pdf_2022} found that over 60\% of respondents reported having no formal training in data management, yet across eight different data management practices, respondents were responsible for data management activities anywhere from 25-50\% of the time.
+
+Without training, resources and formal support systems are the next best option for learning best practices. During my data management journey I have discovered an excellent support system of professionals in university systems, i.e.~research data librarians, who can consult with research teams in their data management journey, and I have also come across some solid existing research data management books and manuals which I will link to in this book. However, while education researchers are starting to put out some excellent resources \autocite{neild_sharing_2022,reynolds_basics_2022}, I still find there is a dearth of tangible guides for researchers to refer to when building a data management workflow in the field of education, especially those working on large-scale longitudinal research grants where there are many moving pieces. Researchers are often collecting data in real-world environments, such as school systems, and keeping that data secure and reliable in a deliberate and orderly way can be overwhelming.
+
+Last, unfortunately, while other fields of research, such as psychology, appear to be banding together to develop standards around data management \autocite{noauthor_psych-ds_nodate}, the field of education has yet to develop agreed upon rules for things such as data documentation or data formats. With this lack of standards, researchers are left to create practices that work for their team, leading to inconsistent data management practices across the field.
+
+\hypertarget{consequences}{%
+\subsection{Consequences}\label{consequences}}
+
+A lack of training in data management practices and an absence of agreed upon standards in the field of education leads to consequences. Implementing inconsistent data management practices, while typically only resulting in frustration and time lost, also has the potential to be devastating, resulting in analyzing erroneous data or even unusable or lost data. In a review of 1,082 retracted publications from the journal PubMed from 2013-2016, authors found that 32\% of retractions were due to data management errors \autocite{campos-varela_misconduct_2019}. In a 2013 study surveying 360 graduate students about their data management practices, 14\% of students indicated they had to recollect data that had been previously collected because they could not find a file or the file had been corrupted, while 17\% of students said they had lost a file and been unable to recollect it \autocite{doucette_drowning_2013}. In their 2021 study of 488 researchers who had published in a psychology journal between 2010 and 2018, Kovacs et al. \autocite{kovacs_role_2021} asked respondents about their data management mistakes and found that the most serious data management mistakes reported led to a range of consequences including time loss, frustration, and even erroneous conclusions.
+
+Poor data management can even prevent researchers from implementing other good open science practices. In waves 1 and 2 of the Open Scholarship Survey being collected by the Open Science Foundation, the team has found that of the education researchers surveyed who are currently not publicly sharing their research data, about 10\% mentioned ``being nervous about mistakes'' as a reason for not sharing \autocite{osf_cos_2022}. The well known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70\% had tried and failed to reproduce another researcher's study \autocite{eisenstein_pursuit_2022}.
+
+\hypertarget{about-this-book}{%
+\section{About this book}\label{about-this-book}}
+
+My hope is that this book can be a foundation to help researchers think through how to build a consistent and standardized data management workflow that works for their team and their projects. While the field as a whole may not have agreed upon rules for data management, there are still best practices that are proven to result in more reproducible, reliable, and secure data. While this book cannot remove barriers to implementing good data management practices, such as the complexity of your project or the novelty of the technology you are using \autocite{alston_beginners_2021} it hopefully provides you the knowledge and skills necessary to work in these complex environments.
+
+This book should be viewed as a handbook to be referred to regularly and is not necessarily meant to be read in its entirety in one sitting. While perusing through the entire book to better understand the entire research data life cycle is very helpful, this book is also intended to have chapters referenced as needed when you are ready to start planning a specific phase of your project.
+
+\hypertarget{what-this-book-will-cover}{%
+\subsection{What this book will cover}\label{what-this-book-will-cover}}
+
+This book begins, like many other books in this subject area, by describing the research life cycle and how data management fits within the larger picture. The remaining chapters are then organized by each phase of the life cycle, with examples of best practices provided for each phase. Considerations on whether you should implement and how to integrate those practices into your workflow will be discussed.
+
+\hypertarget{what-this-book-will-not-cover}{%
+\subsection{What this book will not cover}\label{what-this-book-will-not-cover}}
+
+It is important to also point out what this book will not cover. This book is intended to be tool agnostic and provide suggestions that anyone can use, no matter what tools you work with, especially when it comes to data cleaning. Therefore while I might mention options of tools you can use for different tasks, I will not advocate for any specific tools.
+
+There are also no specific coding practices or actual syntax included in this book. To be honest, in many ways I feel that the actual ``data cleaning'' phase of data management is the ``easiest'' phase to implement, as long as you implement good practices up until that point. Because of that, this book introduces practices in all phases leading up to data cleaning that will prepare your data for minimal cleaning. With that said, I do provide examples of what I would expect to see in a data cleaning process, I just do not provide steps for any specific software system. That is beyond the scope of this book.
+
+This book will also not talk about analysis or preparing data for analysis through means such as data imputation or calculating analysis specific variables. This book is written from the perspective of a data manager, and that perspective is to implement practices that keep data in its most true, but usable form, for any future researcher to analyze in a way that works best for them.
+
+\hypertarget{who-this-book-is-for}{%
+\section{Who this book is for}\label{who-this-book-is-for}}
+
+This book is for anyone involved in a research study involving original data collection. This book in particular focuses on quantitative data collection, while I do think that many of the practices covered can also apply to qualitative data as well. This book also applies to any team member, ranging from PIs, to data managers, to project staff, to students, to contractual data collectors. The contents of this book are useful for anyone who may have a part in planning, collecting, or organizing research study data.
+
+\hypertarget{final-note}{%
+\section{Final note}\label{final-note}}
+
+Planning and implementing new data management practices on top of planning the implementation of your entire research grant can feel overwhelming. However, the idea of this book is to find and implement the practices that work for you and your team, and that may be just a few of the suggestions mentioned or all of the suggestions. Improving your data management workflow is a process and it becomes easier over time as those practices become part of your normal routine. At some point you may even find that you enjoy working on data management processes as you start to see the benefits of their implementation!
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+This book is a compilation of lessons I have learned in my personal experiences as a data manager, knowledge collected from existing books and papers (many written by librarians or those involved in the open science movement), as well as advice and stories collected through interviews with other researchers who work with data. I want to be clear that I did not study research data management, unlike research data librarians who are experts in this content. Much of this book will be based off of lessons learned from firsthand experience and this book is my attempt to hopefully save others from making the same mistakes I have personally made or seen others make. I can not emphasize enough that if you work for a university and you have the opportunity to consult with a librarian for your project, you absolutely should!
+
+With that said, there is a long list of people I would like to acknowledge for their contributions to this book and for supporting me in this process.
+
+Interviewees:
+
+Others:
+
+\hypertarget{research-data-management}{%
+\chapter{Research Data Management}\label{research-data-management}}
+
+\hypertarget{what-is-research-data-management}{%
+\section{What is research data management?}\label{what-is-research-data-management}}
+
+Research data management (RDM) involves the broad process of planning and implementing standardized practices across the research life cycle \autocite{borghi_promoting_2022}. The practices of managing data begin long before data is ever collected, during the planning phase, and continue well after a research project ends during the archiving phase.
+
+While organizations like Data Documentation Initiative and Dublin Core have developed metadata standards for fields to adopt, it is common knowledge that there are no agreed-upon norms for managing data within and across disciplines within the field of education. The rules for how data should be collected, organized, stored, described, and shared is often left up to each individual team, as long as external requirements of the IRB and funders are met \autocite{tenopir_data_2016-1}. With a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available \autocite{office_of_science_and_technology_policy_ostp_2022}, data repositories will most likely begin to play a stronger role in promoting standards for many data management practices around data formats and documentation \autocite{borghi_promoting_2022}.
+
+\hypertarget{why-care-about-research-data-management}{%
+\section{Why care about research data management?}\label{why-care-about-research-data-management}}
+
+Without agreed-upon standards in the field, it is important for research teams to develop their own data management standards that apply within and across all of their projects. There are both external pressures and personal reasons to care about developing research data management standards.
+
+\hypertarget{external-reasons}{%
+\subsection{External Reasons}\label{external-reasons}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Find the \textbf{Build} pane in the RStudio IDE, and
+  \textbf{Funder compliance}: Since 2013, even earlier for the National Science Foundation, most federal agencies that education researchers work with have required a data management plan as part of their funding application. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan for a research study that will result in data that can be shared with confidence, free from errors, uncertainty, or violations of confidentiality. President Obama's May 2013 Executive Order declared that ``the default state of new and modernized government information resources shall be open and machine readable'' \autocite{the_white_house_executive_2013}. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release \autocite{office_of_science_and_technology_policy_ostp_2022}. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing \autocite{borghi_promoting_2022}.
 \item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
+  \textbf{Journal compliance}: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement. Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
+\item
+  \textbf{Compliance with legal and ethical mandates}: If you are required to submit your research project to the Institutional Review Board, they will monitor how you manage your data. They care about the welfare, rights, and privacy of research participants and will have rules for how data is managed and stored securely.
+\item
+  \textbf{Open science practices}: With a growing interest in open science practices, sharing well managed data, curated in a reproducible way is ``a strong indicator to fellow researchers of rigor, trustworthiness, and transparency in scientific research'' (Alston \& Rick, 2021, p.2 \autocite{alston_beginners_2021}). Sharing data that has been managed in a reproducible way allows others to learn from your work, validate your results to strengthen evidence, as well as potentially catch errors in your work, preventing decisions being made based on incorrect data \autocite{alston_beginners_2021}. Well-managed data with sufficient documentation can also lead to more collaboration and greater impact as collaborators are able to access and understand your data with ease \autocite{borghi_promoting_2022,cowles_research_nodate}.
 \end{enumerate}
 
-Or build the book from the R console:
+\hypertarget{personal-reasons}{%
+\subsection{Personal reasons}\label{personal-reasons}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
-
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
-
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
-
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
-
-Cross-references make it easier for your readers to find and link to elements in your book.
-
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
-
-There are two steps to cross-reference any heading:
+Even if you never plan to share your data outside of your research group, there are still many compelling reasons to manage your data.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
+  \textbf{Contributes to reproducibility}: Reproducible research ``is a by-product of careful attention to detail throughout the research process'' (Alston \& Rick, 2021, p.2 \autocite{alston_beginners_2021}). Even if you are not concerned with others being able to reproduce your work (which is unlikely), you most likely want you and your team members to be able to reproduce each other's work, ensuring you can trust your results.
 \item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
+  \textbf{Improve continuity}: Implementing reproducible practices ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the project left off, and implement the project with fidelity \autocite{borghi_data_2021,cowles_research_nodate}.
+\item
+  \textbf{Increases efficiency}: Documenting and automating tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.
+\item
+  \textbf{Reduces burden and saves time, energy, and resources}: Taking the time to implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices \autocite{butters_recognizing_2020}. Having poorly managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent at the end of your study scrambling to fix errors made in poorly designed data collection instruments, gathering duplicate data that was lost, or documenting efforts long after most information has been forgotten.
+\item
+  \textbf{Improve efficiency}: Being able to find and understand your data when you need it is a huge benefit. It allows for the use and re-use of your data, and hastens efforts like the publication process. Not having to search around for numbers of consented participants or asking which version of the data you should use allows you to spend more time analyzing and writing and less time playing detective.
+\item
+  \textbf{Increases reliability}: Errors come in many forms, from both humans and technology. Implementing quality control procedures allow you to have confidence in your data. Without implementing these practices, your research findings could include extra noise, missing data, or erroneous or misleading results.
+\item
+  \textbf{Improves data security}: Quality data management practices reduce the risk of lost or stolen data, the risk of data becoming corrupted or inaccessible, and the risk of breaking confidentiality agreements.
 \end{enumerate}
 
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
+\hypertarget{existing-frameworks}{%
+\section{Existing Frameworks}\label{existing-frameworks}}
 
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
+\hypertarget{terminology}{%
+\section{Terminology}\label{terminology}}
 
-See Figure \ref{fig:nice-fig}.
+\hypertarget{the-research-life-cycle}{%
+\section{The Research Life Cycle}\label{the-research-life-cycle}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{dmp}{%
+\chapter{Data Management Plan}\label{dmp}}
 
-\begin{figure}
+\hypertarget{history-and-purpose}{%
+\section{History and purpose}\label{history-and-purpose}}
 
-{\centering \includegraphics[width=0.8\linewidth]{02-cross-refs_files/figure-latex/nice-fig-1} 
+\hypertarget{what-is-it}{%
+\section{What is it?}\label{what-is-it}}
 
-}
+\hypertarget{why-are-dmps-important}{%
+\section{Why are DMPs important?}\label{why-are-dmps-important}}
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\hypertarget{what-to-include}{%
+\section{What to include?}\label{what-to-include}}
 
-Don't miss Table \ref{tab:nice-tab}.
+\hypertarget{getting-help}{%
+\section{Getting help}\label{getting-help}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{budgeting}{%
+\section{Budgeting}\label{budgeting}}
 
-\begin{table}
+\hypertarget{planning-data-management}{%
+\chapter{Planning Data Management}\label{planning-data-management}}
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+\hypertarget{why-spend-time-on-planning}{%
+\section{Why spend time on planning?}\label{why-spend-time-on-planning}}
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+\hypertarget{planning-checklists}{%
+\section{Planning checklists}\label{planning-checklists}}
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+\hypertarget{how-to-move-from-a-planning-checklist-to-a-workflow}{%
+\section{How to move from a planning checklist to a workflow}\label{how-to-move-from-a-planning-checklist-to-a-workflow}}
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\hypertarget{project-roles-and-responsibilities}{%
+\chapter{Project Roles and Responsibilities}\label{project-roles-and-responsibilities}}
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\hypertarget{why-its-important-to-assign-roles}{%
+\section{Why it's important to assign roles}\label{why-its-important-to-assign-roles}}
 
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+\hypertarget{typical-roles-in-a-research-project}{%
+\section{Typical roles in a research project}\label{typical-roles-in-a-research-project}}
 
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+\hypertarget{documentation}{%
+\chapter{Documentation}\label{documentation}}
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
+\hypertarget{what-is-documentation}{%
+\section{What is documentation?}\label{what-is-documentation}}
 
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+\hypertarget{why-is-documentation-important}{%
+\section{Why is documentation important?}\label{why-is-documentation-important}}
 
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
+\hypertarget{team-level}{%
+\section{Team Level}\label{team-level}}
 
-Reference items in your bibliography file(s) using \texttt{@key}.
+\hypertarget{project-level}{%
+\section{Project Level}\label{project-level}}
 
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+\hypertarget{dataset-level}{%
+\section{Dataset Level}\label{dataset-level}}
 
-The \texttt{bs4\_book} theme makes footnotes appear inline when you click on them. In this example book, we added \texttt{csl:\ chicago-fullnote-bibliography.csl} to the \texttt{index.Rmd} YAML, and include the \texttt{.csl} file. To download a new style, we recommend: \url{https://www.zotero.org/styles/}
+\hypertarget{variable-level}{%
+\section{Variable Level}\label{variable-level}}
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+\hypertarget{data-collection}{%
+\chapter{Data Collection}\label{data-collection}}
 
-\hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
+\hypertarget{why-consider-data-management-in-data-collection}{%
+\section{Why consider data management in data collection?}\label{why-consider-data-management-in-data-collection}}
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\hypertarget{consents}{%
+\section{Consents}\label{consents}}
 
-Here is an equation.
+\hypertarget{electronic-data-collection-instruments}{%
+\section{Electronic data collection instruments}\label{electronic-data-collection-instruments}}
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
+\hypertarget{paper-data-collection-instruments}{%
+\section{Paper data collection instruments}\label{paper-data-collection-instruments}}
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+\hypertarget{interviewscocus-groups}{%
+\section{Interviews/cocus groups}\label{interviewscocus-groups}}
 
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
+\hypertarget{data-capture}{%
+\chapter{Data Capture}\label{data-capture}}
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+\hypertarget{electronic-data-capture}{%
+\section{Electronic data capture}\label{electronic-data-capture}}
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+\hypertarget{paper-data-capture}{%
+\section{Paper data capture}\label{paper-data-capture}}
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+\hypertarget{extant-data}{%
+\section{Extant data}\label{extant-data}}
 
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
+\hypertarget{data-storage-and-security}{%
+\chapter{Data Storage and Security}\label{data-storage-and-security}}
 
-The \texttt{bs4\_book} theme also includes special callout blocks, like this \texttt{.rmdnote}.
+\hypertarget{types-of-data-youll-be-storing}{%
+\section{Types of data you'll be storing}\label{types-of-data-youll-be-storing}}
 
-You can use \textbf{markdown} inside a block.
+\hypertarget{general-security-rules}{%
+\section{General security rules}\label{general-security-rules}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{head}\NormalTok{(beaver1, }\AttributeTok{n =} \DecValTok{5}\NormalTok{)}
-\CommentTok{\#\textgreater{}   day time  temp activ}
-\CommentTok{\#\textgreater{} 1 346  840 36.33     0}
-\CommentTok{\#\textgreater{} 2 346  850 36.34     0}
-\CommentTok{\#\textgreater{} 3 346  900 36.35     0}
-\CommentTok{\#\textgreater{} 4 346  910 36.42     0}
-\CommentTok{\#\textgreater{} 5 346  920 36.55     0}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{participant-tracking-database}{%
+\section{Participant tracking database}\label{participant-tracking-database}}
 
-It is up to the user to define the appearance of these blocks for LaTeX output.
+\hypertarget{electronic-data}{%
+\section{Electronic data}\label{electronic-data}}
 
-You may also use: \texttt{.rmdcaution}, \texttt{.rmdimportant}, \texttt{.rmdtip}, or \texttt{.rmdwarning} as the block name.
+\hypertarget{detachable-media}{%
+\section{Detachable media}\label{detachable-media}}
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+\hypertarget{audiovisual-data}{%
+\section{Audio/visual data}\label{audiovisual-data}}
 
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
+\hypertarget{paper-data}{%
+\section{Paper data}\label{paper-data}}
 
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
+\hypertarget{sharing-data}{%
+\section{Sharing data}\label{sharing-data}}
 
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+\hypertarget{data-cleaning}{%
+\chapter{Data Cleaning}\label{data-cleaning}}
 
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
+\hypertarget{foundational-knowledge}{%
+\section{Foundational knowledge}\label{foundational-knowledge}}
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+\hypertarget{data-structure}{%
+\section{Data structure}\label{data-structure}}
 
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
+\hypertarget{data-cleaning-plan}{%
+\section{Data cleaning plan}\label{data-cleaning-plan}}
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+\hypertarget{data-validation}{%
+\section{Data validation}\label{data-validation}}
 
-This \texttt{bs4\_book} provides enhanced metadata for social sharing, so that each chapter shared will have a unique description, auto-generated based on the content.
+\hypertarget{why-use-code}{%
+\section{Why use code?}\label{why-use-code}}
 
-Specify your book's source repository on GitHub as the \texttt{repo} in the \texttt{\_output.yml} file, which allows users to view each chapter's source file or suggest an edit. Read more about the features of this output format here:
+\hypertarget{data-sharing}{%
+\chapter{Data Sharing}\label{data-sharing}}
 
-\url{https://pkgs.rstudio.com/bookdown/reference/bs4_book.html}
+\hypertarget{why-share-your-data}{%
+\section{Why share your data?}\label{why-share-your-data}}
 
-Or use:
+\hypertarget{considering-fair-principles}{%
+\section{Considering FAIR principles}\label{considering-fair-principles}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{bs4\_book}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{best-practices}{%
+\section{Best practices}\label{best-practices}}
 
+\hypertarget{retractions-and-revisions}{%
+\section{Retractions and revisions}\label{retractions-and-revisions}}
 
-  \bibliography{book.bib,packages.bib}
+\hypertarget{wrapping-it-up}{%
+\chapter{Wrapping It Up}\label{wrapping-it-up}}
+
+\hypertarget{connecting-practices-to-outcomes}{%
+\section{Connecting practices to outcomes}\label{connecting-practices-to-outcomes}}
+
+\hypertarget{putting-in-the-work}{%
+\section{Putting in the work}\label{putting-in-the-work}}
+
+\hypertarget{call-to-action}{%
+\chapter{Call to Action}\label{call-to-action}}
+
+\hypertarget{last-thoughts}{%
+\section{Last thoughts}\label{last-thoughts}}
+
+\hypertarget{training-for-future-researchers}{%
+\section{Training for future researchers}\label{training-for-future-researchers}}
+
+\hypertarget{investing-in-data-management-and-data-managers}{%
+\section{Investing in data management and data managers}\label{investing-in-data-management-and-data-managers}}
+
+\hypertarget{appendices}{%
+\chapter{Appendices}\label{appendices}}
+
+\printbibliography
 
 \end{document}

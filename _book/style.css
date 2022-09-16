@@ -12,3 +12,7 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.section a {
+  color: #bf7e1c;
+}

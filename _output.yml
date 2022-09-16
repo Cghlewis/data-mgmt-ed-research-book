@@ -2,13 +2,12 @@ bookdown::bs4_book:
   css: style.css
   theme:
     primary: "#2b4743"
-  repo: https://github.com/rstudio/bookdown-demo
+  repo: https://github.com/Cghlewis/data-mgmt-ed-research-book
 bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: biblatex
   keep_tex: yes
+  number_sections: false
 bookdown::word_document2:
     toc: false
     number_section: true
