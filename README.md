@@ -1,13 +1,7 @@
-Welcome! 
+This is the repo for the in-progress version of the book *Data Management in Large-Scale Education Research*. 
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+You can view the book at https://datamgmtinedresearch.com/
 
-This template provides a skeleton file structure that you can edit to create your book. 
+To see a previous version of this material in module format, visit this [website](https://cghlewis.github.io/mpsi-data-training/). If you are interested in this material and want to contribute, I welcome any comments, feedback, or ideas on the content.
 
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
-
-Additional resources:
-
-The **bookdown** book: https://bookdown.org/yihui/bookdown/
-
-The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown
+<img src="book_featured.PNG" class="cover" width="250" height="328"/>
