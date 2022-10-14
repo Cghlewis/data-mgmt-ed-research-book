@@ -26,7 +26,7 @@ Even if you never plan to share your data outside of your research group, there 
 
 1. **Contributes to reproducibility**: Reproducible research “is a by-product of careful attention to detail throughout the research process" (Alston & Rick, 2021, p.2 [@alston_beginners_2021]). Even if you are not concerned with others being able to reproduce your work (which is unlikely), you most likely want you and your team members to be able to reproduce each others work, ensuring you can trust your results.
 
-1. **Improve continuity**: Implementing reproducible practices ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the project left off and implement the project with fidelity [@borghi_data_2021; @cowles_research_nodate; @markowetz_five_2015]. Furthermore, having documented your data cleaning steps and transformations along the way also allows your collaborators to easily continue an analysis project that you have started.
+1. **Improve continuity**: Implementing reproducible practices ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the project left off and implement the project with fidelity [@borghi_data_2021; @cowles_research_nodate]. Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus [@markowetz_five_2015].
 
 1. **Increases efficiency**: Documenting and automating tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.
 

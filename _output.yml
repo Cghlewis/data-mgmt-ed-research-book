@@ -4,6 +4,6 @@ bookdown::bs4_book:
     primary: "#2b4743"
   repo: https://github.com/Cghlewis/data-mgmt-ed-research-book
 bookdown::word_document2:
-    toc: true
+    toc: false
     number_section: true
 bookdown::epub_book: default
