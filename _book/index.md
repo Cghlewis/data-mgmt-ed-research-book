@@ -1,7 +1,7 @@
 --- 
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2022-10-12"
+date: "2022-10-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -10,7 +10,7 @@ bibliography: [book.bib, packages.bib]
 cover-image: book_featured.PNG
 description: |
   This is the in-progress version of *Data Management in Large-Scale Education Research*
-biblio-style: apa
+biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
@@ -49,7 +49,7 @@ Last, unfortunately, while other fields of research, such as psychology, appear 
 
 A lack of training in data management practices and an absence of agreed upon standards in the field of education leads to consequences. Implementing inconsistent data management practices, while typically only resulting in frustration and time lost, also has the potential to be devastating, resulting in analyzing erroneous data or even unusable or lost data. In a review of 1,082 retracted publications from the journal PubMed from 2013-2016, authors found that 32% of retractions were due to data management errors [@campos-varela_misconduct_2019]. In a 2013 study surveying 360 graduate students about their data management practices, 14% of students indicated they had to recollect data that had been previously collected because they could not find a file or the file had been corrupted, while 17% of students said they had lost a file and been unable to recollect it [@doucette_drowning_2013]. In their 2021 study of 488 researchers who had published in a psychology journal between 2010 and 2018, Kovacs et al. [@kovacs_role_2021] asked respondents about their data management mistakes and found that the most serious data management mistakes reported led to a range of consequences including time loss, frustration, and even erroneous conclusions. 
 
-Poor data management can even prevent researchers from implementing other good open science practices. In waves 1 and 2 of the Open Scholarship Survey being collected by the Center for Open Science, the team has found that of the education researchers surveyed who are currently not publicly sharing their research data, about 10% mentioned “being nervous about mistakes” as a reason for not sharing [@osf_cos_2022]. The well known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70% had tried and failed to reproduce another researcher’s study [@eisenstein_pursuit_2022].
+Poor data management can even prevent researchers from implementing other good open science practices. In waves 1 and 2 of the Open Scholarship Survey being collected by the Center for Open Science, the team has found that of the education researchers surveyed who are currently not publicly sharing their research data, about 10% mentioned “being nervous about mistakes” as a reason for not sharing [@open_science_foundation_cos_2022]. The well known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70% had tried and failed to reproduce another researcher’s study [@eisenstein_pursuit_2022].
 
 
 ## About this book
@@ -68,7 +68,7 @@ It is important to also point out what this book will not cover. This book is in
 
 There are also no specific coding practices or actual syntax included in this book. To be honest, in many ways I feel that the actual “data cleaning” phase of data management is the “easiest” phase to implement, as long as you implement good practices up until that point. Because of that, this book introduces practices in all phases leading up to data cleaning that will prepare your data for minimal cleaning. With that said, I do provide examples of what I would expect to see in a data cleaning process, I just do not provide steps for any specific software system. That is beyond the scope of this book. 
 
-This book will also not talk about analysis or preparing data for analysis through means such as data imputation or calculating analysis specific variables. This book is written from the perspective of a data manager, and that perspective is to implement practices that keep data in its most true, but usable form, for any future researcher to analyze in a way that works best for them.
+This book will also not talk about analysis or preparing data for analysis through means such as data imputation, removal of legitimate outliers, or calculating analysis specific variables. This book is written from the perspective of a data manager, and that perspective is to implement practices that keep data in its most complete and true, but usable form, for any future researcher to analyze in a way that works best for them.
 
 
 ## Who this book is for

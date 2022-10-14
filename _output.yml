@@ -3,12 +3,7 @@ bookdown::bs4_book:
   theme:
     primary: "#2b4743"
   repo: https://github.com/Cghlewis/data-mgmt-ed-research-book
-bookdown::pdf_book:
-  latex_engine: xelatex
-  citation_package: biblatex
-  keep_tex: yes
-  number_sections: false
 bookdown::word_document2:
-    toc: false
+    toc: true
     number_section: true
 bookdown::epub_book: default
