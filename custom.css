@@ -1,0 +1,47 @@
+/* -----------div tips------------- */
+  
+  div.alert, div.presentation, div.toggle{
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 100px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 120px;
+    color: #1f5386;
+      background-color: #bed3ec;
+      border: solid 5px #dfedff;
+    font-size: 16px;
+  }
+
+
+div.alert {
+  background-image: url("img/alert.png");
+}
+
+div.presentation {
+  background-image: url("img/presentation.png");
+}
+
+div.toggle {
+  background-image: url("img/toggle.png");
+}
+
+  div.question {
+    padding: 1em;
+    */margin: 1em 0; */
+    padding-left: 100px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 120px;
+    color: #1f5386;
+      background-color: #bed3ec;
+      border: solid 5px #FFA500;
+    font-size: 15px;
+  }
+
+
+*/div.question { 
+  background-image: url("img/question.svg"); 
+} */

@@ -1,4 +1,4 @@
-# Data Management Plan {#dmp}
+# Data Management Plan
 
 ## History and purpose
 
