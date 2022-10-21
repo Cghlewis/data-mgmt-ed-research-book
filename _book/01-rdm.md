@@ -8,7 +8,7 @@ Research data management (RDM) involves the organization, storage, preservation,
 
 Data management standards refer to how data should be stored, organized, and described [@borghi_promoting_2022]. While some fields have generally adopted metadata standards developed by organizations such as the Data Documentation Initiative [@noauthor_welcome_nodate] and Dublin Core [@noauthor_dcmi_nodate] (we'll talk about this more in documentation [\@ref(documentation)]), and some have adopted data structure standards developed by organizations like the Text Encoding Initiative [@noauthor_tei_nodate], it is common knowledge that there are no agreed-upon norms for how to structure and share data in the field of education [@ies_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external requirements of the IRB and funders are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
 
-While agreed upon standards around the the structure and format of publicly shared data products across the field of education are very much needed, there are actually good reasons to not impose standardization of all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
+While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
 
 ## Why care about research data management?
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="bosbeanwte" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="yoodpyhpdl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#bosbeanwte .gt_table {
+#yoodpyhpdl .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_heading {
+#yoodpyhpdl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_title {
+#yoodpyhpdl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#bosbeanwte .gt_subtitle {
+#yoodpyhpdl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#bosbeanwte .gt_bottom_border {
+#yoodpyhpdl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_col_headings {
+#yoodpyhpdl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_col_heading {
+#yoodpyhpdl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#bosbeanwte .gt_column_spanner_outer {
+#yoodpyhpdl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#bosbeanwte .gt_column_spanner_outer:first-child {
+#yoodpyhpdl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bosbeanwte .gt_column_spanner_outer:last-child {
+#yoodpyhpdl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bosbeanwte .gt_column_spanner {
+#yoodpyhpdl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#bosbeanwte .gt_group_heading {
+#yoodpyhpdl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#bosbeanwte .gt_empty_group_heading {
+#yoodpyhpdl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#bosbeanwte .gt_from_md > :first-child {
+#yoodpyhpdl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bosbeanwte .gt_from_md > :last-child {
+#yoodpyhpdl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bosbeanwte .gt_row {
+#yoodpyhpdl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#bosbeanwte .gt_stub {
+#yoodpyhpdl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bosbeanwte .gt_stub_row_group {
+#yoodpyhpdl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#bosbeanwte .gt_row_group_first td {
+#yoodpyhpdl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bosbeanwte .gt_summary_row {
+#yoodpyhpdl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bosbeanwte .gt_first_summary_row {
+#yoodpyhpdl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_first_summary_row.thick {
+#yoodpyhpdl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bosbeanwte .gt_last_summary_row {
+#yoodpyhpdl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_grand_summary_row {
+#yoodpyhpdl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bosbeanwte .gt_first_grand_summary_row {
+#yoodpyhpdl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_striped {
+#yoodpyhpdl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bosbeanwte .gt_table_body {
+#yoodpyhpdl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_footnotes {
+#yoodpyhpdl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_footnote {
+#yoodpyhpdl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bosbeanwte .gt_sourcenotes {
+#yoodpyhpdl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bosbeanwte .gt_sourcenote {
+#yoodpyhpdl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bosbeanwte .gt_left {
+#yoodpyhpdl .gt_left {
   text-align: left;
 }
 
-#bosbeanwte .gt_center {
+#yoodpyhpdl .gt_center {
   text-align: center;
 }
 
-#bosbeanwte .gt_right {
+#yoodpyhpdl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bosbeanwte .gt_font_normal {
+#yoodpyhpdl .gt_font_normal {
   font-weight: normal;
 }
 
-#bosbeanwte .gt_font_bold {
+#yoodpyhpdl .gt_font_bold {
   font-weight: bold;
 }
 
-#bosbeanwte .gt_font_italic {
+#yoodpyhpdl .gt_font_italic {
   font-style: italic;
 }
 
-#bosbeanwte .gt_super {
+#yoodpyhpdl .gt_super {
   font-size: 65%;
 }
 
-#bosbeanwte .gt_two_val_uncert {
+#yoodpyhpdl .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#bosbeanwte .gt_footnote_marks {
+#yoodpyhpdl .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#bosbeanwte .gt_asterisk {
+#yoodpyhpdl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bosbeanwte .gt_slash_mark {
+#yoodpyhpdl .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#bosbeanwte .gt_fraction_numerator {
+#yoodpyhpdl .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#bosbeanwte .gt_fraction_denominator {
+#yoodpyhpdl .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -555,12 +555,18 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">De-identified data</td>
 <td class="gt_row gt_left">anonymized data</td>
 <td class="gt_row gt_left">Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists).</td></tr>
+    <tr><td class="gt_row gt_left">Derived Data</td>
+<td class="gt_row gt_left">NA</td>
+<td class="gt_row gt_left">Data created through transformations of existing data.</td></tr>
     <tr><td class="gt_row gt_left">Directory</td>
 <td class="gt_row gt_left">file structure</td>
 <td class="gt_row gt_left">A cataloging structure for files and folders on your computer.</td></tr>
-    <tr><td class="gt_row gt_left">Experimental Study</td>
+    <tr><td class="gt_row gt_left">Experimental Data</td>
 <td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">A study where researchers randomly introduce an intervention and study the effects.</td></tr>
+<td class="gt_row gt_left">Data collected from a study where researchers randomly introduce an intervention and study the effects.</td></tr>
+    <tr><td class="gt_row gt_left">Extant Data</td>
+<td class="gt_row gt_left">NA</td>
+<td class="gt_row gt_left">Existing data sources created from external to the research team/study.</td></tr>
     <tr><td class="gt_row gt_left">File formats</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav).</td></tr>
@@ -576,9 +582,9 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">Missing data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Occurs when there is no data stored in a variable for a particular observation/respondent.</td></tr>
-    <tr><td class="gt_row gt_left">Observational Study</td>
+    <tr><td class="gt_row gt_left">Observational Data</td>
 <td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">A study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention</td></tr>
+<td class="gt_row gt_left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention</td></tr>
     <tr><td class="gt_row gt_left">Participant database</td>
 <td class="gt_row gt_left">study roster, demographic file, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking</td>
 <td class="gt_row gt_left">This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.</td></tr>
@@ -609,6 +615,9 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">Reproducible</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Being able to produce the same results using the same materials and procedures.</td></tr>
+    <tr><td class="gt_row gt_left">Simulation Data</td>
+<td class="gt_row gt_left">NA</td>
+<td class="gt_row gt_left">Data generated through imitations of a real-world process using computer models.</td></tr>
     <tr><td class="gt_row gt_left">Standardization</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Developing a set of agreed upon technical standards and applying them within and across all research projects.</td></tr>
