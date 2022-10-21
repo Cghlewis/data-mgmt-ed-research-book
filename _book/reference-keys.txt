@@ -1,5 +1,5 @@
-fig:unnamed-chunk-1
 fig:unnamed-chunk-2
+fig:unnamed-chunk-1
 fig:unnamed-chunk-3
 fig:unnamed-chunk-4
 fig:unnamed-chunk-5
@@ -24,10 +24,14 @@ final-note
 acknowledgements
 research-data-management
 what-is-research-data-management
+standards
 why-care-about-research-data-management
 external-reasons
 personal-reasons
 existing-frameworks
+fair
+seer
+open-science
 terminology
 the-research-life-cycle
 data-structure
