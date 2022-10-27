@@ -17,9 +17,9 @@ Without current agreed-upon standards in the field, it is important for research
 
 ### External Reasons
 
-1. **Funder compliance**: Since 2013, even earlier for the National Science Foundation, most federal agencies that education researchers work with have required a data management plan as part of their funding application. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan for a research study that will result in data that can be shared with confidence, free from errors, uncertainty, or violations of confidentiality. President Obama’s May 2013 Executive Order declared that “the default state of new and modernized government information resources shall be open and machine readable" [@the_white_house_executive_2013]. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release [@office_of_science_and_technology_policy_ostp_2022]. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing [@borghi_promoting_2022].
+1. **Funder compliance**: Any researcher applying for federal funding will be required to submit a data management plan (DMP) along with their grant proposal[@office_of_science_and_technology_policy_ostp_2022]. The contents of these proposals may vary slightly across agencies but the shared purpose of these documents is to facilitate good data management practices and to mandate open sharing of data to maximize scientific outputs and benefits to society. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing [@borghi_promoting_2022].
 
-1. **Journal compliance**: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement. Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
+1. **Journal compliance**: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement (see PLOS ONE[@plos_one_data_nodate] as an example). Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
 
 1. **Compliance with legal and ethical mandates**: If you are required to submit your research project to the Institutional Review Board, they will monitor how you manage your data. They care about the welfare, rights, and privacy of research participants and will have rules for how data is managed and stored securely. Additionally your organization may have their own institutional data policies that mandate how data must be cared for and secured [@association_of_academic_health_science_libraries_institutional_2022].
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="yoodpyhpdl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="yuldxaelqi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#yoodpyhpdl .gt_table {
+#yuldxaelqi .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_heading {
+#yuldxaelqi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_title {
+#yuldxaelqi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#yoodpyhpdl .gt_subtitle {
+#yuldxaelqi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#yoodpyhpdl .gt_bottom_border {
+#yuldxaelqi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_col_headings {
+#yuldxaelqi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_col_heading {
+#yuldxaelqi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#yoodpyhpdl .gt_column_spanner_outer {
+#yuldxaelqi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#yoodpyhpdl .gt_column_spanner_outer:first-child {
+#yuldxaelqi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yoodpyhpdl .gt_column_spanner_outer:last-child {
+#yuldxaelqi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yoodpyhpdl .gt_column_spanner {
+#yuldxaelqi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#yoodpyhpdl .gt_group_heading {
+#yuldxaelqi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#yoodpyhpdl .gt_empty_group_heading {
+#yuldxaelqi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#yoodpyhpdl .gt_from_md > :first-child {
+#yuldxaelqi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yoodpyhpdl .gt_from_md > :last-child {
+#yuldxaelqi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yoodpyhpdl .gt_row {
+#yuldxaelqi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#yoodpyhpdl .gt_stub {
+#yuldxaelqi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yoodpyhpdl .gt_stub_row_group {
+#yuldxaelqi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#yoodpyhpdl .gt_row_group_first td {
+#yuldxaelqi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yoodpyhpdl .gt_summary_row {
+#yuldxaelqi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yoodpyhpdl .gt_first_summary_row {
+#yuldxaelqi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_first_summary_row.thick {
+#yuldxaelqi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yoodpyhpdl .gt_last_summary_row {
+#yuldxaelqi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_grand_summary_row {
+#yuldxaelqi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yoodpyhpdl .gt_first_grand_summary_row {
+#yuldxaelqi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_striped {
+#yuldxaelqi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yoodpyhpdl .gt_table_body {
+#yuldxaelqi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_footnotes {
+#yuldxaelqi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_footnote {
+#yuldxaelqi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yoodpyhpdl .gt_sourcenotes {
+#yuldxaelqi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yoodpyhpdl .gt_sourcenote {
+#yuldxaelqi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yoodpyhpdl .gt_left {
+#yuldxaelqi .gt_left {
   text-align: left;
 }
 
-#yoodpyhpdl .gt_center {
+#yuldxaelqi .gt_center {
   text-align: center;
 }
 
-#yoodpyhpdl .gt_right {
+#yuldxaelqi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yoodpyhpdl .gt_font_normal {
+#yuldxaelqi .gt_font_normal {
   font-weight: normal;
 }
 
-#yoodpyhpdl .gt_font_bold {
+#yuldxaelqi .gt_font_bold {
   font-weight: bold;
 }
 
-#yoodpyhpdl .gt_font_italic {
+#yuldxaelqi .gt_font_italic {
   font-style: italic;
 }
 
-#yoodpyhpdl .gt_super {
+#yuldxaelqi .gt_super {
   font-size: 65%;
 }
 
-#yoodpyhpdl .gt_two_val_uncert {
+#yuldxaelqi .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#yoodpyhpdl .gt_footnote_marks {
+#yuldxaelqi .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#yoodpyhpdl .gt_asterisk {
+#yuldxaelqi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yoodpyhpdl .gt_slash_mark {
+#yuldxaelqi .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#yoodpyhpdl .gt_fraction_numerator {
+#yuldxaelqi .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#yoodpyhpdl .gt_fraction_denominator {
+#yuldxaelqi .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;

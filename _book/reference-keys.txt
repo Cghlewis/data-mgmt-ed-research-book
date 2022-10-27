@@ -47,8 +47,8 @@ structure
 file-types
 data-management-plan
 history-and-purpose
-what-is-it
 why-are-dmps-important
+what-is-it
 what-to-include
 getting-help
 budgeting
