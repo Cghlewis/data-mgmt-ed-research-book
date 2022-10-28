@@ -17,7 +17,7 @@ Without current agreed-upon standards in the field, it is important for research
 
 ### External Reasons
 
-1. **Funder compliance**: Any researcher applying for federal funding will be required to submit a data management plan (DMP) along with their grant proposal[@office_of_science_and_technology_policy_ostp_2022]. The contents of these proposals may vary slightly across agencies but the shared purpose of these documents is to facilitate good data management practices and to mandate open sharing of data to maximize scientific outputs and benefits to society. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing [@borghi_promoting_2022].
+1. **Funder compliance**: Any researcher applying for federal funding will be required to submit a data management plan (DMP) along with their grant proposal[@office_of_science_and_technology_policy_ostp_2022]. The contents of these plans may vary slightly across agencies but the shared purpose of these documents is to facilitate good data management practices and to mandate open sharing of data to maximize scientific outputs and benefits to society. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing [@borghi_promoting_2022].
 
 1. **Journal compliance**: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement (see PLOS ONE[@plos_one_data_nodate] as an example). Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
 
@@ -54,7 +54,7 @@ In 2016, the FAIR Principles [@noauthor_fair_nodate] were published in Scientifi
 
 F: Findable
 
-All data should be findable through a persistent identifier and have good data documentation, aka metadata. As we move towards automation in our work and life, the need for machine-readable metadata becomes more prevalent for automatic discovery of data.
+All data should be findable through a persistent identifier and have good data documentation. As we move towards automation in our work and life, the need for machine-readable metadata becomes more prevalent for automatic discovery of data.
 
 A: Accessible
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="yuldxaelqi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="lboknvjpiy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#yuldxaelqi .gt_table {
+#lboknvjpiy .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_heading {
+#lboknvjpiy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_title {
+#lboknvjpiy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#yuldxaelqi .gt_subtitle {
+#lboknvjpiy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#yuldxaelqi .gt_bottom_border {
+#lboknvjpiy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_col_headings {
+#lboknvjpiy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_col_heading {
+#lboknvjpiy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#yuldxaelqi .gt_column_spanner_outer {
+#lboknvjpiy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#yuldxaelqi .gt_column_spanner_outer:first-child {
+#lboknvjpiy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yuldxaelqi .gt_column_spanner_outer:last-child {
+#lboknvjpiy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yuldxaelqi .gt_column_spanner {
+#lboknvjpiy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#yuldxaelqi .gt_group_heading {
+#lboknvjpiy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#yuldxaelqi .gt_empty_group_heading {
+#lboknvjpiy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#yuldxaelqi .gt_from_md > :first-child {
+#lboknvjpiy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yuldxaelqi .gt_from_md > :last-child {
+#lboknvjpiy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yuldxaelqi .gt_row {
+#lboknvjpiy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#yuldxaelqi .gt_stub {
+#lboknvjpiy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yuldxaelqi .gt_stub_row_group {
+#lboknvjpiy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#yuldxaelqi .gt_row_group_first td {
+#lboknvjpiy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yuldxaelqi .gt_summary_row {
+#lboknvjpiy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yuldxaelqi .gt_first_summary_row {
+#lboknvjpiy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_first_summary_row.thick {
+#lboknvjpiy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yuldxaelqi .gt_last_summary_row {
+#lboknvjpiy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_grand_summary_row {
+#lboknvjpiy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yuldxaelqi .gt_first_grand_summary_row {
+#lboknvjpiy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_striped {
+#lboknvjpiy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yuldxaelqi .gt_table_body {
+#lboknvjpiy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_footnotes {
+#lboknvjpiy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_footnote {
+#lboknvjpiy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yuldxaelqi .gt_sourcenotes {
+#lboknvjpiy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yuldxaelqi .gt_sourcenote {
+#lboknvjpiy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yuldxaelqi .gt_left {
+#lboknvjpiy .gt_left {
   text-align: left;
 }
 
-#yuldxaelqi .gt_center {
+#lboknvjpiy .gt_center {
   text-align: center;
 }
 
-#yuldxaelqi .gt_right {
+#lboknvjpiy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yuldxaelqi .gt_font_normal {
+#lboknvjpiy .gt_font_normal {
   font-weight: normal;
 }
 
-#yuldxaelqi .gt_font_bold {
+#lboknvjpiy .gt_font_bold {
   font-weight: bold;
 }
 
-#yuldxaelqi .gt_font_italic {
+#lboknvjpiy .gt_font_italic {
   font-style: italic;
 }
 
-#yuldxaelqi .gt_super {
+#lboknvjpiy .gt_super {
   font-size: 65%;
 }
 
-#yuldxaelqi .gt_two_val_uncert {
+#lboknvjpiy .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#yuldxaelqi .gt_footnote_marks {
+#lboknvjpiy .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#yuldxaelqi .gt_asterisk {
+#lboknvjpiy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yuldxaelqi .gt_slash_mark {
+#lboknvjpiy .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#yuldxaelqi .gt_fraction_numerator {
+#lboknvjpiy .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#yuldxaelqi .gt_fraction_denominator {
+#lboknvjpiy .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -657,7 +657,7 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 The remainder of this book will be organized into chapters that dive into phases of the research data life cycle. It is imperative to understand this research life cycle in order to see the flow of data through a project, as well as to see how everything in a project is connected. If phases are skipped, the whole project will suffer.
 
-You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, bost workflows must happen and they must work together.
+You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
 <div class="figure" style="text-align: center">
 <img src="img/cl_lifecycle.PNG" alt="The research project life cycle" width="100%" />
@@ -678,8 +678,8 @@ Let's walk through this chart.
      - Once the data is captured, it needs to be **stored**. While the data team may be in charge of setting up and monitoring the storage efforts, the project team may be the ones actively retrieving and storing the data.
      - Next the teams move into the **cleaning and validation** phase. At this time the data team is reviewing data cleaning plans, writing data cleaning scripts and actively cleaning data from the most recent data collection round.
      - And last, the data team will **version** data as it is updated or errors are found.
-    5. The teams then only move out of the active data collection phase when all data collection for the project is complete. At this time the project team begins analyzing study data and working on publications. They are able to do this because of the organized processes implemented during the data collection cycle. Since data was managed and cleaned throughout, data is ready for analysis as soon as data collection is complete. Then, while the project team is analyzing data, the data team is doing any additional **preparation to archive** data for public sharing.
-    6. Last, the team submits data for **public sharing**.
+  5. The teams then only move out of the active data collection phase when all data collection for the project is complete. At this time the project team begins analyzing study data and working on publications. They are able to do this because of the organized processes implemented during the data collection cycle. Since data was managed and cleaned throughout, data is ready for analysis as soon as data collection is complete. Then, while the project team is analyzing data, the data team is doing any additional **preparation to archive** data for public sharing.
+  6. Last, the team submits data for **public sharing**.
     
-As you work through the remaining chapters of this book, it's importatnt to return back to this chart frequently to remind yourself where that phase of practices fits into the larger picture. 
+As you work through the remaining chapters of this book, this chart will be a guide to navigating where each phase of practices fits into the larger picture. 
 
