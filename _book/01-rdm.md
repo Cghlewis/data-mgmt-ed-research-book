@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="lboknvjpiy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="dqcrqlpjut" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lboknvjpiy .gt_table {
+#dqcrqlpjut .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_heading {
+#dqcrqlpjut .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,12 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_title {
+#dqcrqlpjut .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#dqcrqlpjut .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +150,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#lboknvjpiy .gt_subtitle {
+#dqcrqlpjut .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +162,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#lboknvjpiy .gt_bottom_border {
+#dqcrqlpjut .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_col_headings {
+#dqcrqlpjut .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +183,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_col_heading {
+#dqcrqlpjut .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +203,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#lboknvjpiy .gt_column_spanner_outer {
+#dqcrqlpjut .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +215,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#lboknvjpiy .gt_column_spanner_outer:first-child {
+#dqcrqlpjut .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lboknvjpiy .gt_column_spanner_outer:last-child {
+#dqcrqlpjut .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lboknvjpiy .gt_column_spanner {
+#dqcrqlpjut .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +235,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#lboknvjpiy .gt_group_heading {
+#dqcrqlpjut .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -253,9 +258,10 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-width: 1px;
   border-right-color: #D3D3D3;
   vertical-align: middle;
+  text-align: left;
 }
 
-#lboknvjpiy .gt_empty_group_heading {
+#dqcrqlpjut .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +276,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#lboknvjpiy .gt_from_md > :first-child {
+#dqcrqlpjut .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lboknvjpiy .gt_from_md > :last-child {
+#dqcrqlpjut .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lboknvjpiy .gt_row {
+#dqcrqlpjut .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +303,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#lboknvjpiy .gt_stub {
+#dqcrqlpjut .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +316,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#lboknvjpiy .gt_stub_row_group {
+#dqcrqlpjut .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +330,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#lboknvjpiy .gt_row_group_first td {
+#dqcrqlpjut .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lboknvjpiy .gt_summary_row {
+#dqcrqlpjut .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +344,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#lboknvjpiy .gt_first_summary_row {
+#dqcrqlpjut .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_first_summary_row.thick {
+#dqcrqlpjut .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lboknvjpiy .gt_last_summary_row {
+#dqcrqlpjut .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +363,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_grand_summary_row {
+#dqcrqlpjut .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +373,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#lboknvjpiy .gt_first_grand_summary_row {
+#dqcrqlpjut .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +383,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_striped {
+#dqcrqlpjut .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lboknvjpiy .gt_table_body {
+#dqcrqlpjut .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +396,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_footnotes {
+#dqcrqlpjut .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +410,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_footnote {
+#dqcrqlpjut .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +419,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#lboknvjpiy .gt_sourcenotes {
+#dqcrqlpjut .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +433,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#lboknvjpiy .gt_sourcenote {
+#dqcrqlpjut .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,216 +441,209 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#lboknvjpiy .gt_left {
+#dqcrqlpjut .gt_left {
   text-align: left;
 }
 
-#lboknvjpiy .gt_center {
+#dqcrqlpjut .gt_center {
   text-align: center;
 }
 
-#lboknvjpiy .gt_right {
+#dqcrqlpjut .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lboknvjpiy .gt_font_normal {
+#dqcrqlpjut .gt_font_normal {
   font-weight: normal;
 }
 
-#lboknvjpiy .gt_font_bold {
+#dqcrqlpjut .gt_font_bold {
   font-weight: bold;
 }
 
-#lboknvjpiy .gt_font_italic {
+#dqcrqlpjut .gt_font_italic {
   font-style: italic;
 }
 
-#lboknvjpiy .gt_super {
+#dqcrqlpjut .gt_super {
   font-size: 65%;
 }
 
-#lboknvjpiy .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-#lboknvjpiy .gt_footnote_marks {
+#dqcrqlpjut .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#lboknvjpiy .gt_asterisk {
+#dqcrqlpjut .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lboknvjpiy .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+#dqcrqlpjut .gt_indent_1 {
+  text-indent: 5px;
 }
 
-#lboknvjpiy .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+#dqcrqlpjut .gt_indent_2 {
+  text-indent: 10px;
 }
 
-#lboknvjpiy .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+#dqcrqlpjut .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dqcrqlpjut .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dqcrqlpjut .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Term</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Other Terms</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Definition</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Term">Term</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Other Terms">Other Terms</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Definition">Definition</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_left">Anonymous data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Identifying information was never collected. This data can not be linked across time or measures.</td></tr>
-    <tr><td class="gt_row gt_left">Append</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Stacking datasets on top of each other (matching variables).</td></tr>
-    <tr><td class="gt_row gt_left">Archive</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">The transfer of data to a facility, such as a repository, that preserves and stores data long-term.</td></tr>
-    <tr><td class="gt_row gt_left">Attrition</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">The loss of study units from the sample, often seen in longitudinal studies.</td></tr>
-    <tr><td class="gt_row gt_left">Clean data</td>
-<td class="gt_row gt_left">processed data</td>
-<td class="gt_row gt_left">Any data that has been manipulated or modified.</td></tr>
-    <tr><td class="gt_row gt_left">Cohort</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">A group of participants recruited into the study at the same time.</td></tr>
-    <tr><td class="gt_row gt_left">Confidential data</td>
-<td class="gt_row gt_left">pseudonymisation, coded data, indirectly identifiable</td>
-<td class="gt_row gt_left">Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data.</td></tr>
-    <tr><td class="gt_row gt_left">Confidentiality</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Confidentiality concerns data. Ensuring participants agree to how their private and identifable information will be managed and disseminated.</td></tr>
-    <tr><td class="gt_row gt_left">Control</td>
-<td class="gt_row gt_left">business as usual</td>
-<td class="gt_row gt_left">The individual or group does not receive the intervention.</td></tr>
-    <tr><td class="gt_row gt_left">Cross-sectional</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data is collected on participants for a single time point.</td></tr>
-    <tr><td class="gt_row gt_left">Data</td>
-<td class="gt_row gt_left">research data</td>
-<td class="gt_row gt_left">The recorded factual material commonly accepted in the scientific community as necessary to validate research findings (OMB Circular A-110).</td></tr>
-    <tr><td class="gt_row gt_left">Database</td>
-<td class="gt_row gt_left">relational database</td>
-<td class="gt_row gt_left">An organized collection of related data stored in tables that can be linked together by a common identifier.</td></tr>
-    <tr><td class="gt_row gt_left">Dataset</td>
-<td class="gt_row gt_left">dataframe, spreadsheet</td>
-<td class="gt_row gt_left">A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (ex: teacher dataset, student dataset).</td></tr>
-    <tr><td class="gt_row gt_left">De-identified data</td>
-<td class="gt_row gt_left">anonymized data</td>
-<td class="gt_row gt_left">Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists).</td></tr>
-    <tr><td class="gt_row gt_left">Derived Data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data created through transformations of existing data.</td></tr>
-    <tr><td class="gt_row gt_left">Directory</td>
-<td class="gt_row gt_left">file structure</td>
-<td class="gt_row gt_left">A cataloging structure for files and folders on your computer.</td></tr>
-    <tr><td class="gt_row gt_left">Experimental Data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data collected from a study where researchers randomly introduce an intervention and study the effects.</td></tr>
-    <tr><td class="gt_row gt_left">Extant Data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Existing data sources created from external to the research team/study.</td></tr>
-    <tr><td class="gt_row gt_left">File formats</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav).</td></tr>
-    <tr><td class="gt_row gt_left">Identifiable data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data that includes personally identifiable information.</td></tr>
-    <tr><td class="gt_row gt_left">Longitudinal</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data is collected on participants over a period of time.</td></tr>
-    <tr><td class="gt_row gt_left">Merge</td>
-<td class="gt_row gt_left">join, link</td>
-<td class="gt_row gt_left">Combining datasets together in a side by side manner (matching on an identifier).</td></tr>
-    <tr><td class="gt_row gt_left">Missing data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Occurs when there is no data stored in a variable for a particular observation/respondent.</td></tr>
-    <tr><td class="gt_row gt_left">Observational Data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention</td></tr>
-    <tr><td class="gt_row gt_left">Participant database</td>
-<td class="gt_row gt_left">study roster, demographic file, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking</td>
-<td class="gt_row gt_left">This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.</td></tr>
-    <tr><td class="gt_row gt_left">Path</td>
-<td class="gt_row gt_left">file path</td>
-<td class="gt_row gt_left">A string of characters used to locate files in your directory system.</td></tr>
-    <tr><td class="gt_row gt_left">PII</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Personally identifiable information is protected information that can directly or indirectly identify a study participant. It includes but is not limited to name, social security number, email, birthdate, district or school name.</td></tr>
-    <tr><td class="gt_row gt_left">Privacy</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Privacy concerns people. Ensuring others are given control to the access of themselves and their information.</td></tr>
-    <tr><td class="gt_row gt_left">Qualitative data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Non-numeric data typically made up of text, images, video or other artifacts.</td></tr>
-    <tr><td class="gt_row gt_left">Quantitative data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Numerical data that can be analyzed with statistical methods.</td></tr>
-    <tr><td class="gt_row gt_left">Randomized Controlled Trial</td>
-<td class="gt_row gt_left">RCT</td>
-<td class="gt_row gt_left">A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized.</td></tr>
-    <tr><td class="gt_row gt_left">Raw data</td>
-<td class="gt_row gt_left">primary, untouched</td>
-<td class="gt_row gt_left">Unprocessed data collected directly from a source.</td></tr>
-    <tr><td class="gt_row gt_left">Replicable</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Being able to produce the same results if the same procedures are used with different materials.</td></tr>
-    <tr><td class="gt_row gt_left">Reproducible</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Being able to produce the same results using the same materials and procedures.</td></tr>
-    <tr><td class="gt_row gt_left">Simulation Data</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Data generated through imitations of a real-world process using computer models.</td></tr>
-    <tr><td class="gt_row gt_left">Standardization</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Developing a set of agreed upon technical standards and applying them within and across all research projects.</td></tr>
-    <tr><td class="gt_row gt_left">Study</td>
-<td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">a single funded research project resulting in one more more datasets to be used to answer a research question.</td></tr>
-    <tr><td class="gt_row gt_left">Study ID</td>
-<td class="gt_row gt_left">participant ID, location ID, site ID, unique identifier (UID), subject ID, participant code, record id</td>
-<td class="gt_row gt_left">This is a numeric or alphanumeric identifier that is unique to every participant, site or object in order to create confidential and de-identified data. These identifiers allow researchers to link data across time or measure.</td></tr>
-    <tr><td class="gt_row gt_left">Subject</td>
-<td class="gt_row gt_left">case, participant, site, record</td>
-<td class="gt_row gt_left">A person or place participating in research and has one or more piece of data collected on them.</td></tr>
-    <tr><td class="gt_row gt_left">Syntax</td>
-<td class="gt_row gt_left">code, program</td>
-<td class="gt_row gt_left">Programming statements written in a text editor. The statements are machine-readable instructions processed by your computer.</td></tr>
-    <tr><td class="gt_row gt_left">Treatment</td>
-<td class="gt_row gt_left">experiment</td>
-<td class="gt_row gt_left">The individual or group receives the intervention.</td></tr>
-    <tr><td class="gt_row gt_left">Variable</td>
-<td class="gt_row gt_left">column, field, question</td>
-<td class="gt_row gt_left">Any phenomenon you are collecting information on/trying to measure. These variables will make up columns in your datasets or databases.</td></tr>
-    <tr><td class="gt_row gt_left">Variable name</td>
-<td class="gt_row gt_left">header</td>
-<td class="gt_row gt_left">A shortened symbolic name given the variable in your data to represent the information it contains.</td></tr>
-    <tr><td class="gt_row gt_left">Wave</td>
-<td class="gt_row gt_left">time period, time point, event, session</td>
-<td class="gt_row gt_left">Intervals of data collection over time.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Anonymous data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Identifying information was never collected. This data can not be linked across time or measures.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Append</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Stacking datasets on top of each other (matching variables).</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Archive</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">The transfer of data to a facility, such as a repository, that preserves and stores data long-term.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Attrition</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">The loss of study units from the sample, often seen in longitudinal studies.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Clean data</td>
+<td headers="Other Terms" class="gt_row gt_left">processed data</td>
+<td headers="Definition" class="gt_row gt_left">Any data that has been manipulated or modified.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Cohort</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">A group of participants recruited into the study at the same time.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Confidential data</td>
+<td headers="Other Terms" class="gt_row gt_left">pseudonymisation, coded data, indirectly identifiable</td>
+<td headers="Definition" class="gt_row gt_left">Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Confidentiality</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Confidentiality concerns data. Ensuring participants agree to how their private and identifable information will be managed and disseminated.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Control</td>
+<td headers="Other Terms" class="gt_row gt_left">business as usual</td>
+<td headers="Definition" class="gt_row gt_left">The individual or group does not receive the intervention.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Cross-sectional</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data is collected on participants for a single time point.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Data</td>
+<td headers="Other Terms" class="gt_row gt_left">research data</td>
+<td headers="Definition" class="gt_row gt_left">The recorded factual material commonly accepted in the scientific community as necessary to validate research findings (OMB Circular A-110).</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Database</td>
+<td headers="Other Terms" class="gt_row gt_left">relational database</td>
+<td headers="Definition" class="gt_row gt_left">An organized collection of related data stored in tables that can be linked together by a common identifier.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Dataset</td>
+<td headers="Other Terms" class="gt_row gt_left">dataframe, spreadsheet</td>
+<td headers="Definition" class="gt_row gt_left">A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (ex: teacher dataset, student dataset).</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">De-identified data</td>
+<td headers="Other Terms" class="gt_row gt_left">anonymized data</td>
+<td headers="Definition" class="gt_row gt_left">Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists).</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Derived Data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data created through transformations of existing data.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Directory</td>
+<td headers="Other Terms" class="gt_row gt_left">file structure</td>
+<td headers="Definition" class="gt_row gt_left">A cataloging structure for files and folders on your computer.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Experimental Data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data collected from a study where researchers randomly introduce an intervention and study the effects.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Extant Data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Existing data sources created from external to the research team/study.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">File formats</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav).</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Identifiable data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data that includes personally identifiable information.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Longitudinal</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data is collected on participants over a period of time.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Merge</td>
+<td headers="Other Terms" class="gt_row gt_left">join, link</td>
+<td headers="Definition" class="gt_row gt_left">Combining datasets together in a side by side manner (matching on an identifier).</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Missing data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Occurs when there is no data stored in a variable for a particular observation/respondent.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Observational Data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Participant database</td>
+<td headers="Other Terms" class="gt_row gt_left">study roster, demographic file, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking</td>
+<td headers="Definition" class="gt_row gt_left">This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Path</td>
+<td headers="Other Terms" class="gt_row gt_left">file path</td>
+<td headers="Definition" class="gt_row gt_left">A string of characters used to locate files in your directory system.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">PII</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Personally identifiable information is protected information that can directly or indirectly identify a study participant. It includes but is not limited to name, social security number, email, birthdate, district or school name.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Privacy</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Privacy concerns people. Ensuring others are given control to the access of themselves and their information.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Qualitative data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Non-numeric data typically made up of text, images, video or other artifacts.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Quantitative data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Numerical data that can be analyzed with statistical methods.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Randomized Controlled Trial</td>
+<td headers="Other Terms" class="gt_row gt_left">RCT</td>
+<td headers="Definition" class="gt_row gt_left">A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Raw data</td>
+<td headers="Other Terms" class="gt_row gt_left">primary, untouched</td>
+<td headers="Definition" class="gt_row gt_left">Unprocessed data collected directly from a source.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Replicable</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Being able to produce the same results if the same procedures are used with different materials.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Reproducible</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Being able to produce the same results using the same materials and procedures.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Simulation Data</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Data generated through imitations of a real-world process using computer models.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Standardization</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">Developing a set of agreed upon technical standards and applying them within and across all research projects.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Study</td>
+<td headers="Other Terms" class="gt_row gt_left">NA</td>
+<td headers="Definition" class="gt_row gt_left">a single funded research project resulting in one more more datasets to be used to answer a research question.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Study ID</td>
+<td headers="Other Terms" class="gt_row gt_left">participant ID, location ID, site ID, unique identifier (UID), subject ID, participant code, record id</td>
+<td headers="Definition" class="gt_row gt_left">This is a numeric or alphanumeric identifier that is unique to every participant, site or object in order to create confidential and de-identified data. These identifiers allow researchers to link data across time or measure.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Subject</td>
+<td headers="Other Terms" class="gt_row gt_left">case, participant, site, record</td>
+<td headers="Definition" class="gt_row gt_left">A person or place participating in research and has one or more piece of data collected on them.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Syntax</td>
+<td headers="Other Terms" class="gt_row gt_left">code, program</td>
+<td headers="Definition" class="gt_row gt_left">Programming statements written in a text editor. The statements are machine-readable instructions processed by your computer.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Treatment</td>
+<td headers="Other Terms" class="gt_row gt_left">experiment</td>
+<td headers="Definition" class="gt_row gt_left">The individual or group receives the intervention.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Variable</td>
+<td headers="Other Terms" class="gt_row gt_left">column, field, question</td>
+<td headers="Definition" class="gt_row gt_left">Any phenomenon you are collecting information on/trying to measure. These variables will make up columns in your datasets or databases.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Variable name</td>
+<td headers="Other Terms" class="gt_row gt_left">header</td>
+<td headers="Definition" class="gt_row gt_left">A shortened symbolic name given the variable in your data to represent the information it contains.</td></tr>
+    <tr><td headers="Term" class="gt_row gt_left">Wave</td>
+<td headers="Other Terms" class="gt_row gt_left">time period, time point, event, session</td>
+<td headers="Definition" class="gt_row gt_left">Intervals of data collection over time.</td></tr>
   </tbody>
   
   
