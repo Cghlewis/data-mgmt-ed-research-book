@@ -60,12 +60,48 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{caption}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[style=apa,]{biblatex}
-\addbibresource{book.bib}
-\addbibresource{packages.bib}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
@@ -77,7 +113,7 @@
 
 \title{Data Management in Large-Scale Education Research}
 \author{Crystal Lewis}
-\date{2022-10-10}
+\date{2022-10-31}
 
 \begin{document}
 \maketitle
@@ -92,56 +128,56 @@
 This is the in-progress version of \emph{Data Management in Large-Scale Education Research}. To see a previous version of this material, please visit this \href{https://cghlewis.github.io/mpsi-data-training/}{website}.
 
 \emph{The results of educational research studies are only as accurate as the data used to produce them.}
-\emph{- Aleata Hubbard} \autocite{hubbard_data_2017}
+\emph{- Aleata Hubbard}\footnote{Aleata Hubbard, \emph{Data Cleaning in Mathematics Education Research: The Overlooked Methodological Step}, 2017, \url{https://eric.ed.gov/?id=ED583982}.}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
 In 2013, without knowing that the term research data management existed, I accepted a job as a Research Associate with a prevention science research center. My job was to coordinate the collection and management of data for federally funded randomized controlled trial efficacy studies taking place in K-12 schools, along with a team of PIs, other full-time staff, part-time data collectors, and graduate students. While I had some experience analyzing and working with education data, i.e.~ECKLS-K, I had no experience running research grants, collecting original data, or managing research data, but I was excited to learn.
 
-In my time in that position I learned to plan, schedule, and track data collection activities, create data collection tools, organize and document data inputs, and produce usable data outputs; but I didn't learn to do these things through any formal training. There were no books, courses, or workshops that I learned from. I learned from colleagues and a large amount of trial and error. Since then, as I have met more PIs, data managers, and project coordinators in education research, I realize that this is a common method for learning data management (mentoring and ``winging it''). And while learning data management through these informal methods helps us get by, what these type of training methods really lack are standards, leading to inconsistencies across the field \autocite{borghi_promoting_2022}.
+In my time in that position I learned to plan, schedule, and track data collection activities, create data collection tools, organize and document data inputs, and produce usable data outputs; but I didn't learn to do these things through any formal training. There were no books, courses, or workshops that I learned from. I learned from colleagues and a large amount of trial and error. Since then, as I have met more PIs, data managers, and project coordinators in education research, I realize that this is a common method for learning data management (mentoring and ``winging it''). And while learning data management through these informal methods helps us get by, the ramifications of this unstandardized system are felt by both the project team and future data users.
 
 \hypertarget{why-this-book}{%
 \section{Why this book}\label{why-this-book}}
 
-Research data management is becoming more complicated. We are collecting more data, in sometimes very novel ways, and using more complex technologies, all while increasing the visibility of our work with the push for data sharing and open science practices \autocite{briney_data_2015}. Ad hoc data management practices may have worked for us in the past, but now others need to understand our processes as well, requiring researchers to be more thoughtful in planning their data management routines.
+Research data management is becoming more complicated. We are collecting more data, in sometimes very novel ways, and using more complex technologies, all while increasing the visibility of our work with the push for data sharing and open science practices.\footnote{Kristin Briney, \emph{Data Management for Researchers: Organize, Maintain and Share Your Data for Research Success}, Research Skills Series (Exeter, {UK}: Pelagic Publishing, 2015).} Ad hoc data management practices may have worked for us in the past, but now others need to understand our processes as well, requiring researchers to be more thoughtful in planning their data management routines.
 
 \hypertarget{lack-of-training-resources-and-standards}{%
 \subsection{Lack of training, resources, and standards}\label{lack-of-training-resources-and-standards}}
 
-In order to implement thoughtful and standardized data management practices, researchers need training. Yet there is a clear lack of data management training in higher education. In a survey of 274 psychology researchers, Borghi and Van Gulick \autocite{borghi_data_2021} found that only 33\% of respondents learned data management from college level coursework, while 64\% learned from collaborators, and 52\% learned from self-education. In their survey of 202 education researchers (PIs and Co-PIs), Ceviren and Logan \autocite{ceviren_ceviren_logan_ehe_forum_2022pdf_2022} found that over 60\% of respondents reported having no formal training in data management, yet across eight different data management practices, respondents were responsible for data management activities anywhere from 25-50\% of the time.
+In order to implement thoughtful and standardized data management practices, researchers need training. Yet there is a clear lack of data management training in higher education. In a survey of 274 psychology researchers, Borghi and Van Gulick\footnote{John A. Borghi and Ana E. Van Gulick, {``Data Management and Sharing: Practices and Perceptions of Psychology Researchers,''} \emph{{PLOS} {ONE}} 16, no. 5 (May 21, 2021): e0252047, \url{https://doi.org/10.1371/journal.pone.0252047}.} found that only 33\% of respondents learned data management from college level coursework, while 64\% learned from collaborators, and 52\% learned from self-education. In their survey of 202 education researchers (PIs and Co-PIs), Ceviren and Logan\footnote{A. Busra Ceviren and Jessica Logan, {``Ceviren\_logan\_EHE\_forum\_2022.pdf''} (presentation, presentation, April 4, 2022), \url{https://doi.org/10.6084/m9.figshare.19514368.v1}.} found that over 60\% of respondents reported having no formal training in data management, yet across eight different data management practices, respondents were responsible for data management activities anywhere from 25-50\% of the time.
 
-Without training, resources and formal support systems are the next best option for learning best practices. During my data management journey I have discovered an excellent support system of professionals in university systems, i.e.~research data librarians, who can consult with research teams in their data management journey, and I have also come across some solid existing research data management books and manuals which I will link to in this book. However, while education researchers are starting to put out some excellent resources \autocite{neild_sharing_2022,reynolds_basics_2022}, I still find there is a dearth of tangible guides for researchers to refer to when building a data management workflow in the field of education, especially those working on large-scale longitudinal research grants where there are many moving pieces. Researchers are often collecting data in real-world environments, such as school systems, and keeping that data secure and reliable in a deliberate and orderly way can be overwhelming.
+Without training, resources and formal support systems are the next best option for learning best practices. During my data management journey I have discovered an excellent support system of professionals in university systems, i.e.~research data librarians, who can consult with research teams in their data management planning, and I have also come across some solid existing research data management books and manuals which I will link to in this book. However, while education researchers are starting to put out some excellent resources,\footnote{R. C. Neild, D. Robinson, and J. Agufa, {``Sharing Study Data: A Guide for Education Researchers. ({NCEE} 2022-004),''} \emph{U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance.}, 2022, \url{https://ies.ed.gov/ncee/pubs/2022004/pdf/2022004.pdf}; Tara Reynolds, Christopher Schatschneider, and Jessica Logan, {``The Basics of Data Management''} (figshare, April 26, 2022), \url{https://doi.org/10.6084/m9.figshare.13215350.v2}.} I still find there is a dearth of tangible guides for researchers to refer to when building a data management workflow in the field of education, especially those working on large-scale longitudinal research grants where there are many moving pieces. Researchers are often collecting data in real-world environments, such as school systems, and keeping that data secure and reliable in a deliberate and orderly way can be overwhelming.
 
-Last, unfortunately, while other fields of research, such as psychology, appear to be banding together to develop standards around data management \autocite{noauthor_psych-ds_nodate}, the field of education has yet to develop agreed upon rules for things such as data documentation or data formats. With this lack of standards, researchers are left to create practices that work for their team, leading to inconsistent data management practices across the field.
+Last, unfortunately, while other fields of research, such as psychology, appear to be banding together to develop standards around how to structure and share data,\footnote{{``Psych-{DS} Specification. Google Docs,''} accessed September 16, 2022, \url{https://docs.google.com/document/d/1u8o5jnWk0Iqp_J06PTu5NjBfVsdoPbBhstht6W0fFp0/edit?usp=embed_facebook}.} the field of education has yet to develop agreed upon rules for things such as data documentation or data formats. This lack of standards leads to inconsistencies in the quality of data products across the field.\footnote{John Borghi and Ana Van Gulick, {``Promoting Open Science Through Research Data Management,''} \emph{Harvard Data Science Review}, July 28, 2022, \url{https://doi.org/10.1162/99608f92.9497f68e}.}
 
 \hypertarget{consequences}{%
 \subsection{Consequences}\label{consequences}}
 
-A lack of training in data management practices and an absence of agreed upon standards in the field of education leads to consequences. Implementing inconsistent data management practices, while typically only resulting in frustration and time lost, also has the potential to be devastating, resulting in analyzing erroneous data or even unusable or lost data. In a review of 1,082 retracted publications from the journal PubMed from 2013-2016, authors found that 32\% of retractions were due to data management errors \autocite{campos-varela_misconduct_2019}. In a 2013 study surveying 360 graduate students about their data management practices, 14\% of students indicated they had to recollect data that had been previously collected because they could not find a file or the file had been corrupted, while 17\% of students said they had lost a file and been unable to recollect it \autocite{doucette_drowning_2013}. In their 2021 study of 488 researchers who had published in a psychology journal between 2010 and 2018, Kovacs et al. \autocite{kovacs_role_2021} asked respondents about their data management mistakes and found that the most serious data management mistakes reported led to a range of consequences including time loss, frustration, and even erroneous conclusions.
+A lack of training in data management practices and an absence of agreed upon standards in the field of education leads to consequences. Implementing inconsistent data management practices, while typically only resulting in frustration and time lost, also has the potential to be devastating, resulting in analyzing erroneous data or even unusable or lost data. In a review of 1,082 retracted publications from the journal PubMed from 2013-2016, authors found that 32\% of retractions were due to data management errors.\footnote{Isabel Campos-Varela and Alberto Ruano-Raviña, {``Misconduct as the Main Cause for Retraction. A Descriptive Study of Retracted Publications and Their Authors,''} \emph{Gaceta Sanitaria} 33, no. 4 (July 1, 2019): 356--60, \url{https://doi.org/10.1016/j.gaceta.2018.01.009}.} In a 2013 study surveying 360 graduate students about their data management practices, 14\% of students indicated they had to recollect data that had been previously collected because they could not find a file or the file had been corrupted, while 17\% of students said they had lost a file and been unable to recollect it.\footnote{Lise Doucette and Bruce Fyfe, {``Drowning in Research Data: Addressing Data Management Literacy of Graduate Students - {PDF} Free Download,''} 2013, \url{https://docplayer.net/8853333-Drowning-in-research-data-addressing-data-management-literacy-of-graduate-students.html}.} In their 2021 study of 488 researchers who had published in a psychology journal between 2010 and 2018, Kovacs et al.\footnote{Marton Kovacs, Rink Hoekstra, and Balazs Aczel, {``The Role of Human Fallibility in Psychological Research: A Survey of Mistakes in Data Management,''} \emph{Advances in Methods and Practices in Psychological Science} 4, no. 4 (October 2021): 251524592110459, \url{https://doi.org/10.1177/25152459211045930}.} asked respondents about their data management mistakes and found that the most serious data management mistakes reported led to a range of consequences including time loss, frustration, and even erroneous conclusions.
 
-Poor data management can even prevent researchers from implementing other good open science practices. In waves 1 and 2 of the Open Scholarship Survey being collected by the Center for Open Science, the team has found that of the education researchers surveyed who are currently not publicly sharing their research data, about 10\% mentioned ``being nervous about mistakes'' as a reason for not sharing \autocite{osf_cos_2022}. The well known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70\% had tried and failed to reproduce another researcher's study \autocite{eisenstein_pursuit_2022}.
+Poor data management can even prevent researchers from implementing other good open science practices. In waves 1 and 2 of the Open Scholarship Survey being collected by the Center for Open Science, the team has found that of the education researchers surveyed who are currently not publicly sharing their research data, about 10\% mentioned ``being nervous about mistakes'' as a reason for not sharing.\footnote{Open Science Foundation, {``{COS} Engagement with the Education Community''} (2022), \url{https://docs.google.com/presentation/d/1LpyVOj8oJPr3SVkRM2GfCFnl2Qeo10YbbqcqwtwrVUM}.} The well known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70\% had tried and failed to reproduce another researcher's study.\footnote{Monya Baker, {``1,500 Scientists Lift the Lid on Reproducibility,''} \emph{Nature} 533, no. 7604 (May 1, 2016): 452--54, \url{https://doi.org/10.1038/533452a}.}
 
 \hypertarget{about-this-book}{%
 \section{About this book}\label{about-this-book}}
 
-My hope is that this book can be a foundation to help researchers think through how to build a consistent and standardized data management workflow that works for their team and their projects. While the field as a whole may not have agreed upon rules for data management, there are still best practices that are proven to result in more reproducible, reliable, and secure data. While this book cannot remove barriers to implementing good data management practices, such as the complexity of your project or the novelty of the technology you are using \autocite{alston_beginners_2021} it hopefully provides you the knowledge and skills necessary to work in these complex environments.
+While the field as a whole may not have agreed upon guidelines for data management, there are still best practices that are proven to result in more usable, reproducible, and reliable data. My hope is that this book can be a foundation to help researchers think through how to build a quality, standardized data management workflow that works for their team and their projects. As suggested in the title of this book, this content is designed to specifically help teams navigate the complicated workflows associated with large-scale research studies, such as randomized controlled trial studies, but ultimately these practices are applicable to any research project, no matter the scale.
 
-This book should be viewed as a handbook to be referred to regularly and is not necessarily meant to be read in its entirety in one sitting. While perusing through the entire book to better understand the entire research data life cycle is very helpful, this book is also intended to have chapters referenced as needed when you are ready to start planning a specific phase of your project.
+This book should be viewed as a handbook to be referenced regularly and is not necessarily meant to be read in its entirety in one sitting. While perusing through the entire book to better understand the entire research data life cycle is very helpful, this book is also intended to have chapters referenced as needed when you are ready to start planning a specific phase of your project.
 
 \hypertarget{what-this-book-will-cover}{%
 \subsection{What this book will cover}\label{what-this-book-will-cover}}
 
-This book begins, like many other books in this subject area, by describing the research life cycle and how data management fits within the larger picture. The remaining chapters are then organized by each phase of the life cycle, with examples of best practices provided for each phase. Considerations on whether you should implement and how to integrate those practices into your workflow will be discussed.
+This book begins, like many other books in this subject area, by describing the research life cycle and how data management fits within the larger picture. The remaining chapters are then organized by each phase of the life cycle, with examples of best practices provided for each phase. Considerations on whether you should implement, and how to integrate those practices into your workflow will be discussed.
 
 \hypertarget{what-this-book-will-not-cover}{%
 \subsection{What this book will not cover}\label{what-this-book-will-not-cover}}
 
-It is important to also point out what this book will not cover. This book is intended to be tool agnostic and provide suggestions that anyone can use, no matter what tools you work with, especially when it comes to data cleaning. Therefore while I might mention options of tools you can use for different tasks, I will not advocate for any specific tools.
+It is important to also point out what this book will not cover. This book is intended to be tool agnostic and provide suggestions that anyone can use, no matter what tools you work with, especially when it comes to data cleaning. Therefore, while I might mention options of tools you can use for different tasks, I will not advocate for any specific tools.
 
-There are also no specific coding practices or actual syntax included in this book. To be honest, in many ways I feel that the actual ``data cleaning'' phase of data management is the ``easiest'' phase to implement, as long as you implement good practices up until that point. Because of that, this book introduces practices in all phases leading up to data cleaning that will prepare your data for minimal cleaning. With that said, I do provide examples of what I would expect to see in a data cleaning process, I just do not provide steps for any specific software system. That is beyond the scope of this book.
+There are also no specific coding practices or actual syntax included in this book. To be honest, in many ways I feel that the actual ``data cleaning'' phase of data management is the \emph{easiest} phase to implement, as long as you implement good practices up until that point. Because of that, this book introduces practices in all phases leading up to data cleaning that will prepare your data for minimal cleaning. With that said, I do provide examples of what I would expect to see in a data cleaning process, I just do not provide steps for any specific software system. That is beyond the scope of this book.
 
-This book will also not talk about analysis or preparing data for analysis through means such as data imputation or calculating analysis specific variables. This book is written from the perspective of a data manager, and that perspective is to implement practices that keep data in its most true, but usable form, for any future researcher to analyze in a way that works best for them.
+This book will also not talk about analysis or preparing data for analysis through means such as data imputation, removal of legitimate outliers, or calculating analysis specific variables. This book is written from the perspective of a data manager, and that perspective is to implement practices that keep data in its most complete and true, but usable form, for any future researcher to analyze in a way that works best for them.
 
 \hypertarget{who-this-book-is-for}{%
 \section{Who this book is for}\label{who-this-book-is-for}}
@@ -151,7 +187,7 @@ This book is for anyone involved in a research study involving original data col
 \hypertarget{final-note}{%
 \section{Final note}\label{final-note}}
 
-Planning and implementing new data management practices on top of planning the implementation of your entire research grant can feel overwhelming. However, the idea of this book is to find and implement the practices that work for you and your team, and that may be just a few of the suggestions mentioned or all of the suggestions. Improving your data management workflow is a process and it becomes easier over time as those practices become part of your normal routine. At some point you may even find that you enjoy working on data management processes as you start to see the benefits of their implementation!
+Planning and implementing new data management practices on top of planning the implementation of your entire research grant can feel overwhelming. However, the idea of this book is to find the practices that work for you and your team and implement them consistently. For some teams that may look like implementing just a few of the suggestions mentioned and for others it may involve implementing all of the suggestions. Improving your data management workflow is a process and it becomes easier over time as those practices become part of your normal routine. At some point you may even find that you enjoy working on data management processes as you start to see the benefits of their implementation!
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
@@ -170,14 +206,19 @@ Others:
 \hypertarget{what-is-research-data-management}{%
 \section{What is research data management?}\label{what-is-research-data-management}}
 
-Research data management (RDM) involves the broad process of planning and implementing standardized practices across the research life cycle \autocite{borghi_promoting_2022}. The practices of managing data begin long before data is ever collected, during the planning phase, and continue well after a research project ends during the archiving phase.
+Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data.\footnote{Dominic Bordelon, {``Guides: Research Data Management @ Pitt: Understanding Research Data Management,''} accessed October 13, 2022, \url{https://pitt.libguides.com/managedata/understanding}.} Research study data includes materials generated or collected throughout a research process.\footnote{National Endowment for the Humanities, {``Data Managment Plans for {NEH} Office of Digital Humanities Proposals and Awards,''} 2018, \url{https://www.neh.gov/sites/default/files/2018-06/data_management_plans_2018.pdf}.} As you can imagine, this broad definition includes much more than just the management of digital datasets. It also includes physical files, documentation, artifacts, recordings, and more. RDM is a substantial undertaking that begins long before data is ever collected, during the planning phase, and continues well after a research project ends during the archiving phase.
 
-While organizations like Data Documentation Initiative and Dublin Core have developed metadata standards for fields to adopt, it is common knowledge that there are no agreed-upon norms for managing data within and across disciplines within the field of education. The rules for how data should be collected, organized, stored, described, and shared is often left up to each individual team, as long as external requirements of the IRB and funders are met \autocite{tenopir_data_2016-1}. With a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available \autocite{office_of_science_and_technology_policy_ostp_2022}, data repositories will most likely begin to play a stronger role in promoting standards for many data management practices around data formats and documentation \autocite{borghi_promoting_2022}.
+\hypertarget{standards}{%
+\section{Standards}\label{standards}}
+
+Data management standards refer to how data should be stored, organized, and described.\footnote{Borghi and Van Gulick, {``Promoting Open Science Through Research Data Management.''}} While some fields have generally adopted metadata standards developed by organizations such as the Data Documentation Initiative\footnote{{``Welcome to the Data Documentation Initiative {\textbar} Data Documentation Initiative,''} accessed October 21, 2022, \url{https://ddialliance.org/}.} and Dublin Core\footnote{{``{DCMI} Metadata Terms,''} accessed October 21, 2022, \url{https://www.dublincore.org/specifications/dublin-core/dcmi-terms/}.} (we'll talk about this more in documentation {[}\ref{documentation}{]}), and some have adopted data structure standards developed by organizations like the Text Encoding Initiative,\footnote{{``{TEI}: Text Encoding Initiative,''} accessed October 21, 2022, \url{https://tei-c.org/}.} it is common knowledge that there are no agreed-upon norms for how to structure and share data in the field of education.\footnote{IES, {``Frequently Asked Questions about Providing Public Access to Data,''} accessed October 21, 2022, \url{https://ies.ed.gov/funding/datasharing_faq.asp}.} The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external requirements of the IRB and funders are met.\footnote{Carol Tenopir et al., {``Data Management Education from the Perspective of Science Educators,''} \emph{International Journal of Digital Curation} 11, no. 1 (October 6, 2016): 232--51, \url{https://doi.org/10.2218/ijdc.v11i1.389}.} However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available,\footnote{Office of Science \{and\} Technology Policy, {``{OSTP} Issues Guidance to Make Federally Funded Research Freely Available Without Delay. The White House,''} 2022, \url{https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/}.} data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation.\footnote{Borghi and Van Gulick, {``Promoting Open Science Through Research Data Management.''}}
+
+While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
 \hypertarget{why-care-about-research-data-management}{%
 \section{Why care about research data management?}\label{why-care-about-research-data-management}}
 
-Without agreed-upon standards in the field, it is important for research teams to develop their own data management standards that apply within and across all of their projects. There are both external pressures and personal reasons to care about developing research data management standards.
+Without current agreed-upon standards in the field, it is important for research teams to develop their own data management standards that apply within and across all of their projects. Developing internal standards, implemented in a reproducible data management workflow \ref{workflow}, allows practices to be implemented consistently and with fidelity. There are both external pressures and personal reasons to care about developing research data management standards for your projects.
 
 \hypertarget{external-reasons}{%
 \subsection{External Reasons}\label{external-reasons}}
@@ -185,34 +226,34 @@ Without agreed-upon standards in the field, it is important for research teams t
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Funder compliance}: Since 2013, even earlier for the National Science Foundation, most federal agencies that education researchers work with have required a data management plan as part of their funding application. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan for a research study that will result in data that can be shared with confidence, free from errors, uncertainty, or violations of confidentiality. President Obama's May 2013 Executive Order declared that ``the default state of new and modernized government information resources shall be open and machine readable'' \autocite{the_white_house_executive_2013}. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release \autocite{office_of_science_and_technology_policy_ostp_2022}. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing \autocite{borghi_promoting_2022}.
+  \textbf{Funder compliance}: Any researcher applying for federal funding will be required to submit a data management plan (DMP) along with their grant proposal\footnote{Science \{and\} Technology Policy, {``{OSTP} Issues Guidance to Make Federally Funded Research Freely Available Without Delay.''}}. The contents of these plans may vary slightly across agencies but the shared purpose of these documents is to facilitate good data management practices and to mandate open sharing of data to maximize scientific outputs and benefits to society. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing.\footnote{Borghi and Van Gulick, {``Promoting Open Science Through Research Data Management.''}}
 \item
-  \textbf{Journal compliance}: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement. Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
+  \textbf{Journal compliance}: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement (see PLOS ONE\footnote{PLOS One, {``Data Availability,''} n.d., \url{https://journals.plos.org/plosone/s/data-availability}.} as an example). Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
 \item
-  \textbf{Compliance with legal and ethical mandates}: If you are required to submit your research project to the Institutional Review Board, they will monitor how you manage your data. They care about the welfare, rights, and privacy of research participants and will have rules for how data is managed and stored securely.
+  \textbf{Compliance with legal and ethical mandates}: If you are required to submit your research project to the Institutional Review Board, they will monitor how you manage your data. They care about the welfare, rights, and privacy of research participants and will have rules for how data is managed and stored securely. Additionally your organization may have their own institutional data policies that mandate how data must be cared for and secured.\footnote{Association of Academic Health Science Libraries, Association of American Medical Colleges, and Association of Research Libraries, {``Institutional Strategies for the {NIH} Data Management and Sharing Policy: Infrastructure, Policies, and Services,''} September 2022, \url{https://www.aamc.org/media/62881/download?attachment}.}
 \item
-  \textbf{Open science practices}: With a growing interest in open science practices, sharing well managed data, curated in a reproducible way is ``a strong indicator to fellow researchers of rigor, trustworthiness, and transparency in scientific research'' (Alston \& Rick, 2021, p.2 \autocite{alston_beginners_2021}). Sharing data that has been managed in a reproducible way allows others to learn from your work, validate your results to strengthen evidence, as well as potentially catch errors in your work, preventing decisions being made based on incorrect data \autocite{alston_beginners_2021}. Well-managed data with sufficient documentation can also lead to more collaboration and greater impact as collaborators are able to access and understand your data with ease \autocite{borghi_promoting_2022,cowles_research_nodate}.
+  \textbf{Open science practices}: With a growing interest in open science practices, sharing well managed data, curated in a reproducible way is ``a strong indicator to fellow researchers of rigor, trustworthiness, and transparency in scientific research'' (Alston \& Rick, 2021, p.2).\footnote{Jesse M. Alston and Jessica A. Rick, {``A Beginner's Guide to Conducting Reproducible Research,''} \emph{The Bulletin of the Ecological Society of America} 102, no. 2 (April 2021), \url{https://doi.org/10.1002/bes2.1801}.} Sharing data that has been managed in a reproducible way also allows others to learn from your work, validate your results to strengthen evidence, as well as potentially catch errors in your work, preventing decisions being made based on incorrect data.\footnote{Alston and Rick.} Well-managed data with sufficient documentation can also lead to more collaboration and greater impact as collaborators are able to access and understand your data with ease.\footnote{Borghi and Van Gulick, {``Promoting Open Science Through Research Data Management''}; Wind Cowles, {``Research Guides: Research Data Management at Princeton: Home,''} accessed September 15, 2022, \url{https://libguides.princeton.edu/c.php?g=102546\&p=665862}; C. Eaker, {``What Could Possibly Go Wrong? The Impact of Poor Data Management,''} \emph{In Federer, L. (Ed.). The Medical Library Association's Guide to Data Management for Librarians}, 2016, \url{https://trace.tennessee.edu/cgi/viewcontent.cgi?article=1023\&context=utk_libpub}.}
 \end{enumerate}
 
 \hypertarget{personal-reasons}{%
 \subsection{Personal reasons}\label{personal-reasons}}
 
-Even if you never plan to share your data outside of your research group, there are still many compelling reasons to manage your data.
+Even if you never plan to share your data outside of your research group, there are still many compelling reasons to manage your data in a reproducible and standardized way.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Contributes to reproducibility}: Reproducible research ``is a by-product of careful attention to detail throughout the research process'' (Alston \& Rick, 2021, p.2 \autocite{alston_beginners_2021}). Even if you are not concerned with others being able to reproduce your work (which is unlikely), you most likely want you and your team members to be able to reproduce each other's work, ensuring you can trust your results.
+  \textbf{Facilitates use of your data}: Every member of your research team being able to able to find and understand the data and documentation that they need is a huge benefit. It allows for the easy use and re-use of your data, and hastens efforts like the publication process.\footnote{Florian Markowetz, {``Five Selfish Reasons to Work Reproducibly,''} \emph{Genome Biology} 16, no. 1 (December 8, 2015): 274, \url{https://doi.org/10.1186/s13059-015-0850-7}.} Not having to search around for numbers of consented participants or asking which version of the data they should use allows your team to spend more time analyzing and writing and less time playing detective.
 \item
-  \textbf{Improve continuity}: Implementing reproducible practices ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the project left off, and implement the project with fidelity \autocite{borghi_data_2021,cowles_research_nodate}.
+  \textbf{Encourages validation}: Implementing reproducible data management practices encourages and allows your team to internally validate and replicate your processes to ensure your outputs are accurate.
+\item
+  \textbf{Improves continuity}: Data management practices such as documentation ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the former staff member left off and implement the project with fidelity.\footnote{Borghi and Gulick, {``Data Management and Sharing''}; Cowles, {``Research Guides.''}} Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus.\footnote{Markowetz, {``Five Selfish Reasons to Work Reproducibly.''}}
 \item
   \textbf{Increases efficiency}: Documenting and automating tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.
 \item
-  \textbf{Reduces burden and saves time, energy, and resources}: Taking the time to implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices \autocite{butters_recognizing_2020}. Having poorly managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent at the end of your study scrambling to fix errors made in poorly designed data collection instruments, gathering duplicate data that was lost, or documenting efforts long after most information has been forgotten.
+  \textbf{Reduces data curation debt}: Taking the time to implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices.\footnote{Oliver W Butters, Rebecca C Wilson, and Paul R Burton, {``Recognizing, Reporting and Reducing the Data Curation Debt of Cohort Studies,''} \emph{International Journal of Epidemiology} 49, no. 4 (August 1, 2020): 1067--74, \url{https://doi.org/10.1093/ije/dyaa087}.} Having poorly managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent at the end of your study scrambling to get your data up to acceptable standards.
 \item
-  \textbf{Improve efficiency}: Being able to find and understand your data when you need it is a huge benefit. It allows for the use and re-use of your data, and hastens efforts like the publication process. Not having to search around for numbers of consented participants or asking which version of the data you should use allows you to spend more time analyzing and writing and less time playing detective.
-\item
-  \textbf{Increases reliability}: Errors come in many forms, from both humans and technology. Implementing quality control procedures allow you to have confidence in your data. Without implementing these practices, your research findings could include extra noise, missing data, or erroneous or misleading results.
+  \textbf{Upholds research integrity}: Errors come in many forms, from both humans and technology. We've seen evidence of this in the papers cited as being retracted for ``unreliable data'' in the blog \href{https://retractionwatch.com/}{Retraction Watch}. Implementing quality control procedures reduces the chances of errors occurring and allows you to have confidence in your data. Without implementing these practices, your research findings could include extra noise, missing data, or erroneous or misleading results.
 \item
   \textbf{Improves data security}: Quality data management practices reduce the risk of lost or stolen data, the risk of data becoming corrupted or inaccessible, and the risk of breaking confidentiality agreements.
 \end{enumerate}
@@ -220,32 +261,729 @@ Even if you never plan to share your data outside of your research group, there 
 \hypertarget{existing-frameworks}{%
 \section{Existing Frameworks}\label{existing-frameworks}}
 
+Data management does not live in a space all alone. It co-exists with other frameworks that impact how and why data is managed and it is important to be familiar with them as they will provide a foundation for you as you build your data management structures.
+
+\hypertarget{fair}{%
+\subsection{FAIR}\label{fair}}
+
+In 2016, the FAIR Principles\footnote{{``{FAIR} Principles. {GO} {FAIR},''} accessed October 21, 2022, \url{https://www.go-fair.org/fair-principles/}.} were published in Scientific Data, outlining four guiding principles for scientific data management and stewardship. These principles were created to improve and support the reuse of scholarly data, specifically the ability of machines to access and read data, and are the foundation for how all digital data should be publicly shared.\footnote{Mark D. Wilkinson et al., {``The {FAIR} Guiding Principles for Scientific Data Management and Stewardship,''} \emph{Scientific Data} 3, no. 1 (March 15, 2016): 160018, \url{https://doi.org/10.1038/sdata.2016.18}.} The principles are:
+
+F: Findable
+
+All data should be findable through a persistent identifier and have good data documentation. As we move towards automation in our work and life, the need for machine-readable metadata becomes more prevalent for automatic discovery of data.
+
+A: Accessible
+
+You data is accessible if humans can access your data. This can mean your data is available in a repository or through a request system.
+
+I: Interoperable
+
+Use standardized vocabularies as well as formats. Both humans and machines should be able to read and interpret your data. Software licenses should not pose a barrier to usage. Data should be available in open formats that can be accessed by any software such as .csv, .txt, .dat, etc. Furthermore, thorough data documentation should accompany data to allow that data to interoperable.
+
+R: Reusable
+
+Your metadata should provide information on the broad context of your project as well as your data collection to allow for accurate use of your data. You should also have clear licensing for data use.
+
+\hypertarget{seer}{%
+\subsection{SEER}\label{seer}}
+
+In addition to the FAIR principles, the SEER principles, developed in 2018 by Institute of Education Sciences (IES), provide Standards for Excellence in Education Research.\footnote{{``Standards for Excellence in Education Research - Standards for Excellence in Education Research,''} accessed October 21, 2022, \url{https://ies.ed.gov/seer/index.asp}.} While the principles broadly cover the entire life cycle of a research study, they provide context for good data management within an education research study. The SEER principles include:
+
+\begin{itemize}
+\tightlist
+\item
+  Pre-register studies
+\item
+  Make findings, methods, and data open
+\item
+  Identify interventions' core components
+\item
+  Document treatment implementation and contrast
+\item
+  Analyze interventions' costs
+\item
+  Focus on meaningful outcomes
+\item
+  Facilitate generalization of study findings
+\item
+  Support scaling of promising results
+\end{itemize}
+
+\hypertarget{open-science}{%
+\subsection{Open Science}\label{open-science}}
+
+The concept of Open Science has pushed quality data management to the forefront, bringing visibility to its cause, as well as advances in practices and urgency to implement them. Open Science aims to make scientific research and dissemination accessible for all, making the need for good data management practices absolutely necessary. Open science advocates for transparent and reproducible practices through means such as open data, open analysis, open materials, preregistration, and open access.\footnote{Wilhelmina van Dijk, Christopher Schatschneider, and Sara A. Hart, {``Open Science in Education Sciences,''} \emph{Journal of Learning Disabilities} 54, no. 2 (March 2021): 139--52, \url{https://doi.org/10.1177/0022219420945267}.} Organizations such as the Center for Open Science,\footnote{Center for Open Science, {``Center for Open Science,''} accessed October 21, 2022, \url{https://www.cos.io}.} have become a well-known proponents of open science, offering the open science framework (OSF)\footnote{Erin D. Foster and Ariel Deardorff, {``Open Science Framework ({OSF}),''} \emph{Journal of the Medical Library Association : {JMLA}} 105, no. 2 (April 2017): 203--6, \url{https://doi.org/10.5195/jmla.2017.88}.} as a tool to promote open science through the entire research life cycle. Furthermore, many education funders have aligned their fundee requirements with these open science practices, such as openly sharing study data and pre-registration of study methods.
+
 \hypertarget{terminology}{%
 \section{Terminology}\label{terminology}}
+
+Before diving into the content of this training, I think it is helpful to cover terminology that will be used in data management. Many concepts in education research have multiple terms and can be used interchangeably. Across different institutions, researchers may use all or some of these terms.
+
+\begin{longtable}{lll}
+\toprule
+Term & Other Terms & Definition \\ 
+\midrule
+Anonymous data & NA & Identifying information was never collected. This data can not be linked across time or measures. \\ 
+Append & NA & Stacking datasets on top of each other (matching variables). \\ 
+Archive & NA & The transfer of data to a facility, such as a repository, that preserves and stores data long-term. \\ 
+Attrition & NA & The loss of study units from the sample, often seen in longitudinal studies. \\ 
+Clean data & processed data & Any data that has been manipulated or modified. \\ 
+Cohort & NA & A group of participants recruited into the study at the same time. \\ 
+Confidential data & pseudonymisation, coded data, indirectly identifiable & Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data. \\ 
+Confidentiality & NA & Confidentiality concerns data. Ensuring participants agree to how their private and identifable information will be managed and disseminated. \\ 
+Control & business as usual & The individual or group does not receive the intervention. \\ 
+Cross-sectional & NA & Data is collected on participants for a single time point. \\ 
+Data & research data & The recorded factual material commonly accepted in the scientific community as necessary to validate research findings (OMB Circular A-110). \\ 
+Database & relational database & An organized collection of related data stored in tables that can be linked together by a common identifier. \\ 
+Dataset & dataframe, spreadsheet & A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (ex: teacher dataset, student dataset). \\ 
+De-identified data & anonymized data & Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists). \\ 
+Derived Data & NA & Data created through transformations of existing data. \\ 
+Directory & file structure & A cataloging structure for files and folders on your computer. \\ 
+Experimental Data & NA & Data collected from a study where researchers randomly introduce an intervention and study the effects. \\ 
+Extant Data & NA & Existing data sources created from external to the research team/study. \\ 
+File formats & NA & Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav). \\ 
+Identifiable data & NA & Data that includes personally identifiable information. \\ 
+Longitudinal & NA & Data is collected on participants over a period of time. \\ 
+Merge & join, link & Combining datasets together in a side by side manner (matching on an identifier). \\ 
+Missing data & NA & Occurs when there is no data stored in a variable for a particular observation/respondent. \\ 
+Observational Data & NA & Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention \\ 
+Participant database & study roster, demographic file, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking & This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition. \\ 
+Path & file path & A string of characters used to locate files in your directory system. \\ 
+PII & NA & Personally identifiable information is protected information that can directly or indirectly identify a study participant. It includes but is not limited to name, social security number, email, birthdate, district or school name. \\ 
+Privacy & NA & Privacy concerns people. Ensuring others are given control to the access of themselves and their information. \\ 
+Qualitative data & NA & Non-numeric data typically made up of text, images, video or other artifacts. \\ 
+Quantitative data & NA & Numerical data that can be analyzed with statistical methods. \\ 
+Randomized Controlled Trial & RCT & A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized. \\ 
+Raw data & primary, untouched & Unprocessed data collected directly from a source. \\ 
+Replicable & NA & Being able to produce the same results if the same procedures are used with different materials. \\ 
+Reproducible & NA & Being able to produce the same results using the same materials and procedures. \\ 
+Simulation Data & NA & Data generated through imitations of a real-world process using computer models. \\ 
+Standardization & NA & Developing a set of agreed upon technical standards and applying them within and across all research projects. \\ 
+Study & NA & a single funded research project resulting in one more more datasets to be used to answer a research question. \\ 
+Study ID & participant ID, location ID, site ID, unique identifier (UID), subject ID, participant code, record id & This is a numeric or alphanumeric identifier that is unique to every participant, site or object in order to create confidential and de-identified data. These identifiers allow researchers to link data across time or measure. \\ 
+Subject & case, participant, site, record & A person or place participating in research and has one or more piece of data collected on them. \\ 
+Syntax & code, program & Programming statements written in a text editor. The statements are machine-readable instructions processed by your computer. \\ 
+Treatment & experiment & The individual or group receives the intervention. \\ 
+Variable & column, field, question & Any phenomenon you are collecting information on/trying to measure. These variables will make up columns in your datasets or databases. \\ 
+Variable name & header & A shortened symbolic name given the variable in your data to represent the information it contains. \\ 
+Wave & time period, time point, event, session & Intervals of data collection over time. \\ 
+\bottomrule
+\end{longtable}
 
 \hypertarget{the-research-life-cycle}{%
 \section{The Research Life Cycle}\label{the-research-life-cycle}}
 
-\hypertarget{dmp}{%
-\chapter{Data Management Plan}\label{dmp}}
+The remainder of this book will be organized into chapters that dive into phases of the research data life cycle. It is imperative to understand this research life cycle in order to see the flow of data through a project, as well as to see how everything in a project is connected. If phases are skipped, the whole project will suffer.
+
+You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/cl_lifecycle} 
+
+}
+
+\caption{The research project life cycle}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+Let's walk through this chart.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In a typical study we first begin by \textbf{generating ideas}, deciding what we want to study.
+\item
+  Then, most likely, we will look for funding to implement that study. This is where the two paths begin to diverge. If the team is applying for federal funding, the proposal and budget are created in the project management track, while the 2-5 page required \textbf{data management plan} (DMP) is created in the data track. Again, it may be the same people working on both of these pieces.
+\item
+  Next, if the project is funded, the project team will begin planning things such as hiring, recruitment, data collection, and how to implement the intervention. At the same time, those working on the data team will begin to \textbf{plan} out how to specifically implement the 2-5 page DMP submitted to their funder and start putting any necessary structures into place.
+\item
+  Once planning is complete, the team moves into the cycle of data collection. It is called a cycle because if your study is longitudinal, every step here will occur cyclically. Once one phase of data collection wraps up, the team re-enters the cycle again for the next phase of data collection, until all data collection is complete for the entire project.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The data management and project management team begin the cycle by starting \textbf{documentation}. You can see that this phase occurs collaboratively because it is denoted with a double outline. Both teams begin developing documentation like data dictionaries, style guides, and protocols.
+  \item
+    Once documentation is started, both teams begin to create any necessary \textbf{data collection instruments}. These instruments will be created with input from the documentation. During this phase the team may also develop their participant tracking database.
+  \item
+    Next, the project management team moves into the \textbf{data collection} phase. This may involve recruitment and consenting, as well as data collection. At this point, the data management team just provides support as needed.
+  \item
+    As data is collected, the project team will \textbf{track data} as it is collected in the participant tracking database. The data management team will collaborate with the project management team to help troubleshoot anything related to the actual tracking database.
+  \item
+    Next, once data is collected, the teams move into the \textbf{data capture} phase. This is where teams are actively retrieving or converting data. For electronic data this may look like downloading data from a platform or having data sent to the team via a secure transfer. For physical data, this may look like teams entering paper data into a database. Oftentimes, this again is a collaborative effort between the project management team and the data team.
+  \item
+    Once the data is captured, it needs to be \textbf{stored}. While the data team may be in charge of setting up and monitoring the storage efforts, the project team may be the ones actively retrieving and storing the data.
+  \item
+    Next the teams move into the \textbf{cleaning and validation} phase. At this time the data team is reviewing data cleaning plans, writing data cleaning scripts and actively cleaning data from the most recent data collection round.
+  \item
+    And last, the data team will \textbf{version} data as it is updated or errors are found.
+  \end{itemize}
+\item
+  The teams then only move out of the active data collection phase when all data collection for the project is complete. At this time the project team begins analyzing study data and working on publications. They are able to do this because of the organized processes implemented during the data collection cycle. Since data was managed and cleaned throughout, data is ready for analysis as soon as data collection is complete. Then, while the project team is analyzing data, the data team is doing any additional \textbf{preparation to archive} data for public sharing.
+\item
+  Last, the team submits data for \textbf{public sharing}.
+\end{enumerate}
+
+As you work through the remaining chapters of this book, this chart will be a guide to navigating where each phase of practices fits into the larger picture.
+
+\hypertarget{data-structure}{%
+\chapter{Data Structure}\label{data-structure}}
+
+Because data management is made up of just that, data, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize our data management process, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable data.
+
+\hypertarget{basics-of-a-dataset}{%
+\section{Basics of a dataset}\label{basics-of-a-dataset}}
+
+In education research, data is often collected internally by your team using an instrument such as a questionnaire, an observation, an interview, or an assessment. However, data may also be collected from external entities, such as districts, states, or other agencies.
+
+Those data come in many forms (ex: video, transcripts, documents, files), represented as text, numbers, or multimedia.\footnote{USGS, {``What Are the Differences Between Data, a Dataset, and a Database? {\textbar} u.s. Geological Survey,''} accessed October 17, 2022, \url{https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database}.} In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. These datasets are organized in a rectangular format which allow the data to be machine readable. Even in qualitative research, we are often wrangling data to be in a format that is analyzable and allows categorization.
+
+These rectangular (also called tabular) datasets are made up of columns and rows.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{img/rectangle} 
+
+}
+
+\caption{Basic format of a dataset}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+\hypertarget{columns}{%
+\subsection{Columns}\label{columns}}
+
+The columns in your dataset will consist of one or both of the following types of variables:
+
+\begin{itemize}
+\tightlist
+\item
+  Variables you collect (from an instrument or from an external source)
+\item
+  Variables you create/add (ex: cohort, intervention, time, derivations)
+\end{itemize}
+
+Unless your data is collected anonymously, every dataset \textbf{must} also have the following:
+
+\begin{itemize}
+\tightlist
+\item
+  One or more variables that are \textbf{unique identifiers}, sometimes called primary keys. These are variables that uniquely define rows in your dataset (i.e.~help you identify duplicate rows).
+\item
+  If you plan to link datasets across entities (ex: link teachers to schools or students to teachers) then you will also need secondary unique identifiers in your dataset (also called foreign keys) that allow you to link across datasets.
+\end{itemize}
+
+We will talk more about creating these identification variables in our data tracking section \ref{ids}.
+
+\hypertarget{column-attributes}{%
+\subsubsection{Column attributes}\label{column-attributes}}
+
+It is important to know that variables have the following attributes:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss Style Guides \ref{style}.
+\item
+  A measurement type (ex: numeric, character, date) which can also be more narrowly defined as needed (ex: continuous, categorical)
+\item
+  Acceptable values (ex: yes/no) or expected ranges (ex: 1-25 or 2021-08-01 to 2021-12-15). Anything outside of those acceptable values or ranges is considered an error.
+\item
+  Labels, descriptions of what the variable represents. This may be a label that you as the variable creator assigns (ex: ``Treatment condition'') or they may be the actual wording of an item (ex: ``Do you enjoy pizza?'').
+\end{enumerate}
+
+\hypertarget{rows}{%
+\subsection{Rows}\label{rows}}
+
+The rows in your dataset are aligned with participants or cases in your data. Participants in your data may be students, teachers, schools, locations, and so forth. The unique identifier variable mentioned above will denote which row belongs to which participant.
+
+\hypertarget{cells}{%
+\subsection{Cells}\label{cells}}
+
+The cells are the observations associated with each participant. Cells are made up of key/value pairs, created at the intersection of a column and a row. Consider an example where we collect a survey from students in the fall of 2022. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value/observation that corresponds to that row/column pair (that participant and that question).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/cell_value} 
+
+}
+
+\caption{Representation of a cell value}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+\hypertarget{dataset-organization-rules}{%
+\section{Dataset organization rules}\label{dataset-organization-rules}}
+
+In order for your dataset to be machine-readable and analyzable, it should adhere to a set of structural rules.\footnote{Karl W. Broman and Kara H. Woo, {``Data Organization in Spreadsheets,''} \emph{The American Statistician} 72, no. 1 (January 2, 2018): 2--10, \url{https://doi.org/10.1080/00031305.2017.1375989}; Hadley Wickham, {``Tidy Data,''} \emph{Journal of Statistical Software} 59 (September 12, 2014): 1--23, \url{https://doi.org/10.18637/jss.v059.i10}.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/rectangle2} 
+
+}
+
+\caption{A comparison of non-rectangular and rectangular data}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Your columns should adhere to your variable type.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    For example, if you have a numeric variable, such as age, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/var_type} 
+
+}
+
+\caption{A comparison of variables adhering and not adhering to a data type}\label{fig:unnamed-chunk-4}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You lose the granularity of the information (ex: \texttt{location} = \texttt{Los\ Angeles,\ CA} is less granular than having a \texttt{city} variable and a \texttt{state} variable separately)
+  \item
+    Your variable may become unanalyzable (ex: a variable with a value \texttt{220/335} is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a \texttt{rate} variable with a value of \texttt{.657}.
+  \item
+    You may lose the variable type (ex: if you want an \texttt{incident\_rate} variable to be numeric, and you assign a value of \texttt{220/335}, that variable is no longer numeric)
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/two_things} 
+
+}
+
+\caption{A comparison of two things being measured in one variable and two things being measured across two variables}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  All cell values should be explicit. This means all cells should be filled in with a physical value.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    No cells should be empty
+
+    \begin{itemize}
+    \tightlist
+    \item
+      If a value is actually missing, make sure it contains a value to denote the missing data (ex: NA) to show that the cell was not left blank unintentionally\\
+    \item
+      If a cell is left empty because it is ``implied'' to be the same value as above, the cells should be filled with the actual data\\
+    \item
+      If the value for the cell is ``implied'' to be 0, fill the cells with 0
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/explicit} 
+
+}
+
+\caption{A comparison of of variables with empty cells and variables with not empty cells}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  No values should be implied using color coding
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you want to indicate information, add an indicator variable to do this rather than cell coloring
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/cell_color} 
+
+}
+
+\caption{A comparison of variables with implicit values and variables with explicit values}\label{fig:unnamed-chunk-7}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Your data should not contain duplicate rows. You do not want duplicate rows of a measurement collected \textbf{on the same participant}, \textbf{at the same time period}. Different types of duplicate rows can occur:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A true duplicate row where an entire row is duplicated (the row values are the same for every variable). This may happen if someone enters the same form twice.
+  \item
+    A unique identifier is duplicated but the row values may or may not be the same across all of the variables. This could happen because one of three reasons:
+
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+      An instrument is accidentally collected more than once on the same participant in a collection period. This type of duplicate would need to be remedied.
+    \item
+      A unique identifier was entered incorrectly. In this case you don't actually have a duplicate, you just have an incorrect unique identifier. This error would need to be remedied.
+    \item
+      More than one variable is used to identify unique participants and the row is not actually a duplicate.
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Take for example a student id and a class id. Multiple unique identifiers may be used if data is collected on participants in multiple locations and treated as unique data. In this case, the data is not truly duplicate because the combined identifiers are unique.
+      \item
+        Another example of this is if your data is organized in long format (discussed below \ref{structure}). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
+      \end{itemize}
+    \end{enumerate}
+  \end{itemize}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/duplicate} 
+
+}
+
+\caption{A comparison of data with duplicate cases and data with no duplicate cases}\label{fig:unnamed-chunk-8}
+\end{figure}
+
+\hypertarget{linking-data}{%
+\section{Linking data}\label{linking-data}}
+
+Up until now we have been talking about one, standalone dataset. However, it is more likely that your research project will be made up of multiple datasets, collected from different participants, from a variety of instruments, and possibly across different time points. And at some point you will most likely need to link those datasets together.
+
+In order to think about how to link data, we need to discuss two things: data structure and database design.
+
+\hypertarget{database-design}{%
+\subsection{Database design}\label{database-design}}
+
+A database is ``an organized collection of data stored as multiple datasets.''\footnote{USGS, {``What Are the Differences Between Data, a Dataset, and a Database? {\textbar} u.s. Geological Survey.''}} Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.
+
+In database terminology, each dataset we have is considered a ``table''. And each table has a primary key that identifies unique entries within a table and each table can be connected through both primary and foreign keys. This linking of tables creates a relational database and we will talk more about this structure when we discuss participant data tracking \ref{tracking}.
+
+Let's take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students (a survey and an assessment) in one time period. The image below shows what variables were collected from each instrument and how each table can be linked together through a primary key (circled in yellow).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/link0} 
+
+}
+
+\caption{Linking data through primary keys}\label{fig:unnamed-chunk-9}
+\end{figure}
+
+However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (ex: students, nested in classrooms, nested in schools, and so on). Let's take another example where we collected data from three instruments, a student assessment, a teacher survey, and a school intake form. The image below shows what variables exist in each dataset (with primary keys still being circled in yellow) and how each table can be linked together through a foreign key (circled in blue).
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/link1} 
+
+}
+
+\caption{Linking data through foreign keys}\label{fig:unnamed-chunk-10}
+\end{figure}
+
+And as you can imagine, as we add more forms, or begin to collect data across time, the database structure begins to become even more complex. Here is another example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/link2} 
+
+}
+
+\caption{Linking data through primary and foreign keys}\label{fig:unnamed-chunk-11}
+\end{figure}
+
+\hypertarget{structure}{%
+\subsection{Data structure}\label{structure}}
+
+When it comes time to link our data, there are two ways we often think about linking or structuring our data, wide or long.
+
+\textbf{Wide format}
+
+When we structure our data in a wide format, all data collected on a unique participant will be in one row. Participants should \textbf{not} be duplicated in your data in this format.
+
+This type of format can be used for the following situations:
+
+\begin{itemize}
+\tightlist
+\item
+  To link forms within time\\
+\item
+  To link forms across time\\
+\item
+  To link forms across participants
+\end{itemize}
+
+The easiest scenario to think about this format is with repeated measure data. If we collect a survey on participants in both wave 1 and 2, those waves of data will all be in the same row (joined together on a unique ID) and each wave of data collection will be appended to a variable name to create unique variable names. We will dive deeper into different types of joins in our data cleaning section \ref{clean}.
+
+Limitations: It is important to note here, that if your data do not have unique identifiers (primary and/or foreign keys), you will be unable to merge data in a wide format.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{img/wide} 
+
+}
+
+\caption{Data structured in wide format}\label{fig:unnamed-chunk-12}
+\end{figure}
+
+\textbf{Long format}
+
+In education research, long data is mostly used as a specific way to structure data that is collected over time. In long data a participant can and will repeat in your dataset.
+
+Again, the most straight forward way to think about this is with repeated measure data, where each row will be a new time point for a participant. Here instead of merging forms on a unique id, we stack forms on top of each other, often called appending data. Rows are stacked on top of one another and variables are aligned by variable name. Now instead of linking data by an id, data is now ``linked'' by variable names. It is important here that variable names and types stay identical over time in order for this structure to work.
+
+In this scenario, we no longer add the data collection wave to variable names. However, we would need to add a time period variable to denote the wave associated with each row of data.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{img/long} 
+
+}
+
+\caption{Data structured in long format}\label{fig:unnamed-chunk-13}
+\end{figure}
+
+\textbf{Choosing wide vs long}
+
+There are different reasons for constructing your data one way or another. And it may be that you store or share your data in one format, and then restructure data into another format when it comes time for analysis.
+
+Storing data in long format is usually considered to be more efficient, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject.\footnote{Karen Grace-Martin, {``The Wide and Long Data Format for Repeated Measures Data. The Analysis Factor,''} October 4, 2013, \url{https://www.theanalysisfactor.com/wide-and-long-data/}.} We will further review decision making around data structure in our data cleaning chapter \ref{clean}.
+
+\hypertarget{file-types}{%
+\section{File types}\label{file-types}}
+
+These rectangular datasets can be saved in a variety of file types. Some common file types in education research include interoperable formats such as .csv, .txt, .dat, or .tsv, or proprietary formats such as .xlsx, .sav, or .dta.
+
+When you save your files, they will have a file size. Both the number of columns as well as the number of rows in your dataset will contribute to your file size. Just to get a feel for what size your files might be, small datasets (for example 5 columns and \textless100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000-5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata (such as variable and value labels), such as a .sav file, will greatly increase your file size. We will talk about the pros and cons to different file formats in the chapter on data sharing \ref{datasharing}.
+
+\hypertarget{data-management-plan}{%
+\chapter{Data Management Plan}\label{data-management-plan}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/lifecycle_dmp} 
+
+}
+
+\caption{Data management plan in the research project life cycle}\label{fig:unnamed-chunk-1}
+\end{figure}
 
 \hypertarget{history-and-purpose}{%
 \section{History and purpose}\label{history-and-purpose}}
 
+Since 2013, even earlier for the National Science Foundation, most federal agencies that education researchers work with have required a data management plan as part of their funding application. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan for a research study that will result in data that can be shared with confidence, and free from errors, uncertainty, or violations of confidentiality. President Obama's May 2013 Executive Order declared that ``the default state of new and modernized government information resources shall be open and machine readable.''\footnote{The White House, {``Executive Order -- Making Open and Machine Readable the New Default for Government Information. Whitehouse.gov,''} May 9, 2013, \url{https://obamawhitehouse.archives.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-}.} In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release.\footnote{Science \{and\} Technology Policy, {``{OSTP} Issues Guidance to Make Federally Funded Research Freely Available Without Delay.''}}
+
+\hypertarget{why-are-dmps-important}{%
+\subsection{Why are DMPs important?}\label{why-are-dmps-important}}
+
+Funding agencies see DMPs as important in maximizing scientific outputs from investments and increasing transparency. Mandating data sharing for federally funded projects leads to many benefits including accelerating discovery, greater collaboration, and building trust among data creators and users. In addition to the benefits viewed by funders, there are intrinsic benefits that come from having to write a data management plan. Having to thoughtfully plan and having transparency in that plan leads to better data management. Knowing that you will eventually be sharing your data and documentation with others outside of your team can motivate researchers to think hard about how to organize their data management practices in a way that will produce data that they trust to share with the outside world\footnote{{``Creating a Data Management Plan ({DMP}) Document - {OSF} Support,''} accessed October 28, 2022, \url{https://help.osf.io/article/144-creating-a-data-management-plan-dmp-document}.}.
+
 \hypertarget{what-is-it}{%
 \section{What is it?}\label{what-is-it}}
 
-\hypertarget{why-are-dmps-important}{%
-\section{Why are DMPs important?}\label{why-are-dmps-important}}
+Generally, a data management plan is a supplemental 2-5 page document, submitted with your grant application, that contains details about how you plan to store, manage, and share your research data products. For most funders these DMPs are not part of the scoring process, but they are reviewed by a panel or program officer. Some funders may provide feedback or ask for revisions if they believe your plan and/or your budget and associated costs are not adequate.
 
 \hypertarget{what-to-include}{%
-\section{What to include?}\label{what-to-include}}
+\subsection{What to include?}\label{what-to-include}}
+
+What to include in a DMP varies some across funding agencies. While you should check each funding agency's site for their specific DMP requirements, there are typically 10 common categories covered in a data management plan. Those categories are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Roles and responsibilities
+
+  \begin{itemize}
+  \tightlist
+  \item
+    What are the staff roles in management and long-term preservation of data?
+  \item
+    Who ensures accessibility, reliability, and quality of data?
+  \item
+    Is there a plan if a core team member leaves the project or institution?
+  \end{itemize}
+\item
+  Types of data
+
+  \begin{itemize}
+  \tightlist
+  \item
+    How is data captured? (Ex: surveys, assessments, observations)
+  \item
+    Will data be item-level and summary scores?
+  \item
+    Will you share raw data and clean data?
+  \item
+    What are the expected number of files? Expected number of rows in each file?
+  \end{itemize}
+\item
+  Format of data
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Will data be in an electronic format?
+  \item
+    Will it be provided in a non-proprietary format? (Ex: csv)
+  \item
+    Will more than one format be provided? (Ex: sav and csv)
+  \item
+    Are there any tools needed to manipulate shared data?
+  \end{itemize}
+\item
+  Documentation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    What metadata will you create? (Consider project level, dataset level and variable level metadata)
+  \item
+    What format will your documentation be in? (Ex: xml, csv, pdf)
+  \item
+    What other documentation do you plan to include when sharing data? (Ex: code, data collection instruments, protocols)
+  \end{itemize}
+\item
+  Standards
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Are there any data or documentation standards being used? (Ex: DDI)
+  \end{itemize}
+\item
+  Method of data sharing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    How will you share your data? (Ex: Institutional archive, data repository, PI website)
+  \item
+    Will data be restricted and is a data enclave required?
+  \item
+    Is a data agreement required?
+  \item
+    How will you license your data?
+  \item
+    Will your data have persistent unique identifiers?
+  \end{itemize}
+\item
+  Circumstances preventing data sharing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Do you have any data covered by FERPA/HIPAA that doesn't allow data sharing?
+  \item
+    Do you work with any partners that do not allow you to share data? (Ex: School districts, tribal regulations)
+  \item
+    Are you working with proprietary data?
+  \end{itemize}
+\item
+  Privacy and rights of participants
+
+  \begin{itemize}
+  \tightlist
+  \item
+    How will you prevent disclosure of personally identifiable information when you share data? How will you anonymize data (if applicable)?
+  \item
+    Do participants sign informed consent agreements? Does the consent communicate how participant data are expected to be used and shared?
+  \end{itemize}
+\item
+  Data security
+
+  \begin{itemize}
+  \tightlist
+  \item
+    How will you maintain participant privacy and confidentiality during your project?
+  \item
+    How will you prevent unauthorized access of data?
+  \item
+    Consider IRB requirements here.
+  \end{itemize}
+\item
+  Schedule for data sharing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    When will you share your study data and for how long?
+  \end{itemize}
+\item
+  Pre-registration (less commonly required)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Where and when will you pre-register your study?
+  \end{itemize}
+\end{enumerate}
+
+Again, the specifics of what should be included in each category will vary by funder. Here are sites to visit to learn more about the four most common federal education research funder DMP requirements.
+
+\begin{itemize}
+\tightlist
+\item
+  Institute of Education Sciences\footnote{Institute of Education Sciences, {``Data Sharing,''} accessed October 27, 2022, \url{https://ies.ed.gov/funding/datasharing_implementation.asp}.}
+\item
+  National Institutes of Health\footnote{National Institutes of Health, {``Writing a Data Management \& Sharing Plan {\textbar} Data Sharing,''} accessed October 27, 2022, \url{https://sharing.nih.gov/data-management-and-sharing-policy/planning-and-budgeting-DMS/writing-a-data-management-and-sharing-plan}.}
+\item
+  National Institute of Justice\footnote{National Institute of Justice, {``Data Archiving. National Institute of Justice,''} accessed October 27, 2022, \url{https://nij.ojp.gov/funding/data-archiving}.}
+\item
+  National Science Foundation\footnote{National Science Foundation, {``Data Management for {NSF} {EHR} Directorate Proposals and Awards,''} 2017, \url{https://www.nsf.gov/bfa/dias/policy/dmpdocs/ehr.pdf}.}
+\end{itemize}
 
 \hypertarget{getting-help}{%
 \section{Getting help}\label{getting-help}}
 
+When constructing your DMP it may be important to enlist help. If you have a data manager or data team, you will most certainly want to consult with them when writing your plan. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. And last, if you plan to share your final data with a repository or institutional archive you will want to contact your repository when writing your plan as well. The repository may have its own requirements for how and when data must be shared and it is helpful to outline those guidelines in your data management plan at the time of submission. You can also specifically write the name of your repository into your data management plan as well. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
+
+Your DMP is a living document and you can always update your plan during or after your project completion. It may be helpful to keep in contact with your program officer regarding any potential changes throughout your project.
+
+If you are looking for guidance in writing a DMP, a variety of generic DMP templates for different federal agencies are available from the University of Virginia Library\footnote{University of Virginia Library Research Data Services, {``Data Management Plan Templates {\textbar} University of Virginia Library Research Data Services + Sciences,''} accessed October 27, 2022, \url{https://data.library.virginia.edu/data-management-plan-templates/}.}. There is also a well-known free online application called the DMPTool\footnote{{``{DMPTool},''} accessed October 27, 2022, \url{https://dmptool.org/}.} that guides you in constructing a data management plan for many of the large funding agencies you might work with. Their site also has many searchable public DMPs that you can review for inspiration.
+
 \hypertarget{budgeting}{%
 \section{Budgeting}\label{budgeting}}
+
+As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to list these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and can range from infrastructure costs, such as fees for storage or software, to the salaries required to pay personnel to prepare FAIR datasets that are acceptable for data sharing.
+
+It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. Luckily a few organizations have developed resources to aid in estimating those costs. The UK Data Service\footnote{UK Data Service, {``Data Management Costing Tool and Checklist,''} 2022, \url{https://ukdataservice.ac.uk//app/uploads/costingtool.pdf}.}, the University of Twente\footnote{University of Twente, {``How to Estimate Research Data Management ({RDM}) Costs,''} n.d., \url{https://www.utwente.nl/en/service-portal/services/lisa/resources/files/library-public/dcc-rdm-costs-estimation.pdf}.}, and Utrecht University\footnote{Utrecht University, {``Costs of Data Management - Research Data Management Support - Utrecht University,''} accessed October 27, 2022, \url{https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management}.} (among others), have put together checklists to help you think through your various potential data management costs.
 
 \hypertarget{planning-data-management}{%
 \chapter{Planning Data Management}\label{planning-data-management}}
@@ -288,6 +1026,21 @@ Even if you never plan to share your data outside of your research group, there 
 
 \hypertarget{variable-level}{%
 \section{Variable Level}\label{variable-level}}
+
+\hypertarget{data-tracking}{%
+\chapter{Data Tracking}\label{data-tracking}}
+
+\hypertarget{why-track-data}{%
+\section{Why track data?}\label{why-track-data}}
+
+\hypertarget{build-a-system}{%
+\section{Build a system}\label{build-a-system}}
+
+\hypertarget{ids}{%
+\section{Creating participant IDs}\label{ids}}
+
+\hypertarget{when-to-build-it-who-builds-it-tools-to-build-it-in}{%
+\section{When to build it, who builds it, tools to build it in}\label{when-to-build-it-who-builds-it-tools-to-build-it-in}}
 
 \hypertarget{data-collection}{%
 \chapter{Data Collection}\label{data-collection}}
@@ -352,8 +1105,8 @@ Even if you never plan to share your data outside of your research group, there 
 \hypertarget{foundational-knowledge}{%
 \section{Foundational knowledge}\label{foundational-knowledge}}
 
-\hypertarget{data-structure}{%
-\section{Data structure}\label{data-structure}}
+\hypertarget{data-structure-1}{%
+\section{Data structure}\label{data-structure-1}}
 
 \hypertarget{data-cleaning-plan}{%
 \section{Data cleaning plan}\label{data-cleaning-plan}}
@@ -403,6 +1156,155 @@ Even if you never plan to share your data outside of your research group, there 
 \hypertarget{appendices}{%
 \chapter{Appendices}\label{appendices}}
 
-\printbibliography
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-association_of_academic_health_science_libraries_institutional_2022}{}}%
+Academic Health Science Libraries, Association of, Association of American Medical Colleges, and Association of Research Libraries. {``Institutional Strategies for the {NIH} Data Management and Sharing Policy: Infrastructure, Policies, and Services,''} September 2022. \url{https://www.aamc.org/media/62881/download?attachment}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-alston_beginners_2021}{}}%
+Alston, Jesse M., and Jessica A. Rick. {``A Beginner's Guide to Conducting Reproducible Research.''} \emph{The Bulletin of the Ecological Society of America} 102, no. 2 (April 2021). \url{https://doi.org/10.1002/bes2.1801}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-baker_1500_2016}{}}%
+Baker, Monya. {``1,500 Scientists Lift the Lid on Reproducibility.''} \emph{Nature} 533, no. 7604 (May 1, 2016): 452--54. \url{https://doi.org/10.1038/533452a}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bordelon_guides_nodate}{}}%
+Bordelon, Dominic. {``Guides: Research Data Management @ Pitt: Understanding Research Data Management.''} Accessed October 13, 2022. \url{https://pitt.libguides.com/managedata/understanding}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-borghi_data_2021}{}}%
+Borghi, John A., and Ana E. Van Gulick. {``Data Management and Sharing: Practices and Perceptions of Psychology Researchers.''} \emph{{PLOS} {ONE}} 16, no. 5 (May 21, 2021): e0252047. \url{https://doi.org/10.1371/journal.pone.0252047}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-borghi_promoting_2022}{}}%
+Borghi, John, and Ana Van Gulick. {``Promoting Open Science Through Research Data Management.''} \emph{Harvard Data Science Review}, July 28, 2022. \url{https://doi.org/10.1162/99608f92.9497f68e}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-briney_data_2015}{}}%
+Briney, Kristin. \emph{Data Management for Researchers: Organize, Maintain and Share Your Data for Research Success}. Research Skills Series. Exeter, {UK}: Pelagic Publishing, 2015.
+
+\leavevmode\vadjust pre{\hypertarget{ref-broman_data_2018}{}}%
+Broman, Karl W., and Kara H. Woo. {``Data Organization in Spreadsheets.''} \emph{The American Statistician} 72, no. 1 (January 2, 2018): 2--10. \url{https://doi.org/10.1080/00031305.2017.1375989}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-butters_recognizing_2020}{}}%
+Butters, Oliver W, Rebecca C Wilson, and Paul R Burton. {``Recognizing, Reporting and Reducing the Data Curation Debt of Cohort Studies.''} \emph{International Journal of Epidemiology} 49, no. 4 (August 1, 2020): 1067--74. \url{https://doi.org/10.1093/ije/dyaa087}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-campos-varela_misconduct_2019}{}}%
+Campos-Varela, Isabel, and Alberto Ruano-Raviña. {``Misconduct as the Main Cause for Retraction. A Descriptive Study of Retracted Publications and Their Authors.''} \emph{Gaceta Sanitaria} 33, no. 4 (July 1, 2019): 356--60. \url{https://doi.org/10.1016/j.gaceta.2018.01.009}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ceviren_ceviren_logan_ehe_forum_2022pdf_2022}{}}%
+Ceviren, A. Busra, and Jessica Logan. {``Ceviren\_logan\_EHE\_forum\_2022.pdf.''} Presentation. presentation, April 4, 2022. \url{https://doi.org/10.6084/m9.figshare.19514368.v1}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-cowles_research_nodate}{}}%
+Cowles, Wind. {``Research Guides: Research Data Management at Princeton: Home.''} Accessed September 15, 2022. \url{https://libguides.princeton.edu/c.php?g=102546\&p=665862}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_creating_nodate}{}}%
+{``Creating a Data Management Plan ({DMP}) Document - {OSF} Support.''} Accessed October 28, 2022. \url{https://help.osf.io/article/144-creating-a-data-management-plan-dmp-document}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_dcmi_nodate}{}}%
+{``{DCMI} Metadata Terms.''} Accessed October 21, 2022. \url{https://www.dublincore.org/specifications/dublin-core/dcmi-terms/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-van_dijk_open_2021}{}}%
+Dijk, Wilhelmina van, Christopher Schatschneider, and Sara A. Hart. {``Open Science in Education Sciences.''} \emph{Journal of Learning Disabilities} 54, no. 2 (March 2021): 139--52. \url{https://doi.org/10.1177/0022219420945267}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_dmptool_nodate}{}}%
+{``{DMPTool}.''} Accessed October 27, 2022. \url{https://dmptool.org/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-doucette_drowning_2013}{}}%
+Doucette, Lise, and Bruce Fyfe. {``Drowning in Research Data: Addressing Data Management Literacy of Graduate Students - {PDF} Free Download,''} 2013. \url{https://docplayer.net/8853333-Drowning-in-research-data-addressing-data-management-literacy-of-graduate-students.html}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-eaker_what_2016}{}}%
+Eaker, C. {``What Could Possibly Go Wrong? The Impact of Poor Data Management.''} \emph{In Federer, L. (Ed.). The Medical Library Association's Guide to Data Management for Librarians}, 2016. \url{https://trace.tennessee.edu/cgi/viewcontent.cgi?article=1023\&context=utk_libpub}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-institute_of_education_sciences_data_nodate}{}}%
+Education Sciences, Institute of. {``Data Sharing.''} Accessed October 27, 2022. \url{https://ies.ed.gov/funding/datasharing_implementation.asp}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_fair_nodate}{}}%
+{``{FAIR} Principles. {GO} {FAIR}.''} Accessed October 21, 2022. \url{https://www.go-fair.org/fair-principles/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-foster_open_2017}{}}%
+Foster, Erin D., and Ariel Deardorff. {``Open Science Framework ({OSF}).''} \emph{Journal of the Medical Library Association : {JMLA}} 105, no. 2 (April 2017): 203--6. \url{https://doi.org/10.5195/jmla.2017.88}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-national_science_foundation_data_2017}{}}%
+Foundation, National Science. {``Data Management for {NSF} {EHR} Directorate Proposals and Awards,''} 2017. \url{https://www.nsf.gov/bfa/dias/policy/dmpdocs/ehr.pdf}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-open_science_foundation_cos_2022}{}}%
+Foundation, Open Science. {``{COS} Engagement with the Education Community,''} 2022. \url{https://docs.google.com/presentation/d/1LpyVOj8oJPr3SVkRM2GfCFnl2Qeo10YbbqcqwtwrVUM}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-grace-martin_wide_2013}{}}%
+Grace-Martin, Karen. {``The Wide and Long Data Format for Repeated Measures Data. The Analysis Factor,''} October 4, 2013. \url{https://www.theanalysisfactor.com/wide-and-long-data/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-national_institutes_of_health_writing_nodate}{}}%
+Health, National Institutes of. {``Writing a Data Management \& Sharing Plan {\textbar} Data Sharing.''} Accessed October 27, 2022. \url{https://sharing.nih.gov/data-management-and-sharing-policy/planning-and-budgeting-DMS/writing-a-data-management-and-sharing-plan}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-the_white_house_executive_2013}{}}%
+House, The White. {``Executive Order -- Making Open and Machine Readable the New Default for Government Information. Whitehouse.gov,''} May 9, 2013. \url{https://obamawhitehouse.archives.gov/the-press-office/2013/05/09/executive-order-making-open-and-machine-readable-new-default-government-}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-hubbard_data_2017}{}}%
+Hubbard, Aleata. \emph{Data Cleaning in Mathematics Education Research: The Overlooked Methodological Step}, 2017. \url{https://eric.ed.gov/?id=ED583982}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-national_endowment_for_the_humanities_data_2018}{}}%
+Humanities, National Endowment for the. {``Data Managment Plans for {NEH} Office of Digital Humanities Proposals and Awards,''} 2018. \url{https://www.neh.gov/sites/default/files/2018-06/data_management_plans_2018.pdf}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ies_frequently_nodate}{}}%
+IES. {``Frequently Asked Questions about Providing Public Access to Data.''} Accessed October 21, 2022. \url{https://ies.ed.gov/funding/datasharing_faq.asp}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-national_institute_of_justice_data_nodate}{}}%
+Justice, National Institute of. {``Data Archiving. National Institute of Justice.''} Accessed October 27, 2022. \url{https://nij.ojp.gov/funding/data-archiving}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kovacs_role_2021}{}}%
+Kovacs, Marton, Rink Hoekstra, and Balazs Aczel. {``The Role of Human Fallibility in Psychological Research: A Survey of Mistakes in Data Management.''} \emph{Advances in Methods and Practices in Psychological Science} 4, no. 4 (October 2021): 251524592110459. \url{https://doi.org/10.1177/25152459211045930}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-markowetz_five_2015}{}}%
+Markowetz, Florian. {``Five Selfish Reasons to Work Reproducibly.''} \emph{Genome Biology} 16, no. 1 (December 8, 2015): 274. \url{https://doi.org/10.1186/s13059-015-0850-7}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-neild_sharing_2022}{}}%
+Neild, R. C., D. Robinson, and J. Agufa. {``Sharing Study Data: A Guide for Education Researchers. ({NCEE} 2022-004).''} \emph{U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance.}, 2022. \url{https://ies.ed.gov/ncee/pubs/2022004/pdf/2022004.pdf}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-plos_one_data_nodate}{}}%
+One, PLOS. {``Data Availability,''} n.d. \url{https://journals.plos.org/plosone/s/data-availability}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_psych-ds_nodate}{}}%
+{``Psych-{DS} Specification. Google Docs.''} Accessed September 16, 2022. \url{https://docs.google.com/document/d/1u8o5jnWk0Iqp_J06PTu5NjBfVsdoPbBhstht6W0fFp0/edit?usp=embed_facebook}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-reynolds_basics_2022}{}}%
+Reynolds, Tara, Christopher Schatschneider, and Jessica Logan. {``The Basics of Data Management.''} figshare, April 26, 2022. \url{https://doi.org/10.6084/m9.figshare.13215350.v2}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-office_of_science_and_technology_policy_ostp_2022}{}}%
+Science \{and\} Technology Policy, Office of. {``{OSTP} Issues Guidance to Make Federally Funded Research Freely Available Without Delay. The White House,''} 2022. \url{https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-science_center_nodate}{}}%
+Science, Center for Open. {``Center for Open Science.''} Accessed October 21, 2022. \url{https://www.cos.io}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-uk_data_service_data_2022}{}}%
+Service, UK Data. {``Data Management Costing Tool and Checklist,''} 2022. \url{https://ukdataservice.ac.uk//app/uploads/costingtool.pdf}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_standards_nodate}{}}%
+{``Standards for Excellence in Education Research - Standards for Excellence in Education Research.''} Accessed October 21, 2022. \url{https://ies.ed.gov/seer/index.asp}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_tei_nodate}{}}%
+{``{TEI}: Text Encoding Initiative.''} Accessed October 21, 2022. \url{https://tei-c.org/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tenopir_data_2016-1}{}}%
+Tenopir, Carol, Suzie Allard, Priyanki Sinha, Danielle Pollock, Jess Newman, Elizabeth Dalton, Mike Frame, and Lynn Baird. {``Data Management Education from the Perspective of Science Educators.''} \emph{International Journal of Digital Curation} 11, no. 1 (October 6, 2016): 232--51. \url{https://doi.org/10.2218/ijdc.v11i1.389}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-university_of_twente_how_nodate}{}}%
+Twente, University of. {``How to Estimate Research Data Management ({RDM}) Costs,''} n.d. \url{https://www.utwente.nl/en/service-portal/services/lisa/resources/files/library-public/dcc-rdm-costs-estimation.pdf}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-utrecht_university_costs_nodate}{}}%
+University, Utrecht. {``Costs of Data Management - Research Data Management Support - Utrecht University.''} Accessed October 27, 2022. \url{https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-usgs_what_nodate}{}}%
+USGS. {``What Are the Differences Between Data, a Dataset, and a Database? {\textbar} u.s. Geological Survey.''} Accessed October 17, 2022. \url{https://www.usgs.gov/faqs/what-are-differences-between-data-dataset-and-database}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-university_of_virginia_library_research_data_services_data_nodate}{}}%
+Virginia Library Research Data Services, University of. {``Data Management Plan Templates {\textbar} University of Virginia Library Research Data Services + Sciences.''} Accessed October 27, 2022. \url{https://data.library.virginia.edu/data-management-plan-templates/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_welcome_nodate}{}}%
+{``Welcome to the Data Documentation Initiative {\textbar} Data Documentation Initiative.''} Accessed October 21, 2022. \url{https://ddialliance.org/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wickham_tidy_2014}{}}%
+Wickham, Hadley. {``Tidy Data.''} \emph{Journal of Statistical Software} 59 (September 12, 2014): 1--23. \url{https://doi.org/10.18637/jss.v059.i10}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wilkinson_fair_2016}{}}%
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. {``The {FAIR} Guiding Principles for Scientific Data Management and Stewardship.''} \emph{Scientific Data} 3, no. 1 (March 15, 2016): 160018. \url{https://doi.org/10.1038/sdata.2016.18}.
+
+\end{CSLReferences}
 
 \end{document}

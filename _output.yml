@@ -3,6 +3,9 @@ bookdown::bs4_book:
   theme:
     primary: "#2b4743"
   repo: https://github.com/Cghlewis/data-mgmt-ed-research-book
+bookdown::pdf_book:
+  keep_tex: yes
+  number_sections: false
 bookdown::word_document2:
     toc: false
     number_section: true
