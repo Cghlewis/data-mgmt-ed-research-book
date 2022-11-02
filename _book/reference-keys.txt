@@ -110,3 +110,12 @@ last-thoughts
 training-for-future-researchers
 investing-in-data-management-and-data-managers
 appendices
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
+what-is-it-1
+decision-making-process
+benefits-to-visualizing-a-workflow
+checklist-considerations
+workflow-considerations
+tools
+data-management-workflow
+task-management-systems
