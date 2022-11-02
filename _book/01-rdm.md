@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="yvegyxmzzt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bcbszehyoo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#yvegyxmzzt .gt_table {
+#bcbszehyoo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_heading {
+#bcbszehyoo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_title {
+#bcbszehyoo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#yvegyxmzzt .gt_subtitle {
+#bcbszehyoo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#yvegyxmzzt .gt_bottom_border {
+#bcbszehyoo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_col_headings {
+#bcbszehyoo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_col_heading {
+#bcbszehyoo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#yvegyxmzzt .gt_column_spanner_outer {
+#bcbszehyoo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#yvegyxmzzt .gt_column_spanner_outer:first-child {
+#bcbszehyoo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yvegyxmzzt .gt_column_spanner_outer:last-child {
+#bcbszehyoo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yvegyxmzzt .gt_column_spanner {
+#bcbszehyoo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#yvegyxmzzt .gt_group_heading {
+#bcbszehyoo .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#yvegyxmzzt .gt_empty_group_heading {
+#bcbszehyoo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#yvegyxmzzt .gt_from_md > :first-child {
+#bcbszehyoo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yvegyxmzzt .gt_from_md > :last-child {
+#bcbszehyoo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yvegyxmzzt .gt_row {
+#bcbszehyoo .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#yvegyxmzzt .gt_stub {
+#bcbszehyoo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yvegyxmzzt .gt_stub_row_group {
+#bcbszehyoo .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#yvegyxmzzt .gt_row_group_first td {
+#bcbszehyoo .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yvegyxmzzt .gt_summary_row {
+#bcbszehyoo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yvegyxmzzt .gt_first_summary_row {
+#bcbszehyoo .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_first_summary_row.thick {
+#bcbszehyoo .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yvegyxmzzt .gt_last_summary_row {
+#bcbszehyoo .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_grand_summary_row {
+#bcbszehyoo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yvegyxmzzt .gt_first_grand_summary_row {
+#bcbszehyoo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_striped {
+#bcbszehyoo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yvegyxmzzt .gt_table_body {
+#bcbszehyoo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_footnotes {
+#bcbszehyoo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_footnote {
+#bcbszehyoo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yvegyxmzzt .gt_sourcenotes {
+#bcbszehyoo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#yvegyxmzzt .gt_sourcenote {
+#bcbszehyoo .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#yvegyxmzzt .gt_left {
+#bcbszehyoo .gt_left {
   text-align: left;
 }
 
-#yvegyxmzzt .gt_center {
+#bcbszehyoo .gt_center {
   text-align: center;
 }
 
-#yvegyxmzzt .gt_right {
+#bcbszehyoo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yvegyxmzzt .gt_font_normal {
+#bcbszehyoo .gt_font_normal {
   font-weight: normal;
 }
 
-#yvegyxmzzt .gt_font_bold {
+#bcbszehyoo .gt_font_bold {
   font-weight: bold;
 }
 
-#yvegyxmzzt .gt_font_italic {
+#bcbszehyoo .gt_font_italic {
   font-style: italic;
 }
 
-#yvegyxmzzt .gt_super {
+#bcbszehyoo .gt_super {
   font-size: 65%;
 }
 
-#yvegyxmzzt .gt_two_val_uncert {
+#bcbszehyoo .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#yvegyxmzzt .gt_footnote_marks {
+#bcbszehyoo .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#yvegyxmzzt .gt_asterisk {
+#bcbszehyoo .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yvegyxmzzt .gt_slash_mark {
+#bcbszehyoo .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#yvegyxmzzt .gt_fraction_numerator {
+#bcbszehyoo .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#yvegyxmzzt .gt_fraction_denominator {
+#bcbszehyoo .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -659,7 +659,10 @@ The remainder of this book will be organized into chapters that dive into phases
 
 You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
-![(\#fig:unnamed-chunk-2)The research project life cycle](img/cl_lifecycle.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/cl_lifecycle.PNG" alt="The research project life cycle" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-2)The research project life cycle</p>
+</div>
 
 Let's walk through this chart.
 
