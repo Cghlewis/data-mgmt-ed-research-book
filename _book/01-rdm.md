@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="bcbszehyoo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hdzrlrxrwe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#bcbszehyoo .gt_table {
+#hdzrlrxrwe .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_heading {
+#hdzrlrxrwe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_title {
+#hdzrlrxrwe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#bcbszehyoo .gt_subtitle {
+#hdzrlrxrwe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#bcbszehyoo .gt_bottom_border {
+#hdzrlrxrwe .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_col_headings {
+#hdzrlrxrwe .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_col_heading {
+#hdzrlrxrwe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#bcbszehyoo .gt_column_spanner_outer {
+#hdzrlrxrwe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#bcbszehyoo .gt_column_spanner_outer:first-child {
+#hdzrlrxrwe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bcbszehyoo .gt_column_spanner_outer:last-child {
+#hdzrlrxrwe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bcbszehyoo .gt_column_spanner {
+#hdzrlrxrwe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#bcbszehyoo .gt_group_heading {
+#hdzrlrxrwe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#bcbszehyoo .gt_empty_group_heading {
+#hdzrlrxrwe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#bcbszehyoo .gt_from_md > :first-child {
+#hdzrlrxrwe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bcbszehyoo .gt_from_md > :last-child {
+#hdzrlrxrwe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bcbszehyoo .gt_row {
+#hdzrlrxrwe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#bcbszehyoo .gt_stub {
+#hdzrlrxrwe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bcbszehyoo .gt_stub_row_group {
+#hdzrlrxrwe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#bcbszehyoo .gt_row_group_first td {
+#hdzrlrxrwe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bcbszehyoo .gt_summary_row {
+#hdzrlrxrwe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bcbszehyoo .gt_first_summary_row {
+#hdzrlrxrwe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_first_summary_row.thick {
+#hdzrlrxrwe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bcbszehyoo .gt_last_summary_row {
+#hdzrlrxrwe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_grand_summary_row {
+#hdzrlrxrwe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bcbszehyoo .gt_first_grand_summary_row {
+#hdzrlrxrwe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_striped {
+#hdzrlrxrwe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bcbszehyoo .gt_table_body {
+#hdzrlrxrwe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_footnotes {
+#hdzrlrxrwe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_footnote {
+#hdzrlrxrwe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bcbszehyoo .gt_sourcenotes {
+#hdzrlrxrwe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#bcbszehyoo .gt_sourcenote {
+#hdzrlrxrwe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#bcbszehyoo .gt_left {
+#hdzrlrxrwe .gt_left {
   text-align: left;
 }
 
-#bcbszehyoo .gt_center {
+#hdzrlrxrwe .gt_center {
   text-align: center;
 }
 
-#bcbszehyoo .gt_right {
+#hdzrlrxrwe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bcbszehyoo .gt_font_normal {
+#hdzrlrxrwe .gt_font_normal {
   font-weight: normal;
 }
 
-#bcbszehyoo .gt_font_bold {
+#hdzrlrxrwe .gt_font_bold {
   font-weight: bold;
 }
 
-#bcbszehyoo .gt_font_italic {
+#hdzrlrxrwe .gt_font_italic {
   font-style: italic;
 }
 
-#bcbszehyoo .gt_super {
+#hdzrlrxrwe .gt_super {
   font-size: 65%;
 }
 
-#bcbszehyoo .gt_two_val_uncert {
+#hdzrlrxrwe .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#bcbszehyoo .gt_footnote_marks {
+#hdzrlrxrwe .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#bcbszehyoo .gt_asterisk {
+#hdzrlrxrwe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bcbszehyoo .gt_slash_mark {
+#hdzrlrxrwe .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#bcbszehyoo .gt_fraction_numerator {
+#hdzrlrxrwe .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#bcbszehyoo .gt_fraction_denominator {
+#hdzrlrxrwe .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -545,7 +545,10 @@ Before diving into the content of this training, I think it is helpful to cover 
 <td class="gt_row gt_left">Data is collected on participants for a single time point.</td></tr>
     <tr><td class="gt_row gt_left">Data</td>
 <td class="gt_row gt_left">research data</td>
-<td class="gt_row gt_left">The recorded factual material commonly accepted in the scientific community as necessary to validate research findings (OMB Circular A-110).</td></tr>
+<td class="gt_row gt_left">The recorded factual material commonly accepted in the scientific community as necessary to validate research findings. (OMB Circular A-110)</td></tr>
+    <tr><td class="gt_row gt_left">Data Type</td>
+<td class="gt_row gt_left">variable format, variable class</td>
+<td class="gt_row gt_left">A classification that specifies what types of values are contained in a variable and what kinds of operations can be performed on that variable. Examples of types include numeric, character, logical, or datetime.</td></tr>
     <tr><td class="gt_row gt_left">Database</td>
 <td class="gt_row gt_left">relational database</td>
 <td class="gt_row gt_left">An organized collection of related data stored in tables that can be linked together by a common identifier.</td></tr>
@@ -594,6 +597,9 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">PII</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Personally identifiable information is protected information that can directly or indirectly identify a study participant. It includes but is not limited to name, social security number, email, birthdate, district or school name.</td></tr>
+    <tr><td class="gt_row gt_left">Primary Data</td>
+<td class="gt_row gt_left">original data</td>
+<td class="gt_row gt_left">First hand data that is generated/collected by the research team as part of the research study.</td></tr>
     <tr><td class="gt_row gt_left">Privacy</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Privacy concerns people. Ensuring others are given control to the access of themselves and their information.</td></tr>
@@ -615,6 +621,12 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">Reproducible</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Being able to produce the same results using the same materials and procedures.</td></tr>
+    <tr><td class="gt_row gt_left">Research</td>
+<td class="gt_row gt_left">NA</td>
+<td class="gt_row gt_left">The Common Rule definition of research is a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.</td></tr>
+    <tr><td class="gt_row gt_left">Secondary Data</td>
+<td class="gt_row gt_left">extant data</td>
+<td class="gt_row gt_left">Existing data generated/collected by external organizations such as governments at an earlier point in time.</td></tr>
     <tr><td class="gt_row gt_left">Simulation Data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Data generated through imitations of a real-world process using computer models.</td></tr>

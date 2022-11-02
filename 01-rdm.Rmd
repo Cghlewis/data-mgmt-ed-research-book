@@ -89,7 +89,7 @@ The concept of Open Science has pushed quality data management to the forefront,
 
 Before diving into the content of this training, I think it is helpful to cover terminology that will be used in data management. Many concepts in education research have multiple terms and can be used interchangeably. Across different institutions, researchers may use all or some of these terms.
 
-```{r, echo = FALSE, message=FALSE, warning=FALSE}
+```{r, echo = FALSE, message=FALSE, warning=FALSE, fig.cap="Research data management terms"}
 
 library(tidyverse)
 library(kableExtra)

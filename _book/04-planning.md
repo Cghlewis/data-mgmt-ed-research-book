@@ -44,9 +44,8 @@ Below is a very simplified example of the decision making process, based on the 
 It's important to consider how each team and project are unique as you work through these planning checklists. A technique that might work well for one team, may not work out so well for another. Make sure to consider the following:
 
 1. All external requirements
-    - Do you have a DMP? What did you say you would do in your DMP? Make sure to follow your DMP (or revise your DMP to match your new decisions - remember your DMP is a living document)
-    - Are you working with an Institutional Review Board (IRB)? What data security requirements are set forth by your IRB? What data collection restrictions/allowances are given by your IRB?
-    - What data security requirements are set forth by your institution?
+    - Do your practices align with the plan laid out in your DMP? If no, you may need to revise your DMP to match your new decisions - remember your DMP is a living document.
+    - Do your practices meet all other external compliance requirements such as those from your Institutional Review Board, your institutional policies, project partner requirements, or government mandates?
 2. The skill set of your team
     - How does the skill set of your team align with the practices you plan to implement? Will additional training be required?
 3. Your available tools
