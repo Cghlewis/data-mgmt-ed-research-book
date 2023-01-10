@@ -8,4 +8,4 @@
 
 ## Paper data collection instruments
 
-## Interviews/cocus groups
+## Interviews/focus groups

@@ -54,6 +54,7 @@ getting-help
 budgeting
 planning-data-management
 why-spend-time-on-planning
+goals-of-planning
 planning-checklists
 decision-making-process
 checklist-considerations
@@ -62,8 +63,14 @@ benefits-to-visualizing-a-workflow
 workflow-considerations
 task-management-systems
 project-roles-and-responsibilities
-why-its-important-to-assign-roles
 typical-roles-in-a-research-project
+pi-and-co-pi
+project-coordinator
+data-manager
+project-team-members
+other-roles
+goals-of-assigning-roles-and-responsibilities
+documenting-roles-and-responsibilities
 documentation
 what-is-documentation
 why-is-documentation-important
@@ -81,7 +88,7 @@ why-consider-data-management-in-data-collection
 consents
 electronic-data-collection-instruments
 paper-data-collection-instruments
-interviewscocus-groups
+interviewsfocus-groups
 data-capture
 electronic-data-capture
 paper-data-capture

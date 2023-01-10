@@ -33,7 +33,7 @@ We will talk more about creating these identification variables in our data trac
 
 It is important to know that variables have the following attributes:
 
-1. Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss Style Guides \@ref(style).
+1. Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss Style Guides [**see style guides**].
 2. A measurement type (ex: numeric, character, date) which can also be more narrowly defined as needed (ex: continuous, categorical)
 3. Acceptable values (ex: yes/no) or expected ranges (ex: 1-25 or 2021-08-01 to 2021-12-15). Anything outside of those acceptable values or ranges is considered an error.
 4. Labels, descriptions of what the variable represents. This may be a label that you as the variable creator assigns (ex: "Treatment condition") or they may be the actual wording of an item (ex: "Do you enjoy pizza?").
@@ -162,7 +162,7 @@ This type of format can be used for the following situations:
 - To link forms across time  
 - To link forms across participants  
 
-The easiest scenario to think about this format is with repeated measure data. If we collect a survey on participants in both wave 1 and 2, those waves of data will all be in the same row (joined together on a unique ID) and each wave of data collection will be appended to a variable name to create unique variable names. We will dive deeper into different types of joins in our data cleaning section \@ref(clean).
+The easiest scenario to think about this format is with repeated measure data. If we collect a survey on participants in both wave 1 and 2, those waves of data will all be in the same row (joined together on a unique ID) and each wave of data collection will be appended to a variable name to create unique variable names. We will dive deeper into different types of joins in our data cleaning section [**see cleaning**].
 
 Limitations: It is important to note here, that if your data do not have unique identifiers (primary and/or foreign keys), you will be unable to merge data in a wide format.
 
@@ -190,12 +190,12 @@ In this scenario, we no longer add the data collection wave to variable names. H
 
 There are different reasons for constructing your data one way or another. And it may be that you store or share your data in one format, and then restructure data into another format when it comes time for analysis. 
 
-Storing data in long format is usually considered to be more efficient, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject [@grace-martin_wide_2013]. We will further review decision making around data structure in our data cleaning chapter \@ref(clean).
+Storing data in long format is usually considered to be more efficient, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject [@grace-martin_wide_2013]. We will further review decision making around data structure in our data cleaning chapter [**see data cleaning**].
 
 
 ## File types
 
 These rectangular datasets can be saved in a variety of file types. Some common file types in education research include interoperable formats such as .csv, .txt, .dat, or .tsv, or proprietary formats such as .xlsx, .sav, or .dta. 
 
-When you save your files, they will have a file size. Both the number of columns as well as the number of rows in your dataset will contribute to your file size. Just to get a feel for what size your files might be, small datasets (for example 5 columns and <100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000-5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata (such as variable and value labels), such as a .sav file, will greatly increase your file size. We will talk about the pros and cons to different file formats in the chapter on data sharing \@ref(datasharing).
+When you save your files, they will have a file size. Both the number of columns as well as the number of rows in your dataset will contribute to your file size. Just to get a feel for what size your files might be, small datasets (for example 5 columns and <100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000-5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata (such as variable and value labels), such as a .sav file, will greatly increase your file size. We will talk about the pros and cons to different file formats in the chapter on data sharing [**see data sharing**].
 
