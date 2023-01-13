@@ -1,7 +1,7 @@
 # Data Management Plan
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_dmp.PNG" alt="Data management plan in the research project life cycle" width="70%" />
+<img src="img/lifecycle_dmp2.PNG" alt="Data management plan in the research project life cycle" width="70%" />
 <p class="caption">(\#fig:unnamed-chunk-1)Data management plan in the research project life cycle</p>
 </div>
 
@@ -82,6 +82,10 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 
 ## Budgeting
 
-As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and can range from infrastructure costs, such as fees for storage or software, to the salaries required to pay personnel to prepare FAIR datasets that are acceptable for data sharing. 
+As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include data management personnel costs, fees, infrastructure, or tools needed to organize, document, store, and share study data [@service_costing_nodate]. Make sure to review your funder's documentation for information about allowable costs. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
 
-It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. Luckily a few organizations have developed resources to aid in estimating those costs. The UK Data Service[@uk_data_service_data_2022], the University of Twente[@university_of_twente_how_nodate], and Utrecht University[@utrecht_university_costs_nodate] (among others), have put together checklists to help you think through your various potential data management costs.
+- Costs associated with curating and de-identifying data
+- Costs associated with developing data documentation
+- Fees associated with depositing data for long-term sharing in a repository
+
+It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. Luckily a few organizations have developed resources to aid in estimating those costs. The UK Data Service[@uk_data_service_data_2022], the University of Twente[@university_of_twente_how_nodate], Utrecht University[@utrecht_university_costs_nodate], and DataOne[@cruse_best_2011] have put together checklists to help you think through your various potential data management costs.

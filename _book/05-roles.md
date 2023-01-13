@@ -1,8 +1,8 @@
 # Project Roles and Responsibilities
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_rr.PNG" alt="Data management plan in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Data management plan in the research project life cycle</p>
+<img src="img/lifecycle_rr2.PNG" alt="Planning in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Planning in the research project life cycle</p>
 </div>
 
 Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles [@service_roles_nodate] for many reasons including for the security of data, the continuity of practices, and for the standardization of workflows.
@@ -13,7 +13,7 @@ Before diving in to how to assign and document roles for a project, it is import
 
 ### PI and Co-PI
 
-The Principal Investigator/s or PIs, as well as Co-PIs, are the individuals who prepare and submit the grant proposal and are responsible for the administration of that grant. There are often more than one PI on a project including at least someone with content area knowledge as well as a methodologist. PIs and Co-PIs have varying levels of involvement in research projects and are typically, not always, more hands off in the day to day administration. Even if some tasks are delegated to other research staff, PIs and Co-PIs are ultimately responsible for Institutional Review Board (IRB) submissions and for meeting IRB requirements, as well as for submitting MOUs, budgets, effort reporting, continuing review reports, and any final technical finding reports.
+The PIs (or project directors), as well as Co-PIs, are the individuals who prepare and submit the grant proposal and are responsible for the administration of that grant. There are often more than one PI on a project including at least someone with content area knowledge as well as a methodologist. PIs and Co-PIs have varying levels of involvement in research projects and are typically, not always, more hands off in the day to day administration. Even if some tasks are delegated to other research staff, PIs and Co-PIs are ultimately responsible for Institutional Review Board (IRB) submissions and for meeting IRB requirements, as well as for submitting MOUs, budgets, effort reporting, continuing review reports, and any final technical finding reports.
 
 ### Project Coordinator
 
@@ -34,13 +34,13 @@ This role refers to any staff hired to help implement a research project which m
 The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned above, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in the diagram above. Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied. Their role isn't shown on original diagram but their work is happening alongside the data collection cycle. 
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_intervention.PNG" alt="Life cycle diagram updated to show hidden processes" width="90%" />
+<img src="img/lifecycle_intervention2.PNG" alt="Life cycle diagram updated to show hidden processes" width="90%" />
 <p class="caption">(\#fig:unnamed-chunk-2)Life cycle diagram updated to show hidden processes</p>
 </div>
 
 ## Goals of assigning Roles and Responsibilities
 
-There are several goals of assigning roles and responsibilities [@dataone_best_nodate].
+There are several goals of assigning roles and responsibilities [@valentine_best_nodate].
 
 1. To assign specific team members to project roles and delineate the responsibilities of those roles
 1. Assess equity in responsibilities  
@@ -58,7 +58,9 @@ Early on in the project you will start to generally assign roles in your data ma
 
 Once roles and responsibilities have been assigned, those decisions should be documented to avoid any ambiguity about who is doing what. While documentation is a topic that will be covered in the next chapter, I think it is helpful to break the rules and discuss just this one document here while we are covering the topic of assigning roles. 
 
-A general roles and responsibilities document is one way to document your decisions [@ucdavis_pmlc_nodate; @colorado_school_of_mines_table_nodate]. This document can be laid in any format that conveys the information clearly to your team. Below are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as Standard Operating Procedures [**see Documentation**] where names are attached to each task.
+A general roles and responsibilities document is one way to document your decisions [@ucdavis_pmlc_nodate; @colorado_school_of_mines_table_nodate]. In addition to being a planning document, it can also serve as a reference document that allows your team to easily see who is on the project team, what roles they play, and who to contact for questions regarding various project aspects (for example - who to contact for data storage access). 
+
+This document can be laid in any format that conveys the information clearly to your team. Below are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as Standard Operating Procedures [**see Documentation**] where names are attached to each task.
 
 <div class="figure" style="text-align: center">
 <img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
@@ -74,8 +76,24 @@ Reviewing roles and responsibilities in a format like this allows you to start t
 
 1. Required skillset
 
-In assigning roles and responsibilities, make sure to consider the skills that are needed to be successful in each position. For example, when considering data management tasks, skills such as
-attention to detail, highly organized, and being inquisitive are all imperative in a position where the smallest mistakes can have large consequences. Other skills such as domain experience can also be very beneficial in organizing and understanding data. Yet, depending on the project, the types of data you are working with and the tools used, you may want to look for additional skills such as experience with a specific software or familiarity with FERPA or HIPAA rules.
+In assigning roles and responsibilities, make sure to consider the skills that are needed to be successful in each position. For example, when considering the role of a data manager and the responsibilities associated with that role, you may look for skillsets in the following buckets: 
+
+1. Interpersonal skills
+  - Detail oriented
+  - Organized
+  - Problem solver
+  - Inquisitive
+  - Excellent communicator (bridging gaps between technical audiences and non-technical audiences)
+2. Domain skills
+  - Experience working with education data
+  - Understands data privacy (FERPA, HIPAA)
+3. Technical skills
+  - Understanding of database structure
+  - Experience building data pipelines
+  - Coding experience
+  - Specific software/tool experience
+  
+The specific skills needed for each role will depend on your project needs as well as the skillsets of the other members of the team.
 
 2. Training needs
 
@@ -83,7 +101,7 @@ In addition to considering skills needed for certain roles, also consider what t
 
 3. Estimate costs
 
-In your funding application you are required to submit a budget for expenses such as data collection and data management. While things like supplies, tools, and licenses account for some of your budget, personnel will most likely be your largest expense. In planning for roles and responsibilities, it can be helpful to start assigning costs associated with overall roles (based on the experience/skillset of the person filling the role) or even broken down by associated responsibilities (based on things like time to complete each task).
+If you are working on roles and responsibilities after your grant has been funded, then your grant budget has already submitted. However, it can still be helpful to start assigning costs associated with overall roles (based on the experience/skillset of the person filling the role) or even broken down by associated responsibilities (based on things like percent effort or time to complete each task). If discrepancies between the original budget and updated costs are found, often funders will allow PIs to amend budgets.
 
 4. Contingency plans
 

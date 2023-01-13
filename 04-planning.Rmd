@@ -1,8 +1,8 @@
 # Planning Data Management
 
-```{r fig.cap="Data management plan in the research project life cycle", out.width = "70%"}
+```{r fig.cap="Planning in the research project life cycle", out.width = "70%"}
 
-knitr::include_graphics("img/lifecycle_plan.PNG")
+knitr::include_graphics("img/lifecycle_plan2.PNG")
 
 ```
 
@@ -16,7 +16,7 @@ Planning the day to day management of your project data has many other benefits 
 
 ## Goals of planning
 
-This planning phase should include a series of regular meetings with core decision makers. While there are many aspects of a research study to plan that should also occur during this time (ex: planning an intervention, planning analyses), here we are focusing on planning for data management (including data collection). Most likely you will want the PI/Co-PIs in attendance along with core project staff and your data management team. During this planning time, there are several goals to keep in mind during this planning period.
+This planning phase should include a series of regular meetings with core decision makers. While there are many aspects of a research study to plan that should also occur during this time (ex: planning an intervention, planning analyses), here we are focusing on planning for data management (including data collection). Most likely you will want the PI/Co-PIs in attendance along with core project staff and your data management team. During this planning time, there are several goals to keep in mind.
 
 1. To finalize project goals laid out in a grant proposal (i.e. what data will be collected)
 1. To finalize a timeline for goals (i.e. when is data collected)
@@ -30,7 +30,7 @@ At the end of the planning period, the team should have a clear plan for what th
 
 ## Planning checklists
 
-Checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are some sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project.
+Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are some sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project.
 
 - Roles and Responsibilities[@lewis_roles_nodate]
 - Task Management[@lewis_task_nodate]
@@ -141,7 +141,7 @@ Similar to the questions you need to consider when reviewing your planning check
 
 ## Task management systems
 
-While our checklists, workflow diagrams, and SOPs (**see SOPs**) allow us to document and share our processes, it can be tricky to manage the day to day implementation of those processes. The planning phase is a great time to choose a task management system[@gentzkow_code_2014]. Keeping track of various deadlines and communications across scattered sources can be overwhelming and using a task management system can help your team bring everything together in one location which may help remove ambiguity. Take your decisions from your checklists, workflows, and SOPs above, review the deadlines as denoted in your timeline (**see timelines**) and add them to your task management system. Assign tasks to responsible parties, set deadlines, and track progress.
+While tools such as our checklists, workflow diagrams, and SOPs (**see SOPs**) allow us to document and share our processes, it can be tricky to manage the day to day implementation of those processes. The planning phase is a great time to choose a task management system[@gentzkow_code_2014]. Keeping track of various deadlines and communications across scattered sources can be overwhelming and using a task management system may help remove ambiguity about the status of task progress. Rather than having to regularly check in via email for status updates or reading through various meeting notes to learn about decisions made, a task management system allows you to assign tasks to responsible parties, set deadlines based on timelines (**see timelines**), track progress, and capture communication and decisions all in one location.
 
 There are many existing tools that allow teams to assign and track tasks, schedule meetings, track project timelines, and document communication. Without endorsing any particular product, some project/task management tools that I know education research teams have used include:
 

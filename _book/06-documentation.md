@@ -1,13 +1,214 @@
 # Documentation
 
-## What is documentation?
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_doc.PNG" alt="Data documentation in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Data documentation in the research project life cycle</p>
+</div>
 
-## Why is documentation important?
+Documentation is a collection of files that contain procedural and descriptive information about your team, your project, your workflows, and your data. Collecting thorough documentation during your study is unequivocally as important as collecting your data. Documentation serves many purposes including:
+
+- Standardizing procedures
+- Securing data and protecting confidentiality
+- Tracking data provenance 
+- Discovering errors
+- Enabling reproducibility
+- Ensuring others use and interpret data accurately
+- Providing searchability through metadata
+
+We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. The format of each document will also be discussed but it is worth noting here that during a project, while you are actively using your documents, choose a format that is human readable and works well for your team. When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents sustainable, interoperable, and searchable [**see Data Sharing**].
+
+The documents below are all recommended documents that will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. A description of each document along with example formats and example templates (if available) are provided below. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder (**see DMP**) and other governing bodies such as your Institutional Review Board. Creating and maintaining these documents **are** an investment (make sure to account for this time in your proposal budget), but the return for the investment is well worth the effort.
+
+As you review the these documents, remember that every single document mentioned is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of our diagram above, team members should always revisit documentation each time new data is collected, or more often if needed. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why. 
+
 
 ## Team Level
 
+Team level documentation typically contain data governance rules that apply to the entire team, across all projects. While these documents can be amended at any time, they should really be started long before you even apply for a grant, when your lab, center, or institution is formed. 
+
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_teamdoc.PNG" alt="Team level documentation in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-2)Team level documentation in the research project life cycle</p>
+</div>
+
+### Lab Manual
+
+One example of a team level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It sets expectations, provides guidelines, and can even be a place for passing along helpful career advice [@balazs_crowdsourced_nodate]. While a lab manual will mostly consist of administrative, procedural, and interpersonal types of information, it can be helpful to also include data management content as well, including general rules about how to access, store, share, and work with data securely and ethically. 
+
+|Example Formats | Examples Documents|
+|------|---------|
+|Word, Google Docs, PDF, HTML| Crowdsourced lab manual template [@balazs_crowdsourced_nodate]; Faylab Lab Manual [@novak_faylab_2022]; The RAISE Lab Manual [@von_der_embse_raise_2019]|
+
+
+### Wiki
+
+Another option that can either be created alongside the lab manual or as a replacement to the lab manual is a team wiki. A wiki is a webpage that allows users to collaboratively edit and manage content. While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to only invited users. This is a great way to keep disparate documents and pieces of information organized in a central, accessible location. Your wiki can include both links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page. Data related documents that you may consider keeping on a wiki include:
+
+- Lab Manual
+- Onboarding/Offboarding Checklists [**see Onboarding/Offboarding Checklists**]
+- Internal Data Use Agreement [**see Data Use Agreement**]
+- Templates for common documents
+  - Data management plans
+  - Consent forms
+  - External data use agreements or data sharing agreements
+  - Non-disclosure agreements or confidentiality agreements
+  - Memorandums of understanding
+- Copies of policies
+  - IT data policies
+  - IRB data policies
+  - Other governing body data policies
+- Data Management Standards
+  - Style Guides
+
+\* Note: Project level wikis can also be created and be very useful in centralizing frequently referenced information.
+
+|Example Format | Examples Documents|
+|------|---------|
+|SharePoint, OSF, Notion, HTML| Aly Lab Wiki [@aly_aly_2018]; SYNC Lab Wiki [@noauthor_sync_nodate]|
+
+### Onboarding/Offboarding checklist
+
+While onboarding checklists will mostly consist of non-data related, administrative information such as how to sign up for an email or how to get set up on your laptop, it should also contain several data specific pieces of information to get all new staff generally acclimated to working with data, for any project, in their new role. Topics to cover in an onboarding document include:
+
+- Contacts
+  - Contacts for gaining access to data related storage spaces
+  - Contacts for data related questions
+- Learning
+  - Where to go to learn more about existing data for current and past projects
+- Requirements and Standards
+  - Any required training (ex: CITI training)
+  - Any required documents to complete (ex: Internal data access and use agreement [**see Data Access and Use Agreement**])
+  - Any standards to review (ex: Style Guide rules [**see Style Guide**])
+  
+Similarly, while offboarding checklists will contain a lot of procedural information about returning equipment and so forth, it should also contain some basic data tasks that help maintain data integrity and security including:
+
+- Access
+  - Contacts for removing data access upon leaving
+
+- Tying up loose ends
+  - Making sure all standard operating procedures associated with your position are up to date to ensure role continuity
+  - Review all data files you have worked on to ensure that they are
+      - Stored according to policy
+      - Documented adequately
+      - Named according to the Style Guide
+      - Accessible to someone other than you
+  
+\* Note: No example templates are provided below because public checklists I have come across either are not applicable to data management for education research teams (the procedures covered are applicable to individualistic research performed in labs - rather than team research), or the checklists only cover non-data related information. 
+  
+|Example Format | Examples Documents|
+|------|---------|
+|Word, Google Docs, PDF, HTML| NA|
+
+### Data Use Agreement
+
+Typically when we think of a data use agreement (DUA) we think of a document that we draft in conjunction with an external partner that would like to access our data (or we want to access theirs). It usually covers the terms for how someone is allowed to use data, considering things like access controls, research participant privacy, data destruction rules and so on [@geraghty_formalize_nodate]. However, it can be really helpful to have staff, at minimum, review or even sign an internal statement saying that they have reviewed all team policies regarding working securely with data. These rules for working with data can be added to a lab manual, as many people do, or they can be added to a separate data use agreement where staff members can sign or check a box acknowledging that they have read and understand the policies. Topics to consider adding to this agreement include:
+
+- Access
+  - Discuss any data access restrictions
+  - Discuss any reasons for restricted access. A few examples:
+      - Participant rights concerning confidentiality (ex: PII)
+      - Oversight that dictates security (ex: IRB, FERPA, HIPAA)
+      - Quality control concerns
+
+- Requirements
+  - What is required before staff can work with data? (ex: CITI trainig, signing this agreement)
+
+- Contacts
+  - Who are the contacts for all data access needs, questions, or concerns? (ex: confidentiality breaches, errors in the data)
+
+- Data storage
+  - Where is electronic data stored? How are files organized?
+    - How is data backed up?
+    - What are the data retention and destruction policies?
+  - Where is paper data stored? How are files organized?
+    - What are the data retention and destruction policies?
+  
+- Working securely with data
+  - Electronic Data
+      - What are the rules for working with data securely?
+      - What are the rules for sharing sensitive/identifiable data securely?
+  - Paper Data
+      - What are the rules for working with data securely in the field? In the office?
+      
+- Analyses
+  - Procedures for using research project data for personal analyses (ex: Can students use any lab data with no permission needed?, Is there a data request process?, etc.)
+  
+|Example Format | Examples Documents|
+|------|---------|
+|Word, PDF, Qualtrics|NA |
+
+### Style Guide
+
+A style guide is a set of standards for the formatting of documents [FIX @wikipedia]. It improves consistency within and across files and projects. This document includes conventions for procedures such as variable naming, value coding, file naming, versioning, and file structure. It can be created in one large document or separate files for each type of style guide. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there is so many recommended practices to cover, I have given this document its own chapter. See [**Style Guides**] for more information.
+
+
 ## Project Level
+
+Project level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the DMP (started before your project is funded), checklists and meeting notes (started during the planning phase), or the consort diagram [**see consort**] (started after data is collected) will be started at varying times.
+
+### Data Management Plan
+
+This is the first project level document that will be created in your research project life cycle. See **Data Management Plan** to review details about this document. The only other note to mention here is that your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
+
+### Checklists and meeting notes
+
+Since we've already discussed these documents in a previous chapter [**see planning**] I won't say much more here other than to acknowledge that these documents are also part of your portfolio of documentation and are really key planning documents as you start to build your other project as well as data and variable level documents.
+
+### Roles and responsibilites document
+
+Using the checklists during your planning phase, you hopefully decided on and assigned some roles and responsibilities for your project. Now is the time to document those decisions in a formal document to be shared with the team. In the previous chapter [**see roles and responsibilities**] we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
+
+### Research Protocol
+
+The research protocol will be a comprehensive project summary document. If you are submitting your study to your Institutional Review Board, you most likely be required to submit this document as part of your application. A research protocol provides a means for the board to determine if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to deposit along with your data at the time of data sharing, as well as an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and other users to effectively interpret and use your data. It generally provides the what, who, when, where, and how of your study. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are:
+
+- Funding source
+- Overview of study
+- Intervention and research design
+- Setting and Sample
+- Benefits and risks to participants
+- Participant compensation
+- Project timeline (what data was collected, on whom, and when)
+- Measures Used in study (including citations)
+- Overview of procedures (Recruitment, Consent, Inclusion/exclusion Criteria, Randomization, Data collection, Data preparation and processing)
+- Handling unexpected events
+- Data analysis plan
+
+|Example Format | Examples Documents|
+|------|---------|
+|Word, PDF| University of Washington Protocol Template [@university_of_washington_developing_nodate]; Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014]; University of Missouri Protocol Template [@t{university_of_missouri_socialbehavioraleducational_nodate] |
+
+### Supplemental Documents
+
+There is a series of documents, that while can absolutely be standalone documents, I am calling supplemental documents here because they can be added to your research protocol as an addendum at any point to further clarify specifics of your project.
+
+1. Timeline
+
+The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. This can be both a helpful planning tool (for both project and data teams) as well as an excellent document to share with future data users. There is no one format for how to create this document. Below is an example of one way to visualize a data collection timeline.
+
+XXX
+
+
+
+2. Consort Diagram
+
+A consort diagram displays the flow of participants through a program. It visually portrays enrollment in the program, randomization, as well as attrition. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. This diagram can be manually created in a text document
+
+XXX
+
+3. Instruments 
+
+Actual copies of instrument (can also include any technical documents)
+
+4. Consent Forms
+
+5. Related publications
+
+### Standard Operating Procedures
+
 
 ## Dataset Level
 
 ## Variable Level
+
+## Metadata

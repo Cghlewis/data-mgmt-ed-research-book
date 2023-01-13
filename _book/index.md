@@ -1,7 +1,7 @@
 --- 
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-01-10"
+date: "2023-01-12"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -43,7 +43,7 @@ In order to implement thoughtful and standardized data management practices, res
 
 Without training, resources and formal support systems are the next best option for learning best practices. During my data management journey I have discovered an excellent support system of professionals in university systems, i.e. research data librarians, who can consult with research teams in their data management planning, and I have also come across some solid existing research data management books and manuals which I will link to in this book. However, while education researchers are starting to put out some excellent resources [@neild_sharing_2022; @reynolds_basics_2022], I still find there is a dearth of tangible guides for researchers to refer to when building a data management workflow in the field of education, especially those working on large-scale longitudinal research grants where there are many moving pieces. Researchers are often collecting data in real-world environments, such as school systems, and keeping that data secure and reliable in a deliberate and orderly way can be overwhelming. 
 
-Last, unfortunately, while other fields of research, such as psychology, appear to be banding together to develop standards around how to structure and document data [@noauthor_psych-ds_nodate], the field of education has yet to develop agreed upon rules for things such as data documentation or data formats. This lack of standards leads to inconsistencies in the quality of data products across the field [@borghi_promoting_2022].
+Last, unfortunately, while other fields of research, such as psychology, appear to be banding together to develop standards around how to structure and document data [@kline_technical_2018], the field of education has yet to develop agreed upon rules for things such as data documentation or data formats. This lack of standards leads to inconsistencies in the quality of data products across the field [@borghi_promoting_2022].
 
 ### Consequences
 

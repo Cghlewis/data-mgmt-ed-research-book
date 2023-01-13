@@ -6,7 +6,7 @@ Research data management (RDM) involves the organization, storage, preservation,
 
 ## Standards
 
-Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted metadata standards developed by organizations such as the Data Documentation Initiative [@noauthor_welcome_nodate] and Dublin Core [@noauthor_dcmi_nodate], others have adopted data structure standards developed by organizations like the Text Encoding Initiative [@noauthor_tei_nodate], and through grassroots efforts, other fields such as psychology are developing data structure and documentation standards based on the FAIR principles [@noauthor_psych-ds_nodate]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
+Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014], and through grassroots efforts, other fields other such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
 
 While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
@@ -54,19 +54,19 @@ In 2016, the FAIR Principles [@noauthor_fair_nodate] were published in Scientifi
 
 F: Findable
 
-All data should be findable through a persistent identifier and have thorough, published, data documentation. As we move towards automation in our work and life, the need for machine-readable data and metadata becomes more prevalent for automatic discovery of information.
+All data should be findable through a persistent identifier and have thorough, searchable, data documentation. As we move towards automation in our work and life, the need for machine-readable data and metadata becomes more prevalent for automatic discovery of information.
 
 A: Accessible
 
-You data is accessible if humans can access your data. This can mean your data is available in a repository or through a request system.
+Users can access your data. This can mean your data is available in a repository or through a request system. At minimum, a user should be able to access the metadata, even if the actual data are not available.
 
 I: Interoperable
 
-Your data and metadata use standardized vocabularies as well as formats. Both humans and machines should be able to read and interpret your data. Software licenses should not pose a barrier to usage. Data should be available in open formats that can be accessed by any software such as .csv, .txt, .dat, etc. Furthermore, comprehensive data documentation should accompany data to allow it to interoperable.
+Your data and metadata use standardized vocabularies as well as formats. Both humans and machines should be able to read and interpret your data. Software licenses should not pose a barrier to usage. Data should be available in open formats that can be accessed by any software (ex: .csv, .txt, .dat).
 
 R: Reusable
 
-Your metadata should give insight into data provenance by providing information on the broad context of your project as well as your data collection efforts to allow for accurate use of your data. You should also have clear licensing for data use.
+In order to provide context for the reuse of your data, your metadata should give insight into data provenance, providing a project description, an overview of the data workflow, as well what authors to cite for appropriate attribution. You should also have clear licensing for data use.
 
 ### SEER
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="nfjtatxjyg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="skyimburao" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nfjtatxjyg .gt_table {
+#skyimburao .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_heading {
+#skyimburao .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_title {
+#skyimburao .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#nfjtatxjyg .gt_subtitle {
+#skyimburao .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#nfjtatxjyg .gt_bottom_border {
+#skyimburao .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_col_headings {
+#skyimburao .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_col_heading {
+#skyimburao .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#nfjtatxjyg .gt_column_spanner_outer {
+#skyimburao .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#nfjtatxjyg .gt_column_spanner_outer:first-child {
+#skyimburao .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nfjtatxjyg .gt_column_spanner_outer:last-child {
+#skyimburao .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nfjtatxjyg .gt_column_spanner {
+#skyimburao .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#nfjtatxjyg .gt_group_heading {
+#skyimburao .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#nfjtatxjyg .gt_empty_group_heading {
+#skyimburao .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#nfjtatxjyg .gt_from_md > :first-child {
+#skyimburao .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nfjtatxjyg .gt_from_md > :last-child {
+#skyimburao .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nfjtatxjyg .gt_row {
+#skyimburao .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#nfjtatxjyg .gt_stub {
+#skyimburao .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#nfjtatxjyg .gt_stub_row_group {
+#skyimburao .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#nfjtatxjyg .gt_row_group_first td {
+#skyimburao .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#nfjtatxjyg .gt_summary_row {
+#skyimburao .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#nfjtatxjyg .gt_first_summary_row {
+#skyimburao .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_first_summary_row.thick {
+#skyimburao .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#nfjtatxjyg .gt_last_summary_row {
+#skyimburao .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_grand_summary_row {
+#skyimburao .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#nfjtatxjyg .gt_first_grand_summary_row {
+#skyimburao .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_striped {
+#skyimburao .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#nfjtatxjyg .gt_table_body {
+#skyimburao .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_footnotes {
+#skyimburao .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_footnote {
+#skyimburao .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#nfjtatxjyg .gt_sourcenotes {
+#skyimburao .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#nfjtatxjyg .gt_sourcenote {
+#skyimburao .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#nfjtatxjyg .gt_left {
+#skyimburao .gt_left {
   text-align: left;
 }
 
-#nfjtatxjyg .gt_center {
+#skyimburao .gt_center {
   text-align: center;
 }
 
-#nfjtatxjyg .gt_right {
+#skyimburao .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nfjtatxjyg .gt_font_normal {
+#skyimburao .gt_font_normal {
   font-weight: normal;
 }
 
-#nfjtatxjyg .gt_font_bold {
+#skyimburao .gt_font_bold {
   font-weight: bold;
 }
 
-#nfjtatxjyg .gt_font_italic {
+#skyimburao .gt_font_italic {
   font-style: italic;
 }
 
-#nfjtatxjyg .gt_super {
+#skyimburao .gt_super {
   font-size: 65%;
 }
 
-#nfjtatxjyg .gt_two_val_uncert {
+#skyimburao .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#nfjtatxjyg .gt_footnote_marks {
+#skyimburao .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#nfjtatxjyg .gt_asterisk {
+#skyimburao .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#nfjtatxjyg .gt_slash_mark {
+#skyimburao .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#nfjtatxjyg .gt_fraction_numerator {
+#skyimburao .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#nfjtatxjyg .gt_fraction_denominator {
+#skyimburao .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -672,26 +672,26 @@ The remainder of this book will be organized into chapters that dive into phases
 You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
 <div class="figure" style="text-align: center">
-<img src="img/cl_lifecycle.PNG" alt="The research project life cycle" width="100%" />
+<img src="img/cl_lifecycle2.PNG" alt="The research project life cycle" width="100%" />
 <p class="caption">(\#fig:unnamed-chunk-2)The research project life cycle</p>
 </div>
 
 Let's walk through this chart.
 
   1. In a typical study we first begin by **generating ideas**, deciding what we want to study.
-  2. Then, most likely, we will look for funding to implement that study. This is where the two paths begin to diverge. If the team is applying for federal funding, the proposal and budget are created in the project management track, while the 2-5 page required **data management plan** (DMP) is created in the data track. Again, it may be the same people working on both of these pieces.
-  3. Next, if the project is funded, the project team will begin planning things such as hiring, recruitment, data collection, and how to implement the intervention. At the same time, those working on the data team will begin to **plan** out how to specifically implement the 2-5 page DMP submitted to their funder and start putting any necessary structures into place.
+  2. Then, most likely, we will look for grant funding to implement that study. This is where the two paths begin to diverge. If the team is applying for federal funding, the proposal and budget are created in the project management track, while the supplemental required **data management plan** [**see Data Management Plan**] is created in the data track. Again, it may be the same people working on both of these pieces.
+  3. Next, if the grant is awarded, the project team will begin planning things such as hiring, recruitment, data collection, and how to implement the intervention. At the same time, those working on the data team will begin to **plan** out how to specifically implement the 2-5 page data management plan submitted to their funder and start putting any necessary structures into place.
   4. Once planning is complete, the team moves into the cycle of data collection. It is called a cycle because if your study is longitudinal, every step here will occur cyclically. Once one phase of data collection wraps up, the team re-enters the cycle again for the next phase of data collection, until all data collection is complete for the entire project.
      - The data management and project management team begin the cycle by starting **documentation**. You can see that this phase occurs collaboratively because it is denoted with a double outline. You can see that this phase occurs collaboratively because it is denoted with a double outline. Both teams begin developing documentation such as data dictionaries and standard operating procedures.
-     - Once documentation is started, both teams begin to create any necessary **data collection instruments**. These instruments will be created with input from the documentation. During this phase the team may also develop their participant tracking database.
-     - Next, the project management team moves into the **data collection** phase. This may involve recruitment and consenting, as well as data collection. At this point, the data management team just provides support as needed.
-     - As data is collected, the project team will **track data** as it is collected in the participant tracking database. The data management team will collaborate with the project management team to help troubleshoot anything related to the actual tracking database.
+     - Once documentation is started, both teams collaboratively begin to create any necessary **data collection instruments**. These instruments will be created with input from the documentation. During this phase the teams may also develop their participant tracking database.
+     - Next, the project management team moves into the **data collection** phase. In addition to actual data collection, this may also involve preliminary activities such as recruitment and consenting of participants, as well as hiring and training of data collectors. At this point, the data management team just provides support as needed. 
+     - As data is collected, the project team will **track data** as it is collected in the participant tracking database. The data management team will collaborate with the project management team to help troubleshoot anything related to the actual tracking database or any issues discovered with the data during tracking.
      - Next, once data is collected, the teams move into the **data capture** phase. This is where teams are actively retrieving or converting data. For electronic data this may look like downloading data from a platform or having data sent to the team via a secure transfer. For physical data, this may look like teams entering paper data into a database. Oftentimes, this again is a collaborative effort between the project management team and the data team.
      - Once the data is captured, it needs to be **stored**. While the data team may be in charge of setting up and monitoring the storage efforts, the project team may be the ones actively retrieving and storing the data.
      - Next the teams move into the **cleaning and validation** phase. At this time the data team is reviewing data cleaning plans, writing data cleaning scripts and actively cleaning data from the most recent data collection round.
      - And last, the data team will **version** data as it is updated or errors are found.
-  5. The teams then only move out of the active data collection phase when all data collection for the project is complete. At this time the project team begins analyzing study data and working on publications. They are able to do this because of the organized processes implemented during the data collection cycle. Since data was managed and cleaned throughout, data is ready for analysis as soon as data collection is complete. Then, while the project team is analyzing data, the data team is doing any additional **preparation to archive** data for public sharing.
-  6. Last, the team submits data for **public sharing**.
+  5. The teams then only move out of the active data collection phase when all data collection for the project is complete. At this time the project team begins analyzing study data and working on publications as well as any final grant reports. They are able to do this because of the organized processes implemented during the data collection cycle. Since data was managed and cleaned throughout, data is ready for analysis as soon as data collection is complete. Then, while the project team is analyzing data, the data team is doing any additional **preparation to archive** data for public sharing.
+  6. Last, as the grant is closing out, the team submits data for **public sharing**.
     
 As you work through the remaining chapters of this book, this chart will be a guide to navigating where each phase of practices fits into the larger picture. 
 
