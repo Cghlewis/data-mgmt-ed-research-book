@@ -79,19 +79,19 @@ Reviewing roles and responsibilities in a format like this allows you to start t
 In assigning roles and responsibilities, make sure to consider the skills that are needed to be successful in each position. For example, when considering the role of a data manager and the responsibilities associated with that role, you may look for skillsets in the following buckets: 
 
 1. Interpersonal skills
-  - Detail oriented
-  - Organized
-  - Problem solver
-  - Inquisitive
-  - Excellent communicator (bridging gaps between technical audiences and non-technical audiences)
+    - Detail oriented
+    - Organized
+    - Problem solver
+    - Inquisitive
+    - Excellent communicator (bridging gaps between technical audiences and non-technical audiences)
 2. Domain skills
-  - Experience working with education data
-  - Understands data privacy (FERPA, HIPAA)
+    - Experience working with education data
+    - Understands data privacy (FERPA, HIPAA)
 3. Technical skills
-  - Understanding of database structure
-  - Experience building data pipelines
-  - Coding experience
-  - Specific software/tool experience
+    - Understanding of database structure
+    - Experience building data pipelines
+    - Coding experience
+    - Specific software/tool experience
   
 The specific skills needed for each role will depend on your project needs as well as the skillsets of the other members of the team.
 

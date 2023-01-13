@@ -86,6 +86,9 @@ research-protocol
 supplemental-documents
 standard-operating-procedures
 dataset-level
+readme
+changelog
+data-cleaning-plan
 variable-level
 metadata
 data-tracking
@@ -115,7 +118,7 @@ sharing-data
 data-cleaning
 foundational-knowledge
 data-structure-1
-data-cleaning-plan
+data-cleaning-plan-1
 data-validation
 why-use-code
 data-sharing
