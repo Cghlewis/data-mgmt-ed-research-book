@@ -75,7 +75,7 @@ documentation
 team-level
 lab-manual
 wiki
-onboardingoffboarding-checklist
+onboardingoffboarding
 data-use-agreement
 style-guide
 project-level

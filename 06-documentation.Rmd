@@ -16,9 +16,9 @@ Documentation is a collection of files that contain procedural and descriptive i
 - Ensuring others use and interpret data accurately
 - Providing searchability through metadata
 
-We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. The format of each document will also be discussed but it is worth noting here that during a project, while you are actively using your documents, choose a format that is human readable and works well for your team. When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents sustainable, interoperable, and searchable [**see Data Sharing**].
+We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a format that is human readable and works well for your team (ex: Word document, PDF, Google Doc, Excel file, HTML, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable [**see Data Sharing**].
 
-The documents below are all recommended documents that will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. A description of each document along with example formats and example templates (if available) are provided below. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder (**see DMP**) and other governing bodies such as your Institutional Review Board. Creating and maintaining these documents **are** an investment (make sure to account for this time in your proposal budget), but the return for the investment is well worth the effort.
+The documents below are all recommended documents that will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder (**see DMP**) and other governing bodies such as your Institutional Review Board. Creating and maintaining these documents **are** an investment (make sure to account for this time in your proposal budget), but the return for the investment is well worth the effort.
 
 As you review the these documents, remember that every single document mentioned is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of our diagram above, team members should always revisit documentation each time new data is collected, or more often if needed. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why. 
 
@@ -37,9 +37,11 @@ knitr::include_graphics("img/lifecycle_teamdoc.PNG")
 
 One example of a team level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It sets expectations, provides guidelines, and can even be a place for passing along helpful career advice [@balazs_crowdsourced_nodate]. While a lab manual will mostly consist of administrative, procedural, and interpersonal types of information, it can be helpful to also include data management content as well, including general rules about how to access, store, share, and work with data securely and ethically. 
 
-|Example Formats | Examples Documents|
-|------|---------|
-|Word, Google Docs, PDF, HTML| Crowdsourced lab manual template [@balazs_crowdsourced_nodate]; Faylab Lab Manual [@novak_faylab_2022]; The RAISE Lab Manual [@von_der_embse_raise_2019]|
+Example manuals:  
+
+- Crowdsourced lab manual template [@balazs_crowdsourced_nodate]  
+- Faylab Lab Manual [@novak_faylab_2022]  
+- The RAISE Lab Manual [@von_der_embse_raise_2019]  
 
 
 ### Wiki
@@ -64,11 +66,12 @@ Another option that can either be created alongside the lab manual or as a repla
 
 \* Note: Project level wikis can also be created and be very useful in centralizing frequently referenced information.
 
-|Example Format | Examples Documents|
-|------|---------|
-|SharePoint, OSF, Notion, HTML| Aly Lab Wiki [@aly_aly_2018]; SYNC Lab Wiki [@noauthor_sync_nodate]|
+Example Wikis:
 
-### Onboarding/Offboarding checklist
+- Aly Lab Wiki [@aly_aly_2018]  
+- SYNC Lab Wiki [@noauthor_sync_nodate]
+
+### Onboarding/Offboarding
 
 While onboarding checklists will mostly consist of non-data related, administrative information such as how to sign up for an email or how to get set up on your laptop, it should also contain several data specific pieces of information to get all new staff generally acclimated to working with data, for any project, in their new role. Topics to cover in an onboarding document include:
 
@@ -94,12 +97,6 @@ Similarly, while offboarding checklists will contain a lot of procedural informa
       - Documented adequately
       - Named according to the Style Guide
       - Accessible to someone other than you
-  
-\* Note: No example templates are provided below because public checklists I have come across either are not applicable to data management for education research teams (the procedures covered are applicable to individualistic research performed in labs - rather than team research), or the checklists only cover non-data related information. 
-  
-|Example Format | Examples Documents|
-|------|---------|
-|Word, Google Docs, PDF, HTML| NA|
 
 ### Data Use Agreement
 
@@ -134,10 +131,7 @@ Typically when we think of a data use agreement (DUA) we think of a document tha
       
 - Analyses
   - Procedures for using research project data for personal analyses (ex: Can students use any lab data with no permission needed?, Is there a data request process?, etc.)
-  
-|Example Format | Examples Documents|
-|------|---------|
-|Word, PDF, Qualtrics|NA |
+
 
 ### Style Guide
 
@@ -176,9 +170,11 @@ The research protocol will be a comprehensive project summary document. If you a
 - Handling unexpected events
 - Data analysis plan
 
-|Example Format | Examples Documents|
-|------|---------|
-|Word, PDF| University of Washington Protocol Template [@university_of_washington_developing_nodate]; Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014]; University of Missouri Protocol Template [@t{university_of_missouri_socialbehavioraleducational_nodate] |
+Example Templates:
+
+- University of Washington Protocol Template [@university_of_washington_developing_nodate]
+- Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014]  
+- University of Missouri Protocol Template [@university_of_missouri_socialbehavioraleducational_nodate]
 
 ### Supplemental Documents
 
@@ -188,23 +184,43 @@ There is a series of documents, that while can absolutely be standalone document
 
 The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. This can be both a helpful planning tool (for both project and data teams) as well as an excellent document to share with future data users. There is no one format for how to create this document. Below is an example of one way to visualize a data collection timeline.
 
-XXX
+```{r fig.cap="Example data collection timeline"}
 
+knitr::include_graphics("img/timeline.PNG")
 
+```
 
-2. Consort Diagram
+2. CONSORT Diagram
 
-A consort diagram displays the flow of participants through a program. It visually portrays enrollment in the program, randomization, as well as attrition. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. This diagram can be manually created in a text document
+A CONSORT (Consolidated Standards of Reporting Trials) diagram displays the flow of participants through a program [FIX @consort]. It visually portrays enrollment in the program, randomization, as well as attrition. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in a later chapter, will inform the creation of this diagram.
 
-XXX
+```{r fig.cap="2010 CONSORT flow diagram template", out.width = "70%"}
+
+knitr::include_graphics("img/consort.PNG")
+
+```
 
 3. Instruments 
 
-Actual copies of instrument (can also include any technical documents)
+Actual copies of instrument can be included as supplemental documentation. This includes copies of surveys, assessments, forms, and so forth. It can also include any technical documents associated with your instruments.
 
-4. Consent Forms
+4. Flowchart of data collection instruments/screeners
 
-5. Related publications
+You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data [FIX @Tourangeau].
+
+```{r fig.cap="Flowchart of an ECLS-K:2011 kindergarten assessment", out.width = "70%"}
+
+knitr::include_graphics("img/flowchart.PNG")
+
+```
+
+5. Consent Forms
+
+Consent forms can also be added as an addendum to research protocols to give further insight into what information was provided to study participants.
+
+6. Related publications
+
+You may also choose to attach any publications that have come from your data as an addendum to your protocol.
 
 ### Standard Operating Procedures
 

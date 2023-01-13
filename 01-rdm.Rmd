@@ -54,7 +54,7 @@ In 2016, the FAIR Principles [@noauthor_fair_nodate] were published in Scientifi
 
 F: Findable
 
-All data should be findable through a persistent identifier and have thorough, searchable, data documentation. As we move towards automation in our work and life, the need for machine-readable data and metadata becomes more prevalent for automatic discovery of information.
+All data should be findable through a persistent identifier and have thorough, searchable metadata. As we move towards automation in our work and life, the need for machine-readable data and metadata becomes more prevalent for automatic discovery of information.
 
 A: Accessible
 

@@ -54,7 +54,7 @@ In 2016, the FAIR Principles [@noauthor_fair_nodate] were published in Scientifi
 
 F: Findable
 
-All data should be findable through a persistent identifier and have thorough, searchable, data documentation. As we move towards automation in our work and life, the need for machine-readable data and metadata becomes more prevalent for automatic discovery of information.
+All data should be findable through a persistent identifier and have thorough, searchable metadata. As we move towards automation in our work and life, the need for machine-readable data and metadata becomes more prevalent for automatic discovery of information.
 
 A: Accessible
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="skyimburao" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="chhnjtfdjn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#skyimburao .gt_table {
+#chhnjtfdjn .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#skyimburao .gt_heading {
+#chhnjtfdjn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#skyimburao .gt_title {
+#chhnjtfdjn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#skyimburao .gt_subtitle {
+#chhnjtfdjn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#skyimburao .gt_bottom_border {
+#chhnjtfdjn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#skyimburao .gt_col_headings {
+#chhnjtfdjn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#skyimburao .gt_col_heading {
+#chhnjtfdjn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#skyimburao .gt_column_spanner_outer {
+#chhnjtfdjn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#skyimburao .gt_column_spanner_outer:first-child {
+#chhnjtfdjn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#skyimburao .gt_column_spanner_outer:last-child {
+#chhnjtfdjn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#skyimburao .gt_column_spanner {
+#chhnjtfdjn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#skyimburao .gt_group_heading {
+#chhnjtfdjn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#skyimburao .gt_empty_group_heading {
+#chhnjtfdjn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#skyimburao .gt_from_md > :first-child {
+#chhnjtfdjn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#skyimburao .gt_from_md > :last-child {
+#chhnjtfdjn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#skyimburao .gt_row {
+#chhnjtfdjn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#skyimburao .gt_stub {
+#chhnjtfdjn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#skyimburao .gt_stub_row_group {
+#chhnjtfdjn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#skyimburao .gt_row_group_first td {
+#chhnjtfdjn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#skyimburao .gt_summary_row {
+#chhnjtfdjn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#skyimburao .gt_first_summary_row {
+#chhnjtfdjn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#skyimburao .gt_first_summary_row.thick {
+#chhnjtfdjn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#skyimburao .gt_last_summary_row {
+#chhnjtfdjn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#skyimburao .gt_grand_summary_row {
+#chhnjtfdjn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#skyimburao .gt_first_grand_summary_row {
+#chhnjtfdjn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#skyimburao .gt_striped {
+#chhnjtfdjn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#skyimburao .gt_table_body {
+#chhnjtfdjn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#skyimburao .gt_footnotes {
+#chhnjtfdjn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#skyimburao .gt_footnote {
+#chhnjtfdjn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#skyimburao .gt_sourcenotes {
+#chhnjtfdjn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#skyimburao .gt_sourcenote {
+#chhnjtfdjn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#skyimburao .gt_left {
+#chhnjtfdjn .gt_left {
   text-align: left;
 }
 
-#skyimburao .gt_center {
+#chhnjtfdjn .gt_center {
   text-align: center;
 }
 
-#skyimburao .gt_right {
+#chhnjtfdjn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#skyimburao .gt_font_normal {
+#chhnjtfdjn .gt_font_normal {
   font-weight: normal;
 }
 
-#skyimburao .gt_font_bold {
+#chhnjtfdjn .gt_font_bold {
   font-weight: bold;
 }
 
-#skyimburao .gt_font_italic {
+#chhnjtfdjn .gt_font_italic {
   font-style: italic;
 }
 
-#skyimburao .gt_super {
+#chhnjtfdjn .gt_super {
   font-size: 65%;
 }
 
-#skyimburao .gt_two_val_uncert {
+#chhnjtfdjn .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#skyimburao .gt_footnote_marks {
+#chhnjtfdjn .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#skyimburao .gt_asterisk {
+#chhnjtfdjn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#skyimburao .gt_slash_mark {
+#chhnjtfdjn .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#skyimburao .gt_fraction_numerator {
+#chhnjtfdjn .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#skyimburao .gt_fraction_denominator {
+#chhnjtfdjn .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
