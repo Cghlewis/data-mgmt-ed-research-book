@@ -13,7 +13,7 @@ While field standards for the structure and format of publicly shared products t
 
 ## Why care about research data management?
 
-Without current agreed-upon standards in the field, it is important for research teams to develop their own data management standards that apply within and across all of their projects. Developing internal standards, implemented in a reproducible data management workflow [**refer workflow**], allows practices to be implemented consistently and with fidelity. There are both external pressures and personal reasons to care about developing research data management standards for your projects.
+Without current agreed-upon standards in the field, it is important for research teams to develop their own data management standards that apply within and across all of their projects. Developing internal standards, implemented in a reproducible data management workflow, allows practices to be implemented consistently and with fidelity. There are both external pressures and personal reasons to care about developing research data management standards for your projects.
 
 ### External Reasons
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="arnsxbojef" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="eppxbsjind" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#arnsxbojef .gt_table {
+#eppxbsjind .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_heading {
+#eppxbsjind .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_title {
+#eppxbsjind .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#arnsxbojef .gt_subtitle {
+#eppxbsjind .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#arnsxbojef .gt_bottom_border {
+#eppxbsjind .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_col_headings {
+#eppxbsjind .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_col_heading {
+#eppxbsjind .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#arnsxbojef .gt_column_spanner_outer {
+#eppxbsjind .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#arnsxbojef .gt_column_spanner_outer:first-child {
+#eppxbsjind .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#arnsxbojef .gt_column_spanner_outer:last-child {
+#eppxbsjind .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#arnsxbojef .gt_column_spanner {
+#eppxbsjind .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#arnsxbojef .gt_group_heading {
+#eppxbsjind .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#arnsxbojef .gt_empty_group_heading {
+#eppxbsjind .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#arnsxbojef .gt_from_md > :first-child {
+#eppxbsjind .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#arnsxbojef .gt_from_md > :last-child {
+#eppxbsjind .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#arnsxbojef .gt_row {
+#eppxbsjind .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#arnsxbojef .gt_stub {
+#eppxbsjind .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#arnsxbojef .gt_stub_row_group {
+#eppxbsjind .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#arnsxbojef .gt_row_group_first td {
+#eppxbsjind .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#arnsxbojef .gt_summary_row {
+#eppxbsjind .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#arnsxbojef .gt_first_summary_row {
+#eppxbsjind .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_first_summary_row.thick {
+#eppxbsjind .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#arnsxbojef .gt_last_summary_row {
+#eppxbsjind .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_grand_summary_row {
+#eppxbsjind .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#arnsxbojef .gt_first_grand_summary_row {
+#eppxbsjind .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_striped {
+#eppxbsjind .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#arnsxbojef .gt_table_body {
+#eppxbsjind .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_footnotes {
+#eppxbsjind .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_footnote {
+#eppxbsjind .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#arnsxbojef .gt_sourcenotes {
+#eppxbsjind .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#arnsxbojef .gt_sourcenote {
+#eppxbsjind .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#arnsxbojef .gt_left {
+#eppxbsjind .gt_left {
   text-align: left;
 }
 
-#arnsxbojef .gt_center {
+#eppxbsjind .gt_center {
   text-align: center;
 }
 
-#arnsxbojef .gt_right {
+#eppxbsjind .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#arnsxbojef .gt_font_normal {
+#eppxbsjind .gt_font_normal {
   font-weight: normal;
 }
 
-#arnsxbojef .gt_font_bold {
+#eppxbsjind .gt_font_bold {
   font-weight: bold;
 }
 
-#arnsxbojef .gt_font_italic {
+#eppxbsjind .gt_font_italic {
   font-style: italic;
 }
 
-#arnsxbojef .gt_super {
+#eppxbsjind .gt_super {
   font-size: 65%;
 }
 
-#arnsxbojef .gt_two_val_uncert {
+#eppxbsjind .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#arnsxbojef .gt_footnote_marks {
+#eppxbsjind .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#arnsxbojef .gt_asterisk {
+#eppxbsjind .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#arnsxbojef .gt_slash_mark {
+#eppxbsjind .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#arnsxbojef .gt_fraction_numerator {
+#eppxbsjind .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#arnsxbojef .gt_fraction_denominator {
+#eppxbsjind .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -671,15 +671,12 @@ The remainder of this book will be organized into chapters that dive into phases
 
 You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
-<div class="figure" style="text-align: center">
-<img src="img/cl_lifecycle2.PNG" alt="The research project life cycle" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-2)The research project life cycle</p>
-</div>
+![(\#fig:unnamed-chunk-2)The research project life cycle](img/cl_lifecycle2.PNG){width=100%}
 
 Let's walk through this chart.
 
   1. In a typical study we first begin by **generating ideas**, deciding what we want to study.
-  2. Then, most likely, we will look for grant funding to implement that study. This is where the two paths begin to diverge. If the team is applying for federal funding, the proposal and budget are created in the project management track, while the supplemental required **data management plan** [**see Data Management Plan**] is created in the data track. Again, it may be the same people working on both of these pieces.
+  2. Then, most likely, we will look for grant funding to implement that study. This is where the two paths begin to diverge. If the team is applying for federal funding, the proposal and budget are created in the project management track, while the supplemental required **[data management plan](#dmp)** is created in the data track. Again, it may be the same people working on both of these pieces.
   3. Next, if the grant is awarded, the project team will begin planning things such as hiring, recruitment, data collection, and how to implement the intervention. At the same time, those working on the data team will begin to **plan** out how to specifically implement the 2-5 page data management plan submitted to their funder and start putting any necessary structures into place.
   4. Once planning is complete, the team moves into the cycle of data collection. It is called a cycle because if your study is longitudinal, every step here will occur cyclically. Once one phase of data collection wraps up, the team re-enters the cycle again for the next phase of data collection, until all data collection is complete for the entire project.
      - The data management and project management team begin the cycle by starting **documentation**. You can see that this phase occurs collaboratively because it is denoted with a double outline. You can see that this phase occurs collaboratively because it is denoted with a double outline. Both teams begin developing documentation such as data dictionaries and standard operating procedures.

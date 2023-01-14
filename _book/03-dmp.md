@@ -1,9 +1,6 @@
-# Data Management Plan
+# Data Management Plan {#dmp}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_dmp2.PNG" alt="Data management plan in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Data management plan in the research project life cycle</p>
-</div>
+![(\#fig:unnamed-chunk-1)Data management plan in the research project life cycle](img/lifecycle_dmp2.PNG){width=70%}
 
 ## History and purpose
 

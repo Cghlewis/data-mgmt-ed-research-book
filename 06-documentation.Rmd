@@ -18,7 +18,7 @@ Documentation is a collection of files that contain procedural and descriptive i
 
 We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a format that is human readable and works well for your team (ex: Word document, PDF, Google Doc, Excel, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable [**see Data Sharing**].
 
-The documents below are all recommended and will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder (**see DMP**) and other governing bodies such as your Institutional Review Board. Creating and maintaining these documents **are** an investment (make sure to account for this time in your proposal budget), but the return for the investment is well worth the effort. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together).
+The documents below are all recommended and will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder ([see Data Management Plan](#dmp)) and other governing bodies such as your Institutional Review Board. Creating and maintaining these documents **are an investment** (make sure to account for this time in your proposal budget), but the return for the investment is well worth the effort. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together).
 
 As you review the these documents, remember that every single document mentioned is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of our diagram above, team members should always revisit documentation each time new data is collected, or more often if needed. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why. 
 
@@ -42,7 +42,7 @@ One example of a team level document is a lab manual, or team handbook. A lab ma
 - Crowdsourced lab manual template [@balazs_crowdsourced_nodate]  
 - Faylab Lab Manual [@novak_faylab_2022]  
 - The RAISE Lab Manual [@von_der_embse_raise_2019]  
-- Common Topics in Lab Handbooks [FIX @mehr]
+- Common Topics in Lab Handbooks [@mehr_common_2020]
 
 
 ### Wiki
@@ -78,7 +78,7 @@ knitr::include_graphics("img/onboard_offboard.PNG")
 
 ### Data Use Agreement
 
-Typically when we think of a data use agreement (DUA) we think of a document that we draft in conjunction with an external partner that would like to access our data (or we want to access theirs). It usually covers the terms for how someone is allowed to use data, considering things like access controls, research participant privacy, data destruction rules, and so on [@geraghty_formalize_nodate]. However, it can be really helpful to document the terms and conditions of data use and have staff, at minimum, review or even sign an internal statement saying that they have reviewed all team policies regarding working securely with data [FIX @cessda]. These rules for working with data can be added to a lab manual, as many people do, or they can be added to a separate data use agreement where staff members can sign or check a box acknowledging that they have read and understand the policies. 
+Typically when we think of a data use agreement (DUA) we think of a document that we draft in conjunction with an external partner that would like to access our data (or we want to access theirs). It usually covers the terms for how someone is allowed to use data, considering things like access controls, research participant privacy, data destruction rules, and so on [@geraghty_formalize_nodate]. However, it can be really helpful to document the terms and conditions of data use and have staff, at minimum, review or even sign an internal statement saying that they have reviewed all team policies regarding working securely with data [@cessda_data_nodate]. These rules for working with data can be added to a lab manual, as many people do, or they can be added to a separate data use agreement where staff members can sign or check a box acknowledging that they have read and understand the policies. 
 
 ```{r fig.cap="Example of content to include in an internal data use agreement", out.width = "70%"}
 
@@ -88,24 +88,24 @@ knitr::include_graphics("img/dua.PNG")
 
 ### Style Guide
 
-A style guide is a set of standards for the formatting of documents [FIX @wikipedia]. It improves consistency within and across files and projects. This document includes conventions for procedures such as variable naming, value coding, file naming, versioning, and file structure. It can be created in one large document or separate files for each type of style guide. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there is so many recommended practices to cover, I have given this document its own chapter. See [**Style Guides**] for more information.
+A style guide is a set of standards for the formatting of documents [@noauthor_style_2023]. It improves consistency within and across files and projects. This document includes conventions for procedures such as variable naming, value coding, file naming, versioning, and file structure. It can be created in one large document or separate files for each type of style guide. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there is so many recommended practices to cover, I have given this document its own chapter. See [**Style Guides**] for more information.
 
 
 ## Project Level
 
-Project level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the DMP (started before your project is funded), checklists and meeting notes (started during the planning phase), or the consort diagram [**see consort**] (started after data is collected) will begin at varying times.
+Project level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the DMP (started before your project is funded), checklists and meeting notes (started during the planning phase), or the CONSORT diagram (started after data is collected) will begin at varying times.
 
 ### Data Management Plan
 
-This is the first project level document that will be created in your research project life cycle. See **Data Management Plan** to review details about this document. The only other note to mention here is that your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
+This is the first project level document that will be created in your research project life cycle. See [Data Management Plan](#dmp) to review details about this document. The only other note to mention here is that your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
 
 ### Checklists and meeting notes
 
-Since we've already discussed these documents in a previous chapter [**see planning**] I won't say much more here other than to acknowledge that these documents are also part of your portfolio of documentation and are really key planning documents as you start to build your other project as well as data and variable level documents.
+Since we've already discussed these documents in a previous [chapter](#plan) I won't say much more here other than to acknowledge that these documents are also part of your portfolio of documentation and are really key planning documents as you start to build your other project as well as data and variable level documents.
 
 ### Roles and responsibilites document
 
-Using the checklists during your planning phase, you hopefully decided on and assigned some roles and responsibilities for your project. Now is the time to document those decisions in a formal document to be shared with the team. In the previous chapter [**see roles and responsibilities**] we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
+Using the checklists during your planning phase, you hopefully decided on and assigned some roles and responsibilities for your project. Now is the time to document those decisions in a formal document to be shared with the team. In the previous [chapter](#roles) we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
 
 ### Research Protocol
 
@@ -123,7 +123,7 @@ knitr::include_graphics("img/protocol.PNG")
 - Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014]  
 - University of Missouri Protocol Template [@university_of_missouri_socialbehavioraleducational_nodate]
 
-### Supplemental Documents
+### Supplemental Documents {#supplement}
 
 There is a series of documents, that while can absolutely be standalone documents, I am calling supplemental documents here because they can be added to your research protocol as an addendum at any point to further clarify specifics of your project.
 
@@ -139,7 +139,7 @@ knitr::include_graphics("img/timeline.PNG")
 
 2. CONSORT Diagram
 
-A CONSORT (Consolidated Standards of Reporting Trials) diagram displays the flow of participants through a program [FIX @consort]. It visually portrays enrollment in the program, randomization, as well as attrition. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in a later chapter, will inform the creation of this diagram.
+A CONSORT (Consolidated Standards of Reporting Trials) diagram displays the flow of participants through a program [@consort_consort_nodate]. It visually portrays enrollment in the program, randomization, as well as attrition. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in a later chapter, will inform the creation of this diagram.
 
 ```{r fig.cap="2010 CONSORT flow diagram template", out.width = "70%"}
 
@@ -153,7 +153,7 @@ Actual copies of instrument can be included as supplemental documentation. This 
 
 4. Flowchart of data collection instruments/screeners
 
-You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data [FIX @Tourangeau].
+You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data [@tourangeau_early_2015].
 
 ```{r fig.cap="Flowchart of an ECLS-K:2011 kindergarten assessment", out.width = "70%"}
 
@@ -169,9 +169,9 @@ Consent forms can also be added as an addendum to research protocols to give fur
 
 You may also choose to attach any publications that have come from your data as an addendum to your protocol.
 
-### Standard Operating Procedures
+### Standard Operating Procedures {#sop}
 
-While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [FIX @NUCATS]. If you recall from our [**planning chapter**], every step that we added to a data collection workflow is then added to an sop and the details fleshed out. Not only will you have an SOP for each type of data you are collecting, you can also have SOPs for other types of decisions as well. Examples include:
+While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_writing_nodate]. If you recall from our [planning chapter](#plan), every step that we added to a data collection workflow is then added to an sop and the details fleshed out. Not only will you have an SOP for each type of data you are collecting, you can also have SOPs for other types of decisions as well. Examples include:
 
 - Inclusion/exclusion criteria
 - Assigning study IDs
@@ -196,13 +196,13 @@ knitr::include_graphics("img/sop.PNG")
 
 **Example SOPs:**
 
-- Northwestern University Writing Standard Operating Procedures and Templates [FIX @NUCATS]  
-- IMPACCT Trials Coordination Centre Standard Operating Procedure for Allocation of Participant Identification Numbers [FIX @IMPACCT]  
-- CITI Template SOP [FIX @CITI]
+- Northwestern University Writing Standard Operating Procedures and Templates [@nucats_standard_nodate]  
+- IMPACCT Trials Coordination Centre Standard Operating Procedure for Allocation of Participant Identification Numbers [@impacct_trials_coordination_centre_itcc_standard_nodate]  
+- CITI Template SOP [@citi_program_citi_nodate]
 
 ## Dataset Level
 
-Our next type of documentation applies solely to your datasets and includes information about what data they contain, planned transformations, potential issues to be aware of, and alterations to the data. A huge reason for creating dataset documentation is for authenticity. Datasets going through many iterations of processing which can result in many versions of a dataset [FIX @cessda; @ukdata]. Preserving data lineage through tracking data errors and transformation is key to ensuring that you not only know you are using the correct version of your data, but that you know where your data come from and what processing has already been completed. As you've noticed I tend to break rules, and I plan to continue that trend by once again saying that not **all** of your dataset level documentation will be created in the documentation phase and well will talk about the timing as we review each document.  
+Our next type of documentation applies solely to your datasets and includes information about what data they contain, planned transformations, potential issues to be aware of, and alterations to the data. A huge reason for creating dataset documentation is for authenticity. Datasets going through many iterations of processing which can result in many versions of a dataset [@cessda_data_nodate; @service_quality_nodate]. Preserving data lineage through tracking data errors and transformation is key to ensuring that you not only know you are using the correct version of your data, but that you know where your data come from and what processing has already been completed. As you've noticed I tend to break rules, and I plan to continue that trend by once again saying that not **all** of your dataset level documentation will be created in the documentation phase and well will talk about the timing as we review each document.  
 
 ### Readme
 
@@ -223,7 +223,7 @@ A readme is a plain text document that contains information about your files. Th
         Step 3: Run the file 03_run_report.R to create report  
 
 3. For providing information about a set of files in a directory
-  - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add readmes to the top of those directories to provide information about what datasets are available in the directory as well as pertinent information about those datasets, including how the datasets are related/can be linked [FIX @washu].
+  - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add readmes to the top of those directories to provide information about what datasets are available in the directory as well as pertinent information about those datasets, including how the datasets are related/can be linked [@washington_university_in_st_louis_codebook_2023].
 
 ```{r fig.cap="Washington University in St. Louis example readme for conveying information files in a directory"}
 

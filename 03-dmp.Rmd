@@ -1,4 +1,4 @@
-# Data Management Plan
+# Data Management Plan {#dmp}
 
 ```{r fig.cap="Data management plan in the research project life cycle", out.width = "70%"}
 

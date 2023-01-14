@@ -1,4 +1,4 @@
-# Planning Data Management
+# Planning Data Management {#plan}
 
 ```{r fig.cap="Planning in the research project life cycle", out.width = "70%"}
 
@@ -21,7 +21,7 @@ This planning phase should include a series of regular meetings with core decisi
 1. To finalize project goals laid out in a grant proposal (i.e. what data will be collected)
 1. To finalize a timeline for goals (i.e. when is data collected)
 1. To lay out specific tasks needed to accomplish goals (i.e. how will data be collected, stored, managed)
-1. To assign roles and responsibilities [**see Roles and Responsibilities**] (i.e. who will be responsible for tasks)
+1. To assign [roles and responsibilities](#roles) (i.e. who will be responsible for tasks)
 1. To make decisions around task management and communication (i.e. how will tasks be monitored and communication tracked)
 
 Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation in the next phase. All meeting notes can be stored in a central location such as a planning folder with notes ordered by date or in a running document. 
@@ -52,7 +52,7 @@ For example, one team may collect survey data on paper because their participant
 
 Below is a very simplified example of the decision making process, based on the Borghi and Van Gulick[@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
 
-```{r fig.cap="A simplified decision-making process", out.width = "60%"}
+```{r fig.cap="A simplified decision-making process", out.width = "50%"}
 
 knitr::include_graphics("img/decision-diagram.PNG")
 
@@ -111,7 +111,7 @@ knitr::include_graphics("img/swimlane2.PNG")
 
 ```
 
-If you have a working data collection timeline already created [**see Documentation**], you can even build time into your workflow. Here is another example of the same survey workflow again, this time displayed using a Gantt chart [@poverty_action_lab_gantt_nodate] in order to better capture the expected timeline.
+If you have a working [data collection timeline](#supplement) already created, you can even build time into your workflow. Here is another example of the same survey workflow again, this time displayed using a Gantt chart [@poverty_action_lab_gantt_nodate] in order to better capture the expected timeline.
 
 ```{r}
 
@@ -120,7 +120,7 @@ knitr::include_graphics("img/gantt.PNG")
 ```
 
 
-While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all steps into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your sops and diagrams in other ways for reference. We will talk more about creating SOPs in our chapter on [**documentation**].
+While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all steps into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your sops and diagrams in other ways for reference. We will talk more about creating [SOPs](#sop) in our chapter on documentation.
 
 
 ### Benefits to visualizing a workflow
@@ -141,7 +141,7 @@ Similar to the questions you need to consider when reviewing your planning check
 
 ## Task management systems
 
-While tools such as our checklists, workflow diagrams, and SOPs (**see SOPs**) allow us to document and share our processes, it can be tricky to manage the day to day implementation of those processes. The planning phase is a great time to choose a task management system[@gentzkow_code_2014]. Keeping track of various deadlines and communications across scattered sources can be overwhelming and using a task management system may help remove ambiguity about the status of task progress. Rather than having to regularly check in via email for status updates or reading through various meeting notes to learn about decisions made, a task management system allows you to assign tasks to responsible parties, set deadlines based on timelines (**see timelines**), track progress, and capture communication and decisions all in one location.
+While tools such as our checklists, workflow diagrams, and [SOPs](#sop) allow us to document and share our processes, it can be tricky to manage the day to day implementation of those processes. The planning phase is a great time to choose a task management system[@gentzkow_code_2014]. Keeping track of various deadlines and communications across scattered sources can be overwhelming and using a task management system may help remove ambiguity about the status of task progress. Rather than having to regularly check in via email for status updates or reading through various meeting notes to learn about decisions made, a task management system allows you to assign tasks to responsible parties, set deadlines based on [timelines](#supplement), track progress, and capture communication and decisions all in one location.
 
 There are many existing tools that allow teams to assign and track tasks, schedule meetings, track project timelines, and document communication. Without endorsing any particular product, some project/task management tools that I know education research teams have used include:
 
