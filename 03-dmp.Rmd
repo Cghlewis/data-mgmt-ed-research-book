@@ -71,19 +71,25 @@ Again, the specifics of what should be included in each category will vary by fu
   - National Institutes of Health[@national_institutes_of_health_writing_nodate]
   - National Institute of Justice[@national_institute_of_justice_data_nodate]
   - National Science Foundation[@national_science_foundation_data_2017]
+  
 
 ## Getting help
 
-When constructing your DMP it may be important to enlist help. If you have a data manager or data team, you will most certainly want to consult with them when writing your plan. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. And last, if you plan to share your final data with a repository or institutional archive you will want to contact your repository when writing your plan as well. The repository may have its own requirements for how and when data must be shared and it is helpful to outline those guidelines in your data management plan at the time of submission. You can also specifically write the name of your repository into your data management plan as well. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
+Since DMPs are written before a project is funded, and therefore before additional staff members may be hired, oftentimes the investigators developing the grant proposal are the ones who write the DMP. However, when constructing your DMP it is well worth your time to enlist help. If you have an existing data manager or data team, you will most certainly want to consult with them when writing your plan to ensure your decisions are feasible. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. And last, if you plan to share your final data with a repository or institutional archive you will want to contact your repository when writing your plan as well. The repository may have its own requirements for how and when data must be shared and it is helpful to outline those guidelines in your data management plan at the time of submission. You can also specifically write the name of your repository into your data management plan as well. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
 
 Your DMP is a living document and you can always update your plan during or after your project completion. It may be helpful to keep in contact with your program officer regarding any potential changes throughout your project.
 
-If you are looking for guidance in writing a DMP, a variety of generic DMP templates for different federal agencies are available from the University of Virginia Library[@university_of_virginia_library_research_data_services_data_nodate]. There is also a well-known free online application called the DMPTool[@noauthor_dmptool_nodate] that guides you in constructing a data management plan for many of the large funding agencies you might work with. Their site also has many searchable public DMPs that you can review for inspiration.
+If you are looking for guidance in writing a DMP, a variety of generic DMP templates for different federal agencies are available, as well as actual copies of submitted DMPs that some researchers graciously make publicly available for example purposes.
 
+|Document|Description|
+|--------|-----------|
+|DMPTool Templates[@dmptool_dmp_nodate]|Templates organized by funding agencies|
+|Sara Hart DMP Example [@hart_example_2020]|A submitted DMP that is publicly available for example purposes|
+|UMN Libraries Examples[@university_of_minnesota_libraries_examples_nodate]| Submitted DMP examples from University of Minnesota researchers|
 
 ## Budgeting
 
-As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include data management personnel costs, fees, infrastructure, or tools needed to organize, document, store, and share study data [@service_costing_nodate]. Make sure to review your funder's documentation for information about allowable costs. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
+As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include data management personnel costs, fees, infrastructure, or tools needed to organize, document, store, and share study data [@service_costing_nodate]. Make sure to review your funder's documentation for information about allowable costs[FIX @Sam Wood]. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
 
 - Costs associated with curating and de-identifying data
 - Costs associated with developing data documentation

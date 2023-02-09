@@ -1,6 +1,9 @@
 # Planning Data Management {#plan}
 
-![(\#fig:unnamed-chunk-1)Planning in the research project life cycle](img/lifecycle_plan2.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_plan2.PNG" alt="Planning in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Planning in the research project life cycle</p>
+</div>
 
 Planning data management is distinct from the 2-5 page data management plan (DMP) discussed in the previous chapter. Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (things like how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites, etc). Team members such as PIs, project coordinators, and data managers, may be assisting in both planning processes.
 
@@ -48,7 +51,10 @@ For example, one team may collect survey data on paper because their participant
 
 Below is a very simplified example of the decision making process, based on the Borghi and Van Gulick[@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
 
-![(\#fig:unnamed-chunk-2)A simplified decision-making process](img/decision-diagram.PNG){width=50%}
+<div class="figure" style="text-align: center">
+<img src="img/decision-diagram.PNG" alt="A simplified decision-making process" width="50%" />
+<p class="caption">(\#fig:unnamed-chunk-2)A simplified decision-making process</p>
+</div>
 
 ### Checklist considerations
 
@@ -81,19 +87,28 @@ The last step of this planning phase is to build your workflows. Workflows allow
 
 Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like this one below works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 
-![(\#fig:unnamed-chunk-3)A simple workflow template](img/workflow1.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/workflow1.PNG" alt="A simple workflow template" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-3)A simple workflow template</p>
+</div>
 
 Here is how we might complete this diagram for a student survey.
 
-![(\#fig:unnamed-chunk-4)Example student survey workflow](img/workflow2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/workflow2.PNG" alt="Example student survey workflow" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-4)Example student survey workflow</p>
+</div>
 
 But the format truly does not matter. Here is a diagram of the same student survey workflow as above, with more detailed added, and this time using a swimlane template instead, where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
 
-![(\#fig:unnamed-chunk-5)Example student survey workflow using a swimlane template](img/swimlane2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/swimlane2.PNG" alt="Example student survey workflow using a swimlane template" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-5)Example student survey workflow using a swimlane template</p>
+</div>
 
 If you have a working [data collection timeline](#supplement) already created, you can even build time into your workflow. Here is another example of the same survey workflow again, this time displayed using a Gantt chart [@poverty_action_lab_gantt_nodate] in order to better capture the expected timeline.
 
-![](img/gantt.PNG){width=100%}
+<img src="img/gantt.PNG" width="100%" style="display: block; margin: auto;" />
 
 
 While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all steps into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your sops and diagrams in other ways for reference. We will talk more about creating [SOPs](#sop) in our chapter on documentation.

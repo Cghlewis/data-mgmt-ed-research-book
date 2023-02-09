@@ -11,6 +11,16 @@ fig:unnamed-chunk-10
 fig:unnamed-chunk-11
 fig:unnamed-chunk-12
 fig:unnamed-chunk-13
+fig:unnamed-chunk-14
+fig:unnamed-chunk-15
+fig:unnamed-chunk-16
+fig:unnamed-chunk-17
+fig:unnamed-chunk-18
+fig:unnamed-chunk-19
+fig:unnamed-chunk-20
+fig:unnamed-chunk-21
+fig:unnamed-chunk-22
+fig:unnamed-chunk-23
 preamble
 introduction
 why-this-book
@@ -71,6 +81,7 @@ project-team-members
 other-roles
 goals-of-assigning-roles-and-responsibilities
 documenting-roles-and-responsibilities
+data-management-role
 documentation
 team-level
 lab-manual
@@ -90,7 +101,13 @@ readme
 changelog
 data-cleaning-plan
 variable-level
+data-dictionary
+creating-a-data-dictionary-for-an-original-data-source
+creating-a-data-dictionary-from-an-existing-data-source
+time-well-spent
+codebook
 metadata
+wrapping-it-up
 data-tracking
 why-track-data
 build-a-system
@@ -126,7 +143,7 @@ why-share-your-data
 considering-fair-principles
 best-practices
 retractions-and-revisions
-wrapping-it-up
+wrapping-it-up-1
 connecting-practices-to-outcomes
 putting-in-the-work
 call-to-action

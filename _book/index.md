@@ -1,7 +1,7 @@
 --- 
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-01-13"
+date: "2023-02-09"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

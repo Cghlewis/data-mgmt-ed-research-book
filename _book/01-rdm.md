@@ -6,7 +6,7 @@ Research data management (RDM) involves the organization, storage, preservation,
 
 ## Standards
 
-Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014], and through grassroots efforts, other fields other such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
+Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014], and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
 
 While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
@@ -29,6 +29,8 @@ Without current agreed-upon standards in the field, it is important for research
 
 Even if you never plan to share your data outside of your research group, there are still many compelling reasons to manage your data in a reproducible and standardized way. 
 
+1. **Reduces data curation debt**: Taking the time to plan and implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices [@butters_recognizing_2020]. Having poorly collected, managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent possibly recollecting data or scrambling at the end of your study to get your data up to acceptable standards.
+
 1. **Facilitates use of your data**: Every member of your research team being able to able to find and understand your project data and documentation is a huge benefit. It allows for the easy use and re-use of your data, and hastens efforts like the publication process [@markowetz_five_2015]. Not having to search around for numbers of consented participants or asking which version of the data they should use allows your team to spend more time analyzing and less time playing detective.
 
 1. **Encourages validation**: Implementing reproducible data management practices encourages and allows your team to internally replicate and validate your processes to ensure your outputs are accurate.
@@ -36,8 +38,6 @@ Even if you never plan to share your data outside of your research group, there 
 1. **Improves continuity**: Data management practices such as documentation ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the former staff member left off and implement the project with fidelity [@borghi_data_2021; @cowles_research_nodate]. Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus [@markowetz_five_2015].
 
 1. **Increases efficiency**: Documenting and automating tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.
-
-1. **Reduces data curation debt**: Taking the time to implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices [@butters_recognizing_2020]. Having poorly managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent possibly recollecting data or scrambling at the end of your study to get your data up to acceptable standards.
 
 1. **Upholds research integrity**: Errors come in many forms, from both humans and technology[@kovacs_role_2021; @strand_error_nodate]. We've seen evidence of this in the papers cited as being retracted for "unreliable data" in the blog Retraction Watch [@noauthor_retraction_nodate]. Implementing quality control procedures reduces the chances of errors occurring and allows you to have confidence in your data. Without implementing these practices, your research findings could include extra noise, missing data, or erroneous or misleading results.
 
@@ -48,7 +48,7 @@ Even if you never plan to share your data outside of your research group, there 
 
 Data management does not live in a space all alone. It co-exists with other frameworks that impact how and why data is managed and it is important to be familiar with them as they will provide a foundation for you as you build your data management structures. 
 
-### FAIR
+### FAIR {#fair}
 
 In 2016, the FAIR Principles [@noauthor_fair_nodate] were published in Scientific Data, outlining four guiding principles for scientific data management and stewardship. These principles were created to improve and support the reuse of scholarly data, specifically the ability of machines to access and read data, and are the foundation for how all digital data should be publicly shared [@wilkinson_fair_2016]. The principles are:
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="eppxbsjind" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ztxgblzonx" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#eppxbsjind .gt_table {
+#ztxgblzonx .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_heading {
+#ztxgblzonx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_title {
+#ztxgblzonx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#eppxbsjind .gt_subtitle {
+#ztxgblzonx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#eppxbsjind .gt_bottom_border {
+#ztxgblzonx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_col_headings {
+#ztxgblzonx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_col_heading {
+#ztxgblzonx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#eppxbsjind .gt_column_spanner_outer {
+#ztxgblzonx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#eppxbsjind .gt_column_spanner_outer:first-child {
+#ztxgblzonx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eppxbsjind .gt_column_spanner_outer:last-child {
+#ztxgblzonx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eppxbsjind .gt_column_spanner {
+#ztxgblzonx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#eppxbsjind .gt_group_heading {
+#ztxgblzonx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#eppxbsjind .gt_empty_group_heading {
+#ztxgblzonx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#eppxbsjind .gt_from_md > :first-child {
+#ztxgblzonx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eppxbsjind .gt_from_md > :last-child {
+#ztxgblzonx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eppxbsjind .gt_row {
+#ztxgblzonx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#eppxbsjind .gt_stub {
+#ztxgblzonx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#eppxbsjind .gt_stub_row_group {
+#ztxgblzonx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#eppxbsjind .gt_row_group_first td {
+#ztxgblzonx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eppxbsjind .gt_summary_row {
+#ztxgblzonx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#eppxbsjind .gt_first_summary_row {
+#ztxgblzonx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_first_summary_row.thick {
+#ztxgblzonx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eppxbsjind .gt_last_summary_row {
+#ztxgblzonx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_grand_summary_row {
+#ztxgblzonx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#eppxbsjind .gt_first_grand_summary_row {
+#ztxgblzonx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_striped {
+#ztxgblzonx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eppxbsjind .gt_table_body {
+#ztxgblzonx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_footnotes {
+#ztxgblzonx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_footnote {
+#ztxgblzonx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#eppxbsjind .gt_sourcenotes {
+#ztxgblzonx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#eppxbsjind .gt_sourcenote {
+#ztxgblzonx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#eppxbsjind .gt_left {
+#ztxgblzonx .gt_left {
   text-align: left;
 }
 
-#eppxbsjind .gt_center {
+#ztxgblzonx .gt_center {
   text-align: center;
 }
 
-#eppxbsjind .gt_right {
+#ztxgblzonx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eppxbsjind .gt_font_normal {
+#ztxgblzonx .gt_font_normal {
   font-weight: normal;
 }
 
-#eppxbsjind .gt_font_bold {
+#ztxgblzonx .gt_font_bold {
   font-weight: bold;
 }
 
-#eppxbsjind .gt_font_italic {
+#ztxgblzonx .gt_font_italic {
   font-style: italic;
 }
 
-#eppxbsjind .gt_super {
+#ztxgblzonx .gt_super {
   font-size: 65%;
 }
 
-#eppxbsjind .gt_two_val_uncert {
+#ztxgblzonx .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#eppxbsjind .gt_footnote_marks {
+#ztxgblzonx .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#eppxbsjind .gt_asterisk {
+#ztxgblzonx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eppxbsjind .gt_slash_mark {
+#ztxgblzonx .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#eppxbsjind .gt_fraction_numerator {
+#ztxgblzonx .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#eppxbsjind .gt_fraction_denominator {
+#ztxgblzonx .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -669,9 +669,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 The remainder of this book will be organized into chapters that dive into phases of the research data life cycle. It is imperative to understand this research life cycle in order to see the flow of data through a project, as well as to see how everything in a project is connected. If phases are skipped, the whole project will suffer.
 
-You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
+You can see in the image below how, throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
-![(\#fig:unnamed-chunk-2)The research project life cycle](img/cl_lifecycle2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/cl_lifecycle2.PNG" alt="The research project life cycle" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-2)The research project life cycle</p>
+</div>
 
 Let's walk through this chart.
 

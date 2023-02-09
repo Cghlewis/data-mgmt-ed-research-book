@@ -6,7 +6,7 @@ Research data management (RDM) involves the organization, storage, preservation,
 
 ## Standards
 
-Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014], and through grassroots efforts, other fields other such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
+Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014], and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
 
 While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
@@ -29,6 +29,8 @@ Without current agreed-upon standards in the field, it is important for research
 
 Even if you never plan to share your data outside of your research group, there are still many compelling reasons to manage your data in a reproducible and standardized way. 
 
+1. **Reduces data curation debt**: Taking the time to plan and implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices [@butters_recognizing_2020]. Having poorly collected, managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent possibly recollecting data or scrambling at the end of your study to get your data up to acceptable standards.
+
 1. **Facilitates use of your data**: Every member of your research team being able to able to find and understand your project data and documentation is a huge benefit. It allows for the easy use and re-use of your data, and hastens efforts like the publication process [@markowetz_five_2015]. Not having to search around for numbers of consented participants or asking which version of the data they should use allows your team to spend more time analyzing and less time playing detective.
 
 1. **Encourages validation**: Implementing reproducible data management practices encourages and allows your team to internally replicate and validate your processes to ensure your outputs are accurate.
@@ -36,8 +38,6 @@ Even if you never plan to share your data outside of your research group, there 
 1. **Improves continuity**: Data management practices such as documentation ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the former staff member left off and implement the project with fidelity [@borghi_data_2021; @cowles_research_nodate]. Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus [@markowetz_five_2015].
 
 1. **Increases efficiency**: Documenting and automating tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.
-
-1. **Reduces data curation debt**: Taking the time to implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices [@butters_recognizing_2020]. Having poorly managed or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent possibly recollecting data or scrambling at the end of your study to get your data up to acceptable standards.
 
 1. **Upholds research integrity**: Errors come in many forms, from both humans and technology[@kovacs_role_2021; @strand_error_nodate]. We've seen evidence of this in the papers cited as being retracted for "unreliable data" in the blog Retraction Watch [@noauthor_retraction_nodate]. Implementing quality control procedures reduces the chances of errors occurring and allows you to have confidence in your data. Without implementing these practices, your research findings could include extra noise, missing data, or erroneous or misleading results.
 
@@ -48,7 +48,7 @@ Even if you never plan to share your data outside of your research group, there 
 
 Data management does not live in a space all alone. It co-exists with other frameworks that impact how and why data is managed and it is important to be familiar with them as they will provide a foundation for you as you build your data management structures. 
 
-### FAIR
+### FAIR {#fair}
 
 In 2016, the FAIR Principles [@noauthor_fair_nodate] were published in Scientific Data, outlining four guiding principles for scientific data management and stewardship. These principles were created to improve and support the reuse of scholarly data, specifically the ability of machines to access and read data, and are the foundation for how all digital data should be publicly shared [@wilkinson_fair_2016]. The principles are:
 
@@ -106,7 +106,7 @@ gt::gt(data)
 
 The remainder of this book will be organized into chapters that dive into phases of the research data life cycle. It is imperative to understand this research life cycle in order to see the flow of data through a project, as well as to see how everything in a project is connected. If phases are skipped, the whole project will suffer.
 
-You can see in the image below how throughout the project, data management and project coordination work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
+You can see in the image below how, throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
 ```{r fig.cap="The research project life cycle"}
 

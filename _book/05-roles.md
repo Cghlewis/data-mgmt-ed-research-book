@@ -1,6 +1,9 @@
 # Project Roles and Responsibilities {#roles}
 
-![(\#fig:unnamed-chunk-1)Planning in the research project life cycle](img/lifecycle_rr2.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_rr2.PNG" alt="Planning in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Planning in the research project life cycle</p>
+</div>
 
 Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles [@service_roles_nodate] for many reasons including for the security of data, the continuity of practices, and for the standardization of workflows.
 
@@ -24,26 +27,29 @@ This role is vital in maintaining the standardization of data practices. If you 
 
 ### Project Team Members
 
-This role refers to any staff hired to help implement a research project which may include full-time staff members or even part-time graduate students. Project team members are typically out in the field, collecting data, or they may also assist in other areas such as preparing data collection materials or assisting with data management. Senior project team members may also assist in implementing training or acting as data collection leads in the field.
+This role refers to any staff hired to help implement a research project which may include full-time staff members, with titles such a research or project assistants for instance, or it may include part-time graduate students. Project team members are typically out in the field, collecting data, or they may also assist in other areas such as preparing data collection materials or assisting with data management. Senior project team members may also assist in implementing training or acting as data collection leads in the field.
 
 ### Other Roles
 
-The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned above, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in the diagram above. Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied. Their role isn't shown on original diagram but their work is happening alongside the data collection cycle. 
+The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned above, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in the diagram above. Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied. Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
 
-![(\#fig:unnamed-chunk-2)Life cycle diagram updated to show hidden processes](img/lifecycle_intervention2.PNG){width=90%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_intervention2.PNG" alt="Life cycle diagram updated to show hidden processes" width="90%" />
+<p class="caption">(\#fig:unnamed-chunk-2)Life cycle diagram updated to show hidden processes</p>
+</div>
 
-## Goals of assigning Roles and Responsibilities
+## Goals of Assigning Roles and Responsibilities
 
 There are several goals of assigning roles and responsibilities [@valentine_best_nodate].
 
-1. To assign specific team members to project roles and delineate the responsibilities of those roles
+1. Appoint specific team members to project roles and delineate the responsibilities of those roles
 1. Assess equity in responsibilities  
     - Including time needed to complete tasks
     - Number of responsibilities assigned to each team member (not overloading any one team member)
-1. To assess the skills needed for responsibilities
-1. To assess any training need to fill gaps in knowledge
+1. Assess the skills needed for responsibilities
+1. Assess any training need to fill gaps in knowledge
 1. Estimate costs associated with roles
-1. Contingency plans  
+1. Develop contingency plans  
     - For transitions out of the role or for absenteeism
 
 Early on in the project you will start to generally assign roles in your data management plan. Remember you are often required to state who will be responsible for tasks such as data integrity and security. Then, once your project is funded and you start to have a better idea of your goals and your budget, you can flesh out the details of your roles. During the planning phase, using tools such as your planning checklists will help you think through more specific responsibilities and tasks associated with each role.
@@ -52,34 +58,41 @@ Early on in the project you will start to generally assign roles in your data ma
 
 Once roles and responsibilities have been assigned, those decisions should be documented to avoid any ambiguity about who is doing what. While documentation is a topic that will be covered in the next chapter, I think it is helpful to break the rules and discuss just this one document here while we are covering the topic of assigning roles. 
 
-A general roles and responsibilities document is one way to document your decisions [@ucdavis_pmlc_nodate; @colorado_school_of_mines_table_nodate]. In addition to being a planning document, it can also serve as a reference document that allows your team to easily see who is on the project team, what roles they play, and who to contact for questions regarding various project aspects (for example - who to contact for data storage access). 
+A general roles and responsibilities document is one way to document your decisions [@ucdavis_pmlc_nodate; @colorado_school_of_mines_table_nodate]. In addition to being a planning document that can help you assign tasks to the appropriate staff member, it can also serve as a reference document that allows your team to easily see who is on the project team, what roles they play, and who to contact for questions regarding various project aspects (for example - who to contact for data storage access). 
 
 This document can be laid in any format that conveys the information clearly to your team. Below are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as [standard operating procedures](#sop) where names are attached to each task.
 
-![(\#fig:unnamed-chunk-3)Roles and responsibilities document organized by role](img/roles_responsibility1.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-3)Roles and responsibilities document organized by role</p>
+</div>
 
-![(\#fig:unnamed-chunk-4)Roles and responsibilities document organized by phase](img/roles_responsibility2.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/roles_responsibility2.PNG" alt="Roles and responsibilities document organized by phase" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-4)Roles and responsibilities document organized by phase</p>
+</div>
 
 Reviewing roles and responsibilities in a format like this allows you to start to see how responsibilities are assigned and decide if tasks need to be redistributed in any way. You can also then start to fill in more details as needed.
 
 1. Required skillset
 
 In assigning roles and responsibilities, make sure to consider the skills that are needed to be successful in each position. For example, when considering the role of a data manager and the responsibilities associated with that role, you may look for skillsets in the following buckets: 
-
-1. Interpersonal skills
-    - Detail oriented
-    - Organized
-    - Problem solver
-    - Inquisitive
-    - Excellent communicator (bridging gaps between technical audiences and non-technical audiences)
-2. Domain skills
-    - Experience working with education data
-    - Understands data privacy (FERPA, HIPAA)
-3. Technical skills
-    - Understanding of database structure
-    - Experience building data pipelines
-    - Coding experience
-    - Specific software/tool experience
+  - Interpersonal skills
+      - Detail oriented
+      - Organized
+      - Problem solver
+      - Inquisitive
+      - Excellent communicator (bridging gaps between technical audiences and non-technical audiences)
+    
+  - Domain skills
+      - Experience working with education data
+      - Understands data privacy (FERPA, HIPAA)
+    
+  - Technical skills
+      - Understanding of database structure
+      - Experience building data pipelines
+      - Coding experience
+      - Specific software/tool experience
   
 The specific skills needed for each role will depend on your project needs as well as the skillsets of the other members of the team.
 
@@ -104,6 +117,8 @@ Since there is no one template for creating a roles and responsibility document,
 - Timing of each responsibility (ex: weekly, ongoing, the month of February)
 
 
+## Data Management Role
 
+Like I mentioned earlier, I highly recommend hiring a full-time data manager if you are able to budget for this as it allows each team member to have more narrow responsibilities and to implement their tasks with better precision. However, not everyone will have the capacity to do this. If so, it will be vitally important to still assign those data management responsibilities to a specific team members. In choosing who to assign these tasks to, you will want to consider several things such as appropriate skillset to manage the data, interest in data management tasks, and time to commit to data management. Oftentimes this responsibility falls to a full-time project coordinator as they are the ones who are intimately familiar with the data, and since they are full-time, they are able to carve out hours for data management tasks. Other times it may be a collaboration between a project coordinator, and a part-time graduate student (who may have more technical skills in terms of data wrangling). No matter who you assign these roles to, just ensure that they are documented and the information is disseminated to the team.
 
 
