@@ -355,7 +355,7 @@ The process described in this section is a manual, time consuming process. This 
 
 ### Codebook
 
-A codebook describes the contents, structure, and layout of a data file. It enables the user to quickly ascertain some of the details about a dataset without ever opening the file. Unlike a data dictionary, a codebook is created **after** your data is collected and cleaned and its value lies in data interpretation and data validation. 
+A codebook documents the contents, structure, and layout of a data file[@@icpsr_guide_2011]. It enables the user to quickly ascertain some of the details about a dataset without ever opening the file. Unlike a data dictionary, a codebook is created **after** your data is collected and cleaned and its value lies in data interpretation and data validation. 
 
 The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset.
 
@@ -383,6 +383,7 @@ Last, you may notice as you review codebooks, many will start with several pages
 |Document|Description|
 |--------|-----------|
 |ICPSR Guide to Codebooks [@icpsr_guide_2011]| Guide for creating codebooks|
+|SCOPE Codebook, US Department of Health and Human Services [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022]|A codebook for this study can be obtained from their ICPSR repository|
 
 ## Metadata
 
