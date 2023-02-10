@@ -108,6 +108,7 @@ time-well-spent
 codebook
 metadata
 wrapping-it-up
+style-guide-1
 data-tracking
 why-track-data
 build-a-system
@@ -150,4 +151,3 @@ call-to-action
 last-thoughts
 training-for-future-researchers
 investing-in-data-management-and-data-managers
-appendices

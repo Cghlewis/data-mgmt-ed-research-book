@@ -37,6 +37,8 @@ Team level documentation typically contain data governance rules that apply to t
 
 One example of a team level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It sets expectations, provides guidelines, and can even be a place for passing along helpful career advice [@balazs_crowdsourced_nodate]. While a lab manual will mostly consist of administrative, procedural, and interpersonal types of information, it can be helpful to also include data management content as well, including general rules about how to access, store, share, and work with data securely and ethically. 
 
+**Example lab manuals**
+
 |Document|Description|
 |--------|-----------|
 |Crowdsourced lab manual template [@balazs_crowdsourced_nodate]|Lab manual template
@@ -55,6 +57,8 @@ Another option that can either be created alongside the lab manual or as an alte
 </div>
 
 \* Note: Project level wikis can also be created and be very useful in centralizing frequently referenced information.
+
+**Example wikis**
 
 |Document|Description|
 |--------|-----------|
@@ -114,6 +118,8 @@ The research protocol will be a comprehensive project summary document. If you a
 </div>
 
 When it comes time to submit your data in a repository, the protocol can be revised to contain information helpful for a data end user. Content such as risks and benefits to participants can be removed, and numbers such as final study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
+
+**Example protocols**
 
 |Document|Description|
 |--------|-----------|
@@ -184,11 +190,14 @@ SOPs not only help staff know how to perform tasks, they also create transparenc
 
 In developing your template, the SOP should begin with **general information** about the scope and purpose of the procedure, as well as any tools or terminology. This help provides context for the user and gives them the background to use and interpret the SOP. The next section, **procedures**,  lists all procedures in order. Each step provides the name of the staff member/s associated with that step to ensure that there is no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs teams message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can be embedded as well. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
 
+**Example SOPS**
+
 |Document|Description|
 |--------|-----------|
 |Northwestern University Writing Standard Operating Procedures and Templates [@nucats_standard_nodate]| SOP Template |
 |IMPACCT Trials Coordination Centre Standard Operating Procedure for Allocation of Participant Identification Numbers [@impacct_trials_coordination_centre_itcc_standard_nodate]| Example SOP for assigning IDs|
 |CITI Template and Sample SOP [@citi_program_citi_nodate]|Sample Activitiy Monitor Configuration SOP|
+
 
 ## Dataset Level
 
@@ -256,6 +265,7 @@ A data cleaning plan is a written proposal outlining how you plan to transform y
           12. Add variable and value labels
           13. Export data
 
+
 ## Variable Level
 
 Our last type of documentation is variable level documentation. When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. This is documentation that tells us all pertinent information about the variables that exist in our datasets: variable names, descriptions, types, and so forth. While variable level documentation is often used for the interpretation of existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data @lewis_using_nodate, and we will discuss this more throughout the chapters in this book.
@@ -286,9 +296,9 @@ You will then build one data dictionary for each instrument you plan to collect 
 
 As you build your data dictionary, consider the following:
 
-- Are your variable names meeting the requirements laid out in your style guide?  
-- If your items come from an existing scale, does your value coding align with the coding laid out in the documentation? If your items do not come from an existing scale, does your value coding align with the requirements in your style guide?  
-- What additional items will make up your final dataset (it could be items that you plan to add to the data after it is collected, i.e. treatment, unique identifiers, calculated variables)?  
+  - Are your variable names meeting the requirements laid out in your style guide?   
+  - If your items come from an existing scale, does your value coding align with the coding laid out in the documentation? If your items do not come from an existing scale, does your value coding align with the requirements in your style guide?  
+  - What additional items will make up your final dataset (it could be items that you plan to add to the data after it is collected, i.e. treatment, unique identifiers, calculated variables)?  
 
 For demonstration purposes only, the following data dictionary uses items from Patterns of Adaptive Learning Scales (PALS) [FIX @Midgley]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
@@ -298,9 +308,8 @@ For demonstration purposes only, the following data dictionary uses items from P
 </div>
 
 The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to do a review with your team. 
-
   - Is everyone in agreement about how variables are named, how values are coded, and our variable types? 
-  - Is everyone in agreement about who gets each item? 
+  - Is everyone in agreement about who gets each item?  
   - Does the team want to adjust any of the question/item wording? 
   - You'll also want to confirm that the data dictionary includes everything the team plans to collect and no items are missing. 
   - If additional items are added to instruments at later time points, adding fields such as (time periods available), can be really helpful to future users in understanding why some items may be missing data in certain time points.

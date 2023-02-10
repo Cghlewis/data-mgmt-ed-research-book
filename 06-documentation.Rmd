@@ -16,7 +16,7 @@ Documentation is a collection of files that contain procedural and descriptive i
 - Ensuring others use and interpret data accurately
 - Providing searchability through metadata
 
-We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a format that is human readable and works well for your team (ex: Word document, PDF, Google Doc, Excel, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable (see \@Sharing).
+We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a format that is human readable and works well for your team (ex: Word document, PDF, plain text file, Google Doc, Excel, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable (see \@Sharing).
 
 The documents below are all recommended and will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder (see [Data Management Plan](#dmp)) and other governing bodies such as your Institutional Review Board. No matter which documents you choose to implement, it is important that you template your documents and implement them consistently within, and even across projects. Implementing documentation using templates reduces the cognitive load needed to understand the information and reduces errors in interpretation.
 
@@ -39,6 +39,8 @@ knitr::include_graphics("img/lifecycle_teamdoc.PNG")
 
 One example of a team level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It sets expectations, provides guidelines, and can even be a place for passing along helpful career advice [@balazs_crowdsourced_nodate]. While a lab manual will mostly consist of administrative, procedural, and interpersonal types of information, it can be helpful to also include data management content as well, including general rules about how to access, store, share, and work with data securely and ethically. 
 
+**Example lab manuals**
+
 |Document|Description|
 |--------|-----------|
 |Crowdsourced lab manual template [@balazs_crowdsourced_nodate]|Lab manual template
@@ -58,6 +60,8 @@ knitr::include_graphics("img/wiki.PNG")
 ```
 
 \* Note: Project level wikis can also be created and be very useful in centralizing frequently referenced information.
+
+**Example wikis**
 
 |Document|Description|
 |--------|-----------|
@@ -120,6 +124,8 @@ knitr::include_graphics("img/protocol2.PNG")
 ```
 
 When it comes time to submit your data in a repository, the protocol can be revised to contain information helpful for a data end user. Content such as risks and benefits to participants can be removed, and numbers such as final study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
+
+**Example protocols**
 
 |Document|Description|
 |--------|-----------|
@@ -195,11 +201,14 @@ knitr::include_graphics("img/sop.PNG")
 
 In developing your template, the SOP should begin with **general information** about the scope and purpose of the procedure, as well as any tools or terminology. This help provides context for the user and gives them the background to use and interpret the SOP. The next section, **procedures**,  lists all procedures in order. Each step provides the name of the staff member/s associated with that step to ensure that there is no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs teams message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can be embedded as well. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
 
+**Example SOPS**
+
 |Document|Description|
 |--------|-----------|
 |Northwestern University Writing Standard Operating Procedures and Templates [@nucats_standard_nodate]| SOP Template |
 |IMPACCT Trials Coordination Centre Standard Operating Procedure for Allocation of Participant Identification Numbers [@impacct_trials_coordination_centre_itcc_standard_nodate]| Example SOP for assigning IDs|
 |CITI Template and Sample SOP [@citi_program_citi_nodate]|Sample Activitiy Monitor Configuration SOP|
+
 
 ## Dataset Level
 
@@ -228,7 +237,7 @@ A readme is a plain text document that contains information about your files. Th
 3. For providing information about a set of files in a directory
   - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add readmes to the top of those directories to provide information about what datasets are available in the directory as well as pertinent information about those datasets, including how the datasets are related/can be linked. [@washington_university_in_st_louis_codebook_2023]
 
-```{r fig.cap="Institute of Education Sciences example readme for conveying information on files in a directory"}
+```{r fig.cap="Institute of Education Sciences example readme for conveying information on files in a directory", out.width= "70%"}
 
 knitr::include_graphics("img/readme3.PNG")
 
@@ -269,6 +278,7 @@ A data cleaning plan is a written proposal outlining how you plan to transform y
           12. Add variable and value labels
           13. Export data
 
+
 ## Variable Level
 
 Our last type of documentation is variable level documentation. When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. This is documentation that tells us all pertinent information about the variables that exist in our datasets: variable names, descriptions, types, and so forth. While variable level documentation is often used for the interpretation of existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data @lewis_using_nodate, and we will discuss this more throughout the chapters in this book.
@@ -300,9 +310,9 @@ You will then build one data dictionary for each instrument you plan to collect 
 
 As you build your data dictionary, consider the following:
 
-- Are your variable names meeting the requirements laid out in your style guide?  
-- If your items come from an existing scale, does your value coding align with the coding laid out in the documentation? If your items do not come from an existing scale, does your value coding align with the requirements in your style guide?  
-- What additional items will make up your final dataset (it could be items that you plan to add to the data after it is collected, i.e. treatment, unique identifiers, calculated variables)?  
+  - Are your variable names meeting the requirements laid out in your style guide?   
+  - If your items come from an existing scale, does your value coding align with the coding laid out in the documentation? If your items do not come from an existing scale, does your value coding align with the requirements in your style guide?  
+  - What additional items will make up your final dataset (it could be items that you plan to add to the data after it is collected, i.e. treatment, unique identifiers, calculated variables)?  
 
 For demonstration purposes only, the following data dictionary uses items from Patterns of Adaptive Learning Scales (PALS) [FIX @Midgley]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
@@ -313,9 +323,8 @@ knitr::include_graphics("img/dictionary2.PNG")
 ```
 
 The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to do a review with your team. 
-
   - Is everyone in agreement about how variables are named, how values are coded, and our variable types? 
-  - Is everyone in agreement about who gets each item? 
+  - Is everyone in agreement about who gets each item?  
   - Does the team want to adjust any of the question/item wording? 
   - You'll also want to confirm that the data dictionary includes everything the team plans to collect and no items are missing. 
   - If additional items are added to instruments at later time points, adding fields such as (time periods available), can be really helpful to future users in understanding why some items may be missing data in certain time points.
@@ -361,7 +370,7 @@ knitr::include_graphics("img/codebook.PNG")
 ```
 
 Ultimately you want to export a codebook that contains variable level information like this document below from the United States Department of Health and
-Human Services [FIX @Scope].
+Human Services [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022].
 
 ```{r fig.cap="Example codebook content from the SCOPE Coach Survey", out.width = "80%"}
 
@@ -371,7 +380,7 @@ knitr::include_graphics("img/codebook2.PNG")
 
 You can see how in addition to being an excellent resource for data users to review your data without ever opening the file, you can also see how this document may help you catch errors in your data if out of range or unexpected values appear.
 
-You can either create separate codebooks per datasets or have them all contained in one document, clickable through a table of contents. Unlike a data dictionary which I recommend to create manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebook, including point and click statistical programs such as SPSS, or with a little programming knowledge, you can more flexibly design codebooks using programs like R or SAS. Fo example, the R programming language has many packages that will create and export codebooks in a variety of formats from your existing dataset by just running a few functions@lewis_codebook_nodate.
+You can either create separate codebooks per datasets or have them all contained in one document, clickable through a table of contents. Unlike a data dictionary which I recommend to create manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebook, including point and click statistical programs such as SPSS, or with a little programming knowledge, you can more flexibly design codebooks using programs like R or SAS. Fo example, the R programming language has many packages that will create and export codebooks in a variety of formats from your existing dataset by just running a few functions[@lewis_codebook_nodate].
 
 Last, you may notice as you review codebooks, many will start with several pages of text, usually containing information about the project. It's common for people, when it comes time to share their data, to combine information from their research protocol or readme files, into their codebooks, rather than sharing separate documents.
 
@@ -418,7 +427,7 @@ Metadata standards, typically field specific, are ways of establishing common st
 
 Many fields have existing metadata standards to adhere to. Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@noauthor_schemaorg_nodate]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon standards in the field of education [@institute_of_education_sciences_frequently_nodate].
 
-```{r fig.cap="A sampling of field metadata standards"}
+```{r fig.cap="A sampling of field metadata standards", out.width= "70%"}
 
 knitr::include_graphics("img/metadata_standards.PNG")
 

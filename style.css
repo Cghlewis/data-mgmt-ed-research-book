@@ -16,3 +16,15 @@ pre code {
 .section a {
   color: #bf7e1c;
 }
+.table-sm th, table td {
+  padding:0.3rem;
+  font-size:15px;
+}
+main ul {
+  list-style-type: square;
+  font-size: 13pt;
+}
+main li {
+  margin-bottom: 0.5rem;
+  font-size: 13pt;
+}
