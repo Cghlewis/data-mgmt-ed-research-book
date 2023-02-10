@@ -21,6 +21,7 @@ fig:unnamed-chunk-20
 fig:unnamed-chunk-21
 fig:unnamed-chunk-22
 fig:unnamed-chunk-23
+fig:unnamed-chunk-24
 preamble
 introduction
 why-this-book
@@ -65,7 +66,7 @@ budgeting
 plan
 why-spend-time-on-planning
 goals-of-planning
-planning-checklists
+checklist
 decision-making-process
 checklist-considerations
 data-management-workflow
@@ -80,7 +81,8 @@ data-manager
 project-team-members
 other-roles
 goals-of-assigning-roles-and-responsibilities
-documenting-roles-and-responsibilities
+assigning-roles-and-responsibilities
+roledoc
 data-management-role
 documentation
 team-level
@@ -108,8 +110,8 @@ time-well-spent
 codebook
 metadata
 wrapping-it-up
-style-guide-1
-data-tracking
+style
+track
 why-track-data
 build-a-system
 ids
@@ -133,13 +135,13 @@ detachable-media
 audiovisual-data
 paper-data
 sharing-data
-data-cleaning
+clean
 foundational-knowledge
 data-structure-1
 data-cleaning-plan-1
 data-validation
 why-use-code
-data-sharing
+share
 why-share-your-data
 considering-fair-principles
 best-practices

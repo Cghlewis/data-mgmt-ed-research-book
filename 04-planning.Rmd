@@ -28,7 +28,7 @@ Make sure to come to every meeting with an agenda to stay on track and to take d
 
 At the end of the planning period, the team should have a clear plan for what the project goals are, when goals should be accomplished, how goals will be accomplished, who is in charge of completing tasks associated with goals, and what additional resources are needed to accomplish goals.
 
-## Planning checklists
+## Planning checklists {#checklist}
 
 Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are some sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project.
 
@@ -111,7 +111,7 @@ knitr::include_graphics("img/swimlane2.PNG")
 
 ```
 
-If you have a working [data collection timeline](#supplement) already created, you can even build time into your workflow. Here is another example of the same survey workflow again, this time displayed using a Gantt chart [@poverty_action_lab_gantt_nodate] in order to better capture the expected timeline.
+If you have a working [data collection timeline](#supplement) already created, you can even build time into your workflow. Here is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
 
 ```{r}
 
@@ -120,12 +120,12 @@ knitr::include_graphics("img/gantt.PNG")
 ```
 
 
-While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all steps into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your sops and diagrams in other ways for reference. We will talk more about creating [SOPs](#sop) in our chapter on documentation.
+While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all steps into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your SOPs and diagrams in other ways for reference. We will talk more about creating [SOPs](#sop) in our chapter on documentation.
 
 
 ### Benefits to visualizing a workflow
 
-Visualizing your decisions in diagram format has many benefits. First, it allows your team to conceptualize their specific tasks in the process, as well as the timing at which their tasks occur, and any dependencies associated with those tasks. It also allows your team to see how their roles and responsibilities fit into the larger research process[@briney_foundational_2020]. Showing how data management is integrated into the larger research workflow can help team members view data management as part of their daily routine, rather than “extra work”[@borghi_promoting_2022]. And last, reviewing workflows as a team and allowing members to provide feedback may help create buy-in for data management processes, potentially leading to better adherence to practices.
+Visualizing your decisions in diagram format has many benefits. First, it allows your team to conceptualize their specific tasks in the process, the timing at which their tasks occur, and any dependencies associated with those tasks. It also allows your team to see how their roles and responsibilities fit into the larger research process[@briney_foundational_2020]. Showing how data management is integrated into the larger research workflow can help team members view data management as part of their daily routine, rather than “extra work”[@borghi_promoting_2022]. And last, reviewing workflows as a team and allowing members to provide feedback may help create buy-in for data management processes, potentially leading to better adherence to practices.
 
 ### Workflow considerations
 

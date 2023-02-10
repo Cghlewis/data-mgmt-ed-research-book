@@ -12,7 +12,7 @@ Since 2013, even earlier for the National Science Foundation, most federal agenc
 
 ### Why are DMPs important?
 
-Funding agencies see DMPs as important in maximizing scientific outputs from investments and increasing transparency. Mandating data sharing for federally funded projects leads to many benefits including accelerating discovery, greater collaboration, and building trust among data creators and users. In addition to the benefits viewed by funders, there are intrinsic benefits that come from having to write a data management plan. Having to thoughtfully plan and having transparency in that plan leads to better data management. Knowing that you will eventually be sharing your data and documentation with others outside of your team can motivate researchers to think hard about how to organize their data management practices in a way that will produce data that they trust to share with the outside world[@noauthor_creating_nodate].
+Funding agencies see DMPs as important in maximizing scientific outputs from investments and increasing transparency. Mandating data sharing for federally funded projects leads to many benefits including accelerating discovery, greater collaboration, and building trust among data creators and users. In addition to the benefits viewed by funders, there are intrinsic benefits that come from having to write a data management plan. Having to thoughtfully plan and having transparency in that plan leads to better data management. Knowing that you will eventually be sharing your data and documentation with others outside of your team can motivate researchers to think hard about how to organize their data management practices in a way that will produce data that they trust to share with the outside world[@center_for_open_science_creating_nodate].
 
 ## What is it?
 
@@ -20,7 +20,7 @@ Generally, a data management plan is a supplemental 2-5 page document, submitted
 
 ### What to include?
 
-What to include in a DMP varies some across funding agencies. While you should check each funding agency’s site for their specific DMP requirements, there are typically 10 common categories covered in a data management plan [@gonzales_ten_2022; @icpsr_guide_nodate; @open_science_foundation_creating_nodate] . Those categories are:
+What to include in a DMP varies some across funding agencies. While you should check each funding agency’s site for their specific DMP requirements, there are typically 10 common categories covered in a data management plan [@gonzales_ten_2022; @icpsr_guide_nodate; @center_for_open_science_creating_nodate] . Those categories are:
 
 1. Roles and responsibilities
     - What are the staff roles in management and long-term preservation of data?
@@ -67,7 +67,7 @@ What to include in a DMP varies some across funding agencies. While you should c
 
 Again, the specifics of what should be included in each category will vary by funder. Here are sites to visit to learn more about the four most common federal education research funder DMP requirements.
 
-  - Institute of Education Sciences[@institute_of_education_sciences_ies_nodate]
+  - Institute of Education Sciences[@institute_of_education_sciences_data_nodate]
   - National Institutes of Health[@national_institutes_of_health_writing_nodate]
   - National Institute of Justice[@national_institute_of_justice_data_nodate]
   - National Science Foundation[@national_science_foundation_data_2017]
@@ -89,7 +89,7 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 
 ## Budgeting
 
-As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include data management personnel costs, fees, infrastructure, or tools needed to organize, document, store, and share study data [@service_costing_nodate]. Make sure to review your funder's documentation for information about allowable costs[FIX @Sam Wood]. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
+As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include data management personnel costs, fees, infrastructure, or tools needed to organize, document, store, and share study data [@service_costing_nodate]. Make sure to review your funder's documentation for information about allowable costs[@samuel_j_wood_library_research_nodate]. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
 
 - Costs associated with curating and de-identifying data
 - Costs associated with developing data documentation
