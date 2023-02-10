@@ -59,24 +59,13 @@ When assigning roles and responsibilities, there are several factors to consider
 
 1. Required skillset
 
-In assigning roles and responsibilities, make sure to consider the skills that are needed to be successful in each position. For example, when considering the role of a data manager and the responsibilities associated with that role, you may look for skillsets in the following buckets: 
+In assigning roles and responsibilities, make sure to consider the skills that are needed to be successful in each position. For example, when considering the role of a data manager and the responsibilities associated with that role, you may look for skill sets in the following buckets: 
 
-  - Interpersonal skills  
-      - Detail oriented  
-      - Organized  
-      - Good communicator 
-    
-  - Domain skills  
-      - Experience working with education data  
-      - Understands data privacy (FERPA, HIPAA)  
-    
-  - Technical skills  
-      - Understanding of database structure  
-      - Experience building data pipelines  
-      - Coding experience  
-      - Specific software/tool experience  
+  - Interpersonal skills (Detail oriented, organized, good communicator)  
+  - Domain skills (Experience working with education data, understands data privacy - FERPA, HIPAA)  
+  - Technical skills (Understanding of database structure, experience building data pipelines, coding experience, specific software/tool experience)  
   
-The specific skills needed for each role will depend on your project needs as well as the skillsets of the other members of the team.
+The specific skills needed for each role will depend on your project needs as well as the skill sets of the other members of the team.
 
 2. Training needs
 
