@@ -110,7 +110,7 @@ Since we've already discussed these documents in a previous [chapter](#checklist
 
 Using the checklists during your planning phase, you hopefully decided on and assigned some roles and responsibilities for your project. Now is the time to formally document those decisions in a way that you can share with the others. In the previous [chapter](#roledoc) we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
 
-**Examples of roles and responsibilities documented**
+**Examples roles and responsibilities**
 
 |Document|Description|
 |--------|-----------|
@@ -387,7 +387,7 @@ Last, you may notice as you review codebooks, many will start with several pages
 
 ## Metadata
 
-When it comes time to deposit your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate;@danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data[@noauthor_fair_nodate; @service_metadata_nodate; @logan_data_2021].
+The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When it comes time to deposit your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate;@danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data[@noauthor_fair_nodate; @service_metadata_nodate; @logan_data_2021].
 
 For the most part, no additional work is needed on your part to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_university_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files - enables discovery), administrative (licensing and ownership), and structural metadata (technical considerations) [@danish_national_forum_for_research_data_management_metadata_nodate; @cofield_libguides_nodate]. The information from this form will become your metadata [@noauthor_figshare_nodate].
 
@@ -419,7 +419,7 @@ If your repository provides limited forms for metadata entry, you can also choos
 
 ### Standards {#standards}
 
-Metadata standards, typically field specific, establish common structuring and meaning of data and improve the data interoperability in addition to increasing the ability of users to find and understand data [@university_of_iowa_libraries_university_nodate]. Metadata standards can be applied in several ways [@bolam_guides_nodate; @ddi_alliance_controlled_nodate]. 
+Metadata standards, typically field specific, establish common structuring and meaning of data and improve data interoperability in addition to increasing the ability of users to find and understand data [@university_of_iowa_libraries_university_nodate]. Metadata standards can be applied in several ways [@bolam_guides_nodate; @ddi_alliance_controlled_nodate]. 
 
 1. Formats: What machine-readable format should metadata be in?  
 2. Schema: What fields are recommended verses mandatory for project, dataset and variable level metadata?

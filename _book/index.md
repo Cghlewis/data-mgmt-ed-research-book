@@ -1,7 +1,7 @@
 --- 
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-02-10"
+date: "2023-02-13"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -29,7 +29,7 @@ _The results of educational research studies are only as accurate as the data us
 
 ## Introduction 
 
-In 2013, without knowing that the term research data management existed, I accepted a job as a Research Associate with a research center. My job was to coordinate the collection and management of data for federally funded randomized controlled trial efficacy studies taking place in K-12 schools, along with a team of PIs, other full-time staff, part-time data collectors, and graduate students. While I had some experience analyzing and working with education data, i.e. ECLS-K, I had no experience running research grants, collecting original data, or managing research data, but I was excited to learn.
+In 2013, without knowing that the term research data management existed, I accepted a job as a research associate with a research center. My job was to coordinate the collection and management of data for federally funded randomized controlled trial efficacy studies taking place in K-12 schools, along with a team of PIs, other full-time staff, part-time data collectors, and graduate students. While I had some experience analyzing and working with education data, i.e. ECLS-K, I had no experience running research grants, collecting original data, or managing research data, but I was excited to learn.
  
 In my time in that position I learned to plan, schedule, and track data collection activities, create data collection tools, organize and document data inputs, and produce usable data outputs; but I didn't learn to do these things through any formal training. There were no books, courses, or workshops that I learned from. I learned from colleagues and a large amount of trial and error. Since then, as I have met more PIs, data managers, and project coordinators in education research, I realize that this is a common method for learning data management (mentoring and “winging it”). And while learning data management through these informal methods helps us get by, the ramifications of this unstandardized system are felt by both the project team and future data users.
 
