@@ -272,11 +272,11 @@ These changelogs will most likely not be created until the data capture and data
 
 A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset that you plan to collect (ex: student survey, student assessment, teacher survey, district student demographic data). Because this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
 
-This documents can be started in the documentation phase, but will most likely continue to be updated throughout the study. Typically the person who has the responsibility of cleaning the data will write out the data cleaning plans, but those documents can then be brought to a planning meeting allowing other team members, such as PIs, to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. We will talk much more about what types of transformations **should** go into a data cleaning plan in the **data cleaning** chapter of this book.
+This document can be started in the documentation phase, but will most likely continue to be updated throughout the study, especially as you start digging in to your collected raw data and seeing what additional transformations are needed. Typically the person who has the responsibility of cleaning the data will write out the data cleaning plans, but those documents can then be brought to a planning meeting allowing other team members, such as PIs, to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. We will talk much more about what types of transformations **should** go into a data cleaning plan in the [data cleaning](#clean) chapter of this book.
 
-```{r fig.cap="A simplified data cleaning plan", out.width = "70%"}
+```{r fig.cap="A simplistic data cleaning plan", out.width = "60%"}
 
-knitr::include_graphics("img/data_cleaning_plan2.PNG")
+knitr::include_graphics("img/data_cleaning_plan.PNG")
 
 ```
 
