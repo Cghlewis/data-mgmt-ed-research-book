@@ -402,10 +402,34 @@ t_stress5</code></pre>
 <p>We will further discuss merging and appending in our <a href="clean.html#clean">data cleaning</a> chapter. With that said, if you do plan to potentially merge data in a <strong>wide format</strong> at some point, it can be helpful to go ahead and plan your rules for adding time to variable names, and add that rule to your style guide.</p>
 <p>There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time.</p>
 <ul>
-<li>As a prefix or suffix with a generic abbreviation and delimiter such as <code>w1_</code> for wave 1 (<code>w1_s_gender</code>, <code>s_gender_w1</code>)</li>
-<li>As a prefix or suffix with a meaningful abbreviation and delimiter such as <code>f21_</code> for fall 2021 (<code>f21_s_gender</code>, <code>s_gender_f21</code>)</li>
-<li>One of the above options with no delimiter (<code>w1s_gender</code>, <code>s_genderw1</code>)</li>
-<li>As a number embedded into your variable at a certain location, for instance, after an existing prefix such as <code>s</code> for <code>student survey</code> (<code>s1_gender</code>, <code>s2_gender</code>)</li>
+<li>As a prefix or suffix with a generic abbreviation, such as <code>w1</code> for wave 1, added with a delimiter <code>_</code>
+<ul>
+<li>
+<code>w1_s_gender</code> or <code>s_gender_w1</code>
+</li>
+</ul>
+</li>
+<li>As a prefix or suffix with a meaningful abbreviation, such as <code>f21</code> for fall 2021, added with a delimiter (<code>_</code>)
+<ul>
+<li>
+<code>f21_s_gender</code> or <code>s_gender_f21</code>
+</li>
+</ul>
+</li>
+<li>One of the above options with no delimiter
+<ul>
+<li>
+<code>w1s_gender</code> or <code>s_genderw1</code>
+</li>
+</ul>
+</li>
+<li>As a number embedded into your variable at a certain location, for instance, after an existing prefix such as <code>s</code> for <code>student survey</code>
+<ul>
+<li>
+<code>s1_gender</code>, <code>s2_gender</code>
+</li>
+</ul>
+</li>
 </ul>
 <p>While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated out like this. Also, adding time as a standalone component allows you to easily, programmatically, add, remove, or manipulate the time component of your variable. This allows you more flexibility in working with your data, especially in restructuring your datasets. When time is embedded in your variable names, it can become more inconvenient if you decide you want to remove the time component and restructure your data.</p>
 </div>

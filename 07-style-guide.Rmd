@@ -260,10 +260,14 @@ We will further discuss merging and appending in our [data cleaning](#clean) cha
 
 There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time.
 
-- As a prefix or suffix with a generic abbreviation and delimiter such as `w1_` for wave 1 (`w1_s_gender`, `s_gender_w1`)
-- As a prefix or suffix with a meaningful abbreviation and delimiter such as `f21_` for fall 2021 (`f21_s_gender`, `s_gender_f21`)
-- One of the above options with no delimiter (`w1s_gender`, `s_genderw1`)
-- As a number embedded into your variable at a certain location, for instance, after an existing prefix such as `s` for `student survey` (`s1_gender`, `s2_gender`)
+- As a prefix or suffix with a generic abbreviation, such as `w1` for wave 1, added with a delimiter `_`
+  - `w1_s_gender` or `s_gender_w1`
+- As a prefix or suffix with a meaningful abbreviation, such as `f21` for fall 2021, added with a delimiter (`_`)
+  - `f21_s_gender` or `s_gender_f21`
+- One of the above options with no delimiter
+  - `w1s_gender` or `s_genderw1`
+- As a number embedded into your variable at a certain location, for instance, after an existing prefix such as `s` for `student survey`
+  - `s1_gender`, `s2_gender`
 
 While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated out like this. Also, adding time as a standalone component allows you to easily, programmatically, add, remove, or manipulate the time component of your variable. This allows you more flexibility in working with your data, especially in restructuring your datasets. When time is embedded in your variable names, it can become more inconvenient if you decide you want to remove the time component and restructure your data. 
 
