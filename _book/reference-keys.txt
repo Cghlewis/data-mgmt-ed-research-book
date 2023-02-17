@@ -100,7 +100,7 @@ supplement
 sop
 dataset-level
 readme
-changelog
+change
 data-cleaning-plan
 variable-level
 data-dictionary
@@ -109,8 +109,15 @@ creating-a-data-dictionary-from-an-existing-data-source
 time-well-spent
 codebook
 metadata
+metastandards
 wrapping-it-up
 style
+directory-structure
+file-naming
+variable-naming
+time
+value-coding
+coding
 track
 why-track-data
 build-a-system

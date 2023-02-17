@@ -15,7 +15,7 @@ These rectangular (also called tabular) datasets are made up of columns and rows
 <p class="caption">(\#fig:unnamed-chunk-1)Basic format of a dataset</p>
 </div>
 
-### Columns
+### Columns {#columns}
 
 The columns in your dataset will consist of one or both of the following types of variables:
 
@@ -24,7 +24,7 @@ The columns in your dataset will consist of one or both of the following types o
 
 Unless your data is collected anonymously, every dataset **must** also have the following:
 
-- One or more variables that are **unique identifiers**, sometimes called primary keys. These are variables that uniquely define rows in your dataset (i.e. help you identify duplicate rows). 
+- One or more variables that are **unique identifiers**, sometimes called primary keys. These are variables that uniquely define rows in your dataset (i.e. help you identify duplicate rows), and they also allow you to link data that contain the same identifiers (for example link all student data). 
 - If you plan to link datasets across entities (ex: link teachers to schools or students to teachers) then you will also need secondary unique identifiers in your dataset (also called foreign keys) that allow you to link across datasets.
 
 We will talk more about creating these identification variables in our [data tracking](#ids) section.
@@ -107,7 +107,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
      2. A unique identifier was entered incorrectly. In this case you don't actually have a duplicate, you just have an incorrect unique identifier. This error would need to be remedied.
      3. More than one variable is used to identify unique participants and the row is not actually a duplicate. 
         - Take for example a student id and a class id. Multiple unique identifiers may be used if data is collected on participants in multiple locations and treated as unique data. In this case, the data is not truly duplicate because the combined identifiers are unique. 
-        - Another example of this is if your data is organized in long format (discussed below \@ref(structure)). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
+        - Another example of this is if your data is organized in long format ([discussed below](#structure)). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
     
 <div class="figure" style="text-align: center">
 <img src="img/duplicate.PNG" alt="A comparison of data with duplicate cases and data with no duplicate cases" width="100%" />

@@ -47,7 +47,7 @@ One example of a team level document is a lab manual, or team handbook. A lab ma
 |Common Topics in Lab Handbooks [@mehr_common_2020]| Common topics covered in lab manuals|
 
 
-### Wiki
+### Wiki {#wiki}
 
 Another option that can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. A wiki is a webpage that allows users to collaboratively edit and manage content. It can be created and housed in many tools such as SharePoint, Teams, Notion, GitHub, OSF, and more. While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to only invited users. This is a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
@@ -91,7 +91,14 @@ Ideas of content to include in a DUA are included below.
 
 ### Style Guide
 
-A style guide is a set of standards for the formatting of information [@noauthor_style_2023]. It improves consistency within and across files and projects. This document includes conventions for procedures such as variable naming, value coding, file naming, versioning, and file structure. It can be created in one large document or separate files for each type of procedure. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there is so many recommended practices to cover, I have given this document its own chapter. See the chapter on [style guides](#style) for more information.
+A style guide is a set of standards for the formatting of information [@noauthor_style_2023]. It improves consistency within and across files and projects. This document includes conventions for procedures such as variable naming, variable value coding, file naming, versioning, file structure, and even coding practices. It can be created in one large document or separate files for each type of procedure. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there are so many recommended practices to cover, I have given this document its own chapter. See the chapter on [style guides](#style) for more information.
+
+**Example style guides**
+
+|Document|Description|
+|--------|-----------|
+|Strategic Data Project style guide [@kawakita_strategic_2013] | Example style guide for practices including folder structure, file naming, variable naming and coding|
+|The tidyverse style guide [@wickham_welcome_nodate]| Example R coding style guide|
 
 
 ## Project Level
@@ -110,7 +117,7 @@ Since we've already discussed these documents in a previous [chapter](#checklist
 
 Using the checklists during your planning phase, you hopefully decided on and assigned some roles and responsibilities for your project. Now is the time to formally document those decisions in a way that you can share with the others. In the previous [chapter](#roledoc) we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
 
-**Examples roles and responsibilities**
+**Example roles and responsibilities**
 
 |Document|Description|
 |--------|-----------|
@@ -161,7 +168,7 @@ A CONSORT (Consolidated Standards of Reporting Trials) diagram displays the flow
 
 3. Instruments 
 
-Actual copies of instrument can be included as supplemental documentation. This includes copies of surveys, assessments, forms, and so forth. It can also include any technical documents associated with your instruments.
+Actual copies of instrument can be included as supplemental documentation. This includes copies of surveys, assessments, forms, and so forth. It can also include any technical documents associated with your instruments or measures (i.e. a technical document for an assessment or a publication associated with a measure you used).
 
 4. Flowchart of data collection instruments/screeners
 
@@ -240,7 +247,7 @@ A readme is a plain text document that contains information about your files. Th
 </div>
 
 
-### Changelog
+### Changelog {#change}
 
 A changelog is a record of all of the versions of your data and code. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the field of education where researchers are often working with human subject, identifiable data, users are most often not keeping their study data during an active project, in a remote repository. Data are usually kept in an institution approved storage location. Even if your storage location has versioning such as Box or SharePoint, unless you also have a way to commit messages along with those versions (like a commit message with Git), you will still want to keep a changelog.
 
@@ -286,7 +293,7 @@ A data dictionary is typically created in a rectangular format. What tool you us
 
 Before you begin to build these dictionaries you will need to have the following:
 
-1. Your style guide already created: We will talk about [style guides](#style) in the next chapter, but this document will provide standards for how you should name variables and code response values.  
+1. Your style guide already created: We will talk more about [style guides](#style) in the next chapter, but this document will provide standards for how you should name variables and code response values.  
 2. Documentation for your measures: If you are collecting data using existing measures, you will want to collect any documentation on those measures such as technical documents or copies of instruments. You will want your documentation to provide information such as:
 
   - What items make up the measures/scales? What is the exact wording of items?  
@@ -406,7 +413,7 @@ The most common metadata elements are included below[@dahdul_research_nodate].
 
 Depending on the repository, at minimum you will enter basic project level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as elements covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
-Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Here is an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#standards) if we want as well. 
+Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Here is an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#metastandards) if we want as well. 
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata_project.PNG" alt="Example metadata displayed on an ICPSR Open project page" width="95%" />
@@ -417,7 +424,7 @@ There are other ways metadata can be gathered as well. For instance, for variabl
 
 If your repository provides limited forms for metadata entry, you can also choose to increase the searchability of your files by creating your own machine-readable documents. There are several tools to help users create machine-readable codebooks and data dictionaries that will be findable through search engines such as Google Dataset Search [@buchanan_getting_2021, @arslan_how_2018; @usgs_tools_nodate]. 
 
-### Standards {#standards}
+### Standards {#metastandards}
 
 Metadata standards, typically field specific, establish common structuring and meaning of data and improve data interoperability in addition to increasing the ability of users to find and understand data [@university_of_iowa_libraries_university_nodate]. Metadata standards can be applied in several ways [@bolam_guides_nodate; @ddi_alliance_controlled_nodate]. 
 
