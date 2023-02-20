@@ -89,7 +89,7 @@ Ideas of content to include in a DUA are included below.
 <p class="caption">(\#fig:unnamed-chunk-5)Example of content to include in an internal data use agreement</p>
 </div>
 
-### Style Guide
+### Style Guide {#styleshort}
 
 A style guide is a set of standards for the formatting of information [@noauthor_style_2023]. It improves consistency within and across files and projects. This document includes conventions for procedures such as variable naming, variable value coding, file naming, versioning, file structure, and even coding practices. It can be created in one large document or separate files for each type of procedure. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there are so many recommended practices to cover, I have given this document its own chapter. See the chapter on [style guides](#style) for more information.
 

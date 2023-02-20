@@ -90,7 +90,7 @@ lab-manual
 wiki
 onboardingoffboarding
 data-use-agreement
-style-guide
+styleshort
 project-level
 data-management-plan
 checklists-and-meeting-notes

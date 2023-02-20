@@ -5,7 +5,7 @@
 <p class="caption">(\#fig:unnamed-chunk-1)Data documentation in the research project life cycle</p>
 </div>
 
-A style guide provides general agreed upon rules for the formatting of information[@noauthor_style_2023]. As mentioned in the previous [chapter](#style), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
+A style guide provides general agreed upon rules for the formatting of information[@noauthor_style_2023]. As mentioned in the previous [chapter](#styleshort), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
 The benefits for creating style guides and using them consistently include:
 
