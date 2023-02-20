@@ -192,9 +192,9 @@ This style guide will be a necessary document to have before you start to create
   - While `.` is allowed in R and SPSS it is not allowed in Stata so it’s best to avoid using it
 - Do not start a variable name with a number. This is not allowed in many statistical programs.
 - All variable names should be unique
-  - This absolutely applies to variables within the same dataset, but it should also apply to all variables within a project. The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).
+  - This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project. The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).
   - So, for example if you collect student gender from a survey and you also collect student gender from school records, differentiate between the two (`s_gender` and `d_gender`)
-- Version your variable names if, after data has been collected for at least one wave, an item is substantively changed (substantive wording OR response option changes).
+- If you substantively change an item (substantive wording OR response options change) after at least one round of data has been collected, version your variable names in order to reduce errors in interpretation.
   - For example revised `anx1` becomes `anx1_v2`
 
 **Suggested:**

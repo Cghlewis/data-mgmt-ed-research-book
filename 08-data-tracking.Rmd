@@ -1,5 +1,13 @@
 # Data Tracking {#track}
 
+```{r fig.cap="Data documentation in the research project life cycle", out.width = "70%"}
+
+knitr::include_graphics("img/lifecycle_track.PNG")
+
+```
+
+
+
 ## Why track data?
 
 ## Build a system

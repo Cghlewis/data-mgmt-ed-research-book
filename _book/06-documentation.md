@@ -285,7 +285,7 @@ A data dictionary is a rectangular format collection of names, definitions, and 
 A data dictionary is typically created in a rectangular format. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
 <div class="figure" style="text-align: center">
-<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="70%" />
+<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="80%" />
 <p class="caption">(\#fig:unnamed-chunk-15)Fields to include in a data dictionary</p>
 </div>
 
@@ -312,7 +312,7 @@ As you build your data dictionary, consider the following:
 For demonstration purposes only, the following data dictionary uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
 <div class="figure" style="text-align: center">
-<img src="img/dictionary2.PNG" alt="Example student survey data dictionary" width="100%" />
+<img src="img/dictionary3.PNG" alt="Example student survey data dictionary" width="100%" />
 <p class="caption">(\#fig:unnamed-chunk-16)Example student survey data dictionary</p>
 </div>
 
@@ -411,7 +411,7 @@ The most common metadata elements are included below[@dahdul_research_nodate].
 </div>
 
 
-Depending on the repository, at minimum you will enter basic project level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as elements covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
+Depending on the repository, at minimum you will enter basic project level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate; @gilmore_practical_2018]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
 Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Here is an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#metastandards) if we want as well. 
 

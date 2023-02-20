@@ -298,7 +298,7 @@ A data dictionary is a rectangular format collection of names, definitions, and 
 
 A data dictionary is typically created in a rectangular format. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
-```{r fig.cap="Fields to include in a data dictionary", out.width = "70%"}
+```{r fig.cap="Fields to include in a data dictionary", out.width = "80%"}
 
 knitr::include_graphics("img/dictionary.PNG")
 
@@ -328,7 +328,7 @@ For demonstration purposes only, the following data dictionary uses items from P
 
 ```{r fig.cap="Example student survey data dictionary"}
 
-knitr::include_graphics("img/dictionary2.PNG")
+knitr::include_graphics("img/dictionary3.PNG")
 
 ```
 
@@ -431,7 +431,7 @@ knitr::include_graphics("img/metadata.PNG")
 ```
 
 
-Depending on the repository, at minimum you will enter basic project level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as elements covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
+Depending on the repository, at minimum you will enter basic project level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate; @gilmore_practical_2018]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
 Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Here is an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#metastandards) if we want as well. 
 
