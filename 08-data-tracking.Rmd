@@ -7,6 +7,15 @@ knitr::include_graphics("img/lifecycle_track.PNG")
 ```
 
 
+A participant tracking database contains both essential participant information as well as completion information about a project's milestones. This database has two underlying purposes.
+
+1. To serve as a "master key" [@FIX IRB] that houses both identifying participant information as well as assigned unique study identifiers. Assigning study identifiers that are only linked to a participant's true identity within this one database is necessary for maintaining participant confidentiality.
+2. To track completion of study events throughout a project.
+
+This database may be a standalone structure, used only for tracking and anonymization purposes. Or it may be integrated as part of your larger study system, where all study data is collected and/or entered as well.
+
+This database has many synonymous terms, such as "master key" as termed by some Institutional Review Boards.
+
 
 ## Why track data?
 

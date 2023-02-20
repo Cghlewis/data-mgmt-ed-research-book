@@ -251,14 +251,17 @@ Before moving on there is one last consideration for variable names. If your dat
 
 Depending on how you plan to merge your data, there are two different ways to account for time.
 
-1. Concatenate time to your variables. You do this if you plan to merge your data across time in [wide format](#structure). The reason you need to concatenate time to your variables here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to both create unique variable names and correctly interpret when items were asked, we add time to our variable names. The only variables you will not assign time to are your [linking variables]{#columns} (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
+1. Concatenate time to your variable names. You do this if you plan to merge your data across time in [wide format](#structure). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were asked, we add time to our variable names. The only variables you will not assign time to are your [linking variables](#columns) (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
 2.  Create time variables and add them to your data. You do this if you plan to append your data over time in [long format](#structure). Appending your data in long format requires no additional work in terms of variable naming. As discussed in our data structure chapter, you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
 
-Deciding how you want to combine your datasets across time does not need to happen early on in your project. It's typically best to store all datasets individually until you are either ready to internally use your data or you are ready to publicly share your data (during the archiving phase). At those times, you can make a decision on the best way to combine your data (if you need to combine them at all). Waiting to combine data prevents you from either wasting time combining your data in a way that ends up not actually being useful, or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
+During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) [@reynolds_basics_2022]. Waiting to combine data has benefits:
 
-We will further discuss merging and appending in our [data cleaning](#clean) chapter. With that said, if you do plan to potentially merge data in a **wide format** at some point, it can be helpful to go ahead and plan your rules for adding time to variable names, and add that rule to your style guide. 
+1. Having variables named consistently over time (with no time component added) allows you to reuse your cleaning code each wave
+2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
 
-There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time.
+While combining your datasets across time should not happen early on in your project, it is helpful to consider early on how you *might* combine data in the future. If you do plan to potentially merge data in a **wide format**, it can be helpful to go ahead and plan your rule for adding time to variable names, and add that rule to your style guide. Just be abundantly clear in your guide that this time component should only be added when datasets are combined.
+
+There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time to a sample variable, `s_gender`.
 
 - As a prefix or suffix with a generic abbreviation, such as `w1` for wave 1, added with a delimiter `_`
   - `w1_s_gender` or `s_gender_w1`
@@ -269,7 +272,7 @@ There is no right or wrong way to assign time in your variable names necessarily
 - As a number embedded into your variable at a certain location, for instance, after an existing prefix such as `s` for `student survey`
   - `s1_gender`, `s2_gender`
 
-While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated out like this. Also, adding time as a standalone component allows you to easily, programmatically, add, remove, or manipulate the time component of your variable. This allows you more flexibility in working with your data, especially in restructuring your datasets. When time is embedded in your variable names, it can become more inconvenient if you decide you want to remove the time component and restructure your data. 
+While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated with a delimiter. Second, adding time as a standalone component also allows you to more easily, programmatically, manipulate the time component of your variable. This gives you more flexibility in working with your data, especially in restructuring your datasets. Embedding time within your variable names can create inconvenience if at any point you decide you want to remove the time component and restructure your data. 
 
 ## Value Coding
 
@@ -288,10 +291,12 @@ First, if you are using a pre-existing measure, assign values and labels in the 
   - Don't: Assign `anx1` values of "yes" = 1 and "no" = 0 in wave 1 and values of "yes" = 1 and "no" = 2 in wave 2 
 - Values should be consistent across the project
   - Do: Assign "yes" = 1 and "no" = 0 as the value for all yes/no items 
-  - Don't: Assign "yes" = 1 and "no" = 0 for some variables, and "yes" = 1 and "no" = 2 for others (unless a pre-existing measure determines how some variables are coded).
+  - Don't: Assign "yes" = 1 and "no" = 0 for some variables, and "yes" = 1 and "no" = 2 for others
+    - Unless a pre-existing measure determines how some variables are coded
 - Order Likert-type scale response options in a logical way
   - Do: Assign "Strongly Disagree" = 1; "Disagree" = 2; "Agree" = 3; "Strongly Agree" = 4  
-  - Don't: Assign "Strongly Disagree" = 1; "Disagree" = 3; "Agree" = 4; "Strongly Agree" = 2 (again, unless a pre-existing measure tells you to code variables in a different way)
+  - Don't: Assign "Strongly Disagree" = 1; "Disagree" = 3; "Agree" = 4; "Strongly Agree" = 2
+    - Unless a pre-existing measure tells you to code variables in a different way
 - Define missing values
     - You may choose to leave all missing values as blank, NA, or NULL and that is okay
     - However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties

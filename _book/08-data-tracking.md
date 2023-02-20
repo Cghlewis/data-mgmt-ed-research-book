@@ -6,7 +6,6 @@
 </div>
 
 
-
 ## Why track data?
 
 ## Build a system
