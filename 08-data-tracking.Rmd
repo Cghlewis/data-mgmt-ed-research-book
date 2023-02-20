@@ -6,8 +6,6 @@ knitr::include_graphics("img/lifecycle_track.PNG")
 
 ```
 
-
-
 ## Why track data?
 
 ## Build a system

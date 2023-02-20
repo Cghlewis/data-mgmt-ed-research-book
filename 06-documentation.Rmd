@@ -298,7 +298,7 @@ A data dictionary is a rectangular format collection of names, definitions, and 
 
 A data dictionary is typically created in a rectangular format. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
-```{r fig.cap="Fields to include in a data dictionary", out.width = "80%"}
+```{r fig.cap="Fields to include in a data dictionary", out.width = "70%"}
 
 knitr::include_graphics("img/dictionary.PNG")
 

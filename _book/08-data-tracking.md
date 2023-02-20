@@ -5,8 +5,6 @@
 <p class="caption">(\#fig:unnamed-chunk-1)Data documentation in the research project life cycle</p>
 </div>
 
-
-
 ## Why track data?
 
 ## Build a system
