@@ -127,7 +127,7 @@ Let's walk through several conventions to consider when naming your files.
 
 - Never use spaces between words. They can often break a URL when shared.
 - Never use special characters. They can have meaning within programming languages and can cause problems.
-  - Consider using `-` or `_` to separate words. This not only helps to make the name human readable but also allows your computer to read and search files easier.
+  - Consider using `-` or `_` to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.
   - It is worth noting that `_` can be difficult to read when file names are included in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
 - Choose to either only use lower case letters, or be specific where to use upper case letters (for example at the start of every new word)
 - Make names descriptive (a user should be able to understand the contents of the file without opening it)
@@ -142,8 +142,9 @@ Let's walk through several conventions to consider when naming your files.
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
   - As mentioned in our chapter on documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a [changelog](#change).
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
-- Choose abbreviations to use for common names/phrases and add them to your style guide (`student` = `stu`). This creates standard metadata and also helps reduce file name character lengths.
-- Choose an order for file name metadata
+- Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
+  - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
+- Choose an order for file name metadata (ex: project -> time -> participant -> measure)
 
 **Example file naming style guide**
 
