@@ -85,6 +85,8 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 |DMPTool Templates[@dmptool_dmp_nodate]|Templates organized by funding agencies|
 |Sara Hart DMP Example [@hart_example_2020]|A submitted DMP that is publicly available for example purposes|
 |UMN Libraries Examples[@university_of_minnesota_libraries_examples_nodate]| Submitted DMP examples from University of Minnesota researchers|
+|ICPSR NIH Template [@icpsr_icpsr_2023]| NIH Data Management and Sharing Plan template with specific recommendations for depositing data with ICPSR|
+|Figshare DMP Example Prompts [@figshare_how_nodate-1]| DMP prompts specific to depositing data with Figshare|
 
 ## Budgeting
 

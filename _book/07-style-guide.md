@@ -202,6 +202,7 @@ This style guide will be a necessary document to have before you start to create
 - Names should be meaningful
   - Instead of naming gender `q1`, name it `gender`
   - If a variable is a part of a scale, consider using an abbreviation of that scale plus the scale item number (`anx1`, `anx2`, `anx3`)
+    - Not only does this allow you to easily associate an item with a scale, but it also allows you to programatically select and manipulate scale items (for example, sum all items that start with "anx")
 - If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.
 - Be consistent with delimiters and capitalization. Options include:
   - Pascal case (ScaleSum)
@@ -250,7 +251,7 @@ Depending on how you plan to merge your data, there are two different ways to ac
 
 During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) [@reynolds_basics_2022]. Waiting to combine data has benefits:
 
-1. Having variables named consistently over time (with no time component added) allows you to reuse your cleaning code each wave
+1. Having variables named consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave
 2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
 
 While combining your datasets across time should not happen early on in your project, it is helpful to consider early on how you *might* combine data in the future. If you do plan to potentially merge data in a **wide format**, it can be helpful to go ahead and plan your rule for adding time to variable names, and add that rule to your style guide. Just be abundantly clear in your guide that this time component should only be added when datasets are combined.
