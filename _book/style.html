@@ -220,12 +220,18 @@ Figure 3.2: xkcd comic on naming files
 <li>When were these documents created?</li>
 <li>Which document is the most recent version?</li>
 </ul>
-<p>Let’s walk through several conventions to consider when naming your files.</p>
+<p>A file naming style guide helps us to name files in a way that allows us to answer these questions. You can have one overarching file naming guide, or you may have file naming guides for different purposes that need different organizational strategies (for example one naming guide for project meeting notes, another naming guide for project data files). Let’s walk through several conventions to consider when naming your files.</p>
 <ul>
-<li>Never use spaces between words. They can often break a URL when shared.</li>
-<li>Never use special characters. They can have meaning within programming languages and can cause problems.
+<li>With the exception of <code>_</code> and <code>-</code>, never use special characters
 <ul>
-<li>Consider using <code>-</code> or <code>_</code> to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.</li>
+<li>Examples include but are not limited to the following: <code>!</code>, <code>.</code>, <code>*</code>, <code>\</code>, <code>/</code>, <code>+</code>, <code>"</code>
+</li>
+<li>Special characters have meaning within programming languages and can cause problems.</li>
+</ul>
+</li>
+<li>Never use spaces between words. They are not supported by command line applications and can often break a URL when shared.
+<ul>
+<li>Use <code>-</code> or <code>_</code> to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.</li>
 <li>It is worth noting that <code>_</code> can be difficult to read when file names are included in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).</li>
 </ul>
 </li>
@@ -241,12 +247,12 @@ Figure 3.2: xkcd comic on naming files
 </li>
 </ul>
 </li>
-<li>Do not use <code>\</code> in dates. The backslash can cause confusion for machines which often read them as a separator in file paths, or as an escape character. Format dates in one of two ways:
+<li>Do not use <code>/</code> in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
 <ul>
 <li>
 <code>YYYY-MM-DD</code> or <code>YYYYMMDD</code>
 </li>
-<li>While the first format adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable</li>
+<li>While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will sortable.</li>
 </ul>
 </li>
 <li>When versioning your files, pick a format and add it to your style guide.
@@ -596,7 +602,7 @@ Figure 3.3: Missing values assigned in the ECLS-K:2011 data file
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-02-21.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-02-22.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -109,7 +109,7 @@ When deciding how to structure your project directories (the organization of you
 <p class="caption">(\#fig:unnamed-chunk-3)xkcd comic on naming files</p>
 </div>
 
-As xkcd[@noauthor_documents_nodate] so aptly points out in the comic above, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves). 
+As xkcd[@noauthor_documents_nodate] so aptly points out in the comic above, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 
@@ -117,11 +117,13 @@ Our file names alone should be able to answer questions such as:
 - When were these documents created? 
 - Which document is the most recent version?
 
-Let's walk through several conventions to consider when naming your files.
+A file naming style guide helps us to name files in a way that allows us to answer these questions. You can have one overarching file naming guide, or you may have file naming guides for different purposes that need different organizational strategies (for example one naming guide for project meeting notes, another naming guide for project data files). Let's walk through several conventions to consider when naming your files.
 
-- Never use spaces between words. They can often break a URL when shared.
-- Never use special characters. They can have meaning within programming languages and can cause problems.
-  - Consider using `-` or `_` to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.
+- With the exception of `_` and `-`, never use special characters
+  - Examples include but are not limited to the following: `!`, `.`, `*`, `\`, `/`, `+`, `"`
+  - Special characters have meaning within programming languages and can cause problems.
+- Never use spaces between words. They are not supported by command line applications and can often break a URL when shared.
+  - Use `-` or `_` to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.
   - It is worth noting that `_` can be difficult to read when file names are included in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
 - Choose to either only use lower case letters, or be specific where to use upper case letters (for example at the start of every new word)
 - Make names descriptive (a user should be able to understand the contents of the file without opening it)
@@ -129,9 +131,9 @@ Let's walk through several conventions to consider when naming your files.
 - Keep redundant metadata in the file name
   - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
     - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
-- Do not use `\` in dates. The backslash can cause confusion for machines which often read them as a separator in file paths, or as an escape character. Format dates in one of two ways:
+- Do not use `/` in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
     - `YYYY-MM-DD` or `YYYYMMDD`
-    - While the first format adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable
+    - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will sortable.
 - When versioning your files, pick a format and add it to your style guide. 
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
   - As mentioned in our chapter on documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a [changelog](#change).
