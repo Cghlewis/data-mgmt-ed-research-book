@@ -73,7 +73,7 @@
 <li><a class="" href="dmp.html"><span class="header-section-number">4</span> Data Management Plan</a></li>
 <li><a class="" href="plan.html"><span class="header-section-number">5</span> Planning Data Management</a></li>
 <li><a class="" href="roles.html"><span class="header-section-number">6</span> Project Roles and Responsibilities</a></li>
-<li><a class="" href="documentation.html"><span class="header-section-number">7</span> Documentation</a></li>
+<li><a class="" href="document.html"><span class="header-section-number">7</span> Documentation</a></li>
 <li><a class="active" href="style.html"><span class="header-section-number">8</span> Style guide</a></li>
 <li><a class="" href="track.html"><span class="header-section-number">9</span> Data Tracking</a></li>
 <li><a class="" href="data-collection.html"><span class="header-section-number">10</span> Data Collection</a></li>
@@ -101,7 +101,7 @@
 Figure 3.1: Data documentation in the research project life cycle
 </p>
 </div>
-<p>A style guide provides general agreed upon rules for the formatting of information<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;&lt;span&gt;“Style Guide.”&lt;/span&gt;&lt;/p&gt;"><sup>155</sup></a></span>. As mentioned in the previous <a href="documentation.html#styleshort">chapter</a>, style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.</p>
+<p>A style guide provides general agreed upon rules for the formatting of information<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;&lt;span&gt;“Style Guide.”&lt;/span&gt;&lt;/p&gt;"><sup>155</sup></a></span>. As mentioned in the previous <a href="document.html#styleshort">chapter</a>, style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.</p>
 <p>The benefits for creating style guides and using them consistently include:</p>
 <ul>
 <li>Creating standardization (within and across projects)</li>
@@ -109,7 +109,7 @@ Figure 3.1: Data documentation in the research project life cycle
 <li>Increasing reproducibility: If the organization of your file paths, file naming, or variable naming constantly change it undermines the reproducibility of any data management or analysis code you have written.</li>
 </ul>
 <p>Style guides can be created for individual projects, but they can also be created at the team level, to be applied across all projects. Most importantly, they should be created before a project kicks off so you can implement them as soon as your project begins. If you do not have a team-wide style guide already created, you most likely will want to create a project-level style guide during your planning phase so that you can begin setting up your directory structures and file naming standards before you start creating and saving project-related files.</p>
-<p>Style guides can be housed in one large document, with a table of contents used to reference each section, or they can be created as separate documents. Either way, style guides should be stored in a central location that is easily accessible to all team members (such as a team or project <a href="documentation.html#wiki">wiki</a>), and all team members should be trained, and periodically retrained, on the style guide to ensure adherence to the rules. If all team members are not consistently implementing the style guide, then the benefits of the guide are lost.</p>
+<p>Style guides can be housed in one large document, with a table of contents used to reference each section, or they can be created as separate documents. Either way, style guides should be stored in a central location that is easily accessible to all team members (such as a team or project <a href="document.html#wiki">wiki</a>), and all team members should be trained, and periodically retrained, on the style guide to ensure adherence to the rules. If all team members are not consistently implementing the style guide, then the benefits of the guide are lost.</p>
 <p>For the remainder of this chapter, we will spend time reviewing some good practices for rules to add to your style guides for the following purposes:</p>
 <ol style="list-style-type: decimal">
 <li>Structuring directories</li>
@@ -124,6 +124,7 @@ Figure 3.1: Data documentation in the research project life cycle
 <span class="header-section-number">8.1</span> Directory structure<a class="anchor" aria-label="anchor" href="#directory-structure"><i class="fas fa-link"></i></a>
 </h2>
 <p>When deciding how to structure your project directories (the organization of your operating systems folders and files), there are several things you want to consider.</p>
+<p><strong>When structuring your folders:</strong></p>
 <ul>
 <li>First, consider organizing your directory into a hierarchical folder structure to clearly delineate segments of your projects and improve searchability
 <ul>
@@ -134,7 +135,20 @@ Figure 3.1: Data documentation in the research project life cycle
 <li>When creating your folder structure, strike a balance between a deep and shallow structure
 <ul>
 <li>Too shallow leads to too many files in one folder which is difficult to sort through</li>
-<li>Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters (for example, SharePoint and OneDrive have a path limit of 400 characters<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Microsoft, &lt;span&gt;“Restrictions and Limitations in &lt;span&gt;OneDrive&lt;/span&gt; and &lt;span&gt;SharePoint&lt;/span&gt; - Microsoft Support,”&lt;/span&gt; accessed February 17, 2023, &lt;a href="https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa" role="doc-biblioref"&gt;https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa&lt;/a&gt;.&lt;/p&gt;'><sup>157</sup></a></span>)</li>
+<li>Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
+<ul>
+<li>An example file path <code>W:/team/project/data/wave1/student/survey/projecta-w1-stu-svy-raw.csv</code>
+</li>
+</ul>
+</li>
+<li>Examples of file path limits:
+<ul>
+<li>SharePoint/OneDrive path limit is 400 characters<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Microsoft, &lt;span&gt;“Restrictions and Limitations in &lt;span&gt;OneDrive&lt;/span&gt; and &lt;span&gt;SharePoint&lt;/span&gt; - Microsoft Support,”&lt;/span&gt; accessed February 17, 2023, &lt;a href="https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa" role="doc-biblioref"&gt;https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa&lt;/a&gt;.&lt;/p&gt;'><sup>157</sup></a></span>
+</li>
+<li>Windows path limit is 260 characters<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Alvinashcraft, &lt;span&gt;“Naming Files, Paths, and Namespaces - Win32 Apps,”&lt;/span&gt; December 15, 2022, &lt;a href="https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file" role="doc-biblioref"&gt;https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file&lt;/a&gt;.&lt;/p&gt;'><sup>158</sup></a></span>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Create folders that are specific enough that you can limit access
@@ -144,13 +158,25 @@ Figure 3.1: Data documentation in the research project life cycle
 </ul>
 </li>
 <li>Decide if you want an “archive” folder to move old files into or if you want to leave previous versions in the same folder</li>
+</ul>
+<p><strong>When naming your folders:</strong></p>
+<ul>
 <li>Consider setting a character limit on folder names (again to reduce problems with hitting path character limits)</li>
-<li>Make your folder names meaningful and easy to understand</li>
+<li>Make your folder names human-readable, meaningful, and easy to interpret</li>
 <li>Make your folder names machine-readable
 <ul>
-<li>Don’t use spaces. They can break a URL when shared.</li>
-<li>Don’t use special characters in your folder names, such as <code>,</code>, <code>%</code>, <code>!</code>, <code>\</code>, <code>/</code>, or <code>.</code>. Computers assign specific meaning to many of these special characters.</li>
-<li>Consider using _ or - to separate words</li>
+<li>Don’t use spaces. They are not supported by command line applications and can often break a URL when shared.
+<ul>
+<li>Use <code>_</code> or <code>-</code> to separate words</li>
+<li>It is worth noting that <code>_</code> can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).</li>
+</ul>
+</li>
+<li>With the exception of <code>-</code> and <code>_</code>, don’t use special characters in your folder names. Computers assign specific meaning to many of these special characters.
+<ul>
+<li>Examples include but are not limited to <code>?</code>, <code>.</code>, <code>*</code>, <code>\</code>, <code>/</code>, <code>+</code>, <code>'</code>, <code>&amp;</code>, <code>"</code>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Be consistent with capitalization (use only lower case for example)</li>
@@ -213,7 +239,7 @@ Figure 3.1: Data documentation in the research project life cycle
 Figure 3.2: xkcd comic on naming files
 </p>
 </div>
-<p>As xkcd<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;span&gt;“Documents. Xkcd,”&lt;/span&gt; accessed February 16, 2023, &lt;a href="https://xkcd.com/1459/" role="doc-biblioref"&gt;https://xkcd.com/1459/&lt;/a&gt;.&lt;/p&gt;'><sup>158</sup></a></span> so aptly points out in the comic above, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don’t consider how unclear our file names will be for future users (including ourselves).</p>
+<p>As xkcd<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;span&gt;“Documents. Xkcd,”&lt;/span&gt; accessed February 16, 2023, &lt;a href="https://xkcd.com/1459/" role="doc-biblioref"&gt;https://xkcd.com/1459/&lt;/a&gt;.&lt;/p&gt;'><sup>159</sup></a></span> so aptly points out in the comic above, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don’t consider how unclear our file names will be for future users (including ourselves).</p>
 <p>Our file names alone should be able to answer questions such as:</p>
 <ul>
 <li>What are these documents?</li>
@@ -222,29 +248,19 @@ Figure 3.2: xkcd comic on naming files
 </ul>
 <p>A file naming style guide helps us to name files in a way that allows us to answer these questions. You can have one overarching file naming guide, or you may have file naming guides for different purposes that need different organizational strategies (for example one naming guide for project meeting notes, another naming guide for project data files). Let’s walk through several conventions to consider when naming your files.</p>
 <ul>
-<li>With the exception of <code>_</code> and <code>-</code>, never use special characters
-<ul>
-<li>Examples include but are not limited to the following: <code>!</code>, <code>.</code>, <code>*</code>, <code>\</code>, <code>/</code>, <code>+</code>, <code>"</code>
-</li>
-<li>Special characters have meaning within programming languages and can cause problems.</li>
-</ul>
-</li>
-<li>Never use spaces between words. They are not supported by command line applications and can often break a URL when shared.
+<li>Make names descriptive (a user should be able to understand the contents of the file without opening it)</li>
+<li>Never use spaces between words.
 <ul>
 <li>Use <code>-</code> or <code>_</code> to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.</li>
-<li>It is worth noting that <code>_</code> can be difficult to read when file names are included in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).</li>
 </ul>
 </li>
+<li>With the exception of <code>_</code> and <code>-</code>, never use special characters (like those mentioned above)</li>
 <li>Choose to either only use lower case letters, or be specific where to use upper case letters (for example at the start of every new word)</li>
-<li>Make names descriptive (a user should be able to understand the contents of the file without opening it)</li>
 <li>Consider limiting the number of characters to prevent hitting your path limit (as mentioned above)</li>
 <li>Keep redundant metadata in the file name
 <ul>
-<li>This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
-<ul>
+<li>This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.</li>
 <li>For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.</li>
-</ul>
-</li>
 </ul>
 </li>
 <li>Do not use <code>/</code> in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
@@ -258,7 +274,7 @@ Figure 3.2: xkcd comic on naming files
 <li>When versioning your files, pick a format and add it to your style guide.
 <ul>
 <li>If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (<code>v01</code>, <code>v02</code>).</li>
-<li>As mentioned in our chapter on documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a <a href="documentation.html#change">changelog</a>.</li>
+<li>As mentioned in our chapter on Documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a <a href="document.html#change">changelog</a>.</li>
 </ul>
 </li>
 <li>If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (<code>01_</code>, <code>02_</code>)</li>
@@ -304,7 +320,7 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22v02.R</code></pre>
 <p>This style guide will be a necessary document to have before you start to create your data dictionaries. Below are several considerations to review before developing your variable naming style guide. These are broken into two types of rules, those that are non-negotiable requirements that really should be included in your style guide (if you do not follow these rules you will run into serious problems in interpretation for both humans and machines), and then best practices suggestions that are recommended but not required.</p>
 <p><strong>Mandatory:</strong></p>
 <ul>
-<li>Don’t name a variable any keywords or functions used in any programming language (such as <code>if</code>, <code>for</code>, <code>repeat</code>)<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;span&gt;“R: The r Base Package,”&lt;/span&gt; accessed February 16, 2023, &lt;a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html" role="doc-biblioref"&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html&lt;/a&gt;; Jeremy Stangroom, &lt;span&gt;“Rules for Naming Variables in &lt;span&gt;SPSS&lt;/span&gt; - Quick &lt;span&gt;SPSS&lt;/span&gt; Tutorial. &lt;span&gt;EZ&lt;/span&gt; &lt;span&gt;SPSS&lt;/span&gt; Tutorials,”&lt;/span&gt; August 7, 2019, &lt;a href="https://ezspss.com/rules-for-naming-variables-in-spss/" role="doc-biblioref"&gt;https://ezspss.com/rules-for-naming-variables-in-spss/&lt;/a&gt;.&lt;/p&gt;'><sup>159</sup></a></span>
+<li>Don’t name a variable any keywords or functions used in any programming language (such as <code>if</code>, <code>for</code>, <code>repeat</code>)<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;span&gt;“R: The r Base Package,”&lt;/span&gt; accessed February 16, 2023, &lt;a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html" role="doc-biblioref"&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html&lt;/a&gt;; Jeremy Stangroom, &lt;span&gt;“Rules for Naming Variables in &lt;span&gt;SPSS&lt;/span&gt; - Quick &lt;span&gt;SPSS&lt;/span&gt; Tutorial. &lt;span&gt;EZ&lt;/span&gt; &lt;span&gt;SPSS&lt;/span&gt; Tutorials,”&lt;/span&gt; August 7, 2019, &lt;a href="https://ezspss.com/rules-for-naming-variables-in-spss/" role="doc-biblioref"&gt;https://ezspss.com/rules-for-naming-variables-in-spss/&lt;/a&gt;.&lt;/p&gt;'><sup>160</sup></a></span>
 </li>
 <li>Set a character limit
 <ul>
@@ -327,7 +343,7 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22v02.R</code></pre>
 </li>
 <li>Don’t use spaces or special characters (except<code>_</code>), they are not allowed in most programs.
 <ul>
-<li>The <code>-</code> is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign</li>
+<li>Even the <code>-</code> is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign</li>
 <li>While <code>.</code> is allowed in R and SPSS it is not allowed in Stata so it’s best to avoid using it</li>
 </ul>
 </li>
@@ -369,7 +385,7 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22v02.R</code></pre>
 </ul>
 </li>
 <li>Consider denoting reverse coding in the variable name to reduce confusion (<code>anx1_r</code>)</li>
-<li>Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Emily Riederer, &lt;span&gt;“Column Names as Contracts. Emily Riederer,”&lt;/span&gt; September 6, 2020, &lt;a href="https://emilyriederer.netlify.app/post/column-name-contracts/" role="doc-biblioref"&gt;https://emilyriederer.netlify.app/post/column-name-contracts/&lt;/a&gt;.&lt;/p&gt;'><sup>160</sup></a></span>.
+<li>Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Emily Riederer, &lt;span&gt;“Column Names as Contracts. Emily Riederer,”&lt;/span&gt; September 6, 2020, &lt;a href="https://emilyriederer.netlify.app/post/column-name-contracts/" role="doc-biblioref"&gt;https://emilyriederer.netlify.app/post/column-name-contracts/&lt;/a&gt;.&lt;/p&gt;'><sup>161</sup></a></span>.
 <ul>
 <li>mean = mean</li>
 <li>scaled score = ss</li>
@@ -412,7 +428,7 @@ t_stress5</code></pre>
 <li>Concatenate time to your variable names. You do this if you plan to merge your data across time in <a href="data-structure.html#structure">wide format</a>. The reason you need to concatenate time to your variable names here is because your variable names will repeat (<code>anx1</code> in wave 1, <code>anx1</code> in wave 2). And remember from our guidelines above, all variable names in a dataset <strong>must</strong> be unique. In order to create unique variable names and correctly interpret when items were asked, we add time to our variable names. The only variables you will not assign time to are your <a href="data-structure.html#columns">linking variables</a> (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.</li>
 <li>Create time variables and add them to your data. You do this if you plan to append your data over time in <a href="data-structure.html#structure">long format</a>. Appending your data in long format requires no additional work in terms of variable naming. As discussed in our data structure chapter, you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as <code>time</code> or <code>wave</code> and add the appropriate value for each row.</li>
 </ol>
-<p>During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary).<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Reynolds, Schatschneider, and Logan, &lt;span&gt;“The Basics of Data Management.”&lt;/span&gt;&lt;/p&gt;"><sup>161</sup></a></span> Waiting to combine data has benefits:</p>
+<p>During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary).<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Reynolds, Schatschneider, and Logan, &lt;span&gt;“The Basics of Data Management.”&lt;/span&gt;&lt;/p&gt;"><sup>162</sup></a></span> Waiting to combine data has benefits:</p>
 <ol style="list-style-type: decimal">
 <li>Having variables named consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave</li>
 <li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point.</li>
@@ -503,7 +519,7 @@ t_stress5</code></pre>
 <li>You may choose to leave all missing values as blank, NA, or NULL and that is okay</li>
 <li>However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties
 <ul>
-<li>The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (ex: numeric missing values for numeric variables)<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Tourangeau, &lt;span&gt;“Early Childhood Longitudinal Study, Kindergarten Class of 2010–11 (&lt;span&gt;ECLS&lt;/span&gt;-k.”&lt;/span&gt;&lt;/p&gt;"><sup>162</sup></a></span>
+<li>The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (ex: numeric missing values for numeric variables)<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Tourangeau, &lt;span&gt;“Early Childhood Longitudinal Study, Kindergarten Class of 2010–11 (&lt;span&gt;ECLS&lt;/span&gt;-k.”&lt;/span&gt;&lt;/p&gt;"><sup>163</sup></a></span>
 </li>
 </ul>
 </li>
@@ -523,7 +539,7 @@ Figure 3.3: Missing values assigned in the ECLS-K:2011 data file
 </h2>
 <p>If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to google existing style guides in that language.</p>
 <ul>
-<li>Consider building and implementing coding templates<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Dr Timothy S. Farewell, &lt;span&gt;“My Easy r Script Header Template – Tim Farewell,”&lt;/span&gt; April 10, 2018, &lt;a href="https://timfarewell.co.uk/my-r-script-header-template/" role="doc-biblioref"&gt;https://timfarewell.co.uk/my-r-script-header-template/&lt;/a&gt;; Gergana Daskalova, &lt;span&gt;“Coding Etiquette. Coding Club,”&lt;/span&gt; accessed February 17, 2023, &lt;a href="https://ourcodingclub.github.io/tutorials/etiquette/" role="doc-biblioref"&gt;https://ourcodingclub.github.io/tutorials/etiquette/&lt;/a&gt;.&lt;/p&gt;'><sup>163</sup></a></span>
+<li>Consider building and implementing coding templates<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Dr Timothy S. Farewell, &lt;span&gt;“My Easy r Script Header Template – Tim Farewell,”&lt;/span&gt; April 10, 2018, &lt;a href="https://timfarewell.co.uk/my-r-script-header-template/" role="doc-biblioref"&gt;https://timfarewell.co.uk/my-r-script-header-template/&lt;/a&gt;; Gergana Daskalova, &lt;span&gt;“Coding Etiquette. Coding Club,”&lt;/span&gt; accessed February 17, 2023, &lt;a href="https://ourcodingclub.github.io/tutorials/etiquette/" role="doc-biblioref"&gt;https://ourcodingclub.github.io/tutorials/etiquette/&lt;/a&gt;.&lt;/p&gt;'><sup>164</sup></a></span>
 <ul>
 <li>Templates can standardize the format of syntax files (such as using standard headers to break up code)</li>
 <li>They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)</li>
@@ -550,7 +566,7 @@ Figure 3.3: Missing values assigned in the ECLS-K:2011 data file
 </li>
 <li>Use relative file paths for reproducibility
 <ul>
-<li>Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths. It is important to set file paths relative the directory you are working in.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Hadley Wickham and Garrett Grolemund, &lt;em&gt;8 Workflow: Projects &lt;span&gt;&lt;/span&gt; r for Data Science&lt;/em&gt;, accessed February 17, 2023, &lt;a href="https://r4ds.had.co.nz/workflow-projects.html" role="doc-biblioref"&gt;https://r4ds.had.co.nz/workflow-projects.html&lt;/a&gt;.&lt;/p&gt;'><sup>164</sup></a></span>
+<li>Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths. It is important to set file paths relative the directory you are working in.<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Hadley Wickham and Garrett Grolemund, &lt;em&gt;8 Workflow: Projects &lt;span&gt;&lt;/span&gt; r for Data Science&lt;/em&gt;, accessed February 17, 2023, &lt;a href="https://r4ds.had.co.nz/workflow-projects.html" role="doc-biblioref"&gt;https://r4ds.had.co.nz/workflow-projects.html&lt;/a&gt;.&lt;/p&gt;'><sup>165</sup></a></span>
 </li>
 </ul>
 </li>
@@ -572,7 +588,7 @@ Figure 3.3: Missing values assigned in the ECLS-K:2011 data file
 </div>
 
   <div class="chapter-nav">
-<div class="prev"><a href="documentation.html"><span class="header-section-number">7</span> Documentation</a></div>
+<div class="prev"><a href="document.html"><span class="header-section-number">7</span> Documentation</a></div>
 <div class="next"><a href="track.html"><span class="header-section-number">9</span> Data Tracking</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -602,7 +618,7 @@ Figure 3.3: Missing values assigned in the ECLS-K:2011 data file
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-02-22.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-02-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

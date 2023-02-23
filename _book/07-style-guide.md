@@ -31,21 +31,32 @@ While some best practices will be provided below, ultimately the rules you choos
 
 When deciding how to structure your project directories (the organization of your operating systems folders and files), there are several things you want to consider.
 
+**When structuring your folders:**
+
 - First, consider organizing your directory into a hierarchical folder structure to clearly delineate segments of your projects and improve searchability
   - The alternative to using a folder structure is using metadata and tagging to organize and search for files [@cakici_folders_2017; @staff_how_2019]
 - When creating your folder structure, strike a balance between a deep and shallow structure
   - Too shallow leads to too many files in one folder which is difficult to sort through
-  - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters (for example, SharePoint and OneDrive have a path limit of 400 characters[@microsoft_restrictions_nodate])
+  - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
+    - An example file path `W:/team/project/data/wave1/student/survey/projecta-w1-stu-svy-raw.csv` 
+  - Examples of file path limits:  
+    - SharePoint/OneDrive path limit is 400 characters[@microsoft_restrictions_nodate]
+    - Windows path limit is 260 characters[@alvinashcraft_naming_2022]
 - Create folders that are specific enough that you can limit access
   - For example you will want to limit user access to folders that hold Personally Identifiable Information (PII)
   - To protect any files that you don’t want others to accidentally edit (for example your clean datasets), also consider making some files "read only"
 - Decide if you want an "archive" folder to move old files into or if you want to leave previous versions in the same folder
+
+**When naming your folders:**
+
 - Consider setting a character limit on folder names (again to reduce problems with hitting path character limits)
-- Make your folder names meaningful and easy to understand
+- Make your folder names human-readable, meaningful, and easy to interpret
 - Make your folder names machine-readable
-  - Don’t use spaces. They can break a URL when shared.
-  - Don't use special characters in your folder names, such as `,`, `%`, `!`, `\`, `/`, or `.`. Computers assign specific meaning to many of these special characters.
-  - Consider using _ or - to separate words
+  - Don’t use spaces. They are not supported by command line applications and can often break a URL when shared.
+    - Use `_` or `-` to separate words
+    - It is worth noting that `_` can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
+  - With the exception of `-` and `_`, don't use special characters in your folder names. Computers assign specific meaning to many of these special characters.
+    - Examples include but are not limited to `?`, `.`, `*`, `\`, `/`, `+`, `'`, `&`, `"` 
 - Be consistent with capitalization (use only lower case for example)
 
 **Example directory structure style guide**
@@ -119,24 +130,21 @@ Our file names alone should be able to answer questions such as:
 
 A file naming style guide helps us to name files in a way that allows us to answer these questions. You can have one overarching file naming guide, or you may have file naming guides for different purposes that need different organizational strategies (for example one naming guide for project meeting notes, another naming guide for project data files). Let's walk through several conventions to consider when naming your files.
 
-- With the exception of `_` and `-`, never use special characters
-  - Examples include but are not limited to the following: `!`, `.`, `*`, `\`, `/`, `+`, `"`
-  - Special characters have meaning within programming languages and can cause problems.
-- Never use spaces between words. They are not supported by command line applications and can often break a URL when shared.
-  - Use `-` or `_` to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.
-  - It is worth noting that `_` can be difficult to read when file names are included in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
-- Choose to either only use lower case letters, or be specific where to use upper case letters (for example at the start of every new word)
 - Make names descriptive (a user should be able to understand the contents of the file without opening it)
+- Never use spaces between words. 
+  - Use `-` or `_` to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.
+- With the exception of `_` and `-`, never use special characters (like those mentioned above)
+- Choose to either only use lower case letters, or be specific where to use upper case letters (for example at the start of every new word)
 - Consider limiting the number of characters to prevent hitting your path limit (as mentioned above)
 - Keep redundant metadata in the file name
   - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
-    - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
+  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
 - Do not use `/` in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
-    - `YYYY-MM-DD` or `YYYYMMDD`
-    - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will sortable.
+  - `YYYY-MM-DD` or `YYYYMMDD`
+  - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will sortable.
 - When versioning your files, pick a format and add it to your style guide. 
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
-  - As mentioned in our chapter on documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a [changelog](#change).
+  - As mentioned in our chapter on Documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a [changelog](#change).
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
 - Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
@@ -191,7 +199,7 @@ This style guide will be a necessary document to have before you start to create
 - Use the same variable name across time in a project
   - If an item is named `anx1` in the fall, name that same item `anx1` again in the spring
 - Don’t use spaces or special characters (except`_`), they are not allowed in most programs.
-  - The `-` is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign
+  - Even the `-` is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign
   - While `.` is allowed in R and SPSS it is not allowed in Stata so it’s best to avoid using it
 - Do not start a variable name with a number. This is not allowed in many statistical programs.
 - All variable names should be unique

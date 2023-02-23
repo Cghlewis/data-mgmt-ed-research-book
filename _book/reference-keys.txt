@@ -84,7 +84,7 @@ goals-of-assigning-roles-and-responsibilities
 assigning-roles-and-responsibilities
 roledoc
 data-management-role
-documentation
+document
 team-level
 lab-manual
 wiki

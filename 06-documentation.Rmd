@@ -1,4 +1,4 @@
-# Documentation
+# Documentation {#document}
 
 ```{r fig.cap="Data documentation in the research project life cycle", out.width = "70%"}
 
@@ -410,7 +410,7 @@ Last, you may notice as you review codebooks, many will start with several pages
 |ICPSR Guide to Codebooks [@icpsr_guide_2011]| Guide for creating codebooks|
 |SCOPE Codebook, US Department of Health and Human Services [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022]|A codebook for this study can be obtained from their ICPSR repository|
 
-## Metadata
+## Metadata {#metadata}
 
 The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When it comes time to deposit your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate;@danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data[@noauthor_fair_nodate; @service_metadata_nodate; @logan_data_2021].
 
