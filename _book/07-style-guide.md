@@ -38,7 +38,7 @@ When deciding how to structure your project directories (the organization of you
 - When creating your folder structure, strike a balance between a deep and shallow structure
   - Too shallow leads to too many files in one folder which is difficult to sort through
   - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
-    - An example file path `W:/team/project/data/wave1/student/survey/projecta-w1-stu-svy-raw.csv` 
+    - An example file path `W:\team\project\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv` 
   - Examples of file path limits:  
     - SharePoint/OneDrive path limit is 400 characters[@microsoft_restrictions_nodate]
     - Windows path limit is 260 characters[@alvinashcraft_naming_2022]
