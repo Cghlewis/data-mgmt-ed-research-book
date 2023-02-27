@@ -27,6 +27,27 @@ For the remainder of this chapter, we will spend time reviewing some good practi
 
 While some best practices will be provided below, ultimately the rules you choose to add to each style guide should be chosen based on which practices work best for your projects and your team. Whatever rules you settle on, write them in a style guide so that everyone is following the same rules within and across projects.
 
+## General good practices
+
+Before we dive in to particular types of style guides, there are a few things to understand about how computers read names in order to understand the "why" behind some of these practices.
+
+1. Avoid spaces. 
+    - While some applications (like Windows) recognize spaces, command line operations and some operating systems still do not support them so it is best to avoid them all together. 
+    - Furthermore, they can often break a URL when shared
+    - The underscore `_` and hyphen `-` are good delimiters to use in place of spaces
+      - It is worth noting that `_` can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
+2. With the exception of `_` and `-`, avoid special characters.
+    - Examples include but are not limited to `?`, `.`, `*`, `\`, `/`, `+`, `'`, `&`, `"`
+    - Computers assign specific meaning to many of these special characters
+3. There are several existing naming conventions that you can choose to add to your style guide. Different naming conventions may work better for different purposes. Using these conventions help you to be consistent with both delimeters and capitalization which not only makes your names more human-readable but also allows your computer to read and search names easier.
+    - Pascal case (ScaleSum)
+    - Snake case (scale_sum)
+    - Camel case (scaleSum)
+    - Kebab case (scale-sum)
+    - Train case (Scale-Sum)
+4. Character length matters. Computers are unable to read objects that surpass a certain character length. This applies to file paths, file names, and variable names. Considerations for each type of limit are reviewed below.
+
+
 ## Directory structure
 
 When deciding how to structure your project directories (the organization of your operating systems folders and files), there are several things you want to consider.
@@ -38,7 +59,7 @@ When deciding how to structure your project directories (the organization of you
 - When creating your folder structure, strike a balance between a deep and shallow structure
   - Too shallow leads to too many files in one folder which is difficult to sort through
   - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
-    - An example file path `W:\team\project\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv` 
+    - An example file path with 69 characters `W:\team\project\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv`
   - Examples of file path limits:  
     - SharePoint/OneDrive path limit is 400 characters[@microsoft_restrictions_nodate]
     - Windows path limit is 260 characters[@alvinashcraft_naming_2022]
@@ -50,14 +71,11 @@ When deciding how to structure your project directories (the organization of you
 **When naming your folders:**
 
 - Consider setting a character limit on folder names (again to reduce problems with hitting path character limits)
-- Make your folder names human-readable, meaningful, and easy to interpret
-- Make your folder names machine-readable
-  - Don’t use spaces. They are not supported by command line applications and can often break a URL when shared.
+- Make your folder names meaningful and easy to interpret
+- Never use spaces in your folder names
     - Use `_` or `-` to separate words
-    - It is worth noting that `_` can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
-  - With the exception of `-` and `_`, don't use special characters in your folder names. Computers assign specific meaning to many of these special characters.
-    - Examples include but are not limited to `?`, `.`, `*`, `\`, `/`, `+`, `'`, `&`, `"` 
-- Be consistent with capitalization (use only lower case for example)
+- With the exception of `-` and `_`, don't use special characters in your folder names.
+- Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned above).
 
 **Example directory structure style guide**
 
@@ -131,29 +149,29 @@ Our file names alone should be able to answer questions such as:
 A file naming style guide helps us to name files in a way that allows us to answer these questions. You can have one overarching file naming guide, or you may have file naming guides for different purposes that need different organizational strategies (for example one naming guide for project meeting notes, another naming guide for project data files). Let's walk through several conventions to consider when naming your files.
 
 - Make names descriptive (a user should be able to understand the contents of the file without opening it)
-- Never use spaces between words. 
-  - Use `-` or `_` to separate words. This not only helps to make the name human-readable but also allows your computer to read and search files easier.
-- With the exception of `_` and `-`, never use special characters (like those mentioned above)
-- Choose to either only use lower case letters, or be specific where to use upper case letters (for example at the start of every new word)
-- Consider limiting the number of characters to prevent hitting your path limit (as mentioned above)
-- Keep redundant metadata in the file name
-  - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
-  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
+- Never use spaces between words 
+  - Use `-` or `_` to separate words. 
+- With the exception of `_` and `-`, never use special characters
+- Be consistent with delimiters and capitalization. Follow an existing naming convention.
+- Consider limiting the number of allowable characters to prevent hitting your path limit (as mentioned above)
 - Do not use `/` in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
   - `YYYY-MM-DD` or `YYYYMMDD`
-  - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will sortable.
-- When versioning your files, pick a format and add it to your style guide. 
+  - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.
+- When versioning your files, pick a format and add it to your style guide
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
   - As mentioned in our chapter on Documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a [changelog](#change).
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
 - Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
+- Keep redundant metadata in the file name
+  - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
+  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
 - Choose an order for file name metadata (ex: project -> time -> participant -> measure)
 
 **Example file naming style guide**
 
-    1. Never use spaces between words.
-    2. Never use special characters.
+    1. Never use spaces between words
+    2. Never use special characters
     3. Use _ to separate words
     4. Only use lower case letters
     5. Keep names under 35 characters
@@ -181,7 +199,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
     me_w1_stu_svy_cleaning_syntax_2023-01-22v01.R
     me_w1_stu_svy_cleaning_syntax_2023-01-22v02.R
     
-## Variable naming
+## Variable naming {#varname}
 
 This style guide will be a necessary document to have before you start to create your data dictionaries. Below are several considerations to review before developing your variable naming style guide. These are broken into two types of rules, those that are non-negotiable requirements that really should be included in your style guide (if you do not follow these rules you will run into serious problems in interpretation for both humans and machines), and then best practices suggestions that are recommended but not required.
 
@@ -198,7 +216,7 @@ This style guide will be a necessary document to have before you start to create
   - With this said, do not limit yourself to 8 characters based on the fact that one future user may use a program like Mplus. Consider the balance between character limit and interpretation. It is very difficult to make good human-readable variable names under 8 characters. It is much easier to make them under 32. And the majority of your users will be using a program with a limit of 32 or more. If you have one potential Mplus user, they can always rename your variables for their specific analysis.
 - Use the same variable name across time in a project
   - If an item is named `anx1` in the fall, name that same item `anx1` again in the spring
-- Don’t use spaces or special characters (except`_`), they are not allowed in most programs.
+- Don’t use spaces or special characters (except`_`), they are not allowed in most programs
   - Even the `-` is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign
   - While `.` is allowed in R and SPSS it is not allowed in Stata so it’s best to avoid using it
 - Do not start a variable name with a number. This is not allowed in many statistical programs.
@@ -215,12 +233,10 @@ This style guide will be a necessary document to have before you start to create
   - If a variable is a part of a scale, consider using an abbreviation of that scale plus the scale item number (`anx1`, `anx2`, `anx3`)
     - Not only does this allow you to easily associate an item with a scale, but it also allows you to programatically select and manipulate scale items (for example, sum all items that start with "anx")
 - If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.
-- Be consistent with delimiters and capitalization. Options include:
-  - Pascal case (ScaleSum)
-  - Snake case (scale_sum)–preferred method for variable names
-  - Camel case (scaleSum)
-  - Kebab case (scale-sum)–don’t use for variable names
-  - Train case (Scale-Sum)–don’t use for variable names
+- Be consistent with delimiters and capitalization. Follow an existing naming convention.
+  - Snake case (scale_sum) – preferred method for variable names
+  - Kebab case (scale-sum) – don’t use for variable names
+  - Train case (Scale-Sum) – don’t use for variable names
 - Consider denoting reverse coding in the variable name to reduce confusion (`anx1_r`)
 - Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier[@riederer_column_2020].
   - mean = mean

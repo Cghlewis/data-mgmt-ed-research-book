@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 9 Data Tracking | Data Management in Large-Scale Education Research</title>
 <meta name="author" content="Crystal Lewis">
-<meta name="description" content="Figure 3.1: Data documentation in the research project life cycle  A participant tracking database contains both essential participant information as well as completion information about a...">
+<meta name="description" content="Figure 3.1: Data documentation in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains...">
 <meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Chapter 9 Data Tracking | Data Management in Large-Scale Education Research">
 <meta property="og:type" content="book">
 <meta property="og:image" content="/book_featured.PNG">
-<meta property="og:description" content="Figure 3.1: Data documentation in the research project life cycle  A participant tracking database contains both essential participant information as well as completion information about a...">
+<meta property="og:description" content="Figure 3.1: Data documentation in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 9 Data Tracking | Data Management in Large-Scale Education Research">
-<meta name="twitter:description" content="Figure 3.1: Data documentation in the research project life cycle  A participant tracking database contains both essential participant information as well as completion information about a...">
+<meta name="twitter:description" content="Figure 3.1: Data documentation in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains...">
 <meta name="twitter:image" content="/book_featured.PNG">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -101,32 +101,739 @@
 Figure 3.1: Data documentation in the research project life cycle
 </p>
 </div>
-<p>A participant tracking database contains both essential participant information as well as completion information about a project’s milestones. This database has two underlying purposes.</p>
+<p>A participant tracking database is an essential component of both project management and data management. This database contains all study participants, their relevant study information, as well as tracking information about their completion of project milestones. This database has two underlying purposes.</p>
 <ol style="list-style-type: decimal">
-<li>To serve as a “master key”<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;&lt;strong&gt;FIX?&lt;/strong&gt; IRB.&lt;/p&gt;"><sup>166</sup></a></span> that houses both identifying participant information as well as assigned unique study identifiers. Assigning study identifiers that are only linked to a participant’s true identity within this one database is necessary for maintaining participant confidentiality.</li>
-<li>To track completion of study events throughout a project.</li>
+<li>To serve as a roster of study participants as well as a “master key”<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Pacific University Oregon, &lt;span&gt;“Data Security and Storage. Pacific University,”&lt;/span&gt; March 31, 2014, &lt;a href="https://www.pacificu.edu/academics/research/scholarship-and-sponsored-projects/research-compliance-integrity/institutional-review-board/irb-policies-recommended-practices/data-security-storage" role="doc-biblioref"&gt;https://www.pacificu.edu/academics/research/scholarship-and-sponsored-projects/research-compliance-integrity/institutional-review-board/irb-policies-recommended-practices/data-security-storage&lt;/a&gt;.&lt;/p&gt;'><sup>166</sup></a></span> that houses both identifying participant information as well as assigned unique study identifiers. Assigning study identifiers that are only linked to a participant’s true identity within this one database is necessary for maintaining participant confidentiality.</li>
+<li>To aid in project coordination, tracking the movement of participants as well as completion of study events throughout a project.</li>
 </ol>
-<p>This database may be a standalone structure, used only for tracking and anonymization purposes. Or it may be integrated as part of your larger study system, where all study data is collected and/or entered as well.</p>
-<p>This database has many synonymous terms, such as “master key” as termed by some Institutional Review Boards.</p>
-<div id="why-track-data" class="section level2" number="9.1">
+<p>This database is considered your single source of truth concerning everything that happened throughout the life span of your study. Any time a participant consents to be in the study, drops from the study, changes their name, completes a measure, is provided an payment, or moves locations, it is all updated in this one location. Tracking all information in this one database, rather than across disparate spreadsheets and emails, ensures that you always have one definitive source of truth about your project activities.</p>
+<div id="benefits" class="section level2" number="9.1">
 <h2>
-<span class="header-section-number">9.1</span> Why track data?<a class="anchor" aria-label="anchor" href="#why-track-data"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.1</span> Benefits<a class="anchor" aria-label="anchor" href="#benefits"><i class="fas fa-link"></i></a>
 </h2>
+<p>A thorough and complete participant database is necessary for the following reasons:</p>
+<ol style="list-style-type: decimal">
+<li>Securing data de-identification
+<ul>
+<li>This database is your one linking key between your study ID and a participant’s true identity. All of your study datasets should have name removed and should only contain study ID.</li>
+</ul>
+</li>
+<li>Project coordination and record keeping
+<ul>
+<li>An assigned staff member, typically a project coordinator, will be in charge of entering and updating information in this database</li>
+<li>Throughout data collection this staff member will need to track changes in participant status as well as the completion of project activities</li>
+<li>This daily tracking allows the team to easily report of the status of collection, as well as reducing the likelihood that any data collection is accidentally missed.</li>
+<li>This tracking also allows you to explain missing data in reports and publications (ex: Teacher 1234 went on maternity leave)</li>
+</ul>
+</li>
+<li>Consort diagram creation
+<ul>
+<li>This database aids in the creation of documentation including the flow of participants in your consort diagram creation</li>
+</ul>
+</li>
+<li>Dataset verification
+<ul>
+<li>As part of your data cleaning process, all raw data sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets.</li>
+</ul>
+</li>
+</ol>
 </div>
-<div id="build-a-system" class="section level2" number="9.2">
+<div id="building-your-database" class="section level2" number="9.2">
 <h2>
-<span class="header-section-number">9.2</span> Build a system<a class="anchor" aria-label="anchor" href="#build-a-system"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2</span> Building your database<a class="anchor" aria-label="anchor" href="#building-your-database"><i class="fas fa-link"></i></a>
 </h2>
+<p>It is beneficial to be build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits and consents participants, you can record their name, assign them a study ID, and enter any other necessary identifying information (ex: email) into the participant database. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.</p>
+<p>While a project coordinator can set up this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when setting up this system. This ensures that your system is set up efficiently and comprehensively.</p>
+<p>This database may be a standalone structure, used only for tracking and anonymization purposes. Or it may be integrated as part of your larger study system, where all study data is collected and/or entered as well.</p>
+<div id="relational-databases" class="section level3" number="9.2.1">
+<h3>
+<span class="header-section-number">9.2.1</span> Relational databases<a class="anchor" aria-label="anchor" href="#relational-databases"><i class="fas fa-link"></i></a>
+</h3>
+<p>Before we talk about how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our <a href="#database">Data Structure</a> chapter. A relational database organizes information into tables (made up of records/rows and fields/columns) using a normalized schema<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;&lt;strong&gt;Microsoft?&lt;/strong&gt; and pressbooks FIX.&lt;/p&gt;"><sup>167</sup></a></span> and tables are related through keys. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits.</p>
+<ol style="list-style-type: decimal">
+<li>Reduces redundancy and improves efficiency</li>
+<li>Increases performance</li>
+<li>Decreases required storage</li>
+<li>Reduces entry errors</li>
+</ol>
+<p>Let’s compare a very simple example of building a tracking database using a relational model and a non-relational model.</p>
+<p>In this first image we have 3 entities we need to track in our database, schools, teachers and students. We built a very simple model with one table for each entity. Within each table we added variables that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="img/participant1.PNG" alt="Participant database built in using a relational model" width="100%"><p class="caption">
+Figure 2.1: Participant database built in using a relational model
+</p>
+</div>
+<p>We can see here that in each table we have no duplicated, repeating information. The student table only contains information about the student, the teacher table only contains information about the teacher, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher’s last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table.</p>
+<p>If we want to see a table with both student and teacher information, we can simply query our database to create this table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to first write some simple queries that can be used at any time by any user. Say for example, we needed to pull a roster for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by <code>tch_id</code> and then pulls the relevant teacher and student information from both tables:</p>
+<p><code>SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.grade</code>
+<code>FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id</code>
+<code>ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name</code></p>
+<div id="iezbryyjbp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#iezbryyjbp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#iezbryyjbp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#iezbryyjbp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#iezbryyjbp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#iezbryyjbp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#iezbryyjbp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#iezbryyjbp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#iezbryyjbp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#iezbryyjbp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#iezbryyjbp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#iezbryyjbp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#iezbryyjbp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#iezbryyjbp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iezbryyjbp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#iezbryyjbp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#iezbryyjbp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iezbryyjbp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#iezbryyjbp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iezbryyjbp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#iezbryyjbp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iezbryyjbp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iezbryyjbp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iezbryyjbp .gt_left {
+  text-align: left;
+}
+
+#iezbryyjbp .gt_center {
+  text-align: center;
+}
+
+#iezbryyjbp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#iezbryyjbp .gt_font_normal {
+  font-weight: normal;
+}
+
+#iezbryyjbp .gt_font_bold {
+  font-weight: bold;
+}
+
+#iezbryyjbp .gt_font_italic {
+  font-style: italic;
+}
+
+#iezbryyjbp .gt_super {
+  font-size: 65%;
+}
+
+#iezbryyjbp .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#iezbryyjbp .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#iezbryyjbp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#iezbryyjbp .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#iezbryyjbp .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#iezbryyjbp .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<div class="inline-table"><table class="gt_table">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 9.1: </span>Example roster created by querying our relational database tables</caption>
+  
+  <thead class="gt_col_headings"><tr>
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">t_l_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">t_f_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_l_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_f_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">grade_level</th>
+    </tr></thead>
+<tbody class="gt_table_body">
+<tr>
+<td class="gt_row gt_left">Hoover</td>
+<td class="gt_row gt_left">Elizabeth</td>
+<td class="gt_row gt_left">Simpson</td>
+<td class="gt_row gt_left">Lisa</td>
+<td class="gt_row gt_right">2</td>
+</tr>
+<tr>
+<td class="gt_row gt_left">Hoover</td>
+<td class="gt_row gt_left">Elizabeth</td>
+<td class="gt_row gt_left">Wiggum</td>
+<td class="gt_row gt_left">Ralph</td>
+<td class="gt_row gt_right">2</td>
+</tr>
+<tr>
+<td class="gt_row gt_left">Krabappel</td>
+<td class="gt_row gt_left">Edna</td>
+<td class="gt_row gt_left">Prince</td>
+<td class="gt_row gt_left">Martin</td>
+<td class="gt_row gt_right">4</td>
+</tr>
+<tr>
+<td class="gt_row gt_left">Krabappel</td>
+<td class="gt_row gt_left">Edna</td>
+<td class="gt_row gt_left">Simpson</td>
+<td class="gt_row gt_left">Bart</td>
+<td class="gt_row gt_right">4</td>
+</tr>
+<tr>
+<td class="gt_row gt_left">Krabappel</td>
+<td class="gt_row gt_left">Edna</td>
+<td class="gt_row gt_left">Van Houten</td>
+<td class="gt_row gt_left">Milhouse</td>
+<td class="gt_row gt_right">4</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information. Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. Using this method we now have to enter repeating teacher names, repeating school names and so on. And if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="img/participant2.PNG" alt="Participant database built in using a non-relational model" width="100%"><p class="caption">
+Figure 3.3: Participant database built in using a non-relational model
+</p>
+</div>
+<p>If your study includes a variety of entities, tracked over waves of time, a relational database will be very helpful to build. If however, you are only tracking one entity (ex: just students) for one wave of data collection, then a database might be overkill and a simple spreadsheet will work just fine.</p>
+</div>
+<div id="building-the-database" class="section level3" number="9.2.2">
+<h3>
+<span class="header-section-number">9.2.2</span> Building the database<a class="anchor" aria-label="anchor" href="#building-the-database"><i class="fas fa-link"></i></a>
+</h3>
+<p>Before you can begin to construct your database, you will need to collect the following pieces of information.</p>
+<ol style="list-style-type: decimal">
+<li>Who are your entities/units of analysis?
+<ul>
+<li>students, teachers, classrooms, districts, and so on</li>
+</ul>
+</li>
+<li>Are you collecting data longitudinally? Across more than one wave?</li>
+<li>Do you want to use a relational table structure?
+<ul>
+<li>If yes, how do you want to construct and relate our tables?</li>
+</ul>
+</li>
+<li>What variables do we want to include in each table?</li>
+</ol>
+<p>Once you collect those pieces of information, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In the example below, I am designing a database structure for a scenario where I will be collecting information on teachers and schools, over two waves of data collection.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="img/participant3.PNG" alt="Example participant database model" width="80%"><p class="caption">
+Figure 3.4: Example participant database model
+</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>I have 4 tables total
+<ul>
+<li>Two tables have information that should be constant (name, email, one time payments sent out, one time MOUs received)
+<ul>
+<li>If at any time this constant information changes (ex: new last name, new principal), I would update that information in the appropriate table and make a note of when and why the change occurred in my “notes” field</li>
+</ul>
+</li>
+<li>Two tables are for my longitudinal information
+<ul>
+<li>This is where I will track my data collection activities each wave</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>I have connected my tables through primary and foreign keys</li>
+</ol>
+<p>While this example is for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project.</p>
+</div>
+<div id="choosing-fields" class="section level3" number="9.2.3">
+<h3>
+<span class="header-section-number">9.2.3</span> Choosing fields<a class="anchor" aria-label="anchor" href="#choosing-fields"><i class="fas fa-link"></i></a>
+</h3>
+<p>As you design your database model, you will also need to choose what fields to include in each table. The fields you choose to include will be dependent on your particular study design. While your participant tracking database may be the same database you enter all of your study data, for the purposes of this chapter we are only considering fields that are relevant for project coordination and participant de-identification. We are <strong>not</strong> concerned with additional fields that may be collected as part of your data collection measures such as survey items, demographics collected from project measures, and so on. You can consider your participant tracking database as an <strong>internal</strong> database that is only used for coordination, summary, and linking purposes. This is not a database where you would export data for external data sharing.</p>
+<p><strong>Ideas of static fields to collect:</strong></p>
+<ul>
+<li>Study IDs (Primary and foreign keys for a relational database)</li>
+<li>Names (Participants and sites)</li>
+<li>Contact information</li>
+<li>Other necessary linking identifiers (double IDs, district/school IDs)</li>
+<li>Information necessary for data collection scheduling (blocks, class times, grade level)</li>
+<li>Consent/assent status</li>
+<li>Randomization information (cohort, group)</li>
+<li>Condition (treatment/control)</li>
+<li>Summary information for rates (# of consents sent out, # of students in class)</li>
+<li>Administrative status (W-9 received, MOUs received)</li>
+<li>Movement/drop out status</li>
+<li>Notes
+<ul>
+<li>Reasons for changes (name, grade level, email)</li>
+<li>Reasons for movement/drop out</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ideas of fields to collect longitudinally:</strong></p>
+<ul>
+<li>Data collection status (unique fields for each instrument)</li>
+<li>Incentive status (gift cards sent out)</li>
+<li>Notes
+<ul>
+<li>Communication with participants</li>
+<li>Reasons for missing data</li>
+<li>Errors in data</li>
+</ul>
+</li>
+</ul>
+<div id="restricting-fields" class="section level4" number="9.2.3.1">
+<h4>
+<span class="header-section-number">9.2.3.1</span> Restricting fields<a class="anchor" aria-label="anchor" href="#restricting-fields"><i class="fas fa-link"></i></a>
+</h4>
+<p>As you choose your fields you also need to make some decisions about how you will structure those fields.</p>
+<ol style="list-style-type: decimal">
+<li>Set data types for your fields (ex: character, integer, date).
+<ul>
+<li>Restrict entry values to only allowable data types to reduce errors</li>
+</ul>
+</li>
+<li>Set allowable values and ranges
+<ul>
+<li>For example, a categorical status field may only allow “complete”, “pending” or “incomplete”</li>
+</ul>
+</li>
+<li>Do not lump separate pieces of information together in a field
+<ul>
+<li>For example separate out first name and last name into two fields</li>
+</ul>
+</li>
+<li>Name your fields according to the variable naming rules we discussed in our <a href="style.html#varname">Style Guide</a> chapter</li>
+</ol>
+</div>
+</div>
+<div id="choosing-a-tool" class="section level3" number="9.2.4">
+<h3>
+<span class="header-section-number">9.2.4</span> Choosing a tool<a class="anchor" aria-label="anchor" href="#choosing-a-tool"><i class="fas fa-link"></i></a>
+</h3>
+<p>There are many criteria to consider when choosing a tool to build your database in.</p>
+<ul>
+<li>Choose a tool that is customizable to your needs
+<ul>
+<li>Can we build a relational table structure?</li>
+<li>Can we export files? Can we connect to the database via application programming interfaces (APIs)?</li>
+<li>Can we query data?</li>
+</ul>
+</li>
+<li>Choose a tool that is user-friendly
+<ul>
+<li>You want a tool that requires little technical knowledge. We don’t want a tool with a steep learning curve for users. Remember, project coordinators are most likely our end user.</li>
+</ul>
+</li>
+<li>If you are running a project across multiple sites, consider the accessibility of the tool
+<ul>
+<li>For example, you may want a tool that is cloud-based so everyone can access it</li>
+<li>You may also want to make sure multiple users can access it at the same time</li>
+</ul>
+</li>
+<li>Choose a tool that is interoperable
+<ul>
+<li>For instance, some tools may have difficulties running on certain operating systems</li>
+</ul>
+</li>
+<li>Consider cost and licensing
+<ul>
+<li>There are many free tools, but they may not provide all of the functionality you want</li>
+<li>What products do we already have access to, our institution has a license for?</li>
+</ul>
+</li>
+<li>Consider security
+<ul>
+<li>Security in terms of participant confidentiality
+<ul>
+<li>Does the tool meet HIPAA/FERPA requirements?</li>
+<li>Can we limit access?</li>
+</ul>
+</li>
+<li>Protect data loss
+<ul>
+<li>Can we backup the system?</li>
+<li>Can we protect against overwriting data?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data quality protection
+<ul>
+<li>Can we set up data quality constraints? For example, restrict input types/values.</li>
+</ul>
+</li>
+</ul>
+<p>There are many tool options you can choose from. A sampling of those options are below. These tools represent a wide range from the criteria above. Take some time to review your options to see which one best meets your needs.</p>
+<ul>
+<li>Microsoft Access</li>
+<li>Microsoft Excel</li>
+<li>QuickBase</li>
+<li>Airtable</li>
+<li>REDCap</li>
+<li>Claris FileMaker</li>
+<li>Google Sheets and Google Forms</li>
+<li>Forms that feed into a relational database, maintained using a SQL (structured query language) database engine such as SQLite, MySQL, or PostgreSQL</li>
+</ul>
+</div>
+<div id="entering-data" class="section level3" number="9.2.5">
+<h3>
+<span class="header-section-number">9.2.5</span> Entering data<a class="anchor" aria-label="anchor" href="#entering-data"><i class="fas fa-link"></i></a>
+</h3>
+<p>Assuming at this point you have designed your database model, chosen the fields you want to collect, and have chosen a tool.</p>
+<p>If your participant tracking tool is also your data collection/data capture tool (such as those who collect data using RedCap), these data collection status fields may not be manually entry. Rather they may be automated to populate as complete once a participant actually completes an instrument.</p>
+</div>
 </div>
 <div id="ids" class="section level2" number="9.3">
 <h2>
 <span class="header-section-number">9.3</span> Creating participant IDs<a class="anchor" aria-label="anchor" href="#ids"><i class="fas fa-link"></i></a>
 </h2>
 </div>
-<div id="when-to-build-it-who-builds-it-tools-to-build-it-in" class="section level2" number="9.4">
+<div id="how-to-use-it---flow" class="section level2" number="9.4">
 <h2>
-<span class="header-section-number">9.4</span> When to build it, who builds it, tools to build it in<a class="anchor" aria-label="anchor" href="#when-to-build-it-who-builds-it-tools-to-build-it-in"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.4</span> How to use it - flow<a class="anchor" aria-label="anchor" href="#how-to-use-it---flow"><i class="fas fa-link"></i></a>
 </h2>
+<p>Tracking best practices</p>
 
 </div>
 </div>
@@ -138,10 +845,18 @@ Figure 3.1: Data documentation in the research project life cycle
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#track"><span class="header-section-number">9</span> Data Tracking</a></li>
-<li><a class="nav-link" href="#why-track-data"><span class="header-section-number">9.1</span> Why track data?</a></li>
-<li><a class="nav-link" href="#build-a-system"><span class="header-section-number">9.2</span> Build a system</a></li>
+<li><a class="nav-link" href="#benefits"><span class="header-section-number">9.1</span> Benefits</a></li>
+<li>
+<a class="nav-link" href="#building-your-database"><span class="header-section-number">9.2</span> Building your database</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#relational-databases"><span class="header-section-number">9.2.1</span> Relational databases</a></li>
+<li><a class="nav-link" href="#building-the-database"><span class="header-section-number">9.2.2</span> Building the database</a></li>
+<li><a class="nav-link" href="#choosing-fields"><span class="header-section-number">9.2.3</span> Choosing fields</a></li>
+<li><a class="nav-link" href="#choosing-a-tool"><span class="header-section-number">9.2.4</span> Choosing a tool</a></li>
+<li><a class="nav-link" href="#entering-data"><span class="header-section-number">9.2.5</span> Entering data</a></li>
+</ul>
+</li>
 <li><a class="nav-link" href="#ids"><span class="header-section-number">9.3</span> Creating participant IDs</a></li>
-<li><a class="nav-link" href="#when-to-build-it-who-builds-it-tools-to-build-it-in"><span class="header-section-number">9.4</span> When to build it, who builds it, tools to build it in</a></li>
+<li><a class="nav-link" href="#how-to-use-it---flow"><span class="header-section-number">9.4</span> How to use it - flow</a></li>
 </ul>
 
       <div class="book-extra">
@@ -159,7 +874,7 @@ Figure 3.1: Data documentation in the research project life cycle
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-02-24.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-02-27.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
