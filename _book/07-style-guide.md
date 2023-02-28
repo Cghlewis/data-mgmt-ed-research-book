@@ -1,8 +1,8 @@
 # Style guide {#style}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_team_doc.PNG" alt="Data documentation in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Data documentation in the research project life cycle</p>
+<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Style guide in the research project life cycle</p>
 </div>
 
 A style guide provides general agreed upon rules for the formatting of information[@noauthor_style_2023]. As mentioned in the previous [chapter](#styleshort), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
@@ -32,11 +32,10 @@ While some best practices will be provided below, ultimately the rules you choos
 Before we dive in to particular types of style guides, there are a few things to understand about how computers read names in order to understand the "why" behind some of these practices.
 
 1. Avoid spaces. 
-    - While some applications (like Windows) recognize spaces, command line operations and some operating systems still do not support them so it is best to avoid them all together. 
-    - Furthermore, they can often break a URL when shared
+    - While some applications (like Windows) recognize spaces, command line operations and some operating systems still do not support them so it is best to avoid them all together. Furthermore, they can often break a URL when shared
     - The underscore `_` and hyphen `-` are good delimiters to use in place of spaces
-      - It is worth noting that `_` can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
-2. With the exception of `_` and `-`, avoid special characters.
+      - It is worth noting that `_` can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document)
+2. With the exception of `_` and `-`, avoid special characters
     - Examples include but are not limited to `?`, `.`, `*`, `\`, `/`, `+`, `'`, `&`, `"`
     - Computers assign specific meaning to many of these special characters
 3. There are several existing naming conventions that you can choose to add to your style guide. Different naming conventions may work better for different purposes. Using these conventions help you to be consistent with both delimeters and capitalization which not only makes your names more human-readable but also allows your computer to read and search names easier.
@@ -45,7 +44,7 @@ Before we dive in to particular types of style guides, there are a few things to
     - Camel case (scaleSum)
     - Kebab case (scale-sum)
     - Train case (Scale-Sum)
-4. Character length matters. Computers are unable to read objects that surpass a certain character length. This applies to file paths, file names, and variable names. Considerations for each type of limit are reviewed below.
+4. Character length matters. Computers are unable to read names that surpass a certain character length. This applies to file paths, file names, and variable names. Considerations for each type of limit are reviewed below.
 
 
 ## Directory structure
@@ -74,7 +73,7 @@ When deciding how to structure your project directories (the organization of you
 - Make your folder names meaningful and easy to interpret
 - Never use spaces in your folder names
     - Use `_` or `-` to separate words
-- With the exception of `-` and `_`, don't use special characters in your folder names.
+- With the exception of `-` and `_`, don't use special characters in your folder names
 - Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned above).
 
 **Example directory structure style guide**
@@ -271,17 +270,19 @@ This style guide will be a necessary document to have before you start to create
 
 Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well.
 
-Depending on how you plan to merge your data, there are two different ways to account for time.
+Depending on how you plan to combine your data over time, there are two different ways to account for time.
 
-1. Concatenate time to your variable names. You do this if you plan to merge your data across time in [wide format](#structure). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were asked, we add time to our variable names. The only variables you will not assign time to are your [linking variables](#columns) (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
+1. Concatenate time to your variable names. You do this if you plan to merge your data across time in [wide format](#structure). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your [linking variables](#columns) (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
 2.  Create time variables and add them to your data. You do this if you plan to append your data over time in [long format](#structure). Appending your data in long format requires no additional work in terms of variable naming. As discussed in our data structure chapter, you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
 
 During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) [@reynolds_basics_2022]. Waiting to combine data has benefits:
 
-1. Having variables named consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave
+1. Having variables named consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave.
 2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
 
-While combining your datasets across time should not happen early on in your project, it is helpful to consider early on how you *might* combine data in the future. If you do plan to potentially merge data in a **wide format**, it can be helpful to go ahead and plan your rule for adding time to variable names, and add that rule to your style guide. Just be abundantly clear in your guide that this time component should only be added when datasets are combined.
+#### Time in variable names
+
+While combining your datasets across time should not happen early on in your project, it is helpful to consider early on how you *might* combine data in the future. If you do plan to potentially merge data in a wide format, it can be helpful to go ahead and plan your rule for adding time to variable names, and add that rule to your style guide. Just be abundantly clear in your guide that this time component should only be added when datasets are combined.
 
 There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time to a sample variable, `s_gender`.
 
@@ -294,7 +295,7 @@ There is no right or wrong way to assign time in your variable names necessarily
 - As a number embedded into your variable at a certain location, for instance, after an existing prefix such as `s` for `student survey`
   - `s1_gender`, `s2_gender`
 
-While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated with a delimiter. Second, adding time as a standalone component also allows you to more easily, programmatically, manipulate the time component of your variable. This gives you more flexibility in working with your data, especially in restructuring your datasets. Embedding time within your variable names can create inconvenience if at any point you decide you want to remove the time component and restructure your data. 
+While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated with a delimiter. Second, adding time as a standalone component also allows you to more easily, programmatically, manipulate the time component of your variable. This gives you more flexibility in working with your data, especially in selecting variables and restructuring your datasets.
 
 ## Value Coding
 

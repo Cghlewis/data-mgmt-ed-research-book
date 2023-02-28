@@ -4,7 +4,7 @@
 
 ## General security rules
 
-## Participant tracking database
+## Participant tracking database {#trackingstorage}
 
 ## Electronic data
 

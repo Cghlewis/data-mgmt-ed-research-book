@@ -29,7 +29,7 @@ Unless your data is collected anonymously, every dataset **must** also have the 
 
 We will talk more about creating these identification variables in our [data tracking](#ids) section.
 
-#### Column attributes
+**Column attributes**
 
 It is important to know that variables have the following attributes:
 
@@ -55,6 +55,7 @@ The cells are the observations associated with each participant. Cells are made 
 ## Dataset organization rules
 
 In order for your dataset to be machine-readable and analyzable, it should adhere to a set of structural rules [@broman_data_2018; @wickham_tidy_2014]. 
+
 
 1. The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 

@@ -30,7 +30,7 @@ Unless your data is collected anonymously, every dataset **must** also have the 
 
 We will talk more about creating these identification variables in our [data tracking](#ids) section.
 
-#### Column attributes
+**Column attributes**
 
 It is important to know that variables have the following attributes:
 
@@ -47,7 +47,7 @@ The rows in your dataset are aligned with participants or cases in your data. Pa
 
 The cells are the observations associated with each participant. Cells are made up of key/value pairs, created at the intersection of a column and a row. Consider an example where we collect a survey from students. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value/observation that corresponds to that row/column pair (that participant and that question).
 
-```{r out.width='70%', fig.cap="Representation of a cell value"}
+```{r fig.cap="Representation of a cell value", out.width='70%'}
 
 knitr::include_graphics("img/cell_value.PNG")
 
@@ -57,6 +57,7 @@ knitr::include_graphics("img/cell_value.PNG")
 ## Dataset organization rules
 
 In order for your dataset to be machine-readable and analyzable, it should adhere to a set of structural rules [@broman_data_2018; @wickham_tidy_2014]. 
+
 
 1. The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 
@@ -144,7 +145,7 @@ knitr::include_graphics("img/link0.PNG")
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (ex: students, nested in classrooms, nested in schools, and so on). Let's take another example where we collected data from three instruments, a student assessment, a teacher survey, and a school intake form. The image below shows what variables exist in each dataset (with primary keys still being circled in yellow) and how each table can be linked together through a foreign key (circled in blue).
 
-```{r fig.cap="Linking data through foreign keys"}
+```{r, fig.cap="Linking data through foreign keys"}
 
 knitr::include_graphics("img/link1.PNG")
 
