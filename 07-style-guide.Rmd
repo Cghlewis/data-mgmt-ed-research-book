@@ -1,6 +1,6 @@
 # Style guide {#style}
 
-```{r fig.cap="Style guide in the research project life cycle", out.width = "70%"}
+```{r fig8-1, fig.cap="Style guide in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_team_doc.PNG")
 
@@ -137,7 +137,7 @@ print(project)
 
 ## File naming
 
-```{r fig.cap="xkcd comic on naming files", out.width = "40%"}
+```{r fig8-2, fig.cap="xkcd comic on naming files", out.width = "40%"}
 
 knitr::include_graphics("img/xkcd.PNG")
 
@@ -331,7 +331,7 @@ First, if you are using a pre-existing measure, assign values and labels in the 
     - However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties
       - The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (ex: numeric missing values for numeric variables)[@tourangeau_early_2015]
 
-```{r fig.cap="Missing values assigned in the ECLS-K:2011 data file"}
+```{r fig8-3, fig.cap="Missing values assigned in the ECLS-K:2011 data file"}
 
 knitr::include_graphics("img/missing.PNG")
 

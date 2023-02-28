@@ -2,7 +2,7 @@
 
 <div class="figure" style="text-align: center">
 <img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Tracking in the research project life cycle</p>
+<p class="caption">(\#fig:fig9-1)Tracking in the research project life cycle</p>
 </div>
 
 
@@ -54,7 +54,7 @@ In this first image we have three entities we need to track in our database - sc
 
 <div class="figure" style="text-align: center">
 <img src="img/participant1.PNG" alt="Participant database built using a relational model" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-2)Participant database built using a relational model</p>
+<p class="caption">(\#fig:fig9-2)Participant database built using a relational model</p>
 </div>
 
 We can see here that in each table we have no duplicated, repeating information. The student table only contains student level information, the teacher table only contains teacher level information, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
@@ -68,13 +68,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 `ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name`
 
 
+
+
 ```{=html}
-<div id="pnqstqjhvg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="kkrlzgufut" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pnqstqjhvg .gt_table {
+#kkrlzgufut .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -99,7 +101,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-left-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_heading {
+#kkrlzgufut .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -111,7 +113,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_title {
+#kkrlzgufut .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -123,7 +125,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-width: 0;
 }
 
-#pnqstqjhvg .gt_subtitle {
+#kkrlzgufut .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -135,13 +137,13 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-width: 0;
 }
 
-#pnqstqjhvg .gt_bottom_border {
+#kkrlzgufut .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_col_headings {
+#kkrlzgufut .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -156,7 +158,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_col_heading {
+#kkrlzgufut .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -176,7 +178,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#pnqstqjhvg .gt_column_spanner_outer {
+#kkrlzgufut .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -188,15 +190,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 4px;
 }
 
-#pnqstqjhvg .gt_column_spanner_outer:first-child {
+#kkrlzgufut .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pnqstqjhvg .gt_column_spanner_outer:last-child {
+#kkrlzgufut .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pnqstqjhvg .gt_column_spanner {
+#kkrlzgufut .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -208,7 +210,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   width: 100%;
 }
 
-#pnqstqjhvg .gt_group_heading {
+#kkrlzgufut .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -233,7 +235,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#pnqstqjhvg .gt_empty_group_heading {
+#kkrlzgufut .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -248,15 +250,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#pnqstqjhvg .gt_from_md > :first-child {
+#kkrlzgufut .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pnqstqjhvg .gt_from_md > :last-child {
+#kkrlzgufut .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pnqstqjhvg .gt_row {
+#kkrlzgufut .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -275,7 +277,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#pnqstqjhvg .gt_stub {
+#kkrlzgufut .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -288,7 +290,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_stub_row_group {
+#kkrlzgufut .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -302,11 +304,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: top;
 }
 
-#pnqstqjhvg .gt_row_group_first td {
+#kkrlzgufut .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pnqstqjhvg .gt_summary_row {
+#kkrlzgufut .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -316,16 +318,16 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_first_summary_row {
+#kkrlzgufut .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_first_summary_row.thick {
+#kkrlzgufut .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pnqstqjhvg .gt_last_summary_row {
+#kkrlzgufut .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -335,7 +337,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_grand_summary_row {
+#kkrlzgufut .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -345,7 +347,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_first_grand_summary_row {
+#kkrlzgufut .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -355,11 +357,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_striped {
+#kkrlzgufut .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pnqstqjhvg .gt_table_body {
+#kkrlzgufut .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -368,7 +370,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_footnotes {
+#kkrlzgufut .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -382,7 +384,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_footnote {
+#kkrlzgufut .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -391,7 +393,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_sourcenotes {
+#kkrlzgufut .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -405,7 +407,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_sourcenote {
+#kkrlzgufut .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -413,36 +415,36 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_left {
+#kkrlzgufut .gt_left {
   text-align: left;
 }
 
-#pnqstqjhvg .gt_center {
+#kkrlzgufut .gt_center {
   text-align: center;
 }
 
-#pnqstqjhvg .gt_right {
+#kkrlzgufut .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pnqstqjhvg .gt_font_normal {
+#kkrlzgufut .gt_font_normal {
   font-weight: normal;
 }
 
-#pnqstqjhvg .gt_font_bold {
+#kkrlzgufut .gt_font_bold {
   font-weight: bold;
 }
 
-#pnqstqjhvg .gt_font_italic {
+#kkrlzgufut .gt_font_italic {
   font-style: italic;
 }
 
-#pnqstqjhvg .gt_super {
+#kkrlzgufut .gt_super {
   font-size: 65%;
 }
 
-#pnqstqjhvg .gt_two_val_uncert {
+#kkrlzgufut .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -451,38 +453,37 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   margin-left: 0.1em;
 }
 
-#pnqstqjhvg .gt_footnote_marks {
+#kkrlzgufut .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#pnqstqjhvg .gt_asterisk {
+#kkrlzgufut .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pnqstqjhvg .gt_slash_mark {
+#kkrlzgufut .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#pnqstqjhvg .gt_fraction_numerator {
+#kkrlzgufut .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#pnqstqjhvg .gt_fraction_denominator {
+#kkrlzgufut .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
 }
 </style>
 <table class="gt_table">
-  <caption>(#tab:unnamed-chunk-3)Example roster created by querying our relational database tables</caption>
   
   <thead class="gt_col_headings">
     <tr>
@@ -526,13 +527,14 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 </div>
 ```
 
+
 #### Non-relational model
 
 Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet,  to track our participant information. Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. Using this method we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.
 
 <div class="figure" style="text-align: center">
 <img src="img/participant2.PNG" alt="Participant database built in using a non-relational model" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-4)Participant database built in using a non-relational model</p>
+<p class="caption">(\#fig:fig9-4)Participant database built in using a non-relational model</p>
 </div>
 
 #### Considerations
@@ -554,7 +556,7 @@ Once you collect those pieces of information, you can begin to design your datab
 
 <div class="figure" style="text-align: center">
 <img src="img/participant3.PNG" alt="Example participant database model" width="80%" />
-<p class="caption">(\#fig:unnamed-chunk-5)Example participant database model</p>
+<p class="caption">(\#fig:fig9-5)Example participant database model</p>
 </div>
 
 I have designed my database model in this way:
@@ -665,7 +667,7 @@ Your first option is to manually enter data in a spreadsheet format for each par
 
 <div class="figure" style="text-align: center">
 <img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-6)Example spreadsheet view data entry</p>
+<p class="caption">(\#fig:fig9-6)Example spreadsheet view data entry</p>
 </div>
 
 #### Entering data in a form
@@ -677,7 +679,7 @@ Your second option is to create a form that is linked to your tables. As you ent
 
 <div class="figure" style="text-align: center">
 <img src="img/form-view-new.PNG" alt="Example form view data entry" width="80%" />
-<p class="caption">(\#fig:unnamed-chunk-7)Example form view data entry</p>
+<p class="caption">(\#fig:fig9-7)Example form view data entry</p>
 </div>
 
 #### Other considerations
@@ -701,7 +703,7 @@ Assigning unique identifiers (UIDs) is an important part of ensuring the protect
 
 <div class="figure" style="text-align: center">
 <img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-8)Example of keeping participant IDs for the entire study</p>
+<p class="caption">(\#fig:fig9-8)Example of keeping participant IDs for the entire study</p>
 </div>
 
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.

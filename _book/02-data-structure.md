@@ -12,7 +12,7 @@ These rectangular (also called tabular) datasets are made up of columns and rows
 
 <div class="figure" style="text-align: center">
 <img src="img/rectangle.PNG" alt="Basic format of a dataset" width="80%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Basic format of a dataset</p>
+<p class="caption">(\#fig:fig3-1)Basic format of a dataset</p>
 </div>
 
 ### Columns {#columns}
@@ -48,7 +48,7 @@ The cells are the observations associated with each participant. Cells are made 
 
 <div class="figure" style="text-align: center">
 <img src="img/cell_value.PNG" alt="Representation of a cell value" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-2)Representation of a cell value</p>
+<p class="caption">(\#fig:fig3-2)Representation of a cell value</p>
 </div>
 
 
@@ -61,7 +61,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 <div class="figure" style="text-align: center">
 <img src="img/rectangle2.PNG" alt="A comparison of non-rectangular and rectangular data" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-3)A comparison of non-rectangular and rectangular data</p>
+<p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
 </div>
 
 2. Your columns should adhere to your variable type.
@@ -69,7 +69,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
   
 <div class="figure" style="text-align: center">
 <img src="img/var_type.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-4)A comparison of variables adhering and not adhering to a data type</p>
+<p class="caption">(\#fig:fig2-4)A comparison of variables adhering and not adhering to a data type</p>
 </div>
   
 3. A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
@@ -79,7 +79,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
   
 <div class="figure" style="text-align: center">
 <img src="img/two_things.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-5)A comparison of two things being measured in one variable and two things being measured across two variables</p>
+<p class="caption">(\#fig:fig3-5)A comparison of two things being measured in one variable and two things being measured across two variables</p>
 </div>
 
 4. All cell values should be explicit. This means all cells should be filled in with a physical value. 
@@ -90,7 +90,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 <div class="figure" style="text-align: center">
 <img src="img/explicit.PNG" alt="A comparison of of variables with empty cells and variables with not empty cells" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-6)A comparison of of variables with empty cells and variables with not empty cells</p>
+<p class="caption">(\#fig:fig3-6)A comparison of of variables with empty cells and variables with not empty cells</p>
 </div>
 
   - No values should be implied using color coding 
@@ -98,7 +98,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
       
 <div class="figure" style="text-align: center">
 <img src="img/cell_color.PNG" alt="A comparison of variables with implicit values and variables with explicit values" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-7)A comparison of variables with implicit values and variables with explicit values</p>
+<p class="caption">(\#fig:fig3-7)A comparison of variables with implicit values and variables with explicit values</p>
 </div>
       
 5. Your data should not contain duplicate rows. You do not want duplicate rows of a measurement collected **on the same participant**, **at the same time period**. Different types of duplicate rows can occur:
@@ -112,7 +112,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
     
 <div class="figure" style="text-align: center">
 <img src="img/duplicate.PNG" alt="A comparison of data with duplicate cases and data with no duplicate cases" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-8)A comparison of data with duplicate cases and data with no duplicate cases</p>
+<p class="caption">(\#fig:fig3-8)A comparison of data with duplicate cases and data with no duplicate cases</p>
 </div>
 
 ## Linking data
@@ -131,21 +131,21 @@ Let's take the simplest example, where we only have primary keys in our data. He
 
 <div class="figure" style="text-align: center">
 <img src="img/link0.PNG" alt="Linking data through primary keys" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-9)Linking data through primary keys</p>
+<p class="caption">(\#fig:fig3-9)Linking data through primary keys</p>
 </div>
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (ex: students, nested in classrooms, nested in schools, and so on). Let's take another example where we collected data from three instruments, a student assessment, a teacher survey, and a school intake form. The image below shows what variables exist in each dataset (with primary keys still being circled in yellow) and how each table can be linked together through a foreign key (circled in blue).
 
 <div class="figure" style="text-align: center">
 <img src="img/link1.PNG" alt="Linking data through foreign keys" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-10)Linking data through foreign keys</p>
+<p class="caption">(\#fig:fig3-10)Linking data through foreign keys</p>
 </div>
 
 And as you can imagine, as we add more forms, or begin to collect data across time, the database structure begins to become even more complex. Here is another example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.
 
 <div class="figure" style="text-align: center">
 <img src="img/link2.PNG" alt="Linking data through primary and foreign keys" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-11)Linking data through primary and foreign keys</p>
+<p class="caption">(\#fig:fig3-11)Linking data through primary and foreign keys</p>
 </div>
 
 
@@ -169,7 +169,7 @@ Limitations: It is important to note here, that if your data do not have unique 
 
 <div class="figure" style="text-align: center">
 <img src="img/wide.PNG" alt="Data structured in wide format" width="80%" />
-<p class="caption">(\#fig:unnamed-chunk-12)Data structured in wide format</p>
+<p class="caption">(\#fig:fig3-12)Data structured in wide format</p>
 </div>
 
 
@@ -184,7 +184,7 @@ In this scenario, we no longer add the data collection wave to variable names. H
 
 <div class="figure" style="text-align: center">
 <img src="img/long.PNG" alt="Data structured in long format" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-13)Data structured in long format</p>
+<p class="caption">(\#fig:fig3-13)Data structured in long format</p>
 </div>
 
 **Choosing wide vs long**

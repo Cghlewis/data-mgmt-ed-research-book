@@ -10,7 +10,7 @@ Those data come in many forms (ex: video, transcripts, documents, files), repres
 
 These rectangular (also called tabular) datasets are made up of columns and rows. 
 
-```{r out.width='80%', fig.cap="Basic format of a dataset"}
+```{r fig3-1, out.width='80%', fig.cap="Basic format of a dataset"}
 
 knitr::include_graphics("img/rectangle.PNG")
 
@@ -47,7 +47,7 @@ The rows in your dataset are aligned with participants or cases in your data. Pa
 
 The cells are the observations associated with each participant. Cells are made up of key/value pairs, created at the intersection of a column and a row. Consider an example where we collect a survey from students. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value/observation that corresponds to that row/column pair (that participant and that question).
 
-```{r fig.cap="Representation of a cell value", out.width='70%'}
+```{r fig3-2, fig.cap="Representation of a cell value", out.width='70%'}
 
 knitr::include_graphics("img/cell_value.PNG")
 
@@ -61,7 +61,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 1. The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 
-```{r fig.cap="A comparison of non-rectangular and rectangular data"}
+```{r fig3-3, fig.cap="A comparison of non-rectangular and rectangular data"}
 
 knitr::include_graphics("img/rectangle2.PNG")
 
@@ -70,7 +70,7 @@ knitr::include_graphics("img/rectangle2.PNG")
 2. Your columns should adhere to your variable type.
     - For example, if you have a numeric variable, such as age, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
   
-```{r fig.cap="A comparison of variables adhering and not adhering to a data type"}
+```{r fig2-4, fig.cap="A comparison of variables adhering and not adhering to a data type"}
 
 knitr::include_graphics("img/var_type.PNG")
 
@@ -81,7 +81,7 @@ knitr::include_graphics("img/var_type.PNG")
    - Your variable may become unanalyzable (ex: a variable with a value `220/335` is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a `rate` variable with a value of `.657`.
    - You may lose the variable type (ex: if you want an `incident_rate` variable to be numeric, and you assign a value of `220/335`, that variable is no longer numeric)
   
-```{r fig.cap="A comparison of two things being measured in one variable and two things being measured across two variables"}
+```{r fig3-5, fig.cap="A comparison of two things being measured in one variable and two things being measured across two variables"}
 
 knitr::include_graphics("img/two_things.PNG")
 
@@ -93,7 +93,7 @@ knitr::include_graphics("img/two_things.PNG")
      - If a cell is left empty because it is "implied" to be the same value as above, the cells should be filled with the actual data  
      - If the value for the cell is "implied" to be 0, fill the cells with 0  
 
-```{r fig.cap="A comparison of of variables with empty cells and variables with not empty cells"}
+```{r fig3-6, fig.cap="A comparison of of variables with empty cells and variables with not empty cells"}
 
 knitr::include_graphics("img/explicit.PNG")
 
@@ -102,7 +102,7 @@ knitr::include_graphics("img/explicit.PNG")
   - No values should be implied using color coding 
      - If you want to indicate information, add an indicator variable to do this rather than cell coloring  
       
-```{r fig.cap="A comparison of variables with implicit values and variables with explicit values"}
+```{r fig3-7, fig.cap="A comparison of variables with implicit values and variables with explicit values"}
 
 knitr::include_graphics("img/cell_color.PNG")
 
@@ -117,7 +117,7 @@ knitr::include_graphics("img/cell_color.PNG")
         - Take for example a student id and a class id. Multiple unique identifiers may be used if data is collected on participants in multiple locations and treated as unique data. In this case, the data is not truly duplicate because the combined identifiers are unique. 
         - Another example of this is if your data is organized in long format ([discussed below](#structure)). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
     
-```{r fig.cap="A comparison of data with duplicate cases and data with no duplicate cases"}
+```{r fig3-8, fig.cap="A comparison of data with duplicate cases and data with no duplicate cases"}
 
 knitr::include_graphics("img/duplicate.PNG")
 
@@ -137,7 +137,7 @@ In database terminology, each dataset we have is considered a "table". Each tabl
 
 Let's take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students (a survey and an assessment) in one time period. The image below shows what variables were collected from each instrument and how each table can be linked together through a primary key (circled in yellow).
 
-```{r out.width='70%', fig.cap="Linking data through primary keys"}
+```{r fig3-9, out.width='70%', fig.cap="Linking data through primary keys"}
 
 knitr::include_graphics("img/link0.PNG")
 
@@ -145,7 +145,7 @@ knitr::include_graphics("img/link0.PNG")
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (ex: students, nested in classrooms, nested in schools, and so on). Let's take another example where we collected data from three instruments, a student assessment, a teacher survey, and a school intake form. The image below shows what variables exist in each dataset (with primary keys still being circled in yellow) and how each table can be linked together through a foreign key (circled in blue).
 
-```{r, fig.cap="Linking data through foreign keys"}
+```{r fig3-10, fig.cap="Linking data through foreign keys"}
 
 knitr::include_graphics("img/link1.PNG")
 
@@ -153,7 +153,7 @@ knitr::include_graphics("img/link1.PNG")
 
 And as you can imagine, as we add more forms, or begin to collect data across time, the database structure begins to become even more complex. Here is another example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.
 
-```{r out.width='70%', fig.cap="Linking data through primary and foreign keys"}
+```{r fig3-11, out.width='70%', fig.cap="Linking data through primary and foreign keys"}
 
 knitr::include_graphics("img/link2.PNG")
 
@@ -178,7 +178,7 @@ The easiest scenario to think about this format is with repeated measure data. I
 
 Limitations: It is important to note here, that if your data do not have unique identifiers (primary and/or foreign keys), you will be unable to merge data in a wide format.
 
-```{r out.width='80%', fig.cap="Data structured in wide format"}
+```{r fig3-12, out.width='80%', fig.cap="Data structured in wide format"}
 
 knitr::include_graphics("img/wide.PNG")
 
@@ -194,7 +194,7 @@ Again, the most straight forward way to think about this is with repeated measur
 In this scenario, we no longer add the data collection wave to variable names. However, we would need to add a time period variable to denote the wave associated with each row of data.
 
 
-```{r fig.cap="Data structured in long format"}
+```{r fig3-13, fig.cap="Data structured in long format"}
 
 knitr::include_graphics("img/long.PNG")
 

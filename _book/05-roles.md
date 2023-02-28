@@ -2,7 +2,7 @@
 
 <div class="figure" style="text-align: center">
 <img src="img/lifecycle_rr2.PNG" alt="Planning in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Planning in the research project life cycle</p>
+<p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
 </div>
 
 Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles [@service_roles_nodate] for many reasons including for the security of data, the continuity of practices, and for the standardization of workflows.
@@ -35,7 +35,7 @@ The size of a research team and the roles that exist are dependent on factors su
 
 <div class="figure" style="text-align: center">
 <img src="img/lifecycle_intervention2.PNG" alt="Life cycle diagram updated to show hidden processes" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-2)Life cycle diagram updated to show hidden processes</p>
+<p class="caption">(\#fig:fig6-2)Life cycle diagram updated to show hidden processes</p>
 </div>
 
 ## Goals of Assigning Roles and Responsibilities
@@ -90,12 +90,12 @@ This document can be laid in any format that conveys the information clearly to 
 
 <div class="figure" style="text-align: center">
 <img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-3)Roles and responsibilities document organized by role</p>
+<p class="caption">(\#fig:fig6-3)Roles and responsibilities document organized by role</p>
 </div>
 
 <div class="figure" style="text-align: center">
 <img src="img/roles_responsibility2.PNG" alt="Roles and responsibilities document organized by phase" width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-4)Roles and responsibilities document organized by phase</p>
+<p class="caption">(\#fig:fig6-4)Roles and responsibilities document organized by phase</p>
 </div>
 
 Reviewing roles and responsibilities in a format like this allows you to start to see how responsibilities are assigned and decide if tasks need to be redistributed in any way. You can also then start to fill in more details as needed.

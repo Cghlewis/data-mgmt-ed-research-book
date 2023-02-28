@@ -1,6 +1,6 @@
 # Documentation {#document}
 
-```{r fig.cap="Data documentation in the research project life cycle", out.width = "70%"}
+```{r fig7-1, fig.cap="Data documentation in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_doc.PNG")
 
@@ -29,7 +29,7 @@ As you review these documents, remember that every single one mentioned is a liv
 
 Team level data documentation typically contain data governance rules that apply to the entire team, across all projects. While these documents can be amended at any time, they should really be started long before you apply for a grant, when your lab, center, or institution is formed. 
 
-```{r fig.cap="Team level documentation in the research project life cycle", out.width = "70%"}
+```{r fig7-2, fig.cap="Team level documentation in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_teamdoc.PNG")
 
@@ -53,7 +53,7 @@ One example of a team level document is a lab manual, or team handbook. A lab ma
 
 Another option that can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. A wiki is a webpage that allows users to collaboratively edit and manage content. It can be created and housed in many tools such as SharePoint, Teams, Notion, GitHub, OSF, and more. While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to only invited users. This is a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
-```{r fig.cap="Example team wiki with links to frequently requested information"}
+```{r fig7-3, fig.cap="Example team wiki with links to frequently requested information"}
 
 knitr::include_graphics("img/wiki2.PNG")
 
@@ -76,7 +76,7 @@ Similarly, while **offboarding** checklists will contain a lot of procedural inf
 
 Data related topics to consider adding to your onboarding and offboarding checklists are included below.
 
-```{r fig.cap="Sample data topics to add to onboarding and offboarding checklists"}
+```{r fig7-4, fig.cap="Sample data topics to add to onboarding and offboarding checklists"}
 
 knitr::include_graphics("img/onboard_offboard2.PNG")
 
@@ -88,7 +88,7 @@ Typically when we think of a data use agreement (DUA) we think of a document tha
 
 Ideas of content to include in a DUA are included below.
 
-```{r fig.cap="Example of content to include in an internal data use agreement"}
+```{r fig7-5, fig.cap="Example of content to include in an internal data use agreement"}
 
 knitr::include_graphics("img/dua2.PNG")
 
@@ -132,7 +132,7 @@ Using the checklists during your planning phase, you hopefully decided on and as
 
 The research protocol will be a comprehensive project summary document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol provides a means for the board to determine if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to deposit along with your data at the time of data sharing, as well as an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. It generally provides the what, who, when, where, and how of your study. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are seen below.
 
-```{r fig.cap="Common research protocol elements"}
+```{r fig7-6, fig.cap="Common research protocol elements"}
 
 knitr::include_graphics("img/protocol2.PNG")
 
@@ -158,7 +158,7 @@ There is a series of documents, that while they can absolutely be standalone doc
 
 The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. This can be both a helpful planning tool (for both project and data teams) in preparing for times of heavier and lighter workloads, as well as an excellent document to share with future data users to better understand waves of data collection. There is no one format for how to create this document. Below is an example of one way to visualize a data collection timeline.
 
-```{r fig.cap="Example data collection timeline"}
+```{r fig7-7, fig.cap="Example data collection timeline"}
 
 knitr::include_graphics("img/timeline.PNG")
 
@@ -168,7 +168,7 @@ knitr::include_graphics("img/timeline.PNG")
 
 A CONSORT (Consolidated Standards of Reporting Trials) diagram displays the flow of participants through a program [@consort_consort_nodate]. It visually portrays enrollment, randomization, as well as attrition in the study. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in our [tracking](#track) chapter, will inform the creation of this diagram.
 
-```{r fig.cap="2010 CONSORT flow diagram template", out.width = "70%"}
+```{r fig7-8, fig.cap="2010 CONSORT flow diagram template", out.width = "70%"}
 
 knitr::include_graphics("img/consort.PNG")
 
@@ -182,7 +182,7 @@ Actual copies of instrument can be included as supplemental documentation. This 
 
 You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data [@tourangeau_early_2015].
 
-```{r fig.cap="Flowchart of an ECLS-K:2011 kindergarten assessment", out.width = "70%"}
+```{r fig7-9, fig.cap="Flowchart of an ECLS-K:2011 kindergarten assessment", out.width = "70%"}
 
 knitr::include_graphics("img/flowchart.PNG")
 
@@ -200,7 +200,7 @@ You may also choose to attach any publications that have come from your data as 
 
 While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. If you recall from our [planning chapter](#plan), every step that we added to a data collection workflow is then added to a standard operating procedure (SOP) and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (survey, assessments, observations), you can also have SOPs for other types of decisions as well. Many of the decisions laid out in your protocol, will be further detailed in an SOP. Examples of procedures to include in an SOP are seen below.
 
-```{r fig.cap="Examples of processes or decisions to develop an SOP for"}
+```{r fig7-10, fig.cap="Examples of processes or decisions to develop an SOP for"}
 
 knitr::include_graphics("img/sopchecks.PNG")
 
@@ -208,7 +208,7 @@ knitr::include_graphics("img/sopchecks.PNG")
 
 SOPs not only help staff know how to perform tasks, they also create transparency, allow for continuity when staff turnover or go out on leave, create standardization in practices, and last, because an SOP should include versioning information, they allow you to accurately report changes in project procedures throughout the project. You will want to create a template that is used consistently across all procedures, by all staff who build SOPs. 
 
-```{r fig.cap="Standard operating procedure minimal template", out.width = "75%"}
+```{r fig7-11, fig.cap="Standard operating procedure minimal template", out.width = "75%"}
 
 knitr::include_graphics("img/sop.PNG")
 
@@ -252,7 +252,7 @@ A readme is a plain text document that contains information about your files. Th
 3. For providing information about a set of files in a directory
   - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add readmes to the top of those directories to provide information about what datasets are available in the directory, as well as pertinent information about those datasets, including how the datasets are related/can be linked. [@neild_sharing_2022]
 
-```{r fig.cap="Institute of Education Sciences example readme for conveying information on files in a directory", out.width= "75%"}
+```{r fig7-12, fig.cap="Institute of Education Sciences example readme for conveying information on files in a directory", out.width= "75%"}
 
 knitr::include_graphics("img/readme3.PNG")
 
@@ -267,7 +267,7 @@ A changelog provides data lineage, allowing the user to understand where the dat
 
 In its simplest form a changelog should contain the file name (versioned consistently), the date it was created, and a description of the dataset (including what changes were made compared to the previous version). It could include additional information as well such as who made the change, and a link to any code used to transform the data [@service_versioning_nodate].
 
-```{r fig.cap="Example simple changelog for a clean student survey data file", out.width = "70%"}
+```{r fig7-13, fig.cap="Example simple changelog for a clean student survey data file", out.width = "70%"}
 
 knitr::include_graphics("img/changelog.PNG")
 
@@ -281,7 +281,7 @@ A data cleaning plan is a written proposal outlining how you plan to transform y
 
 This document can be started in the documentation phase, but will most likely continue to be updated throughout the study, especially as you start digging in to your collected raw data and seeing what additional transformations are needed. Typically the person who has the responsibility of cleaning the data will write out the data cleaning plans, but those documents can then be brought to a planning meeting allowing other team members, such as PIs, to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. We will talk much more about what types of transformations **should** go into a data cleaning plan in the [data cleaning](#clean) chapter of this book.
 
-```{r fig.cap="A simplistic data cleaning plan", out.width = "60%"}
+```{r fig7-14, fig.cap="A simplistic data cleaning plan", out.width = "60%"}
 
 knitr::include_graphics("img/data_cleaning_plan.PNG")
 
@@ -298,7 +298,7 @@ A data dictionary is a rectangular format collection of names, definitions, and 
 
 A data dictionary is typically created in a rectangular format. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
-```{r fig.cap="Fields to include in a data dictionary", out.width = "70%"}
+```{r fig7-15, fig.cap="Fields to include in a data dictionary", out.width = "70%"}
 
 knitr::include_graphics("img/dictionary.PNG")
 
@@ -326,7 +326,7 @@ As you build your data dictionary, consider the following:
 
 For demonstration purposes only, the following data dictionary uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
-```{r fig.cap="Example student survey data dictionary"}
+```{r fig7-16, fig.cap="Example student survey data dictionary"}
 
 knitr::include_graphics("img/dictionary3.PNG")
 
@@ -382,7 +382,7 @@ A codebook documents the contents, structure, and layout of a data file[@@icpsr_
 
 The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset.
 
-```{r fig.cap="Codebook content that overlaps and is unique to a data dictionary", out.width = "80%"}
+```{r fig7-17, fig.cap="Codebook content that overlaps and is unique to a data dictionary", out.width = "80%"}
 
 knitr::include_graphics("img/codebook.PNG")
 
@@ -391,7 +391,7 @@ knitr::include_graphics("img/codebook.PNG")
 Ultimately you want to export a codebook that contains variable level information like this document below from the United States Department of Health and
 Human Services [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022].
 
-```{r fig.cap="Example codebook content from the SCOPE Coach Survey", out.width = "80%"}
+```{r fig7-18, fig.cap="Example codebook content from the SCOPE Coach Survey", out.width = "80%"}
 
 knitr::include_graphics("img/codebook2.PNG")
 
@@ -416,7 +416,7 @@ The last type of documentation to discuss is metadata, which is created in the "
 
 For the most part, no additional work is needed on your part to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_university_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files - enables discovery), administrative (licensing and ownership), and structural metadata (technical considerations) [@danish_national_forum_for_research_data_management_metadata_nodate; @cofield_libguides_nodate]. The information from this form will become your metadata [@noauthor_figshare_nodate].
 
-```{r fig.cap="Example intake metadata form for figshare repository", out.width= "70%"}
+```{r fig7-19, fig.cap="Example intake metadata form for figshare repository", out.width= "70%"}
 
 knitr::include_graphics("img/metadata4.PNG")
 
@@ -424,7 +424,7 @@ knitr::include_graphics("img/metadata4.PNG")
 
 The most common metadata elements are included below[@dahdul_research_nodate].
 
-```{r fig.cap="Common metadata elements", out.width = "80%"}
+```{r fig7-20, fig.cap="Common metadata elements", out.width = "80%"}
 
 knitr::include_graphics("img/metadata.PNG")
 
@@ -435,7 +435,7 @@ Depending on the repository, at minimum you will enter basic project level metad
 
 Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Here is an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#metastandards) if we want as well. 
 
-```{r fig.cap="Example metadata displayed on an ICPSR Open project page", out.width = "95%"}
+```{r fig7-21, fig.cap="Example metadata displayed on an ICPSR Open project page", out.width = "95%"}
 
 knitr::include_graphics("img/metadata_project.PNG")
 
@@ -455,7 +455,7 @@ Metadata standards, typically field specific, establish common structuring and m
 
 Many fields have chosen metadata standards to adhere to. Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@noauthor_schemaorg_nodate]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon standards in the field of education [@institute_of_education_sciences_frequently_nodate].
 
-```{r fig.cap="A sampling of field metadata standards", out.width= "70%"}
+```{r fig7-22, fig.cap="A sampling of field metadata standards", out.width= "70%"}
 
 knitr::include_graphics("img/metadata_standards.PNG")
 
@@ -463,7 +463,7 @@ knitr::include_graphics("img/metadata_standards.PNG")
 
 It can be helpful to see how standards differ as well as overlap. The DDI Alliance put together this table for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core [@alliance_mapping_nodate], two commonly used standards.
 
-```{r fig.cap="A comparison of DDI Version 2 standards to Dublin Core standards", out.width = "70%"}
+```{r fig7-23, fig.cap="A comparison of DDI Version 2 standards to Dublin Core standards", out.width = "70%"}
 
 knitr::include_graphics("img/metadata_mapping.PNG")
 
@@ -471,7 +471,7 @@ knitr::include_graphics("img/metadata_mapping.PNG")
 
 We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from the ICPSR Open project we saw above [@lindsay_c_page_design_2020]. You can start to see the differences and similarities across standards. 
 
-```{r fig.cap="Metadata comparison from an AERA Open project"}
+```{r fig7-24, fig.cap="Metadata comparison from an AERA Open project"}
 
 knitr::include_graphics("img/standard_compare.PNG")
 

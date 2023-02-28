@@ -1,6 +1,6 @@
 # Data Management Plan {#dmp}
 
-```{r fig.cap="Data management plan in the research project life cycle", out.width = "70%"}
+```{r fig4-1, fig.cap="Data management plan in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_dmp2.PNG")
 

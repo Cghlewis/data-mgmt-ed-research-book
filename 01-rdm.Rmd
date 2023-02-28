@@ -108,7 +108,7 @@ The remainder of this book will be organized into chapters that dive into phases
 
 You can see in the image below how, throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
-```{r fig.cap="The research project life cycle"}
+```{r fig2-1, fig.cap="The research project life cycle"}
 
 knitr::include_graphics("img/cl_lifecycle2.PNG")
 

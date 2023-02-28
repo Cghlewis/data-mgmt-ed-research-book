@@ -1,6 +1,6 @@
 # Data Tracking {#track}
 
-```{r out.width = "70%", fig.cap="Tracking in the research project life cycle"}
+```{r fig9-1, out.width = "70%", fig.cap="Tracking in the research project life cycle"}
 
 knitr::include_graphics("img/lifecycle_track.PNG")
 
@@ -53,7 +53,7 @@ Let's compare a very simple example of building a tracking database using a rela
 
 In this first image we have three entities we need to track in our database - schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
-```{r fig.cap="Participant database built using a relational model"}
+```{r fig9-2, fig.cap="Participant database built using a relational model"}
 
 knitr::include_graphics("img/participant1.PNG")
 
@@ -69,17 +69,17 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 `FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`
 `ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name`
 
-```{r fig.cap = "Example roster created by querying our relational database tables"}
+```{r fig9-3, fig.cap = "Example roster created by querying our relational database tables"}
 
 library(tidyverse)
 
-tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade_level,
+tbl <- tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade_level,
                 "Hoover", "Elizabeth", "Simpson", "Lisa", 2,
                  "Hoover", "Elizabeth", "Wiggum", "Ralph", 2,
                  "Krabappel", "Edna", "Prince", "Martin", 4,
                  "Krabappel", "Edna", "Simpson", "Bart", 4,
                  "Krabappel" , "Edna", "Van Houten", "Milhouse", 4) %>%
-gt::gt(caption = "Example roster created by querying our relational database tables")
+gt::gt()
   
 ```
 
@@ -87,7 +87,7 @@ gt::gt(caption = "Example roster created by querying our relational database tab
 
 Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet,  to track our participant information. Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. Using this method we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.
 
-```{r fig.cap="Participant database built in using a non-relational model"}
+```{r fig9-4, fig.cap="Participant database built in using a non-relational model"}
 
 knitr::include_graphics("img/participant2.PNG")
 
@@ -110,7 +110,7 @@ Before you can begin to construct your database, you will need to collect the fo
 
 Once you collect those pieces of information, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In the example below, I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection. 
 
-```{r fig.cap="Example participant database model", out.width= "80%"}
+```{r fig9-5, fig.cap="Example participant database model", out.width= "80%"}
 
 knitr::include_graphics("img/participant3.PNG")
 
@@ -222,7 +222,7 @@ Your first option is to manually enter data in a spreadsheet format for each par
 - Pros: This is the quickest and easiest method. It also allows you to view all the data holistically.
 - Cons: This method can lead to errors if someone enters data on the wrong row/record.
 
-```{r fig.cap="Example spreadsheet view data entry"}
+```{r fig9-6, fig.cap="Example spreadsheet view data entry"}
 
 knitr::include_graphics("img/datasheet-view-new.PNG")
 
@@ -235,7 +235,7 @@ Your second option is to create a form that is linked to your tables. As you ent
 - Pros: This method reduces data entry errors as you are only working on one participant form at a time
 - Cons: Takes some time, and possibly expertise, to set up the data entry forms
 
-```{r fig.cap="Example form view data entry", out.width= "80%"}
+```{r fig9-7, fig.cap="Example form view data entry", out.width= "80%"}
 
 knitr::include_graphics("img/form-view-new.PNG")
 
@@ -260,7 +260,7 @@ Assigning unique identifiers (UIDs) is an important part of ensuring the protect
     - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once. The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (ex: teacher ID associated with that student or cohort associated with that student)
 5. If confidentiality was promised to schools or districts, assign identifiers to sites as well
 
-```{r fig.cap="Example of keeping participant IDs for the entire study", out.width= "70%"}
+```{r fig9-8, fig.cap="Example of keeping participant IDs for the entire study", out.width= "70%"}
 
 knitr::include_graphics("img/dupe_id.PNG")
 

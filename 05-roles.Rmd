@@ -1,6 +1,6 @@
 # Project Roles and Responsibilities {#roles}
 
-```{r fig.cap="Planning in the research project life cycle", out.width = "70%"}
+```{r fig6-1, fig.cap="Planning in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_rr2.PNG")
 
@@ -34,7 +34,7 @@ This role refers to any staff hired to help implement a research project which m
 
 The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned above, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in the diagram above. Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied. Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
 
-```{r fig.cap="Life cycle diagram updated to show hidden processes", out.width = "90%"}
+```{r fig6-2, fig.cap="Life cycle diagram updated to show hidden processes", out.width = "90%"}
 
 knitr::include_graphics("img/lifecycle_intervention2.PNG")
 
@@ -90,13 +90,13 @@ A general roles and responsibilities document is one way to document your decisi
 
 This document can be laid in any format that conveys the information clearly to your team. Below are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as [standard operating procedures](#sop) where names are attached to each task.
 
-```{r fig.cap="Roles and responsibilities document organized by role", out.width = "70%"}
+```{r fig6-3, fig.cap="Roles and responsibilities document organized by role", out.width = "70%"}
 
 knitr::include_graphics("img/roles_responsibility1.PNG")
 
 ```
 
-```{r fig.cap="Roles and responsibilities document organized by phase", out.width = "70%"}
+```{r fig6-4, fig.cap="Roles and responsibilities document organized by phase", out.width = "70%"}
 
 knitr::include_graphics("img/roles_responsibility2.PNG")
 

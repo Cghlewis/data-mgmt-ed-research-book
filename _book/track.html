@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 9 Data Tracking | Data Management in Large-Scale Education Research</title>
 <meta name="author" content="Crystal Lewis">
-<meta name="description" content="Figure 3.1: Tracking in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains all study...">
+<meta name="description" content="Figure 9.1: Tracking in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains all study...">
 <meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Chapter 9 Data Tracking | Data Management in Large-Scale Education Research">
 <meta property="og:type" content="book">
 <meta property="og:image" content="/book_featured.PNG">
-<meta property="og:description" content="Figure 3.1: Tracking in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains all study...">
+<meta property="og:description" content="Figure 9.1: Tracking in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains all study...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 9 Data Tracking | Data Management in Large-Scale Education Research">
-<meta name="twitter:description" content="Figure 3.1: Tracking in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains all study...">
+<meta name="twitter:description" content="Figure 9.1: Tracking in the research project life cycle  A participant tracking database is an essential component of both project management and data management. This database contains all study...">
 <meta name="twitter:image" content="/book_featured.PNG">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -96,9 +96,9 @@
 <span class="header-section-number">9</span> Data Tracking<a class="anchor" aria-label="anchor" href="#track"><i class="fas fa-link"></i></a>
 </h1>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<span style="display:block;" id="fig:fig9-1"></span>
 <img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="70%"><p class="caption">
-Figure 3.1: Tracking in the research project life cycle
+Figure 9.1: Tracking in the research project life cycle
 </p>
 </div>
 <p>A participant tracking database is an essential component of both project management and data management. This database contains all study participants, their relevant study information, as well as tracking information about their completion of project milestones. This database has two underlying purposes.</p>
@@ -163,9 +163,9 @@ Figure 3.1: Tracking in the research project life cycle
 </h4>
 <p>In this first image we have three entities we need to track in our database - schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<span style="display:block;" id="fig:fig9-2"></span>
 <img src="img/participant1.PNG" alt="Participant database built using a relational model" width="100%"><p class="caption">
-Figure 2.1: Participant database built using a relational model
+Figure 9.2: Participant database built using a relational model
 </p>
 </div>
 <p>We can see here that in each table we have no duplicated, repeating information. The student table only contains student level information, the teacher table only contains teacher level information, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher’s last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table.</p>
@@ -174,12 +174,12 @@ Figure 2.1: Participant database built using a relational model
 <p><code>SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.grade</code>
 <code>FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id</code>
 <code>ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name</code></p>
-<div id="pnqstqjhvg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="kkrlzgufut" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pnqstqjhvg .gt_table {
+#kkrlzgufut .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -204,7 +204,7 @@ Figure 2.1: Participant database built using a relational model
   border-left-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_heading {
+#kkrlzgufut .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -216,7 +216,7 @@ Figure 2.1: Participant database built using a relational model
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_title {
+#kkrlzgufut .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -228,7 +228,7 @@ Figure 2.1: Participant database built using a relational model
   border-bottom-width: 0;
 }
 
-#pnqstqjhvg .gt_subtitle {
+#kkrlzgufut .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -240,13 +240,13 @@ Figure 2.1: Participant database built using a relational model
   border-top-width: 0;
 }
 
-#pnqstqjhvg .gt_bottom_border {
+#kkrlzgufut .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_col_headings {
+#kkrlzgufut .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -261,7 +261,7 @@ Figure 2.1: Participant database built using a relational model
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_col_heading {
+#kkrlzgufut .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -281,7 +281,7 @@ Figure 2.1: Participant database built using a relational model
   overflow-x: hidden;
 }
 
-#pnqstqjhvg .gt_column_spanner_outer {
+#kkrlzgufut .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -293,15 +293,15 @@ Figure 2.1: Participant database built using a relational model
   padding-right: 4px;
 }
 
-#pnqstqjhvg .gt_column_spanner_outer:first-child {
+#kkrlzgufut .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pnqstqjhvg .gt_column_spanner_outer:last-child {
+#kkrlzgufut .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pnqstqjhvg .gt_column_spanner {
+#kkrlzgufut .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -313,7 +313,7 @@ Figure 2.1: Participant database built using a relational model
   width: 100%;
 }
 
-#pnqstqjhvg .gt_group_heading {
+#kkrlzgufut .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -338,7 +338,7 @@ Figure 2.1: Participant database built using a relational model
   vertical-align: middle;
 }
 
-#pnqstqjhvg .gt_empty_group_heading {
+#kkrlzgufut .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -353,15 +353,15 @@ Figure 2.1: Participant database built using a relational model
   vertical-align: middle;
 }
 
-#pnqstqjhvg .gt_from_md > :first-child {
+#kkrlzgufut .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pnqstqjhvg .gt_from_md > :last-child {
+#kkrlzgufut .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pnqstqjhvg .gt_row {
+#kkrlzgufut .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -380,7 +380,7 @@ Figure 2.1: Participant database built using a relational model
   overflow-x: hidden;
 }
 
-#pnqstqjhvg .gt_stub {
+#kkrlzgufut .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -393,7 +393,7 @@ Figure 2.1: Participant database built using a relational model
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_stub_row_group {
+#kkrlzgufut .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -407,11 +407,11 @@ Figure 2.1: Participant database built using a relational model
   vertical-align: top;
 }
 
-#pnqstqjhvg .gt_row_group_first td {
+#kkrlzgufut .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pnqstqjhvg .gt_summary_row {
+#kkrlzgufut .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -421,16 +421,16 @@ Figure 2.1: Participant database built using a relational model
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_first_summary_row {
+#kkrlzgufut .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_first_summary_row.thick {
+#kkrlzgufut .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pnqstqjhvg .gt_last_summary_row {
+#kkrlzgufut .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -440,7 +440,7 @@ Figure 2.1: Participant database built using a relational model
   border-bottom-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_grand_summary_row {
+#kkrlzgufut .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -450,7 +450,7 @@ Figure 2.1: Participant database built using a relational model
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_first_grand_summary_row {
+#kkrlzgufut .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -460,11 +460,11 @@ Figure 2.1: Participant database built using a relational model
   border-top-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_striped {
+#kkrlzgufut .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pnqstqjhvg .gt_table_body {
+#kkrlzgufut .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -473,7 +473,7 @@ Figure 2.1: Participant database built using a relational model
   border-bottom-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_footnotes {
+#kkrlzgufut .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -487,7 +487,7 @@ Figure 2.1: Participant database built using a relational model
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_footnote {
+#kkrlzgufut .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -496,7 +496,7 @@ Figure 2.1: Participant database built using a relational model
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_sourcenotes {
+#kkrlzgufut .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -510,7 +510,7 @@ Figure 2.1: Participant database built using a relational model
   border-right-color: #D3D3D3;
 }
 
-#pnqstqjhvg .gt_sourcenote {
+#kkrlzgufut .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -518,36 +518,36 @@ Figure 2.1: Participant database built using a relational model
   padding-right: 5px;
 }
 
-#pnqstqjhvg .gt_left {
+#kkrlzgufut .gt_left {
   text-align: left;
 }
 
-#pnqstqjhvg .gt_center {
+#kkrlzgufut .gt_center {
   text-align: center;
 }
 
-#pnqstqjhvg .gt_right {
+#kkrlzgufut .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pnqstqjhvg .gt_font_normal {
+#kkrlzgufut .gt_font_normal {
   font-weight: normal;
 }
 
-#pnqstqjhvg .gt_font_bold {
+#kkrlzgufut .gt_font_bold {
   font-weight: bold;
 }
 
-#pnqstqjhvg .gt_font_italic {
+#kkrlzgufut .gt_font_italic {
   font-style: italic;
 }
 
-#pnqstqjhvg .gt_super {
+#kkrlzgufut .gt_super {
   font-size: 65%;
 }
 
-#pnqstqjhvg .gt_two_val_uncert {
+#kkrlzgufut .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -556,41 +556,38 @@ Figure 2.1: Participant database built using a relational model
   margin-left: 0.1em;
 }
 
-#pnqstqjhvg .gt_footnote_marks {
+#kkrlzgufut .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#pnqstqjhvg .gt_asterisk {
+#kkrlzgufut .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pnqstqjhvg .gt_slash_mark {
+#kkrlzgufut .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#pnqstqjhvg .gt_fraction_numerator {
+#kkrlzgufut .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#pnqstqjhvg .gt_fraction_denominator {
+#kkrlzgufut .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
 }
 </style>
 <div class="inline-table"><table class="gt_table">
-<caption>
-<span id="tab:unnamed-chunk-3">Table 9.1: </span>Example roster created by querying our relational database tables</caption>
-  
-  <thead class="gt_col_headings"><tr>
+<thead class="gt_col_headings"><tr>
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">t_l_name</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">t_f_name</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_l_name</th>
@@ -643,9 +640,9 @@ Figure 2.1: Participant database built using a relational model
 </h4>
 <p>Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information. Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. Using this method we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<span style="display:block;" id="fig:fig9-4"></span>
 <img src="img/participant2.PNG" alt="Participant database built in using a non-relational model" width="100%"><p class="caption">
-Figure 3.3: Participant database built in using a non-relational model
+Figure 9.3: Participant database built in using a non-relational model
 </p>
 </div>
 </div>
@@ -677,9 +674,9 @@ Figure 3.3: Participant database built in using a non-relational model
 </ol>
 <p>Once you collect those pieces of information, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In the example below, I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<span style="display:block;" id="fig:fig9-5"></span>
 <img src="img/participant3.PNG" alt="Example participant database model" width="80%"><p class="caption">
-Figure 3.4: Example participant database model
+Figure 9.4: Example participant database model
 </p>
 </div>
 <p>I have designed my database model in this way:</p>
@@ -853,9 +850,9 @@ Figure 3.4: Example participant database model
 <li>Cons: This method can lead to errors if someone enters data on the wrong row/record.</li>
 </ul>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<span style="display:block;" id="fig:fig9-6"></span>
 <img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%"><p class="caption">
-Figure 3.5: Example spreadsheet view data entry
+Figure 9.5: Example spreadsheet view data entry
 </p>
 </div>
 </div>
@@ -869,9 +866,9 @@ Figure 3.5: Example spreadsheet view data entry
 <li>Cons: Takes some time, and possibly expertise, to set up the data entry forms</li>
 </ul>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-7"></span>
+<span style="display:block;" id="fig:fig9-7"></span>
 <img src="img/form-view-new.PNG" alt="Example form view data entry" width="80%"><p class="caption">
-Figure 3.6: Example form view data entry
+Figure 9.6: Example form view data entry
 </p>
 </div>
 </div>
@@ -910,9 +907,9 @@ Figure 3.6: Example form view data entry
 <li>If confidentiality was promised to schools or districts, assign identifiers to sites as well</li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<span style="display:block;" id="fig:fig9-8"></span>
 <img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%"><p class="caption">
-Figure 3.7: Example of keeping participant IDs for the entire study
+Figure 9.7: Example of keeping participant IDs for the entire study
 </p>
 </div>
 <p>The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.</p>

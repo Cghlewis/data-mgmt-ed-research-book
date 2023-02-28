@@ -1,6 +1,6 @@
 # Planning Data Management {#plan}
 
-```{r fig.cap="Planning in the research project life cycle", out.width = "70%"}
+```{r fig5-1, fig.cap="Planning in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_plan2.PNG")
 
@@ -52,7 +52,7 @@ For example, one team may collect survey data on paper because their participant
 
 Below is a very simplified example of the decision making process, based on the Borghi and Van Gulick[@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
 
-```{r fig.cap="A simplified decision-making process", out.width = "50%"}
+```{r fig5-2, fig.cap="A simplified decision-making process", out.width = "50%"}
 
 knitr::include_graphics("img/decision-diagram.PNG")
 
@@ -89,7 +89,7 @@ The last step of this planning phase is to build your workflows. Workflows allow
 
 Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like this one below works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 
-```{r fig.cap="A simple workflow template"}
+```{r fig5-3, fig.cap="A simple workflow template"}
 
 knitr::include_graphics("img/workflow1.PNG")
 
@@ -97,7 +97,7 @@ knitr::include_graphics("img/workflow1.PNG")
 
 Here is how we might complete this diagram for a student survey.
 
-```{r fig.cap="Example student survey workflow"}
+```{r fig5-4, fig.cap="Example student survey workflow"}
 
 knitr::include_graphics("img/workflow2.PNG")
 
@@ -105,7 +105,7 @@ knitr::include_graphics("img/workflow2.PNG")
 
 But the format truly does not matter. Here is a diagram of the same student survey workflow as above, with more detailed added, and this time using a swimlane template instead, where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
 
-```{r fig.cap="Example student survey workflow using a swimlane template"}
+```{r fig5-5, fig.cap="Example student survey workflow using a swimlane template"}
 
 knitr::include_graphics("img/swimlane2.PNG")
 
@@ -113,7 +113,7 @@ knitr::include_graphics("img/swimlane2.PNG")
 
 If you have a working [data collection timeline](#supplement) already created, you can even build time into your workflow. Here is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
 
-```{r}
+```{r fig5-6, fig.cap="Example student survey workflow using a Gantt chart"}
 
 knitr::include_graphics("img/gantt.PNG")
 
