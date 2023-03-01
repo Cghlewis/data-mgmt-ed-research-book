@@ -137,7 +137,7 @@ When deciding how to structure your project directories (the organization of you
 <p class="caption">(\#fig:fig8-2)xkcd comic on naming files</p>
 </div>
 
-As xkcd[@noauthor_documents_nodate] so aptly points out in the comic above, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As xkcd[@noauthor_documents_nodate] so aptly points out in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 
@@ -340,7 +340,7 @@ If your team plans to clean data using code, it can be very helpful to create a 
 - Use comments throughout your code to clearly explain the purpose of each code chunk
   - The format of these comments will be dependent on your coding language
     - R uses `#`
-    - SPSS and Stata uses `*`
+    - SPSS and Stata use `*`
 - Improve code readability by using
   - spaces
   - indentation

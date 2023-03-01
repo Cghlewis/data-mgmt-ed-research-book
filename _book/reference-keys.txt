@@ -1,3 +1,4 @@
+tab:unnamed-chunk-1
 fig:fig2-1
 fig:fig3-1
 fig:fig3-2
@@ -52,6 +53,7 @@ fig:fig8-2
 fig:fig8-3
 fig:fig9-1
 fig:fig9-2
+tab:fig9-3
 fig:fig9-4
 fig:fig9-5
 fig:fig9-6

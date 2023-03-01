@@ -86,7 +86,7 @@ Once roles and responsibilities have been assigned, those decisions should be do
 
 A general roles and responsibilities document is one way to document your decisions [@ucdavis_pmlc_nodate; @colorado_school_of_mines_table_nodate]. In addition to being a planning document that can help you assign tasks to the appropriate staff member, it can also serve as a reference document that allows your team to easily see who is on the project team, what roles they play, and who to contact for questions regarding various project aspects (for example - who to contact for data storage access). 
 
-This document can be laid in any format that conveys the information clearly to your team. Below are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as [standard operating procedures](#sop) where names are attached to each task.
+This document can be laid in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-3) and Figure \@ref(fig:fig6-4) are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as [standard operating procedures](#sop) where names are attached to each task.
 
 <div class="figure" style="text-align: center">
 <img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />

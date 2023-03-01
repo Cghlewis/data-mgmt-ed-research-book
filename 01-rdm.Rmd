@@ -97,7 +97,7 @@ library(kableExtra)
 data <- readxl::read_excel(here::here("img", "def_table.xlsx")) %>% 
   arrange(Term)
 
-gt::gt(data)
+gt::gt(data, caption = "Commonly used data management terms")
 
 ```
 
@@ -106,7 +106,7 @@ gt::gt(data)
 
 The remainder of this book will be organized into chapters that dive into phases of the research data life cycle. It is imperative to understand this research life cycle in order to see the flow of data through a project, as well as to see how everything in a project is connected. If phases are skipped, the whole project will suffer.
 
-You can see in the image below how, throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
+You can see in Figure \@ref(fig:fig2-1), how throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
 ```{r fig2-1, fig.cap="The research project life cycle"}
 
