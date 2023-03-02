@@ -19,7 +19,7 @@ Generally, a data management plan is a supplemental 2-5 page document, submitted
 
 ### What to include?
 
-What to include in a DMP varies some across funding agencies. While you should check each funding agency’s site for their specific DMP requirements, there are typically 10 common categories covered in a data management plan [@gonzales_ten_2022; @icpsr_guide_nodate; @center_for_open_science_creating_nodate] . Those categories are:
+What to include in a DMP varies some across funding agencies. While you should check each funding agency’s site for their specific DMP requirements, there are typically 10 common categories covered in a data management plan [@gonzales_ten_2022; @icpsr_guide_nodate; @center_for_open_science_creating_nodate; @michener_ten_2015]. Those categories are:
 
 1. Roles and responsibilities
     - What are the staff roles in management and long-term preservation of data?
@@ -86,6 +86,7 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 |DMPTool Templates[@dmptool_dmp_nodate]|Templates organized by funding agencies|
 |Sara Hart DMP Example [@hart_example_2020]|A submitted DMP that is publicly available for example purposes|
 |UMN Libraries Examples[@university_of_minnesota_libraries_examples_nodate]| Submitted DMP examples from University of Minnesota researchers|
+|NIH DMP Sample Plan[@national_institutes_of_health_nih_2022]|NIH Sample Data Management and Sharing Plan for human survey data|
 |ICPSR NIH Template [@icpsr_icpsr_2023]| NIH Data Management and Sharing Plan template with specific recommendations for depositing data with ICPSR|
 |Figshare DMP Example Prompts [@figshare_how_nodate-1]| DMP prompts specific to depositing data with Figshare|
 

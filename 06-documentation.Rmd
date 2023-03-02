@@ -6,30 +6,30 @@ knitr::include_graphics("img/lifecycle_doc.PNG")
 
 ```
 
-Documentation is a collection of files that contain procedural and descriptive information about your team, your project, your workflows, and your data. Collecting thorough documentation during your study is unequivocally as important as collecting your data. Documentation serves many purposes including:
+Documentation is a collection of files that contain procedural and descriptive information about your team, your project, your workflows, and your data. Collecting thorough documentation during your study is equally as important as collecting your data. Documentation serves many purposes including:
 
 - Standardizing procedures
 - Securing data and protecting confidentiality
-- Tracking data provenance 
+- Tracking data provenance
 - Discovering errors
 - Enabling reproducibility
 - Ensuring others use and interpret data accurately
 - Providing searchability through metadata
 
-We are going to cover four levels of documents in this chapter: team level, project level, dataset level, and variable level. While most of the documentation we will discuss does fall within the documentation phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a format that is human-readable and works well for your team (ex: Word, PDF, plain text file, Google Doc, Excel, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable. See the chapter on [Data Sharing](#share) for more information.
+We are going to cover four levels of documentation in this chapter: team-level, project-level, dataset-level, and variable-level. While most of the documentation discussed does fall within its eponymous phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a human-readable format that works well for your team (ex: Word, PDF, plain text file, Google Doc, Excel, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable. See the chapter on [Data Sharing](#share) for more information.
 
-The documents below are all recommended and will help you successfully run your project. You can choose to create as many or as few of these documents as you wish. You should choose which documents to create based on what is best for your project and your team, as well as what is required by your funder (see [Data Management Plan](#dmp)), and other governing bodies such as your Institutional Review Board. No matter which documents you choose to implement, it is important that you template your documents and implement them consistently within, and even across projects. Implementing documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to more easily interpret the document. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together).
+The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder (see [Data Management Plan](#dmp)) and other governing bodies such as your Institutional Review Board. No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Implementing documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret the document more easily. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together).
 
-Each type of documentation discussed below is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of Figure \@ref(fig:7-1) above, team members should revisit documentation each time new data is collected, or more often if needed. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why. 
+Each type of documentation discussed below is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of Figure \@ref(fig:fig7-1) above, team members should revisit documentation each time new data is collected, or more often if needed. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why. 
 
 > Creating and maintaining these documents **is an investment**. Make sure to account for this time in your proposal budget. With that said, the return for the investment is well worth the effort. 
 
 
 ## Team Level
 
-Team level data documentation typically contain data governance rules that apply to the entire team, across all projects. While these documents can be amended at any time, they should really be started long before you apply for a grant, when your lab, center, or institution is formed. 
+Team-level data documentation typically contains data governance rules that apply to the entire team, across all projects. While these documents can be amended any time, they should be started long before you apply for a grant, when your lab, center, or institution is formed. 
 
-```{r fig7-2, fig.cap="Team level documentation in the research project life cycle", out.width = "70%"}
+```{r fig7-2, fig.cap="Team-level documentation in the research project life cycle", out.width = "70%"}
 
 knitr::include_graphics("img/lifecycle_teamdoc.PNG")
 
@@ -37,7 +37,7 @@ knitr::include_graphics("img/lifecycle_teamdoc.PNG")
 
 ### Lab Manual
 
-One example of a team level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It sets expectations, provides guidelines, and can even be a place for passing along helpful career advice [@balazs_crowdsourced_nodate]. While a lab manual will mostly consist of administrative, procedural, and interpersonal types of information, it can be helpful to also include data management content as well, including general rules about how to access, store, share, and work with data securely and ethically. 
+One example of a team-level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It sets expectations, provides guidelines, and can even be a place for passing along helpful career advice [@balazs_crowdsourced_nodate]. While a lab manual will primarily consist of administrative, procedural, and interpersonal types of information, it can be helpful to include data management content, including general rules about accessing, storing, sharing, and working with data securely and ethically. 
 
 **Example lab manuals**
 
@@ -51,7 +51,7 @@ One example of a team level document is a lab manual, or team handbook. A lab ma
 
 ### Wiki {#wiki}
 
-Another option that can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. A wiki is a webpage that allows users to collaboratively edit and manage content. It can be created and housed in many tools such as SharePoint, Teams, Notion, GitHub, OSF, and more. While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to only invited users. This is a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
+Another option that can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. A wiki is a webpage that allows users to collaboratively edit and manage content. It can be created and housed in many tools such as SharePoint, Teams, Notion, GitHub, OSF, and more. While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to invited users only. This is a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
 ```{r fig7-3, fig.cap="Example team wiki with links to frequently requested information"}
 
@@ -59,7 +59,7 @@ knitr::include_graphics("img/wiki2.PNG")
 
 ```
 
-> Project level wikis can also be created and be very useful in centralizing frequently referenced information pertaining to specific projects.
+> Project-level wikis can also be created and be very useful in centralizing frequently referenced information pertaining to specific projects.
 
 **Example wikis**
 
@@ -108,17 +108,17 @@ A style guide is a set of standards for the formatting of information [@noauthor
 
 ## Project Level
 
-Project level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the DMP (started before your project is funded), checklists and meeting notes (started during the planning phase), or the CONSORT diagram (started after data is collected) will begin at other points throughout the cycle.
+Project-level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the data management plan (started before your project is funded), checklists and meeting notes (started during the planning phase), or the CONSORT diagram (started after data is collected) will begin at other points throughout the cycle.
 
 ### Data Management Plan
 
-This is the first project level document that will be created in your research project life cycle. See [Data Management Plan](#dmp) to review details about this document. The only other note to mention here is that your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
+This is the first project-level document that will be created in your research project life cycle. See [Data Management Plan](#dmp) to review details about this document. The only other note to mention here is that your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
 
 ### Checklists and meeting notes
 
-Since we've already discussed these documents in a previous [chapter](#checklist) I won't say much more here other than to acknowledge that these documents are also part of your portfolio of documentation and are really key planning documents as you start to build your other project as well as data and variable level documents.
+Since we've already discussed these documents in a previous [chapter](#checklist) there is not much more to cover here other than to acknowledge that these documents are also part of your portfolio of documentation and are key planning documents as you start to build your other project as well as data and variable-level documents.
 
-### Roles and responsibilites document
+### Roles and responsibilities document
 
 Using the checklists during your planning phase, you hopefully decided on and assigned some roles and responsibilities for your project. Now is the time to formally document those decisions in a way that you can share with the others. In the previous [chapter](#roledoc) we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
 
@@ -130,7 +130,7 @@ Using the checklists during your planning phase, you hopefully decided on and as
 
 ### Research Protocol
 
-The research protocol will be a comprehensive project summary document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol provides a means for the board to determine if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to deposit along with your data at the time of data sharing, as well as an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. It generally provides the what, who, when, where, and how of your study. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig7-6).
+The research protocol will be a comprehensive project summary document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to deposit along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. It generally provides the what, who, when, where, and how of your study. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig7-6).
 
 ```{r fig7-6, fig.cap="Common research protocol elements"}
 
@@ -156,7 +156,7 @@ There is a series of documents, that while they can absolutely be standalone doc
 
 1. Timeline
 
-The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. This can be both a helpful planning tool (for both project and data teams) in preparing for times of heavier and lighter workloads, as well as an excellent document to share with future data users to better understand waves of data collection. There is no one format for how to create this document. Figure \@ref(fig:fig7-7) is an example of one way to visualize a data collection timeline.
+The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. When you first create these timelines they will be based on your best estimates of the time it will take to complete milestones, but like all documents we've discussed, they can be updated as needed as you learn more about the reality of the workload. This document can be both a helpful planning tool (for both project and data teams) in preparing for times of heavier and lighter workloads, as well as an excellent document to share with future data users to better understand waves of data collection. There is no one format for how to create this document. Figure \@ref(fig:fig7-7) is an example of one way to visualize a data collection timeline.
 
 ```{r fig7-7, fig.cap="Example data collection timeline"}
 
@@ -176,7 +176,7 @@ knitr::include_graphics("img/consort.PNG")
 
 3. Instruments 
 
-Actual copies of instrument can be included as supplemental documentation. This includes copies of surveys, assessments, forms, and so forth. It can also include any technical documents associated with your instruments or measures (i.e. a technical document for an assessment or a publication associated with a measure you used).
+Actual copies of instruments can be included as supplemental documentation. This includes copies of surveys, assessments, forms, and so forth. It can also include any technical documents associated with your instruments or measures (i.e. a technical document for an assessment or a publication associated with a measure you used).
 
 4. Flowchart of data collection instruments/screeners
 
@@ -198,7 +198,7 @@ You may also choose to attach any publications that have come from your data as 
 
 ### Standard Operating Procedures {#sop}
 
-While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. If you recall from our [planning chapter](#plan), every step that we added to a data collection workflow is then added to a standard operating procedure (SOP) and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (survey, assessments, observations), you can also have SOPs for other types of decisions as well. Many of the decisions laid out in your protocol, will be further detailed in an SOP. Examples of procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10).
+While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. If you recall from our [Planning](#plan) chapter, every step that we added to a data collection workflow is then added to a standard operating procedure (SOP) and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (survey, assessments, observations), you can also have SOPs for other types of decisions as well. Many of the decisions laid out in your protocol, will be further detailed in an SOP. Examples of procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10).
 
 ```{r fig7-10, fig.cap="Examples of processes or decisions to develop an SOP for"}
 
@@ -214,7 +214,7 @@ knitr::include_graphics("img/sop.PNG")
 
 ```
 
-In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you should begin with **general information** about the scope and purpose of the procedure, as well as any tools or terminology. This provides context for the user and gives them the background to use and interpret the SOP. The next section, **procedures**,  lists all procedures in order. Each step provides the name of the staff member/s associated with that step to ensure that there is no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs instant message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can be embedded as well. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
+In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools or terminology. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**,  lists all activities in order. Each step provides the name of the staff member/s associated with that step to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member with no background in this process and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs instant message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can also be embedded. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
 
 **Example SOPS**
 
@@ -227,30 +227,34 @@ In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you 
 
 ## Dataset Level
 
-Our next type of documentation applies solely to your datasets and includes information about what data they contain and how they are related. It also includes things such as planned transformations for the data, potential issues to be aware of, and any alterations to the data. In addition to being helpful descriptive documentation to keep, a huge reason for creating dataset documentation is for authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_data_nodate; @service_quality_nodate]. Preserving data lineage by tracking data errors and transformations is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
+Our next type of documentation applies solely to your datasets and includes information about what data they contain and how they are related. It also captures things such as planned transformations for the data, potential issues to be aware of, and any alterations to the data. In addition to being helpful descriptive documentation, a huge reason for creating dataset documentation is authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_data_nodate; @service_quality_nodate]. Preserving data lineage by tracking data errors and transformations is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
 
-Not **all** of your dataset level documentation will be created in the documentation phase and we will talk about the timing as we review each document.  
+Not **all** of your dataset-level documentation will be created in the documentation phase and we will talk about the timing as we review each document.  
 
 ### Readme
 
-A readme is a plain text document that contains information about your files. These grew out of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. Readmes can be used in many different ways but I am going to cover three ways they are often used in the context of data management.
+A Readme is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. Readmes can be used in many different ways but I will cover three ways they are often used in data management.
 
 1. For conveying information to your colleagues
     - An example of this is if a study participant reaches out to a project coordinator to let them know that they entered the incorrect ID in their survey. When the project coordinator downloads the raw data file to be cleaned by the data manager, they also create a file named "readme.txt" that contains this information and is saved alongside the file in the raw data folder. That way when the data manager goes to retrieve the file, they will see that a readme is included and know to review that document first.
-
-        - ID 5051 entered incorrectly. Should be 5015.
-        - ID 5089 completed the survey twice  
-            - First survey is only partially completed
- 
+  
+```
+  - ID 5051 entered incorrectly. Should be 5015.
+  - ID 5089 completed the survey twice
+    - First survey is only partially completed
+```
+  
 2. For conveying steps in a process (sometimes also called a setup file)
     - There may be times that a specific data pipeline or reporting process requires multiple steps, opening different files and running different scripts. This information **can** go in an SOP, but if it is a programmatic type process done using a series of scripts, it might be easiest to put a simple file named "readme_setup.txt" in the same folder as your scripts so that someone can easily open the file to see what they need to run.
-  
-        Step 1: Run the file 01_clean_data.R to clean the data  
-        Step 2: Run the file 02_check_errors.R to check for errors  
-        Step 3: Run the file 03_run_report.R to create report  
+
+```
+  Step 1: Run the file 01_clean_data.R to clean the data  
+  Step 2: Run the file 02_check_errors.R to check for errors  
+  Step 3: Run the file 03_run_report.R to create report 
+```
 
 3. For providing information about a set of files in a directory
-    - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add readmes to the top of those directories to provide information about what datasets are available in the directory, as well as pertinent information about those datasets, including how the datasets are related/can be linked. [@neild_sharing_2022]
+    - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add Readmes to the top of those directories. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related/can be linked. [@neild_sharing_2022]
 
 ```{r fig7-12, fig.cap="Institute of Education Sciences example Readme for conveying information on files in a directory", out.width= "75%"}
 
@@ -261,13 +265,18 @@ knitr::include_graphics("img/readme3.PNG")
 
 ### Changelog {#change}
 
-A changelog is a record of all of the versions of your data and code. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the field of education where researchers are often working with human subject, identifiable data, users are most often not keeping their study data during an active project, in a remote repository. Data are usually kept in an institution approved storage location. Even if your storage location has versioning such as Box or SharePoint, unless you also have a way to commit messages along with those versions (like a commit message with Git), you will still want to keep a changelog.
+A changelog is a record of all of the versions of your data and code. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the education field where researchers often work with human subjects and identifiable data, users are most often not keeping their study data during an active project, in a remote repository. Instead, data are usually kept in an institution-approved storage location. Even if your storage location has versioning such as Box or SharePoint, unless users are able to add contextual messages about changes made when saving your versions (like a commit message with Git), you will still want to keep a changelog.
 
 A changelog provides data lineage, allowing the user to understand where the data originated as well as all transformations made to the data. It also supports data confidence, allowing the user to understand what version of the data they are currently using and to see if more recent versions have been created and why.
 
-In its simplest form a changelog should contain the file name (versioned consistently), the date it was created, and a description of the dataset (including what changes were made compared to the previous version). It could include additional information as well such as who made the change, and a link to any code used to transform the data [@service_versioning_nodate].
+In its simplest form a changelog should contain the following:
+  - The file name (versioned consistently)
+  - The date the file was created
+  - A description of the dataset (including what changes were made compared to the previous version)
+  
+It could also include additional information such as who made the change and a link to any code used to transform the data [@service_versioning_nodate].
 
-```{r fig7-13, fig.cap="Example simple changelog for a clean student survey data file", out.width = "70%"}
+```{r fig7-13, fig.cap="Example changelog for a clean student survey data file"}
 
 knitr::include_graphics("img/changelog.PNG")
 
@@ -277,9 +286,11 @@ These changelogs will most likely not be created until the data capture and data
 
 ### Data Cleaning Plan
 
-A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset that you plan to collect (ex: student survey, student assessment, teacher survey, district student demographic data). Because this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
+A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset you plan to collect (ex: student survey, student assessment, teacher survey, district student demographic data). Because this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
 
-This document can be started in the documentation phase, but will most likely continue to be updated throughout the study, especially as you start digging in to your collected raw data and seeing what additional transformations are needed. Typically the person who has the responsibility of cleaning the data will write out the data cleaning plans, but those documents can then be brought to a planning meeting allowing other team members, such as PIs, to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. We will talk much more about what types of transformations **should** go into a data cleaning plan in the [Data Cleaning](#clean) chapter of this book.
+This document can be started in the documentation phase, but will most likely continue to be updated throughout the study, especially as you start digging in to your collected raw data and seeing what additional transformations are needed. Typically the person responsible for cleaning the data will write the data cleaning plans, but those documents can then be brought to a planning meeting allowing other team members, such as PIs, to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. In addition to the changelog, this data cleaning plan (as well as any syntax used) provides all documentation necessary to assess data provenance, a historical record of a data file's journey. 
+
+It can be very helpful for your team to have agreed upon general norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently. These standards can be written down and stored in a central team or project location for referral and then used to guide your process as you write your data cleaning plan. We will review what types of transformations you should consider adding to this type of document in our [Data Cleaning](#clean) chapter. 
 
 ```{r fig7-14, fig.cap="A simplistic data cleaning plan", out.width = "60%"}
 
@@ -290,11 +301,11 @@ knitr::include_graphics("img/data_cleaning_plan.PNG")
 
 ## Variable Level
 
-Our last category of documentation is variable level documentation. When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. This is documentation that tells us all pertinent information about the variables that exist in our datasets: variable names, descriptions, types, and so forth. While variable level documentation is often used for the interpretation of existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data [@lewis_using_nodate], and we will discuss this more throughout the chapters in this book.
+Our last category of documentation is variable-level documentation. When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. This documentation tells us all pertinent information about the variables in our datasets: variable names, descriptions, types, and so forth. While variable-level documentation is often used to interpret existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data [@lewis_using_nodate]. We will discuss this more throughout the chapters in this book.
 
 ### Data dictionary
 
-A data dictionary is a rectangular format collection of names, definitions, and attributes about variables in a dataset [@uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation, and is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study. 
+A data dictionary is a rectangular format (rows and columns) collection of names, definitions, and attributes about variables in a dataset [@uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation. A data dictionary is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study. 
 
 A data dictionary is typically created in a rectangular format. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
@@ -308,9 +319,9 @@ knitr::include_graphics("img/dictionary.PNG")
 
 Before you begin to build these dictionaries you will need to have the following:
 
-1. Your style guide already created: We will talk more about [style guides](#style) in the next chapter, but this document will provide standards for how you should name variables and code response values.  
+1. Your style guide already created: We will talk more about [style guides](#style) in the next chapter, but this document will provide standards for naming variables and coding response values.  
 2. Documentation for your measures: If you are collecting data using existing measures, you will want to collect any documentation on those measures such as technical documents or copies of instruments. You will want your documentation to provide information such as:  
-    - What items make up the measures/scales? What is the exact wording of items?  
+    - What items make up the measures/scales? What is the exact wording of the items?  
     - How are items coded?  
     - Are there any calculations/reverse coding needed?  
 
@@ -319,7 +330,7 @@ You will then build one data dictionary for each instrument you plan to collect 
 As you build your data dictionary, consider the following:
 
   - Are your variable names meeting the requirements laid out in your style guide?   
-  - If your items come from an existing scale, does your value coding align with the coding laid out in the documentation? If your items do not come from an existing scale, does your value coding align with the requirements in your style guide?  
+  - If your items come from an existing scale, does your value coding align with the coding laid out in the documentation? If your items do not come from an existing scale, does your value coding (the numeric values assigned to response options) align with the requirements in your style guide?  
   - What additional items will make up your final dataset (it could be items that you plan to add to the data after it is collected, i.e. treatment, unique identifiers, calculated variables)?  
 
 For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig7-16) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
@@ -330,40 +341,40 @@ knitr::include_graphics("img/dictionary3.PNG")
 
 ```
 
-The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to do a review with your team.
+The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the following with your team.
 
   - Is everyone in agreement about how variables are named, how values are coded, and our variable types? 
   - Is everyone in agreement about who gets each item?  
   - Does the team want to adjust any of the question/item wording? 
   - You'll also want to confirm that the data dictionary includes everything the team plans to collect and no items are missing. 
-  - If additional items are added to instruments at later time points, adding fields such as (time periods available), can be really helpful to future users in understanding why some items may be missing data in certain time points.
+  - If additional items are added to instruments at later time points, adding fields such as (time periods available), can be really helpful to future users in understanding why some items may be missing data at certain time points.
 
 #### Creating a data dictionary from an existing data source
 
-Not all research study data will be gathered through original data collection methods. You may be collecting external data sources from organizations like school districts or state departments of education. In these cases you will begin building your data dictionaries later in the cycle, when data is received, and rather than the forward moving flow we discussed before where the dictionary is built first, we will now have to work backwards to answer questions about our data.
+Not all research study data will be gathered through original data collection methods. You may be collecting external data sources from organizations like school districts or state departments of education. In these cases, you will begin building your data dictionaries later in the cycle, when data is received, and rather than the forward-moving flow we discussed before where the dictionary is built first, we will now have to work backwards to answer questions about our data.
 
-The first step in building your data dictionary now is to review your existing data. Yet, it turns out that all this tells you is what **does** exist in the data, not what **should** exist in the data. Items could be incorrectly coded, columns could be assigned the incorrect variable type, and so forth. As you review your data, start to collect questions such as:
+The first step in building your data dictionary is to review your existing data. Yet, it turns out that all this tells you is what **does** exist in the data, not what **should** exist in the data. Items could be incorrectly coded, columns could be assigned the incorrect variable type, etc. As you review your data, start to collect questions such as:
 
 1. What do these variables represent? 
-    - What was the wording of these item?
+    - What was the wording of these items?
 2. Who received the items?
 3. What do these values represent? 
     - Am I seeing the full range of values/categorical options for each item? Or was the range larger than what I am seeing?
     - Do I have values in my data that don't make sense for an item?
-4. What types are the items currently? What types should they be?
+4. What data types are the items currently? What types should they be?
 
-In order to answer those questions, you may need to do some additional detective work.
+To answer those questions, you may need to do some additional detective work.
 
 1. Contact the person who originally collected the data to learn more about the instrument and the data.  
 2. Contact the person who cleaned the data (if cleaned) to see what transformations they completed on the raw data.  
-3. Request access to the original instruments to review exact question wording, item response options, skip patterns, and so forth. 
-4. Request any documentation they have. Do they have their own data dictionaries, codebooks, or syntax that might help you understand what is going on in the data?  
+3. Request access to the original instruments to review exact question wording, item response options, skip patterns, etc. 
+4. Request any documentation they have. For example, do they have their own data dictionaries, codebooks, or syntax that might help you understand what is going on in the data?  
 
 Ultimately you should end up with a data dictionary structured similarly to the one above. You may add additional fields that help you keep track of further changes (ex: a column for the old variable name and a column for your new variable name), and your transformations section may become more verbose as the values assigned previously may not align with the values you prefer based on your style guide or the existing measures. Otherwise, the data dictionary should still be constructed in the same manner mentioned above.
 
 #### Time well spent
 
-The process described in this section is a manual, time consuming process. This is intentional. Building your data dictionary is an information seeking journey where you take time to understand your dataset, create standardization of items, and plan for data transformations. Spending time manually creating this document before collecting data prevents many potential errors and time lost fixing data in the future. While there are absolutely ways you can automate the creation of a data dictionary using an existing dataset, the only time I can imagine that being useful is when you have a clean dataset that you have confidently already verified is accurate and ready to be shared. However, a data dictionary, as mentioned before, is so much more than a document to be shared alongside a public dataset. It is a tool for guiding many other processes in your research data life cycle.
+The process described in this section is a manual, time consuming process. This is intentional. Building your data dictionary is an information seeking journey where you take time to understand your dataset, create standardization of items, and plan for data transformations. Spending time manually creating this document before collecting data prevents many potential errors and time lost fixing data in the future. While there are absolutely ways you can automate the creation of a data dictionary using an existing dataset, the only time I can imagine that being useful is when you have a clean dataset that you have confidently already verified is accurate and ready to be shared. However, as mentioned before, a data dictionary is so much more than a document to be shared alongside a public dataset. It is a tool for guiding many other processes in your research data life cycle.
 
 **Example data dictionaries**
 
@@ -385,7 +396,7 @@ knitr::include_graphics("img/codebook.PNG")
 
 ```
 
-Ultimately you want to export a codebook that contains variable level information like this document in Figure \@ref(fig:fig7-18) from the United States Department of Health and
+Ultimately, you want to export a codebook that contains variable-level information like this document in Figure \@ref(fig:fig7-18) from the United States Department of Health and
 Human Services [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022].
 
 ```{r fig7-18, fig.cap="Example codebook content from the SCOPE Coach Survey", out.width = "80%"}
@@ -394,11 +405,11 @@ knitr::include_graphics("img/codebook2.PNG")
 
 ```
 
-You can see how in addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data if out of range or unexpected values appear.
+In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data if out of range or unexpected values appear.
 
-You can either create separate codebooks per datasets or have them all contained in one document, clickable through a table of contents. Unlike a data dictionary which I recommend to create manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebooks, including point and click statistical programs such as SPSS, or with a little programming knowledge you can more flexibly design codebooks using programs like R or SAS. Fo example, the R programming language has many packages that will create and export codebooks in a variety of formats from your existing dataset by just running a few functions[@lewis_codebook_nodate].
+You can create separate codebooks per dataset or have them all contained in one document, clickable through a table of contents. Unlike a data dictionary, which I recommend creating manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebooks, including point and click statistical programs such as SPSS, or with a little programming knowledge you can more flexibly design codebooks using programs like R or SAS. Fo example, the R programming language has many packages that will create and export codebooks in a variety of formats from your existing dataset by just running a few functions[@lewis_codebook_nodate].
 
-Last, you may notice as you review codebooks, many will start with several pages of text, usually containing information about the project. It's common for people, when it comes time to share their data, to combine information from their research protocol or readme files, into their codebooks, rather than sharing separate documents.
+Last, you may notice as you review codebooks that many will start with several pages of text, usually containing information about the project. When it comes time to share their data, it's common for people to combine information from their research protocol or readme files, into their codebooks, rather than sharing separate documents.
 
 **Example codebooks**
 
@@ -409,9 +420,9 @@ Last, you may notice as you review codebooks, many will start with several pages
 
 ## Metadata {#metadata}
 
-The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When it comes time to deposit your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate;@danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data[@noauthor_fair_nodate; @service_metadata_nodate; @logan_data_2021].
+The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate;@danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data[@noauthor_fair_nodate; @service_metadata_nodate; @logan_data_2021].
 
-For the most part, no additional work is needed on your part to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_university_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files - enables discovery), administrative (licensing and ownership), and structural metadata (technical considerations) [@danish_national_forum_for_research_data_management_metadata_nodate; @cofield_libguides_nodate]. The information from this form will become your metadata [@noauthor_figshare_nodate].
+For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_university_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files - enables discovery), administrative (licensing and ownership), and structural metadata (technical considerations) [@danish_national_forum_for_research_data_management_metadata_nodate; @cofield_libguides_nodate]. The information from this form will become your metadata [@noauthor_figshare_nodate].
 
 ```{r fig7-19, fig.cap="Example intake metadata form for Figshare repository", out.width= "70%"}
 
@@ -428,7 +439,7 @@ knitr::include_graphics("img/metadata.PNG")
 ```
 
 
-Depending on the repository, at minimum you will enter basic project level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate; @gilmore_practical_2018]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
+Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate; @gilmore_practical_2018]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
 Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig7-21) an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#metastandards) if we want as well. 
 
@@ -474,12 +485,11 @@ knitr::include_graphics("img/standard_compare.PNG")
 
 ```
 
-If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the repository Dryad uses a combination of Dublin and Darwin Core [@lamar_soutter_library_necdmc_nodate], Figshare also uses a combination of schemas including Schema.Org, Dublin Core, and DataCite[@figshare_fair-figshare_nodate], while ICPSR uses the DDI standard[@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
-
+If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the repository Dryad uses a combination of Dublin and Darwin Core [@lamar_soutter_library_necdmc_nodate], Figshare also uses a combination of schemas including Schema.Org, Dublin Core, and DataCite[@figshare_fair-figshare_nodate], OSF currently uses the DataCite schema[@gueguen_new_nodate], while ICPSR uses the DDI standard[@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
 
 If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_university_nodate], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
 
 
 ## Wrapping it up
 
-At this point your head might be spinning from the amount of documents we've covered. It's important to understand that while each document discussed provides a unique and meaningful purpose, you don't have to create every document listed. Choose the documents that help you organize your project and your data processes in the best way. Each document you create that is well maintained, will improve your data management workflow, decrease errors, and enhance your understanding of your data.
+At this point your head might be spinning from the amount of documents we've covered. It's important to understand that while each document discussed provides a unique and meaningful purpose, you don't have to create every document listed. In data management we walk a fine line between creating sufficient documentation, and spending all of our working hours perfecting and documenting every detail of our project. Choose the documents that help you record and structure your processes in the best way for your project while also giving yourself grace to stop when the documents are "good-enough". Each document you create that is well organized and well maintained will improve your data management workflow, decrease errors, and enhance your understanding of your data.

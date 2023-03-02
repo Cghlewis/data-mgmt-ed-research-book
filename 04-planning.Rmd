@@ -35,12 +35,12 @@ Along with your existing data management plan, checklists are great tools to hel
 - Roles and Responsibilities[@lewis_roles_nodate]
 - Task Management[@lewis_task_nodate]
 - Documentation[@lewis_documentation_nodate]
-- Data Collection[@lewis_data_nodate-5]
-- Data Tracking[@lewis_data_nodate-4]
-- Data Capture[@lewis_data_nodate-3]
-- Data Storage and Security[@lewis_data_nodate-2]
-- Data Cleaning[@lewis_data_nodate-1]
-- Data Sharing[@lewis_data_nodate]
+- Data Collection[@lewis_data_nodate-3]
+- Data Tracking[@lewis_data_nodate]
+- Data Capture[@lewis_data_nodate-5]
+- Data Storage and Security[@lewis_data_nodate-1]
+- Data Cleaning[@lewis_data_nodate-4]
+- Data Sharing[@lewis_data_nodate-2]
 
 ### Decision-making process
 

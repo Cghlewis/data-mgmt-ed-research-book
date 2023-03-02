@@ -6,7 +6,7 @@ Research data management (RDM) involves the organization, storage, preservation,
 
 ## Standards
 
-Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014], and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
+Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014] or the ISO (International Organization for Standardization) 19115 used for geospatial data[@michener_ten_2015], and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
 
 While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
@@ -35,7 +35,7 @@ Even if you never plan to share your data outside of your research group, there 
 
 1. **Encourages validation**: Implementing reproducible data management practices encourages and allows your team to internally replicate and validate your processes to ensure your outputs are accurate.
 
-1. **Improves continuity**: Data management practices such as documentation ensures project continuity through staff turnover. Having developed thorough protocols allows new staff to pick up right where the former staff member left off and implement the project with fidelity [@borghi_data_2021; @cowles_research_nodate]. Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus [@markowetz_five_2015].
+1. **Improves continuity**: Data management practices such as documentation ensures project continuity through staff turnover. Having thoroughly documented procedures allows new staff to pick up right where the former staff member left off and implement the project with fidelity [@borghi_data_2021; @cowles_research_nodate]. Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus [@markowetz_five_2015].
 
 1. **Increases efficiency**: Documenting and automating tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="pxdppyftcw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="kczmizocaf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pxdppyftcw .gt_table {
+#kczmizocaf .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_heading {
+#kczmizocaf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_title {
+#kczmizocaf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#pxdppyftcw .gt_subtitle {
+#kczmizocaf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#pxdppyftcw .gt_bottom_border {
+#kczmizocaf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_col_headings {
+#kczmizocaf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_col_heading {
+#kczmizocaf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#pxdppyftcw .gt_column_spanner_outer {
+#kczmizocaf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#pxdppyftcw .gt_column_spanner_outer:first-child {
+#kczmizocaf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pxdppyftcw .gt_column_spanner_outer:last-child {
+#kczmizocaf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pxdppyftcw .gt_column_spanner {
+#kczmizocaf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#pxdppyftcw .gt_group_heading {
+#kczmizocaf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#pxdppyftcw .gt_empty_group_heading {
+#kczmizocaf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#pxdppyftcw .gt_from_md > :first-child {
+#kczmizocaf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pxdppyftcw .gt_from_md > :last-child {
+#kczmizocaf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pxdppyftcw .gt_row {
+#kczmizocaf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#pxdppyftcw .gt_stub {
+#kczmizocaf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#pxdppyftcw .gt_stub_row_group {
+#kczmizocaf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#pxdppyftcw .gt_row_group_first td {
+#kczmizocaf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pxdppyftcw .gt_summary_row {
+#kczmizocaf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#pxdppyftcw .gt_first_summary_row {
+#kczmizocaf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_first_summary_row.thick {
+#kczmizocaf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pxdppyftcw .gt_last_summary_row {
+#kczmizocaf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_grand_summary_row {
+#kczmizocaf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#pxdppyftcw .gt_first_grand_summary_row {
+#kczmizocaf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_striped {
+#kczmizocaf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pxdppyftcw .gt_table_body {
+#kczmizocaf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_footnotes {
+#kczmizocaf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_footnote {
+#kczmizocaf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#pxdppyftcw .gt_sourcenotes {
+#kczmizocaf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#pxdppyftcw .gt_sourcenote {
+#kczmizocaf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#pxdppyftcw .gt_left {
+#kczmizocaf .gt_left {
   text-align: left;
 }
 
-#pxdppyftcw .gt_center {
+#kczmizocaf .gt_center {
   text-align: center;
 }
 
-#pxdppyftcw .gt_right {
+#kczmizocaf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pxdppyftcw .gt_font_normal {
+#kczmizocaf .gt_font_normal {
   font-weight: normal;
 }
 
-#pxdppyftcw .gt_font_bold {
+#kczmizocaf .gt_font_bold {
   font-weight: bold;
 }
 
-#pxdppyftcw .gt_font_italic {
+#kczmizocaf .gt_font_italic {
   font-style: italic;
 }
 
-#pxdppyftcw .gt_super {
+#kczmizocaf .gt_super {
   font-size: 65%;
 }
 
-#pxdppyftcw .gt_two_val_uncert {
+#kczmizocaf .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#pxdppyftcw .gt_footnote_marks {
+#kczmizocaf .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#pxdppyftcw .gt_asterisk {
+#kczmizocaf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pxdppyftcw .gt_slash_mark {
+#kczmizocaf .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#pxdppyftcw .gt_fraction_numerator {
+#kczmizocaf .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#pxdppyftcw .gt_fraction_denominator {
+#kczmizocaf .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -590,7 +590,7 @@ Before diving into the content of this training, I think it is helpful to cover 
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention. This includes many formats that education researchers collect data with (ex: survey, observation, assessment).</td></tr>
     <tr><td class="gt_row gt_left">Participant database</td>
-<td class="gt_row gt_left">study roster, demographic file, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking</td>
+<td class="gt_row gt_left">study roster, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking</td>
 <td class="gt_row gt_left">This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.</td></tr>
     <tr><td class="gt_row gt_left">Path</td>
 <td class="gt_row gt_left">file path</td>

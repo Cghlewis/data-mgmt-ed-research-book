@@ -130,7 +130,7 @@ styleshort
 project-level
 data-management-plan
 checklists-and-meeting-notes
-roles-and-responsibilites-document
+roles-and-responsibilities-document
 research-protocol
 supplement
 sop
