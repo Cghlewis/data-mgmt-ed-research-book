@@ -6,7 +6,7 @@ knitr::include_graphics("img/lifecycle_track.PNG")
 
 ```
 
-During your project, you will want to be able to answer both progress and summary questions about your recruitment and data collection activities.
+During your project you will want to be able to answer both progress and summary questions about your recruitment and data collection activities.
 
 1. How many participants consented to be in our study? How many have we lost during our study and why?
 2. How much progress have we made in this cycle of data collection? How much data do we have left to collect?
