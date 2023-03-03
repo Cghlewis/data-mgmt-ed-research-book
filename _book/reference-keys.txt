@@ -89,7 +89,7 @@ rows
 cells
 dataset-organization-rules
 linking-data
-database-design
+database
 structure
 file-types
 dmp

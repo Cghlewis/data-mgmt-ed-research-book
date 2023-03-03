@@ -121,7 +121,7 @@ Up until now we have been talking about one, standalone dataset. However, it is 
 
 In order to think about how to link data, we need to discuss two things: data structure and database design.
 
-### Database design
+### Database design {#database}
 
 A database is "an organized collection of data stored as multiple datasets" [@usgs_what_nodate]. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.
 

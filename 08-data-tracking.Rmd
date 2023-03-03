@@ -71,9 +71,9 @@ If we want to see a table with both student and teacher information, we can simp
 
 Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
 
-`SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.grade`
-`FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`
-`ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name`
+`SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.grade`    
+`FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
+`ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name`    
 
 ```{r fig9-3, caption = "Example roster created by querying our relational database tables"}
 
