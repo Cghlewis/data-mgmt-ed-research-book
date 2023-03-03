@@ -1,6 +1,9 @@
 # Data Management Plan {#dmp}
 
-![(\#fig:fig4-1)Data management plan in the research project life cycle](img/lifecycle_dmp2.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_dmp2.PNG" alt="Data management plan in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:fig4-1)Data management plan in the research project life cycle</p>
+</div>
 
 ## History and purpose
 
@@ -87,7 +90,7 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 |ICPSR NIH Template [@icpsr_icpsr_2023]| NIH Data Management and Sharing Plan template with specific recommendations for depositing data with ICPSR|
 |Figshare DMP Example Prompts [@figshare_how_nodate-1]| DMP prompts specific to depositing data with Figshare|
 
-## Budgeting
+## Budgeting {#budget}
 
 As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include data management personnel costs, fees, infrastructure, or tools needed to organize, document, store, and share study data [@service_costing_nodate]. Make sure to review your funder's documentation for information about allowable costs[@samuel_j_wood_library_research_nodate]. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
 

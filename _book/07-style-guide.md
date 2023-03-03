@@ -1,6 +1,9 @@
 # Style guide {#style}
 
-![(\#fig:fig8-1)Style guide in the research project life cycle](img/lifecycle_team_doc.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:fig8-1)Style guide in the research project life cycle</p>
+</div>
 
 A style guide provides general agreed upon rules for the formatting of information[@noauthor_style_2023]. As mentioned in the previous [chapter](#styleshort), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
@@ -129,7 +132,10 @@ When deciding how to structure your project directories (the organization of you
 
 ## File naming
 
-![(\#fig:fig8-2)xkcd comic on naming files](img/xkcd.PNG){width=40%}
+<div class="figure" style="text-align: center">
+<img src="img/xkcd.PNG" alt="xkcd comic on naming files" width="40%" />
+<p class="caption">(\#fig:fig8-2)xkcd comic on naming files</p>
+</div>
 
 As xkcd[@noauthor_documents_nodate] so aptly points out in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
@@ -319,7 +325,10 @@ First, if you are using a pre-existing measure, assign values and labels in the 
     - However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties
       - The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (ex: numeric missing values for numeric variables)[@tourangeau_early_2015]
 
-![(\#fig:fig8-3)Missing values assigned in the ECLS-K:2011 data file](img/missing.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/missing.PNG" alt="Missing values assigned in the ECLS-K:2011 data file" width="100%" />
+<p class="caption">(\#fig:fig8-3)Missing values assigned in the ECLS-K:2011 data file</p>
+</div>
 
 ## Coding
 
@@ -332,7 +341,7 @@ If your team plans to clean data using code, it can be very helpful to create a 
   - The format of these comments will be dependent on your coding language
     - R uses `#`
     - SPSS and Stata use `*`
-- Improve code readability by using
+- Improve code readability by using[@wickham_welcome_nodate; @san_martin_stata_2023]
   - spaces
   - indentation
   - setting a line limit for your code (ex: 80 characters)

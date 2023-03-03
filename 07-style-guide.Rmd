@@ -348,7 +348,7 @@ If your team plans to clean data using code, it can be very helpful to create a 
   - The format of these comments will be dependent on your coding language
     - R uses `#`
     - SPSS and Stata use `*`
-- Improve code readability by using
+- Improve code readability by using[@wickham_welcome_nodate; @san_martin_stata_2023]
   - spaces
   - indentation
   - setting a line limit for your code (ex: 80 characters)
