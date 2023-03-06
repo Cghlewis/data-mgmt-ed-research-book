@@ -103,7 +103,7 @@ A style guide is a set of standards for the formatting of information [@noauthor
 
 ## Project Level
 
-Project-level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the data management plan (started before your project is funded), checklists and meeting notes (started during the planning phase), or the CONSORT diagram (started after data is collected) will begin at other points throughout the cycle.
+Project-level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the data management plan (started before your project is funded), checklists and meeting notes (started during the planning phase), or a participant flow diagram (started after data is collected) will begin at other points throughout the cycle.
 
 ### Data Management Plan
 
@@ -132,7 +132,7 @@ The research protocol will be a comprehensive project summary document. If you a
 <p class="caption">(\#fig:fig7-6)Common research protocol elements</p>
 </div>
 
-When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user. Content such as risks and benefits to participants might be removed, and numbers such as final study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
+When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
 
 **Example protocols**
 
@@ -141,8 +141,8 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 |University of Washington Protocol Template [@university_of_washington_developing_nodate]| Protocol template|
 |Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014] | Protocol Template|
 |University of Missouri Protocol Template [@university_of_missouri_socialbehavioraleducational_nodate]| Protocol Template|
-| SCOPE User Guide[@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022]|Example data sharing documentation that can be created from a research protocol|
-
+|STROBE Checklists [@strobe_strobe_nodate]|Helpful checklists in thinking through what to include in a project summary document|
+|Project Summary Documentation Template [@lewis_project-level_nodate]|Research protocol revised for the purposes of public data sharing|
 
 ### Supplemental Documents {#supplement}
 
@@ -157,9 +157,9 @@ The first supplemental document that I highly recommend creating is a visual rep
 <p class="caption">(\#fig:fig7-7)Example data collection timeline</p>
 </div>
 
-2. CONSORT Diagram
+2. Participant Flow Diagram
 
-A CONSORT (Consolidated Standards of Reporting Trials) diagram displays the flow of participants through a program [@consort_consort_nodate]. It visually portrays enrollment, randomization, as well as attrition in the study. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in our [Data Tracking](#track) chapter, will inform the creation of this diagram.
+A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. These diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams [@cuschieri_consort_2019], providing a means to understand how participants are randomized and assigned to treatment groups. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in our [Data Tracking](#track) chapter, will inform the creation of this diagram.
 
 <div class="figure" style="text-align: center">
 <img src="img/consort.PNG" alt="2010 CONSORT flow diagram template" width="70%" />
@@ -203,7 +203,7 @@ SOPs not only help staff know how to perform tasks, they also create transparenc
 <p class="caption">(\#fig:fig7-11)Standard operating procedure minimal template</p>
 </div>
 
-In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools or terminology. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**,  lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member with no background in this process and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs instant message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can also be embedded. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
+In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools or terminology. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**, lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member with no background in this process and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs instant message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can also be embedded. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
 
 **Example SOPS**
 
@@ -243,7 +243,7 @@ A Readme is a plain text document that contains information about your files. Th
 ```
 
 3. For providing information about a set of files in a directory
-    - If colleagues are accessing your clean datasets in your project directory, it can be helpful to add Readmes to the top of those directories. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked [@neild_sharing_2022].
+    - It can be helpful to add Readmes to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, definitions of common acronyms used, or measure response rates[@neild_sharing_2022].
 
 <div class="figure" style="text-align: center">
 <img src="img/readme3.PNG" alt="Institute of Education Sciences example Readme for conveying information on files in a directory" width="75%" />
