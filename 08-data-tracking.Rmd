@@ -31,8 +31,8 @@ A thorough and complete participant database that is updated regularly is benefi
     - Checking and tracking activities on a daily basis allows your team to easily report the status of data collection activities (ex: as of today we have completed 124 out of 150 assessments)
     - Checking and tracking daily, compared to checking and tracking after data collection is complete, reduces the likelihood of missing data 
     - Thorough tracking allows you to explain missing data in reports and publications (ex: Teacher 1234 went on maternity leave)
-3. Consort diagram creation
-    - This database aids in the creation of documentation including the flow of participants in your [consort diagram](#supplement)
+3. Participant flow diagram creation
+    - This database aids in the creation of documentation including the flow of participants in your [CONSORT diagram](#supplement)
 4. Dataset verification
     - As part of your data cleaning process, all raw data sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets
 
@@ -147,7 +147,8 @@ As you design your database model, you will also need to choose what fields to i
 - Other necessary linking identifiers (double IDs, district/school IDs)
 - Information helpful for data collection scheduling (blocks, class times)
 - Consent/assent status
-- Randomization information (cohort, group)
+- Randomization (treatment/control)
+- Grouping information (cohort)
 - Condition (treatment/control)
 - Summary information for rates (# of consents sent out, # of students in class)
 - Administrative status (W-9 received, MOUs received)

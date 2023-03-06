@@ -30,8 +30,8 @@ A thorough and complete participant database that is updated regularly is benefi
     - Checking and tracking activities on a daily basis allows your team to easily report the status of data collection activities (ex: as of today we have completed 124 out of 150 assessments)
     - Checking and tracking daily, compared to checking and tracking after data collection is complete, reduces the likelihood of missing data 
     - Thorough tracking allows you to explain missing data in reports and publications (ex: Teacher 1234 went on maternity leave)
-3. Consort diagram creation
-    - This database aids in the creation of documentation including the flow of participants in your [consort diagram](#supplement)
+3. Participant flow diagram creation
+    - This database aids in the creation of documentation including the flow of participants in your [CONSORT diagram](#supplement)
 4. Dataset verification
     - As part of your data cleaning process, all raw data sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets
 
@@ -75,12 +75,12 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 
 
 ```{=html}
-<div id="ssaozrqfor" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hwmnppqwey" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ssaozrqfor .gt_table {
+#hwmnppqwey .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -105,7 +105,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-left-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_heading {
+#hwmnppqwey .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -117,7 +117,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_title {
+#hwmnppqwey .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -129,7 +129,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-width: 0;
 }
 
-#ssaozrqfor .gt_subtitle {
+#hwmnppqwey .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -141,13 +141,13 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-width: 0;
 }
 
-#ssaozrqfor .gt_bottom_border {
+#hwmnppqwey .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_col_headings {
+#hwmnppqwey .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -162,7 +162,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_col_heading {
+#hwmnppqwey .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -182,7 +182,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#ssaozrqfor .gt_column_spanner_outer {
+#hwmnppqwey .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -194,15 +194,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 4px;
 }
 
-#ssaozrqfor .gt_column_spanner_outer:first-child {
+#hwmnppqwey .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ssaozrqfor .gt_column_spanner_outer:last-child {
+#hwmnppqwey .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ssaozrqfor .gt_column_spanner {
+#hwmnppqwey .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -214,7 +214,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   width: 100%;
 }
 
-#ssaozrqfor .gt_group_heading {
+#hwmnppqwey .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -239,7 +239,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#ssaozrqfor .gt_empty_group_heading {
+#hwmnppqwey .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -254,15 +254,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#ssaozrqfor .gt_from_md > :first-child {
+#hwmnppqwey .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ssaozrqfor .gt_from_md > :last-child {
+#hwmnppqwey .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ssaozrqfor .gt_row {
+#hwmnppqwey .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -281,7 +281,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#ssaozrqfor .gt_stub {
+#hwmnppqwey .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -294,7 +294,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#ssaozrqfor .gt_stub_row_group {
+#hwmnppqwey .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -308,11 +308,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: top;
 }
 
-#ssaozrqfor .gt_row_group_first td {
+#hwmnppqwey .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ssaozrqfor .gt_summary_row {
+#hwmnppqwey .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -322,16 +322,16 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#ssaozrqfor .gt_first_summary_row {
+#hwmnppqwey .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_first_summary_row.thick {
+#hwmnppqwey .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ssaozrqfor .gt_last_summary_row {
+#hwmnppqwey .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -341,7 +341,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_grand_summary_row {
+#hwmnppqwey .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -351,7 +351,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#ssaozrqfor .gt_first_grand_summary_row {
+#hwmnppqwey .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -361,11 +361,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_striped {
+#hwmnppqwey .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ssaozrqfor .gt_table_body {
+#hwmnppqwey .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -374,7 +374,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_footnotes {
+#hwmnppqwey .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -388,7 +388,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_footnote {
+#hwmnppqwey .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -397,7 +397,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#ssaozrqfor .gt_sourcenotes {
+#hwmnppqwey .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -411,7 +411,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#ssaozrqfor .gt_sourcenote {
+#hwmnppqwey .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -419,36 +419,36 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#ssaozrqfor .gt_left {
+#hwmnppqwey .gt_left {
   text-align: left;
 }
 
-#ssaozrqfor .gt_center {
+#hwmnppqwey .gt_center {
   text-align: center;
 }
 
-#ssaozrqfor .gt_right {
+#hwmnppqwey .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ssaozrqfor .gt_font_normal {
+#hwmnppqwey .gt_font_normal {
   font-weight: normal;
 }
 
-#ssaozrqfor .gt_font_bold {
+#hwmnppqwey .gt_font_bold {
   font-weight: bold;
 }
 
-#ssaozrqfor .gt_font_italic {
+#hwmnppqwey .gt_font_italic {
   font-style: italic;
 }
 
-#ssaozrqfor .gt_super {
+#hwmnppqwey .gt_super {
   font-size: 65%;
 }
 
-#ssaozrqfor .gt_two_val_uncert {
+#hwmnppqwey .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -457,31 +457,31 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   margin-left: 0.1em;
 }
 
-#ssaozrqfor .gt_footnote_marks {
+#hwmnppqwey .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#ssaozrqfor .gt_asterisk {
+#hwmnppqwey .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ssaozrqfor .gt_slash_mark {
+#hwmnppqwey .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#ssaozrqfor .gt_fraction_numerator {
+#hwmnppqwey .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#ssaozrqfor .gt_fraction_denominator {
+#hwmnppqwey .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -588,7 +588,8 @@ As you design your database model, you will also need to choose what fields to i
 - Other necessary linking identifiers (double IDs, district/school IDs)
 - Information helpful for data collection scheduling (blocks, class times)
 - Consent/assent status
-- Randomization information (cohort, group)
+- Randomization (treatment/control)
+- Grouping information (cohort)
 - Condition (treatment/control)
 - Summary information for rates (# of consents sent out, # of students in class)
 - Administrative status (W-9 received, MOUs received)
