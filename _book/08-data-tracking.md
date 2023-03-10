@@ -16,24 +16,25 @@ Questions like these will arise many times throughout your study for both your o
 A participant tracking database is an essential component of both project management and data management. This database contains all study participants, their relevant study information, as well as tracking information about their completion of project milestones. This database has two underlying purposes.
 
 1. To serve as a roster of study participants as well as a "master key" [@pacific_university_oregon_data_2014] that houses both identifying participant information as well as assigned unique study identifiers. 
-2. To aid in project coordination and reporting, tracking the movement of participants as well as completion of study events throughout a project. 
+2. To aid in project coordination and reporting, tracking the movement of participants as well as completion of study events throughout a study. 
 
-This database is considered your single source of truth concerning everything that happened throughout the duration of your study. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking this administrative information in this one database, rather than across disparate spreadsheets, emails and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
+This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking this administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
 
 ## Benefits
 
 A thorough and complete participant database that is updated regularly is beneficial for the following reasons:
 
-1. Securing data de-identification
-    - Assigning unique study identifiers that are only linked to a participant's true identity within this one database is necessary for maintaining participant confidentiality. This database is stored in a [restricted secure location](#trackingstorage), separate from where de-identified study datasets are stored, and is typically destroyed at a period of time after a project's completion, 
+1. Data de-identification
+    - Assigning unique study identifiers that are only linked to a participant's true identity within this one database is necessary for maintaining participant confidentiality. This database is stored in a [restricted secure location](#trackingstorage), separate from where de-identified study datasets are stored, and is typically destroyed at a period of time after a project's completion.
 2. Project coordination and record keeping
-    - Checking and tracking activities on a daily basis allows your team to easily report the status of data collection activities (ex: as of today we have completed 124 out of 150 assessments)
-    - Checking and tracking daily, compared to checking and tracking after data collection is complete, reduces the likelihood of missing data 
-    - Thorough tracking allows you to explain missing data in reports and publications (ex: Teacher 1234 went on maternity leave)
-3. Participant flow diagram creation
-    - This database aids in the creation of documentation including the flow of participants in your [CONSORT diagram](#supplement)
-4. Dataset verification
+    - This database can be used as a customer relation management (CRM) tool, storing all participant contact information, as well as tracking correspondence. It can also be used as a project coordination tool, storing scheduling information that is useful for planning activities such as data collection.
+    - Integrating this database into your daily workflow allows your team to easily report the status of data collection activities (ex: as of today we have completed 124 out of 150 assessments). Furthermore, checking and tracking incoming data daily, compared to after data collection is complete, reduces the likelihood of missing data.
+    - Last, thorough tracking allows you to explain missing data in reports and publications (ex: Teacher 1234 went on maternity leave).
+3. Sample rostering
+    - At any time you can pull a study roster from this database that accurately reflects a participant's current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your [CONSORT diagram](#supplement).
+4. Data cleaning
     - As part of your data cleaning process, all raw data sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets
+    - Furthermore, this database can be used for de-identifying data and merging in participant identifiers as needed, or merging in other assigned variables contained in the database such as treatment or cohort.
 
 ## Building your database
 
@@ -45,12 +46,14 @@ This database may be a standalone structure, used only for tracking and anonymiz
 
 ### Relational databases
 
-Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. Using a normalized relational database[@nguyen_relational_2017] to track participant information, compared to disparate, non-connected spreadsheets, has many benefits.
+Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. In a relational database you 
 
-1. Reduces redundancy and improves efficiency
-2. Increases performance
-3. Decreases required storage
-4. Reduces data entry errors
+1. Group attribute types of an entity (students, teachers, schools) and purpose
+2. Create tables for those entities
+3. Choose one or more fields to uniquely identify rows in those tables as primary keys
+4. Create relationships between tables through both primary and foreign keys
+
+We can also further refine our database through normalization, structuring our database according to normal form rules[@nguyen_relational_2017; @nobles_normalization_2020; @bourgeois_chapter_2014] to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is perfectly acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.
 
 Let's compare a very simple example of building a tracking database using a relational model and a non-relational model.
 
@@ -69,18 +72,18 @@ If we want to see a table with both student and teacher information, we can simp
 
 Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
 
-`SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.grade`    
+`SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade`    
 `FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
-`ORDER BY Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name`    
+`ORDER BY t_l_name, t_f_name, s_l_name, s_f_name`    
 
 
 ```{=html}
-<div id="hwmnppqwey" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="gmyuovogfi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hwmnppqwey .gt_table {
+#gmyuovogfi .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -105,7 +108,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-left-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_heading {
+#gmyuovogfi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -117,7 +120,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_title {
+#gmyuovogfi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -129,7 +132,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-width: 0;
 }
 
-#hwmnppqwey .gt_subtitle {
+#gmyuovogfi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -141,13 +144,13 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-width: 0;
 }
 
-#hwmnppqwey .gt_bottom_border {
+#gmyuovogfi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_col_headings {
+#gmyuovogfi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -162,7 +165,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_col_heading {
+#gmyuovogfi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -182,7 +185,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#hwmnppqwey .gt_column_spanner_outer {
+#gmyuovogfi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -194,15 +197,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 4px;
 }
 
-#hwmnppqwey .gt_column_spanner_outer:first-child {
+#gmyuovogfi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hwmnppqwey .gt_column_spanner_outer:last-child {
+#gmyuovogfi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hwmnppqwey .gt_column_spanner {
+#gmyuovogfi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -214,7 +217,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   width: 100%;
 }
 
-#hwmnppqwey .gt_group_heading {
+#gmyuovogfi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -239,7 +242,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#hwmnppqwey .gt_empty_group_heading {
+#gmyuovogfi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -254,15 +257,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#hwmnppqwey .gt_from_md > :first-child {
+#gmyuovogfi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hwmnppqwey .gt_from_md > :last-child {
+#gmyuovogfi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hwmnppqwey .gt_row {
+#gmyuovogfi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -281,7 +284,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#hwmnppqwey .gt_stub {
+#gmyuovogfi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -294,7 +297,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#hwmnppqwey .gt_stub_row_group {
+#gmyuovogfi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -308,11 +311,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: top;
 }
 
-#hwmnppqwey .gt_row_group_first td {
+#gmyuovogfi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hwmnppqwey .gt_summary_row {
+#gmyuovogfi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -322,16 +325,16 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#hwmnppqwey .gt_first_summary_row {
+#gmyuovogfi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_first_summary_row.thick {
+#gmyuovogfi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hwmnppqwey .gt_last_summary_row {
+#gmyuovogfi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -341,7 +344,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_grand_summary_row {
+#gmyuovogfi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -351,7 +354,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#hwmnppqwey .gt_first_grand_summary_row {
+#gmyuovogfi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -361,11 +364,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_striped {
+#gmyuovogfi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hwmnppqwey .gt_table_body {
+#gmyuovogfi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -374,7 +377,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_footnotes {
+#gmyuovogfi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -388,7 +391,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_footnote {
+#gmyuovogfi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -397,7 +400,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#hwmnppqwey .gt_sourcenotes {
+#gmyuovogfi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -411,7 +414,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#hwmnppqwey .gt_sourcenote {
+#gmyuovogfi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -419,36 +422,36 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#hwmnppqwey .gt_left {
+#gmyuovogfi .gt_left {
   text-align: left;
 }
 
-#hwmnppqwey .gt_center {
+#gmyuovogfi .gt_center {
   text-align: center;
 }
 
-#hwmnppqwey .gt_right {
+#gmyuovogfi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hwmnppqwey .gt_font_normal {
+#gmyuovogfi .gt_font_normal {
   font-weight: normal;
 }
 
-#hwmnppqwey .gt_font_bold {
+#gmyuovogfi .gt_font_bold {
   font-weight: bold;
 }
 
-#hwmnppqwey .gt_font_italic {
+#gmyuovogfi .gt_font_italic {
   font-style: italic;
 }
 
-#hwmnppqwey .gt_super {
+#gmyuovogfi .gt_super {
   font-size: 65%;
 }
 
-#hwmnppqwey .gt_two_val_uncert {
+#gmyuovogfi .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -457,31 +460,31 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   margin-left: 0.1em;
 }
 
-#hwmnppqwey .gt_footnote_marks {
+#gmyuovogfi .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#hwmnppqwey .gt_asterisk {
+#gmyuovogfi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hwmnppqwey .gt_slash_mark {
+#gmyuovogfi .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#hwmnppqwey .gt_fraction_numerator {
+#gmyuovogfi .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#hwmnppqwey .gt_fraction_denominator {
+#gmyuovogfi .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -532,6 +535,8 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 </div>
 ```
 
+Depending on the design of your study and the structure of the database model, writing these queries can become more complicated. Again, this is where you want to strike a balance between creating a structure that reduces inefficiencies in data entry but also isn't too complicated to query based on the expertise of your team.
+
 #### Non-relational model
 
 Now imagine that we built a non-relational database (Figure \@ref(fig:fig9-4)), such as three tabs in an Excel spreadsheet,  to track our participant information. Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. Using this method we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.
@@ -563,16 +568,23 @@ Once you collect those pieces of information, you can begin to design your datab
 <p class="caption">(\#fig:fig9-5)Example participant database model</p>
 </div>
 
-I have designed my database model in this way:
+I have designed this database model in this way:
 
 1. I have four tables total
-    - Two tables have information that should be constant (name, email, consent, one time payments sent out, one time documents received)
+    - Two tables have information that should be constant based on my project assumptions (name, email, consent, one time payments sent out, one time documents received)
       - If at any time this constant information changes (ex: new last name, new principal), I would update that information in the appropriate table and make a note of when and why the change occurred in my "notes" field
     - Two tables are for my longitudinal information
-      - This is where I will track my data collection activities each wave
+      - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. In this example, I assume that grade level may change, maybe because my data collection waves occur across school years and teachers may move around. I also assume that a participant can drop at any point in the study and I want to track their status each wave.
 2. I have connected my tables through primary and foreign keys ("tch_id" and "sch_id")
 
-While this example is for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project. 
+This model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both "tch_id" and "wave" to uniquely identify rows since "tch_id" would now be duplicated for each wave of data collection (Figure \@ref(fig:fig9-6)).
+
+<div class="figure" style="text-align: center">
+<img src="img/participant4.PNG" alt="Example participant database model" width="80%" />
+<p class="caption">(\#fig:fig9-6)Example participant database model</p>
+</div>
+
+While these examples are for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project. 
 
 > It is possible that you have a study where you are collecting anonymous data. While you will no longer have participant level identifiable information, you can still construct a simple system, creating tables based on your sites for instance (school table, district table) to track your project management and data collection efforts (ex: number of student surveys received per school per wave, MOU received).
 
@@ -674,7 +686,7 @@ Your first option is to manually enter data in a spreadsheet format for each par
 
 <div class="figure" style="text-align: center">
 <img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%" />
-<p class="caption">(\#fig:fig9-6)Example spreadsheet view data entry</p>
+<p class="caption">(\#fig:fig9-7)Example spreadsheet view data entry</p>
 </div>
 
 #### Entering data in a form
@@ -686,7 +698,7 @@ Your second option is to create a form that is linked to your tables. As you ent
 
 <div class="figure" style="text-align: center">
 <img src="img/form-view-new.PNG" alt="Example form view data entry" width="80%" />
-<p class="caption">(\#fig:fig9-7)Example form view data entry</p>
+<p class="caption">(\#fig:fig9-8)Example form view data entry</p>
 </div>
 
 #### Other considerations
@@ -710,7 +722,7 @@ Assigning unique identifiers (UIDs) is an important part of ensuring the protect
 
 <div class="figure" style="text-align: center">
 <img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" />
-<p class="caption">(\#fig:fig9-8)Example of keeping participant IDs for the entire study</p>
+<p class="caption">(\#fig:fig9-9)Example of keeping participant IDs for the entire study</p>
 </div>
 
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.

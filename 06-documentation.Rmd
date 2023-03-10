@@ -254,9 +254,9 @@ A Readme is a plain text document that contains information about your files. Th
 ```
 
 3. For providing information about a set of files in a directory
-    - It can be helpful to add Readmes to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, definitions of common acronyms used, or measure response rates[@neild_sharing_2022].
+    - It can be helpful to add Readmes to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes or suffixes used in datasets, or instrument response rates [@neild_sharing_2022]. 
 
-```{r fig7-12, fig.cap="Institute of Education Sciences example Readme for conveying information on files in a directory", out.width= "75%"}
+```{r fig7-12, fig.cap="Institute of Education Sciences example Readme for conveying information on files in a directory", out.width = "75%"}
 
 knitr::include_graphics("img/readme3.PNG")
 
@@ -381,8 +381,9 @@ The process described in this section is a manual, time consuming process. This 
 
 |Document|Description|
 |--------|-----------|
-|USDA data dictionary template [@usda_data_nodate]| Example data dictionary template|
-|OSF data dictionary template [@center_for_open_science_how_nodate] | Example data dictionary template|
+|USDA Data Dictionary Template [@usda_data_nodate]| Example data dictionary template|
+|OSF Data Dictionary Template [@center_for_open_science_how_nodate] | Example data dictionary template|
+|Data Dictionary Template [@lewis_data_nodate-6]|Example data dictionary template|
 
 
 ### Codebook
@@ -431,7 +432,7 @@ knitr::include_graphics("img/metadata4.PNG")
 
 ```
 
-The most common metadata elements[@dahdul_research_nodate] are included in Figure \@ref(fig:fig7-20).
+The most common metadata elements[@dahdul_research_nodate; @hayslett_libguides_nodate] are included in Figure \@ref(fig:fig7-20).
 
 ```{r fig7-20, fig.cap="Common metadata elements", out.width = "80%"}
 
@@ -486,7 +487,7 @@ knitr::include_graphics("img/standard_compare.PNG")
 
 ```
 
-If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the repository Dryad uses a combination of Dublin and Darwin Core [@lamar_soutter_library_necdmc_nodate], Figshare also uses a combination of schemas including Schema.Org, Dublin Core, and DataCite[@figshare_fair-figshare_nodate], OSF currently uses the DataCite schema[@gueguen_new_nodate], while ICPSR uses the DDI standard[@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
+If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the OSF repository currently uses the DataCite schema[@gueguen_new_nodate], while ICPSR uses the DDI standard[@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
 
 If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_university_nodate], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
 

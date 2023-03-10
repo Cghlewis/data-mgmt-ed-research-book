@@ -59,6 +59,7 @@ fig:fig9-5
 fig:fig9-6
 fig:fig9-7
 fig:fig9-8
+fig:fig9-9
 preamble
 introduction
 why-this-book
