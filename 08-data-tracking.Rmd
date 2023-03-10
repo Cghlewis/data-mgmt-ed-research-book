@@ -49,8 +49,8 @@ This database may be a standalone structure, used only for tracking and anonymiz
 
 Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. In a relational database you 
 
-1. Group attribute types of an entity (students, teachers, schools) and purpose
-2. Create tables for those entities
+1. Group fields by entity (students, teachers, schools) and purpose
+2. Create tables for those groups
 3. Choose one or more fields to uniquely identify rows in those tables as primary keys
 4. Create relationships between tables through both primary and foreign keys
 
