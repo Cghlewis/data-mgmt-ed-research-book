@@ -89,7 +89,7 @@ There were many people who graciously allowed me to interview them about their c
 
 I also want to thank everyone who took the time to read and provide feedback on chapters of this book for me. This includes Meghan Harris, Tara Reynolds, Alexis Swanz, and Allyson Hanson. Your revisions and insight helped make this a more cohesive and useful book!
 
-Thank you to Keith Herman for being the first person to suggest I write this book. Had Keith not put this idea in my head six years ago, I may not be here right now. I also want to thank Wendy Reinke, who is actually the first person I learned research data management practices from, although she may not know it. Coming on to a project where she had already created documentation and tracking systems was my first glimpse into building tools that help you manage data.
+Thank you to Keith Herman for being the first person to suggest I write this book. Had Keith not put this idea in my head six years ago, this book would probably not exist. I also want to thank Wendy Reinke, who is the first person I learned research data management practices from, although she may not know it. Coming on to a project where she had already created documentation and tracking systems was my first glimpse into building tools that help you manage data.
 
 I want to say thank you to the POWER Data Management Issues in Education Research Hub. Regularly meeting with this group of data managers, researchers, students, and professors over the last year has been an amazing source of both support and learning and has greatly increased my understanding of data management. 
 
