@@ -1,9 +1,6 @@
 # Project Roles and Responsibilities {#roles}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_rr2.PNG" alt="Planning in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
-</div>
+![(\#fig:fig6-1)Planning in the research project life cycle](img/lifecycle_rr2.PNG){width=70%}
 
 Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles [@service_roles_nodate] for many reasons including for the security of data, the continuity of practices, and for the standardization of workflows.
 
@@ -33,10 +30,7 @@ This role refers to any staff hired to help implement a research project which m
 
 The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned above, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in the diagram above. Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied. Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_intervention2.PNG" alt="Life cycle diagram updated to show hidden processes" width="90%" />
-<p class="caption">(\#fig:fig6-2)Life cycle diagram updated to show hidden processes</p>
-</div>
+![(\#fig:fig6-2)Life cycle diagram updated to show hidden processes](img/lifecycle_intervention2.PNG){width=90%}
 
 ## Goals of Assigning Roles and Responsibilities
 
@@ -88,15 +82,9 @@ A general roles and responsibilities document is one way to document your decisi
 
 This document can be laid in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-3) and Figure \@ref(fig:fig6-4) are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as [standard operating procedures](#sop) where names are attached to each task.
 
-<div class="figure" style="text-align: center">
-<img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
-<p class="caption">(\#fig:fig6-3)Roles and responsibilities document organized by role</p>
-</div>
+![(\#fig:fig6-3)Roles and responsibilities document organized by role](img/roles_responsibility1.PNG){width=70%}
 
-<div class="figure" style="text-align: center">
-<img src="img/roles_responsibility2.PNG" alt="Roles and responsibilities document organized by phase" width="70%" />
-<p class="caption">(\#fig:fig6-4)Roles and responsibilities document organized by phase</p>
-</div>
+![(\#fig:fig6-4)Roles and responsibilities document organized by phase](img/roles_responsibility2.PNG){width=70%}
 
 Reviewing roles and responsibilities in a format like this allows you to start to see how responsibilities are assigned and decide if tasks need to be redistributed in any way. You can also then start to fill in more details as needed.
 

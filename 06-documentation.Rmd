@@ -147,7 +147,6 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 |University of Washington Protocol Template [@university_of_washington_developing_nodate]| Protocol template|
 |Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014] | Protocol Template|
 |University of Missouri Protocol Template [@university_of_missouri_socialbehavioraleducational_nodate]| Protocol Template|
-|STROBE Checklists [@strobe_strobe_nodate]|Helpful checklists in thinking through what to include in a project summary document|
 |Project Summary Documentation Template [@lewis_project-level_nodate]|Research protocol revised for the purposes of public data sharing|
 
 ### Supplemental Documents {#supplement}

@@ -110,10 +110,10 @@ Figure 9.1: Tracking in the research project life cycle
 <p>Questions like these will arise many times throughout your study for both your own project coordination purposes, as well as for external progress reporting and publication purposes. Yet, how will you answer these questions? Will you dig through papers, search through emails, and download in progress data, each time you need to answer a question about the status of your project activities? A better solution is to track all project activities in a participant tracking database.</p>
 <p>A participant tracking database is an essential component of both project management and data management. This database contains all study participants, their relevant study information, as well as tracking information about their completion of project milestones. This database has two underlying purposes.</p>
 <ol style="list-style-type: decimal">
-<li>To serve as a roster of study participants as well as a “master key”<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Pacific University Oregon, &lt;span&gt;“Data Security and Storage. Pacific University,”&lt;/span&gt; March 31, 2014, &lt;a href="https://www.pacificu.edu/academics/research/scholarship-and-sponsored-projects/research-compliance-integrity/institutional-review-board/irb-policies-recommended-practices/data-security-storage" role="doc-biblioref"&gt;https://www.pacificu.edu/academics/research/scholarship-and-sponsored-projects/research-compliance-integrity/institutional-review-board/irb-policies-recommended-practices/data-security-storage&lt;/a&gt;.&lt;/p&gt;'><sup>171</sup></a></span> that houses both identifying participant information as well as assigned unique study identifiers.</li>
+<li>To serve as a roster of study participants as well as a “master key”<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Pacific University Oregon, &lt;span&gt;“Data Security and Storage. Pacific University,”&lt;/span&gt; March 31, 2014, &lt;a href="https://www.pacificu.edu/academics/research/scholarship-and-sponsored-projects/research-compliance-integrity/institutional-review-board/irb-policies-recommended-practices/data-security-storage" role="doc-biblioref"&gt;https://www.pacificu.edu/academics/research/scholarship-and-sponsored-projects/research-compliance-integrity/institutional-review-board/irb-policies-recommended-practices/data-security-storage&lt;/a&gt;.&lt;/p&gt;'><sup>170</sup></a></span> that houses both identifying participant information as well as assigned unique study identifiers.</li>
 <li>To aid in project coordination and reporting, tracking the movement of participants as well as completion of study events throughout a study.</li>
 </ol>
-<p>This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking this administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.</p>
+<p>This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.</p>
 <div id="benefits" class="section level2" number="9.1">
 <h2>
 <span class="header-section-number">9.1</span> Benefits<a class="anchor" aria-label="anchor" href="#benefits"><i class="fas fa-link"></i></a>
@@ -140,7 +140,7 @@ Figure 9.1: Tracking in the research project life cycle
 <li>Data cleaning
 <ul>
 <li>As part of your data cleaning process, all raw data sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets</li>
-<li>Furthermore, this database can be used for de-identifying data and merging in participant identifiers as needed, or merging in other assigned variables contained in the database such as treatment or cohort.</li>
+<li>Furthermore, this database can be used for de-identifying data. If data is collected with identifiers such as name, a roster from the tracking database can be used to merge in unique study identifiers so that name can be removed. A similar process can be used to merge in other assigned variables contained in the database such as treatment or cohort.</li>
 </ul>
 </li>
 </ol>
@@ -156,14 +156,14 @@ Figure 9.1: Tracking in the research project life cycle
 <h3>
 <span class="header-section-number">9.2.1</span> Relational databases<a class="anchor" aria-label="anchor" href="#relational-databases"><i class="fas fa-link"></i></a>
 </h3>
-<p>Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our <a href="data-structure.html#database">Data Structure</a> chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;MaryQiu1987, &lt;span&gt;“Database Normalization Description - Office,”&lt;/span&gt; May 5, 2022, &lt;a href="https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description" role="doc-biblioref"&gt;https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description&lt;/a&gt;; Ph D. David T. Bourgeois and Bourgeois, &lt;em&gt;Information Systems for Business and Beyond&lt;/em&gt; (Published through the Open Textbook Challenge by the Saylor Academy, 2014), &lt;a href="https://pressbooks.pub/bus206/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/&lt;/a&gt;.&lt;/p&gt;'><sup>172</sup></a></span>. In a relational database you</p>
+<p>Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our <a href="data-structure.html#database">Data Structure</a> chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;MaryQiu1987, &lt;span&gt;“Database Normalization Description - Office,”&lt;/span&gt; May 5, 2022, &lt;a href="https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description" role="doc-biblioref"&gt;https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description&lt;/a&gt;; Ph D. David T. Bourgeois and Bourgeois, &lt;em&gt;Information Systems for Business and Beyond&lt;/em&gt; (Published through the Open Textbook Challenge by the Saylor Academy, 2014), &lt;a href="https://pressbooks.pub/bus206/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/&lt;/a&gt;.&lt;/p&gt;'><sup>171</sup></a></span>. In a relational database you</p>
 <ol style="list-style-type: decimal">
 <li>Group fields by entity (students, teachers, schools) and purpose</li>
 <li>Create tables for those groups</li>
 <li>Choose one or more fields to uniquely identify rows in those tables as primary keys</li>
 <li>Create relationships between tables through both primary and foreign keys</li>
 </ol>
-<p>We can also further refine our database through normalization, structuring our database according to normal form rules<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Kim Nguyen, &lt;span&gt;“Relational Database Schema Design Overview. Medium,”&lt;/span&gt; October 4, 2017, &lt;a href="https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9" role="doc-biblioref"&gt;https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9&lt;/a&gt;; The Nobles, &lt;span&gt;“Normalization of Database, the Easy Way. The Startup,”&lt;/span&gt; August 5, 2020, &lt;a href="https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863" role="doc-biblioref"&gt;https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863&lt;/a&gt;; Dave Bourgeois and David T. Bourgeois, &lt;span&gt;“Chapter 4: Data and Databases,”&lt;/span&gt; February 28, 2014, &lt;a href="https://pressbooks.pub/bus206/chapter/chapter-4-data-and-databases/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/chapter/chapter-4-data-and-databases/&lt;/a&gt;.&lt;/p&gt;'><sup>173</sup></a></span> to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is perfectly acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.</p>
+<p>We can also further refine our database through normalization, structuring our database according to normal form rules<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Kim Nguyen, &lt;span&gt;“Relational Database Schema Design Overview. Medium,”&lt;/span&gt; October 4, 2017, &lt;a href="https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9" role="doc-biblioref"&gt;https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9&lt;/a&gt;; The Nobles, &lt;span&gt;“Normalization of Database, the Easy Way. The Startup,”&lt;/span&gt; August 5, 2020, &lt;a href="https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863" role="doc-biblioref"&gt;https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863&lt;/a&gt;; Dave Bourgeois and David T. Bourgeois, &lt;span&gt;“Chapter 4: Data and Databases,”&lt;/span&gt; February 28, 2014, &lt;a href="https://pressbooks.pub/bus206/chapter/chapter-4-data-and-databases/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/chapter/chapter-4-data-and-databases/&lt;/a&gt;.&lt;/p&gt;'><sup>172</sup></a></span> to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is perfectly acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.</p>
 <p>Let’s compare a very simple example of building a tracking database using a relational model and a non-relational model.</p>
 <div id="relational-model" class="section level4" number="9.2.1.1">
 <h4>
@@ -180,12 +180,12 @@ Figure 9.2: Participant database built using a relational model
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user.</p>
 <p>Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by <code>tch_id</code> and then pulls the relevant teacher and student information from both tables:</p>
 <p><code>SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade</code><br><code>FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id</code><br><code>ORDER BY t_l_name, t_f_name, s_l_name, s_f_name</code></p>
-<div id="liwdcceorf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ygwanbtlbb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#liwdcceorf .gt_table {
+#ygwanbtlbb .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -210,7 +210,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-left-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_heading {
+#ygwanbtlbb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -222,7 +222,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_title {
+#ygwanbtlbb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -234,7 +234,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-width: 0;
 }
 
-#liwdcceorf .gt_subtitle {
+#ygwanbtlbb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -246,13 +246,13 @@ If we want to see a table with both student and teacher information, we can simp
   border-top-width: 0;
 }
 
-#liwdcceorf .gt_bottom_border {
+#ygwanbtlbb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_col_headings {
+#ygwanbtlbb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -267,7 +267,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_col_heading {
+#ygwanbtlbb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -287,7 +287,7 @@ If we want to see a table with both student and teacher information, we can simp
   overflow-x: hidden;
 }
 
-#liwdcceorf .gt_column_spanner_outer {
+#ygwanbtlbb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -299,15 +299,15 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 4px;
 }
 
-#liwdcceorf .gt_column_spanner_outer:first-child {
+#ygwanbtlbb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#liwdcceorf .gt_column_spanner_outer:last-child {
+#ygwanbtlbb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#liwdcceorf .gt_column_spanner {
+#ygwanbtlbb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -319,7 +319,7 @@ If we want to see a table with both student and teacher information, we can simp
   width: 100%;
 }
 
-#liwdcceorf .gt_group_heading {
+#ygwanbtlbb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -344,7 +344,7 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: middle;
 }
 
-#liwdcceorf .gt_empty_group_heading {
+#ygwanbtlbb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -359,15 +359,15 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: middle;
 }
 
-#liwdcceorf .gt_from_md > :first-child {
+#ygwanbtlbb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#liwdcceorf .gt_from_md > :last-child {
+#ygwanbtlbb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#liwdcceorf .gt_row {
+#ygwanbtlbb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -386,7 +386,7 @@ If we want to see a table with both student and teacher information, we can simp
   overflow-x: hidden;
 }
 
-#liwdcceorf .gt_stub {
+#ygwanbtlbb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,7 +399,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#liwdcceorf .gt_stub_row_group {
+#ygwanbtlbb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -413,11 +413,11 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: top;
 }
 
-#liwdcceorf .gt_row_group_first td {
+#ygwanbtlbb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#liwdcceorf .gt_summary_row {
+#ygwanbtlbb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -427,16 +427,16 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#liwdcceorf .gt_first_summary_row {
+#ygwanbtlbb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_first_summary_row.thick {
+#ygwanbtlbb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#liwdcceorf .gt_last_summary_row {
+#ygwanbtlbb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -446,7 +446,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_grand_summary_row {
+#ygwanbtlbb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -456,7 +456,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#liwdcceorf .gt_first_grand_summary_row {
+#ygwanbtlbb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -466,11 +466,11 @@ If we want to see a table with both student and teacher information, we can simp
   border-top-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_striped {
+#ygwanbtlbb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#liwdcceorf .gt_table_body {
+#ygwanbtlbb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -479,7 +479,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_footnotes {
+#ygwanbtlbb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -493,7 +493,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_footnote {
+#ygwanbtlbb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -502,7 +502,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#liwdcceorf .gt_sourcenotes {
+#ygwanbtlbb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -516,7 +516,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#liwdcceorf .gt_sourcenote {
+#ygwanbtlbb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -524,36 +524,36 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#liwdcceorf .gt_left {
+#ygwanbtlbb .gt_left {
   text-align: left;
 }
 
-#liwdcceorf .gt_center {
+#ygwanbtlbb .gt_center {
   text-align: center;
 }
 
-#liwdcceorf .gt_right {
+#ygwanbtlbb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#liwdcceorf .gt_font_normal {
+#ygwanbtlbb .gt_font_normal {
   font-weight: normal;
 }
 
-#liwdcceorf .gt_font_bold {
+#ygwanbtlbb .gt_font_bold {
   font-weight: bold;
 }
 
-#liwdcceorf .gt_font_italic {
+#ygwanbtlbb .gt_font_italic {
   font-style: italic;
 }
 
-#liwdcceorf .gt_super {
+#ygwanbtlbb .gt_super {
   font-size: 65%;
 }
 
-#liwdcceorf .gt_two_val_uncert {
+#ygwanbtlbb .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -562,31 +562,31 @@ If we want to see a table with both student and teacher information, we can simp
   margin-left: 0.1em;
 }
 
-#liwdcceorf .gt_footnote_marks {
+#ygwanbtlbb .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#liwdcceorf .gt_asterisk {
+#ygwanbtlbb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#liwdcceorf .gt_slash_mark {
+#ygwanbtlbb .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#liwdcceorf .gt_fraction_numerator {
+#ygwanbtlbb .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#liwdcceorf .gt_fraction_denominator {
+#ygwanbtlbb .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -707,7 +707,7 @@ Figure 9.4: Example participant database model
 </li>
 <li>I have connected my tables through primary and foreign keys (“tch_id” and “sch_id”)</li>
 </ol>
-<p>This model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both “tch_id” and “wave” to uniquely identify rows since “tch_id” would now be duplicated for each wave of data collection (Figure <a href="track.html#fig:fig9-6">9.5</a>).</p>
+<p>The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both “tch_id” and “wave” to uniquely identify rows since “tch_id” would now be duplicated for each wave of data collection (Figure <a href="track.html#fig:fig9-6">9.5</a>).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-6"></span>
 <img src="img/participant4.PNG" alt="Example participant database model" width="80%"><p class="caption">
@@ -724,34 +724,27 @@ Figure 9.5: Example participant database model
 <span class="header-section-number">9.2.3</span> Choosing fields<a class="anchor" aria-label="anchor" href="#choosing-fields"><i class="fas fa-link"></i></a>
 </h3>
 <p>As you design your database model, you will also need to choose what fields to include in each table. The fields you choose to include will be dependent on your particular study design. While your participant tracking database may be the same database you enter all of your study data, for the purposes of this chapter we are only considering fields that are relevant for project coordination and participant de-identification. We are not concerned with fields that are collected as part of your data collection measures (i.e. survey items). You can consider your participant tracking database as an <strong>internal</strong> database that is only used for coordination, summary, and linking purposes. This is not a database where you would export data for external data sharing.</p>
-<p><strong>Ideas of static fields to collect:</strong></p>
+<p>Below are ideas of field you may consider adding to your database. Depeding on the design and assumptions of your study, some of these may be collected once, others may be collected more than once, longitudinally.</p>
+<p><strong>Ideas of fields to collect:</strong></p>
 <ul>
-<li>Study IDs (Primary and foreign keys for a relational database)</li>
-<li>Names (Participants and sites)</li>
+<li>Study IDs (primary and foreign keys for a relational database)</li>
+<li>Names (participants and sites)</li>
 <li>Contact information</li>
+<li>Information relevant to project coordination (grade level, class periods, block schedules)</li>
 <li>Other necessary linking identifiers (double IDs, district/school IDs)</li>
 <li>Information helpful for data collection scheduling (blocks, class times)</li>
 <li>Consent/assent status</li>
 <li>Randomization (treatment/control)</li>
 <li>Grouping information (cohort)</li>
-<li>Condition (treatment/control)</li>
 <li>Summary information for rates (# of consents sent out, # of students in class)</li>
-<li>Administrative status (W-9 received, MOUs received)</li>
+<li>Administrative data status (W-9 received, MOUs received)</li>
 <li>Movement/drop out status</li>
+<li>Data collection status (unique fields for each instrument)</li>
+<li>Incentive status (gift cards sent out)</li>
 <li>Notes
 <ul>
 <li>Reasons for changes (for example changes in name, email)</li>
 <li>Reasons for movement/drop out</li>
-</ul>
-</li>
-</ul>
-<p><strong>Ideas of fields to collect longitudinally:</strong></p>
-<ul>
-<li>Data collection status (unique fields for each instrument)</li>
-<li>Incentive status (gift cards sent out)</li>
-<li>Other changing information relevant to project coordination (grade level)</li>
-<li>Notes
-<ul>
 <li>Communication with participants</li>
 <li>Reasons for missing data</li>
 <li>Errors in data</li>
@@ -856,15 +849,16 @@ Figure 9.5: Example participant database model
 <li>Forms that feed into a relational database, maintained using a SQL (structured query language) database engine such as SQLite, MySQL, or PostgreSQL</li>
 </ul>
 </div>
-<div id="entering-data" class="section level3" number="9.2.5">
-<h3>
-<span class="header-section-number">9.2.5</span> Entering data<a class="anchor" aria-label="anchor" href="#entering-data"><i class="fas fa-link"></i></a>
-</h3>
+</div>
+<div id="entering-data" class="section level2" number="9.3">
+<h2>
+<span class="header-section-number">9.3</span> Entering data<a class="anchor" aria-label="anchor" href="#entering-data"><i class="fas fa-link"></i></a>
+</h2>
 <p>Your last consideration when building your database will be, how do you want your team to enter data into your database? There are many ways to enter data including using SQL statements, importing data, integrating your data collection platform and your tracking database, or even scanning forms using QR codes. While some of those options may work great for your project, here we are going to talk about the two simplest and most common options: manually entering data into a spreadsheet view, and manually entering data into a form.</p>
-<div id="entering-data-in-a-spreadsheet-view" class="section level4" number="9.2.5.1">
-<h4>
-<span class="header-section-number">9.2.5.1</span> Entering data in a spreadsheet view<a class="anchor" aria-label="anchor" href="#entering-data-in-a-spreadsheet-view"><i class="fas fa-link"></i></a>
-</h4>
+<div id="entering-data-in-a-spreadsheet-view" class="section level3" number="9.3.1">
+<h3>
+<span class="header-section-number">9.3.1</span> Entering data in a spreadsheet view<a class="anchor" aria-label="anchor" href="#entering-data-in-a-spreadsheet-view"><i class="fas fa-link"></i></a>
+</h3>
 <p>Your first option is to manually enter data in a spreadsheet format for each participant in a row. This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access. There are both pros and cons to this method.</p>
 <ul>
 <li>Pros: This is the quickest and easiest method. It also allows you to view all the data holistically.</li>
@@ -877,10 +871,10 @@ Figure 9.6: Example spreadsheet view data entry
 </p>
 </div>
 </div>
-<div id="entering-data-in-a-form" class="section level4" number="9.2.5.2">
-<h4>
-<span class="header-section-number">9.2.5.2</span> Entering data in a form<a class="anchor" aria-label="anchor" href="#entering-data-in-a-form"><i class="fas fa-link"></i></a>
-</h4>
+<div id="entering-data-in-a-form" class="section level3" number="9.3.2">
+<h3>
+<span class="header-section-number">9.3.2</span> Entering data in a form<a class="anchor" aria-label="anchor" href="#entering-data-in-a-form"><i class="fas fa-link"></i></a>
+</h3>
 <p>Your second option is to create a form that is linked to your tables. As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, RedCap, and even Google Forms which populates into Google Sheets.</p>
 <ul>
 <li>Pros: This method reduces data entry errors as you are only working on one participant form at a time</li>
@@ -893,17 +887,16 @@ Figure 9.7: Example form view data entry
 </p>
 </div>
 </div>
-<div id="other-considerations" class="section level4" number="9.2.5.3">
-<h4>
-<span class="header-section-number">9.2.5.3</span> Other considerations<a class="anchor" aria-label="anchor" href="#other-considerations"><i class="fas fa-link"></i></a>
-</h4>
+<div id="other-considerations" class="section level3" number="9.3.3">
+<h3>
+<span class="header-section-number">9.3.3</span> Other considerations<a class="anchor" aria-label="anchor" href="#other-considerations"><i class="fas fa-link"></i></a>
+</h3>
 <p>If your participant tracking database is separate from your data collection tools, all information will need to be entered by your team using one of these ways. However, if your participant tracking tool is also your data collection/data capture tool (such as those who collect data using RedCap), fields such as data collection status (ex: survey completed), may not be manually entry. Rather they may be automated to populate as “complete” once a participant submits their responses in the data collection tool.</p>
 </div>
 </div>
-</div>
-<div id="ids" class="section level2" number="9.3">
+<div id="ids" class="section level2" number="9.4">
 <h2>
-<span class="header-section-number">9.3</span> Creating unique identifiers<a class="anchor" aria-label="anchor" href="#ids"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.4</span> Creating unique identifiers<a class="anchor" aria-label="anchor" href="#ids"><i class="fas fa-link"></i></a>
 </h2>
 <p>Assigning unique identifiers (UIDs) is an important part of ensuring the protection of the privacy of human participants. Hopefully at this point your team has already created your study id schema and documented it in an <a href="document.html#sop">SOP</a>. However, since this is the point when you will begin actually assigning those IDs, this is a good time to discuss best practices for creating your unique identifier schema. There are several rules to consider when assigning your identifiers.</p>
 <ol style="list-style-type: decimal">
@@ -935,9 +928,9 @@ Figure 9.8: Example of keeping participant IDs for the entire study
 </div>
 <p>The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.</p>
 </div>
-<div id="tracking-best-practices" class="section level2" number="9.4">
+<div id="tracking-best-practices" class="section level2" number="9.5">
 <h2>
-<span class="header-section-number">9.4</span> Tracking best practices<a class="anchor" aria-label="anchor" href="#tracking-best-practices"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.5</span> Tracking best practices<a class="anchor" aria-label="anchor" href="#tracking-best-practices"><i class="fas fa-link"></i></a>
 </h2>
 <p>Last, it is important to review <strong>how</strong> to use the participant tracking database. As mentioned earlier, this database should be created before you begin recruiting participants so that as soon as participants begin to consent, they can be added to your database. Then once data collection begins, your Institutional Review Board (IRB) approved staff member can begin tracking data as it is collected. Your team may designate one person to track, or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more persons at each site tracking data as it comes in.</p>
 <p>Since this is a highly sensitive database, not only may you want to restrict who has access to your database, but if your tool allows it, it can be helpful to also limit access to specific tables with identifiable information. For instance, project coordinators may have access to all information in the database (including sensitive data), while research assistants have limited access to tables that only include unique identifiers where they can track data collection completion. No matter who is tracking information, it is important to develop a tracking routine, assign roles and responsibilities, add your routine to an <a href="document.html#sop">SOP</a>.</p>
@@ -986,11 +979,17 @@ Figure 9.8: Example of keeping participant IDs for the entire study
 <li><a class="nav-link" href="#structuring-the-database"><span class="header-section-number">9.2.2</span> Structuring the database</a></li>
 <li><a class="nav-link" href="#choosing-fields"><span class="header-section-number">9.2.3</span> Choosing fields</a></li>
 <li><a class="nav-link" href="#choosing-a-tool"><span class="header-section-number">9.2.4</span> Choosing a tool</a></li>
-<li><a class="nav-link" href="#entering-data"><span class="header-section-number">9.2.5</span> Entering data</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#ids"><span class="header-section-number">9.3</span> Creating unique identifiers</a></li>
-<li><a class="nav-link" href="#tracking-best-practices"><span class="header-section-number">9.4</span> Tracking best practices</a></li>
+<li>
+<a class="nav-link" href="#entering-data"><span class="header-section-number">9.3</span> Entering data</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#entering-data-in-a-spreadsheet-view"><span class="header-section-number">9.3.1</span> Entering data in a spreadsheet view</a></li>
+<li><a class="nav-link" href="#entering-data-in-a-form"><span class="header-section-number">9.3.2</span> Entering data in a form</a></li>
+<li><a class="nav-link" href="#other-considerations"><span class="header-section-number">9.3.3</span> Other considerations</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#ids"><span class="header-section-number">9.4</span> Creating unique identifiers</a></li>
+<li><a class="nav-link" href="#tracking-best-practices"><span class="header-section-number">9.5</span> Tracking best practices</a></li>
 </ul>
 
       <div class="book-extra">

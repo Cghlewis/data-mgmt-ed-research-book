@@ -19,7 +19,7 @@ A participant tracking database is an essential component of both project manage
 1. To serve as a roster of study participants as well as a "master key" [@pacific_university_oregon_data_2014] that houses both identifying participant information as well as assigned unique study identifiers. 
 2. To aid in project coordination and reporting, tracking the movement of participants as well as completion of study events throughout a study. 
 
-This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking this administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
+This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
 
 ## Benefits
 
@@ -35,7 +35,7 @@ A thorough and complete participant database that is updated regularly is benefi
     - At any time you can pull a study roster from this database that accurately reflects a participant's current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your [CONSORT diagram](#supplement).
 4. Data cleaning
     - As part of your data cleaning process, all raw data sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets
-    - Furthermore, this database can be used for de-identifying data and merging in participant identifiers as needed, or merging in other assigned variables contained in the database such as treatment or cohort.
+    - Furthermore, this database can be used for de-identifying data. If data is collected with identifiers such as name, a roster from the tracking database can be used to merge in unique study identifiers so that name can be removed. A similar process can be used to merge in other assigned variables contained in the database such as treatment or cohort.
 
 ## Building your database
 
@@ -136,7 +136,7 @@ I have designed this database model in this way:
       - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. In this example, I assume that grade level may change, maybe because my data collection waves occur across school years and teachers may move around. I also assume that a participant can drop at any point in the study and I want to track their status each wave.
 2. I have connected my tables through primary and foreign keys ("tch_id" and "sch_id")
 
-This model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both "tch_id" and "wave" to uniquely identify rows since "tch_id" would now be duplicated for each wave of data collection (Figure \@ref(fig:fig9-6)).
+The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both "tch_id" and "wave" to uniquely identify rows since "tch_id" would now be duplicated for each wave of data collection (Figure \@ref(fig:fig9-6)).
 
 ```{r fig9-6, fig.cap="Example participant database model", out.width= "80%"}
 
@@ -150,32 +150,29 @@ While these examples are for a fairly simple scenario, you can hopefully see how
 
 ### Choosing fields
 
-As you design your database model, you will also need to choose what fields to include in each table. The fields you choose to include will be dependent on your particular study design. While your participant tracking database may be the same database you enter all of your study data, for the purposes of this chapter we are only considering fields that are relevant for project coordination and participant de-identification. We are not concerned with fields that are collected as part of your data collection measures (i.e. survey items). You can consider your participant tracking database as an **internal** database that is only used for coordination, summary, and linking purposes. This is not a database where you would export data for external data sharing.
+As you design your database model, you will also need to choose what fields to include in each table. The fields you choose to include will be dependent on your particular study design. While your participant tracking database may be the same database you enter all of your study data, for the purposes of this chapter we are only considering fields that are relevant for project coordination and participant de-identification. We are not concerned with fields that are collected as part of your data collection measures (i.e. survey items). You can consider your participant tracking database as an **internal** database that is only used for coordination, summary, and linking purposes. This is not a database where you would export data for external data sharing. 
 
-**Ideas of static fields to collect:**
+Below are ideas of field you may consider adding to your database. Depeding on the design and assumptions of your study, some of these may be collected once, others may be collected more than once, longitudinally.
 
-- Study IDs (Primary and foreign keys for a relational database)
-- Names (Participants and sites)
+**Ideas of fields to collect:**
+
+- Study IDs (primary and foreign keys for a relational database)
+- Names (participants and sites)
 - Contact information
+- Information relevant to project coordination (grade level, class periods, block schedules)
 - Other necessary linking identifiers (double IDs, district/school IDs)
 - Information helpful for data collection scheduling (blocks, class times)
 - Consent/assent status
 - Randomization (treatment/control)
 - Grouping information (cohort)
-- Condition (treatment/control)
 - Summary information for rates (# of consents sent out, # of students in class)
-- Administrative status (W-9 received, MOUs received)
+- Administrative data status (W-9 received, MOUs received)
 - Movement/drop out status
+- Data collection status (unique fields for each instrument)
+- Incentive status (gift cards sent out)
 - Notes
   - Reasons for changes (for example changes in name, email)
   - Reasons for movement/drop out
-
-**Ideas of fields to collect longitudinally:**
-
-- Data collection status (unique fields for each instrument)
-- Incentive status (gift cards sent out)
-- Other changing information relevant to project coordination (grade level)
-- Notes
   - Communication with participants
   - Reasons for missing data
   - Errors in data
@@ -233,11 +230,11 @@ There are many tool options you can choose from. A sampling of those options are
   - Forms that feed into a relational database, maintained using a SQL (structured query language) database engine such as SQLite, MySQL, or PostgreSQL
 
 
-### Entering data
+## Entering data
 
 Your last consideration when building your database will be, how do you want your team to enter data into your database? There are many ways to enter data including using SQL statements, importing data, integrating your data collection platform and your tracking database, or even scanning forms using QR codes. While some of those options may work great for your project, here we are going to talk about the two simplest and most common options: manually entering data into a spreadsheet view, and manually entering data into a form.
 
-#### Entering data in a spreadsheet view
+### Entering data in a spreadsheet view
 
 Your first option is to manually enter data in a spreadsheet format for each participant in a row. This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access.  There are both pros and cons to this method.
 
@@ -250,7 +247,7 @@ knitr::include_graphics("img/datasheet-view-new.PNG")
 
 ```
 
-#### Entering data in a form
+### Entering data in a form
 
 Your second option is to create a form that is linked to your tables. As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, RedCap, and even Google Forms which populates into Google Sheets.
 
@@ -263,7 +260,7 @@ knitr::include_graphics("img/form-view-new.PNG")
 
 ```
 
-#### Other considerations
+### Other considerations
 
 If your participant tracking database is separate from your data collection tools, all information will need to be entered by your team using one of these ways. However, if your participant tracking tool is also your data collection/data capture tool (such as those who collect data using RedCap), fields such as data collection status (ex: survey completed), may not be manually entry. Rather they may be automated to populate as "complete" once a participant submits their responses in the data collection tool.
 

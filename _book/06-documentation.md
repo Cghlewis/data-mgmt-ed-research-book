@@ -1,9 +1,6 @@
 # Documentation {#document}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_doc.PNG" alt="Data documentation in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:fig7-1)Data documentation in the research project life cycle</p>
-</div>
+![(\#fig:fig7-1)Data documentation in the research project life cycle](img/lifecycle_doc.PNG){width=70%}
 
 Documentation is a collection of files that contain procedural and descriptive information about your team, your project, your workflows, and your data. Collecting thorough documentation during your study is equally as important as collecting your data. Documentation serves many purposes including:
 
@@ -28,10 +25,7 @@ Each type of documentation discussed below is a living document to be updated as
 
 Team-level data management documentation typically contains data governance rules that apply to the entire team, across all projects. While these documents can be amended any time, they should be started long before you apply for a grant, when your lab, center, or institution is formed. 
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_teamdoc.PNG" alt="Team-level documentation in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:fig7-2)Team-level documentation in the research project life cycle</p>
-</div>
+![(\#fig:fig7-2)Team-level documentation in the research project life cycle](img/lifecycle_teamdoc.PNG){width=70%}
 
 ### Lab Manual
 
@@ -51,10 +45,7 @@ One example of a team-level document is a lab manual, or team handbook. A lab ma
 
 Another option that can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. A wiki is a webpage that allows users to collaboratively edit and manage content. It can be created and housed in many tools such as SharePoint, Teams, Notion, GitHub, OSF, and more. While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to invited users only. This is a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
-<div class="figure" style="text-align: center">
-<img src="img/wiki2.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
-<p class="caption">(\#fig:fig7-3)Example team wiki with links to frequently requested information</p>
-</div>
+![(\#fig:fig7-3)Example team wiki with links to frequently requested information](img/wiki2.PNG){width=100%}
 
 > Project-level wikis can also be created and be very useful in centralizing frequently referenced information pertaining to specific projects.
 
@@ -73,10 +64,7 @@ Similarly, while **offboarding** checklists will contain a lot of procedural inf
 
 Data related topics to consider adding to your onboarding and offboarding checklists are included in Figure \@ref(fig:fig7-4).
 
-<div class="figure" style="text-align: center">
-<img src="img/onboard_offboard2.PNG" alt="Sample data topics to add to onboarding and offboarding checklists" width="100%" />
-<p class="caption">(\#fig:fig7-4)Sample data topics to add to onboarding and offboarding checklists</p>
-</div>
+![(\#fig:fig7-4)Sample data topics to add to onboarding and offboarding checklists](img/onboard_offboard2.PNG){width=100%}
 
 ### Data Use Agreement
 
@@ -84,10 +72,7 @@ Typically when we think of a data use agreement (DUA) we think of a document tha
 
 Ideas of content to include in a DUA are included in Figure \@ref(fig:fig7-5).
 
-<div class="figure" style="text-align: center">
-<img src="img/dua2.PNG" alt="Example of content to include in an internal data use agreement" width="100%" />
-<p class="caption">(\#fig:fig7-5)Example of content to include in an internal data use agreement</p>
-</div>
+![(\#fig:fig7-5)Example of content to include in an internal data use agreement](img/dua2.PNG){width=100%}
 
 ### Style Guide {#styleshort}
 
@@ -127,10 +112,7 @@ Using the checklists during your planning phase, you hopefully decided on and as
 
 The research protocol will be a comprehensive project summary document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. It generally provides the what, who, when, where, and how of your study. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig7-6).
 
-<div class="figure" style="text-align: center">
-<img src="img/protocol2.PNG" alt="Common research protocol elements" width="100%" />
-<p class="caption">(\#fig:fig7-6)Common research protocol elements</p>
-</div>
+![(\#fig:fig7-6)Common research protocol elements](img/protocol2.PNG){width=100%}
 
 When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
 
@@ -141,7 +123,6 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 |University of Washington Protocol Template [@university_of_washington_developing_nodate]| Protocol template|
 |Ohio State Protocol Template [@the_ohio_state_university_institutional_review_board_guidelines_2014] | Protocol Template|
 |University of Missouri Protocol Template [@university_of_missouri_socialbehavioraleducational_nodate]| Protocol Template|
-|STROBE Checklists [@strobe_strobe_nodate]|Helpful checklists in thinking through what to include in a project summary document|
 |Project Summary Documentation Template [@lewis_project-level_nodate]|Research protocol revised for the purposes of public data sharing|
 
 ### Supplemental Documents {#supplement}
@@ -152,19 +133,13 @@ There is a series of documents, that while they can absolutely be standalone doc
 
 The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. When you first create these timelines they will be based on your best estimates of the time it will take to complete milestones, but like all documents we've discussed, they can be updated as you learn more about the reality of the workload. This document can be both a helpful planning tool (for both project and data teams) in preparing for times of heavier and lighter workloads, as well as an excellent document to share with future data users to better understand waves of data collection. There is no one format for how to create this document. Figure \@ref(fig:fig7-7) is an example of one way to visualize a data collection timeline.
 
-<div class="figure" style="text-align: center">
-<img src="img/timeline.PNG" alt="Example data collection timeline" width="100%" />
-<p class="caption">(\#fig:fig7-7)Example data collection timeline</p>
-</div>
+![(\#fig:fig7-7)Example data collection timeline](img/timeline.PNG){width=100%}
 
 2. Participant Flow Diagram
 
 A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. These diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams [@cuschieri_consort_2019], providing a means to understand how participants are randomized and assigned to treatment groups. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in our [Data Tracking](#track) chapter, will inform the creation of this diagram.
 
-<div class="figure" style="text-align: center">
-<img src="img/consort.PNG" alt="2010 CONSORT flow diagram template" width="70%" />
-<p class="caption">(\#fig:fig7-8)2010 CONSORT flow diagram template</p>
-</div>
+![(\#fig:fig7-8)2010 CONSORT flow diagram template](img/consort.PNG){width=70%}
 
 3. Instruments 
 
@@ -174,10 +149,7 @@ Actual copies of instruments can be included as supplemental documentation. This
 
 You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data [@tourangeau_early_2015].
 
-<div class="figure" style="text-align: center">
-<img src="img/flowchart.PNG" alt="Flowchart of an ECLS-K:2011 kindergarten assessment" width="70%" />
-<p class="caption">(\#fig:fig7-9)Flowchart of an ECLS-K:2011 kindergarten assessment</p>
-</div>
+![(\#fig:fig7-9)Flowchart of an ECLS-K:2011 kindergarten assessment](img/flowchart.PNG){width=70%}
 
 5. Consent Forms
 
@@ -191,17 +163,11 @@ You may also choose to attach any publications that have come from your data as 
 
 While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. If you recall from our [Planning](#plan) chapter, every step that we added to a data collection workflow is then added to a standard operating procedure (SOP) and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (survey, assessments, observations), you can also have SOPs for other types of decisions as well. Many of the decisions laid out in your protocol, will be further detailed in an SOP. Examples of procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10).
 
-<div class="figure" style="text-align: center">
-<img src="img/sopchecks.PNG" alt="Examples of processes or decisions to develop an SOP for" width="100%" />
-<p class="caption">(\#fig:fig7-10)Examples of processes or decisions to develop an SOP for</p>
-</div>
+![(\#fig:fig7-10)Examples of processes or decisions to develop an SOP for](img/sopchecks.PNG){width=100%}
 
 SOPs not only help staff know how to perform tasks, they also create transparency, allow for continuity when staff turnover or go out on leave, create standardization in practices, and last, because an SOP should include versioning information, they allow you to accurately report changes in project procedures throughout the project. You will want to create a template that is used consistently across all procedures, by all staff who build SOPs. 
 
-<div class="figure" style="text-align: center">
-<img src="img/sop.PNG" alt="Standard operating procedure minimal template" width="75%" />
-<p class="caption">(\#fig:fig7-11)Standard operating procedure minimal template</p>
-</div>
+![(\#fig:fig7-11)Standard operating procedure minimal template](img/sop.PNG){width=75%}
 
 In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools or terminology. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**, lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member with no background in this process and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, methods of communication (ex: email vs instant message), and so forth should be included. Additions such as screenshots, links to other SOPs, or even links to tutorials can also be embedded. Last, any time an update is made to the SOP, clarifying information about the update is added to the **revision** section. This allows you to keep track of changes over time: when were changes made, who made those changes, and why. 
 
@@ -245,10 +211,7 @@ A Readme is a plain text document that contains information about your files. Th
 3. For providing information about a set of files in a directory
     - It can be helpful to add Readmes to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes or suffixes used in datasets, or instrument response rates [@neild_sharing_2022]. 
 
-<div class="figure" style="text-align: center">
-<img src="img/readme3.PNG" alt="Institute of Education Sciences example Readme for conveying information on files in a directory" width="75%" />
-<p class="caption">(\#fig:fig7-12)Institute of Education Sciences example Readme for conveying information on files in a directory</p>
-</div>
+![(\#fig:fig7-12)Institute of Education Sciences example Readme for conveying information on files in a directory](img/readme3.PNG){width=75%}
 
 
 ### Changelog {#change}
@@ -265,10 +228,7 @@ In its simplest form a changelog should contain the following:
   
 It could also include additional information such as who made the change and a link to any code used to transform the data [@service_versioning_nodate].
 
-<div class="figure" style="text-align: center">
-<img src="img/changelog.PNG" alt="Example changelog for a clean student survey data file" width="100%" />
-<p class="caption">(\#fig:fig7-13)Example changelog for a clean student survey data file</p>
-</div>
+![(\#fig:fig7-13)Example changelog for a clean student survey data file](img/changelog.PNG){width=100%}
 
 These changelogs will most likely not be created until the data capture and data cleaning phases of the life cycle when data transformations begin happening, and can be updated at any point as needed.
 
@@ -280,10 +240,7 @@ This document can be started in the documentation phase, but will most likely co
 
 Before writing any data cleaning plans, it can be very helpful for your team to have agreed upon general norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently. These standards can be written down and stored in a central team or project location for referral and then used to guide your process as you write your data cleaning plan. We will review what types of transformations you should consider adding to this type of norms document in our [Data Cleaning](#clean) chapter. 
 
-<div class="figure" style="text-align: center">
-<img src="img/data_cleaning_plan.PNG" alt="A simplistic data cleaning plan" width="60%" />
-<p class="caption">(\#fig:fig7-14)A simplistic data cleaning plan</p>
-</div>
+![(\#fig:fig7-14)A simplistic data cleaning plan](img/data_cleaning_plan.PNG){width=60%}
 
 
 ## Variable Level
@@ -296,10 +253,7 @@ A data dictionary is a rectangular (rows and columns) format collection of names
 
 What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
-<div class="figure" style="text-align: center">
-<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig7-15)Fields to include in a data dictionary</p>
-</div>
+![(\#fig:fig7-15)Fields to include in a data dictionary](img/dictionary.PNG){width=90%}
 
 #### Creating a data dictionary for an original data source
 
@@ -321,10 +275,7 @@ As you build your data dictionary, consider the following:
 
 For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig7-16) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
-<div class="figure" style="text-align: center">
-<img src="img/dictionary3.PNG" alt="Example student survey data dictionary" width="100%" />
-<p class="caption">(\#fig:fig7-16)Example student survey data dictionary</p>
-</div>
+![(\#fig:fig7-16)Example student survey data dictionary](img/dictionary3.PNG){width=100%}
 
 The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document/s with your team.
 
@@ -376,18 +327,12 @@ A codebook documents the contents, structure, and layout of a data file[@@icpsr_
 
 The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset.
 
-<div class="figure" style="text-align: center">
-<img src="img/codebook.PNG" alt="Codebook content that overlaps and is unique to a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig7-17)Codebook content that overlaps and is unique to a data dictionary</p>
-</div>
+![(\#fig:fig7-17)Codebook content that overlaps and is unique to a data dictionary](img/codebook.PNG){width=90%}
 
 Ultimately, you want to export a codebook that contains variable-level information like this document in Figure \@ref(fig:fig7-18) from the United States Department of Health and
 Human Services [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022].
 
-<div class="figure" style="text-align: center">
-<img src="img/codebook2.PNG" alt="Example codebook content from the SCOPE Coach Survey" width="80%" />
-<p class="caption">(\#fig:fig7-18)Example codebook content from the SCOPE Coach Survey</p>
-</div>
+![(\#fig:fig7-18)Example codebook content from the SCOPE Coach Survey](img/codebook2.PNG){width=80%}
 
 In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data is out of range or unexpected values appear.
 
@@ -408,27 +353,18 @@ The last type of documentation to discuss is metadata, which is created in the "
 
 For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_university_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership), and structural (technical considerations) metadata [@danish_national_forum_for_research_data_management_metadata_nodate; @cofield_libguides_nodate]. The information from this form will become your metadata [@noauthor_figshare_nodate].
 
-<div class="figure" style="text-align: center">
-<img src="img/metadata4.PNG" alt="Example intake metadata form for Figshare repository" width="70%" />
-<p class="caption">(\#fig:fig7-19)Example intake metadata form for Figshare repository</p>
-</div>
+![(\#fig:fig7-19)Example intake metadata form for Figshare repository](img/metadata4.PNG){width=70%}
 
 The most common metadata elements[@dahdul_research_nodate; @hayslett_libguides_nodate] are included in Figure \@ref(fig:fig7-20).
 
-<div class="figure" style="text-align: center">
-<img src="img/metadata.PNG" alt="Common metadata elements" width="80%" />
-<p class="caption">(\#fig:fig7-20)Common metadata elements</p>
-</div>
+![(\#fig:fig7-20)Common metadata elements](img/metadata.PNG){width=80%}
 
 
 Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as dataset-level or and variable-level metadata [@ldbase_information_nodate; @icpsr_icpsr_nodate; @gilmore_practical_2018]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
 Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig7-21) is an example of how ICPSR Open displays the metadata information on a project page [@lindsay_c_page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two [standards](#metastandards) if we want as well. 
 
-<div class="figure" style="text-align: center">
-<img src="img/metadata_project.PNG" alt="Example metadata displayed on an ICPSR Open project page" width="95%" />
-<p class="caption">(\#fig:fig7-21)Example metadata displayed on an ICPSR Open project page</p>
-</div>
+![(\#fig:fig7-21)Example metadata displayed on an ICPSR Open project page](img/metadata_project.PNG){width=95%}
 
 There are other ways metadata can be gathered as well. For instance, for variable-level metadata, rather than having users input metadata, repositories may create metadata from the deposited statistical data files that contain inherent metadata (such as variable types or labels) or from deposited documentation such as data dictionaries or codebooks [@icpsr_icpsr_nodate].
 
@@ -444,24 +380,15 @@ Metadata standards, typically field specific, establish common structuring and m
 
 Many fields have chosen metadata standards to adhere to. Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@noauthor_schemaorg_nodate]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon standards in the field of education [@institute_of_education_sciences_frequently_nodate].
 
-<div class="figure" style="text-align: center">
-<img src="img/metadata_standards.PNG" alt="A sampling of field metadata standards" width="70%" />
-<p class="caption">(\#fig:fig7-22)A sampling of field metadata standards</p>
-</div>
+![(\#fig:fig7-22)A sampling of field metadata standards](img/metadata_standards.PNG){width=70%}
 
 It can be helpful to see how standards differ as well as overlap. The DDI Alliance put together this table in Figure \@ref(fig:fig7-23) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core [@alliance_mapping_nodate], two commonly used standards.
 
-<div class="figure" style="text-align: center">
-<img src="img/metadata_mapping.PNG" alt="A comparison of DDI Version 2 standards to Dublin Core standards" width="70%" />
-<p class="caption">(\#fig:fig7-23)A comparison of DDI Version 2 standards to Dublin Core standards</p>
-</div>
+![(\#fig:fig7-23)A comparison of DDI Version 2 standards to Dublin Core standards](img/metadata_mapping.PNG){width=70%}
 
 We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from the ICPSR Open project we saw above [@lindsay_c_page_design_2020]. You can start to see the differences and similarities across standards. 
 
-<div class="figure" style="text-align: center">
-<img src="img/standard_compare.PNG" alt="Metadata comparison from an AERA Open project" width="100%" />
-<p class="caption">(\#fig:fig7-24)Metadata comparison from an AERA Open project</p>
-</div>
+![(\#fig:fig7-24)Metadata comparison from an AERA Open project](img/standard_compare.PNG){width=100%}
 
 If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the OSF repository currently uses the DataCite schema[@gueguen_new_nodate], while ICPSR uses the DDI standard[@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
 
