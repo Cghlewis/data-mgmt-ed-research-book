@@ -197,7 +197,7 @@ You may also choose to attach any publications that have come from your data as 
 
 ### Standard Operating Procedures {#sop}
 
-While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. If you recall from our [Planning](#plan) chapter, every step that we added to a data collection workflow is then added to a standard operating procedure (SOP) and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (survey, assessments, observations), you should also have SOPs for other types of processes as well. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines should also be documented in SOPs, ensuring fidelity of implementation of all project procedures.
+While the research protocol provides summary information for all procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. If you recall from our [Planning](#plan) chapter, every step that we added to a data collection workflow is then added to a standard operating procedure (SOP) and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (survey, assessments, observations), you should also have SOPs for other types of processes as well. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
 
 ```{r fig7-10, fig.cap="Examples of processes or decisions to develop an SOP for"}
 
@@ -219,9 +219,9 @@ In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you 
 
 |Document|Description|
 |--------|-----------|
-|Northwestern University Writing Standard Operating Procedures and Templates [@nucats_writing_nodate]| SOP Guidelines and Template |
-|Kent State University SOPs  [@kent_state_university_clinical_nodate]| A series of Clinical Research SOPs|
-|SOP Template [@lewis_standard_nodate]|An example SOP Template|
+|Northwestern University Writing Standard Operating Procedures and Templates [@nucats_writing_nodate]| SOP guidelines and template |
+|Kent State University SOPs  [@kent_state_university_clinical_nodate]| A series of clinical research SOPs|
+|SOP Template [@lewis_standard_nodate]|An example SOP template|
 
 
 ## Dataset Level
