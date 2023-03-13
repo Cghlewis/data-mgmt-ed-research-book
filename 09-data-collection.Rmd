@@ -2,7 +2,7 @@
 
 ## Why consider data management in data collection?
 
-## Consents
+## Consents {#consent}
 
 ## Electronic data collection instruments
 

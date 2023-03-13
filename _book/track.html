@@ -156,11 +156,11 @@ Figure 9.1: Tracking in the research project life cycle
 <h3>
 <span class="header-section-number">9.2.1</span> Relational databases<a class="anchor" aria-label="anchor" href="#relational-databases"><i class="fas fa-link"></i></a>
 </h3>
-<p>Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our <a href="data-structure.html#database">Data Structure</a> chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;MaryQiu1987, &lt;span&gt;“Database Normalization Description - Office,”&lt;/span&gt; May 5, 2022, &lt;a href="https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description" role="doc-biblioref"&gt;https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description&lt;/a&gt;; Ph D. David T. Bourgeois and Bourgeois, &lt;em&gt;Information Systems for Business and Beyond&lt;/em&gt; (Published through the Open Textbook Challenge by the Saylor Academy, 2014), &lt;a href="https://pressbooks.pub/bus206/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/&lt;/a&gt;.&lt;/p&gt;'><sup>171</sup></a></span>. In a relational database you</p>
+<p>Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our <a href="data-structure.html#database">Data Structure</a> chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;MaryQiu1987, &lt;span&gt;“Database Normalization Description - Office,”&lt;/span&gt; May 5, 2022, &lt;a href="https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description" role="doc-biblioref"&gt;https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description&lt;/a&gt;; Ph D. David T. Bourgeois and Bourgeois, &lt;em&gt;Information Systems for Business and Beyond&lt;/em&gt; (Published through the Open Textbook Challenge by the Saylor Academy, 2014), &lt;a href="https://pressbooks.pub/bus206/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/&lt;/a&gt;.&lt;/p&gt;'><sup>171</sup></a></span>. The general steps for building a relational database are below.</p>
 <ol style="list-style-type: decimal">
-<li>Group fields by entity (students, teachers, schools) and purpose</li>
-<li>Create tables for those groups</li>
-<li>Choose one or more fields to uniquely identify rows in those tables as primary keys</li>
+<li>Decide what fields you want to collect and on who you want to collect them.</li>
+<li>Group those fields by entity (students, teachers, schools) and purpose. Create tables for those groups.</li>
+<li>Choose one or more fields to uniquely identify rows in those tables as primary keys. These keys should not change at any point. Typically these keys are your assigned unique study IDs.</li>
 <li>Create relationships between tables through both primary and foreign keys</li>
 </ol>
 <p>We can also further refine our database through normalization, structuring our database according to normal form rules<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Kim Nguyen, &lt;span&gt;“Relational Database Schema Design Overview. Medium,”&lt;/span&gt; October 4, 2017, &lt;a href="https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9" role="doc-biblioref"&gt;https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9&lt;/a&gt;; The Nobles, &lt;span&gt;“Normalization of Database, the Easy Way. The Startup,”&lt;/span&gt; August 5, 2020, &lt;a href="https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863" role="doc-biblioref"&gt;https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863&lt;/a&gt;; Dave Bourgeois and David T. Bourgeois, &lt;span&gt;“Chapter 4: Data and Databases,”&lt;/span&gt; February 28, 2014, &lt;a href="https://pressbooks.pub/bus206/chapter/chapter-4-data-and-databases/" role="doc-biblioref"&gt;https://pressbooks.pub/bus206/chapter/chapter-4-data-and-databases/&lt;/a&gt;.&lt;/p&gt;'><sup>172</sup></a></span> to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is perfectly acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.</p>
@@ -180,12 +180,12 @@ Figure 9.2: Participant database built using a relational model
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user.</p>
 <p>Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by <code>tch_id</code> and then pulls the relevant teacher and student information from both tables:</p>
 <p><code>SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade</code><br><code>FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id</code><br><code>ORDER BY t_l_name, t_f_name, s_l_name, s_f_name</code></p>
-<div id="ygwanbtlbb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="cocrscrfyj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ygwanbtlbb .gt_table {
+#cocrscrfyj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -210,7 +210,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-left-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_heading {
+#cocrscrfyj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -222,7 +222,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_title {
+#cocrscrfyj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -234,7 +234,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-width: 0;
 }
 
-#ygwanbtlbb .gt_subtitle {
+#cocrscrfyj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -246,13 +246,13 @@ If we want to see a table with both student and teacher information, we can simp
   border-top-width: 0;
 }
 
-#ygwanbtlbb .gt_bottom_border {
+#cocrscrfyj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_col_headings {
+#cocrscrfyj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -267,7 +267,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_col_heading {
+#cocrscrfyj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -287,7 +287,7 @@ If we want to see a table with both student and teacher information, we can simp
   overflow-x: hidden;
 }
 
-#ygwanbtlbb .gt_column_spanner_outer {
+#cocrscrfyj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -299,15 +299,15 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 4px;
 }
 
-#ygwanbtlbb .gt_column_spanner_outer:first-child {
+#cocrscrfyj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ygwanbtlbb .gt_column_spanner_outer:last-child {
+#cocrscrfyj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ygwanbtlbb .gt_column_spanner {
+#cocrscrfyj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -319,7 +319,7 @@ If we want to see a table with both student and teacher information, we can simp
   width: 100%;
 }
 
-#ygwanbtlbb .gt_group_heading {
+#cocrscrfyj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -344,7 +344,7 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: middle;
 }
 
-#ygwanbtlbb .gt_empty_group_heading {
+#cocrscrfyj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -359,15 +359,15 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: middle;
 }
 
-#ygwanbtlbb .gt_from_md > :first-child {
+#cocrscrfyj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ygwanbtlbb .gt_from_md > :last-child {
+#cocrscrfyj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ygwanbtlbb .gt_row {
+#cocrscrfyj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -386,7 +386,7 @@ If we want to see a table with both student and teacher information, we can simp
   overflow-x: hidden;
 }
 
-#ygwanbtlbb .gt_stub {
+#cocrscrfyj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,7 +399,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#ygwanbtlbb .gt_stub_row_group {
+#cocrscrfyj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -413,11 +413,11 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: top;
 }
 
-#ygwanbtlbb .gt_row_group_first td {
+#cocrscrfyj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ygwanbtlbb .gt_summary_row {
+#cocrscrfyj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -427,16 +427,16 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#ygwanbtlbb .gt_first_summary_row {
+#cocrscrfyj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_first_summary_row.thick {
+#cocrscrfyj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ygwanbtlbb .gt_last_summary_row {
+#cocrscrfyj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -446,7 +446,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_grand_summary_row {
+#cocrscrfyj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -456,7 +456,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#ygwanbtlbb .gt_first_grand_summary_row {
+#cocrscrfyj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -466,11 +466,11 @@ If we want to see a table with both student and teacher information, we can simp
   border-top-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_striped {
+#cocrscrfyj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ygwanbtlbb .gt_table_body {
+#cocrscrfyj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -479,7 +479,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_footnotes {
+#cocrscrfyj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -493,7 +493,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_footnote {
+#cocrscrfyj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -502,7 +502,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#ygwanbtlbb .gt_sourcenotes {
+#cocrscrfyj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -516,7 +516,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#ygwanbtlbb .gt_sourcenote {
+#cocrscrfyj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -524,36 +524,36 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#ygwanbtlbb .gt_left {
+#cocrscrfyj .gt_left {
   text-align: left;
 }
 
-#ygwanbtlbb .gt_center {
+#cocrscrfyj .gt_center {
   text-align: center;
 }
 
-#ygwanbtlbb .gt_right {
+#cocrscrfyj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ygwanbtlbb .gt_font_normal {
+#cocrscrfyj .gt_font_normal {
   font-weight: normal;
 }
 
-#ygwanbtlbb .gt_font_bold {
+#cocrscrfyj .gt_font_bold {
   font-weight: bold;
 }
 
-#ygwanbtlbb .gt_font_italic {
+#cocrscrfyj .gt_font_italic {
   font-style: italic;
 }
 
-#ygwanbtlbb .gt_super {
+#cocrscrfyj .gt_super {
   font-size: 65%;
 }
 
-#ygwanbtlbb .gt_two_val_uncert {
+#cocrscrfyj .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -562,31 +562,31 @@ If we want to see a table with both student and teacher information, we can simp
   margin-left: 0.1em;
 }
 
-#ygwanbtlbb .gt_footnote_marks {
+#cocrscrfyj .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#ygwanbtlbb .gt_asterisk {
+#cocrscrfyj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ygwanbtlbb .gt_slash_mark {
+#cocrscrfyj .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#ygwanbtlbb .gt_fraction_numerator {
+#cocrscrfyj .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#ygwanbtlbb .gt_fraction_denominator {
+#cocrscrfyj .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -601,7 +601,7 @@ If we want to see a table with both student and teacher information, we can simp
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">t_f_name</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_l_name</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_f_name</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">grade_level</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">grade</th>
     </tr></thead>
 <tbody class="gt_table_body">
 <tr>
@@ -827,13 +827,14 @@ Figure 9.5: Example participant database model
 <ul>
 <li>Can we backup the system?</li>
 <li>Can we protect against overwriting data?</li>
+<li>Can we keep versions of the database in case a mistake is ever made and we need to go back to an older version?</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Data quality protection
 <ul>
-<li>Can we set up data quality constraints? For example, restrict input types/values.</li>
+<li>Can we set up data quality constraints? For example, restrict input types/values</li>
 </ul>
 </li>
 </ul>
@@ -1007,7 +1008,7 @@ Figure 9.8: Example of keeping participant IDs for the entire study
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-03-11.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-03-12.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

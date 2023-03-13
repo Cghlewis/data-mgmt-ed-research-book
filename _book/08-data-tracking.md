@@ -1,6 +1,9 @@
 # Data Tracking {#track}
 
-![(\#fig:fig9-1)Tracking in the research project life cycle](img/lifecycle_track.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:fig9-1)Tracking in the research project life cycle</p>
+</div>
 
 During your project you will want to be able to answer both progress and summary questions about your recruitment and data collection activities.
 
@@ -43,11 +46,11 @@ This database may be a standalone structure, used only for tracking and anonymiz
 
 ### Relational databases
 
-Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. In a relational database you 
+Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. The general steps for building a relational database are below. 
 
-1. Group fields by entity (students, teachers, schools) and purpose
-2. Create tables for those groups
-3. Choose one or more fields to uniquely identify rows in those tables as primary keys
+1. Decide what fields you want to collect and on who you want to collect them. 
+2. Group those fields by entity (students, teachers, schools) and purpose. Create tables for those groups.
+3. Choose one or more fields to uniquely identify rows in those tables as primary keys. These keys should not change at any point. Typically these keys are your assigned unique study IDs.
 4. Create relationships between tables through both primary and foreign keys
 
 We can also further refine our database through normalization, structuring our database according to normal form rules[@nguyen_relational_2017; @nobles_normalization_2020; @bourgeois_chapter_2014] to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is perfectly acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.
@@ -59,7 +62,10 @@ Let's compare a very simple example of building a tracking database using a rela
 
 In Figure \@ref(fig:fig9-2) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
-![(\#fig:fig9-2)Participant database built using a relational model](img/participant1.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/participant1.PNG" alt="Participant database built using a relational model" width="100%" />
+<p class="caption">(\#fig:fig9-2)Participant database built using a relational model</p>
+</div>
 
 We can see here that in each table we have no duplicated, repeating information. The student table only contains student level information, the teacher table only contains teacher level information, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user. 
@@ -72,12 +78,12 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 
 
 ```{=html}
-<div id="wygsemmbyu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="cocrscrfyj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#wygsemmbyu .gt_table {
+#cocrscrfyj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -102,7 +108,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-left-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_heading {
+#cocrscrfyj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -114,7 +120,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_title {
+#cocrscrfyj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -126,7 +132,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-width: 0;
 }
 
-#wygsemmbyu .gt_subtitle {
+#cocrscrfyj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -138,13 +144,13 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-width: 0;
 }
 
-#wygsemmbyu .gt_bottom_border {
+#cocrscrfyj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_col_headings {
+#cocrscrfyj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -159,7 +165,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_col_heading {
+#cocrscrfyj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -179,7 +185,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#wygsemmbyu .gt_column_spanner_outer {
+#cocrscrfyj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -191,15 +197,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 4px;
 }
 
-#wygsemmbyu .gt_column_spanner_outer:first-child {
+#cocrscrfyj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wygsemmbyu .gt_column_spanner_outer:last-child {
+#cocrscrfyj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wygsemmbyu .gt_column_spanner {
+#cocrscrfyj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -211,7 +217,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   width: 100%;
 }
 
-#wygsemmbyu .gt_group_heading {
+#cocrscrfyj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -236,7 +242,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#wygsemmbyu .gt_empty_group_heading {
+#cocrscrfyj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -251,15 +257,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#wygsemmbyu .gt_from_md > :first-child {
+#cocrscrfyj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wygsemmbyu .gt_from_md > :last-child {
+#cocrscrfyj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wygsemmbyu .gt_row {
+#cocrscrfyj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -278,7 +284,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#wygsemmbyu .gt_stub {
+#cocrscrfyj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -291,7 +297,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#wygsemmbyu .gt_stub_row_group {
+#cocrscrfyj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -305,11 +311,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: top;
 }
 
-#wygsemmbyu .gt_row_group_first td {
+#cocrscrfyj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wygsemmbyu .gt_summary_row {
+#cocrscrfyj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -319,16 +325,16 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#wygsemmbyu .gt_first_summary_row {
+#cocrscrfyj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_first_summary_row.thick {
+#cocrscrfyj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wygsemmbyu .gt_last_summary_row {
+#cocrscrfyj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -338,7 +344,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_grand_summary_row {
+#cocrscrfyj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -348,7 +354,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#wygsemmbyu .gt_first_grand_summary_row {
+#cocrscrfyj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -358,11 +364,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_striped {
+#cocrscrfyj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wygsemmbyu .gt_table_body {
+#cocrscrfyj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -371,7 +377,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_footnotes {
+#cocrscrfyj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -385,7 +391,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_footnote {
+#cocrscrfyj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -394,7 +400,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#wygsemmbyu .gt_sourcenotes {
+#cocrscrfyj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -408,7 +414,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#wygsemmbyu .gt_sourcenote {
+#cocrscrfyj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -416,36 +422,36 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#wygsemmbyu .gt_left {
+#cocrscrfyj .gt_left {
   text-align: left;
 }
 
-#wygsemmbyu .gt_center {
+#cocrscrfyj .gt_center {
   text-align: center;
 }
 
-#wygsemmbyu .gt_right {
+#cocrscrfyj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wygsemmbyu .gt_font_normal {
+#cocrscrfyj .gt_font_normal {
   font-weight: normal;
 }
 
-#wygsemmbyu .gt_font_bold {
+#cocrscrfyj .gt_font_bold {
   font-weight: bold;
 }
 
-#wygsemmbyu .gt_font_italic {
+#cocrscrfyj .gt_font_italic {
   font-style: italic;
 }
 
-#wygsemmbyu .gt_super {
+#cocrscrfyj .gt_super {
   font-size: 65%;
 }
 
-#wygsemmbyu .gt_two_val_uncert {
+#cocrscrfyj .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -454,31 +460,31 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   margin-left: 0.1em;
 }
 
-#wygsemmbyu .gt_footnote_marks {
+#cocrscrfyj .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#wygsemmbyu .gt_asterisk {
+#cocrscrfyj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wygsemmbyu .gt_slash_mark {
+#cocrscrfyj .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#wygsemmbyu .gt_fraction_numerator {
+#cocrscrfyj .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#wygsemmbyu .gt_fraction_denominator {
+#cocrscrfyj .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -493,7 +499,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">t_f_name</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_l_name</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">s_f_name</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">grade_level</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">grade</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -535,7 +541,10 @@ Depending on the design of your study and the structure of the database model, w
 
 Now imagine that we built a non-relational database (Figure \@ref(fig:fig9-4)), such as three tabs in an Excel spreadsheet,  to track our participant information. Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. Using this method we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.
 
-![(\#fig:fig9-4)Participant database built in using a non-relational model](img/participant2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/participant2.PNG" alt="Participant database built in using a non-relational model" width="100%" />
+<p class="caption">(\#fig:fig9-4)Participant database built in using a non-relational model</p>
+</div>
 
 #### Considerations
 
@@ -554,7 +563,10 @@ Before you can begin to construct your database, you will need to collect the fo
 
 Once you collect those pieces of information, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig9-5) I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection. 
 
-![(\#fig:fig9-5)Example participant database model](img/participant3.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/participant3.PNG" alt="Example participant database model" width="80%" />
+<p class="caption">(\#fig:fig9-5)Example participant database model</p>
+</div>
 
 I have designed this database model in this way:
 
@@ -567,7 +579,10 @@ I have designed this database model in this way:
 
 The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both "tch_id" and "wave" to uniquely identify rows since "tch_id" would now be duplicated for each wave of data collection (Figure \@ref(fig:fig9-6)).
 
-![(\#fig:fig9-6)Example participant database model](img/participant4.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/participant4.PNG" alt="Example participant database model" width="80%" />
+<p class="caption">(\#fig:fig9-6)Example participant database model</p>
+</div>
 
 While these examples are for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project. 
 
@@ -640,8 +655,9 @@ There are many criteria to consider when choosing a tool to build your database 
   - Protect data loss
     - Can we backup the system?
     - Can we protect against overwriting data?
+    - Can we keep versions of the database in case a mistake is ever made and we need to go back to an older version?
 - Data quality protection
-  - Can we set up data quality constraints? For example, restrict input types/values.
+  - Can we set up data quality constraints? For example, restrict input types/values
     
 There are many tool options you can choose from. A sampling of those options are below. These tools represent a wide range from the criteria above. Take some time to review your options to see which one best meets your needs.
 
@@ -666,7 +682,10 @@ Your first option is to manually enter data in a spreadsheet format for each par
 - Pros: This is the quickest and easiest method. It also allows you to view all the data holistically.
 - Cons: This method can lead to errors if someone enters data on the wrong row/record.
 
-![(\#fig:fig9-7)Example spreadsheet view data entry](img/datasheet-view-new.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%" />
+<p class="caption">(\#fig:fig9-7)Example spreadsheet view data entry</p>
+</div>
 
 ### Entering data in a form
 
@@ -675,7 +694,10 @@ Your second option is to create a form that is linked to your tables. As you ent
 - Pros: This method reduces data entry errors as you are only working on one participant form at a time
 - Cons: Takes some time, and possibly expertise, to set up the data entry forms
 
-![(\#fig:fig9-8)Example form view data entry](img/form-view-new.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/form-view-new.PNG" alt="Example form view data entry" width="80%" />
+<p class="caption">(\#fig:fig9-8)Example form view data entry</p>
+</div>
 
 ### Other considerations
 
@@ -696,7 +718,10 @@ Assigning unique identifiers (UIDs) is an important part of ensuring the protect
     - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once. The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (ex: cohort associated with that participant)
 5. If confidentiality was promised to schools or districts, assign identifiers to sites as well
 
-![(\#fig:fig9-9)Example of keeping participant IDs for the entire study](img/dupe_id.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" />
+<p class="caption">(\#fig:fig9-9)Example of keeping participant IDs for the entire study</p>
+</div>
 
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.
 

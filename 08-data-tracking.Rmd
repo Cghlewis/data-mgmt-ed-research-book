@@ -47,11 +47,11 @@ This database may be a standalone structure, used only for tracking and anonymiz
 
 ### Relational databases
 
-Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. In a relational database you 
+Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in our [Data Structure](#database) chapter. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys[@maryqiu1987_database_2022;@david_t_bourgeois_information_2014]. The general steps for building a relational database are below. 
 
-1. Group fields by entity (students, teachers, schools) and purpose
-2. Create tables for those groups
-3. Choose one or more fields to uniquely identify rows in those tables as primary keys
+1. Decide what fields you want to collect and on who you want to collect them. 
+2. Group those fields by entity (students, teachers, schools) and purpose. Create tables for those groups.
+3. Choose one or more fields to uniquely identify rows in those tables as primary keys. These keys should not change at any point. Typically these keys are your assigned unique study IDs.
 4. Create relationships between tables through both primary and foreign keys
 
 We can also further refine our database through normalization, structuring our database according to normal form rules[@nguyen_relational_2017; @nobles_normalization_2020; @bourgeois_chapter_2014] to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is perfectly acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.
@@ -82,7 +82,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 
 library(tidyverse)
 
-tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade_level,
+tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade,
                 "Hoover", "Elizabeth", "Simpson", "Lisa", 2,
                  "Hoover", "Elizabeth", "Wiggum", "Ralph", 2,
                  "Krabappel", "Edna", "Prince", "Martin", 4,
@@ -215,8 +215,9 @@ There are many criteria to consider when choosing a tool to build your database 
   - Protect data loss
     - Can we backup the system?
     - Can we protect against overwriting data?
+    - Can we keep versions of the database in case a mistake is ever made and we need to go back to an older version?
 - Data quality protection
-  - Can we set up data quality constraints? For example, restrict input types/values.
+  - Can we set up data quality constraints? For example, restrict input types/values
     
 There are many tool options you can choose from. A sampling of those options are below. These tools represent a wide range from the criteria above. Take some time to review your options to see which one best meets your needs.
 

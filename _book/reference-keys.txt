@@ -176,7 +176,7 @@ ids
 tracking-best-practices
 data-collection
 why-consider-data-management-in-data-collection
-consents
+consent
 electronic-data-collection-instruments
 paper-data-collection-instruments
 interviewsfocus-groups
