@@ -6,7 +6,7 @@ Research data management (RDM) involves the organization, storage, preservation,
 
 ## Standards
 
-Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014] or the ISO (International Organization for Standardization) 19115 used for geospatial data[@michener_ten_2015], and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@office_of_science_and_technology_policy_ostp_2022], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
+Data management standards refer to rules for how data should be stored, organized, and described [@borghi_promoting_2022]. Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers [@cdisc_cdisc_nodate], other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities [@burnard_what_2014] or the ISO (International Organization for Standardization) 19115 used for geospatial data[@michener_ten_2015], and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data structure and documentation based on the FAIR principles [@kline_technical_2018]. Yet, it is common knowledge that there are currently no agreed-upon norms for how to structure and share data in the field of education [@institute_of_education_sciences_frequently_nodate]. The rules for what data should be produced and how it should be documented is often left up to each individual team, as long as external compliance requirements are met [@tenopir_data_2016-1]. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available [@holdren_ostp_2013], data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation [@borghi_promoting_2022].
 
 While field standards for the structure and format of publicly shared products that aid in the preservation and re-use of data are very much needed, there are actually good reasons to not impose standardization on all data management activities across the field. Granting some flexibility in the process of managing data during active data collection allows teams to implement the best practices that work for their projects, as long as those projects implement practices consistently during their project and produce similar quality outputs across the field.
 
@@ -21,7 +21,7 @@ Without current agreed-upon standards in the field, it is important for research
 
 1. **Journal compliance**: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement (see PLOS ONE[@plos_one_data_nodate] and AMPPS[@noauthor_advances_nodate] as examples). Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.
 
-1. **Compliance with legal and ethical mandates**: If you are required to submit your research project to the Institutional Review Board (IRB), they will monitor how you manage your data. The IRB is concerned with the welfare, rights, and privacy of research participants and will have rules for how data is managed and stored securely. Additionally your organization may have their own institutional data policies that mandate how data must be cared for and secured [@association_of_academic_health_science_libraries_institutional_2022].
+1. **Compliance with legal and ethical mandates**: If you are required to submit your research project to the Institutional Review Board (IRB), the board will review and monitor your data management practices. Concerned with the welfare, rights, and privacy of research participants, your IRB will have rules for how data is managed and stored securely [@filip_san_nodate]. Additionally your organization may have their own institutional data policies that mandate how data must be cared for and secured.
 
 1. **Open science practices**: With a growing interest in open science practices, sharing well managed and documented data helps to build trust in the research process [@renbarger_champions_2022]. Sharing data that is curated in a reproducible way is "a strong indicator to fellow researchers of rigor, trustworthiness, and transparency in scientific research" (Alston & Rick, 2021, p.2 [@alston_beginners_2021]). It also allows others to replicate and learn from your work, validate your results to strengthen evidence, as well as potentially catch errors in your work, preventing decisions being made based on incorrect data [@alston_beginners_2021]. Well-managed data with sufficient documentation can also lead to more collaboration and greater impact as collaborators are able to access and understand your data with ease [@borghi_promoting_2022; @cowles_research_nodate; @eaker_what_2016].
 
@@ -91,12 +91,12 @@ Before diving into the content of this training, I think it is helpful to cover 
 
 
 ```{=html}
-<div id="vepflmnpix" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vbmcpjlthd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#vepflmnpix .gt_table {
+#vbmcpjlthd .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -121,7 +121,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-left-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_heading {
+#vbmcpjlthd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -133,7 +133,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_title {
+#vbmcpjlthd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -145,7 +145,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-width: 0;
 }
 
-#vepflmnpix .gt_subtitle {
+#vbmcpjlthd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -157,13 +157,13 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-width: 0;
 }
 
-#vepflmnpix .gt_bottom_border {
+#vbmcpjlthd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_col_headings {
+#vbmcpjlthd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -178,7 +178,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_col_heading {
+#vbmcpjlthd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -198,7 +198,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#vepflmnpix .gt_column_spanner_outer {
+#vbmcpjlthd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -210,15 +210,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 4px;
 }
 
-#vepflmnpix .gt_column_spanner_outer:first-child {
+#vbmcpjlthd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vepflmnpix .gt_column_spanner_outer:last-child {
+#vbmcpjlthd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vepflmnpix .gt_column_spanner {
+#vbmcpjlthd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -230,7 +230,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   width: 100%;
 }
 
-#vepflmnpix .gt_group_heading {
+#vbmcpjlthd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +255,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#vepflmnpix .gt_empty_group_heading {
+#vbmcpjlthd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +270,15 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: middle;
 }
 
-#vepflmnpix .gt_from_md > :first-child {
+#vbmcpjlthd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vepflmnpix .gt_from_md > :last-child {
+#vbmcpjlthd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vepflmnpix .gt_row {
+#vbmcpjlthd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +297,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   overflow-x: hidden;
 }
 
-#vepflmnpix .gt_stub {
+#vbmcpjlthd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +310,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#vepflmnpix .gt_stub_row_group {
+#vbmcpjlthd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,11 +324,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   vertical-align: top;
 }
 
-#vepflmnpix .gt_row_group_first td {
+#vbmcpjlthd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vepflmnpix .gt_summary_row {
+#vbmcpjlthd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -338,16 +338,16 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#vepflmnpix .gt_first_summary_row {
+#vbmcpjlthd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_first_summary_row.thick {
+#vbmcpjlthd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vepflmnpix .gt_last_summary_row {
+#vbmcpjlthd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -357,7 +357,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_grand_summary_row {
+#vbmcpjlthd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -367,7 +367,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#vepflmnpix .gt_first_grand_summary_row {
+#vbmcpjlthd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -377,11 +377,11 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-top-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_striped {
+#vbmcpjlthd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vepflmnpix .gt_table_body {
+#vbmcpjlthd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -390,7 +390,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-bottom-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_footnotes {
+#vbmcpjlthd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -404,7 +404,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_footnote {
+#vbmcpjlthd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -413,7 +413,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#vepflmnpix .gt_sourcenotes {
+#vbmcpjlthd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -427,7 +427,7 @@ Before diving into the content of this training, I think it is helpful to cover 
   border-right-color: #D3D3D3;
 }
 
-#vepflmnpix .gt_sourcenote {
+#vbmcpjlthd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -435,36 +435,36 @@ Before diving into the content of this training, I think it is helpful to cover 
   padding-right: 5px;
 }
 
-#vepflmnpix .gt_left {
+#vbmcpjlthd .gt_left {
   text-align: left;
 }
 
-#vepflmnpix .gt_center {
+#vbmcpjlthd .gt_center {
   text-align: center;
 }
 
-#vepflmnpix .gt_right {
+#vbmcpjlthd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vepflmnpix .gt_font_normal {
+#vbmcpjlthd .gt_font_normal {
   font-weight: normal;
 }
 
-#vepflmnpix .gt_font_bold {
+#vbmcpjlthd .gt_font_bold {
   font-weight: bold;
 }
 
-#vepflmnpix .gt_font_italic {
+#vbmcpjlthd .gt_font_italic {
   font-style: italic;
 }
 
-#vepflmnpix .gt_super {
+#vbmcpjlthd .gt_super {
   font-size: 65%;
 }
 
-#vepflmnpix .gt_two_val_uncert {
+#vbmcpjlthd .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -473,31 +473,31 @@ Before diving into the content of this training, I think it is helpful to cover 
   margin-left: 0.1em;
 }
 
-#vepflmnpix .gt_footnote_marks {
+#vbmcpjlthd .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#vepflmnpix .gt_asterisk {
+#vbmcpjlthd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vepflmnpix .gt_slash_mark {
+#vbmcpjlthd .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#vepflmnpix .gt_fraction_numerator {
+#vbmcpjlthd .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#vepflmnpix .gt_fraction_denominator {
+#vbmcpjlthd .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -537,7 +537,7 @@ Before diving into the content of this training, I think it is helpful to cover 
 <td class="gt_row gt_left">Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data.</td></tr>
     <tr><td class="gt_row gt_left">Confidentiality</td>
 <td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Confidentiality concerns data. Ensuring participants agree to how their private and identifable information will be managed and disseminated.</td></tr>
+<td class="gt_row gt_left">Confidentiality concerns data, ensuring participants agree to how their private and identifable information will be managed and disseminated.</td></tr>
     <tr><td class="gt_row gt_left">Control</td>
 <td class="gt_row gt_left">business as usual</td>
 <td class="gt_row gt_left">The individual or group does not receive the intervention.</td></tr>
@@ -559,16 +559,16 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">De-identified data</td>
 <td class="gt_row gt_left">anonymized data</td>
 <td class="gt_row gt_left">Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists).</td></tr>
-    <tr><td class="gt_row gt_left">Derived Data</td>
+    <tr><td class="gt_row gt_left">Derived data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Data created through transformations of existing data.</td></tr>
     <tr><td class="gt_row gt_left">Directory</td>
 <td class="gt_row gt_left">file structure</td>
 <td class="gt_row gt_left">A cataloging structure for files and folders on your computer.</td></tr>
-    <tr><td class="gt_row gt_left">Experimental Data</td>
+    <tr><td class="gt_row gt_left">Experimental data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Data collected from a study where researchers randomly introduce an intervention and study the effects.</td></tr>
-    <tr><td class="gt_row gt_left">Extant Data</td>
+    <tr><td class="gt_row gt_left">Extant data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Existing data sources created from external to the research team/study.</td></tr>
     <tr><td class="gt_row gt_left">File formats</td>
@@ -586,7 +586,7 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">Missing data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Occurs when there is no data stored in a variable for a particular observation/respondent.</td></tr>
-    <tr><td class="gt_row gt_left">Observational Data</td>
+    <tr><td class="gt_row gt_left">Observational data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention. This includes many formats that education researchers collect data with (ex: survey, observation, assessment).</td></tr>
     <tr><td class="gt_row gt_left">Participant database</td>
@@ -598,19 +598,19 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">PII</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Personally identifiable information is protected information that can directly or indirectly identify a study participant. It includes but is not limited to name, social security number, email, birthdate, district or school name.</td></tr>
-    <tr><td class="gt_row gt_left">Primary Data</td>
+    <tr><td class="gt_row gt_left">Primary data</td>
 <td class="gt_row gt_left">original data</td>
 <td class="gt_row gt_left">First hand data that is generated/collected by the research team as part of the research study.</td></tr>
     <tr><td class="gt_row gt_left">Privacy</td>
 <td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Privacy concerns people. Ensuring others are given control to the access of themselves and their information.</td></tr>
+<td class="gt_row gt_left">Privacy concerns people, ensuring they are given control to the access of themselves and their information.</td></tr>
     <tr><td class="gt_row gt_left">Qualitative data</td>
 <td class="gt_row gt_left">NA</td>
-<td class="gt_row gt_left">Non-numeric data typically made up of text, images, video or other artifacts.</td></tr>
+<td class="gt_row gt_left">Non-numeric data typically made up of text, images, video, or other artifacts.</td></tr>
     <tr><td class="gt_row gt_left">Quantitative data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Numerical data that can be analyzed with statistical methods.</td></tr>
-    <tr><td class="gt_row gt_left">Randomized Controlled Trial</td>
+    <tr><td class="gt_row gt_left">Randomized controlled trial</td>
 <td class="gt_row gt_left">RCT</td>
 <td class="gt_row gt_left">A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized.</td></tr>
     <tr><td class="gt_row gt_left">Raw data</td>
@@ -625,10 +625,10 @@ Before diving into the content of this training, I think it is helpful to cover 
     <tr><td class="gt_row gt_left">Research</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">The Common Rule definition of research is a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.</td></tr>
-    <tr><td class="gt_row gt_left">Secondary Data</td>
+    <tr><td class="gt_row gt_left">Secondary data</td>
 <td class="gt_row gt_left">extant data</td>
 <td class="gt_row gt_left">Existing data generated/collected by external organizations such as governments at an earlier point in time.</td></tr>
-    <tr><td class="gt_row gt_left">Simulation Data</td>
+    <tr><td class="gt_row gt_left">Simulation data</td>
 <td class="gt_row gt_left">NA</td>
 <td class="gt_row gt_left">Data generated through imitations of a real-world process using computer models.</td></tr>
     <tr><td class="gt_row gt_left">Standardization</td>
