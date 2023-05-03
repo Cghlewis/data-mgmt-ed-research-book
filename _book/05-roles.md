@@ -5,7 +5,7 @@
 <p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
 </div>
 
-Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles [@service_roles_nodate] for many reasons including for the security of data, the continuity of practices, and for the standardization of workflows.
+Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles [@uk_data_service_roles_nodate] for many reasons including for the security of data, the continuity of practices, and for the standardization of workflows.
 
 ## Typical roles in a research project
 
@@ -84,9 +84,9 @@ You should also beging thinking through backup plans should a staff member leave
 
 Once roles and responsibilities have been assigned, those decisions should be documented to avoid any ambiguity about who is doing what. While documentation is a topic that will be covered in the next chapter, I think it is helpful to break the rules and discuss just this one document here while we are covering the topic of assigning roles. 
 
-A general roles and responsibilities document is one way to document your decisions [@ucdavis_pmlc_nodate; @colorado_school_of_mines_table_nodate]. In addition to being a planning document that can help you assign tasks to the appropriate staff member, it can also serve as a reference document that allows your team to easily see who is on the project team, what roles they play, and who to contact for questions regarding various project aspects (for example - who to contact for data storage access). 
+A general roles and responsibilities document is one way to document your decisions [@colorado_school_of_mines_table_nodate;@uc_davis_pmlc_nodate]. In addition to being a planning document that can help you assign tasks to the appropriate staff member, it can also serve as a reference document that allows your team to easily see who is on the project team, what roles they play, and who to contact for questions regarding various project aspects (for example - who to contact for data storage access). 
 
-This document can be laid in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-3) and Figure \@ref(fig:fig6-4) are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as [standard operating procedures](#sop) where names are attached to each task.
+This document can be laid in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-3) and Figure \@ref(fig:fig6-4) are two example templates. Note that these templates only list overarching responsibilities, not specific tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Chapter \@ref(document)) where names are attached to each task.
 
 <div class="figure" style="text-align: center">
 <img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
@@ -102,9 +102,9 @@ Reviewing roles and responsibilities in a format like this allows you to start t
 
 Since there is no one template for creating a roles and responsibility document, you can really add whatever information helps to most clearly convey the information. Some additional columns you may consider adding include:
 
-- Links to related standard operating procedures (ex: for building a participant tracking database you may link to the specific SOP that lays out steps for building the tool)
+- Links to related standard operating procedures (e.g., for building a participant tracking database you may link to the specific SOP that lays out steps for building the tool)
 - Names of other staff members (if any) that assist with or also contribute to each responsibility
-- Timing of each responsibility (ex: weekly, ongoing, the month of February)
+- Timing of each responsibility (e.g., weekly, ongoing, the month of February)
 
 ## Data Management Role
 

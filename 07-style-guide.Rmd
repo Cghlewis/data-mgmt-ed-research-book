@@ -6,7 +6,7 @@ knitr::include_graphics("img/lifecycle_team_doc.PNG")
 
 ```
 
-A style guide provides general agreed upon rules for the formatting of information[@noauthor_style_2023]. As mentioned in the previous [chapter](#styleshort), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
+A style guide provides general agreed upon rules for the formatting of information [@noauthor_style_2023]. As mentioned in the previous Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
 The benefits for creating style guides and using them consistently include:
 
@@ -16,7 +16,7 @@ The benefits for creating style guides and using them consistently include:
 
 Style guides can be created for individual projects, but they can also be created at the team level, to be applied across all projects. Most importantly, they should be created before a project kicks off so you can implement them as soon as your project begins. If you do not have a team-wide style guide already created, you most likely will want to create a project-level style guide during your planning phase so that you can begin setting up your directory structures and file naming standards before you start creating and saving project-related files. 
 
-Style guides can be housed in one large document, with a table of contents used to reference each section, or they can be created as separate documents. Either way, style guides should be stored in a central location that is easily accessible to all team members (such as a team or project [wiki](#wiki)), and all team members should be trained, and periodically retrained, on the style guide to ensure adherence to the rules. If all team members are not consistently implementing the style guide, then the benefits of the guide are lost.
+Style guides can be housed in one large document, with a table of contents used to reference each section, or they can be created as separate documents. Either way, style guides should be stored in a central location that is easily accessible to all team members (such as a team or project wiki), and all team members should be trained, and periodically retrained, on the style guide to ensure adherence to the rules. If all team members are not consistently implementing the style guide, then the benefits of the guide are lost.
 
 For the remainder of this chapter, we will spend time reviewing some good practices for rules to add to your style guides for the following purposes:
 
@@ -55,14 +55,14 @@ When deciding how to structure your project directories (the organization of you
 **When structuring your folders:**
 
 - First, consider organizing your directory into a hierarchical folder structure to clearly delineate segments of your projects and improve searchability
-  - The alternative to using a folder structure is using metadata and tagging to organize and search for files [@cakici_folders_2017; @staff_how_2019]
+  - The alternative to using a folder structure is using metadata and tagging to organize and search for files [@cakici_folders_2017; @fuchs_making_2018; @krishna_how_2018]
 - When creating your folder structure, strike a balance between a deep and shallow structure
   - Too shallow leads to too many files in one folder which is difficult to sort through
   - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
     - An example file path with 69 characters `W:\team\project\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv`
   - Examples of file path limits:  
-    - SharePoint/OneDrive path limit is 400 characters[@microsoft_restrictions_nodate]
-    - Windows path limit is 260 characters[@alvinashcraft_naming_2022]
+    - SharePoint/OneDrive path limit is 400 characters [@microsoft_restrictions_nodate]
+    - Windows path limit is 260 characters [@ashcraft_naming_2022]
 - Create folders that are specific enough that you can limit access
   - For example you will want to limit user access to folders that hold Personally Identifiable Information (PII)
   - To protect any files that you don’t want others to accidentally edit (for example your clean datasets), also consider making some files "read only"
@@ -137,13 +137,13 @@ print(project)
 
 ## File naming
 
-```{r fig8-2, fig.cap="xkcd comic on naming files", out.width = "40%"}
+```{r fig8-2, fig.cap="xkcd comic on naming files", out.width = "30%"}
 
 knitr::include_graphics("img/xkcd.PNG")
 
 ```
 
-As xkcd[@noauthor_documents_nodate] so aptly points out in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As @xkcd_documents_nodate so aptly points out in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 
@@ -164,14 +164,14 @@ A file naming style guide helps us to name files in a way that allows us to answ
   - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.
 - When versioning your files, pick a format and add it to your style guide
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
-  - As mentioned in our chapter on Documentation, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a [changelog](#change).
+  - As mentioned in our Chapter \@ref(document), it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a changelog.
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
 - Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
 - Keep redundant metadata in the file name
   - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
   - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
-- Choose an order for file name metadata (ex: project -> time -> participant -> measure)
+- Choose an order for file name metadata (e.g., project -> time -> participant -> measure)
 
 **Example file naming style guide**
 
@@ -201,8 +201,8 @@ A file naming style guide helps us to name files in a way that allows us to answ
 
     me_stu_svy_sop_2022-08-01.docx
     me_w1_stu_svy_data_raw_2022-11-03.csv
-    me_w1_stu_svy_cleaning_syntax_2023-01-22v01.R
-    me_w1_stu_svy_cleaning_syntax_2023-01-22v02.R
+    me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
+    me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
     
 ## Variable naming {#varname}
 
@@ -210,7 +210,7 @@ This style guide will be a necessary document to have before you start to create
 
 **Mandatory:**
 
-- Don’t name a variable any keywords or functions used in any programming language (such as `if`, `for`, `repeat`)[@noauthor_r_nodate; @stangroom_rules_2019]
+- Don’t name a variable any keywords or functions used in any programming language (such as `if`, `for`, `repeat`) [@r_core_team_r_2023; @stangroom_rules_2019]
 - Set a character limit
   - Most statistical programs have a limit on variable name characters
     - SPSS is 64
@@ -243,7 +243,7 @@ This style guide will be a necessary document to have before you start to create
   - Kebab case (scale-sum) – don’t use for variable names
   - Train case (Scale-Sum) – don’t use for variable names
 - Consider denoting reverse coding in the variable name to reduce confusion (`anx1_r`)
-- Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier[@riederer_column_2020].
+- Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier [@riederer_column_2020].
   - mean = mean
   - scaled score = ss
   - percentile rank = pr
@@ -278,8 +278,8 @@ Before moving on there is one last consideration for variable names. If your dat
 
 Depending on how you plan to combine your data over time, there are two different ways to account for time.
 
-1. Concatenate time to your variable names. You do this if you plan to merge your data across time in [wide format](#structure). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your [linking variables](#columns) (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
-2.  Create time variables and add them to your data. You do this if you plan to append your data over time in [long format](#structure). Appending your data in long format requires no additional work in terms of variable naming. As discussed in our data structure chapter, you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
+1. Concatenate time to your variable names. You do this if you plan to merge your data across time in wide format (see Chapter \@ref(structure)). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your linking variables (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
+2.  Create time variables and add them to your data. You do this if you plan to append your data over time in long format (see Chapter \@ref(structure)). Appending your data in long format requires no additional work in terms of variable naming. As discussed in Chapter \@ref(structure), you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
 
 During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) [@reynolds_basics_2022]. Waiting to combine data has benefits:
 
@@ -305,7 +305,7 @@ While the first and second method do add additional characters to your variable 
 
 ## Value Coding
 
-In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (ex: "no" = 1) or it may be character categorical values with associated labels (ex: "no" = 'n'). 
+In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., "no" = 1) or it may be character categorical values with associated labels (e.g., "no" = 'n'). 
 
 First, if you are using a pre-existing measure, assign values and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures. Otherwise, you will be assigning your own values and labels. Some guidelines for assigning codes and labels (as well as examples for how to apply those guidelines) are below.
 
@@ -329,7 +329,7 @@ First, if you are using a pre-existing measure, assign values and labels in the 
 - Define missing values
     - You may choose to leave all missing values as blank, NA, or NULL and that is okay
     - However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties
-      - The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (ex: numeric missing values for numeric variables)[@tourangeau_early_2015]
+      - The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (e.g., numeric missing values for numeric variables) [@tourangeau_early_2015]
 
 ```{r fig8-3, fig.cap="Missing values assigned in the ECLS-K:2011 data file"}
 
@@ -341,19 +341,19 @@ knitr::include_graphics("img/missing.PNG")
 
 If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to google existing style guides in that language.
 
-- Consider building and implementing coding templates[@farewell_my_2018; @daskalova_coding_nodate] 
+- Consider building and implementing coding templates [@daskalova_coding_nodate; @farewell_my_2018] 
   - Templates can standardize the format of syntax files (such as using standard headers to break up code)
   - They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)
 - Use comments throughout your code to clearly explain the purpose of each code chunk
   - The format of these comments will be dependent on your coding language
     - R uses `#`
     - SPSS and Stata use `*`
-- Improve code readability by using[@wickham_welcome_nodate; @san_martin_stata_2023]
+- Improve code readability by using [@wickham_welcome_nodate; @san_martin_stata_2023]
   - spaces
   - indentation
-  - setting a line limit for your code (ex: 80 characters)
+  - setting a line limit for your code (e.g., 80 characters)
 - Use relative file paths for reproducibility
-  - Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths. It is important to set file paths relative the directory you are working in.[@wickham_8_nodate]
+  - Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths. It is important to set file paths relative the directory you are working in [@wickham_welcome_2017].
 - If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules
   - No spaces in object names
   - No special characters except `_` to separate words

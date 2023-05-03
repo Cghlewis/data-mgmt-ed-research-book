@@ -1,4 +1,4 @@
-# Data Storage and Security
+# Data Storage and Security {#storage}
 
 ## Types of data you'll be storing
 
