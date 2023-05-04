@@ -48,7 +48,7 @@ A lack of training in data management practices and an absence of agreed upon st
 
 Poor data management can even prevent researchers from implementing other good open science practices. In waves 1 and 2 of the Open Scholarship Survey being collected by the @center_for_open_science_cos_2022, the team has found that of the education researchers surveyed who are currently not publicly sharing their research data, about 10% mentioned "being nervous about mistakes" as a reason for not sharing. Similarly, when surveying 780 researchers in the field of psychology, researchers found that 38% of respondents agreed that a "fear of discovery of errors in the data" posed a barrier to data sharing [@houtkoop_data_2018].
 
-The well known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70% had tried and failed to reproduce another researcher's study [@baker_1500_2016].
+The well-known replication crisis is another reason to be concerned with data management. Failure to implement practices such as quality documentation or standardization of practices (among many other reasons), resulted in one study finding that across 1,500 researchers surveyed, more than 70% had tried and failed to reproduce another researcher's study [@baker_1500_2016].
 
 ## About this book
 
