@@ -29,7 +29,7 @@ The IRB is a formal organization designated to review and monitor human particip
 
 ### Background
 
-In 1974 the IRB was established as part of the National Research Act in response to a long history of unethical research that had been conducted with human participants [@qiao_brief_2018]. In 1979, the Belmont Report established a set of ethical principles for doing research with human participants. Those ethical principles included the following [@duru_institutional_nodate; @huisman_3_nodate; @office_for_human_research_office_for_human_research_protections_read_2018]:
+In 1974 the IRB was established as part of the National Research Act in response to a long history of unethical research that had been conducted with human participants [@qiao_brief_2018]. In 1979, the Belmont Report outlined a set of ethical principles for doing research with human participants. Those ethical principles included the following [@duru_institutional_nodate; @huisman_3_nodate; @office_for_human_research_office_for_human_research_protections_read_2018]:
 
 1. Respect for persons
     - This included both protecting autonomy of participants by acquiring consent as well as providing a plan to protect participant privacy

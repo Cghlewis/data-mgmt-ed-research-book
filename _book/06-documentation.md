@@ -5,7 +5,7 @@
 <p class="caption">(\#fig:fig7-1)Data documentation in the research project life cycle</p>
 </div>
 
-Documentation is a collection of files that contain procedural and descriptive information about your team, your project, your workflows, and your data. Collecting thorough documentation during your study is equally as important as collecting your data. Documentation serves many purposes including:
+Documentation is a collection of files that contain procedural and descriptive information about your team, your project, your workflows, and your data. Creating thorough documentation during your study is equally as important as collecting your data. Documentation serves many purposes including:
 
 - Standardizing procedures
 - Securing data and protecting confidentiality
@@ -34,7 +34,7 @@ Team-level data management documentation typically contains data governance rule
 <p class="caption">(\#fig:fig7-2)Team-level documentation in the research project life cycle</p>
 </div>
 
-### Lab Manual
+### Lab manual
 
 One example of a team-level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It also sets expectations, provides guidelines, and can even be a place for passing along career advice [@aczel_crowdsourced_nodate; @the_turing_way_community_turing_2022]. While a lab manual will primarily consist of administrative, procedural, and interpersonal types of information, it can be helpful to include data management content, including general rules about accessing, storing, sharing, and working with data securely and ethically. 
 
@@ -88,7 +88,7 @@ Data related topics to consider adding to your onboarding and offboarding checkl
 |Crystal Lewis | Sample data topics to add to an onboarding checklist ^[https://docs.google.com/document/d/1W57cYuYyiqltQNXUITP-jVIf84jao4Ef]|
 |Crystal Lewis | Sample data topics to add to an offboarding checklist ^[https://docs.google.com/document/d/1W57cYuYyiqltQNXUITP-jVIf84jao4Ef]|
 
-### Data Use Agreement {#dua}
+### Data use agreement {#dua}
 
 Typically when we think of a data use agreement (DUA) we think of a contractual document typically drafted in conjunction with an external partner to facilitate data sharing. It usually covers the terms for how someone is allowed to use data, considering things like access controls, research participant privacy, and data destruction rules [@geraghty_formalize_nodate].
 
@@ -107,7 +107,7 @@ Ideas of content to include in a DUA are included in Figure \@ref(fig:fig7-5).
 |--------|-----------|
 |Crystal Lewis | Example of content to include in an internal data use agreement ^[https://docs.google.com/document/d/1fCFBULZeCBRyt0v2k4-Jb_9zBrk9En29]|
 
-### Style Guide {#styleshort}
+### Style guide {#styleshort}
 
 A style guide is a set of standards for the formatting of information [@noauthor_style_2023]. It improves consistency and a shared understanding within and across files and projects. This document includes conventions for procedures such as variable naming, variable value coding, file naming, versioning, file structure, and even coding practices. It can be created in one large document or separate files for each type of procedure. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there are so many recommended practices to cover, I have given this document its own chapter. See Chapter \@ref(style) for more information.
 
@@ -119,21 +119,21 @@ A style guide is a set of standards for the formatting of information [@noauthor
 |Strategic Data Project| Example style guide ^[https://hwpi.harvard.edu/files/sdp/files/sdp-toolkit-coding-style-guide.pdf]|
 
 
-## Project Level
+## Project level
 
 Project-level documentation is where all descriptive information about your project is contained, as well as any planning decisions and process documentation specifically related to your project. Again, while most of these documents are created in the documentation phase, some documents such as the data management plan (started before your project is funded), checklists and meeting notes (started during the planning phase), or a participant flow diagram (started after data is collected) will begin at other points throughout the cycle.
 
-### Data Management Plan
+### Data management plan
 
-This is the first project-level document that will be created in your research project life cycle. See Chapter \@ref(dmp) to review details about this document. The only other note to mention here is that your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
+As discussed in Chapter \@ref(dmp), if your project is federally funded it is likely that a data management plan was required. This project-level document is created in the DMP phase, long before a project begins. However, your DMP can continue to be modified throughout your entire study. If any major changes are made, it may be helpful to reach out to your program officer to keep them in the loop as well.
 
 ### Checklists and meeting notes
 
-Checklists, as discussed in Chapter \@ref(plan), are documents that are created (or copied from existing sources) and reviewed during the planning phase. Using checklists allows your team to build a cohesive understanding for how data will be managed throughout your entire project. While reviewing checklists, meeting notes should be to document what decisions are made, who made them, and why. Even beyond the planning phase though, all meeting decisions and discussions should be documented in a meeting notes document.
+Checklists, as discussed in Chapter \@ref(plan), are documents that are created (or copied from existing sources) and reviewed during the planning phase. Using checklists facilitates discussion and allows your team to build a cohesive understanding for how data will be managed throughout your entire project. As you work through the checklists, all decisions made should be documented in meeting notes. After the planning phase is complete, decisions should be formally documented in applicable team, project, data, or variable-level documents (e.g. research protocol, SOPs, style guide, or roles and responsibilities documents). Even beyond the planning phase though, all meeting decisions and discussions should continue to be documented in meeting notes and used to update formal documentation as needed.
 
 ### Roles and responsibilities document
 
-Using the checklists reviewed during the planning phase, your team should begin assigning roles and responsibilities for your project. In the planning and documentation phase, those designations should be formally documented and shared with the team. In Chapter \@ref(#roles) we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
+Using the checklists reviewed during the planning phase, your team should begin assigning roles and responsibilities for your project. In the planning and documentation phase, those designations should be formally documented and shared with the team. In Chapter \@ref(roles) we reviewed ways to structure this document. Once this document is created, make sure to store it in a central location for easy referral and update the document as needed.
 
 **Templates and Resources**
 
@@ -142,9 +142,9 @@ Using the checklists reviewed during the planning phase, your team should begin 
 |Crystal Lewis | Three roles and responsibilities templates ^[https://drive.google.com/drive/folders/1nhDgOVfESrZLYfvcrTU_I2dnsOtq3TkV]|
 
 
-### Research Protocol {#protocol}
+### Research protocol {#protocol}
 
-The research protocol is a comprehensive project plan document that describes the what, who, when, where, and how of your study. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig7-6).
+The research protocol is a comprehensive project plan document that describes the what, who, when, where, and how of your study. Many of the decisions made in your data management plan and while reviewing your planning checklists will be summarized in this document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig7-6).
 
 <div class="figure" style="text-align: center">
 <img src="img/protocol2.PNG" alt="Common research protocol elements" width="100%" />
@@ -163,7 +163,7 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 |University of Missouri| Protocol template ^[https://docs.research.missouri.edu/human_subjects/templates/Social_Behavioral_Educational_Protocol_Template.docx]|
 |University of Washington| Protocol checklist ^[https://depts.washington.edu/wildfire/resources/protckl.pdf]|
 
-### Supplemental Documents {#supplement}
+### Supplemental documents {#supplement}
 
 There is a series of documents, that while they can absolutely be standalone documents, I am calling supplemental documents here because they can be added to your research protocol as an addendum at any point to further clarify specifics of your project.
 
@@ -176,7 +176,7 @@ The first supplemental document that I highly recommend creating is a visual rep
 <p class="caption">(\#fig:fig7-7)Example data collection timeline</p>
 </div>
 
-2. Participant Flow Diagram
+2. Participant flow diagram
 
 A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. These diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams, [@schulz_consort_2010] as seen in Figure \@ref(fig:fig7-8) [@noauthor_consort_nodate]. They provide a means to understand how participants are randomized and assigned to treatment groups. As you can imagine though, this diagram cannot be created until at least one wave of data has been collected, and must be updated as more waves are collected. Your participant tracking database, which we will discuss in Chapter \@ref(track), will inform the creation of this diagram.
 
@@ -198,7 +198,7 @@ You can also include flowcharts of how participants were provided or assigned to
 <p class="caption">(\#fig:fig7-9)Flowchart of an ECLS-K:2011 kindergarten assessment</p>
 </div>
 
-5. Consent Forms
+5. Consent forms
 
 [Consent forms](#consent) can also be added as an addendum to research protocols to give further insight into what information was provided to study participants.
 
@@ -206,13 +206,13 @@ You can also include flowcharts of how participants were provided or assigned to
 
 You may also choose to attach any publications that have come from your data as an addendum to your protocol.
 
-### Standard Operating Procedures {#sop}
+### Standard operating procedures {#sop}
 
 While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision making processes. If you recall from Chapter \@ref(plan), every step that we added to a data collection workflow is then added to an SOP and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (i.e., survey, assessments, observations), you should also have SOPs for any other decisions or processes that need to be repeated in a reproducible manner or followed in a specific way to maintain compliance [@hollmann_ten_2020]. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
 
 <div class="figure" style="text-align: center">
-<img src="img/sopchecks.PNG" alt="Examples of processes or decisions to develop an SOP for" width="100%" />
-<p class="caption">(\#fig:fig7-10)Examples of processes or decisions to develop an SOP for</p>
+<img src="img/sopchecks.PNG" alt="Examples of data management processes or decisions to develop an SOP for" width="100%" />
+<p class="caption">(\#fig:fig7-10)Examples of data management processes or decisions to develop an SOP for</p>
 </div>
 
 In addition to giving staff instruction on how to perform tasks, SOPs also create transparency in practices, allow for continuity when staff turnover or go out on leave, create standardization in procedures, and last, because an SOP should include versioning information, they allow you to accurately report changes in procedures throughout the project. You will want to create a template that is used consistently across all procedures, by all staff who build SOPs. 
@@ -302,7 +302,7 @@ These changelogs will most likely not be created until the data capture and data
 |Crystal Lewis|Changelog template ^[https://docs.google.com/spreadsheets/d/1fVFv_QOk90NmDW_9R_h9UnvOY79TbcPOub-dL9zqDuo]|
 
 
-### Data Cleaning Plan
+### Data cleaning plan
 
 A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset you plan to collect (e.g., student survey, student assessment, teacher survey, district student demographic data). Because this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
 

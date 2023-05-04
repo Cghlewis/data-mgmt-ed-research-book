@@ -16,13 +16,13 @@ Planning the day to day management of your project data has many other benefits 
 
 ## Goals of planning
 
-This planning phase should include a series of regular meetings with core decision makers. While there are many aspects of a research study to plan that should also occur during this time (e.g., planning an intervention, planning analyses), here we are focusing on planning for data management (including data collection). Most likely you will want the PI/Co-PIs in attendance along with core project staff and your data management team. During this planning time, there are several goals to keep in mind.
+This planning phase should include a series of regular meetings with core decision makers. During this data management planning time there are several goals to keep in mind.
 
-1. To finalize project goals laid out in a grant proposal (i.e. what data will be collected)
-1. To finalize a timeline for goals (i.e. when is data collected)
-1. To lay out specific tasks needed to accomplish goals (i.e. how will data be collected, stored, managed)
-1. To assign roles and responsibilities (i.e. who will be responsible for tasks)
-1. To make decisions around task management and communication (i.e. how will tasks be monitored and communication tracked)
+1. Flesh out project goals laid out in a grant proposal (i.e. what data needs to be collected to answer our research questions)
+1. Finalize a timeline for goals (i.e. when will data be collected)
+1. Lay out specific tasks needed to accomplish goals and come to a consensus regarding all necessary data management decisions (i.e. how will data be collected, stored, managed, and shared)
+1. Assign roles and responsibilities (i.e. who will be responsible for tasks)
+1. Make decisions around task management and communication (i.e. how will tasks be monitored and communication tracked)
 
 Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation in the next phase. All meeting notes can be stored in a central location such as a planning folder with notes ordered by date or in a running document. 
 
@@ -30,7 +30,7 @@ At the end of the planning period, the team should have a clear plan for what th
 
 ## Planning checklists {#checklist}
 
-Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are some sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project.
+Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are some sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project. 
 
 **Planning checklists**
 
@@ -122,7 +122,7 @@ knitr::include_graphics("img/gantt.PNG")
 ```
 
 
-While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all steps into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your SOPs and diagrams in other ways for reference. We will talk more about creating SOPs in Chapter \@ref(sop).
+While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all tasks (and all final decisions associated with those tasks) into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your SOPs and diagrams in other ways for reference. We will talk more about creating SOPs in Chapter \@ref(document).
 
 
 ### Benefits to visualizing a workflow

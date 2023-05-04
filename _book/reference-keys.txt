@@ -122,7 +122,6 @@ project-coordinator
 data-manager
 project-team-members
 other-roles
-goals-of-assigning-roles-and-responsibilities
 assigning-roles-and-responsibilities
 roledoc
 data-management-role
