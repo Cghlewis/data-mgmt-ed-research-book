@@ -180,12 +180,12 @@ Figure 9.2: Participant database built using a relational model
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user.</p>
 <p>Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by <code>tch_id</code> and then pulls the relevant teacher and student information from both tables:</p>
 <p><code>SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade</code><br><code>FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id</code><br><code>ORDER BY t_l_name, t_f_name, s_l_name, s_f_name</code></p>
-<div id="syfgxzpgev" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mpqhequasm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#syfgxzpgev .gt_table {
+#mpqhequasm .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -210,7 +210,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-left-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_heading {
+#mpqhequasm .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -222,7 +222,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_title {
+#mpqhequasm .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -234,7 +234,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-width: 0;
 }
 
-#syfgxzpgev .gt_subtitle {
+#mpqhequasm .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -246,13 +246,13 @@ If we want to see a table with both student and teacher information, we can simp
   border-top-width: 0;
 }
 
-#syfgxzpgev .gt_bottom_border {
+#mpqhequasm .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_col_headings {
+#mpqhequasm .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -267,7 +267,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_col_heading {
+#mpqhequasm .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -287,7 +287,7 @@ If we want to see a table with both student and teacher information, we can simp
   overflow-x: hidden;
 }
 
-#syfgxzpgev .gt_column_spanner_outer {
+#mpqhequasm .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -299,15 +299,15 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 4px;
 }
 
-#syfgxzpgev .gt_column_spanner_outer:first-child {
+#mpqhequasm .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#syfgxzpgev .gt_column_spanner_outer:last-child {
+#mpqhequasm .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#syfgxzpgev .gt_column_spanner {
+#mpqhequasm .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -319,7 +319,7 @@ If we want to see a table with both student and teacher information, we can simp
   width: 100%;
 }
 
-#syfgxzpgev .gt_group_heading {
+#mpqhequasm .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -344,7 +344,7 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: middle;
 }
 
-#syfgxzpgev .gt_empty_group_heading {
+#mpqhequasm .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -359,15 +359,15 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: middle;
 }
 
-#syfgxzpgev .gt_from_md > :first-child {
+#mpqhequasm .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#syfgxzpgev .gt_from_md > :last-child {
+#mpqhequasm .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#syfgxzpgev .gt_row {
+#mpqhequasm .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -386,7 +386,7 @@ If we want to see a table with both student and teacher information, we can simp
   overflow-x: hidden;
 }
 
-#syfgxzpgev .gt_stub {
+#mpqhequasm .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,7 +399,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#syfgxzpgev .gt_stub_row_group {
+#mpqhequasm .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -413,11 +413,11 @@ If we want to see a table with both student and teacher information, we can simp
   vertical-align: top;
 }
 
-#syfgxzpgev .gt_row_group_first td {
+#mpqhequasm .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#syfgxzpgev .gt_summary_row {
+#mpqhequasm .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -427,16 +427,16 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#syfgxzpgev .gt_first_summary_row {
+#mpqhequasm .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_first_summary_row.thick {
+#mpqhequasm .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#syfgxzpgev .gt_last_summary_row {
+#mpqhequasm .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -446,7 +446,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_grand_summary_row {
+#mpqhequasm .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -456,7 +456,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#syfgxzpgev .gt_first_grand_summary_row {
+#mpqhequasm .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -466,11 +466,11 @@ If we want to see a table with both student and teacher information, we can simp
   border-top-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_striped {
+#mpqhequasm .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#syfgxzpgev .gt_table_body {
+#mpqhequasm .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -479,7 +479,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-bottom-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_footnotes {
+#mpqhequasm .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -493,7 +493,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_footnote {
+#mpqhequasm .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -502,7 +502,7 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#syfgxzpgev .gt_sourcenotes {
+#mpqhequasm .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -516,7 +516,7 @@ If we want to see a table with both student and teacher information, we can simp
   border-right-color: #D3D3D3;
 }
 
-#syfgxzpgev .gt_sourcenote {
+#mpqhequasm .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -524,36 +524,36 @@ If we want to see a table with both student and teacher information, we can simp
   padding-right: 5px;
 }
 
-#syfgxzpgev .gt_left {
+#mpqhequasm .gt_left {
   text-align: left;
 }
 
-#syfgxzpgev .gt_center {
+#mpqhequasm .gt_center {
   text-align: center;
 }
 
-#syfgxzpgev .gt_right {
+#mpqhequasm .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#syfgxzpgev .gt_font_normal {
+#mpqhequasm .gt_font_normal {
   font-weight: normal;
 }
 
-#syfgxzpgev .gt_font_bold {
+#mpqhequasm .gt_font_bold {
   font-weight: bold;
 }
 
-#syfgxzpgev .gt_font_italic {
+#mpqhequasm .gt_font_italic {
   font-style: italic;
 }
 
-#syfgxzpgev .gt_super {
+#mpqhequasm .gt_super {
   font-size: 65%;
 }
 
-#syfgxzpgev .gt_two_val_uncert {
+#mpqhequasm .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -562,31 +562,31 @@ If we want to see a table with both student and teacher information, we can simp
   margin-left: 0.1em;
 }
 
-#syfgxzpgev .gt_footnote_marks {
+#mpqhequasm .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#syfgxzpgev .gt_asterisk {
+#mpqhequasm .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#syfgxzpgev .gt_slash_mark {
+#mpqhequasm .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#syfgxzpgev .gt_fraction_numerator {
+#mpqhequasm .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#syfgxzpgev .gt_fraction_denominator {
+#mpqhequasm .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
