@@ -7,10 +7,10 @@
 
 A style guide provides general agreed upon rules for the formatting of information [@noauthor_style_2023]. As mentioned in the previous Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
-The benefits for creating style guides and using them consistently include:
+Style guides create standardization within and across projects. The benefits of using them consistently include:
 
-- Creating standardization (within and across projects)
-- Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to humans and computers.
+- Creating interoperability: This allows data to easily be combined or compared across forms or time.
+- Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to both humans and computers.
 - Increasing reproducibility: If the organization of your file paths, file naming, or variable naming constantly change it undermines the reproducibility of any data management or analysis code you have written.
 
 Style guides can be created for individual projects, but they can also be created at the team level, to be applied across all projects. Most importantly, they should be created before a project kicks off so you can implement them as soon as your project begins. If you do not have a team-wide style guide already created, you most likely will want to create a project-level style guide during your planning phase so that you can begin setting up your directory structures and file naming standards before you start creating and saving project-related files. 
@@ -58,7 +58,7 @@ When deciding how to structure your project directories (the organization of you
 - When creating your folder structure, strike a balance between a deep and shallow structure
   - Too shallow leads to too many files in one folder which is difficult to sort through
   - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
-    - An example file path with 69 characters `W:\team\project\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv`
+    - An example file path with 69 characters `W:\team\projecta\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv`
   - Examples of file path limits:  
     - SharePoint/OneDrive path limit is 400 characters [@microsoft_restrictions_nodate]
     - Windows path limit is 260 characters [@ashcraft_naming_2022]
@@ -127,7 +127,7 @@ When deciding how to structure your project directories (the organization of you
 27          ¦--participant-database     
 28          ¦   °--archive              
 29          ¦       °--changelog.txt    
-30          °--parent_consents          
+30          °--parent-consents          
 ```
 
 ## File naming
@@ -232,7 +232,7 @@ This style guide will be a necessary document to have before you start to create
   - If a variable is a part of a scale, consider using an abbreviation of that scale plus the scale item number (`anx1`, `anx2`, `anx3`)
     - Not only does this allow you to easily associate an item with a scale, but it also allows you to programatically select and manipulate scale items (for example, sum all items that start with "anx")
 - If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.
-- Be consistent with delimiters and capitalization. Follow an existing naming convention.
+- Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
   - Snake case (scale_sum) – preferred method for variable names
   - Kebab case (scale-sum) – don’t use for variable names
   - Train case (Scale-Sum) – don’t use for variable names
@@ -320,10 +320,26 @@ First, if you are using a pre-existing measure, assign values and labels in the 
   - Do: Assign "Strongly Disagree" = 1; "Disagree" = 2; "Agree" = 3; "Strongly Agree" = 4  
   - Don't: Assign "Strongly Disagree" = 1; "Disagree" = 3; "Agree" = 4; "Strongly Agree" = 2
     - Unless a pre-existing measure tells you to code variables in a different way
-- Define missing values
-    - You may choose to leave all missing values as blank, NA, or NULL and that is okay
-    - However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties
-      - The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (e.g., numeric missing values for numeric variables) [@tourangeau_early_2015]
+    
+## Missing Value Coding
+
+There is little agreement about how missing data should be coded [@white_nine_2013]. There are essentially two options.
+
+1. You can choose to leave all missing values as blank.
+    - Benefits of this are that there is no chance of extreme values being mistaken as actual values
+    - The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry [@broman_data_2018]
+  
+2. The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
+    - The benefits of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., -97 = Not Applicable, -98 = Skipped). Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.
+    - The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)
+
+Whichever method you choose, ultimately just make sure to adhere to these guidelines:
+
+- If you decide to fill with defined missing values, use values that match your variable type (e.g., numeric missing values for numeric variables) [@tourangeau_early_2015; @icpsr_guide_nodate]
+  - I will say that there is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character (or string) column. If you do not care about the different types of missingness, you could easily then choose to change all missing values to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.
+- If you use numeric values, use extreme values that do not actually occur in your data
+- Use your values consistently within and across variables
+
 
 <div class="figure" style="text-align: center">
 <img src="img/missing.PNG" alt="Missing values assigned in the ECLS-K:2011 data file" width="100%" />

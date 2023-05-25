@@ -84,7 +84,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 4. All cell values should be explicit. This means all cells should be filled in with a physical value. 
    - Consider why a cell value is empty
-     - If a value is actually missing, it can be helpful to fill these cells with a designated missing value (e.g., `NA`) to show that the cell was not left blank unintentionally  
+     - If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Chapter \@ref(style) for ideas.
      - If a cell is left empty because it is "implied" to be the same value as above, the cells should be filled with the actual data  
      - If the value for the cell is "implied" to be 0, fill the cells with 0  
 

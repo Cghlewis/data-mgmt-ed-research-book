@@ -19,15 +19,15 @@ knitr::include_graphics("img/bad_data_collect.PNG")
 
 ## Planning
 
-Planning for data collection begins in the Data Management Plan (see Chapter \@ref(dmp)) phase when you first choose measures you plan to collect as well as the instruments you plan to use to collect those measures. Then, during the planning and documentation phase, you can begin to really flesh out the exact items you plan to collect, how those items will be recorded (e.g., type, name, values), and how they will be collected (e.g., online survey, paper form). And last in the create instruments phase, you start to choose tools to build your instruments in and begin constructing those instruments. As shown in Figure \@ref(fig:fig10-1) above, you'll see that creating data collection instruments is typically a collaborative effort between the project management and data management team members. 
+Planning for data collection begins in the Data Management Plan (see Chapter \@ref(dmp)) phase when you first choose measures you plan to collect as well as the instruments you plan to use to collect those measures. Then, during the planning and documentation phase, you can begin to really flesh out the exact items you plan to collect, how those items will be recorded (e.g., type, name, values), and how they will be collected (e.g., online survey, paper form). And last, in the create instruments phase, you begin choosing tools to build your instruments in and start constructing those instruments. As shown in Figure \@ref(fig:fig10-1) above, you'll see that creating data collection instruments is typically a collaborative effort between the project management and data management team members. 
 
-However, planning includes not only carefully designing your data collection instruments, but it also includes considering the data collection and handling process itself. While the project management team is typically in charge of overseeing data collection, there are still best practices that can be implemented during this time to collect better data. In this chapter we will not only review best practices for building your data collection instruments, we will also discuss our two other lines of defense which include data management in the field and implementing ongoing data checks to catch errors early on [@dime_analytics_data_nodate]. 
+However, planning includes not only carefully designing your data collection instruments, it also includes considering the data collection and handling process itself. While the project management team is typically in charge of overseeing data collection, there are still best practices that can be implemented during this time to collect better data. In this chapter we will not only review best practices for building your data collection instruments, we will also discuss our two other lines of defense against bad data which include data management in the field and implementing ongoing data checks to catch errors early on [@dime_analytics_data_nodate]. 
 
 Before we dive into planning for building data collection instruments, it's important to first review the ethical and legal considerations of your data collection effort. When working with human subjects it is likely that the Institutional Review Board (IRB) will need to review and approve all of your data collection instruments as well as any agreement forms that will be collected as part of your study. Our next section will provide an overview of the IRB and its requirements as well as best practices for creating agreement forms for participants and partners.
 
 ## Institutional Review Board
 
-The IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. More likely than not, if you are conducting education research with human participants you will have some interaction and oversight with the IRB. Before reviewing potential requirements, lets review the history of this administrative body.
+The IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from the IRB. Before reviewing potential requirements, lets review the history of this administrative body.
 
 ### Background
 
@@ -35,13 +35,13 @@ In 1974 the IRB was established as part of the National Research Act in response
 
 1. Respect for persons
     - This included both protecting autonomy of participants by acquiring consent as well as providing a plan to protect participant privacy
-      - In practice this meant acquiring consent in a way that ensures participants can comprehend what is being asked of them, understand that their participation is voluntary, and understand the plan to protect their privacy
+      - In practice this means acquiring consent in a way that ensures participants can comprehend what is being asked of them, ensuring that they understand that their participation is voluntary, and ensuring that they understand the plan to protect their privacy
 2. Beneficence
     - This involved maximizing good and minimizing harm in the study, for both participants and society at large
-      - In practice this meant taking time to assess risk and benefits of your study for both the intervention itself as well as the data collection efforts (e.g., how burdensome is the survey)
+      - In practice this means taking time to assess risk and benefits of your study for both the intervention itself as well as the data collection efforts (e.g., how burdensome is the survey)
 3. Justice 
-    - This included providing additional care and consideration when working with vulnerable populations (e.g., children, prisoners), making sure your practices are non-exploitative and there is fair distribution of costs and benefits across all participants
-      - In practice this involved fairness in the selection of participants
+    - This included providing additional care and consideration when working with subjects who are vulnerable to coercion or undue influence (e.g., children, prisoners), as well as making sure your practices are non-exploitative and that there is fair distribution of costs and benefits across all participants
+      - In practice this involves fairness in the selection of participants
 
 Heavily influenced by the Belmont Report, in 1991 the Federal Policy for the Protection of Human Subjects was published, establishing core procedures for human subject protections. The policy, 45 CFR part 46 [@office_for_human_research_protections_45_2016], included four subparts. Subpart A, known as the "Common Rule" for the 15 federal departments and agencies which codified the policy in separate regulations, provided a set of protections for human subjects research including informed consent, review by an IRB, and compliance monitoring [@national_institute_of_justice_common_2007; @office_for_human_research_federal_2009].
 
@@ -122,7 +122,7 @@ While creating your consent is very important to consider how you want to gain c
 2. Have participant's consent to data sharing at the same time you provide the research study consent, but provide a separate consent form for the purposes of public data sharing.
 3. Have participant's consent to data sharing on a separate consent form, at a later time, after research activities are completed. Obtaining consent this way ensures the participant's are fully aware of the data collected from them and can make an informed decision about the future of that data. 
 
-A limitation of using method 1, as discussed by Gilmore, et al. [-@gilmore_practical_2018], is that if a participant is uncomfortable with their data being publicly shared, you will then also loose them as a study participant. So method 2 or 3 may be your best option. If you choose to go with method 2 or 3, it is very important that you not only track your participant study consent status in your [tracking database](#tracking) (as discussed in Chapter \@ref(track)), but that you also add a field to track the consent status for data sharing so that you only publicly share data for those that have given you permission to do so.
+A limitation of using method 1, as discussed by Gilmore, et al. [-@gilmore_practical_2018], is that if a participant is uncomfortable with their data being publicly shared, you will then also loose them as a study participant. So method 2 or 3 may be your best option. If you choose to go with method 2 or 3, it is very important that you not only track your participant study consent status in your tracking database (as discussed in Chapter \@ref(track)), but that you also add a field to track the consent status for data sharing so that you only publicly share data for those that have given you permission to do so.
 
 @meyer_practical_2018 provides some general best practices to consider when adding language about public data sharing to a consent form.
 
@@ -140,7 +140,7 @@ If your study involves participants under the age of 18, you may also be require
 
 #### Collecting
 
-Last, many institutions have started collecting electronic consent rather than paper consents, especially with a rise in remote data collection efforts. A few considerations for electronic consent include the following [@lee_considerations_2020]:
+Last, many institutions have started collecting electronic consent rather than paper consents, especially with a rise in remote data collection efforts. A few considerations for electronic consent include the following [@lee_considerations_2020; @malow_redcap-based_2021]:
 
 - Make sure your IRB approves this method
 - Use institution and IRB approved tools to collect consent (e.g., Qualtrics, DocuSign)
@@ -152,6 +152,7 @@ Last, many institutions have started collecting electronic consent rather than p
 |Source|Resource|
 |--------|-----------|
 |Holly Lane, Wilhemina van Dijk|Example parent consent ^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
+|Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet ^[https://osf.io/3czbx]
 |Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing ^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
 | J-PAL | Annontated informed consent checklist ^[https://www.povertyactionlab.org/sites/default/files/research-resources/rr_irb_annotated-informed-consent-checklist_0.pdf]|
 |University of Virginia| A collection of consent and assent templates ^[https://research.virginia.edu/irb-sbs/consent-templates]|

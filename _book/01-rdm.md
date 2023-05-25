@@ -99,9 +99,9 @@ Before moving forward in this book it is important to have a shared understandin
 |Append| Stacking datasets on top of each other (matching variables).|
 |Archive| The transfer of data to a facility, such as a repository, that preserves and stores data long-term.|
 |Attrition | The loss of study units from the sample, often seen in longitudinal studies|
-| Clean data (processed data)| Data that has been manipulated or modified.|
-| Cohort | A group of participants recruited into a study at the same time.|
-|Confidential data (pseuodonymization, coded data, indirectly identifiable)|Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data.|
+| =Clean data (processed data)| Data that has been manipulated or modified.|
+|Cohort | A group of participants recruited into a study at the same time.|
+|Confidential data (pseuodonymization, coded data, indirectly identifiable)|The status of this data is protected. Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data.|
 |Confidentiality|Confidentiality concerns data, ensuring participants agree to how their private and identifable information will be managed and disseminated.|
 |Control (business as usual)|The individual or group does not receive the intervention.|
 |Cross-sectional|Data is collected on participants for a single time point.|
@@ -111,20 +111,23 @@ Before moving forward in this book it is important to have a shared understandin
 |Dataset (dataframe, spreadsheet)|A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (ex: teacher dataset, student dataset).|
 |De-identified data (anonymized data)|Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists). |
 |Derived data|Data created through transformations of existing data.|
-|Directory (file structure)|A cataloging structure for files and folders on your computer.|
+|Direct identifiers (PII, PHI)|These identifiers can directly identify a participant and should always be removed from research study data. There should be no need to keep these identifiers for analysis (i.e. name, email, address).|
+|Directory (file structure, file tree)|A cataloging structure for files and folders on your computer.|
 |Experimental data|Data collected from a study where researchers randomly introduce an intervention and study the effects.|
 |Extant data|Existing data sources created from external to the research team/study.|
 |File formats|Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav).|
 |Identifiable data|Data that includes personally identifiable information.|
+|Indirect identifiers|Even though these identifiers are not necessarily uniquely tied to one individual (i.e., birthdate or place of birth), if combined, this information could indirectly identify a participant. Therefore this information should be managed before publicly sharing data.|
 |Longitudinal|Data is collected on participants over a period of time.|
 |Merge (join, link)|Combining datasets together in a side by side manner (matching on an identifier).|
 |Missing data|Occurs when there is no data stored in a variable for a particular observation/respondent.|
 |Observational data|Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention. This includes many formats that education researchers collect data with (ex: survey, observation, assessment).|
 |Participant database (study roster, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking)|This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.|
 |Path (file path)|A string of characters used to locate files in your directory system.|
-|PII|Personally identifiable information is protected information that can directly or indirectly identify a study participant. It includes but is not limited to name, social security number, email, birthdate, district or school name.|
+|Personally identifiable information (PII, PHI)| This includes direct information (i.e. name and email), as well as indirect information that, if combined with other variables, could identify a participant (i.e., full birthdate and county of residence). Under FERPA, additional PII, such as a district or school ID, should also be removed. Protected health identifiers (PHI) is a similar protected category of information. There are 18 HIPAA protected health identifiers that should be removed from data in order to meet the Safe Harbor de-identification method (i.e., name, email, address). 
 |Primary data (original data)|First hand data that is generated/collected by the research team as part of the research study.|
 |Privacy|Privacy concerns people, ensuring they are given control to the access of themselves and their information.|
+|Private data| Highly restricted data with limited access (i.e. passwords)|
 |Qualitative data|Non-numeric data typically made up of text, images, video, or other artifacts.|
 |Quantitative data|Numerical data that can be analyzed with statistical methods.|
 |Randomized controlled trial (RCT)|A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized.|
@@ -133,6 +136,7 @@ Before moving forward in this book it is important to have a shared understandin
 |Reproducible|Being able to produce the same results using the same materials and procedures.|
 |Research|The Common Rule definition of research is a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.|
 |Secondary data (extant data)|Existing data generated/collected by external organizations such as governments at an earlier point in time.|
+|Sensitive data| Private information that could cause harm and should be protected from unwarranted disclosure|
 |Simulation data|Data generated through imitations of a real-world process using computer models.|
 |Standardization|Developing a set of agreed upon technical standards and applying them within and across all research projects.|
 |Study|a single funded research project resulting in one more more datasets to be used to answer a research question.|

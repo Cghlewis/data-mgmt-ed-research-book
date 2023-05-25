@@ -85,8 +85,18 @@ Data related topics to consider adding to your onboarding and offboarding checkl
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Sample data topics to add to an onboarding checklist ^[https://docs.google.com/document/d/1W57cYuYyiqltQNXUITP-jVIf84jao4Ef]|
+|Crystal Lewis | Sample data topics to add to an onboarding checklist ^[https://docs.google.com/document/d/1xyU5Q0uUD-PqRKRmMJKpD9lKaGQI6pjs]|
 |Crystal Lewis | Sample data topics to add to an offboarding checklist ^[https://docs.google.com/document/d/1W57cYuYyiqltQNXUITP-jVIf84jao4Ef]|
+
+### Data Inventory
+
+A data inventory maps all data sources collected by the research team [@salfen_building_2018]. As a team grows, the number of data sources typically expands as well. It can be very helpful to keep an inventory of what data sources are available for team members to use, as well as details about those data sources.
+
+-   Project associated with each data source
+-   Dates that each data sources was collected
+-   Storage location of each data source
+-   Details about each dataset (what the dataset contains, how it is organized, what questions can be answered with the data)
+-   How data sources are related
 
 ### Data use agreement {#dua}
 
@@ -151,7 +161,7 @@ The research protocol is a comprehensive project plan document that describes th
 <p class="caption">(\#fig:fig7-6)Common research protocol elements</p>
 </div>
 
-When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
+When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user, such as known limitations in the data. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
 
 **Template and Resources**
 
@@ -353,8 +363,12 @@ As you build your data dictionary, consider the following:
     - If your items come from an existing scale, does your value coding (the numeric values assigned to response options) align with the coding laid out in the scale documentation? 
     - If your items do not come from an existing scale, does your value coding align with the requirements in your style guide? Are there any field standards that dictate how an items values should be coded?  
   - Items
-    - What additional items will make up your final dataset (it could be items that you plan to add to the data after it is collected, e.g., treatment, unique identifiers, calculated variables)?  
-    - What items should be removed before public data sharing (i.e., [personally identifiable information](#))
+    - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
+      - Identifiers (unique ids)
+      - Grouping variables (treatment)
+      - Derived variables (mean scores, variable checks)
+      - Metadata (Variables that your tool collects such as IPAddress, completion, language)
+    - What items should be removed before public data sharing (i.e., personally identifiable information)
 
 For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig7-16) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
@@ -403,24 +417,25 @@ The process described in this section is a manual, time consuming process. This 
 |Source|Resource|
 |--------|-----------|
 |Crystal Lewis|Data dictionary template ^[https://docs.google.com/spreadsheets/d/1R-5TIUvAhJRDucVhq4dNg00RR1CG7uQ6MRhje0BBC20]|
+|REDCap|
 
 
 ### Codebook
 
-A codebook documents the contents, structure, and layout of a data file [@icpsr_guide_2011]. It enables the user to quickly ascertain some of the details about a dataset without ever opening the file. Unlike a data dictionary, a codebook is created **after** your data is collected and cleaned and its value lies in data interpretation and data validation. 
+Codebooks provide descriptive, variable-level information as well univariate summary statistics which allow users to understand the contents of a dataset without ever opening it. Unlike a data dictionary, a codebook is created **after** your data is collected and cleaned and its value lies in data interpretation and data validation. 
 
-The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset.
+The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset [@icpsr_guide_2011].
 
 <div class="figure" style="text-align: center">
 <img src="img/codebook.PNG" alt="Codebook content that overlaps and is unique to a data dictionary" width="90%" />
 <p class="caption">(\#fig:fig7-17)Codebook content that overlaps and is unique to a data dictionary</p>
 </div>
 
-Ultimately, you want to export a codebook that contains variable-level information like this document in Figure \@ref(fig:fig7-18) from the United States Department of Health and Human Services [-@united_states_department_of_health_and_human_services_study_2022].
+Figure \@ref(fig:fig7-18) is an example codebook from the United States Department of Health and Human Services [-@united_states_department_of_health_and_human_services_study_2022].
 
 <div class="figure" style="text-align: center">
-<img src="img/codebook2.PNG" alt="Example codebook content from the SCOPE Coach Survey" width="80%" />
-<p class="caption">(\#fig:fig7-18)Example codebook content from the SCOPE Coach Survey</p>
+<img src="img/codebook2.PNG" alt="Example codebook from the SCOPE Coach Survey" width="80%" />
+<p class="caption">(\#fig:fig7-18)Example codebook from the SCOPE Coach Survey</p>
 </div>
 
 In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data is out of range or unexpected values appear.

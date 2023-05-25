@@ -102,10 +102,10 @@ Figure 8.1: Style guide in the research project life cycle
 </p>
 </div>
 <p>A style guide provides general agreed upon rules for the formatting of information <span class="citation">(<a href="references.html#ref-noauthor_style_2023" role="doc-biblioref"><span>“Style Guide”</span> 2023</a>)</span>. As mentioned in the previous Chapter <a href="document.html#document">7</a>, style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.</p>
-<p>The benefits for creating style guides and using them consistently include:</p>
+<p>Style guides create standardization within and across projects. The benefits of using them consistently include:</p>
 <ul>
-<li>Creating standardization (within and across projects)</li>
-<li>Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to humans and computers.</li>
+<li>Creating interoperability: This allows data to easily be combined or compared across forms or time.</li>
+<li>Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to both humans and computers.</li>
 <li>Increasing reproducibility: If the organization of your file paths, file naming, or variable naming constantly change it undermines the reproducibility of any data management or analysis code you have written.</li>
 </ul>
 <p>Style guides can be created for individual projects, but they can also be created at the team level, to be applied across all projects. Most importantly, they should be created before a project kicks off so you can implement them as soon as your project begins. If you do not have a team-wide style guide already created, you most likely will want to create a project-level style guide during your planning phase so that you can begin setting up your directory structures and file naming standards before you start creating and saving project-related files.</p>
@@ -172,7 +172,7 @@ Figure 8.1: Style guide in the research project life cycle
 <li>Too shallow leads to too many files in one folder which is difficult to sort through</li>
 <li>Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
 <ul>
-<li>An example file path with 69 characters <code>W:\team\project\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv</code>
+<li>An example file path with 69 characters <code>W:\team\projecta\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv</code>
 </li>
 </ul>
 </li>
@@ -252,7 +252,7 @@ Figure 8.1: Style guide in the research project life cycle
 27          ¦--participant-database     
 28          ¦   °--archive              
 29          ¦       °--changelog.txt    
-30          °--parent_consents          </code></pre>
+30          °--parent-consents          </code></pre>
 </div>
 <div id="file-naming" class="section level2" number="8.3">
 <h2>
@@ -400,7 +400,7 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R</code></pre>
 </ul>
 </li>
 <li>If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.</li>
-<li>Be consistent with delimiters and capitalization. Follow an existing naming convention.
+<li>Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
 <ul>
 <li>Snake case (scale_sum) – preferred method for variable names</li>
 <li>Kebab case (scale-sum) – don’t use for variable names</li>
@@ -542,17 +542,37 @@ t_stress5</code></pre>
 </li>
 </ul>
 </li>
-<li>Define missing values
+</ul>
+</div>
+<div id="missing-value-coding" class="section level2" number="8.6">
+<h2>
+<span class="header-section-number">8.6</span> Missing Value Coding<a class="anchor" aria-label="anchor" href="#missing-value-coding"><i class="fas fa-link"></i></a>
+</h2>
+<p>There is little agreement about how missing data should be coded <span class="citation">(<a href="references.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>. There are essentially two options.</p>
+<ol style="list-style-type: decimal">
+<li>You can choose to leave all missing values as blank.
 <ul>
-<li>You may choose to leave all missing values as blank, NA, or NULL and that is okay</li>
-<li>However, you may care about the specific reason for missing data and need to consider defining missing values based on their properties
-<ul>
-<li>The key in this case is to use extreme values that do not actually occur in your data and to also use values that match your variable type (e.g., numeric missing values for numeric variables) <span class="citation">(<a href="references.html#ref-tourangeau_early_2015" role="doc-biblioref">Tourangeau 2015</a>)</span>
+<li>Benefits of this are that there is no chance of extreme values being mistaken as actual values</li>
+<li>The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry <span class="citation">(<a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>
 </li>
 </ul>
 </li>
+<li>The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
+<ul>
+<li>The benefits of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., -97 = Not Applicable, -98 = Skipped). Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.</li>
+<li>The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)</li>
 </ul>
 </li>
+</ol>
+<p>Whichever method you choose, ultimately just make sure to adhere to these guidelines:</p>
+<ul>
+<li>If you decide to fill with defined missing values, use values that match your variable type (e.g., numeric missing values for numeric variables) <span class="citation">(<a href="references.html#ref-tourangeau_early_2015" role="doc-biblioref">Tourangeau 2015</a>; <a href="references.html#ref-icpsr_guide_nodate" role="doc-biblioref">ICPSR n.d.a</a>)</span>
+<ul>
+<li>I will say that there is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character (or string) column. If you do not care about the different types of missingness, you could easily then choose to change all missing values to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.</li>
+</ul>
+</li>
+<li>If you use numeric values, use extreme values that do not actually occur in your data</li>
+<li>Use your values consistently within and across variables</li>
 </ul>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig8-3"></span>
@@ -561,9 +581,9 @@ Figure 8.3: Missing values assigned in the ECLS-K:2011 data file
 </p>
 </div>
 </div>
-<div id="coding" class="section level2" number="8.6">
+<div id="coding" class="section level2" number="8.7">
 <h2>
-<span class="header-section-number">8.6</span> Coding<a class="anchor" aria-label="anchor" href="#coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.7</span> Coding<a class="anchor" aria-label="anchor" href="#coding"><i class="fas fa-link"></i></a>
 </h2>
 <p>If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to google existing style guides in that language.</p>
 <ul>
@@ -627,7 +647,8 @@ Figure 8.3: Missing values assigned in the ECLS-K:2011 data file
 <a class="nav-link" href="#varname"><span class="header-section-number">8.4</span> Variable naming</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#time"><span class="header-section-number">8.4.1</span> Time</a></li></ul>
 </li>
 <li><a class="nav-link" href="#value-coding"><span class="header-section-number">8.5</span> Value Coding</a></li>
-<li><a class="nav-link" href="#coding"><span class="header-section-number">8.6</span> Coding</a></li>
+<li><a class="nav-link" href="#missing-value-coding"><span class="header-section-number">8.6</span> Missing Value Coding</a></li>
+<li><a class="nav-link" href="#coding"><span class="header-section-number">8.7</span> Coding</a></li>
 </ul>
 
       <div class="book-extra">
@@ -645,7 +666,7 @@ Figure 8.3: Missing values assigned in the ECLS-K:2011 data file
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-05-07.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-05-25.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
