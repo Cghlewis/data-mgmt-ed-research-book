@@ -345,10 +345,11 @@ This document should be structured similar to a dataset, with variable names in 
 Before you begin to build these dictionaries you will need to have the following:
 
 1. Your style guide already created: We will talk more about style guides in Chapter \@ref(style), but this document will provide standards for naming variables and coding response values.  
-2. Documentation for your measures: If you are collecting data using existing measures, you will want to collect any documentation on those measures such as technical documents or copies of instruments. You will want your documentation to provide information such as:  
-    - What items make up the measures/scales? What is the exact wording of the items?  
+2. Documentation for your measures: If you are collecting data using existing measures (i.e. existing scales, existing standardized assessments), you will want to collect any documentation on those measures such as technical documents or copies of instruments. You will want your documentation to provide information such as:  
+    - What items make up the measures/scales/assessment? What is the exact wording of the items?  
     - How are items coded? What are allowable values? 
-    - Are there any calculations/reverse coding needed?  
+    - Are there any calculations/scoring/reverse coding needed?  
+    - If items are entered into a scoring program and then exported, what variables are exported?
 
 You will then build one data dictionary for each instrument you plan to collect (e.g., student survey data dictionary, teacher survey data dictionary, student assessment data dictionary). All measures/items for each instrument will be included in the data dictionary. 
 
@@ -359,16 +360,17 @@ As you build your data dictionary, consider the following:
     - Are there any existing field standards that dictate how an item should be named?
   - Item wording
     - If your items come from an existing scale, does the item wording match the wording in the scale documentation? Do you plan to reword the item?
-  - Item value codes
+  - Item value codes for categorical items
     - If your items come from an existing scale, does your value coding (the numeric values assigned to response options) align with the coding laid out in the scale documentation? 
     - If your items do not come from an existing scale, does your value coding align with the requirements in your style guide? Are there any field standards that dictate how an items values should be coded?  
-  - Items
+  - Additional Items
     - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
       - Identifiers (unique ids)
       - Grouping variables (treatment)
-      - Derived variables (mean scores, variable checks)
+      - Derived variables
+        - This includes both variables your team derives (e.g., mean scores, reverse coded variables, variable checks) as well as variables derived from any scoring programs (e.g., percentile ranks, grade equivalent scores)
       - Metadata (Variables that your tool collects such as IPAddress, completion, language)
-    - What items should be removed before public data sharing (i.e., personally identifiable information)
+  - What items should be removed before public data sharing (i.e., personally identifiable information)
 
 For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig7-16) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
