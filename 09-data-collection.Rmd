@@ -179,12 +179,60 @@ Last, confidentiality agreements and non-disclosure agreements (NDAs) are other 
 |Wilhelmina van Dijk, Sara Hart | Example data sharing agreement ^[https://figshare.com/articles/preprint/Example_Data_Sharing_Agreement/14576049]|
 
 
-## General instrument creation considerations
+## Creating instruments
 
-With a solid understanding of the ethical and legal requirements needed to plan data collection, we are now ready to discuss best practices for creating data collection instruments.
+With a solid understanding of the ethical and legal requirements needed to plan data collection, we are now ready to discuss best practices for creating data collection instruments. Before diving into specific instruments, that are some general practices to review that apply to all instruments.
 
-## Electronic data collection instruments
+### Use your data dictionary
 
-## Paper data collection instruments
+As mentioned in Chapter \@ref(document), part of the planning process involves creating a data dictionary for every instrument you are going to collect. You should plan the exact question wording, how the variables will be named, their allowable values, and their types. Add every single variable for each instrument to these data dictionaries and then, before finalizing them, share them with your team to get feedback and revise as needed. Once consensus is reached, you are ready to begin creating your tools. 
+
+The first quality assurance practice you should implement during data collection is to use your data dictionary as your guide when building your data collection instruments. Remember that the data collected from your tools will ultimately produce your project datasets (e.g., data collected from a teacher survey will produce a teacher survey dataset), and your data dictionary is the linking key between those two items. Every primary item in your data dictionary needs to be added to your tool and collected in a way that accurately reflects what you've designated in your data dictionary. Last, if required, submit copies of your instruments to your IRB for approval.
+
+Once your tools are finalized, make sure to continue collecting data consistently for the entire project. Failing to collect your data consistently can make it difficult or impossible to compare outcomes. It is important to consistently measure things in the same way so you don't bias your results. The slightest change in item wording or response options can result in dramatic changes to outcomes [@icpsr_introduction_2022].
+
+As discussed in Chapter \@ref(style), this also includes applying consistent variable names, formats, and value codes across time and forms (e.g., Spanish version and English version of a survey) so that your data is interoperable. If gender is collected as a numeric variable in Time 1, make sure it continues to be a numeric variable in Time 2, with consistent value coding for every category. Failing to do so reduces your ability to physically combine data (i.e., you cannot append dissimilar variables).
+
+### Collect unique identifiers
+
+The other crucial consideration when creating any data collection tool is to collect unique identifiers in order to link data across time and measures. Whether you have participants enter a unique identifier into a form or you already have study ID linked to a form in some other way, just make sure you aren’t accidentally collecting anonymous data. 
+
+Collecting identifiers can be a complicated issue. It is a balancing act between protecting confidentiality and collecting the information you need to link your data. As a general rule you want to avoid collecting names as unique identifiers for the following reasons [@mckenzie_falsehoods_2010]:
+
+- To protect confidentiality we want to use names as little as possible on forms
+  - If they are used on forms, we want to remove them as soon as possible
+- Names are not unique
+  - If you do collect names, you'll want to ask for additional identifying information that when combined, make a participant unique (e.g., name and email)
+- Names change (e.g., someone gets married/divorced)
+- There is too much room for error
+  - If names are hand entered, there are endless issues with case sensitivity, spelling errors, special characters, spacing and so forth
+
+All of the above issues make it very difficult to ultimately link data over time. If you do collect names, you will still need to remove names during data processing and replace them with your unique study identifiers.
+
+A better plan is to either remove names entirely and collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above. We will discuss these methods in more detail below.
+
+> **Note** <br> <br>
+If your study collects anonymous data, many of the identifier concerns above do not apply to you. You will not collect unique identifiers and you will not be able to link individual data across forms or time. However, if you have randomized participants, say schools, you will still need an identifier for the randomization block/cluster built into your instrument (ex: sch_id) or you will not be able to cluster based on that information.
+
+### Electronic vs Paper
+
+There are general two ways to collect quantitative data, electronically or manually on paper. Electronic data collection could include using web-based software, or it could be data collected on an offline computer or tablet. On the other hand, manual data collection is collected on paper and then hand-entered into an electronic format during data capture. There are benefits and problems with each of these methods that we will now review.
+
+#### Electronic data collection
+
+Benefits
+  - 
+  
+Problems
+
+#### Manual data collection
+
+
+
+## Surveys
+
+## Assessments
+
+## Observations
 
 ## Interviews/focus groups
