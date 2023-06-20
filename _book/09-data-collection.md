@@ -7,28 +7,22 @@
 
 When collecting original data as part of your study (i.e., you are administering your own survey or assessment as opposed to using existing data), data management best practices should be interwoven throughout your data collection process. The number one way to ensure the integrity of your data is to spend time planning your data collection efforts. Not only does planning minimize errors, it also keeps your data secure, valid, and relieves future data cleaning headaches. 
 
-If you have ever created a data collection instrument and expected it to export data that looks like the image on the left (Figure \@ref(fig:fig10-2)), but instead you export data that looks like the image on the right, then you know what I mean. Collecting quality data doesn't just happen because you create an instrument, it takes careful consideration, structure, and planning on the part of the entire team.
+If you have ever created a data collection instrument and expected it to export data that looks like the image on the left (Figure \@ref(fig:fig10-2)), but instead you export data that looks like the image on the right, then you know what I mean. Collecting quality data doesn't just happen because you create an instrument, it takes careful consideration, structure, and care on the part of the entire team.
 
 <div class="figure" style="text-align: center">
 <img src="img/bad_data_collect.PNG" alt="A comparison of data collected without planning and data collected with planning" width="100%" />
 <p class="caption">(\#fig:fig10-2)A comparison of data collected without planning and data collected with planning</p>
 </div>
 
-## Planning data collection
 
-Planning for data collection begins in the Data Management Plan phase (see Chapter \@ref(dmp)) when you first choose measures to collect as well as the instruments you propose to use to collect those measures. Then, during the planning and documentation phases, you can begin to flesh out the exact items you will collect, how those items will be recorded (i.e., type, name, values), and how they will be collected (e.g., online survey, paper form). Last, in the create instruments phase, you begin choosing tools to build your instruments in and start constructing those instruments. As shown in Figure \@ref(fig:fig10-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. 
+## Quality assurance and control
 
-However, planning includes not only carefully designing your data collection instruments, it also includes considering the data collection and handling process itself [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. While the project management team is typically in charge of overseeing data collection, there are still best practices that can be implemented during this time to collect better data. 
-
-In this chapter we will review the following:
+In addition to planning data collection logistics (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arrive during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. As shown in Figure \@ref(fig:fig10-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
 
 1. Quality assurance practices that happen before data is collected
     - Best practices associated with designing and building your data collection instruments
 2. Quality control practices implemented during data collection 
-    - Managing data in the field
-    - Implementing ongoing data checks 
-    - Tracking data daily in our participant tracking database
-    - Collecting data consistently
+    - Best practices associated with managing and reviewing ongoing data collection
 
 Before we dive into collecting data, it's important to first review the ethical and legal considerations of your data collection effort. When working with human subjects it is likely that the Institutional Review Board (IRB) will need to review and approve all of your data collection instruments as well as any agreement forms that will be collected as part of your study. Our next section will provide an overview of the IRB and its requirements as well as best practices for creating agreement forms for participants and partners.
 
@@ -208,7 +202,7 @@ Last, confidentiality agreements and non-disclosure agreements (NDAs) are other 
 <p class="caption">(\#fig:fig10-4)Common education research data collection methods</p>
 </div>
 
-Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-4)). While you can certainly do your best to fix data errors during a data cleaning process, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and creating data collection tools in a way that produces accurate, valid, and reliable data. When creating your original data collection instruments, there are four phases to collecting quality data.
+Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-4)). While you can certainly do your best to fix data errors during a data cleaning process, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and creating data collection tools in a way that produces accurate, valid, and reliable data. When creating your original data collection instruments, there are four ways to collect higher quality data.
 
 1. Questionnaire design
 2. Implementing a series of pilot test
@@ -243,7 +237,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 	    - Are the response options ordered in a leading way?
 	  - Is there no one way to answer this question?
 	    - Are categories mutually exclusive and exhaustive [@icpsr_guide_nodate]?
-3. Consider data ethics in your instrument design [@kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_nodate; @narvaiz_data_nodate]
+3. Consider data ethics in your questionnaire design [@kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_nodate; @narvaiz_data_nodate]
     - Consider the why of each item and tie your questions to outcomes
         - Don't cause undue burden on participants by collecting more data just to have more data.
         - If collecting demographic information, provide an explanation of why that information is necessary and how it will be used in your research
@@ -275,10 +269,11 @@ Gathering feedback on your instruments is an integral part to the quality assura
 1. Gathering internal feedback on items
     - As discussed in Chapter \@ref(document), once all items for each instrument have been added to your data dictionary, have your team review the data dictionary and provide feedback
 2. Piloting an instrument for content
-    - Once the team has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population
+    - Once the team has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population and gather feedback
 3. Piloting the instrument for data related issues
-    - Here we are most interested in whether or not the data we are collecting will be accurate, comprehensive, and usable
-    - We will discuss this more below
+    - Once the instrument is created in your chosen data collection tool, share the instrument with your team for review
+    - Here we are most interested in whether or not the data we are collecting are accurate, comprehensive, and usable
+    - We will discuss this phase in greater detail below
 
 Last, as you move through the piloting phases, remember to update any changes not only in your instrument but also in your data dictionary and any other relevant documentation.
 	  
@@ -288,9 +283,9 @@ Last, as you move through the piloting phases, remember to update any changes no
 </div>
 
 
-### Data collection tools
+### Choose quality data collection tools
 
-Research teams may be restricted in how they collect their data for a variety of reasons including limited resources, research design, the population being studied, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, there are several things to consider.
+Once content piloting is completed, teams should be ready to begin building their instruments in their data collection tools (see Figure \@ref(fig:fig10-4)). Research teams may be restricted in the tools they use to collect their data for a variety of reasons including limited resources, research design, the population being studied, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, pick a tool that meets that meets the various needs of your project while also providing data quality and security controls. Things to consider when choosing a data collection tool are:
 
 1. Pick the tool that meets the needs of your project
     - Is crowdsourcing required? 
@@ -310,10 +305,10 @@ Research teams may be restricted in how they collect their data for a variety of
     - Will there be additional costs down the line (i.e., collecting data on paper means someone will need to hand enter the data later)?
 1. Data quality features
     - Does the tool allow you to set up data validation?
-    - Version control?
-    - Bot control?
+    - Does the tool have version control?
+    - Does the tool have features to deal with fraud/bots?
 
-While there are a variety of tool options (e.g., Qualtrics, REDCap, CloudResearch, MTurk, Google Forms, paper, website), in a nutshell when it comes to quantitative data, we are collecting data in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
+While there are a variety of tool options, in a nutshell when it comes to quantitative data, we are collecting data in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
 
 <div class="figure" style="text-align: center">
 <img src="img/collect_benefits.PNG" alt="Comparison of data collection tool benefits" width="100%" />
@@ -324,6 +319,15 @@ While there are a variety of tool options (e.g., Qualtrics, REDCap, CloudResearc
 If you choose to collect data in an electronic format, I highly recommend using a web-based tools that directly feeds into a shared database rather than through offline tools that store data on individual devices. Using a web-based tool, all data is stored remotely in the same database and can be easily downloaded or connected to at any time. No additional work is required. <br> <br>
 However, if collecting data on various tablets that are used in the field, if the forms are offline and cannot be later connected to a web-based form, then all data will be stored individually on each tablet. This not only may be less secure (e.g., a tablet becomes corrupted), it may also require additional data wrangling work including downloading data from each tablet to a secure storage location each day and then combining all files into a single dataset. If you use an electronic tool but your site does not have internet, consider using the many tools (e.g., Qualtrics or SurveyCTO) that allow you to collect data using their offline app and then upload that data back to the platform once you have an internet connection again.
 
+**Tool Comparison Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Michael Gibson, Wim Louw|Survey platform comparison^[https://www.povertyactionlab.org/resource/survey-programming]|
+|Washington State University Libraries|Software for sensitive data^[https://libguides.libraries.wsu.edu/rdmlibguide/ethics]|
+|Benjamin Douglas, et al. | Data quality in online human-subjects research comparison of tools^[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0279720]|
+
+
 ### Build with the end in mind
 
 Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_quality_nodate]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
@@ -332,7 +336,7 @@ The process for building your tools with the end in mind is fairly different for
 
 #### Electronic data collection
 
-The first thing you will want to do before building your tool is bring out your data dictionary. This data dictionary will be your guide as you build your instrument. Some tools, such as REDCap, provide the option to upload your data dictionary which can then be used to automatically create data collection forms as opposed to building them from scratch [@patridge_research_2018].
+The first thing you will want to do before building your tool is bring out your data dictionary. This data dictionary will be your guide as you build your instrument. Some tools, such as REDCap, provide the option to upload your data dictionary which can then be used to automate the creation of data collection forms as opposed to building them from scratch [@patridge_research_2018].
 
 However, if you are building your instrument manually, following the guidelines below will ensure you collect data that is easier to interpret and more usable, and it will also reduce the amount of time you will need to spend on future data cleaning [@lewis_how_2022]:
 
@@ -343,7 +347,6 @@ However, if you are building your instrument manually, following the guidelines 
 2. Code all values as they are in your data dictionary
     - For example, 1 = strongly agree, 2 = agree, 3 = disagree, 4 = strongly disagree
     - Many times your tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary
-    - In a tool such as Qualtrics you can do this using the “recode values” option
     - Again, participants will only see the text values but when you download your data, you will have the correct numeric values associated with each response option
     - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options
 3. Use data validation to reduce errors and missing data [@uk_data_service_quality_nodate]
@@ -355,7 +358,7 @@ However, if you are building your instrument manually, following the guidelines 
       - If duplicate responses are not allowed for a question (i.e., rank order), have options drop away after they are chosen
     - Response validation
       - Add a "forced response" option to variables that are absolutely necessary (e.g., unique identifier)
-        - However, adding forced responses to all questions can be both harmful to participants and produce bad data. If you add forced response options to non-essential questions, ensure that those questions allow participants to still opt-out.
+        - Do not add "forced response" to non-essential questions. Doing so can be both harmful to participants and produce bad data. If you add forced response options to non-essential questions, ensure that those questions allow participants to still opt-out.
       - For non-essential questions, add a "request response" option which notifies the respondent that they skipped a question and asks them if they still would like to move forward without responding
 4. Choose the right type and format for the item
     - Become familiar with the various questions types available in your tool (e.g., rank order, multiple choice - select all, multiple choice - select one, text box)
@@ -615,11 +618,13 @@ Failing to collect your data consistently has many consequences:
 Last, collecting data consistently also means measuring things in the same way over time or across forms so that you don't bias your results. The slightest change in item wording or response options can result in dramatic changes to outcomes [@icpsr_introduction_2022].
 
 
-## Documenting your data collection workflow
+## Review
 
-Recall from Chapter \@ref(plan) that planning checklists can help you think through all of the decisions that need to be made during this data collection process. Once decisions are made, it is important to visualize your data collection process in a workflow diagram. Recall Figure \@ref(fig:fig5-5), where we visualized a sample process for collecting an online survey. As you develop this data collection workflow, remember to include all of the information discussed above, from creating instruments all the way through implementing practices to secure your data during collection. Knowing that errors can happen at any point in this process, it is important to integrate quality assurance and control procedures throughout the workflow (see Figure \@ref(fig:fig10-11)).
+This chapter is a lot. There is so much to consider, both prior to data collection as well as during data collection, and the information varies so much depending on how you collect your data and who you collect your data on. As I've said before, implement what you can. Implementing even some of these practices will lead to higher quality data compared to implementing none of these practices, and that's huge. 
 
-As a reminder, once the workflow is developed, you will want to write the specifics of that plan into an SOP, including assigning roles and responsibilities for each task in the process. Last, train your team regularly on how to implement that data collection SOP so that you continue to collect data in a standardized way. 
+It's also important to consider your entire data collection workflow. Recall Figure \@ref(fig:fig5-5), where we visualized a sample process for collecting an online survey. Knowing that errors can happen at any point in this process, remember to consider the entire workflow holistically, and integrate both quality assurance and quality control procedures throughout (see Figure \@ref(fig:fig10-11)).
+
+As a final reminder, once the workflow is developed, you will want to write the specifics of that plan into an SOP, including assigning roles and responsibilities for each task in the process. Last, train your team regularly on how to implement that data collection SOP so that you continue to collect data in a standardized way. 
 
 <div class="figure" style="text-align: center">
 <img src="img/data_collect_workflow2.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%" />
@@ -631,6 +636,6 @@ As a reminder, once the workflow is developed, you will want to write the specif
 |Source|Resource|
 |--------|-----------|
 |DIME Wiki| Questionnaire design timeline^[https://dimewiki.worldbank.org/Questionnaire_Design]|
-|Kopper and Parry | Five key steps in the process of survey design^[https://www.povertyactionlab.org/resource/survey-design]|
+|Sarah Kopper, Katie Parry | Five key steps in the process of survey design^[https://www.povertyactionlab.org/resource/survey-design]|
 
 

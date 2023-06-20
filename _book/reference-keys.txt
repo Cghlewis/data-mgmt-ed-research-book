@@ -190,7 +190,7 @@ entering-data-in-a-spreadsheet-view
 entering-data-in-a-form
 ids
 collect
-planning-data-collection
+quality-assurance-and-control
 institutional-review-board
 background
 requirements
@@ -203,7 +203,7 @@ other-agreements
 quality-assurance
 questionnaire-design
 pilot-the-instrument
-data-collection-tools
+choose-quality-data-collection-tools
 build-with-the-end-in-mind
 electronic-data-collection
 paper-data-collection
@@ -213,7 +213,7 @@ in-field-data-management
 ongoing-data-checks
 tracking-data-collection
 collecting-data-consistently
-documenting-your-data-collection-workflow
+review
 capture
 electronic-data-capture
 paper-data-capture

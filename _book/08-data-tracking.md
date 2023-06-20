@@ -86,12 +86,12 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 
 
 ```{=html}
-<div id="rpxpdjgvgb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wdoetpaxce" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rpxpdjgvgb .gt_table {
+#wdoetpaxce .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -116,7 +116,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-left-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_heading {
+#wdoetpaxce .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -128,7 +128,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_title {
+#wdoetpaxce .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -140,7 +140,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-width: 0;
 }
 
-#rpxpdjgvgb .gt_subtitle {
+#wdoetpaxce .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -152,13 +152,13 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-width: 0;
 }
 
-#rpxpdjgvgb .gt_bottom_border {
+#wdoetpaxce .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_col_headings {
+#wdoetpaxce .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -173,7 +173,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_col_heading {
+#wdoetpaxce .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -193,7 +193,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#rpxpdjgvgb .gt_column_spanner_outer {
+#wdoetpaxce .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -205,15 +205,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 4px;
 }
 
-#rpxpdjgvgb .gt_column_spanner_outer:first-child {
+#wdoetpaxce .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rpxpdjgvgb .gt_column_spanner_outer:last-child {
+#wdoetpaxce .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rpxpdjgvgb .gt_column_spanner {
+#wdoetpaxce .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -225,7 +225,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   width: 100%;
 }
 
-#rpxpdjgvgb .gt_group_heading {
+#wdoetpaxce .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -250,7 +250,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#rpxpdjgvgb .gt_empty_group_heading {
+#wdoetpaxce .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -265,15 +265,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#rpxpdjgvgb .gt_from_md > :first-child {
+#wdoetpaxce .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rpxpdjgvgb .gt_from_md > :last-child {
+#wdoetpaxce .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rpxpdjgvgb .gt_row {
+#wdoetpaxce .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -292,7 +292,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#rpxpdjgvgb .gt_stub {
+#wdoetpaxce .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -305,7 +305,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#rpxpdjgvgb .gt_stub_row_group {
+#wdoetpaxce .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,11 +319,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: top;
 }
 
-#rpxpdjgvgb .gt_row_group_first td {
+#wdoetpaxce .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rpxpdjgvgb .gt_summary_row {
+#wdoetpaxce .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -333,16 +333,16 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#rpxpdjgvgb .gt_first_summary_row {
+#wdoetpaxce .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_first_summary_row.thick {
+#wdoetpaxce .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rpxpdjgvgb .gt_last_summary_row {
+#wdoetpaxce .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -352,7 +352,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_grand_summary_row {
+#wdoetpaxce .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -362,7 +362,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#rpxpdjgvgb .gt_first_grand_summary_row {
+#wdoetpaxce .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -372,11 +372,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_striped {
+#wdoetpaxce .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rpxpdjgvgb .gt_table_body {
+#wdoetpaxce .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -385,7 +385,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_footnotes {
+#wdoetpaxce .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -399,7 +399,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_footnote {
+#wdoetpaxce .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -408,7 +408,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#rpxpdjgvgb .gt_sourcenotes {
+#wdoetpaxce .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -422,7 +422,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#rpxpdjgvgb .gt_sourcenote {
+#wdoetpaxce .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -430,36 +430,36 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#rpxpdjgvgb .gt_left {
+#wdoetpaxce .gt_left {
   text-align: left;
 }
 
-#rpxpdjgvgb .gt_center {
+#wdoetpaxce .gt_center {
   text-align: center;
 }
 
-#rpxpdjgvgb .gt_right {
+#wdoetpaxce .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rpxpdjgvgb .gt_font_normal {
+#wdoetpaxce .gt_font_normal {
   font-weight: normal;
 }
 
-#rpxpdjgvgb .gt_font_bold {
+#wdoetpaxce .gt_font_bold {
   font-weight: bold;
 }
 
-#rpxpdjgvgb .gt_font_italic {
+#wdoetpaxce .gt_font_italic {
   font-style: italic;
 }
 
-#rpxpdjgvgb .gt_super {
+#wdoetpaxce .gt_super {
   font-size: 65%;
 }
 
-#rpxpdjgvgb .gt_two_val_uncert {
+#wdoetpaxce .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -468,31 +468,31 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   margin-left: 0.1em;
 }
 
-#rpxpdjgvgb .gt_footnote_marks {
+#wdoetpaxce .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#rpxpdjgvgb .gt_asterisk {
+#wdoetpaxce .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rpxpdjgvgb .gt_slash_mark {
+#wdoetpaxce .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#rpxpdjgvgb .gt_fraction_numerator {
+#wdoetpaxce .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#rpxpdjgvgb .gt_fraction_denominator {
+#wdoetpaxce .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
