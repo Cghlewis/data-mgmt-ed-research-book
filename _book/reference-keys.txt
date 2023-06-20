@@ -210,10 +210,10 @@ paper-data-collection
 identifiers
 quality-control
 in-field-data-management
-high-frequency-checks
+ongoing-data-checks
 tracking-data-collection
 collecting-data-consistently
-putting-this-all-together-in-a-workflow
+documenting-your-data-collection-workflow
 capture
 electronic-data-capture
 paper-data-capture
