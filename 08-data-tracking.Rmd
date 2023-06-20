@@ -21,6 +21,9 @@ A participant tracking database is an essential component of both project manage
 
 This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
 
+> **Note** <br> <br>
+I want to reiterate this single source of truth concept. Information is often coming in from multiple sources (e.g., data collectors in the field, emails to project coordinators from teachers, conversations with administrators). It is important to train your team that all relevant contact information (e.g., name change, new email, moved out of district) that is gleaned must be updated in the participant tracking database alone. If people track this information in other sources, such as their own personal spreadsheets, there is no longer a single source of truth, there are multiple sources of truth. This makes it very difficult to keep track of what is going on in a project. Whether a single person is designated to update information in this database, or multiple, make sure team members know how to update information or who to contact to update information.
+
 ## Benefits
 
 A thorough and complete participant database that is updated regularly is beneficial for the following reasons:
@@ -39,7 +42,13 @@ A thorough and complete participant database that is updated regularly is benefi
 
 ## Building your database
 
-It is beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits and consents participants, you can record their name, assign them a study ID, and enter any other necessary identifying contact information into the participant database. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
+```{r fig9-2, fig.cap="Timeline for constructing and using a tracking database"}
+
+knitr::include_graphics("img/tracking_db3.PNG")
+
+```
+
+It is beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits and consents participants, you can record their name, assign them a study ID, and enter any other necessary identifying contact information into the participant database (see Figure \@ref(fig:fig9-2)). Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
 
 While a project coordinator can build this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when creating this system. This ensures that your system is set up efficiently and comprehensively.
 
@@ -61,9 +70,9 @@ Let's compare a very simple example of building a tracking database using a rela
 
 #### Relational model
 
-In Figure \@ref(fig:fig9-2) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+In Figure \@ref(fig:fig9-3) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
-```{r fig9-2, fig.cap="Participant database built using a relational model"}
+```{r fig9-3, fig.cap="Participant database built using a relational model"}
 
 knitr::include_graphics("img/participant1.PNG")
 
@@ -72,13 +81,13 @@ knitr::include_graphics("img/participant1.PNG")
 We can see here that in each table we have no duplicated, repeating information. The student table only contains student level information, the teacher table only contains teacher level information, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user. 
 
-Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
+Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
 
 `SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade`    
 `FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
 `ORDER BY t_l_name, t_f_name, s_l_name, s_f_name`    
 
-```{r fig9-3, caption = "Example roster created by querying our relational database tables"}
+```{r, caption = "Example roster created by querying our relational database tables"}
 
 library(tidyverse)
 
@@ -200,7 +209,7 @@ There are many criteria to consider when choosing a tool to build your database 
 - Choose a tool that is user-friendly
   - You don't want a tool with a steep learning curve for users.
 - If you are running a project across multiple sites, consider the accessibility of the tool
-  - For example, you may want a tool that is cloud-based so everyone can access it
+  - For example, you may want a tool that is cloud-based so that all site coordinators can access it
   - You may also want to make sure multiple users can access it at the same time
 - Choose a tool that is interoperable
   - For instance, some tools may have difficulties running on certain operating systems
@@ -267,7 +276,13 @@ If your participant tracking database is separate from your data collection tool
 
 ## Creating unique identifiers {#ids}
 
-Assigning unique identifiers (UIDs) is an important part of ensuring the protection of the privacy of human participants. Hopefully at this point your team has already created your study id schema and documented it in an [SOP](#sop). However, since this is the point when you will begin actually assigning those IDs, this is a good time to discuss best practices for creating your unique identifier schema. There are several rules to consider when assigning your identifiers.
+```{r fig9-9, fig.cap="Example of a study id schema"}
+
+knitr::include_graphics("img/id_schema.PNG")
+
+```
+
+Assigning unique identifiers (UIDs) is an important part of ensuring the protection of the privacy of human participants. Hopefully at this point your team has already created your study id schema and documented it in an SOP(see Chapter \@ref(document)). However, since this is the point when you will begin actually assigning those IDs, this is a good time to discuss best practices for creating your unique identifier schema. There are several rules to consider when assigning your identifiers.
 
 1. These identifiers are numeric or alphanumeric and typically range from 2-10 digits
 2. They must be unique within entities and but also across entities to reduce confusion
@@ -279,34 +294,16 @@ Assigning unique identifiers (UIDs) is an important part of ensuring the protect
       - Do not include teacher or school identifiers within a student identifier
 4. Participants must keep this same identifier for the entire project, never change a participant's ID
     - This applies across all waves of data collection
-    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once (as seen in Figure \@ref(fig:fig9-9)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)
+    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once (as seen in Figure \@ref(fig:fig9-10)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)
 5. If confidentiality was promised to schools or districts, assign identifiers to sites as well
 
-```{r fig9-9, fig.cap="Example of keeping participant IDs for the entire study", out.width= "70%"}
+```{r fig9-10, fig.cap="Example of keeping participant IDs for the entire study", out.width= "70%"}
 
 knitr::include_graphics("img/dupe_id.PNG")
 
 ```
 
+> **Note** <br> <br>
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.
-
-## Tracking best practices
-
-Last, it is important to review **how** to use the participant tracking database. As mentioned earlier, this database should be created before you begin recruiting participants so that as soon as participants begin to consent, they can be added to your database. Then once data collection begins, your Institutional Review Board (IRB) approved staff member can begin tracking data as it is collected. Your team may designate one person to track, or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more persons at each site tracking data as it comes in. 
-
-Since this is a highly sensitive database, not only may you want to restrict who has access to your database, but if your tool allows it, it can be helpful to also limit access to specific tables with identifiable information. For instance, project coordinators may have access to all information in the database (including sensitive data), while research assistants have limited access to tables that only include unique identifiers where they can track data collection completion. No matter who is tracking information, it is important to develop a tracking routine, assign roles and responsibilities, add your routine to an SOP (see Chapter \@ref(document)).
-
-Some tracking best practices include:
-
-1. Update all relevant contact information in this database alone, not in other places. 
-    - Again, you can allow multiple people to update or designate one contact to funnel all updates through.
-2. When tracking data (consents, paperwork, data collection forms) only track data that you physically have (paper or electronic)
-    - Never track data as "complete" that someone tells you they collected
-      - You can always mark this information in a "notes" field and track when you have the physical data
-3. Track daily during data collection
-    - Do not wait until the end of data collection to track what data was collected
-    - This helps ensure that you don't miss the opportunity to collect data that you *thought* you had but never actually collected
-4. Only track complete data as "complete"
-    - If a form is only partially completed and you plan to send it back out to the field for completion, mark this in the "notes" but do not mark it as "completed". If you have a "partially completed" option, you can mark this option.
 
 

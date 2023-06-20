@@ -20,6 +20,9 @@ A participant tracking database is an essential component of both project manage
 
 This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
 
+> **Note** <br> <br>
+I want to reiterate this single source of truth concept. Information is often coming in from multiple sources (e.g., data collectors in the field, emails to project coordinators from teachers, conversations with administrators). It is important to train your team that all relevant contact information (e.g., name change, new email, moved out of district) that is gleaned must be updated in the participant tracking database alone. If people track this information in other sources, such as their own personal spreadsheets, there is no longer a single source of truth, there are multiple sources of truth. This makes it very difficult to keep track of what is going on in a project. Whether a single person is designated to update information in this database, or multiple, make sure team members know how to update information or who to contact to update information.
+
 ## Benefits
 
 A thorough and complete participant database that is updated regularly is beneficial for the following reasons:
@@ -38,7 +41,12 @@ A thorough and complete participant database that is updated regularly is benefi
 
 ## Building your database
 
-It is beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits and consents participants, you can record their name, assign them a study ID, and enter any other necessary identifying contact information into the participant database. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
+<div class="figure" style="text-align: center">
+<img src="img/tracking_db3.PNG" alt="Timeline for constructing and using a tracking database" width="100%" />
+<p class="caption">(\#fig:fig9-2)Timeline for constructing and using a tracking database</p>
+</div>
+
+It is beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits and consents participants, you can record their name, assign them a study ID, and enter any other necessary identifying contact information into the participant database (see Figure \@ref(fig:fig9-2)). Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
 
 While a project coordinator can build this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when creating this system. This ensures that your system is set up efficiently and comprehensively.
 
@@ -60,17 +68,17 @@ Let's compare a very simple example of building a tracking database using a rela
 
 #### Relational model
 
-In Figure \@ref(fig:fig9-2) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+In Figure \@ref(fig:fig9-3) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
 <div class="figure" style="text-align: center">
 <img src="img/participant1.PNG" alt="Participant database built using a relational model" width="100%" />
-<p class="caption">(\#fig:fig9-2)Participant database built using a relational model</p>
+<p class="caption">(\#fig:fig9-3)Participant database built using a relational model</p>
 </div>
 
 We can see here that in each table we have no duplicated, repeating information. The student table only contains student level information, the teacher table only contains teacher level information, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user. 
 
-Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query, that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
+Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
 
 `SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade`    
 `FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
@@ -78,12 +86,12 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 
 
 ```{=html}
-<div id="fpbyfggbtn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="queymlgzeo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#fpbyfggbtn .gt_table {
+#queymlgzeo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -108,7 +116,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-left-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_heading {
+#queymlgzeo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -120,7 +128,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_title {
+#queymlgzeo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -132,7 +140,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-width: 0;
 }
 
-#fpbyfggbtn .gt_subtitle {
+#queymlgzeo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -144,13 +152,13 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-width: 0;
 }
 
-#fpbyfggbtn .gt_bottom_border {
+#queymlgzeo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_col_headings {
+#queymlgzeo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -165,7 +173,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_col_heading {
+#queymlgzeo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -185,7 +193,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#fpbyfggbtn .gt_column_spanner_outer {
+#queymlgzeo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -197,15 +205,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 4px;
 }
 
-#fpbyfggbtn .gt_column_spanner_outer:first-child {
+#queymlgzeo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fpbyfggbtn .gt_column_spanner_outer:last-child {
+#queymlgzeo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fpbyfggbtn .gt_column_spanner {
+#queymlgzeo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -217,7 +225,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   width: 100%;
 }
 
-#fpbyfggbtn .gt_group_heading {
+#queymlgzeo .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -242,7 +250,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#fpbyfggbtn .gt_empty_group_heading {
+#queymlgzeo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -257,15 +265,15 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: middle;
 }
 
-#fpbyfggbtn .gt_from_md > :first-child {
+#queymlgzeo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fpbyfggbtn .gt_from_md > :last-child {
+#queymlgzeo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fpbyfggbtn .gt_row {
+#queymlgzeo .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -284,7 +292,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   overflow-x: hidden;
 }
 
-#fpbyfggbtn .gt_stub {
+#queymlgzeo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -297,7 +305,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#fpbyfggbtn .gt_stub_row_group {
+#queymlgzeo .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -311,11 +319,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   vertical-align: top;
 }
 
-#fpbyfggbtn .gt_row_group_first td {
+#queymlgzeo .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fpbyfggbtn .gt_summary_row {
+#queymlgzeo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -325,16 +333,16 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#fpbyfggbtn .gt_first_summary_row {
+#queymlgzeo .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_first_summary_row.thick {
+#queymlgzeo .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fpbyfggbtn .gt_last_summary_row {
+#queymlgzeo .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -344,7 +352,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_grand_summary_row {
+#queymlgzeo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -354,7 +362,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#fpbyfggbtn .gt_first_grand_summary_row {
+#queymlgzeo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -364,11 +372,11 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-top-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_striped {
+#queymlgzeo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fpbyfggbtn .gt_table_body {
+#queymlgzeo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -377,7 +385,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-bottom-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_footnotes {
+#queymlgzeo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -391,7 +399,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_footnote {
+#queymlgzeo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -400,7 +408,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#fpbyfggbtn .gt_sourcenotes {
+#queymlgzeo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -414,7 +422,7 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   border-right-color: #D3D3D3;
 }
 
-#fpbyfggbtn .gt_sourcenote {
+#queymlgzeo .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -422,36 +430,36 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   padding-right: 5px;
 }
 
-#fpbyfggbtn .gt_left {
+#queymlgzeo .gt_left {
   text-align: left;
 }
 
-#fpbyfggbtn .gt_center {
+#queymlgzeo .gt_center {
   text-align: center;
 }
 
-#fpbyfggbtn .gt_right {
+#queymlgzeo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fpbyfggbtn .gt_font_normal {
+#queymlgzeo .gt_font_normal {
   font-weight: normal;
 }
 
-#fpbyfggbtn .gt_font_bold {
+#queymlgzeo .gt_font_bold {
   font-weight: bold;
 }
 
-#fpbyfggbtn .gt_font_italic {
+#queymlgzeo .gt_font_italic {
   font-style: italic;
 }
 
-#fpbyfggbtn .gt_super {
+#queymlgzeo .gt_super {
   font-size: 65%;
 }
 
-#fpbyfggbtn .gt_two_val_uncert {
+#queymlgzeo .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -460,38 +468,38 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
   margin-left: 0.1em;
 }
 
-#fpbyfggbtn .gt_footnote_marks {
+#queymlgzeo .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#fpbyfggbtn .gt_asterisk {
+#queymlgzeo .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fpbyfggbtn .gt_slash_mark {
+#queymlgzeo .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#fpbyfggbtn .gt_fraction_numerator {
+#queymlgzeo .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#fpbyfggbtn .gt_fraction_denominator {
+#queymlgzeo .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
 }
 </style>
 <table class="gt_table">
-  <caption>(#tab:fig9-3)Example roster created by querying our relational database tables</caption>
+  <caption>(#tab:unnamed-chunk-1)Example roster created by querying our relational database tables</caption>
   
   <thead class="gt_col_headings">
     <tr>
@@ -640,7 +648,7 @@ There are many criteria to consider when choosing a tool to build your database 
 - Choose a tool that is user-friendly
   - You don't want a tool with a steep learning curve for users.
 - If you are running a project across multiple sites, consider the accessibility of the tool
-  - For example, you may want a tool that is cloud-based so everyone can access it
+  - For example, you may want a tool that is cloud-based so that all site coordinators can access it
   - You may also want to make sure multiple users can access it at the same time
 - Choose a tool that is interoperable
   - For instance, some tools may have difficulties running on certain operating systems
@@ -705,7 +713,12 @@ If your participant tracking database is separate from your data collection tool
 
 ## Creating unique identifiers {#ids}
 
-Assigning unique identifiers (UIDs) is an important part of ensuring the protection of the privacy of human participants. Hopefully at this point your team has already created your study id schema and documented it in an [SOP](#sop). However, since this is the point when you will begin actually assigning those IDs, this is a good time to discuss best practices for creating your unique identifier schema. There are several rules to consider when assigning your identifiers.
+<div class="figure" style="text-align: center">
+<img src="img/id_schema.PNG" alt="Example of a study id schema" width="100%" />
+<p class="caption">(\#fig:fig9-9)Example of a study id schema</p>
+</div>
+
+Assigning unique identifiers (UIDs) is an important part of ensuring the protection of the privacy of human participants. Hopefully at this point your team has already created your study id schema and documented it in an SOP(see Chapter \@ref(document)). However, since this is the point when you will begin actually assigning those IDs, this is a good time to discuss best practices for creating your unique identifier schema. There are several rules to consider when assigning your identifiers.
 
 1. These identifiers are numeric or alphanumeric and typically range from 2-10 digits
 2. They must be unique within entities and but also across entities to reduce confusion
@@ -717,33 +730,15 @@ Assigning unique identifiers (UIDs) is an important part of ensuring the protect
       - Do not include teacher or school identifiers within a student identifier
 4. Participants must keep this same identifier for the entire project, never change a participant's ID
     - This applies across all waves of data collection
-    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once (as seen in Figure \@ref(fig:fig9-9)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)
+    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once (as seen in Figure \@ref(fig:fig9-10)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)
 5. If confidentiality was promised to schools or districts, assign identifiers to sites as well
 
 <div class="figure" style="text-align: center">
 <img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" />
-<p class="caption">(\#fig:fig9-9)Example of keeping participant IDs for the entire study</p>
+<p class="caption">(\#fig:fig9-10)Example of keeping participant IDs for the entire study</p>
 </div>
 
+> **Note** <br> <br>
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.
-
-## Tracking best practices
-
-Last, it is important to review **how** to use the participant tracking database. As mentioned earlier, this database should be created before you begin recruiting participants so that as soon as participants begin to consent, they can be added to your database. Then once data collection begins, your Institutional Review Board (IRB) approved staff member can begin tracking data as it is collected. Your team may designate one person to track, or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more persons at each site tracking data as it comes in. 
-
-Since this is a highly sensitive database, not only may you want to restrict who has access to your database, but if your tool allows it, it can be helpful to also limit access to specific tables with identifiable information. For instance, project coordinators may have access to all information in the database (including sensitive data), while research assistants have limited access to tables that only include unique identifiers where they can track data collection completion. No matter who is tracking information, it is important to develop a tracking routine, assign roles and responsibilities, add your routine to an SOP (see Chapter \@ref(document)).
-
-Some tracking best practices include:
-
-1. Update all relevant contact information in this database alone, not in other places. 
-    - Again, you can allow multiple people to update or designate one contact to funnel all updates through.
-2. When tracking data (consents, paperwork, data collection forms) only track data that you physically have (paper or electronic)
-    - Never track data as "complete" that someone tells you they collected
-      - You can always mark this information in a "notes" field and track when you have the physical data
-3. Track daily during data collection
-    - Do not wait until the end of data collection to track what data was collected
-    - This helps ensure that you don't miss the opportunity to collect data that you *thought* you had but never actually collected
-4. Only track complete data as "complete"
-    - If a form is only partially completed and you plan to send it back out to the field for completion, mark this in the "notes" but do not mark it as "completed". If you have a "partially completed" option, you can mark this option.
 
 

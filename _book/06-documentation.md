@@ -332,13 +332,15 @@ Our last category of documentation is variable-level documentation. When we thin
 
 ### Data dictionary
 
-A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_nodate-1; @gonzales_ten_2022; @uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation. A data dictionary is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study. 
+A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_nodate-1; @gonzales_ten_2022; @uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation. A data dictionary is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study [@lewis_using_2022; @van_bochove_data_nodate]. 
+
 This document should be structured similar to a dataset, with variable names in the first row [@broman_data_2018]. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
 <div class="figure" style="text-align: center">
-<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig7-15)Fields to include in a data dictionary</p>
+<img src="img/dictionary_map.PNG" alt="The many uses for a data dictionary" width="90%" />
+<p class="caption">(\#fig:fig7-15)The many uses for a data dictionary</p>
 </div>
+
 
 #### Creating a data dictionary for an original data source
 
@@ -352,26 +354,34 @@ Before you begin to build these dictionaries you will need to have the following
       - How are items coded? What are allowable values? 
       - Are there any calculations/scoring/reverse coding needed?  
       - If items are entered into a scoring program and then exported, what variables are exported?
-3. Any relevant data element standards
-    - Organizations such as the National Institutes of Health and the National Center for Education Statistics have developed repositories (CDE^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and CEDS^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements [@national_institutes_of_health_common_nodate; @national_center_for_education_statistics_common_nodate]. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
-      - Reduces bias
-      - Allows for harmonization of data across your own research studies and also across the field
-          - This allows researchers to draw conclusions using larger samples or by comparing data over time
-          - It also reduces the costs of integrating datasets
-      - Improves interpretation of information
+    - See Figure \@ref(fig:fig7-16) for example of the information that could be pulled from a publication if using the Connor Davidson Resilience Scale (CD-RISC) [@connor_development_2003].
+3. Any data element standards that you plan to use
+    - See Chapter \@ref(collect) for an overview of existing data element standards
 
-You will then build one data dictionary for each instrument you plan to collect (e.g., student survey data dictionary, teacher survey data dictionary, student assessment data dictionary). All measures/items for each instrument will be included in the data dictionary. 
+<div class="figure" style="text-align: center">
+<img src="img/cdrisc.PNG" alt="Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)" width="90%" />
+<p class="caption">(\#fig:fig7-16)Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)</p>
+</div>
+
+You will then build one data dictionary for each instrument you plan to collect (e.g., student survey data dictionary, teacher survey data dictionary, student assessment data dictionary). All measures/items for each instrument will be included in the data dictionary (see Figure \@ref(fig:fig7-17)). 
+
+<div class="figure" style="text-align: center">
+<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="90%" />
+<p class="caption">(\#fig:fig7-17)Fields to include in a data dictionary</p>
+</div>
 
 As you build your data dictionary, consider the following:
 
   - Item names
     - Are your variable names meeting the requirements laid out in your style guide? 
-    - Are there any existing field standards that dictate how an item should be named?
+    - Are there any field standards that dictate how an item should be named?
   - Item wording
     - If your items come from an existing scale, does the item wording match the wording in the scale documentation? Do you plan to reword the item?
+    - Are there any field standards that dictate how an item should be worded?
   - Item value codes for categorical items
     - If your items come from an existing scale, does your value coding (the numeric values assigned to response options) align with the coding laid out in the scale documentation? 
-    - If your items do not come from an existing scale, does your value coding align with the requirements in your style guide? Are there any field standards that dictate how an items values should be coded?
+    - If your items do not come from an existing scale, does your value coding align with the requirements in your style guide? 
+    - Are there any field standards that dictate how an items values should be coded?
   - Additional Items
     - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
       - Identifiers (unique ids)
@@ -381,11 +391,11 @@ As you build your data dictionary, consider the following:
       - Metadata (Variables that your tool collects such as IPAddress, completion, language)
   - What items should be removed before public data sharing (i.e., personally identifiable information)
 
-For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig7-16) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
+For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig7-18) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
 <div class="figure" style="text-align: center">
 <img src="img/dictionary3.PNG" alt="Example student survey data dictionary" width="100%" />
-<p class="caption">(\#fig:fig7-16)Example student survey data dictionary</p>
+<p class="caption">(\#fig:fig7-18)Example student survey data dictionary</p>
 </div>
 
 The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document/s with your team.
@@ -393,8 +403,8 @@ The last step of creating your data dictionary, as it should be for every docume
   - Is everyone in agreement about how variables are named, how values are coded, and our variable types? 
   - Is everyone in agreement about who gets each item?  
   - Does the team want to adjust any of the question/item wording? 
-  - You'll also want to confirm that the data dictionary includes everything the team plans to collect and no items are missing. 
-  - If additional items are added to instruments at later time points, adding fields to your data dictionary, such as "time periods available", can be really helpful to future users in understanding why some items may be missing data at certain time points.
+  - Does the data dictionary include everything the team plans to collect? Are any items missing?
+      - If additional items are added to instruments at later time points, adding fields to your data dictionary, such as "time periods available", can be really helpful to future users in understanding why some items may be missing data at certain time points.
 
 #### Creating a data dictionary from an existing data source
 
@@ -428,7 +438,6 @@ The process described in this section is a manual, time consuming process. This 
 |Source|Resource|
 |--------|-----------|
 |Crystal Lewis|Data dictionary template ^[https://docs.google.com/spreadsheets/d/1R-5TIUvAhJRDucVhq4dNg00RR1CG7uQ6MRhje0BBC20]|
-|REDCap|
 
 
 ### Codebook
@@ -439,14 +448,14 @@ The codebook contains some information that overlaps with a data dictionary, but
 
 <div class="figure" style="text-align: center">
 <img src="img/codebook.PNG" alt="Codebook content that overlaps and is unique to a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig7-17)Codebook content that overlaps and is unique to a data dictionary</p>
+<p class="caption">(\#fig:fig7-19)Codebook content that overlaps and is unique to a data dictionary</p>
 </div>
 
-Figure \@ref(fig:fig7-18) is an example codebook from the United States Department of Health and Human Services [-@united_states_department_of_health_and_human_services_study_2022].
+Figure \@ref(fig:fig7-20) is an example codebook from the United States Department of Health and Human Services [-@united_states_department_of_health_and_human_services_study_2022].
 
 <div class="figure" style="text-align: center">
 <img src="img/codebook2.PNG" alt="Example codebook from the SCOPE Coach Survey" width="80%" />
-<p class="caption">(\#fig:fig7-18)Example codebook from the SCOPE Coach Survey</p>
+<p class="caption">(\#fig:fig7-20)Example codebook from the SCOPE Coach Survey</p>
 </div>
 
 In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data is out of range or unexpected values appear.
@@ -466,28 +475,28 @@ Last, you may notice as you review codebooks, that many will start with several 
 
 The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data [@go_fair_fair_nodate; @logan_data_2021; @uk_data_service_metadata_nodate].
 
-For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_metadata_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. The information from this form will become your metadata. Figure \@ref(fig:fig7-19) is an example of an intake form for the repository, Figshare ([https://figshare.com/](https://figshare.com/)).
+For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_metadata_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. The information from this form will become your metadata. Figure \@ref(fig:fig7-21) is an example of an intake form, captured January 13, 2023, for the the Figshare repository ([https://figshare.com/](https://figshare.com/)).
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata4.PNG" alt="Example intake metadata form for Figshare repository" width="70%" />
-<p class="caption">(\#fig:fig7-19)Example intake metadata form for Figshare repository</p>
+<p class="caption">(\#fig:fig7-21)Example intake metadata form for Figshare repository</p>
 </div>
 
-The most common metadata elements [@dahdul_research_nodate; @hayslett_libguides_nodate] are included in Figure \@ref(fig:fig7-20).
+The most common metadata elements [@dahdul_research_nodate; @hayslett_libguides_nodate] are included in Figure \@ref(fig:fig7-22).
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata.PNG" alt="Common metadata elements" width="80%" />
-<p class="caption">(\#fig:fig7-20)Common metadata elements</p>
+<p class="caption">(\#fig:fig7-22)Common metadata elements</p>
 </div>
 
 
 Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_nodate; @ldbase_information_nodate]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
-Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig7-21) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
+Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig7-23) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata_project.PNG" alt="Example metadata displayed on an ICPSR Open project page" width="95%" />
-<p class="caption">(\#fig:fig7-21)Example metadata displayed on an ICPSR Open project page</p>
+<p class="caption">(\#fig:fig7-23)Example metadata displayed on an ICPSR Open project page</p>
 </div>
 
 There are other ways metadata can be gathered as well. For instance, for variable-level metadata, rather than having users input metadata, repositories may create metadata from the deposited statistical data files that contain inherent metadata (such as variable types or labels) or from deposited documentation such as data dictionaries or codebooks [@icpsr_icpsr_nodate].
@@ -506,21 +515,21 @@ Many fields have chosen metadata standards to adhere to. Some fields, like psych
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata_standards.PNG" alt="A sampling of field metadata standards" width="70%" />
-<p class="caption">(\#fig:fig7-22)A sampling of field metadata standards</p>
+<p class="caption">(\#fig:fig7-24)A sampling of field metadata standards</p>
 </div>
 
-It can be helpful to see how standards differ as well as overlap. The DDI Alliance put together this table in Figure \@ref(fig:fig7-23) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core [@ddi_alliance_mapping_nodate], two commonly used standards.
+It can be helpful to see how standards differ as well as overlap. The DDI Alliance put together this table in Figure \@ref(fig:fig7-25) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core [@ddi_alliance_mapping_nodate], two commonly used standards.
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata_mapping.PNG" alt="A comparison of DDI Version 2 standards to Dublin Core standards" width="70%" />
-<p class="caption">(\#fig:fig7-23)A comparison of DDI Version 2 standards to Dublin Core standards</p>
+<p class="caption">(\#fig:fig7-25)A comparison of DDI Version 2 standards to Dublin Core standards</p>
 </div>
 
 We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from the ICPSR Open project we saw above [@page_design_2020]. You can start to see the differences and similarities across standards. 
 
 <div class="figure" style="text-align: center">
 <img src="img/standard_compare.PNG" alt="Metadata comparison from an AERA Open project" width="100%" />
-<p class="caption">(\#fig:fig7-24)Metadata comparison from an AERA Open project</p>
+<p class="caption">(\#fig:fig7-26)Metadata comparison from an AERA Open project</p>
 </div>
 
 If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the OSF repository currently uses the DataCite schema [@gueguen_new_nodate], while ICPSR uses the DDI standard [@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.

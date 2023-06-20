@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 2 Research Data Management Overview | Data Management in Large-Scale Education Research</title>
+<meta name="author" content="Crystal Lewis">
+<meta name="description" content="2.1 What is research data management? Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data (Bordelon n.d.b). Research study...">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta property="og:title" content="Chapter 2 Research Data Management Overview | Data Management in Large-Scale Education Research">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/book_featured.PNG">
+<meta property="og:description" content="2.1 What is research data management? Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data (Bordelon n.d.b). Research study...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 2 Research Data Management Overview | Data Management in Large-Scale Education Research">
+<meta name="twitter:description" content="2.1 What is research data management? Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data (Bordelon n.d.b). Research study...">
+<meta name="twitter:image" content="/book_featured.PNG">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Data Management in Large-Scale Education Research</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
+<li><a class="active" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
+<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
+<li><a class="" href="dmp.html"><span class="header-section-number">4</span> Data Management Plan</a></li>
+<li><a class="" href="plan.html"><span class="header-section-number">5</span> Planning Data Management</a></li>
+<li><a class="" href="roles.html"><span class="header-section-number">6</span> Project Roles and Responsibilities</a></li>
+<li><a class="" href="document.html"><span class="header-section-number">7</span> Documentation</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">8</span> Style guide</a></li>
+<li><a class="" href="track.html"><span class="header-section-number">9</span> Data Tracking</a></li>
+<li><a class="" href="collect.html"><span class="header-section-number">10</span> Data Collection</a></li>
+<li><a class="" href="capture.html"><span class="header-section-number">11</span> Data Capture</a></li>
+<li><a class="" href="storage.html"><span class="header-section-number">12</span> Data Storage and Security</a></li>
+<li><a class="" href="clean.html"><span class="header-section-number">13</span> Data Cleaning</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">14</span> Data Sharing</a></li>
+<li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">15</span> Wrapping It Up</a></li>
+<li><a class="" href="call-to-action.html"><span class="header-section-number">16</span> Call to Action</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/Cghlewis/data-mgmt-ed-research-book">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="rdm" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> Research Data Management Overview<a class="anchor" aria-label="anchor" href="#rdm"><i class="fas fa-link"></i></a>
+</h1>
+<div id="what-is-research-data-management" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> What is research data management?<a class="anchor" aria-label="anchor" href="#what-is-research-data-management"><i class="fas fa-link"></i></a>
+</h2>
+<p>Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data <span class="citation">(<a href="references.html#ref-bordelon_guides_nodate" role="doc-biblioref">Bordelon n.d.b</a>)</span>. Research study data includes materials generated or collected throughout a research process <span class="citation">(<a href="references.html#ref-national_endowment_for_the_humanities_data_2018" role="doc-biblioref">National Endowment for the Humanities 2018</a>)</span>. As you can imagine, this broad definition includes much more than just the management of digital datasets. It also includes physical files, documentation, artifacts, recordings, and more. RDM is a substantial undertaking that begins long before data is ever collected, during the planning phase, and continues well after a research project ends during the archiving phase.</p>
+</div>
+<div id="standards" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> Standards<a class="anchor" aria-label="anchor" href="#standards"><i class="fas fa-link"></i></a>
+</h2>
+<p>Data management standards refer to rules for how data should be collected, formatted, described, and shared <span class="citation">(<a href="references.html#ref-borghi_promoting_2022" role="doc-biblioref">Borghi and Van Gulick 2022</a>; <a href="references.html#ref-koos_research_nodate" role="doc-biblioref">Koos n.d.</a>)</span>. Implementing standards for things such as how variables should be collected and named, which items from common measures should be shared, and how data should be formatted and documented, leads to more findable and usable data within fields and provides the added benefit of allowing researchers to integrate datasets without painstaking work to normalize the data.</p>
+<p>Some fields have adopted standards across the research life cycle, such as CDISC standards used by clinical researchers <span class="citation">(<a href="references.html#ref-cdisc_cdisc_nodate" role="doc-biblioref">CDISC n.d.</a>)</span>, other fields have adopted standards specifically around metadata, such as the TEI standards used in digital humanities <span class="citation">(<a href="references.html#ref-burnard_what_2014" role="doc-biblioref">Burnard 2014</a>)</span> or the ISO 19115 used for geospatial data<span class="citation">(<a href="references.html#ref-michener_ten_2015" role="doc-biblioref">Michener 2015</a>)</span>, and through grassroots efforts, other fields such as psychology are developing their own standards for things such as data formatting and documentation <span class="citation">(<a href="references.html#ref-kline_technical_2018" role="doc-biblioref">Kline 2018</a>)</span> based on the FAIR principles and inspired by the BIDS standard <span class="citation">(<a href="references.html#ref-bids-contributors_brain_2022" role="doc-biblioref">BIDS-Contributors 2022</a>)</span>. Yet, it is common knowledge that there are currently no agreed-upon norms in the field of education research <span class="citation">(<a href="references.html#ref-institute_of_education_sciences_frequently_nodate" role="doc-biblioref">Institute of Education Sciences n.d.a</a>; <a href="references.html#ref-logan_within_2023" role="doc-biblioref">Logan and Hart 2023</a>)</span>. The rules for how to collect, format, and document data is often left up to each individual team, as long as external compliance requirements are met <span class="citation">(<a href="references.html#ref-tenopir_data_2016" role="doc-biblioref">Tenopir et al. 2016</a>)</span>. However, with a growing interest in open science practices and expanding requirements for federally funded research to make data publicly available <span class="citation">(<a href="references.html#ref-holdren_ostp_2013" role="doc-biblioref">Holdren 2013</a>)</span>, data repositories will most likely begin to play a stronger role in promoting standards around data formats and documentation <span class="citation">(<a href="references.html#ref-borghi_promoting_2022" role="doc-biblioref">Borghi and Van Gulick 2022</a>)</span>.</p>
+</div>
+<div id="why-care-about-research-data-management" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Why care about research data management?<a class="anchor" aria-label="anchor" href="#why-care-about-research-data-management"><i class="fas fa-link"></i></a>
+</h2>
+<p>Without current agreed-upon standards in the field, it is important for research teams to develop their own data management standards that apply within and across all of their projects. Developing internal standards, implemented in a reproducible data management workflow, allows practices to be implemented consistently and with fidelity. There are both external pressures and personal reasons to care about developing research data management standards for your projects.</p>
+<div id="external-reasons" class="section level3" number="2.3.1">
+<h3>
+<span class="header-section-number">2.3.1</span> External Reasons<a class="anchor" aria-label="anchor" href="#external-reasons"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li><p><strong>Funder compliance</strong>: Any researcher applying for federal funding will be required to submit a data management plan (see Chapter <a href="dmp.html#dmp">4</a>) along with their grant proposal <span class="citation">(<a href="references.html#ref-holdren_ostp_2013" role="doc-biblioref">Holdren 2013</a>; <a href="references.html#ref-nelson_ostp_2022" role="doc-biblioref">Nelson 2022</a>)</span>. The contents of these plans may vary slightly across agencies but the shared purpose of these documents is to facilitate good data management practices and to mandate open sharing of data to maximize scientific outputs and benefits to society. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing <span class="citation">(<a href="references.html#ref-borghi_promoting_2022" role="doc-biblioref">Borghi and Van Gulick 2022</a>)</span>.</p></li>
+<li><p><strong>Journal compliance</strong>: Depending on what journal you publish with, providing open access to the data associated with your publication may be a requirement (see PLOS ONE (<a href="https://journals.plos.org/plosone/">https://journals.plos.org/plosone/</a>) and AMPPS (<a href="https://www.psychologicalscience.org/publications/ampps">https://www.psychologicalscience.org/publications/ampps</a>) as examples). Again, along with data sharing, comes the incentive to manage your data in a thoughtful, responsible, and organized way.</p></li>
+<li><p><strong>Compliance with mandates</strong>: If you are required to submit your research project to the Institutional Review Board (see Chapter <a href="collect.html#collect">10</a>), the board will review and monitor your data management practices. Concerned with the welfare, rights, and privacy of research participants, your IRB will have rules for how data is managed and stored securely <span class="citation">(<a href="references.html#ref-filip_san_nodate" role="doc-biblioref">Filip, n.d.</a>)</span>. Data sharing and other legal agreements with research partners will also need to be monitored and honored. Additionally, your organization may have their own institutional data policies that mandate how data must be cared for and secured.</p></li>
+<li><p><strong>Open science practices</strong>: With a growing interest in open science practices, sharing well-managed and documented data helps to build trust in the research process <span class="citation">(<a href="references.html#ref-renbarger_champions_2022" role="doc-biblioref">Renbarger et al. 2022</a>)</span>. Sharing data that is curated in a reproducible way is “a strong indicator to fellow researchers of rigor, trustworthiness, and transparency in scientific research” (<span class="citation">Alston and Rick (<a href="references.html#ref-alston_beginners_2021" role="doc-biblioref">2021</a>)</span>, p.2). It also allows others to replicate and learn from your work, validate your results to strengthen evidence, as well as potentially catch errors in your work, preventing decisions being made based on incorrect data <span class="citation">(<a href="references.html#ref-alston_beginners_2021" role="doc-biblioref">Alston and Rick 2021</a>)</span>. Sharing your data with sufficient documentation and standardized metadata can also lead to more collaboration and greater impact as collaborators are able to access and understand your data with ease <span class="citation">(<a href="references.html#ref-borghi_promoting_2022" role="doc-biblioref">Borghi and Van Gulick 2022</a>; <a href="references.html#ref-cowles_research_nodate" role="doc-biblioref">Cowles n.d.</a>; <a href="references.html#ref-eaker_what_2016" role="doc-biblioref">Eaker 2016</a>)</span>.</p></li>
+<li><p><strong>Data management is a matter of ethics</strong>: In education research we are often collecting data from human participants, and as a result, data management is an ethical issue. It is important to consider the environmental, social, cultural, historical, and political context of the data we are collecting <span class="citation">(<a href="references.html#ref-alexander_telling_2023" role="doc-biblioref">Alexander 2023</a>)</span>. When managing data we are often making human decisions about how to collect, organize, and clean data, and in this process we need to be aware of our biases that may affect equitable representation in our datasets. For instance, the order we choose to present categories of gender on a survey, the way we choose to collect family relationships, or how we choose to collapse categories of race during our data cleaning process are just a few examples of ways we may potentially bias our datasets based on our personal lenses <span class="citation">(<a href="#ref-noauthor_tips_nodate" role="doc-biblioref"><strong>noauthor_tips_nodate?</strong></a>)</span>. <br><br>
+The process of de-identifying data for data sharing also becomes an ethical issue. Protection of participant identities is not always equally distributed across a dataset. While it may be easy to scrub identifying information for the majority of participants, individuals that represent smaller numbers in the data may still be identifiable and it is important to consider security implications for all participants <span class="citation">(<a href="references.html#ref-mckay_bowen_no_2023" role="doc-biblioref">McKay Bowen and Snoke 2023</a>)</span>. <br><br>
+Last, collecting data from human participants means people are giving their time and energy and entrusting us with their information. Implementing poor data management that leads to irrelevant, unusable, or lost data is a huge disservice to research participants and erodes trust in the research process. It is our responsibility to have well-designed research studies with quality data management and data sharing practices that ensure that participant data remains secure, usable, and true so that their efforts lead to maximum societal benefits <span class="citation">(<a href="#ref-feeney_ethical_nodate" role="doc-biblioref"><strong>feeney_ethical_nodate?</strong></a>)</span>.</p></li>
+</ol>
+</div>
+<div id="personal-reasons" class="section level3" number="2.3.2">
+<h3>
+<span class="header-section-number">2.3.2</span> Personal reasons<a class="anchor" aria-label="anchor" href="#personal-reasons"><i class="fas fa-link"></i></a>
+</h3>
+<p>Even if you never plan to share your data outside of your research group, there are still many compelling reasons to manage your data in a reproducible and standardized way.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Reduces data curation debt</strong>: Taking the time to plan and implement quality data management through the entire research study reduces data curation debt caused by suboptimal data management practices <span class="citation">(<a href="references.html#ref-butters_recognizing_2020" role="doc-biblioref">Butters, Wilson, and Burton 2020</a>)</span>. Having poorly collected, managed, or documented data may make your data unusable, either permanently or until errors are corrected. Decreasing or removing this debt reduces the time, energy, and resources spent possibly recollecting data or scrambling at the end of your study to get your data up to acceptable standards.</p></li>
+<li><p><strong>Facilitates use of your data</strong>: Every member of your research team being able to find and understand your project data and documentation is a huge benefit. It allows for the easy use and re-use of your data, and hastens efforts like the publication process <span class="citation">(<a href="references.html#ref-markowetz_five_2015" role="doc-biblioref">Markowetz 2015</a>)</span>. Not having to search around for numbers of consented participants or asking which version of the data they should use allows your team to spend more time analyzing and less time playing detective.</p></li>
+<li><p><strong>Encourages validation</strong>: Implementing reproducible data management practices encourages and allows your team to internally replicate and validate your processes to ensure your outputs are accurate.</p></li>
+<li><p><strong>Improves continuity</strong>: Data management practices such as documentation ensures fidelity of implementation during your project. This includes implementing practices consistently during a longitudinal project, or consistently across sites. It also improves project continuity through staff turnover. Having thoroughly documented procedures allows new staff to pick up right where the former staff member left off and implement the project with fidelity <span class="citation">(<a href="references.html#ref-borghi_data_2021" role="doc-biblioref">Borghi and Van Gulick 2021</a>; <a href="references.html#ref-cowles_research_nodate" role="doc-biblioref">Cowles n.d.</a>)</span>. Furthermore, good data management enables continuity when handing off projects to collaborators or when picking up your own projects after a long hiatus <span class="citation">(<a href="references.html#ref-markowetz_five_2015" role="doc-biblioref">Markowetz 2015</a>)</span>.</p></li>
+<li><p><strong>Increases efficiency</strong>: Documenting and automating data management tasks reduces duplication of efforts for repeating tasks, especially in longitudinal studies.</p></li>
+<li><p><strong>Upholds research integrity</strong>: Errors come in many forms, from both humans and technology<span class="citation">(<a href="references.html#ref-kovacs_role_2021" role="doc-biblioref">Kovacs, Hoekstra, and Aczel 2021</a>; <a href="references.html#ref-strand_error_nodate" role="doc-biblioref">Strand n.d.</a>)</span>. We’ve seen evidence of this in the papers cited as being retracted for “unreliable data” in the blog Retraction Watch (<a href="https://retractionwatch.com/">https://retractionwatch.com/</a>). Implementing quality control procedures reduces the chances of errors occurring and allows you to have confidence in your data. Without implementing these practices, your research findings could include extra noise, missing data, or erroneous or misleading results.</p></li>
+<li><p><strong>Improves data security</strong>: Quality data management practices reduce the risk of lost or stolen data, the risk of data becoming corrupted or inaccessible, and the risk of breaking confidentiality agreements.</p></li>
+</ol>
+</div>
+</div>
+<div id="existing-frameworks" class="section level2" number="2.4">
+<h2>
+<span class="header-section-number">2.4</span> Existing Frameworks<a class="anchor" aria-label="anchor" href="#existing-frameworks"><i class="fas fa-link"></i></a>
+</h2>
+<p>Data management does not live in a space all alone. It co-exists with other frameworks that impact how and why data is managed and it is important to be familiar with them as they will provide a foundation for you as you build your data management structures.</p>
+<div id="fair" class="section level3" number="2.4.1">
+<h3>
+<span class="header-section-number">2.4.1</span> FAIR<a class="anchor" aria-label="anchor" href="#fair"><i class="fas fa-link"></i></a>
+</h3>
+<p>In 2016, the FAIR Principles <span class="citation">(<a href="references.html#ref-go_fair_fair_nodate" role="doc-biblioref">GO FAIR n.d.</a>)</span> were published in Scientific Data, outlining four guiding principles for scientific data management and stewardship. These principles were created to improve and support the reuse of scholarly data, specifically the ability of machines to access and read data, and are the foundation for how all digital data should be publicly shared <span class="citation">(<a href="references.html#ref-wilkinson_fair_2016" role="doc-biblioref">Wilkinson et al. 2016</a>)</span>. The principles are:</p>
+<p>F: Findable</p>
+<p>All data should be findable through a persistent identifier and have thorough, searchable metadata. These practices aid in the long-term discovery of information and provide registered citations.</p>
+<p>A: Accessible</p>
+<p>Users should be able to access your data. This can mean your data is available in a repository or through a request system. At minimum, a user should be able to access the metadata, even if the actual data are not available.</p>
+<p>I: Interoperable</p>
+<p>Your data and metadata should use standardized vocabularies as well as formats. Both humans and machines should be able to read and interpret your data. Software licenses should not pose a barrier to usage. Data should be available in open formats that can be accessed by any software (e.g., .csv, .txt, .dat).</p>
+<p>R: Reusable</p>
+<p>In order to provide context for the reuse of your data, your metadata should give insight into data provenance, providing a project description, an overview of the data workflow, as well what authors to cite for appropriate attribution. You should also have clear licensing for data use.</p>
+</div>
+<div id="seer" class="section level3" number="2.4.2">
+<h3>
+<span class="header-section-number">2.4.2</span> SEER<a class="anchor" aria-label="anchor" href="#seer"><i class="fas fa-link"></i></a>
+</h3>
+<p>In addition to the FAIR principles, the SEER principles, developed in 2018 by Institute of Education Sciences (IES), provide Standards for Excellence in Education Research <span class="citation">(<a href="references.html#ref-institute_of_education_sciences_standards_nodate" role="doc-biblioref">Institute of Education Sciences n.d.c</a>)</span>. While the principles broadly cover the entire life cycle of a research study, they provide context for good data management within an education research study. The SEER principles include:</p>
+<ul>
+<li>Pre-register studies</li>
+<li>Make findings, methods, and data open</li>
+<li>Identify interventions’ core components</li>
+<li>Document treatment implementation and contrast</li>
+<li>Analyze interventions’ costs</li>
+<li>Focus on meaningful outcomes</li>
+<li>Facilitate generalization of study findings</li>
+<li>Support scaling of promising results</li>
+</ul>
+</div>
+<div id="open-science" class="section level3" number="2.4.3">
+<h3>
+<span class="header-section-number">2.4.3</span> Open Science<a class="anchor" aria-label="anchor" href="#open-science"><i class="fas fa-link"></i></a>
+</h3>
+<p>The concept of Open Science has pushed quality data management to the forefront, bringing visibility to its cause, as well as advances in practices and urgency to implement them. Open Science aims to make scientific research and dissemination accessible for all, making the need for good data management practices absolutely necessary. Open science advocates for transparent and reproducible practices through means such as open data, open analysis, open materials, preregistration, and open access <span class="citation">(<a href="references.html#ref-van_dijk_open_2021" role="doc-biblioref">Dijk, Schatschneider, and Hart 2021</a>)</span>. Organizations such as the Center for Open Science (<a href="https://www.cos.io/">https://www.cos.io</a>), have become a well-known proponents of open science, offering the open science framework (OSF) <span class="citation">(<a href="references.html#ref-foster_open_2017" role="doc-biblioref">Foster and Deardorff 2017</a>)</span> as a tool to promote open science through the entire research life cycle. Furthermore, many education funders have aligned their fundee requirements with these open science practices, such as openly sharing study data and pre-registration of study methods <span class="citation">(<a href="references.html#ref-institute_of_education_sciences_ies_nodate" role="doc-biblioref">Institute of Education Sciences n.d.b</a>)</span>.</p>
+</div>
+</div>
+<div id="terminology" class="section level2" number="2.5">
+<h2>
+<span class="header-section-number">2.5</span> Terminology<a class="anchor" aria-label="anchor" href="#terminology"><i class="fas fa-link"></i></a>
+</h2>
+<p>Before moving forward in this book it is important to have a shared understanding of terminology used. Many concepts in education research have multiple terms and can be used interchangeably. Across different institutions, researchers may use all or some of these terms.</p>
+<p><strong>Commonly used data management terms</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="44%">
+<col width="55%">
+</colgroup>
+<thead><tr class="header">
+<th>Terms (Other Terms)</th>
+<th>Definitions</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Anonymous Data</td>
+<td>Identifying information that was never collected. This data can not be linked across time or measures.</td>
+</tr>
+<tr class="even">
+<td>Append</td>
+<td>Stacking datasets on top of each other (matching variables).</td>
+</tr>
+<tr class="odd">
+<td>Archive</td>
+<td>The transfer of data to a facility, such as a repository, that preserves and stores data long-term.</td>
+</tr>
+<tr class="even">
+<td>Attrition</td>
+<td>The loss of study units from the sample, often seen in longitudinal studies</td>
+</tr>
+<tr class="odd">
+<td>Clean data (processed data)</td>
+<td>Data that has been manipulated or modified.</td>
+</tr>
+<tr class="even">
+<td>Cohort</td>
+<td>A group of participants recruited into a study at the same time.</td>
+</tr>
+<tr class="odd">
+<td>Confidential data (pseuodonymization, coded data, indirectly identifiable)</td>
+<td>The status of this data is protected. Personally identifiable information (PII) in your data has been removed and names are replaced with a code and the only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data.</td>
+</tr>
+<tr class="even">
+<td>Confidentiality</td>
+<td>Confidentiality concerns data, ensuring participants agree to how their private and identifable information will be managed and disseminated.</td>
+</tr>
+<tr class="odd">
+<td>Control (business as usual)</td>
+<td>The individual or group does not receive the intervention.</td>
+</tr>
+<tr class="even">
+<td>Cross-sectional</td>
+<td>Data is collected on participants for a single time point.</td>
+</tr>
+<tr class="odd">
+<td>Data (research data)</td>
+<td>The recorded factual material commonly accepted in the scientific community as necessary to validate research findings. (OMB Circular A-110)</td>
+</tr>
+<tr class="even">
+<td>Data Type (measurement unit, variable format, variable class)</td>
+<td>A classification that specifies what types of values are contained in a variable and what kinds of operations can be performed on that variable. Examples of types include numeric, character, logical, or datetime.</td>
+</tr>
+<tr class="odd">
+<td>Database (relational database)</td>
+<td>An organized collection of related data stored in tables that can be linked together by a common identifier.</td>
+</tr>
+<tr class="even">
+<td>Dataset (dataframe, spreadsheet)</td>
+<td>A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (ex: teacher dataset, student dataset).</td>
+</tr>
+<tr class="odd">
+<td>De-identified data (anonymized data)</td>
+<td>Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists).</td>
+</tr>
+<tr class="even">
+<td>Derived data</td>
+<td>Data created through transformations of existing data.</td>
+</tr>
+<tr class="odd">
+<td>Direct identifiers (PII, PHI)</td>
+<td>These identifiers can directly identify a participant and should always be removed from research study data. There should be no need to keep these identifiers for analysis (i.e. name, email, address).</td>
+</tr>
+<tr class="even">
+<td>Directory (file structure, file tree)</td>
+<td>A cataloging structure for files and folders on your computer.</td>
+</tr>
+<tr class="odd">
+<td>Experimental data</td>
+<td>Data collected from a study where researchers randomly introduce an intervention and study the effects.</td>
+</tr>
+<tr class="even">
+<td>Extant data (secondary data)</td>
+<td>Existing data sources created from external to the research team/study such as administrative data.</td>
+</tr>
+<tr class="odd">
+<td>File formats</td>
+<td>Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav).</td>
+</tr>
+<tr class="even">
+<td>Identifiable data</td>
+<td>Data that includes personally identifiable information.</td>
+</tr>
+<tr class="odd">
+<td>Indirect identifiers</td>
+<td>Even though these identifiers are not necessarily uniquely tied to one individual (i.e., birthdate or place of birth), if combined, this information could indirectly identify a participant. Therefore this information should be managed before publicly sharing data.</td>
+</tr>
+<tr class="even">
+<td>Longitudinal</td>
+<td>Data is collected on participants over a period of time.</td>
+</tr>
+<tr class="odd">
+<td>Merge (join, link)</td>
+<td>Combining datasets together in a side by side manner (matching on an identifier).</td>
+</tr>
+<tr class="even">
+<td>Missing data</td>
+<td>Occurs when there is no data stored in a variable for a particular observation/respondent.</td>
+</tr>
+<tr class="odd">
+<td>Observational data</td>
+<td>Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention. This includes many formats that education researchers collect data with (ex: survey, observation, assessment).</td>
+</tr>
+<tr class="even">
+<td>Participant database (study roster, master list, master key, linking key, code key, key code, main list, identifiers dataset, crosswalk, record keeping, tracking, participant tracking)</td>
+<td>This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.</td>
+</tr>
+<tr class="odd">
+<td>Path (file path)</td>
+<td>A string of characters used to locate files in your directory system.</td>
+</tr>
+<tr class="even">
+<td>Personally identifiable information (PII, PHI)</td>
+<td>This includes direct identifiers (e.g., name and email), as well as indirect identifiers that, if combined with other variables, could identify a participant (e.g., full birthdate and county of residence). Under FERPA, additional PII, such as a district or school ID, should also be removed. Protected health identifiers (PHI) is a similar protected category of information. There are 18 HIPAA protected health identifiers that should be removed from data in order to meet the Safe Harbor de-identification method (e.g., name, email, address).</td>
+</tr>
+<tr class="odd">
+<td>Primary data (original data)</td>
+<td>First hand data that is generated/collected by the research team as part of the research study.</td>
+</tr>
+<tr class="even">
+<td>Privacy</td>
+<td>Privacy concerns people, ensuring they are given control to the access of themselves and their information.</td>
+</tr>
+<tr class="odd">
+<td>Private data</td>
+<td>Highly restricted data with limited access (i.e. passwords)</td>
+</tr>
+<tr class="even">
+<td>Qualitative data</td>
+<td>Non-numeric data typically made up of text, images, video, or other artifacts.</td>
+</tr>
+<tr class="odd">
+<td>Quantitative data</td>
+<td>Numerical data that can be analyzed with statistical methods.</td>
+</tr>
+<tr class="even">
+<td>Randomized controlled trial (RCT)</td>
+<td>A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized.</td>
+</tr>
+<tr class="odd">
+<td>Raw data</td>
+<td>Unprocessed data collected directly from a source.</td>
+</tr>
+<tr class="even">
+<td>Replicable</td>
+<td>Being able to produce the same results if the same procedures are used with different materials.</td>
+</tr>
+<tr class="odd">
+<td>Reproducible</td>
+<td>Being able to produce the same results using the same materials and procedures.</td>
+</tr>
+<tr class="even">
+<td>Research</td>
+<td>The Common Rule definition of research is a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.</td>
+</tr>
+<tr class="odd">
+<td>Secondary data (extant data)</td>
+<td>Existing data generated/collected by external organizations such as governments at an earlier point in time.</td>
+</tr>
+<tr class="even">
+<td>Sensitive data</td>
+<td>Private information that could cause harm and should be protected from unwarranted disclosure</td>
+</tr>
+<tr class="odd">
+<td>Simulation data</td>
+<td>Data generated through imitations of a real-world process using computer models.</td>
+</tr>
+<tr class="even">
+<td>Standardization</td>
+<td>Developing a set of agreed upon technical standards and applying them within and across all research projects.</td>
+</tr>
+<tr class="odd">
+<td>Study</td>
+<td>a single funded research project resulting in one more more datasets to be used to answer a research question.</td>
+</tr>
+<tr class="even">
+<td>Study ID (participant ID, location ID, site ID, unique identifier (UID), subject ID, participant code, record id)</td>
+<td>This is a numeric or alphanumeric identifier that is unique to every participant, site or object in order to create confidential and de-identified data. These identifiers allow researchers to link data across time or measure.</td>
+</tr>
+<tr class="odd">
+<td>Subject (case, participant, site, record)</td>
+<td>A person or place participating in research and has one or more piece of data collected on them.</td>
+</tr>
+<tr class="even">
+<td>Syntax (code, program)</td>
+<td>Programming statements written in a text editor. The statements are machine-readable instructions processed by your computer.</td>
+</tr>
+<tr class="odd">
+<td>Treatment (experiment)</td>
+<td>The individual or group receives the intervention.</td>
+</tr>
+<tr class="even">
+<td>Variable (column, field, question)</td>
+<td>Any phenomenon you are collecting information on/trying to measure. These variables will make up columns in your datasets or databases.</td>
+</tr>
+<tr class="odd">
+<td>Variable name (header)</td>
+<td>A shortened symbolic name given the variable in your data to represent the information it contains.</td>
+</tr>
+<tr class="even">
+<td>Wave (time period, time point, event, session)</td>
+<td>Intervals of data collection over time.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="the-research-life-cycle" class="section level2" number="2.6">
+<h2>
+<span class="header-section-number">2.6</span> The Research Life Cycle<a class="anchor" aria-label="anchor" href="#the-research-life-cycle"><i class="fas fa-link"></i></a>
+</h2>
+<p>The remainder of this book will be organized into chapters that dive into phases of the research data life cycle. It is imperative to understand this research life cycle in order to see the flow of data through a project, as well as to see how everything in a project is connected. If phases are skipped, the whole project will suffer.</p>
+<p>You can see in Figure <a href="rdm.html#fig:fig2-1">2.1</a>, how throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig2-1"></span>
+<img src="img/cl_lifecycle2.PNG" alt="The research project life cycle" width="100%"><p class="caption">
+Figure 2.1: The research project life cycle
+</p>
+</div>
+<p>Let’s walk through this chart.</p>
+<ol style="list-style-type: decimal">
+<li>In a typical study we first begin by <strong>generating ideas</strong>, deciding what we want to study.</li>
+<li>Then, most likely, we will look for grant funding to implement that study. This is where the two paths begin to diverge. If the team is applying for federal funding, the proposal and budget are created in the project management track, while the supplemental required data management plan (see Chapter <a href="dmp.html#dmp">4</a>) is created in the data track. Again, it may be the same people working on both of these pieces.</li>
+<li>Next, if the grant is awarded, the project team will begin planning things such as hiring, recruitment, data collection, and how to implement the intervention. At the same time, those working on the data team will begin to <strong>plan</strong> out how to specifically implement the 2-5 page data management plan submitted to their funder and start putting any necessary structures into place.</li>
+<li>Once planning is complete, the team moves into the cycle of data collection. It is called a cycle because if your study is longitudinal, every step here will occur cyclically. Once one phase of data collection wraps up, the team re-enters the cycle again for the next phase of data collection, until all data collection is complete for the entire project.
+<ul>
+<li>The data management and project management team begin the cycle by starting <strong>documentation</strong>. You can see that this phase occurs collaboratively because it is denoted with a double outline. Both teams begin developing documentation such as data dictionaries and standard operating procedures.</li>
+<li>Once documentation is started, both teams collaboratively begin to create any necessary <strong>data collection instruments</strong>. These instruments will be created with input from the documentation. During this phase the teams may also develop their participant tracking database.</li>
+<li>Next, the project management team moves into the <strong>data collection</strong> phase. In addition to actual data collection, this may also involve preliminary activities such as recruitment and consenting of participants, as well as hiring and training of data collectors. At this point, the data management team just provides support as needed.</li>
+<li>As data is collected, the project team will <strong>track data</strong> as it is collected in the participant tracking database. The data management team will collaborate with the project management team to help troubleshoot anything related to the actual tracking database or any issues discovered with the data during tracking.</li>
+<li>Next, once data is collected, the teams move into the <strong>data capture</strong> phase. This is where teams are actively retrieving or converting data. For electronic data this may look like downloading data from a platform or having data sent to the team via a secure transfer. For physical data, this may look like teams entering paper data into a database. Oftentimes, this again is a collaborative effort between the project management team and the data team.</li>
+<li>Once the data is captured, it needs to be <strong>stored</strong>. While the data team may be in charge of setting up and monitoring the storage efforts, the project team may be the ones actively retrieving and storing the data.</li>
+<li>Next the teams move into the <strong>cleaning and validation</strong> phase. At this time the data team is reviewing data cleaning plans, writing data cleaning scripts, and actively cleaning data from the most recent data collection round.</li>
+<li>And last, the data team will <strong>version</strong> data as it is updated or errors are found.</li>
+</ul>
+</li>
+<li>The teams then only move out of the active data collection phase when all data collection for the project is complete. At this time the project team begins analyzing study data and working on publications as well as any final grant reports. They are able to do this because of the organized processes implemented during the data collection cycle. Since data was managed and cleaned throughout, data is ready for analysis as soon as data collection is complete. Then, while the project team is analyzing data, the data team is doing any additional <strong>preparation to archive</strong> data for public sharing.</li>
+<li>Last, as the grant is closing out, the team submits data for <strong>public sharing</strong>.</li>
+</ol>
+<p>As you work through the remaining chapters of this book, this chart will be a guide to navigating where each phase of practices fits into the larger picture.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="index.html"><span class="header-section-number">1</span> Preamble</a></div>
+<div class="next"><a href="structure.html"><span class="header-section-number">3</span> Data Structure</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#rdm"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
+<li><a class="nav-link" href="#what-is-research-data-management"><span class="header-section-number">2.1</span> What is research data management?</a></li>
+<li><a class="nav-link" href="#standards"><span class="header-section-number">2.2</span> Standards</a></li>
+<li>
+<a class="nav-link" href="#why-care-about-research-data-management"><span class="header-section-number">2.3</span> Why care about research data management?</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#external-reasons"><span class="header-section-number">2.3.1</span> External Reasons</a></li>
+<li><a class="nav-link" href="#personal-reasons"><span class="header-section-number">2.3.2</span> Personal reasons</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#existing-frameworks"><span class="header-section-number">2.4</span> Existing Frameworks</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#fair"><span class="header-section-number">2.4.1</span> FAIR</a></li>
+<li><a class="nav-link" href="#seer"><span class="header-section-number">2.4.2</span> SEER</a></li>
+<li><a class="nav-link" href="#open-science"><span class="header-section-number">2.4.3</span> Open Science</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#terminology"><span class="header-section-number">2.5</span> Terminology</a></li>
+<li><a class="nav-link" href="#the-research-life-cycle"><span class="header-section-number">2.6</span> The Research Life Cycle</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/blob/master/01-rdm.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/edit/master/01-rdm.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-06-20.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

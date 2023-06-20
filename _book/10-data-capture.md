@@ -1,4 +1,4 @@
-# Data Capture
+# Data Capture {#capture}
 
 ## Electronic data capture
 
