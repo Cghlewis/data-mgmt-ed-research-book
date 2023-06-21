@@ -357,8 +357,8 @@ However, if you are building your instrument manually, following the guidelines 
     - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options
 3. Use data validation to reduce errors and missing data [@uk_data_service_quality_nodate]
     - Content validation
-      - Restrict variables to the type assigned in your data dictionary (e.g., numeric)
-      - Restrict variables to the format assigned in your data dictionary (e.g., YYYY-MM-DD)
+      - Restrict entry to the type assigned in your data dictionary (e.g., numeric)
+      - Restrict entry to the format assigned in your data dictionary (e.g., YYYY-MM-DD)
       - Restrict ranges based on allowable ranges in your data dictionary (e.g., 1-50)
           - This could even include validating against previous responses (if elementary school was selected in previous question, age should be between 5-12, if middle school was selected, age should be between 11-14)
       - If duplicate responses are not allowed for a question (i.e., rank order), have options drop away after they are chosen
@@ -366,14 +366,14 @@ However, if you are building your instrument manually, following the guidelines 
       - Add a "forced response" option to variables that are absolutely necessary (e.g., unique identifier)
         - Do not add "forced response" to non-essential questions. Doing so can be both harmful to participants and produce bad data. If you add forced response options to non-essential questions, ensure that those questions allow participants to still opt-out.
       - For non-essential questions, add a "request response" option which notifies the respondent that they skipped a question and asks them if they still would like to move forward without responding
-4. Choose the right type and format for the item
+4. Choose an appropriate type and format to display the item
     - Become familiar with the various questions types available in your tool (e.g., rank order, multiple choice - select all, multiple choice - select one, text box)
     - Become familiar with the various formats (e.g., radio buttons, drop down, checkboxes)
     - For instance, if your item is a rank order question (ranking 3 items), creating this question as a multi-line free text entry form may lead to duplicate entries (such as entering a rank of 1 more than once). However, using something like a “rank order” question type with a “drag and drop” format ensures that participants are only allowed to drag the 3 existing response options and order them.
 5. If there is a finite number of response options, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than open-text field [@openaire_eu_basics_2018; @uk_data_service_quality_nodate]
     - For example, list school name as a drop-down item rather than having participants enter a school name
       - This prevents variation in text entry (e.g., "South Middle", "SOUTH", "south middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values
-6. If there is an infinite number of response options or the number of options is large, use an open text box
+6. If there is an infinite number of response options or the number of options is large, use an open-text box
     - Consider limiting the number of characters allowed in the text box unless you want to allow users to write paragraphs of information
     - Using open-ended text boxes does not mean you can not regroup this information into categories later through syntax. It is just more time-consuming and requires interpretation and decision making on the part of the data cleaner  
 7.Only ask for one piece of information per question
@@ -396,6 +396,8 @@ Potential feedback checklist items [@gibson_survey_2020]:
 5. Is the skip logic working?
 6. Are you able to skip items that you should not be able to skip?
 
+<br>
+
 Last, export the sample data and review the data for the following:
 
 1. Are there any unexpected or missing variables?
@@ -404,20 +406,6 @@ Last, export the sample data and review the data for the following:
 4. Are there missing values where you expect data?
 5. Are there unexpected variable formats?
 6. Is data exporting in an analyzable, rectangular format?
-
-<br>
-
-> **Note** <br> <br>
-All of the options above assume you are making a private link that you are only sending to a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@simone_how_2019; @teitcher_detecting_2015]: <br><br>
-- Not posting the link on social media  
-- Using CAPTCHA verification  
-- Using tools that allow you to block suspicious geolocations  
-- Not automating payment upon survey completion    
-- Including open-ended questions   
-- Build attention/logic checks into survey  
-- Ask some of the same questions twice (once early on and again at the end) <br><br>
-Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. We will discuss this more later in this chapter. <br><br>
-If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link.
 
 #### Paper data collection
 
@@ -487,6 +475,20 @@ There are many ways you might consider collecting unique identifiers other than 
   - Using this method, you can potentially download two separate files
     - One with just the instrument data and assigned study ID, with name removed
     - One with just identifying information and assigned study ID (this information will be added to your participant tracking database)
+
+<br>
+
+> **Note** <br> <br>
+All of the options above assume you are making a private link that you are sending to a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@simone_how_2019; @teitcher_detecting_2015]: <br><br>
+- Not posting the link on social media  
+- Using CAPTCHA verification  
+- Using tools that allow you to block suspicious geolocations  
+- Not automating payment upon survey completion    
+- Including open-ended questions   
+- Build attention/logic checks into survey  
+- Ask some of the same questions twice (once early on and again at the end) <br><br>
+Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. We will discuss this more later in this chapter. <br><br>
+If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link.
     
 2. Paper Data
 
@@ -504,13 +506,15 @@ knitr::include_graphics("img/cover_sheet.PNG")
 
 ```
 
+> **Note** <br> <br>
+If your study is designed to collect anonymous data, then you will not assign study identifiers and no participant identifying information should be collected in your instruments (e.g., name, email, date of birth). You will also want to make sure to not collect IP addresses as they can be used to identify an individual’s computer. It’s also important to recognize that if you collect anonymous data, you will not be able to link data across measures or across time. However, if your study randomizes participants by an entity (e.g., school or district), you will need to collect identifying information about that entity in order to cluster on that information (e.g., school name). 
 
 ## Quality Control
 
 In addition to implementing quality assurance measures during your planning phases, it is equally important to implement several quality control measures while data collection is underway.
 
-1. In-field data management
-2. High frequency checks
+1. In field data management
+2. Ongoing data checks
 3. Tracking data collection daily
 4. Collecting data consistently
 
@@ -545,6 +549,7 @@ This process begins before you begin collecting data. It starts with creating so
 - Do another round of paper data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig10-10))
   - The project coordinator may do this round of checking as they are tracking information in the participant database
   - If any issues are found, note that in the tracking database and send the form back out to the field for correction
+  - If your paper forms are mailed back to you from participants, rather than returned from in field data collectors, it is still important to do those in-office spot checks. If at all possible, reach out to those participants for any corrections.
 - When data collection wraps up for that period, collect feedback from data collectors to improve future data collection efforts
   - What went well? What didn't?
 
@@ -553,19 +558,6 @@ This process begins before you begin collecting data. It starts with creating so
 knitr::include_graphics("img/spot_check.PNG")
 
 ```
-
-> **Note** <br> <br>
-If your paper forms are mailed back to you from participants, it is still important to do those in-office spot checks for the data errors mentioned above. If at all possible, reach out to those participants for any corrections.
-
-> **Note** <br> <br>
-If you collect data via recording devices (either in person or remotely), make sure to consider privacy and protecting identities of participants throughout the process.<br><br>
-- Choose software that is compliant with relevant policies and deemed secure by your institution  
-- Choose hardware that is deemed secure by your institution  
-- Make sure you have permission to record everyone that is in the screen. If someone has not consented, they will need to be placed outside of the view of the recording.  
-- Don't use names in recordings  
-- Remove images and names from walls in rooms  
-- Put signs on doors informing people to not enter the room during a recording<br><br>
-Similarly, if you are conducting observations or interviews remotely, even without recording, you will want to follow similar protocol to above.
 
 ### Ongoing data checks
 
@@ -626,7 +618,6 @@ Failing to collect your data consistently has many consequences:
 4. Can lead to errors in interpretation
 
 Last, collecting data consistently also means measuring things in the same way over time or across forms so that you don't bias your results. The slightest change in item wording or response options can result in dramatic changes to outcomes [@icpsr_introduction_2022].
-
 
 ## Review
 
