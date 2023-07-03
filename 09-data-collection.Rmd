@@ -19,12 +19,12 @@ knitr::include_graphics("img/bad_data_collect.PNG")
 
 ## Quality assurance and control
 
-In addition to planning data collection logistics (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arrive during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. As shown in Figure \@ref(fig:fig10-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
+In addition to planning data collection logistics (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. As shown in Figure \@ref(fig:fig10-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
 
 1. Quality assurance practices that happen before data is collected
     - Best practices associated with designing and building your data collection instruments
 2. Quality control practices implemented during data collection 
-    - Best practices associated with managing and reviewing ongoing data collection
+    - Best practices associated with managing and reviewing data during collection
 
 Before we dive into collecting data, it's important to first review the ethical and legal considerations of your data collection effort. When working with human subjects it is likely that the Institutional Review Board (IRB) will need to review and approve all of your data collection instruments as well as any agreement forms that will be collected as part of your study. Our next section will provide an overview of the IRB and its requirements as well as best practices for creating agreement forms for participants and partners.
 
@@ -69,7 +69,7 @@ As part of your application, common documents you may be required to submit incl
 
 1. Certificates from human subjects training (e.g., CITI training^[https://about.citiprogram.org/])
 1. Research protocol (see Chapter \@ref(document))
-    - When writing your protocol, make sure to review your IRB's rules around data handling and include this information in your plan. IRBs typically have specific rules for things such as how paper and electronic data must be stored and backed up, how long data should be retained, how data can be transferred and shared, and how data should be anonymized [@filip_san_nodate].
+    - When writing your protocol, make sure to review your IRB's rules around data handling and include this information in your plan. IRBs typically have specific rules for things such as how paper and electronic data must be stored and backed up, how long data should be retained, how data can be transferred and shared, and how data should be anonymized [@filip_san_2023].
 1. Study materials (e.g., recruitment materials)
 1. Copies of your instruments (e.g., surveys, interview guides, observation forms)
     - Note that these will need to be created before you can submit to your IRB so make sure to consider timing and start building your instruments early enough to give you time to submit to your IRB before data collection
@@ -114,7 +114,7 @@ Depending on the type of research study, a participant signature or a check box 
 - Understand that their participation is voluntary
 - Understand that they may withdraw from the study at any time
 
-Not all studies require active consent [@university_of_virginia_when_nodate]. Some studies may allow passive consent which may be obtained by providing an information sheet to all participants with the following information:
+Not all studies require active consent [@university_of_virginia_when_nodate]. Some studies may allow passive consent which may be obtained by providing an information sheet to all participants with the following type of information:
 
 _If you consent to be in this study, no additional action is required; simply move forward with the study._ 
 _If you choose to withdraw, you can notify a specified contact._
@@ -174,14 +174,15 @@ If you are collecting paper consent or assent, there are still some additional t
 |Holly Lane, Wilhemina van Dijk|Example parent consent ^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
 |Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet ^[https://osf.io/3czbx]
 |Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing ^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
+|Melissa Kline Struhl|Lookit consent form template 5^[https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20consent%20form%20template%205.md]|
 |University of Virginia| A collection of consent and assent templates ^[https://research.virginia.edu/irb-sbs/consent-templates]|
 
 
 #### Other agreements
 
-As we discussed in Chapter \@ref(document), a data use agreement (DUA) is a contractual document that lays out expectations for how data will be shared between two or more parties. While the terms data use agreement and data sharing agreement (DSA) are often used interchangeably, I want to differentiate between the two documents. Data use agreements are typically legally binding agreements that provide terms and conditions for working with restricted use data. DUAs are commonly written for data sharing with school districts. In the case of education research, a DUA may include the terms for sharing, working with, and storing identifiable district-level data. 
+Data use agreements (DUA) and data sharing agreements (DSA) are two types of documents that lay out expectations for how data will be shared between two or more parties. While the terms data use agreement and data sharing agreement (DSA) are often used interchangeably, I want to differentiate between the two documents [@ldbase_data_nodate]. Data use agreements are typically legally binding, contractual agreements that provide terms and conditions for working with data that are restricted-use or contain identifiable information, often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. In the case of education research, a DUA may include the terms for sharing, working with, and storing identifiable district-level data. In some cases, districts also may require an additional consent form to be completed by parents, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019].
 
-When working with de-identified, non-sensitive data though, a data sharing agreement is a good option. A DSA is a less formal agreement but is still beneficial if you want to provide terms for how data is used, such as limiting the types of projects that use the data [@ldbase_data_nodate]. We will talk more about these types of agreements in the Chapter \@ref(share).
+When working with de-identified, non-sensitive data though, a data sharing agreement is a good option. A DSA is a less formal agreement but is still beneficial if you want to provide terms for how data is used, such as limiting the types of projects that use the data or guidelines for citations. We will talk more about these types of agreements in the Chapter \@ref(share).
 
 Another type of agreement, commonly signed when working with partners such a school districts, is a memorandum of understanding (MOU), which establishes the framework for collaboration [@national_center_for_education_statistics_memoranda_nodate; @rel_west_data_nodate]. This document is typically not legally binding, but establishes agreements around things such as responsibilities, communication, and expectations [@duru_grant_2021]. An MOU can be a standalone document or can include a DSA or DUA as part of the document. 
 
@@ -202,27 +203,31 @@ Last, confidentiality agreements and non-disclosure agreements (NDAs) are other 
 
 ```{r fig10-4, fig.cap="Common education research data collection methods"}
 
-knitr::include_graphics("img/data_collected5.PNG")
+knitr::include_graphics("img/data_collected7.PNG")
 
 ```
 
-Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-4)). While you can certainly do your best to fix data errors during a data cleaning process, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and creating data collection tools in a way that produces accurate, valid, and reliable data. When creating your original data collection instruments, there are four ways to collect higher quality data.
+Now that we have a baseline understanding ethical and legal considerations, we can dive in to protecting data quality during data collection. Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-4)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (think surveys, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
 
-1. Questionnaire design
+The focus on forms is not to discount the importance of data collected through other means such as video or audio recording, where issues such as participant privacy and data security and integrity should absolutely also be considered. However, even with those types of data collection efforts, often teams are ultimately still coding that data using some sort of form (e.g., observation form), further supporting the need to build forms that collect quality data.
+
+When collecting information using forms you can certainly do your best to fix data errors after data collection during a cleaning process. However, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and creating data collection tools in a way that produces valid, reliable, and more secure data. When creating your original data collection instruments, there are four ways to collect higher quality data.
+
+1. Using good questionnaire design principles
 2. Implementing a series of pilot test
 3. Choosing data collection tools that meet your needs
 4. Building your instrument with the end in mind
 
-We will discuss each of these phases below. The main focus for this section will be on designing instruments that are typically collected using a form (i.e.,a document with spaces to respond to questions). Forms are widely used to collect data in education research (think surveys, assessments, observation forms, or a progress monitoring form in a website), yet if developed poorly, they can produce some of the most problematic data issues.
+We will discuss each of these phases below. 
 
 > **Note** <br> <br>
-If you are collecting data using a standardized assessment, along with a provided instrument (e.g.,an online computer-adaptive testing program), most of the information in this section will not be applicable. In those situations, it is best to adhere to all guidelines provided by the assessment company.
+If you are collecting data using a standardized assessment, along with a provided instrument (e.g., a computer-adaptive testing program), most of the information in this section will not be applicable. In those situations, it is best to adhere to all guidelines provided by the assessment company.
 
 ### Questionnaire design
 
 In Chapter \@ref(document) we discussed the importance of documenting all instrument items in your data dictionary before creating your data collection instruments. As you develop items to add to your data dictionary, it is vital to consider questionnaire design.
 
-While some instruments (e.g., cognitive assessments) typically have standardized items, other instruments, such as surveys, are often not predefined, allowing researchers freedom in the design of the instrument which can lead to negative effects such as errors, bias, and potential harm [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. While this is not a book on questionnaire design, below are a few tips to help you collect more valid, reliable, and ethical survey data.
+While some instruments (e.g., cognitive assessments) typically have standardized items, other instruments, such as surveys, are often not predefined, allowing researchers freedom in the design of the instrument which can lead to negative effects such as errors, bias, and potential harm [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. Question ordering, response option ordering, question wording, and more can all impact participant responses. While questionnaire design is actually outside of the scope of this book, I have a few tips to help you collect more valid, reliable, and ethical survey data. In addition to following these tips, make sure to consult a methodologist when designing your questionnaire.
 
 1. Use existing standards if possible
     - Organizations such as the @national_institutes_of_health_common_nodate and the @national_center_for_education_statistics_common_nodate have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
@@ -232,30 +237,27 @@ While some instruments (e.g., cognitive assessments) typically have standardized
             - It also reduces the costs of integrating datasets
         - Improves interpretation of information
 2. Make sure questions are clearly worded and answer choices are clear and comprehensive
-	- Consider how the language might be interpreted
-	  - Is the question wording confusing? Can the response options be misinterpreted?
-	    - For example, rather than asking "What is your relationship with this student?", which may lead to responses such as "good", reword the question to "How are you related to this student?"
+	- Consider how the language might be interpreted. Is the question wording confusing? Can the response options be misinterpreted?
 	    - Rather than asking "What county are you from?" when looking for the participant's current location, be more specific and ask "What county do you currently reside in?"
-	    - Rather than asking which parent are you? (m/f) where "m" and "f" could be interpreted as "male" or "female", clearly write out the response options and make sure they are comprehensive (mother, father, legal guardian, and so forth)
+	    - Rather than asking "Which parent are you?" and providing the response options "m" and "f", where "m" and "f" could be interpreted as "male" or "female", clearly write out the response options and make sure they are comprehensive (mother, father, legal guardian, and so forth)
 	  - Is the question leading/biased?
 	    - Are the response options ordered in a leading way?
 	  - Is there no one way to answer this question?
-	    - Are categories mutually exclusive and exhaustive [@icpsr_guide_nodate]?
-3. Consider data ethics in your questionnaire design [@kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_nodate; @narvaiz_data_nodate]
+	    - Are response categories mutually exclusive and exhaustive [@icpsr_guide_nodate]?
+3. Consider data ethics in your questionnaire design [@gaddy_principles_2020; @kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_nodate; @narvaiz_data_nodate]
     - Consider the why of each item and tie your questions to outcomes
-        - Don't cause undue burden on participants by collecting more data just to have more data.
+        - Don't cause undue burden on participants by collecting more data just to have more data
         - If collecting demographic information, provide an explanation of why that information is necessary and how it will be used in your research
     - Review question wording
-      - Does it have potential to do harm to participants?
+      - Does it have potential to do harm to participants? Do the benefits outweigh the risks?
       - If sensitive questions are included, make sure to discuss how you will protect respondent's information
     -  Make questions inclusive of the population while also capturing the categories relevant for research
-        - If a question is multiple choice, still include an "other" option with an open text field
+        - If a question is multiple choice, still include an "other" option with an open-text field
         - For demographic information, allow participants to select more than one option
-	  - Consider including one general free text field in your survey to allow participants to provide additional information that they feel was not captured elsewhere
-4. Limit the collection of personally identifiable information
+	  - Consider including one general free-text field in your survey to allow participants to provide additional information that they feel was not captured elsewhere
+4. Limit the collection of personally identifiable information (PII)
     - Collecting identifiable information is a balancing act between protecting participant confidentiality and collecting the information necessary to implement a study. We often need to collect some identifying information either for the purposes of record linking or for purposes related to study outcomes (e.g., scoring an assessment based on participant's age). 
-    - As a general rule, you only want to collect personally identifiable information (PII) that is absolutely necessary for your project, and no more. As discussed in Chapter \@ref(rdm), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., birthdate). Before sharing your data, all PII will need to be removed or altered to protect confidentiality.
-
+    - As a general rule, you only want to collect PII that is absolutely necessary for your project, and no more [@gaddy_principles_2020]. As discussed in Chapter \@ref(rdm), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., birthdate). Before sharing your data, all PII will need to be removed or altered to protect confidentiality.
 
 **Survey Design Resources**
 
@@ -274,14 +276,15 @@ Gathering feedback on your instruments is an integral part to the quality assura
     - As discussed in Chapter \@ref(document), once all items for each instrument have been added to your data dictionary, have your team review the data dictionary and provide feedback
 2. Piloting an instrument for content
     - Once the team has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population and gather feedback
+    - If you are piloting your instrument with a small population (N < 10), and you are either gathering feedback from a checklist or collecting data using the instrument with no intent to disseminate outcomes as research data, then IRB approval will most likely not be required [@cornell_university_irb_2019; @stanford_university_use_nodate]. With that said, you should always consult with your institution's IRB because rules can vary.
 3. Piloting the instrument for data related issues
     - Once the instrument is created in your chosen data collection tool, share the instrument with your team for review
     - Here we are most interested in whether or not the data we are collecting are accurate, comprehensive, and usable
-    - We will discuss this phase in greater detail below
+    - We will discuss this phase in greater detail in Section \@ref(collect-build)
 
-Last, as you move through the piloting phases, remember to update any changes not only in your instrument but also in your data dictionary and any other relevant documentation.
+Last, as you move through the piloting phases, remember to update any changes not only in your tool but also in your data dictionary and any other relevant documentation.
 	  
-```{r fig10-5, fig.cap="Questionnaire pilot phases"}
+```{r fig10-5, fig.cap="Data collection instrument pilot phases"}
 
 knitr::include_graphics("img/pilot2.PNG")
 
@@ -290,7 +293,7 @@ knitr::include_graphics("img/pilot2.PNG")
 
 ### Choose quality data collection tools
 
-Once content piloting is completed, teams should be ready to begin building their instruments in their data collection tools (see Figure \@ref(fig:fig10-4)). Research teams may be restricted in the tools they use to collect their data for a variety of reasons including limited resources, research design, the population being studied, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, pick a tool that meets that meets the various needs of your project while also providing data quality and security controls. Things to consider when choosing a data collection tool are:
+Once content piloting is completed, teams should be ready to begin building their instruments in their data collection tools (see Figure \@ref(fig:fig10-4)). Research teams may be restricted in the tools they use to collect their data for a variety of reasons including limited resources, research design, the population being studied, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, pick a tool that meets the various needs of your project while also providing data quality and security controls. Things to consider when choosing a data collection tool are:
 
 1. Pick the tool that meets the needs of your project
     - Is crowdsourcing required? 
@@ -298,32 +301,32 @@ Once content piloting is completed, teams should be ready to begin building thei
     - Who is entering the data (i.e., data collectors, participants)?
       - If participants are entering data, is the tool accessible for your population?
     - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
-    - Does the tool have customizable features that are necessary for your instrument (e.g., skip logic, automated email reminders, options to embed data, option to calculate scores in the tool)?
+    - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, options to embed data, options to calculate scores in the tool)?
 1. Compliance and security
-    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant?
+    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant? (see Chapter \@ref(rdm) for more information about these regulations)
     - Is the tool approved by your institution?
-    - If collecting anonymous data, do you have the option to de-identify data before downloading (e.g., remove IP Address)?
+    - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
 1. Training needed
     - Is any additional team training needed to allow your team to use and/or build instruments in the tool?
 1. Associated costs
     - Is there a cost associated with the tool? Do you have the budget for the tool?
-    - Will there be additional costs down the line (i.e., collecting data on paper means someone will need to hand enter the data later)?
+    - Will there be additional costs down the line (e.g., collecting data on paper means someone will need to hand enter the data later)?
 1. Data quality features
     - Does the tool allow you to set up data validation?
     - Does the tool have version control?
     - Does the tool have features to deal with fraud/bots?
 
-While there are a variety of tool options, in a nutshell when it comes to quantitative data, we are collecting data in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
+While there are a variety of tool options, in a nutshell when it comes to data collected via forms, we are collecting data in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
 
 ```{r fig10-6, fig.cap="Comparison of data collection tool benefits"}
 
-knitr::include_graphics("img/collect_benefits.PNG")
+knitr::include_graphics("img/collect_benefits2.PNG")
 
 ```
 
 > **Note** <br> <br>
-If you choose to collect data in an electronic format, I highly recommend using a web-based tools that directly feeds into a shared database rather than through offline tools that store data on individual devices. Using a web-based tool, all data is stored remotely in the same database and can be easily downloaded or connected to at any time. No additional work is required. <br> <br>
-However, if collecting data on various tablets that are used in the field, if the forms are offline and cannot be later connected to a web-based form, then all data will be stored individually on each tablet. This not only may be less secure (e.g., a tablet becomes corrupted), it may also require additional data wrangling work including downloading data from each tablet to a secure storage location each day and then combining all files into a single dataset. If you use an electronic tool but your site does not have internet, consider using the many tools (e.g., Qualtrics or SurveyCTO) that allow you to collect data using their offline app and then upload that data back to the platform once you have an internet connection again.
+If you choose to collect data in an electronic format, I highly recommend using a web-based tool that directly feeds into a shared database rather than through offline tools that store data on individual devices. Using a web-based tool, all data is stored remotely in the same database and can be easily downloaded or connected to at any time. No additional work is required. <br> <br>
+However, when collecting data on various tablets in the field, if the forms are offline and cannot be later connected to a web-based form, then all data will be stored individually on each tablet. This not only may be less secure (e.g., a tablet becomes corrupted), it may also require additional data wrangling work including downloading data from each tablet to a secure storage location each day and then combining all files into a single dataset. If you use an electronic tool but your site does not have internet, consider using one of the many tools (e.g., Qualtrics, SurveyCTO) that allow you to collect data using their offline app and then upload that data back to the platform once you have an internet connection again.
 
 **Tool Comparison Resources**
 
@@ -334,9 +337,9 @@ However, if collecting data on various tablets that are used in the field, if th
 |Benjamin Douglas, et al. | Data quality in online human-subjects research comparison of tools^[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0279720]|
 
 
-### Build with the end in mind
+### Build with the end in mind {#collect-build}
 
-Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_quality_nodate]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
+Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_quality_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
 
 The process for building your tools with the end in mind is fairly different for electronic tools compared to paper forms so we are going to talk about these two processes separately.
 
@@ -344,61 +347,49 @@ The process for building your tools with the end in mind is fairly different for
 
 The first thing you will want to do before building your tool is bring out your data dictionary. This data dictionary will be your guide as you build your instrument. Some tools, such as REDCap, provide the option to upload your data dictionary which can then be used to automate the creation of data collection forms as opposed to building them from scratch [@patridge_research_2018].
 
-However, if you are building your instrument manually, following the guidelines below will ensure you collect data that is easier to interpret and more usable, and it will also reduce the amount of time you will need to spend on future data cleaning [@lewis_how_2022]:
+However, if you are building your instrument manually, adhering to the following guidelines will ensure you collect data that is easier to interpret and more usable, and it will also reduce the amount of time you will need to spend on future data cleaning [@lewis_how_2022].
 
-1. Name all of your questionnaire items the correct item name from your data dictionary [@uk_data_service_quality_nodate]
-    - For example, rename the Qualtrics default Q1 to s_gender
-    - This isn’t a name that your survey participants will see, but it is the variable name you will see when you download your data
-    - As we mentioned in Chapter \@ref(style), it's also best to not concatenate a time component to your variable names if your project is longitudinal. If you do, you will no longer be able to reuse your instrument for other time periods, creating additional work for you or your team.
+1. Name all of your items the correct variable name from your data dictionary [@uk_data_service_quality_2023]
+    - For example, instead of using the platform default name of "Q2", rename the item to "tch_years"
+    - As we mentioned in Chapter \@ref(style), it's also best to not concatenate a time component to your variable names if your project is longitudinal. Doing so makes it difficult to reuse your instrument for other time periods, creating additional work for you or your team.
 2. Code all values as they are in your data dictionary
-    - For example, 1 = strongly agree, 2 = agree, 3 = disagree, 4 = strongly disagree
-    - Many times your tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary
-    - Again, participants will only see the text values but when you download your data, you will have the correct numeric values associated with each response option
+    - For example, 1 = "strongly agree", 2 = "agree", 3 = "disagree", 4 = "strongly disagree"
+    - Many times tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary
     - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options
-3. Use data validation to reduce errors and missing data [@uk_data_service_quality_nodate]
-    - Content validation
+3. Use data validation to reduce errors and missing data [@uk_data_service_quality_2023]
+    - Content validation for open-text boxes
       - Restrict entry to the type assigned in your data dictionary (e.g., numeric)
       - Restrict entry to the format assigned in your data dictionary (e.g., YYYY-MM-DD)
       - Restrict ranges based on allowable ranges in your data dictionary (e.g., 1-50)
-          - This could even include validating against previous responses (if elementary school was selected in previous question, age should be between 5-12, if middle school was selected, age should be between 11-14)
-      - If duplicate responses are not allowed for a question (i.e., rank order), have options drop away after they are chosen
+          - This could even include validating against previous responses (e.g., if SchoolA was selected in a previous question, grade level should be between 6-8, if SchoolB was selected, grade level should be between 7-8)
     - Response validation
-      - Add a "forced response" option to variables that are absolutely necessary (e.g., unique identifier)
-        - Do not add "forced response" to non-essential questions. Doing so can be both harmful to participants and produce bad data. If you add forced response options to non-essential questions, ensure that those questions allow participants to still opt-out.
-      - For non-essential questions, add a "request response" option which notifies the respondent that they skipped a question and asks them if they still would like to move forward without responding
+      - Consider the use of forced-response and request-response options to reduce missing data
+        - Forced-response options do not allow participants to move forward without completing an item. Request-response options notify a respondent if they skip a question and ask if they still would like to move forward without responding
+        -  Be aware that adding a forced-response option to sensitive questions has the potential to be harmful and produce bad data. If adding a forced-response option to a sensitive question, consider allowing those participants to opt-out in another way (e.g., "Prefer not to answer"). 
 4. Choose an appropriate type and format to display the item
-    - Become familiar with the various questions types available in your tool (e.g., rank order, multiple choice - select all, multiple choice - select one, text box)
-    - Become familiar with the various formats (e.g., radio buttons, drop down, checkboxes)
-    - For instance, if your item is a rank order question (ranking 3 items), creating this question as a multi-line free text entry form may lead to duplicate entries (such as entering a rank of 1 more than once). However, using something like a “rank order” question type with a “drag and drop” format ensures that participants are only allowed to drag the 3 existing response options and order them.
-5. If there is a finite number of response options, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than open-text field [@openaire_eu_basics_2018; @uk_data_service_quality_nodate]
+    - Become familiar with the various questions types available in your tool (e.g., rank order, multiple choice, text box, slider scale)
+    - Become familiar with the various formats (e.g., radio button, drop-down, checkbox)
+    - For example, if your item is a rank order question (ranking 3 items), creating this question as a multi-line, free-text entry form may lead to duplicate entries (such as entering a rank of 1 more than once). However, using something like a rank order question type with a drag and drop format ensures that participants are not allowed to duplicate rankings.
+5. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_quality_2023]
     - For example, list school name as a drop-down item rather than having participants enter a school name
-      - This prevents variation in text entry (e.g., "South Middle", "SOUTH", "south middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values
-6. If there is an infinite number of response options or the number of options is large, use an open-text box
-    - Consider limiting the number of characters allowed in the text box unless you want to allow users to write paragraphs of information
-    - Using open-ended text boxes does not mean you can not regroup this information into categories later through syntax. It is just more time-consuming and requires interpretation and decision making on the part of the data cleaner  
-7.Only ask for one piece of information per question
-    - Rather than asking "please list the number of students in your algebra class and geometry class", split those into two separate questions so those questions download as two separate items in your dataset
-    - This also prevents confusion in case a participant or data collector swaps the order of information
-8. To ensure the security and integrity of data, consider adding a line to your survey introduction instructing participants to close their browser at the completion of their survey so that others may not access their responses.
+      - This prevents variation in text entry (e.g., "Sunvalley Middle", "sunvalley", "Snvally Middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values
+6. If there is an infinite number of response options for an item or the number of options is large, use an open-text box
+    - If you can create a searchable field in your tool, allowing your participants to easily sift through all of the options, you absolutely should. Otherwise, use a text-box as opposed to having participants scroll through a large list of options
+    - Consider adding examples of possible response options to clarify what you are looking for
+    - Using open-ended text boxes does not mean you can not regroup this information into categories later during a cleaning process. It is just more time-consuming and requires interpretation and decision-making on the part of the data cleaner
+7. Only ask for one piece of information per question 
+    - For example, rather than asking "Please list the number of students in your algebra class and geometry class", split those into two separate questions so those questions download as two separate items in your dataset
+    - This also includes more simple examples such as splitting first name and last name into two separate fields
+    - This prevents confusion in case a participant or data collector swaps the order of information
+8. To protect participant privacy and ensure the integrity of data, consider adding a line to the introduction of your web-based instrument, instructing participants to close their browser upon completion so that others may not access their responses
 9. Last, if possible, export the instrument to a human-readable document to perform final checks
     - Are all questions accounted for?
     - Are all response options accounted for and coded as they should be?
     - Is skip logic shown as expected?
 
-Once your tool is created, the last step is to pilot the actual instrument for data issues (see Figure \@ref(fig:fig10-5)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actually try to break things [@kopper_questionnaire_2020]. If there are problems with the tool, now is the time to find out. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If any issues are found, update the tool as well as your documentation as needed.
+Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig10-5)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actively try to break things [@kopper_questionnaire_2020]. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If there are problems with the tool, now is the time to find out. 
 
-Potential feedback checklist items [@gibson_survey_2020]:
-
-1. Can you access the survey? Were there any barriers?
-2. Are all questions accounted for? Are the items worded correctly?
-3. Are all response options visible for each categorical question?
-4. Is data validation working? Were you able to enter unallowable values, data types, or formats?
-5. Is the skip logic working?
-6. Are you able to skip items that you should not be able to skip?
-
-<br>
-
-Last, export the sample data and review the data for the following:
+After sample responses are collected from team members, export the sample data and review the data for the following:
 
 1. Are there any unexpected or missing variables?
 2. Are there any unexpected variable names?
@@ -407,11 +398,14 @@ Last, export the sample data and review the data for the following:
 5. Are there unexpected variable formats?
 6. Is data exporting in an analyzable, rectangular format?
 
+If any issues are found either through team feedback or while reviewing the exported sample data, take time to update the tool as well as your documentation as needed before starting data collection.
+
 #### Paper data collection
 
 There are many situations where collecting data electronically may not be feasible or the best option for your project. While it is definitely trickier to design a paper tool in a way that prevents bad data, there are still steps you can take to improve data quality.
 
-1. First, you still want to pull out your data dictionary to use as a guide as you create your paper form
+1. Use your data dictionary as a guide as you create your paper form
+    - Make sure all questions are included and all response options are accurately added to the form
 2. Have clear instructions for how to complete the paper form [@kopper_survey_2021]
    - Make sure to not only have overall instructions at the top of the form but also have explicit instructions for how each question should be completed
       - Where to write answers (e.g., not in the margin)
@@ -420,7 +414,7 @@ There are many situations where collecting data electronically may not be feasib
       - How to navigate item skip logic (e.g., include visual arrows)
 3. Only ask for one piece of information per question to reduce confusion in interpretation
 
-Once your tool is created, you will want to pilot the instrument with your team. Collect feedback from Figure \@ref(fig:fig10-5) and edit your tool as needed before sending it out into the field.
+Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig10-5)). Using the feedback collected, edit your tool as needed before sending it out into the field.
 
 Last, all data that is collected on paper will need to be entered into an electronic format. While we will talk about data entry specifically in Chapter \@ref(capture), this point in instrument creation is a great time to create an annotated instrument that can be used for future data entry [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig10-7)) [@hart_florida_2018].
 
@@ -434,7 +428,7 @@ Another option for capturing paper data in an electronic format is using TeleFor
 
 #### Identifiers
 
-It is vitally important, when building data collection tools, to make sure you are collecting unique identifiers [@kopper_survey_2021]. Whether you have participants enter a unique identifier into a form or you have linked study ID to each form in some other way, it's important to not accidentally collect anonymous or unidentifiable data. Without unique identifiers in your data, you will be unable to link data across time and forms. If possible, you want to avoid collecting names as unique identifiers for the following reasons [@mckenzie_falsehoods_2010]:
+When building data collection tools, no matter if they are paper or electronic, it is vitally important to make sure you are collecting unique identifiers [@kopper_survey_2021]. Whether you have participants enter a unique identifier into a form or you link study ID to each form in some other way, it's important to not accidentally collect anonymous data. Without unique identifiers in your data, you will be unable to link data across time and forms. If possible, you want to avoid collecting names as unique identifiers for the following reasons [@mckenzie_falsehoods_2010]:
 
 - To protect confidentiality we want to use names as little as possible on forms
   - If they are used on forms, we want to remove them as soon as possible
@@ -446,7 +440,7 @@ It is vitally important, when building data collection tools, to make sure you a
 
 All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers.
 
-Figure \@ref(fig:fig10-8) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I emphasize here that I used the term "merge" which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
+Figure \@ref(fig:fig10-8) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge" which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
 ```{r fig10-8, fig.cap="Process of creating a de-identified dataset", out.width = "90%"}
 
@@ -454,47 +448,36 @@ knitr::include_graphics("img/de-identify.PNG")
 
 ```
 
-Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above [@dime_analytics_data_2021; @gibson_survey_2020]. We will discuss these methods separately for electronic data and paper data below.
+Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above [@dime_analytics_data_2021; @gibson_survey_2020]. We will discuss these methods separately for electronic data and paper data.
 
-1. Electronic Data
+> **Note** <br> <br>
+If your study is designed to collect anonymous data, then you will not assign study identifiers and no participant identifying information should be collected in your instruments (e.g., name, email, date of birth). You will also want to make sure that if your tool collects identifying metadata such as IP Address or worker IDs in the case of crowdsourcing tools (e.g., MTurk), this information will not be included in your downloaded data. <br><br>
+Remember that if you collect anonymous data, you will not be able to link data across measures or across time. However, if your study randomizes participants by an entity (e.g., school or district), you will need to collect identifying information from that entity in order to cluster on that information (e.g., school name).
+
+##### Electronic Data
 
 There are many ways you might consider collecting unique identifiers other than names. A few possible options are provided below. The method you choose will depend on your data collection design, your participant population, your tool capabilities, and your team expertise.
 
-- Create unique links for participants
-  - Many tools will allow you to preload a contact list of participants (from your participant database) that includes both their names and study IDs. Using this list, the tool can create unique links for each participant. This is the most error-proof way to ensure study IDs are entered correctly. 
-  - When you export your data, the correct ID is already linked to each participant and you can choose to not export names in the data. 
-  - Make sure to build a data check into the system. When a participant opens their unique link, verify their identity by asking, “Are you {first name}?”. Only use first name to protect other participant identities. 
-    - If they say yes, they move forward. If they say no, the system redirects them to someone to contact. This ensures that participants are not completing someone else’s survey and IDs are connected to the correct participant.
-- Provide one link to all participants and separately, in an email, in person on a sheet of paper, or by mail, provide participants with their study ID to enter into the system. 
-  - This might be a preferred method if you are conducting surveys or assessments in a computer lab or on tablets at a school site
-  - This can possibly introduce error if a participant enters study ID incorrectly. 
-    - Similar to above, after a participant enters their ID, verify their identity by asking, “Are you first name?”. 
-      - If they say yes, they move forward. If they say no, the system redirects them to someone to contact
-  - Note that participants are only becoming aware of their own study identifier, not the identifiers associated with other participants. However, if your team, or your IRB, is uncomfortable with participants knowing their study IDs you can also consider using a "double ID" which is yet another set of unchanging unique identifiers that you use for the sole purpose of data collection. Those identifiers will need to be tracked in your participant tracking database and will need to be replaced with study IDs in the clean data
-- If you have not previously assigned study identifiers (i.e., your consent and assent process is a part of your instrument), you can have participants enter their identifying information (e.g., name) and then have the tool assign a unique identifier to the participants
-  - Using this method, you can potentially download two separate files
-    - One with just the instrument data and assigned study ID, with name removed
-    - One with just identifying information and assigned study ID (this information will be added to your participant tracking database)
-
-<br>
-
-> **Note** <br> <br>
-All of the options above assume you are making a private link that you are sending to a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@simone_how_2019; @teitcher_detecting_2015]: <br><br>
-- Not posting the link on social media  
-- Using CAPTCHA verification  
-- Using tools that allow you to block suspicious geolocations  
-- Not automating payment upon survey completion    
-- Including open-ended questions   
-- Build attention/logic checks into survey  
-- Ask some of the same questions twice (once early on and again at the end) <br><br>
-Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. We will discuss this more later in this chapter. <br><br>
-If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link.
+1. Create unique links for participants
+    - Many tools will allow you to preload a contact list of participants (from your participant database) that includes both their names and study IDs. Using this list, the tool can create unique links for each participant. This is the most error-proof way to ensure study IDs are entered correctly. 
+    - When you export your data, the correct ID is already linked to each participant and you can choose to not export names in the data. 
+    - If using this method, make sure to build a data check into the system. When a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?". In order to protect other participant identities, do not share full names. 
+      - If they say yes, they move forward. If they say no, the system redirects them to someone to contact. This ensures that participants are not completing someone else’s survey and IDs are connected to the correct participant.
+2. Provide one link to all participants and separately, in an email, in person, or by mail, provide participants with their study ID to enter into the system. 
+    - This might be a preferred method if you are collecting data in a computer lab or on tablets at a school site, or if your tool does not have the option to create unique links
+    - This can possibly introduce error if a participant enters their study ID incorrectly. 
+      - Similar to the first option, after a participant enters their ID, verify their identity
+    - Note that participants are only becoming aware of their own study identifier, not the identifiers associated with other participants. However, if your team, or your IRB, is uncomfortable with participants knowing their study IDs you can also consider using a "double ID" which is yet another set of unchanging unique identifiers that you use for the sole purpose of data collection. Those identifiers will need to be tracked in your participant tracking database and will need to be replaced with study IDs in the clean data
+3. If you have not previously assigned study identifiers (i.e., your consent and assent process is a part of your instrument), you can have participants enter their identifying information (e.g., name) and then have the tool assign a unique identifier to the participants
+    - Using this method, you can potentially download two separate files
+      - One with just the instrument data and assigned study ID, with name removed
+      - One with just identifying information and assigned study ID (this information will be added to your participant tracking database)
     
-2. Paper Data
+##### Paper Data
 
 If you take paper forms into the field consider doing the following to connect your data to a participant [@otoole_data_2018; @reynolds_basics_2022].
 
-- Write the study ID on each page of your data collection form and then use either a removable label with participant name and place that over the ID or attach a cover sheet with identifying information such as student name. When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
+- Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then use either a removable label with participant name and other relevant information and place that over the ID or attach a cover sheet with this information. When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
   - It is this ID only that you will enter into your data entry form during the data capture process, no name.
   - Removing the label/cover sheet also ensures that your data entry team only sees the study ID when they enter data, increasing privacy by minimizing the number of people who see see participant name.
   - It is important to double and triple check study identifiers against your participant database to make sure the information is correct before removing the label or cover sheet
@@ -502,37 +485,34 @@ If you take paper forms into the field consider doing the following to connect y
 
 ```{r fig10-9, fig.cap="Example cover sheet for a paper data collection instrument", out.width = "90%"}
 
-knitr::include_graphics("img/cover_sheet.PNG")
+knitr::include_graphics("img/cover_sheet2.PNG")
 
 ```
 
-> **Note** <br> <br>
-If your study is designed to collect anonymous data, then you will not assign study identifiers and no participant identifying information should be collected in your instruments (e.g., name, email, date of birth). You will also want to make sure to not collect IP addresses as they can be used to identify an individual’s computer. It’s also important to recognize that if you collect anonymous data, you will not be able to link data across measures or across time. However, if your study randomizes participants by an entity (e.g., school or district), you will need to collect identifying information about that entity in order to cluster on that information (e.g., school name). 
-
 ## Quality Control
 
-In addition to implementing quality assurance measures during your planning phases, it is equally important to implement several quality control measures while data collection is underway.
+In addition to implementing quality assurance measures during your planning phases, it is equally important to implement several quality control measures while data collection is underway. Those measures include:
 
-1. In field data management
+1. Field data management
 2. Ongoing data checks
 3. Tracking data collection daily
 4. Collecting data consistently
 
-We will discuss each of these issues below.
+We will discuss each of these measures now.
 
-### In field data management
+### Field data management
 
-If your data collection efforts include in field data collection (e.g., data collectors administering assessments in a school), there are several steps your team can implement to both keep your data more secure in the field, as well as keep better track of what happens in the field and ensure more accurate information. 
-
-This process begins before you begin collecting data. It starts with creating solid standard operating procedures (see Chapter \@ref(document)) for your data collection process and spending time training your data collection staff on those procedures so that you not only keep data more secure and but ensure that your data are collected with fidelity. This includes not only training them on how to implement the instrument, but also how to store and track data in the field. Some considerations for what to include in a data collection SOP are below [@dime_analytics_data_2021].
+If your data collection efforts include field data collection (e.g., data collectors administering assessments in a school), there are several steps your team can implement that will keep your data more secure in the field, help a project coordinator keep better track of what happens in the field, and will lead to more accurate and usable data. Some best practices for field data collection include the following [@dime_analytics_data_2021]:
 
 - Keep your data secure in the field
-  - Make sure all paper forms are kept in a folder (or even a lock box) with you at all times and that they are promptly returned to the office (e.g., not left in a car, at someone's home)
-  - Make sure all data collection devices (e.g., phone, tablets) are password protected and never left open and unattended. Keep all identifiable information encrypted on your in field devices (i.e., data is encoded so that only those with a password can decipher it). You may also consider remote wiping capabilities on portable devices in the case of loss or theft [@otoole_data_2018]
-- Create tracking sheets to go out in the field
-  - These sheets should include the names and/or identifiers of every participant data collectors will be collecting data from
-  - Next to each participant, include any other relevant information to track, such as 
+  - Make sure all paper forms are kept in a folder (or even a lock box) with you at all times and that they are promptly returned to the office (e.g., not left in a car, not left at someone's home)
+  - Make sure all data collection devices (e.g., phones, tablets) are password protected and never left open and unattended. Keep all identifiable information encrypted on your field devices (i.e., data is encoded so that only those with a password can decipher it). You may also consider remote wiping capabilities on portable devices in the case of loss or theft [@otoole_data_2018]
+- Create tracking sheets to use in the field
+  - These sheets should include the names and/or identifiers of every participant who data collectors will be collecting data from
+  - Next to each participant, include any other relevant information to track such as 
     - Was the data collected (i.e., a check box)
+    - Who collected the data (i.e., data collector initials or ID)
+    - Date the data was collected
     - As well as a notes section to describe any potential issues with the data (e.g., "Student had to leave the classroom halfway through the assessment - only partially completed")
   - This tracking sheet allows the project coordinator to keep track of what is occurring in the field so that information can be accurately recorded in the participant tracking database and forms can be sent back out for completion as needed
 - Check paper data in the field
@@ -541,16 +521,15 @@ This process begins before you begin collecting data. It starts with creating so
     - Check for duplicate answers given
     - Check for answers provided outside of the assigned area (e.g., answers written in the margins)
     - Check scoring (e.g., basals and ceilings)
-- Assign an in field supervisor
-  - This person is assigned to 
-    - Do another round of data checks in the field once the data collector returns paper forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
-    - Ensure that all data and equipment is accounted for and returned to the office
-    - Is available for trouble shooting as needed
+- Assign a field supervisor. This person is assigned to:
+  - Do another round of data checks in the field once the data collector returns paper forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
+  - Ensure that all data and equipment is accounted for and returned to the office
+  - Be available for trouble shooting as needed
 - Do another round of paper data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig10-10))
   - The project coordinator may do this round of checking as they are tracking information in the participant database
   - If any issues are found, note that in the tracking database and send the form back out to the field for correction
-  - If your paper forms are mailed back to you from participants, rather than returned from in field data collectors, it is still important to do those in-office spot checks. If at all possible, reach out to those participants for any corrections.
-- When data collection wraps up for that period, collect feedback from data collectors to improve future data collection efforts
+  - If your paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
+- When a wave of data collection wraps up, collect feedback from data collectors to improve future data collection efforts
   - What went well? What didn't?
 
 ```{r fig10-10, fig.cap="A series of spot checks that occur with paper data"}
@@ -559,37 +538,44 @@ knitr::include_graphics("img/spot_check.PNG")
 
 ```
 
+**Tracking sheet templates**
+
+|Source|Resource|
+|--------|-----------|
+|Crystal Lewis| Field tracking sheet template ^[https://docs.google.com/spreadsheets/d/1CeIXvTBtU9O3GNzfFaAMtb69Z2HyOLuPQWsxy7jOWdU/edit?usp=sharing]|
+
 ### Ongoing data checks
 
-If you are collecting data via a web-based form, you will want to perform frequent data quality checks, similar to the checks you performed during the content and data piloting phase. You will want to check for both programming errors (i.e., skip logic programmed incorrectly) as well as response quality errors (e.g. bots, survey comprehension) [@dime_analytics_data_2021; @gibson_data_2021].
+If you collect data via a web-based form, you will want to perform frequent data quality checks, similar to the checks you performed during the content and data piloting phase. You will want to check for both programming errors (i.e., skip logic programmed incorrectly) as well as response quality errors (e.g. bots, survey comprehension) [@dime_analytics_data_2021; @gibson_data_2021].
 
-- Checks for bots/fraud
-  - Are there surveys completed in a very short period of time?
-  - Are there surveys in suspicious geolocations?
-    - This information may not be available for anonymous data - consult with your IRB
-  - Are there nonsensical responses for open-ended questions?
-  - Are there nonsensical responses to attention or logic checking questions?
 - Checks for comprehension
   - Are any questions being misinterpreted?
 - Checks for missing data
   - Are items being skipped that should not be skipped?
-  - Are surveys not being completed?
+  - Are participants/data collectors not finishing forms?
 - Checks for ranges and formats
-  - Are values unexpected formats or falling outside of unexpected ranges?
-- Checks for duplicate surveys
+  - Are values in unexpected formats or falling outside of unexpected ranges?
+- Checks for duplicate forms
+  - Are there duplicate entries for participants?
 - Is skip logic working as expected?
   - Are people being directed to the correct location based on their responses to items?
+- Checks for bots/fraud
+  - Are forms being completed in a very short period of time?
+  - Are forms being collected from suspicious geolocations?
+    - This information may not be available for anonymous data - consult with your IRB
+  - Are there nonsensical responses for open-ended questions?
+  - Are there nonsensical responses to attention or logic checking questions?
 
 Some of these checks can be performed programatically (i.e., you can write a validation script in a program such as R, and run that script on a recurring schedule during data collection to check for things such as values out of range). Other checks may be a manual check of data (e.g., such as downloading your data on a recurring schedule and reviewing open-ended questions for nonsensical responses). If errors are found, consider revising your instrument to prevent future errors if this is possible without jeopardizing the consistency of your data.
 
 ### Tracking data collection
 
-Throughout data collection your team should be tracking the completion of forms (e.g. consents, paperwork, data collection forms). Your team may designate one person to track data (e.g., the project coordinator), or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more persons at each site tracking data as it comes in. 
+Throughout data collection your team should be tracking the completion of forms (e.g., consents, paperwork, data collection forms). Your team may designate one person to track data (e.g., the project coordinator), or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more people at each site tracking data as it comes in. 
 
 Some tracking best practices include:
 
 1. Only track data that you physically have (paper or electronic)
-    - Never track data as "complete" that someone tells you they collected
+    - Never track data as "complete" that someone just tells you they collected
       - You can always mark this information in a "notes" field and track when you have the physical data
 2. Track daily during data collection
     - Do not wait until the end of data collection to track what data was collected
@@ -599,35 +585,33 @@ Some tracking best practices include:
 
 ### Collecting data consistently
 
-As mentioned in Chapter \@ref(style), it's important to collect data consistently for the entire project to ensure interoperability. Keep the following consistent across both time and forms (e.g., Spanish and English version of a form):
+As mentioned in Chapter \@ref(style), it's important to collect data consistently for the entire project to ensure interoperability. Keep the following consistent across both time and forms (e.g., Spanish and English version of a form, link for SchoolA and link for SchoolB):
 
 - Variable names
   - Use the same names for the same items (and remember it's best to not add a time component to your variable names at this time)
 - Variable types
-  - If gender is collected as a numeric variable, keep it as a numeric variable
+  - For example, if gender is collected as a numeric variable, keep it as a numeric variable
 - Value codes
-  - Make sure response options are consistently coded using the same values
+  - Make sure response options are consistently coded using the same values (e.g., 0 = "No", 1 = "Yes")
 - Question type and format
   - If a slider question was used for "Percent of time on homework", continue to ask that question using a slider question
   
 Failing to collect your data consistently has many consequences:
 
-1. It can make it difficult or impossible to compare outcomes. 
-2. Makes your work less reproducible
-3. Reduces your ability to physically combine data (i.e., you cannot append dissimilar variables)
-4. Can lead to errors in interpretation
+1. It can make it difficult or impossible to compare outcomes
+2. It makes your work less reproducible
+3. It reduces your ability to physically combine data (i.e., you cannot append dissimilar variables)
+4. It can lead to errors in interpretation
 
-Last, collecting data consistently also means measuring things in the same way over time or across forms so that you don't bias your results. The slightest change in item wording or response options can result in dramatic changes to outcomes [@icpsr_introduction_2022].
+Last, collecting data consistently also means measuring things in the same way over time or across forms so that you don't bias your results. The slightest change in item wording or response options can result in dramatic changes to outcomes [@icpsr_introduction_2022; @pew_research_center_writing_2023].
 
 ## Review
 
-This chapter is a lot. There is so much to consider, both prior to data collection as well as during data collection, and the information varies so much depending on how you collect your data and who you collect your data on. As I've said before, implement what you can. Implementing even some of these practices will lead to higher quality data compared to implementing none of these practices, and that's huge. 
+Recall in Chapter \@ref(plan) when we discussed designing and visualizing a data collection workflow. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig10-11) helps us to see when these practices fit into the different phases our our workflow.
 
-It's also important to consider your entire data collection workflow. Recall Figure \@ref(fig:fig5-5), where we visualized a sample process for collecting an online survey. Knowing that errors can happen at any point in this process, remember to consider the entire workflow holistically, and integrate both quality assurance and quality control procedures throughout (see Figure \@ref(fig:fig10-11)).
+Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed. 
 
-As a final reminder, once the workflow is developed, you will want to write the specifics of that plan into an SOP, including assigning roles and responsibilities for each task in the process. Last, train your team regularly on how to implement that data collection SOP so that you continue to collect data in a standardized way. 
-
-```{r fig10-11, fig.cap="Integrating quality assurance and control into a data collection workflow"}
+```{r fig10-11, fig.cap = "Integrating quality assurance and control into a data collection workflow"}
 
 knitr::include_graphics("img/data_collect_workflow2.PNG")
 
@@ -641,3 +625,14 @@ knitr::include_graphics("img/data_collect_workflow2.PNG")
 |Sarah Kopper, Katie Parry | Five key steps in the process of survey design^[https://www.povertyactionlab.org/resource/survey-design]|
 
 
+> **Note** <br> <br>
+All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If possible though, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link. <br><br>
+If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@simone_how_2019; @teitcher_detecting_2015]: 
+- Not posting the link on social media  
+- Using CAPTCHA verification  
+- Using tools that allow you to block suspicious geolocations  
+- Not automating payment upon survey completion    
+- Including open-ended questions   
+- Building attention/logic checks into the survey  
+- Asking some of the same questions twice (once early on and again at the end) <br><br>
+Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. <br><br>

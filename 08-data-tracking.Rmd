@@ -81,15 +81,16 @@ knitr::include_graphics("img/participant1.PNG")
 We can see here that in each table we have no duplicated, repeating information. The student table only contains student level information, the teacher table only contains teacher level information, and the school table only contains school level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user. 
 
-Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables:
+Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables, seen in Table \@ref(tab:tab9-1).
 
 `SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade`    
 `FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
 `ORDER BY t_l_name, t_f_name, s_l_name, s_f_name`    
 
-```{r, caption = "Example roster created by querying our relational database tables"}
+```{r tab9-1}
 
 library(tidyverse)
+library(huxtable)
 
 tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade,
                 "Hoover", "Elizabeth", "Simpson", "Lisa", 2,
@@ -97,7 +98,9 @@ tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade,
                  "Krabappel", "Edna", "Prince", "Martin", 4,
                  "Krabappel", "Edna", "Simpson", "Bart", 4,
                  "Krabappel" , "Edna", "Van Houten", "Milhouse", 4) %>%
-gt::gt(caption = "Example roster created by querying our relational database tables")
+  as_hux () %>%
+  set_caption('Example roster created by querying our relational database tables') %>%
+  set_background_color(evens, everywhere, "grey95")
   
 ```
 
@@ -240,7 +243,7 @@ There are many tool options you can choose from. A sampling of those options are
   - Forms that feed into a relational database, maintained using a SQL (structured query language) database engine such as SQLite, MySQL, or PostgreSQL
 
 
-## Entering data
+## Entering data {#track-enter}
 
 Your last consideration when building your database will be, how do you want your team to enter data into your database? There are many ways to enter data including using SQL statements, importing data, integrating your data collection platform and your tracking database, or even scanning forms using QR codes. While some of those options may work great for your project, here we are going to talk about the two simplest and most common options: manually entering data into a spreadsheet view, and manually entering data into a form.
 
@@ -272,36 +275,48 @@ knitr::include_graphics("img/form-view-new.PNG")
 
 
 > **Note** <br> <br>
-If your participant tracking database is separate from your data collection tools, all information will need to be entered by your team using one of these ways. However, if your participant tracking tool is also your data collection/data capture tool (such as those who collect data using RedCap), fields such as data collection status (e.g., survey completed) may not need to be manually entered. Rather they may be automated to populate as "complete" once a participant submits their responses in the data collection tool.
+If your participant tracking database is separate from your data collection tools, all information will need to be entered by your team using one of the ways mentioned in Section \@ref(track-enter). However, if your participant tracking tool is also your data collection/data capture tool (such as those who collect data using REDCap), fields such as data collection status (e.g., survey completed) may not need to be manually entered. Rather they may be automated to populate as "complete" once a participant submits their responses in the data collection tool.
 
 ## Creating unique identifiers {#ids}
 
-```{r fig9-9, fig.cap="Example of a study id schema"}
+Participant unique identifiers are numeric or alphanumeric values and typically range from 2-10 digits. Assigning these identifiers is an important part of protecting the privacy of human participants. When publicly sharing your study data, all personally identifying information will be removed and these identifiers are what will allow you to uniquely identify and link participants in your data. 
 
-knitr::include_graphics("img/id_schema.PNG")
+While there are several ways participant identifiers can be assigned (e.g., created by participants themselves, assigned by your data collection software), most commonly, the research team assigns these identifiers to participants. As participants are recruited and added to your participant database, you will assign them a unique participant ID. If confidentiality was promised to schools or districts, you will also want to assign identifiers to sites as well.
 
-```
+It can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Chapter \@ref(document)). In developing that schema, there are several best practices to consider.
 
-Assigning unique identifiers (UIDs) is an important part of ensuring the protection of the privacy of human participants. Hopefully at this point your team has already created your study id schema and documented it in an SOP (see Chapter \@ref(document)). However, since this is the point when you will begin actually assigning those IDs, this is a good time to discuss best practices for creating your unique identifier schema. There are several rules to consider when assigning your identifiers.
-
-1. These identifiers are numeric or alphanumeric and typically range from 2-10 digits
-2. They must be unique within entities and but also across entities to reduce confusion
-    - For example, no duplicating IDs within students or across teachers and schools
-3. The identifier must be randomly assigned and be completely distinct from any participant information. This ensures both confidentiality as well as consistency (e.g., names change, locations change)
-    - The ID should not be associated with name, teacher, location, dob, income, grade level, and so forth. Some examples of what not to do include:
-      - Do not sort names alphabetically and then assign IDs in sequential order
-      - Do not include initials as part of an identifier
-      - Do not include teacher or school identifiers within a student identifier
-4. Participants must keep this same identifier for the entire project, never change a participant's ID
-    - This applies across all waves of data collection
-    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study more than once (as seen in Figure \@ref(fig:fig9-10)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)
-5. If confidentiality was promised to schools or districts, assign identifiers to sites as well
+1. Participants must keep this same identifier for the entire project.
+    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure \@ref(fig:fig9-10)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)
+    - Having a static participant ID allows you to track the flow of each participant through your study and provides the added benefit of helping to measure dosage.
 
 ```{r fig9-10, fig.cap="Example of keeping participant IDs for the entire study", out.width= "70%"}
 
 knitr::include_graphics("img/dupe_id.PNG")
 
 ```
+
+2. Participant identifiers must be unique within and across entities
+    - For example, no duplicating IDs within students or across teachers and schools
+    - Not duplicating within entities is imperative to maintain uniqueness of records, while not duplicating across reduces confusion about who a form belongs to and reduces potential errors
+    - If you are running multiple studies at the same time, using identical forms across studies, it can even be helpful to assign unique schemas across projects so that forms are not accidentally mixed up across projects.
+3. The identifier should be randomly assigned and be completely distinct from any personal information. This ensures confidentiality.
+    - The ID should not be associated with name, dob, income, grade level, and so forth. For example:
+      - Do not sort by names or date of birth and then assign IDs in sequential order
+      - Do not group by grade level and then assign IDs
+      - Do not include initials as part of an identifier
+4. Do not embed project information into the ID that has the potential to change
+    - Some researchers prefer to embed some project level information into an ID to help with tracking of information. This is absolutely okay as long as the included project information is not expected to change. 
+      - For example, including a project code would be okay. If the project code is "02", researchers may choose to make that the first 2 digits of all student identifiers. As long as the actual student IDs are still unique and randomly assigned, adding the project ID to the identifier works just fine because that value does not change.
+    - However, embedding information such as wave or session into an identifier variable guarantees that your identifiers will not remain constant. This information should be added to your dataset in other ways (i.e., either as as its own variable or concatenated to variable names)
+    - Embedding information such as teacher IDs, school IDs, treatment, or cohort also has the potential to cause problems. In longitudinal studies, depending on the study design, it is possible that students move to other study teachers, teachers move to other study schools, or participants get re-recruited into other cohorts. Any of these issues would cause problems if this information was embedded into an ID because the ID would no longer reflect the accurate information and would require IDs to be changed, breaking best practice #1. Again, these additional identifiers can be tracked as separate variables (e.g., `stu_id`, `tch_id`, `sch_id`, `cohort`, `treatment`, `wave`) and added to forms and datasets as needed
+5. Last, while less important during the data tracking phase, in your study datasets these identifiers should be stored as character variables. Even if an ID variable is all numbers, it should be stored as character type. This helps prevent people from inappropriately working with these values (i.e., taking a mean of an ID variable).
+
+```{r fig9-9, fig.cap="Example of a study id schema created using best practices"}
+
+knitr::include_graphics("img/id_schema.PNG")
+
+```
+
 
 > **Note** <br> <br>
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.

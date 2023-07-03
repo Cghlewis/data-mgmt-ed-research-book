@@ -52,7 +52,7 @@ One example of a team-level document is a lab manual, or team handbook. A lab ma
 A wiki is a webpage that allows users to collaboratively edit and manage content. It can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. Wikis can be built and housed in many tools such as SharePoint, Teams, Notion, GitHub or Open Science Foundation (OSF). While some lab wikis are public (as you'll see in the examples below), most are not and can be restricted to invited users only. Wikis are a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
 <div class="figure" style="text-align: center">
-<img src="img/wiki2.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
+<img src="img/wiki3.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
 <p class="caption">(\#fig:fig7-3)Example team wiki with links to frequently requested information</p>
 </div>
 
@@ -98,13 +98,11 @@ A data inventory maps all data sources collected by the research team [@salfen_b
 -   Details about each dataset (what the dataset contains, how it is organized, what questions can be answered with the data)
 -   How data sources are related
 
-### Data use agreement {#dua}
+### Data governance plan
 
-Typically when we think of a data use agreement (DUA) we think of a contractual document typically drafted in conjunction with an external partner to facilitate data sharing. It usually covers the terms for how someone is allowed to use data, considering things like access controls, research participant privacy, and data destruction rules [@geraghty_formalize_nodate].
+A data governance plan is a set of formal guidelines for working with data within an organization [@nyu_web_communications_data_nodate]. Most often used in administrative offices and in industry, these types of plans can also be beneficial for research teams. This plan should broadly cover how team members are allowed to work with data, considering things such as access controls, research participant privacy, and data destruction rules. Documenting this information ensures a cohesive understanding among team members regarding the terms and conditions of project data use [@cessda_training_team_cessda_2017]. A data governance plan can be added to a lab manual, or can be created as a separate document where team members can even sign [@filip_san_2023] or check a box acknowledging that they have read and understand the plan.
 
-However, internally, DUAs can also be very useful in developing a cohesive understanding among team members regarding the terms and conditions of project data use [@cessda_data_nodate]. Rules for securely working with data can be added to a lab manual, as many people do, or they can be added to a separate data use agreement where staff members can sign [@filip_san_nodate] or check a box acknowledging that they have read and understand the policies.
-
-Ideas of content to include in a DUA are included in Figure \@ref(fig:fig7-5).
+Ideas of content to include in a data governance plan are included in Figure \@ref(fig:fig7-5).
 
 <div class="figure" style="text-align: center">
 <img src="img/DUA2.PNG" alt="Example of content to include in an internal data use agreement" width="100%" />
@@ -210,7 +208,7 @@ You can also include flowcharts of how participants were provided or assigned to
 
 5. Consent forms
 
-[Consent forms](#consent) can also be added as an addendum to research protocols to give further insight into what information was provided to study participants.
+Consent forms(see Chapter \@ref(collect)) can also be added as an addendum to research protocols to give further insight into what information was provided to study participants.
 
 6. Related publications
 
@@ -243,7 +241,7 @@ In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you 
 
 ## Dataset Level
 
-Our next type of documentation applies solely to your datasets and includes information about what data they contain and how they are related. It also captures things such as planned transformations for the data, potential issues to be aware of, and any alterations to the data. In addition to being helpful descriptive documentation, a huge reason for creating dataset documentation is authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_data_nodate; @uk_data_service_quality_nodate]. Preserving data lineage by tracking transformations and errors found is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
+Our next type of documentation applies solely to your datasets and includes information about what data they contain and how they are related. It also captures things such as planned transformations for the data, potential issues to be aware of, and any alterations to the data. In addition to being helpful descriptive documentation, a huge reason for creating dataset documentation is authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_training_team_cessda_2017; @uk_data_service_quality_2023]. Preserving data lineage by tracking transformations and errors found is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
 
 Not **all** of your dataset-level documentation will be created in the documentation phase and we will talk about the timing as we review each document.  
 
@@ -286,7 +284,7 @@ A Readme is a plain text document that contains information about your files. Th
 
 ### Changelog {#change}
 
-A changelog is a record of all of the versions of your data and code [@uk_data_service_versioning_nodate; @wilson_good_2017]. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the education field where researchers often work with human subjects and identifiable data, users are most often not keeping their study data, during an active project, in a remote repository. Instead, data are usually kept in an institution-approved storage location. Even if a storage location has versioning such as Box or SharePoint, unless users are able to add contextual messages about changes made when saving versions (like a commit message with Git), users will still want to keep a changelog.
+A changelog is a record of all of the versions of your data and code [@uk_data_service_versioning_2023; @wilson_good_2017]. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the education field where researchers often work with human subjects and identifiable data, users are most often not keeping their study data, during an active project, in a remote repository. Instead, data are usually kept in an institution-approved storage location. Even if a storage location has versioning such as Box or SharePoint, unless users are able to add contextual messages about changes made when saving versions (like a commit message with Git), users will still want to keep a changelog.
 
 A changelog provides data lineage, allowing the user to understand where the data originated as well as all transformations made to the data. It also supports data confidence, allowing the user to understand what version of the data they are currently using and to see if more recent versions have been created and why. 
 
@@ -473,9 +471,9 @@ Last, you may notice as you review codebooks, that many will start with several 
 
 ## Metadata {#metadata}
 
-The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_documentation_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data [@go_fair_fair_nodate; @logan_data_2021; @uk_data_service_metadata_nodate].
+The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_training_team_cessda_2017; @danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data [@go_fair_fair_nodate; @logan_data_2021; @uk_data_service_metadata_2023].
 
-For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_documentation_nodate;@university_of_iowa_libraries_metadata_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. The information from this form will become your metadata. Figure \@ref(fig:fig7-21) is an example of an intake form, captured January 13, 2023, for the the Figshare repository ([https://figshare.com/](https://figshare.com/)).
+For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. The information from this form will become your metadata. Figure \@ref(fig:fig7-21) is an example of an intake form, captured January 13, 2023, for the the Figshare repository ([https://figshare.com/](https://figshare.com/)).
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata4.PNG" alt="Example intake metadata form for Figshare repository" width="70%" />
@@ -518,7 +516,7 @@ Many fields have chosen metadata standards to adhere to. Some fields, like psych
 <p class="caption">(\#fig:fig7-24)A sampling of field metadata standards</p>
 </div>
 
-It can be helpful to see how standards differ as well as overlap. The DDI Alliance put together this table in Figure \@ref(fig:fig7-25) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core [@ddi_alliance_mapping_nodate], two commonly used standards.
+It can be helpful to see how standards differ as well as overlap. The @ddi_alliance_mapping_nodate put together this table in Figure \@ref(fig:fig7-25) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core, two commonly used standards.
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata_mapping.PNG" alt="A comparison of DDI Version 2 standards to Dublin Core standards" width="70%" />

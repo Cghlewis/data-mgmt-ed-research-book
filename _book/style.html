@@ -83,6 +83,7 @@
 <li><a class="" href="share.html"><span class="header-section-number">14</span> Data Sharing</a></li>
 <li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">15</span> Wrapping It Up</a></li>
 <li><a class="" href="call-to-action.html"><span class="header-section-number">16</span> Call to Action</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -555,11 +556,13 @@ t_stress5</code></pre>
 <li>Benefits of this are that there is no chance of extreme values being mistaken as actual values</li>
 <li>The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry <span class="citation">(<a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>
 </li>
+<li>There is also the consideration that some statistical programs do not allow blank values (e.g., MPlus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.</li>
 </ul>
 </li>
 <li>The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
 <ul>
-<li>The benefits of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., -97 = Not Applicable, -98 = Skipped). Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.</li>
+<li>A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., -97 = Not Applicable, -98 = Skipped) if that is important for your study.</li>
+<li>Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.</li>
 <li>The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)</li>
 </ul>
 </li>
@@ -666,7 +669,7 @@ Figure 8.3: Missing values assigned in the ECLS-K:2011 data file
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-06-21.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-07-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

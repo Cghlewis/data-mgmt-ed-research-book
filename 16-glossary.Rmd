@@ -1,0 +1,15 @@
+# Glossary
+
+<br>
+
+```{r}
+
+library(tidyverse)
+library(huxtable)
+
+readxl::read_excel("img/def_table.xlsx") %>%
+  knitr::kable()
+  
+```
+
+

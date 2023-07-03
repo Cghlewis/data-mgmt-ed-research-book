@@ -30,7 +30,7 @@ At the end of the planning period, the team should have a clear plan for what th
 
 ## Planning checklists {#checklist}
 
-Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are some sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project. 
+Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project. 
 
 **Planning checklists**
 
@@ -44,6 +44,9 @@ Along with your existing data management plan, checklists are great tools to hel
 - Data Cleaning ^[https://docs.google.com/document/d/12Jx4soafWiZF-1y-ESu1n37aDa-Pa4ZS]
 - Data Sharing ^[https://docs.google.com/document/d/1Bsbjx9aCZlsr8XbLRp3llhJxDkIi56iD]
 
+> **Note** <br> <br>
+If this is your first time working through this book, these checklists are a great way to summarize content from each chapter. As you learn best practices for a phase, pull up the checklist specific to that chapter to begin thinking through which practices are feasible for your specific project. 
+
 ### Decision-making process
 
 As you move through the remaining chapters of this book, you will begin to learn recommended practices for each phase of the research cycle. Going through each checklist above, you can start to fill in the practices that work for your project for each phase of the study. 
@@ -52,7 +55,7 @@ This decision-making process is personalized. Borghi and Van Gulick [@borghi_pro
 
 For example, one team may collect survey data on paper because their participants are young children, hand enter it into Excel because that is the only tool they have access to, and double enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand enter the data into FileMaker because that is the tool their team is familiar with, and double enter 100% because they have the budget and capacity to do that.
 
-Figure \@ref(fig:fig5-2) is a very simplified example of the decision making process, based on the Borghi and Van Gulick [@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
+Figure \@ref(fig:fig5-2) is a very simplified example of the decision making process, based on the [@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
 
 ```{r fig5-2, fig.cap="A simplified decision-making process", out.width = "60%"}
 
