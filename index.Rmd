@@ -3,7 +3,7 @@ title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-documentclass: book
+documentclass: krantz
 bibliography: book.bib
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
