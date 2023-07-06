@@ -105,15 +105,15 @@ A data governance plan is a set of formal guidelines for working with data withi
 Ideas of content to include in a data governance plan are included in Figure \@ref(fig:fig7-5).
 
 <div class="figure" style="text-align: center">
-<img src="img/DUA2.PNG" alt="Example of content to include in an internal data use agreement" width="100%" />
-<p class="caption">(\#fig:fig7-5)Example of content to include in an internal data use agreement</p>
+<img src="img/DUA2.PNG" alt="Example of content to include in a data governance plan" width="100%" />
+<p class="caption">(\#fig:fig7-5)Example of content to include in a data governance plan</p>
 </div>
 
 **Template and Resources**
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Example of content to include in an internal data use agreement ^[https://docs.google.com/document/d/1fCFBULZeCBRyt0v2k4-Jb_9zBrk9En29]|
+|Crystal Lewis | Example of content to include in a data governance plan ^[https://docs.google.com/document/d/1fCFBULZeCBRyt0v2k4-Jb_9zBrk9En29]|
 
 ### Style guide {#styleshort}
 
