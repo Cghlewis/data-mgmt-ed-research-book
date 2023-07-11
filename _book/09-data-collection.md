@@ -24,11 +24,11 @@ In addition to planning data collection logistics (i.e. how will data be collect
 2. Quality control practices implemented during data collection 
     - Best practices associated with managing and reviewing data during collection
 
-Before we dive into collecting data, it's important to first review the ethical and legal considerations of your data collection effort. When working with human subjects it is likely that the Institutional Review Board (IRB) will need to review and approve all of your data collection instruments as well as any agreement forms that will be collected as part of your study. Our next section will provide an overview of the IRB and its requirements as well as best practices for creating agreement forms for participants and partners.
+Before we dive into collecting data, it's important to first review the ethical and legal considerations of your data collection effort. When working with human subjects it is likely that an Institutional Review Board (IRB) will need to review and approve all of your data collection instruments as well as any agreement forms that will be collected as part of your study. Our next section will provide an overview of the IRB and its requirements as well as best practices for creating agreement forms for participants and partners.
 
 ## Institutional Review Board
 
-The IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from the IRB. Before reviewing potential requirements, let's review the history of this administrative body.
+An IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from one or more IRBs. IRBs exist at institutions that conduct research, including universities, school districts, state agencies, or research institutions, and in some industries such as clinical research, even for-profit IRBs are available for hire [@emanuel_should_2006]. Even within institutions there can be more than one IRB (e.g., a medical review board and a behavior science review board) [@duru_institutional_2023]. Before reviewing potential requirements, let's review the history of this administrative body.
 
 ### Background
 
@@ -54,7 +54,7 @@ In 2018 the Common Rule was revised in order to better protect research particip
 
 ### Requirements
 
-While each institution's IRB submission process is different, typically if your study involves working with human subjects you are required to submit an application to the IRB. As part of your application you will be asked to state what review category your study falls under [@lafayette_college_three_nodate; @northwestern_university_exempt_nodate; @university_of_california_berkeley_exempt_2022].
+While each institution's IRB submission process is different, typically if your study involves working with human subjects you are required to submit an application to an IRB. Before submitting your application you will need to determine what review category your study falls under as the application differs depending on the category [@lafayette_college_three_nodate; @northwestern_university_exempt_nodate; @university_of_california_berkeley_exempt_2022].
 
 1. Exempt
     - These studies usually involve minimal risk and fit within categories predefined by your IRB (e.g., evaluating the use of accepted or revised standardized tests). These studies typically involve a shorter review process and a quicker review than non-exempt studies. 
@@ -62,6 +62,8 @@ While each institution's IRB submission process is different, typically if your 
     - These studies also involve minimal risk but do not meet criteria for exempt status (e.g., collection of voice, video, or image data from non-vulnerable populations).
 3. Full Review
     - If a study does not fall into one of the two categories above (e.g., collection of information about illegal behavior), it requires full review, discussed by the full board at a convened meeting.
+    
+In education research you are most often submitting your application to your institution's IRB. However, there are situations where that process might vary. For instance, in the case of a multi-site or cooperative, non-exempt projects, it may be necessary to submit a single IRB (sIRB). In this situation, an authorization agreement is signed by collaborating institutions and one institution is designated as the IRB-of-Record. This institution then becomes the authority for review and continuing oversight of study activities [@cornell_research_services_multi-site_2019; @university_of_michigan_authorization_2023].
 
 As part of your application, common documents you may be required to submit include the following [@cabrini_university_submissions_nodate; @duru_institutional_2023]:
 
@@ -177,23 +179,34 @@ If you are collecting paper consent or assent, there are still some additional t
 
 #### Other agreements
 
-Data use agreements (DUA) and data sharing agreements (DSA) are two types of documents that lay out expectations for how data will be shared between two or more parties. While the terms data use agreement and data sharing agreement (DSA) are often used interchangeably, I want to differentiate between the two documents [@ldbase_data_nodate]. Data use agreements are typically legally binding, contractual agreements that provide terms and conditions for working with data that are restricted-use or contain identifiable information, often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. In the case of education research, a DUA may include the terms for sharing, working with, and storing identifiable district-level data. In some cases, districts also may require an additional consent form to be completed by parents, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019].
+In education research it is common to collaborate with external partners (e.g., school districts, state agencies, nonprofit organizations) to implement a study and collect data. Those partnerships may involve several different types of agreements. Across different types of agencies and even across similar agency types (e.g., across school districts), the agreements required can vary widely. Let's review a few of the types of agreements that you may encounter.
 
-When working with de-identified, non-sensitive data though, a data sharing agreement is a good option. A DSA is a less formal agreement but is still beneficial if you want to provide terms for how data is used, such as limiting the types of projects that use the data or guidelines for citations. We will talk more about these types of agreements in the Chapter \@ref(share).
+1. Memorandum of understanding (MOU)
+   - This agreement provides a framework for collaboration. While not legally binding, it establishes a commitment to the partnership and outlines the responsibilities and expectations of each partner [@duru_grant_2021; @national_center_for_education_statistics_memoranda_nodate; @rel_west_data_nodate]. This document may also be synonymous with a letter of intent or letter of support.
+2. Data use agreements (DUAs)
+   - A DUA is a contractual agreement that provides the terms and conditions for working with data that are restricted-use or contain identifiable information, often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (e.g., if a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into an MOU.
+3. Non-disclosure agreements (NDAs) 
+    - NDAs, which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_nodate] and are legally enforceable agreements.
+    
+Not only do the types of agreements required differ across partners, but how and when those agreements are submitted will also vary. As one example, when working with school districts, some districts may have informal data request systems in place where you simply submit required documentation for approval. Others may have formal systems in place, including their own institutional review process that involves a committee reviewal timeline. This process is often kicked off by submitting a research request application. In addition to providing information about the study, these requests often ask researchers to submit documents such as:
 
-Another type of agreement, commonly signed when working with partners such a school districts, is a memorandum of understanding (MOU), which establishes the framework for collaboration [@national_center_for_education_statistics_memoranda_nodate; @rel_west_data_nodate]. This document is typically not legally binding, but establishes agreements around things such as responsibilities, communication, and expectations [@duru_grant_2021]. An MOU can be a standalone document or can include a DSA or DUA as part of the document. 
+- The researcher's institutional approved IRB documentation
+- Any required agreement forms (e.g., DUA, NDA, Confidentiality agreement)
+- Consent/assent forms
+  - This may be a copy of the consent/assent forms submitted to your institutional IRB. However, in some cases, districts may require an additional consent form to be completed by parents, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019].
 
-Last, confidentiality agreements and non-disclosure agreements (NDAs) are other types of agreement that may be needed. These documents restrict the use of proprietary or confidential information [@university_of_washington_sharing_nodate] and are legally enforceable agreements.
+Last, the order of when IRB applications are submitted and when these agreements are made will depend on both the IRBs you working with, as well as your research partners and external collaborators so make sure to start having these discussions early in order to have documents ready in an appropriate timeline.
 
 **Templates and Resources**
 
 |Source|Resource|
 |--------|-----------|
 |Amy O’Hara| Sample text for data use agreements ^[https://admindatahandbook.mit.edu/book/v1.0-rc4/appendix/dua_appendix.pdf]|
+|Columbia Public Schools|CPS Request Research Process^[https://www.cpsk12.org/cms/lib/MO01909752/Centricity/Domain/8329/Research_Process.pdf]|
 |Florida State University| Example data use agreement ^[https://www.research.fsu.edu/media/1091/hipaadatause.doc]|
 |REL West | Data use agreement checklist ^[https://ies.ed.gov/ncee/rel/regions/west/relwestFiles/pdf/CRP_Data_Sharing_Agreements_and_MOUs.pdf]|
 |University of North Carolina|Data use agreement decision making flow chart ^[https://research.unc.edu/wp-content/uploads/sites/61/2013/04/CCM3_039360.pdf]|
-|Wilhelmina van Dijk, Sara Hart | Example data sharing agreement ^[https://figshare.com/articles/preprint/Example_Data_Sharing_Agreement/14576049]|
+|University of Texas at Dallas|Common types of agreements ^[https://research.utdallas.edu/researchers/contracts/types-of-agreements]|
 
 
 ## Quality Assurance
