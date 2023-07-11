@@ -38,7 +38,7 @@ knitr::include_graphics("img/lifecycle_teamdoc.PNG")
 
 ### Lab manual
 
-One example of a team-level document is a lab manual, or team handbook. A lab manual creates common knowledge across your team [@mehr_how_nodate]. It provides staff with consistent information about how the team works and why they do the things they do. It also sets expectations, provides guidelines, and can even be a place for passing along career advice [@aczel_crowdsourced_nodate; @the_turing_way_community_turing_2022]. While a lab manual will primarily consist of administrative, procedural, and interpersonal types of information, it can be helpful to include data management content, including general rules about accessing, storing, sharing, and working with data securely and ethically. 
+A lab manual, or team handbook, creates common knowledge across your team [@mehr_how_2020]. It provides staff with consistent information about lab culture---how the team works and why they do the things they do. It also sets expectations, provides guidelines, and can even be a place for passing along career advice [@aczel_crowdsourced_nodate; @the_turing_way_community_turing_2022]. While a lab manual will primarily consist of administrative, procedural, and interpersonal types of information, it can be helpful to include data management content, including general rules about accessing, storing, sharing, and working with data securely and ethically. 
 
 **Template and Resources**
 
@@ -493,15 +493,15 @@ Last, you may notice as you review codebooks, that many will start with several 
 
 The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_training_team_cessda_2017; @danish_national_forum_for_research_data_management_metadata_nodate]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data [@go_fair_fair_nodate; @logan_data_2021; @uk_data_service_metadata_2023].
 
-For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_nodate]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_nodate; @danish_national_forum_for_research_data_management_metadata_nodate]. The information from this form will become your metadata. Figure \@ref(fig:fig7-21) is an example of an intake form, captured January 13, 2023, for the the Figshare repository ([https://figshare.com/](https://figshare.com/)).
+For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_2023]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_2023; @danish_national_forum_for_research_data_management_metadata_nodate]. The information from this form will become your metadata. Figure \@ref(fig:fig7-21) is an example of an intake form for the the Figshare repository ([https://figshare.com/](https://figshare.com/)).
 
-```{r fig7-21, fig.cap="Example intake metadata form for Figshare repository", out.width= "70%"}
+```{r fig7-21, fig.cap="Example intake metadata form for Figshare repository, captured January 13, 2023", out.width= "70%"}
 
 knitr::include_graphics("img/metadata4.PNG")
 
 ```
 
-The most common metadata elements [@dahdul_research_nodate; @hayslett_libguides_nodate] are included in Figure \@ref(fig:fig7-22).
+The most common metadata elements [@dahdul_research_2023; @hayslett_libguides_2022] are included in Figure \@ref(fig:fig7-22).
 
 ```{r fig7-22, fig.cap="Common metadata elements", out.width = "80%"}
 
@@ -510,9 +510,9 @@ knitr::include_graphics("img/metadata.PNG")
 ```
 
 
-Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_nodate; @ldbase_information_nodate]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
+Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_2023; @ldbase_information_nodate]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
-Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_nodate] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig7-23) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
+Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_2023] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig7-23) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
 
 ```{r fig7-23, fig.cap="Example metadata displayed on an ICPSR Open project page", out.width = "95%"}
 
@@ -520,19 +520,19 @@ knitr::include_graphics("img/metadata_project.PNG")
 
 ```
 
-There are other ways metadata can be gathered as well. For instance, for variable-level metadata, rather than having users input metadata, repositories may create metadata from the deposited statistical data files that contain inherent metadata (such as variable types or labels) or from deposited documentation such as data dictionaries or codebooks [@icpsr_icpsr_nodate].
+There are other ways metadata can be gathered as well. For instance, for variable-level metadata, rather than having users input metadata, repositories may create metadata from the deposited statistical data files that contain inherent metadata (such as variable types or labels) or from deposited documentation such as data dictionaries or codebooks [@icpsr_icpsr_2023].
 
-If your repository provides limited forms for metadata entry, you can also choose to increase the searchability of your files by creating your own machine-readable documents. There are several tools to help users create machine-readable codebooks and data dictionaries that will be findable through search engines such as Google Dataset Search [@arslan_how_2018; @buchanan_getting_2021;@usgs_tools_nodate]. 
+If your repository provides limited forms for metadata entry, you can also choose to increase the searchability of your files by creating your own machine-readable documents. There are several tools to help users create machine-readable codebooks and data dictionaries that will be findable through search engines such as Google Dataset Search [@arslan_how_2018; @buchanan_getting_2021;@usgs_tools_2021]. 
 
 ### Metadata standards {#metastandards}
 
-Metadata standards, typically field specific, establish a common way to describe your data which improves data interoperability as well as the ability of users to find, understand, and use data [@bolam_guides_nodate]. Metadata standards can be applied in several ways [@bolam_guides_nodate; @ddi_alliance_controlled_nodate]. 
+Metadata standards, typically field specific, establish a common way to describe your data which improves data interoperability as well as the ability of users to find, understand, and use data. Metadata standards can be applied in several ways [@bolam_guides_2022; @ddi_alliance_controlled_2023]. 
 
 1. Formats: What machine-readable format should metadata be in?  
 2. Schema: What fields are recommended verses mandatory for project, dataset, and variable level metadata?
 3. Controlled vocabularies: A controlled list of terms used to index and retrieve data.
 
-Many fields have chosen metadata standards to adhere to. Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@schemaorg_schemaorg_nodate]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon metadata standards in the field of education [@institute_of_education_sciences_frequently_nodate].
+Many fields have chosen metadata standards to adhere to. Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@schemaorg_schemaorg_2023]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon metadata standards in the field of education [@institute_of_education_sciences_frequently_nodate].
 
 ```{r fig7-24, fig.cap="A sampling of field metadata standards", out.width= "70%"}
 
@@ -540,7 +540,7 @@ knitr::include_graphics("img/metadata_standards.PNG")
 
 ```
 
-It can be helpful to see how standards differ as well as overlap. The @ddi_alliance_mapping_nodate put together this table in Figure \@ref(fig:fig7-25) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core, two commonly used standards.
+It can be helpful to see how standards differ as well as overlap. The @ddi_alliance_mapping_2023 put together this table in Figure \@ref(fig:fig7-25) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core, two commonly used standards.
 
 ```{r fig7-25, fig.cap="A comparison of DDI Version 2 standards to Dublin Core standards", out.width = "70%"}
 
@@ -556,9 +556,9 @@ knitr::include_graphics("img/standard_compare.PNG")
 
 ```
 
-If you plan to archive your data, first check with your repository to see if they follow any standards. For example, the OSF repository currently uses the DataCite schema [@gueguen_new_nodate], while ICPSR uses the DDI standard [@icpsr_icpsr_nodate]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
+If you plan to archive your data, first check with your repository to see if they follow any standards. For example, both the OSF [@gueguen_new_2023] and Figshare [@figshare_figshare_2023] repositories currently use the DataCite schema , while ICPSR uses the DDI standard [@icpsr_icpsr_2023]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
 
-If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_metadata_nodate], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
+If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_metadata_2023], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
 
 
 ## Wrapping it up

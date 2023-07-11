@@ -578,8 +578,22 @@ If you collect data via a web-based form, you will want to perform frequent data
     - This information may not be available for anonymous data - consult with your IRB
   - Are there nonsensical responses for open-ended questions?
   - Are there nonsensical responses to attention or logic checking questions?
+  - Are responses consistent across repeated questions?
 
 Some of these checks can be performed programmatically (i.e., you can write a validation script in a program such as R, and run that script on a recurring schedule during data collection to check for things such as values out of range). Other checks may be a manual check of data (e.g., such as downloading your data on a recurring schedule and reviewing open-ended questions for nonsensical responses). If errors are found, consider revising your instrument to prevent future errors if this is possible without jeopardizing the consistency of your data.
+
+> **Note** <br> <br>
+All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link. <br><br>
+If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@arndt_collecting_2022; @simone_how_2019; @teitcher_detecting_2015]:   
+- Not posting the link on social media  
+- Using CAPTCHA verification  
+- Using tools that allow you to block suspicious geolocations  
+- Not automating payment upon survey completion    
+- Including open-ended questions   
+- Building attention/logic checks into the survey  
+- Use response matching on a control variable (ask the same question multiple times)
+- Asking some of the same questions twice (once early on and again at the end) <br><br>
+Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. <br><br>
 
 ### Tracking data collection
 
@@ -637,15 +651,3 @@ knitr::include_graphics("img/data_collect_workflow2.PNG")
 |DIME Wiki| Questionnaire design timeline^[https://dimewiki.worldbank.org/Questionnaire_Design]|
 |Sarah Kopper, Katie Parry | Five key steps in the process of survey design^[https://www.povertyactionlab.org/resource/survey-design]|
 
-
-> **Note** <br> <br>
-All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If possible though, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link. <br><br>
-If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@simone_how_2019; @teitcher_detecting_2015]: 
-- Not posting the link on social media  
-- Using CAPTCHA verification  
-- Using tools that allow you to block suspicious geolocations  
-- Not automating payment upon survey completion    
-- Including open-ended questions   
-- Building attention/logic checks into the survey  
-- Asking some of the same questions twice (once early on and again at the end) <br><br>
-Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. <br><br>

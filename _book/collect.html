@@ -518,7 +518,7 @@ If you are collecting data using a standardized assessment, along with a provide
 </li>
 <li>Is there no one way to answer this question?
 <ul>
-<li>Are response categories mutually exclusive and exhaustive <span class="citation">(<a href="references.html#ref-icpsr_guide_nodate" role="doc-biblioref">ICPSR n.d.a</a>)</span>?</li>
+<li>Are response categories mutually exclusive and exhaustive <span class="citation">(<a href="references.html#ref-icpsr_guide_nodate" role="doc-biblioref">ICPSR n.d.</a>)</span>?</li>
 </ul>
 </li>
 </ul>
@@ -668,7 +668,7 @@ Figure 10.5: Data collection instrument pilot phases
 </ul>
 </li>
 </ol>
-<p>While there are a variety of tool options, in a nutshell when it comes to data collected via forms, we are collecting data in one of two ways—electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered <span class="citation">(<a href="references.html#ref-cohen_research_2007" role="doc-biblioref">Cohen, Manion, and Morrison 2007</a>; <a href="references.html#ref-douglas_data_2023" role="doc-biblioref">Douglas, Ewell, and Brauer 2023</a>; <a href="references.html#ref-gibson_data_2021" role="doc-biblioref">Gibson 2021</a>; <a href="references.html#ref-icpsr_guide_nodate" role="doc-biblioref">ICPSR n.d.a</a>; <a href="references.html#ref-malow_redcap-based_2021" role="doc-biblioref">Malow et al. 2021</a>; <a href="references.html#ref-society_of_critical_care_medicine_building_2018" role="doc-biblioref">Society of Critical Care Medicine 2018</a>; <a href="references.html#ref-van_bochove_data_nodate" role="doc-biblioref">Bochove, Alper, and Gu n.d.</a>)</span>.</p>
+<p>While there are a variety of tool options, in a nutshell when it comes to data collected via forms, we are collecting data in one of two ways—electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered <span class="citation">(<a href="references.html#ref-cohen_research_2007" role="doc-biblioref">Cohen, Manion, and Morrison 2007</a>; <a href="references.html#ref-douglas_data_2023" role="doc-biblioref">Douglas, Ewell, and Brauer 2023</a>; <a href="references.html#ref-gibson_data_2021" role="doc-biblioref">Gibson 2021</a>; <a href="references.html#ref-icpsr_guide_nodate" role="doc-biblioref">ICPSR n.d.</a>; <a href="references.html#ref-malow_redcap-based_2021" role="doc-biblioref">Malow et al. 2021</a>; <a href="references.html#ref-society_of_critical_care_medicine_building_2018" role="doc-biblioref">Society of Critical Care Medicine 2018</a>; <a href="references.html#ref-van_bochove_data_nodate" role="doc-biblioref">Bochove, Alper, and Gu n.d.</a>)</span>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-6"></span>
 <img src="img/collect_benefits2.PNG" alt="Comparison of data collection tool benefits" width="100%"><p class="caption">
@@ -1084,10 +1084,25 @@ Figure 10.10: A series of spot checks that occur with paper data
 </li>
 <li>Are there nonsensical responses for open-ended questions?</li>
 <li>Are there nonsensical responses to attention or logic checking questions?</li>
+<li>Are responses consistent across repeated questions?</li>
 </ul>
 </li>
 </ul>
 <p>Some of these checks can be performed programmatically (i.e., you can write a validation script in a program such as R, and run that script on a recurring schedule during data collection to check for things such as values out of range). Other checks may be a manual check of data (e.g., such as downloading your data on a recurring schedule and reviewing open-ended questions for nonsensical responses). If errors are found, consider revising your instrument to prevent future errors if this is possible without jeopardizing the consistency of your data.</p>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms <span class="citation">(<a href="references.html#ref-douglas_data_2023" role="doc-biblioref">Douglas, Ewell, and Brauer 2023</a>; <a href="references.html#ref-veselovsky_artificial_2023" role="doc-biblioref">Veselovsky, Ribeiro, and West 2023</a>; <a href="references.html#ref-webb_too_2022" role="doc-biblioref">Webb and Tangney 2022</a>)</span>. If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link. <br><br>
+If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following <span class="citation">(<a href="references.html#ref-arndt_collecting_2022" role="doc-biblioref">Arndt et al. 2022</a>; <a href="references.html#ref-simone_how_2019" role="doc-biblioref">Simone 2019</a>; <a href="references.html#ref-teitcher_detecting_2015" role="doc-biblioref">Teitcher et al. 2015</a>)</span>:<br>
+- Not posting the link on social media<br>
+- Using CAPTCHA verification<br>
+- Using tools that allow you to block suspicious geolocations<br>
+- Not automating payment upon survey completion<br>
+- Including open-ended questions<br>
+- Building attention/logic checks into the survey<br>
+- Use response matching on a control variable (ask the same question multiple times)
+- Asking some of the same questions twice (once early on and again at the end) <br><br>
+Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. <br><br></p>
+</blockquote>
 </div>
 <div id="tracking-data-collection" class="section level3" number="10.4.3">
 <h3>
@@ -1190,20 +1205,6 @@ Figure 10.11: Integrating quality assurance and control into a data collection w
 </tr>
 </tbody>
 </table></div>
-<blockquote>
-<p><strong>Note</strong> <br><br>
-All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms <span class="citation">(<a href="references.html#ref-douglas_data_2023" role="doc-biblioref">Douglas, Ewell, and Brauer 2023</a>; <a href="references.html#ref-veselovsky_artificial_2023" role="doc-biblioref">Veselovsky, Ribeiro, and West 2023</a>; <a href="references.html#ref-webb_too_2022" role="doc-biblioref">Webb and Tangney 2022</a>)</span>. If possible though, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link. <br><br>
-If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following <span class="citation">(<a href="references.html#ref-simone_how_2019" role="doc-biblioref">Simone 2019</a>; <a href="references.html#ref-teitcher_detecting_2015" role="doc-biblioref">Teitcher et al. 2015</a>)</span>:
-- Not posting the link on social media<br>
-- Using CAPTCHA verification<br>
-- Using tools that allow you to block suspicious geolocations<br>
-- Not automating payment upon survey completion<br>
-- Including open-ended questions<br>
-- Building attention/logic checks into the survey<br>
-- Asking some of the same questions twice (once early on and again at the end) <br><br>
-Even with these additions to the survey, you will want to check your data thoroughly before analyzing it and before providing payments to participants. <br><br></p>
-</blockquote>
-
 </div>
 </div>
 

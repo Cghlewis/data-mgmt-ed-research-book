@@ -1,9 +1,6 @@
 # Style guide {#style}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="70%" />
-<p class="caption">(\#fig:fig8-1)Style guide in the research project life cycle</p>
-</div>
+![(\#fig:fig8-1)Style guide in the research project life cycle](img/lifecycle_team_doc.PNG){width=70%}
 
 A style guide provides general agreed upon rules for the formatting of information [@noauthor_style_2023]. As mentioned in the previous Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
@@ -132,10 +129,7 @@ When deciding how to structure your project directories (the organization of you
 
 ## File naming
 
-<div class="figure" style="text-align: center">
-<img src="img/xkcd.PNG" alt="xkcd comic on naming files" width="30%" />
-<p class="caption">(\#fig:fig8-2)xkcd comic on naming files</p>
-</div>
+![(\#fig:fig8-2)xkcd comic on naming files](img/xkcd.PNG){width=30%}
 
 As @xkcd_documents_nodate so aptly points out in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
@@ -343,10 +337,7 @@ Whichever method you choose, ultimately just make sure to adhere to these guidel
 - Use your values consistently within and across variables
 
 
-<div class="figure" style="text-align: center">
-<img src="img/missing.PNG" alt="Missing values assigned in the ECLS-K:2011 data file" width="100%" />
-<p class="caption">(\#fig:fig8-3)Missing values assigned in the ECLS-K:2011 data file</p>
-</div>
+![(\#fig:fig8-3)Missing values assigned in the ECLS-K:2011 data file](img/missing.PNG){width=100%}
 
 ## Coding
 
