@@ -28,7 +28,7 @@ Before we dive into collecting data, it's important to first review the ethical 
 
 ## Institutional Review Board
 
-An IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from one or more IRBs. IRBs exist at institutions that conduct research, including universities, school districts, state agencies, or research institutions, and in some industries such as clinical research, even for-profit IRBs are available for hire [@emanuel_should_2006]. Even within institutions there can be more than one IRB (e.g., a medical review board and a behavior science review board) [@duru_institutional_2023]. Before reviewing potential requirements, let's review the history of this administrative body.
+An IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from one or more IRBs. IRBs exist at institutions where research is conducted, including universities, school districts, state agencies, or research institutions, and in some industries such as clinical research, even for-profit IRBs are available for hire [@emanuel_should_2006]. Even within institutions there can be more than one IRB (e.g., a medical review board and a behavioral science review board) [@duru_institutional_2023]. Before reviewing potential requirements, let's review the history of this administrative body.
 
 ### Background
 
@@ -63,7 +63,7 @@ While each institution's IRB submission process is different, typically if your 
 3. Full Review
     - If a study does not fall into one of the two categories above (e.g., collection of information about illegal behavior), it requires full review, discussed by the full board at a convened meeting.
     
-In education research you are most often submitting your application to your institution's IRB. However, there are situations where that process might vary. For instance, in the case of a multi-site or cooperative, non-exempt projects, it may be necessary to submit a single IRB (sIRB). In this situation, an authorization agreement is signed by collaborating institutions and one institution is designated as the IRB-of-Record. This institution then becomes the authority for review and continuing oversight of study activities [@cornell_research_services_multi-site_2019; @university_of_michigan_authorization_2023].
+In education research you are most often submitting your application to your institution's IRB. However, there are situations where that process might vary. For instance, in the case of multi-site or cooperative, non-exempt projects, it may be necessary to submit a single IRB (sIRB). In this situation, an authorization agreement is signed by collaborating institutions and one institution is designated as the IRB-of-Record. This institution then becomes the authority for review and continuing oversight of study activities [@cornell_research_services_multi-site_2019; @university_of_michigan_authorization_2023].
 
 As part of your application, common documents you may be required to submit include the following [@cabrini_university_submissions_nodate; @duru_institutional_2023]:
 
@@ -82,7 +82,7 @@ The review process can take several weeks and it is common for the IRB to reques
 
 ### Agreements
 
-There are several types of agreements that may be required for your research study for both ethical and legal reasons. Here we will discuss the most common type of agreements, informed consent and assent, as well as other agreements used when working with external partners including data sharing agreements, memorandum of understanding documents, and confidentiality agreements. 
+There are several types of agreements that may be required for your research study for both ethical and legal reasons. Here we will discuss the most common type of agreements, informed consent and assent, as well as other agreements used when working with external partners including memorandum of understanding documents, data use agreements, and non-disclosure agreements. 
 
 #### Consents {#consent}
 
@@ -183,15 +183,15 @@ In education research it is common to collaborate with external partners (e.g., 
 
 1. Memorandum of understanding (MOU)
    - This agreement provides a framework for collaboration. While not legally binding, it establishes a commitment to the partnership and outlines the responsibilities and expectations of each partner [@duru_grant_2021; @national_center_for_education_statistics_memoranda_nodate; @rel_west_data_nodate]. This document may also be synonymous with a letter of intent or letter of support.
-2. Data use agreements (DUAs)
-   - A DUA is a contractual agreement that provides the terms and conditions for working with data that are restricted-use or contain identifiable information, often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (e.g., if a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into an MOU.
-3. Non-disclosure agreements (NDAs) 
+2. Data use agreement (DUA)
+   - A DUA is a contractual agreement that provides the terms and conditions for working with data that are restricted-use (i.e., contain sensitive or identifiable information), often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (i.e., a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into an MOU.
+3. Non-disclosure agreement (NDA) 
     - NDAs, which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_nodate] and are legally enforceable agreements.
     
 Not only do the types of agreements required differ across partners, but how and when those agreements are submitted will also vary. As one example, when working with school districts, some districts may have informal data request systems in place where you simply submit required documentation for approval. Others may have formal systems in place, including their own institutional review process that involves a committee reviewal timeline. This process is often kicked off by submitting a research request application. In addition to providing information about the study, these requests often ask researchers to submit documents such as:
 
 - The researcher's institutional approved IRB documentation
-- Any required agreement forms (e.g., DUA, NDA, Confidentiality agreement)
+- Any required agreement forms (e.g., DUA, NDA, confidentiality agreement)
 - Consent/assent forms
   - This may be a copy of the consent/assent forms submitted to your institutional IRB. However, in some cases, districts may require an additional consent form to be completed by parents, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019].
 
