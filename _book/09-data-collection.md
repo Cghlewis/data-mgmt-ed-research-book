@@ -1,12 +1,18 @@
 # Data Collection {#collect}
 
-![(\#fig:fig10-1)Data collection in the research project life cycle](img/lifecycle_track.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_track.PNG" alt="Data collection in the research project life cycle" width="70%" />
+<p class="caption">(\#fig:fig10-1)Data collection in the research project life cycle</p>
+</div>
 
 When collecting original data as part of your study (i.e., you are administering your own survey or assessment as opposed to using existing data), data management best practices should be interwoven throughout your data collection process. The number one way to ensure the integrity of your data is to spend time planning your data collection efforts. Not only does planning minimize errors, it also keeps your data secure, valid, and relieves future data cleaning headaches. 
 
 If you have ever created a data collection instrument and expected it to export data that looks like the image on the left (Figure \@ref(fig:fig10-2)), but instead you export data that looks like the image on the right, then you know what I mean. Collecting quality data doesn't just happen because you create an instrument, it takes careful consideration, structure, and care on the part of the entire team.
 
-![(\#fig:fig10-2)A comparison of data collected without planning and data collected with planning](img/bad_data_collect.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/bad_data_collect.PNG" alt="A comparison of data collected without planning and data collected with planning" width="100%" />
+<p class="caption">(\#fig:fig10-2)A comparison of data collected without planning and data collected with planning</p>
+</div>
 
 
 ## Quality assurance and control
@@ -22,7 +28,7 @@ Before we dive into collecting data, it's important to first review the ethical 
 
 ## Institutional Review Board
 
-An IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from one or more IRBs. IRBs exist at institutions where research is conducted, including universities, school districts, state agencies, or research institutions, and in some industries such as clinical research, even for-profit IRBs are available for hire [@emanuel_should_2006]. Even within institutions there can be more than one IRB (e.g., a medical review board and a behavioral science review board) [@duru_institutional_2023]. Before reviewing potential requirements, let's review the history of this administrative body.
+An IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from one or more IRBs. IRBs exist at institutions where research is conducted, including universities, school districts, state agencies, or research institutions, and in some industries such as clinical research, even independent IRBs are available for hire [@emanuel_should_2006]. Even within institutions there can be more than one IRB (e.g., a medical review board and a behavioral science review board) [@duru_institutional_2023]. Before reviewing potential requirements, let's review the history of this administrative body.
 
 ### Background
 
@@ -95,7 +101,10 @@ With the revised Common Rule, additional requirements for informed consent were 
 
 Figure \@ref(fig:fig10-3) shows common elements that are included in a participant consent form [@bellevue_college_elements_nodate; @the_turing_way_community_turing_2022].
 
-![(\#fig:fig10-3)Common topics to include in an informed consent information sheet](img/consent.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/consent.PNG" alt="Common topics to include in an informed consent information sheet" width="100%" />
+<p class="caption">(\#fig:fig10-3)Common topics to include in an informed consent information sheet</p>
+</div>
 
 Depending on the type of research study, a participant signature or a check box denoting consent may be required. If so, it can be helpful to put the above information on a cover/information sheet, and then have a separate page for signed consent. Before signing, participants should be required to acknowledge that they
 
@@ -202,7 +211,10 @@ Last, the order of when IRB applications are submitted and when these agreements
 
 ## Quality Assurance
 
-![(\#fig:fig10-4)Common education research data collection methods](img/data_collected7.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/data_collected7.PNG" alt="Common education research data collection methods" width="100%" />
+<p class="caption">(\#fig:fig10-4)Common education research data collection methods</p>
+</div>
 
 Now that we have a baseline understanding of ethical and legal considerations, we can dive in to protecting data quality during data collection. Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-4)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (think surveys, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
 
@@ -281,7 +293,10 @@ Gathering feedback on your instruments is an integral part to the quality assura
 
 Last, as you move through the piloting phases, remember to update any changes not only in your tool but also in your data dictionary and any other relevant documentation.
 	  
-![(\#fig:fig10-5)Data collection instrument pilot phases](img/pilot2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/pilot2.PNG" alt="Data collection instrument pilot phases" width="100%" />
+<p class="caption">(\#fig:fig10-5)Data collection instrument pilot phases</p>
+</div>
 
 
 ### Choose quality data collection tools
@@ -311,7 +326,10 @@ Once content piloting is completed, teams should be ready to begin building thei
 
 While there are a variety of tool options, in a nutshell when it comes to data collected via forms, we are collecting data in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
 
-![(\#fig:fig10-6)Comparison of data collection tool benefits](img/collect_benefits2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/collect_benefits2.PNG" alt="Comparison of data collection tool benefits" width="100%" />
+<p class="caption">(\#fig:fig10-6)Comparison of data collection tool benefits</p>
+</div>
 
 > **Note** <br> <br>
 If you choose to collect data in an electronic format, I highly recommend using a web-based tool that directly feeds into a shared database rather than through offline tools that store data on individual devices. Using a web-based tool, all data is stored remotely in the same database and can be easily downloaded or connected to at any time. No additional work is required. <br> <br>
@@ -407,7 +425,10 @@ Once your tool is created, you will want to pilot the instrument with your team 
 
 Last, all data that is collected on paper will need to be entered into an electronic format. While we will talk about data entry specifically in Chapter \@ref(capture), this point in instrument creation is a great time to create an annotated instrument that can be used for future data entry [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig10-7)) [@hart_florida_2018].
 
-![(\#fig:fig10-7)Annotated instrument from The Florida State Twin Registry project](img/annotated_instrument.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/annotated_instrument.PNG" alt="Annotated instrument from The Florida State Twin Registry project" width="80%" />
+<p class="caption">(\#fig:fig10-7)Annotated instrument from The Florida State Twin Registry project</p>
+</div>
 
 Another option for capturing paper data in an electronic format is using TeleForm rather than paper. These forms are designed to be scanned by machines. Using TeleForm removes the extra step of future data entry and errors associated with human entry.
 
@@ -427,7 +448,10 @@ All of the above issues make it very difficult to link data. If you do decide to
 
 Figure \@ref(fig:fig10-8) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge" which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
-![(\#fig:fig10-8)Process of creating a de-identified dataset](img/de-identify.PNG){width=90%}
+<div class="figure" style="text-align: center">
+<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%" />
+<p class="caption">(\#fig:fig10-8)Process of creating a de-identified dataset</p>
+</div>
 
 Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above [@dime_analytics_data_2021; @gibson_survey_2020]. We will discuss these methods separately for electronic data and paper data.
 
@@ -464,7 +488,10 @@ If you take paper forms into the field consider doing the following to connect y
   - It is important to double and triple check study identifiers against your participant database to make sure the information is correct before removing the label or cover sheet
   - Make a plan for the labels/cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
 
-![(\#fig:fig10-9)Example cover sheet for a paper data collection instrument](img/cover_sheet2.PNG){width=90%}
+<div class="figure" style="text-align: center">
+<img src="img/cover_sheet2.PNG" alt="Example cover sheet for a paper data collection instrument" width="90%" />
+<p class="caption">(\#fig:fig10-9)Example cover sheet for a paper data collection instrument</p>
+</div>
 
 ## Quality Control
 
@@ -509,7 +536,10 @@ If your data collection efforts include field data collection (e.g., data collec
 - When a wave of data collection wraps up, collect feedback from data collectors to improve future data collection efforts
   - What went well? What didn't?
 
-![(\#fig:fig10-10)A series of spot checks that occur with paper data](img/spot_check.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/spot_check.PNG" alt="A series of spot checks that occur with paper data" width="100%" />
+<p class="caption">(\#fig:fig10-10)A series of spot checks that occur with paper data</p>
+</div>
 
 **Tracking sheet templates**
 
@@ -598,7 +628,10 @@ Recall from Chapter \@ref(plan), we discussed designing and visualizing a data c
 
 Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed. 
 
-![(\#fig:fig10-11)Integrating quality assurance and control into a data collection workflow](img/data_collect_workflow2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/data_collect_workflow2.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%" />
+<p class="caption">(\#fig:fig10-11)Integrating quality assurance and control into a data collection workflow</p>
+</div>
 
 **Instrument Workflow Resources**
 

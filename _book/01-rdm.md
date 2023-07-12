@@ -2,7 +2,7 @@
 
 ## What is research data management?
 
-Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data [@bordelon_guides_nodate]. Research study data includes materials generated or collected throughout a research process [@national_endowment_for_the_humanities_data_2018]. As you can imagine, this broad definition includes much more than just the management of digital datasets. It also includes physical files, documentation, artifacts, recordings, and more. RDM is a substantial undertaking that begins long before data is ever collected, during the planning phase, and continues well after a research project ends during the archiving phase.
+Research data management (RDM) involves the organization, storage, preservation, and dissemination of research study data [@bordelon_guides_2023]. Research study data includes materials generated or collected throughout a research process [@national_endowment_for_the_humanities_data_2018]. As you can imagine, this broad definition includes much more than just the management of digital datasets. It also includes physical files, documentation, artifacts, recordings, and more. RDM is a substantial undertaking that begins long before data is ever collected, during the planning phase, and continues well after a research project ends during the archiving phase.
 
 ## Standards
 
@@ -98,7 +98,10 @@ The remainder of this book will be organized into chapters that provide best pra
 
 You can see in Figure \@ref(fig:fig2-1), how throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
-![(\#fig:fig2-1)The research project life cycle](img/cl_lifecycle2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/cl_lifecycle2.PNG" alt="The research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig2-1)The research project life cycle</p>
+</div>
 
 Let's walk through this chart.
 

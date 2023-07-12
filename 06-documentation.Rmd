@@ -344,7 +344,7 @@ Our last category of documentation is variable-level documentation. When we thin
 
 ### Data dictionary
 
-A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_nodate-1; @gonzales_ten_2022; @uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation. A data dictionary is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study [@lewis_using_2022; @van_bochove_data_nodate]. 
+A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_2023; @gonzales_ten_2022; @uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation. A data dictionary is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study [@lewis_using_2022; @van_bochove_data_nodate]. 
 
 This document should be structured similar to a dataset, with variable names in the first row [@broman_data_2018]. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
 
@@ -522,7 +522,7 @@ knitr::include_graphics("img/metadata_project.PNG")
 
 There are other ways metadata can be gathered as well. For instance, for variable-level metadata, rather than having users input metadata, repositories may create metadata from the deposited statistical data files that contain inherent metadata (such as variable types or labels) or from deposited documentation such as data dictionaries or codebooks [@icpsr_icpsr_2023].
 
-If your repository provides limited forms for metadata entry, you can also choose to increase the searchability of your files by creating your own machine-readable documents. There are several tools to help users create machine-readable codebooks and data dictionaries that will be findable through search engines such as Google Dataset Search [@arslan_how_2018; @buchanan_getting_2021;@usgs_tools_2021]. 
+If your repository provides limited forms for metadata entry, you can also choose to increase the searchability of your files by creating your own machine-readable documents. There are several tools to help users create machine-readable codebooks and data dictionaries that will be findable through search engines such as Google Dataset Search [@arslan_how_2019; @buchanan_getting_2021;@usgs_tools_2021]. 
 
 ### Metadata standards {#metastandards}
 

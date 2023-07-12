@@ -10,7 +10,10 @@ Those data come in many forms (e.g., video, transcripts, documents, files), repr
 
 These rectangular (also called tabular) datasets are made up of columns and rows. 
 
-![(\#fig:fig3-1)Basic format of a dataset](img/rectangle.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/rectangle.PNG" alt="Basic format of a dataset" width="80%" />
+<p class="caption">(\#fig:fig3-1)Basic format of a dataset</p>
+</div>
 
 ### Columns {#columns}
 
@@ -43,7 +46,10 @@ The rows in your dataset are aligned with participants or cases in your data. Pa
 
 The cells are the observations associated with each participant. Cells are made up of key/value pairs, created at the intersection of a column and a row. Consider an example where we collect a survey from students. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value/observation that corresponds to that row/column pair (that participant and that question).
 
-![(\#fig:fig3-2)Representation of a cell value](img/cell_value.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/cell_value.PNG" alt="Representation of a cell value" width="70%" />
+<p class="caption">(\#fig:fig3-2)Representation of a cell value</p>
+</div>
 
 
 ## Dataset organization rules
@@ -53,19 +59,28 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 1. The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 
-![(\#fig:fig3-3)A comparison of non-rectangular and rectangular data](img/rectangle2.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/rectangle2.PNG" alt="A comparison of non-rectangular and rectangular data" width="100%" />
+<p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
+</div>
 
 2. Your columns should adhere to your variable type.
     - For example, if you have a numeric variable, such as age, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
   
-![(\#fig:fig2-4)A comparison of variables adhering and not adhering to a data type](img/var_type.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/var_type.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
+<p class="caption">(\#fig:fig2-4)A comparison of variables adhering and not adhering to a data type</p>
+</div>
   
 3. A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
    - You lose the granularity of the information (e.g., `location` = `Los Angeles, CA` is less granular than having a `city` variable and a `state` variable separately)
    - Your variable may become unanalyzable (e.g., a variable with a value `220/335` is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a `rate` variable with a value of `.657`.
    - You may lose the variable type (e.g., if you want an `incident_rate` variable to be numeric, and you assign a value of `220/335`, that variable is no longer numeric)
   
-![(\#fig:fig3-5)A comparison of two things being measured in one variable and two things being measured across two variables](img/two_things.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/two_things.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
+<p class="caption">(\#fig:fig3-5)A comparison of two things being measured in one variable and two things being measured across two variables</p>
+</div>
 
 4. All cell values should be explicit. This means all cells should be filled in with a physical value. 
    - Consider why a cell value is empty
@@ -73,12 +88,18 @@ In order for your dataset to be machine-readable and analyzable, it should adher
      - If a cell is left empty because it is "implied" to be the same value as above, the cells should be filled with the actual data  
      - If the value for the cell is "implied" to be 0, fill the cells with 0  
 
-![(\#fig:fig3-6)A comparison of of variables with empty cells and variables with not empty cells](img/explicit.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/explicit.PNG" alt="A comparison of of variables with empty cells and variables with not empty cells" width="100%" />
+<p class="caption">(\#fig:fig3-6)A comparison of of variables with empty cells and variables with not empty cells</p>
+</div>
 
   - No values should be implied using color coding 
      - If you want to indicate information, add an indicator variable to do this rather than cell coloring  
       
-![(\#fig:fig3-7)A comparison of variables with implicit values and variables with explicit values](img/cell_color.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/cell_color.PNG" alt="A comparison of variables with implicit values and variables with explicit values" width="100%" />
+<p class="caption">(\#fig:fig3-7)A comparison of variables with implicit values and variables with explicit values</p>
+</div>
       
 5. Your data should not contain duplicate rows. You do not want duplicate rows of a measurement collected **on the same participant**, **at the same time period**. Different types of duplicate rows can occur:
    - A true duplicate row where an entire row is duplicated (the row values are the same for every variable). This may happen if someone enters the same form twice.
@@ -89,7 +110,10 @@ In order for your dataset to be machine-readable and analyzable, it should adher
         - Take for example a student id and a class id. Multiple unique identifiers may be used if data is collected on participants in multiple locations and treated as unique data. In this case, the data is not truly duplicate because the combined identifiers are unique. 
         - Another example of this is if your data is organized in long format (discussed in Section \@ref(datastructure)). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
     
-![(\#fig:fig3-8)A comparison of data with duplicate cases and data with no duplicate cases](img/duplicate.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/duplicate.PNG" alt="A comparison of data with duplicate cases and data with no duplicate cases" width="100%" />
+<p class="caption">(\#fig:fig3-8)A comparison of data with duplicate cases and data with no duplicate cases</p>
+</div>
 
 ## Linking data
 
@@ -105,15 +129,24 @@ In database terminology, each dataset we have is considered a "table". Each tabl
 
 Let's take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students (a survey and an assessment) in one time period. Figure \@ref(fig:fig3-9) shows what variables were collected from each instrument and how each table can be linked together through a primary key (circled in yellow).
 
-![(\#fig:fig3-9)Linking data through primary keys](img/link0.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/link0.PNG" alt="Linking data through primary keys" width="70%" />
+<p class="caption">(\#fig:fig3-9)Linking data through primary keys</p>
+</div>
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (e.g., students, nested in classrooms, nested in schools, and so on). Let's take another example where we collected data from three instruments, a student assessment, a teacher survey, and a school intake form. Figure \@ref(fig:fig3-10) shows what variables exist in each dataset (with primary keys still being circled in yellow) and how each table can be linked together through a foreign key (circled in blue).
 
-![(\#fig:fig3-10)Linking data through foreign keys](img/link1.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/link1.PNG" alt="Linking data through foreign keys" width="100%" />
+<p class="caption">(\#fig:fig3-10)Linking data through foreign keys</p>
+</div>
 
 And as you can imagine, as we add more forms, or begin to collect data across time, the database structure begins to become even more complex. Figure \@ref(fig:fig3-11) is another example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.
 
-![(\#fig:fig3-11)Linking data through primary and foreign keys](img/link2.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/link2.PNG" alt="Linking data through primary and foreign keys" width="70%" />
+<p class="caption">(\#fig:fig3-11)Linking data through primary and foreign keys</p>
+</div>
 
 
 ### Data structure {#datastructure}
@@ -135,7 +168,10 @@ The easiest scenario to think about this format is with repeated measure data. I
 > **Note** <br> <br>
 It is important to note here, that if your data do not have unique identifiers (primary and/or foreign keys), as is in the case of anonymous data, you will be unable to merge data in a wide format.
 
-![(\#fig:fig3-12)Data structured in wide format](img/wide.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/wide.PNG" alt="Data structured in wide format" width="80%" />
+<p class="caption">(\#fig:fig3-12)Data structured in wide format</p>
+</div>
 
 
 #### Long format
@@ -147,7 +183,10 @@ Again, the most straight forward way to think about this is with repeated measur
 In this scenario, we no longer add the data collection wave to variable names. However, we would need to add a time period variable to denote the wave associated with each row of data.
 
 
-![(\#fig:fig3-13)Data structured in long format](img/long.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/long.PNG" alt="Data structured in long format" width="100%" />
+<p class="caption">(\#fig:fig3-13)Data structured in long format</p>
+</div>
 
 #### Choosing wide vs long
 
