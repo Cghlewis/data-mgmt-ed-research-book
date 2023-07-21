@@ -1,7 +1,7 @@
 # Documentation {#document}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_doc.PNG" alt="Data documentation in the research project life cycle" width="70%" />
+<img src="img/lifecycle_doc.PNG" alt="Data documentation in the research project life cycle" width="80%" />
 <p class="caption">(\#fig:fig7-1)Data documentation in the research project life cycle</p>
 </div>
 
@@ -239,7 +239,7 @@ In developing your SOP template, like the one in Figure \@ref(fig:fig7-11), you 
 |Crystal Lewis|SOP template ^[https://docs.google.com/document/d/1q84UCsn_DVL9aaO_n5T_LCjwLy96FPPB]|
 
 
-## Dataset Level
+## Dataset Level {#document-dataset}
 
 Our next type of documentation applies solely to your datasets and includes information about what data they contain and how they are related. It also captures things such as planned transformations for the data, potential issues to be aware of, and any alterations to the data. In addition to being helpful descriptive documentation, a huge reason for creating dataset documentation is authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_training_team_cessda_2017; @uk_data_service_quality_2023]. Preserving data lineage by tracking transformations and errors found is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
 
@@ -328,21 +328,25 @@ Before writing any data cleaning plans, it can be very helpful for your team to 
 
 Our last category of documentation is variable-level documentation. When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. This documentation tells us all pertinent information about the variables in our datasets: variable names, descriptions, types, and allowable values. While variable-level documentation is often used to interpret existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data [@lewis_using_2022]. We will discuss this more throughout the chapters in this book.
 
-### Data dictionary
+### Data dictionary {#document-dictionary}
 
-A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_2023; @gonzales_ten_2022; @uc_merced_library_what_nodate]. This document is both a planning tool and a tool used for interpretation. A data dictionary is most useful if created in the documentation phase, before a project begins, because it is integral to many other phases of a study [@lewis_using_2022; @van_bochove_data_nodate]. 
-
-This document should be structured similar to a dataset, with variable names in the first row [@broman_data_2018]. What tool you use to build your data dictionary is up to you, but there are key pieces of information that should be included, as well as optional fields that can be helpful as well [@johns_hopkins_institute_for_clinical_and_translational_research_data_nodate].
+A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_2023; @gonzales_ten_2022; @uc_merced_library_what_nodate]. This document is most useful if created during the documentation phase and used throughout a study for both planning and interpretation purposes (see Figure \@ref(fig:fig7-15)) [@lewis_using_2022; @van_bochove_data_nodate]. 
 
 <div class="figure" style="text-align: center">
 <img src="img/dictionary_map.PNG" alt="The many uses for a data dictionary" width="90%" />
 <p class="caption">(\#fig:fig7-15)The many uses for a data dictionary</p>
 </div>
 
+This document should be structured similar to a dataset, with variable names in the first row [@broman_data_2018]. There are several necessary fields to include in this document, as well as several optional fields (see Figure \@ref(fig:fig7-17)) [@johns_hopkins_institute_for_clinical_and_translational_research_data_2020].
+
+<div class="figure" style="text-align: center">
+<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="90%" />
+<p class="caption">(\#fig:fig7-17)Fields to include in a data dictionary</p>
+</div>
 
 #### Creating a data dictionary for an original data source
 
-Before you begin to build these dictionaries you will need to have the following:
+When you are collecting data for an original source, there are a few things that are helpful to have when creating your data dictionaries: 
 
 1. Your style guide already created
     - We will talk more about style guides in Chapter \@ref(style), but this document will provide team or project standards for naming variables and coding response values.  
@@ -354,19 +358,14 @@ Before you begin to build these dictionaries you will need to have the following
       - If items are entered into a scoring program and then exported, what variables are exported?
     - See Figure \@ref(fig:fig7-16) for example of the information that could be pulled from a publication if using the Connor Davidson Resilience Scale (CD-RISC) [@connor_development_2003].
 3. Any data element standards that you plan to use
-    - See Chapter \@ref(collect) for an overview of existing data element standards
+    - See Section \@ref(collect-design) for an overview of existing data element standards
 
 <div class="figure" style="text-align: center">
 <img src="img/cdrisc.PNG" alt="Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)" width="90%" />
 <p class="caption">(\#fig:fig7-16)Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)</p>
 </div>
 
-You will then build one data dictionary for each instrument you plan to collect (e.g., student survey data dictionary, teacher survey data dictionary, student assessment data dictionary). All measures/items for each instrument will be included in the data dictionary (see Figure \@ref(fig:fig7-17)). 
-
-<div class="figure" style="text-align: center">
-<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig7-17)Fields to include in a data dictionary</p>
-</div>
+You will then build one data dictionary for each instrument you plan to collect (e.g., student survey data dictionary, teacher survey data dictionary, student assessment data dictionary). All measures/items for each instrument will be included in the data dictionary. 
 
 As you build your data dictionary, consider the following:
 
@@ -382,8 +381,8 @@ As you build your data dictionary, consider the following:
     - Are there any field standards that dictate how an items values should be coded?
   - Additional Items
     - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
-      - Identifiers (unique ids)
-      - Grouping variables (treatment)
+      - Identifiers (unique participant ids, rater ids)
+      - Grouping variables (treatment, cohort)
       - Derived variables
         - This includes both variables your team derives (e.g., mean scores, reverse coded variables, variable checks) as well as variables derived from any scoring programs (e.g., percentile ranks, grade equivalent scores)
       - Metadata (Variables that your tool collects such as IPAddress, completion, language)
@@ -406,9 +405,14 @@ The last step of creating your data dictionary, as it should be for every docume
 
 #### Creating a data dictionary from an existing data source
 
-Not all research study data will be gathered through original data collection methods. You may be collecting external data sources from organizations like school districts or state departments of education. In these cases, you will begin building your data dictionaries later in the cycle, when data is received. Rather than the forward-moving flow we discussed before where the dictionary is built first, we will now have to work backwards to answer questions about our data.
+Not all research study data will be gathered through original data collection methods. You may be collecting supplemental external data sources from organizations like school districts or state departments of education. If at all possible, start gathering information about your external data sources early on, during the documentation phase, and begin adding that information into your project data dictionary. Starting this process early will help you prepare for future data capture and cleaning processes.
 
-The first step in building your data dictionary is to review your existing data. Yet, it turns out that all this tells you is what **does** exist in the data, not what **should** exist in the data. Items could be incorrectly coded, columns could be assigned the incorrect variable type, etc. As you review your data, start to collect questions such as:
+- If the data source is public, you may be able to easily find codebooks or data dictionaries for the data source. If not, download a sample of the data to learn what variables exist in the source and how they are formatted. 
+- If the data source is non-public, request documentation ahead of time from your partner (see Section \@ref(capture-extant)).
+
+However, it is possible that you may not be able to access this information until you acquire the actual data during the data capture phase. If documentation is provided along with the data, begin reviewing the data to ensure that the documentation matches what you see in the data. Integrate that information into your project data dictionary.
+
+If documentation is not provided it is important to review the data and begin collecting questions that will allow you to build your data dictionary. 
 
 1. What do these variables represent? 
     - What was the wording of these items?
@@ -418,12 +422,11 @@ The first step in building your data dictionary is to review your existing data.
     - Do I have values in my data that don't make sense for an item?
 4. What data types are the items currently? What types should they be?
 
-To answer those questions, you may need to do some additional detective work.
+In most situations these questions will not be easily answered without documentation and may require further detective work.
 
-1. Contact the person who originally collected the data to learn more about the instrument and the data.  
-2. Contact the person who cleaned the data (if cleaned) to see what transformations they completed on the raw data.  
-3. Request access to the original instruments to review exact question wording, item response options, skip patterns, etc. 
-4. Request any documentation that the original owners have. For example, do they have their own data dictionaries, codebooks, or syntax that might help you understand what is going on in the data?  
+- Contact the person who originally collected the data to learn more about the instrument and the data.  
+- Contact the person who cleaned the data (if cleaned) to see what transformations they completed on the raw data.  
+- Request access to the original instruments to review exact question wording, item response options, skip patterns, etc.
 
 Ultimately you should end up with a data dictionary structured similarly to the one above. You may add additional fields that help you keep track of further changes (e.g., a column for the old variable name and a column for your new variable name), and your transformations section may become more verbose as the values assigned previously may not align with the values you prefer based on your style guide or the existing measures. Otherwise, the data dictionary should still be constructed in the same manner mentioned above.
 

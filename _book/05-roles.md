@@ -1,7 +1,7 @@
 # Project Roles and Responsibilities {#roles}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_rr2.PNG" alt="Planning in the research project life cycle" width="70%" />
+<img src="img/lifecycle_rr2.PNG" alt="Planning in the research project life cycle" width="80%" />
 <p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
 </div>
 

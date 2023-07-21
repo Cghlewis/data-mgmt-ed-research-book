@@ -1,6 +1,6 @@
 # Data Tracking {#track}
 
-```{r fig9-1, out.width = "70%", fig.cap="Tracking in the research project life cycle"}
+```{r fig9-1, out.width = "80%", fig.cap="Tracking in the research project life cycle"}
 
 knitr::include_graphics("img/lifecycle_track.PNG")
 
@@ -235,7 +235,7 @@ There are many tool options you can choose from. A sampling of those options are
 
   - Microsoft Access
   - Microsoft Excel
-  - QuickBase
+  - Quickbase
   - Airtable
   - REDCap
   - Claris FileMaker
@@ -267,7 +267,7 @@ Your second option is to create a form that is linked to your tables. As you ent
 - Pros: This method reduces data entry errors as you are only working on one participant form at a time
 - Cons: Takes some time, and possibly expertise, to set up the data entry forms
 
-```{r fig9-8, fig.cap="Example form view data entry", out.width= "60%"}
+```{r fig9-8, fig.cap="Example form view data entry", out.width= "70%"}
 
 knitr::include_graphics("img/form-view-new.PNG")
 

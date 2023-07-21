@@ -1,6 +1,6 @@
 # Project Roles and Responsibilities {#roles}
 
-```{r fig6-1, fig.cap="Planning in the research project life cycle", out.width = "70%"}
+```{r fig6-1, fig.cap="Planning in the research project life cycle", out.width = "80%"}
 
 knitr::include_graphics("img/lifecycle_rr2.PNG")
 

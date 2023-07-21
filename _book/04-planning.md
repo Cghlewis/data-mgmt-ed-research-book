@@ -1,7 +1,7 @@
 # Planning Data Management {#plan}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_plan2.PNG" alt="Planning in the research project life cycle" width="70%" />
+<img src="img/lifecycle_plan2.PNG" alt="Planning in the research project life cycle" width="80%" />
 <p class="caption">(\#fig:fig5-1)Planning in the research project life cycle</p>
 </div>
 
@@ -23,7 +23,10 @@ This planning phase should include a series of regular meetings with core decisi
 1. Assign roles and responsibilities (i.e. who will be responsible for tasks)
 1. Make decisions around task management and communication (i.e. how will tasks be monitored and communication tracked)
 
-Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation in the next phase. All meeting notes can be stored in a central location such as a planning folder with notes ordered by date or in a running document. 
+Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation (see Chapter \@ref(document)). All meeting notes can be stored in a central location such as a planning folder with notes ordered by date or in a running document. 
+
+> **Note** <br> <br>
+The planning phase is an excellent time to start setting up your project file structure and file naming conventions according to your style guide (see Chapter \@ref(style)) so that your files are organized, understandable, and findable.
 
 At the end of the planning period, the team should have a clear plan for what the project goals are, when goals should be accomplished, how goals will be accomplished, who is in charge of completing tasks associated with goals, and what additional resources are needed to accomplish goals.
 

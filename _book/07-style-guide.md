@@ -1,7 +1,7 @@
 # Style guide {#style}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="70%" />
+<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="80%" />
 <p class="caption">(\#fig:fig8-1)Style guide in the research project life cycle</p>
 </div>
 
@@ -194,7 +194,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
 **Example file names created using a style guide**
 
     me_stu_svy_sop_2022-08-01.docx
-    me_w1_stu_svy_data_raw_2022-11-03.csv
+    me_w1_stu_svy_raw_2022-11-03.csv
     me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
     me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
     

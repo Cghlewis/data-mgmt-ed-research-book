@@ -1,7 +1,7 @@
 # Data Tracking {#track}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="70%" />
+<img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="80%" />
 <p class="caption">(\#fig:fig9-1)Tracking in the research project life cycle</p>
 </div>
 
@@ -231,7 +231,7 @@ There are many tool options you can choose from. A sampling of those options are
 
   - Microsoft Access
   - Microsoft Excel
-  - QuickBase
+  - Quickbase
   - Airtable
   - REDCap
   - Claris FileMaker
@@ -263,7 +263,7 @@ Your second option is to create a form that is linked to your tables. As you ent
 - Cons: Takes some time, and possibly expertise, to set up the data entry forms
 
 <div class="figure" style="text-align: center">
-<img src="img/form-view-new.PNG" alt="Example form view data entry" width="60%" />
+<img src="img/form-view-new.PNG" alt="Example form view data entry" width="70%" />
 <p class="caption">(\#fig:fig9-8)Example form view data entry</p>
 </div>
 

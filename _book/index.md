@@ -1,7 +1,7 @@
 ---
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-07-11"
+date: "2023-07-21"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -9,14 +9,14 @@ bibliography: book.bib
 # cover-image: path to the social sharing image like images/cover.jpg
 cover-image: book_featured.PNG
 description: |
-  This is the in-progress version of *Data Management in Large-Scale Education Research*
+  This is the in-progress version of *Data Management in Large-Scale Education Research*. 
 biblio-style: apalike
 link-citations: yes
 ---
 
 # Preamble
 
-<img src="book_featured.PNG" class="cover" width="250" height="328"/>This is the in-progress version of *Data Management in Large-Scale Education Research*. To see a previous version of this material, please visit this [website](https://cghlewis.github.io/mpsi-data-training/).
+<img src="book_featured.PNG" class="cover" width="250" height="328"/>This is the in-progress version of *Data Management in Large-Scale Education Research*. When completed, this book will be published by CRC Press. To see a previous version of this material, please visit this [website](https://cghlewis.github.io/mpsi-data-training/).
 
 <hr>
 
