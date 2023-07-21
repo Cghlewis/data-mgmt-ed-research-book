@@ -314,8 +314,8 @@ It is important to never make changes directly to the raw data files. This also 
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig11-3"></span>
-<img src="img/data_entry_process.PNG" alt="A flow of the decisions to made regarding the data entry process" width="100%"><p class="caption">
-Figure 11.3: A flow of the decisions to made regarding the data entry process
+<img src="img/data_entry_process.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%"><p class="caption">
+Figure 11.3: The flow of the decisions to make regarding the data entry process
 </p>
 </div>
 <blockquote>
@@ -389,7 +389,7 @@ If you are entering data into a proprietary scoring system that does not provide
 <li>Value groups (e.g., specific free/reduced lunch groups)</li>
 <li>How to handle missing data (e.g., leave cell blank)</li>
 <li>How to aggregate summary data (e.g., # of days absent for the full year or by term)</li>
-<li>Last, for calculated variables it may be best to request the raw inputs and calculate your own values (e.g., request date of assessment and DOB to calculate age at assessment)</li>
+<li>For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)</li>
 </ul>
 </li>
 </ul>
@@ -423,19 +423,23 @@ Figure 11.5: Example variable request for an external partner
 <li>Not only do you need contact information for acquiring the data, you also need to know who to contact for any questions or concerns that come up after the data is received.</li>
 </ul>
 </li>
-<li>Request that documentation accompany your file
+<li>Request documentation to accompany your file
 <ul>
 <li>Receiving data dictionaries or codebooks along with your data will be vital in allowing you to correctly interpret variables. This is especially important when observing variations in how variables are measured across sites or even within sites across time (e.g., a test score is measured differently in a subsequent year)</li>
-<li>If documentation does not exist, provide your partner with a form to complete that allows them to enter relevant, variable information including (see Figure <a href="capture.html#fig:fig11-6">11.6</a>).
+<li>If documentation does not exist, provide your partner organization with a form to complete that allows them to enter relevant, variable information.
 <ul>
-<li>What each variable represents and how it is calculated</li>
+<li>What each variable represents</li>
 <li>What each value represents if the variable is categorical</li>
+<li>How it is captured or calculated (e.g., hand entered)</li>
+<li>What is the universe for the variable (e.g., grades 3-5)</li>
 <li>Any data quality concerns about any of the variables</li>
 </ul>
 </li>
+<li>If you receive new exports each year, make sure to request documentation each year. It is possible that the way variables are collected or recorded change over time.</li>
 </ul>
 </li>
 </ol>
+<p>Figure <a href="capture.html#fig:fig11-6">11.6</a> is an example of a document you can ask your partner organization to complete.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig11-6"></span>
 <img src="img/collect_document.PNG" alt="Sample documentation form for an external partner to complete" width="80%"><p class="caption">
@@ -444,7 +448,7 @@ Figure 11.6: Sample documentation form for an external partner to complete
 </div>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is show in a different school across two files), as well as duplicate individual records within a data source (e.g., a student has two state reading assessment scores) <span class="citation">(<a href="references.html#ref-levesque_guide_2015" role="doc-biblioref">Levesque, Fitzgerald, and Pfeiffer 2015</a>)</span>. These anomalies can happen due to human error or due to other situations like student mobility. While you may be able to work with a partner to solve some data issues, for others it may be important for you to develop and document data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).</p>
+When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) <span class="citation">(<a href="references.html#ref-levesque_guide_2015" role="doc-biblioref">Levesque, Fitzgerald, and Pfeiffer 2015</a>)</span>. These anomalies can happen due to human error or due to circustances such as student mobility. While you may be able to work with a partner to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).</p>
 </blockquote>
 </div>
 <div id="public-data-sources" class="section level3" number="11.3.2">
@@ -453,8 +457,7 @@ When working with external datasets, it is possible to encounter inconsistencies
 </h3>
 <p>Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some sites may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:</p>
 <ol style="list-style-type: decimal">
-<li>Find the associated documentation and read it thoroughly. Types of documentation to look for are:</li>
-</ol>
+<li>Find the associated documentation and read it thoroughly. Types of documentation to look for are:
 <ul>
 <li>Data dictionaries or codebooks
 <ul>
@@ -468,18 +471,17 @@ When working with external datasets, it is possible to encounter inconsistencies
 </li>
 <li>Data quality documentation
 <ul>
-<li>This document is helpful to be aware of any known issues in the data</li>
+<li>This document helps make you aware of any known issues in the data</li>
 </ul>
 </li>
 </ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Do not hesitate to reach out for help</li>
-</ol>
+</li>
+<li>Do not hesitate to reach out for help
 <ul>
 <li>Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.</li>
 </ul>
-<ol start="3" style="list-style-type: decimal">
-<li>If you need data across states, be aware that the information may not be interoperable across states. While you may find that some states use similar standards, it is common for states to collect and store education data in different ways. Depending on your data needs, it may be better to use a data source that has aggregated and harmonized variables for you. Examples of such data sources include national databases such as the Common Core of Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://nces.ed.gov/ccd/" class="uri"&gt;https://nces.ed.gov/ccd/&lt;/a&gt;&lt;/p&gt;'><sup>78</sup></a> or agencies that aggregate multiple databases into a single site, such as the Urban Institute’s Education Data Portal <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://educationdata.urban.org/documentation/" class="uri"&gt;https://educationdata.urban.org/documentation/&lt;/a&gt;&lt;/p&gt;'><sup>79</sup></a>.</li>
+</li>
+<li>If you extract data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be interoperable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different free/reduced price lunch categories). Depending on your data needs, it may be better to use a data source that aggregates and harmonizes variables across sites. Examples of such data sources include the Department of Education’s Common Core of Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://nces.ed.gov/ccd/" class="uri"&gt;https://nces.ed.gov/ccd/&lt;/a&gt;&lt;/p&gt;'><sup>78</sup></a> as well as the Urban Institute’s Education Data Portal <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://educationdata.urban.org/documentation/" class="uri"&gt;https://educationdata.urban.org/documentation/&lt;/a&gt;&lt;/p&gt;'><sup>79</sup></a>, which aggregates multiple databases into a single site.</li>
 </ol>
 </div>
 </div>

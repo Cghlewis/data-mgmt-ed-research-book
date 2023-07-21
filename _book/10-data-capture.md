@@ -123,8 +123,8 @@ While building a reliable data entry tool is absolutely important in ensuring da
     - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. Most importantly, check to see that the correct number of participants exist in the file compared to your participant tracking database (e.g., no duplicate entries, no missing entries). If data entry or data tracking errors exist, fix mistakes as needed. If inherent data issues exist, make notes in a Readme to be corrected in the data cleaning phase.
     
 <div class="figure" style="text-align: center">
-<img src="img/data_entry_process.PNG" alt="A flow of the decisions to made regarding the data entry process" width="100%" />
-<p class="caption">(\#fig:fig11-3)A flow of the decisions to made regarding the data entry process</p>
+<img src="img/data_entry_process.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
+<p class="caption">(\#fig:fig11-3)The flow of the decisions to make regarding the data entry process</p>
 </div>
 
 > **Note** <br> <br>
@@ -177,7 +177,7 @@ Non-public data sources are files that cannot be directly accessed from a public
       - Value groups (e.g., specific free/reduced lunch groups)
       - How to handle missing data (e.g., leave cell blank)
       - How to aggregate summary data (e.g., # of days absent for the full year or by term)
-      - Last, for calculated variables it may be best to request the raw inputs and calculate your own values (e.g., request date of assessment and DOB to calculate age at assessment)
+      - For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)
 
 Figure \@ref(fig:fig11-5) is an example of how you might provide this information to a partner.
 
@@ -195,12 +195,17 @@ Figure \@ref(fig:fig11-5) is an example of how you might provide this informatio
     - Ask how data will be shared (e.g., email, drop in a secure folder). If the data contain identifiable information, make sure to use a secure file transfer method (see Chapter \@ref(storage)). Once received, make sure to follow any data sharing agreements around how data should be stored.  
 4. Identify points of contact
     - Not only do you need contact information for acquiring the data, you also need to know who to contact for any questions or concerns that come up after the data is received.
-5. Request that documentation accompany your file
+5. Request documentation to accompany your file
     - Receiving data dictionaries or codebooks along with your data will be vital in allowing you to correctly interpret variables. This is especially important when observing variations in how variables are measured across sites or even within sites across time (e.g., a test score is measured differently in a subsequent year)
-    - If documentation does not exist, provide your partner with a form to complete that allows them to enter relevant, variable information including (see Figure \@ref(fig:fig11-6)).
-      - What each variable represents and how it is calculated
+    - If documentation does not exist, provide your partner organization with a form to complete that allows them to enter relevant, variable information.
+      - What each variable represents
       - What each value represents if the variable is categorical
+      - How it is captured or calculated (e.g., hand entered)
+      - What is the universe for the variable (e.g., grades 3-5)
       - Any data quality concerns about any of the variables
+    - If you receive new exports each year, make sure to request documentation each year. It is possible that the way variables are collected or recorded change over time.
+
+Figure \@ref(fig:fig11-6) is an example of a document you can ask your partner organization to complete.
 
 <div class="figure" style="text-align: center">
 <img src="img/collect_document.PNG" alt="Sample documentation form for an external partner to complete" width="80%" />
@@ -208,19 +213,19 @@ Figure \@ref(fig:fig11-5) is an example of how you might provide this informatio
 </div>
 
 > **Note** <br> <br>
-When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is show in a different school across two files), as well as duplicate individual records within a data source (e.g., a student has two state reading assessment scores) [@levesque_guide_2015]. These anomalies can happen due to human error or due to other situations like student mobility. While you may be able to work with a partner to solve some data issues, for others it may be important for you to develop and document data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).
+When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) [@levesque_guide_2015]. These anomalies can happen due to human error or due to circustances such as student mobility. While you may be able to work with a partner to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).
 
 ### Public data sources 
 
 Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some sites may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:
 
 1. Find the associated documentation and read it thoroughly. Types of documentation to look for are:
-  - Data dictionaries or codebooks
-    - These documents will help you interpret and use variables correctly
-  - Changelogs
-    - Public data sources are constantly updating (e.g., new data is acquired, errors are found). It's important to understand what version of the data you working with.
-  - Data quality documentation
-    - This document is helpful to be aware of any known issues in the data
+    - Data dictionaries or codebooks
+      - These documents will help you interpret and use variables correctly
+    - Changelogs
+      - Public data sources are constantly updating (e.g., new data is acquired, errors are found). It's important to understand what version of the data you working with.
+    - Data quality documentation
+      - This document helps make you aware of any known issues in the data
 2. Do not hesitate to reach out for help
-  - Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
-3. If you need data across states, be aware that the information may not be interoperable across states. While you may find that some states use similar standards, it is common for states to collect and store education data in different ways. Depending on your data needs, it may be better to use a data source that has aggregated and harmonized variables for you. Examples of such data sources include national databases such as the Common Core of Data ^[https://nces.ed.gov/ccd/] or agencies that aggregate multiple databases into a single site, such as the Urban Institute's Education Data Portal ^[https://educationdata.urban.org/documentation/].
+    - Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
+3. If you extract data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be interoperable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different free/reduced price lunch categories). Depending on your data needs, it may be better to use a data source that aggregates and harmonizes variables across sites. Examples of such data sources include the Department of Education's Common Core of Data ^[https://nces.ed.gov/ccd/] as well as the Urban Institute's Education Data Portal ^[https://educationdata.urban.org/documentation/], which aggregates multiple databases into a single site.
