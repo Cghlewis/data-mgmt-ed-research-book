@@ -86,7 +86,7 @@ There are several types of agreements that may be required for your research stu
 
 #### Consents {#collect-consent}
 
-Informed consent involves obtaining a participant's voluntary agreement to participate in your research study. As described in the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979], informed consent should meet the following criteria [@huisman_3_nodate]:
+Informed consent involves obtaining a participant's voluntary agreement to participate in your research study. As described in the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979], informed consent should meet the following criteria [@huisman_3_2023]:
 
 - Describe the study and what is expected of the participant
 - Use accessible language to ensure comprehension. Avoid technical jargon and explain terms that may not be easily understood.
@@ -254,7 +254,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 	    - Are the response options ordered in a leading way?
 	  - Is there no one way to answer this question?
 	    - Are response categories mutually exclusive and exhaustive [@icpsr_guide_nodate]?
-3. Consider data ethics in your questionnaire design [@gaddy_principles_2020; @kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_nodate; @narvaiz_data_nodate]
+3. Consider data ethics in your questionnaire design [@gaddy_principles_2020; @kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_2023; @narvaiz_data_nodate]
     - Consider the why of each item and tie your questions to outcomes
         - Don't cause undue burden on participants by collecting more data just to have more data
         - If collecting demographic information, provide an explanation of why that information is necessary and how it will be used in your research
