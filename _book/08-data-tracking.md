@@ -54,7 +54,7 @@ This database may be a standalone structure, used only for tracking and anonymiz
 
 ### Relational databases
 
-Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in Chapter \@ref(structure). Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys [@bourgeois_information_2014; @chen_database_2022]. The general steps for building a relational database are below. 
+Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in Section \@ref(structure-database). Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys [@bourgeois_information_2014; @chen_database_2022]. The general steps for building a relational database are below. 
 
 1. Decide what fields you want to collect and on whom you want to collect them. 
 2. Group those fields by entity (e.g.,students, teachers, schools) and purpose. Create tables for those groups.
@@ -142,7 +142,7 @@ I have designed this database model in this way:
       - If at any time this constant information changes (e.g., new last name, new principal), I would update that information in the appropriate table and make a note of when and why the change occurred in my "notes" field
     - Two tables are for my longitudinal information
       - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. In this example, I assume that grade level may change, maybe because my data collection waves occur across school years and teachers may move around. I also assume that a participant can drop at any point in the study and I want to track their status each wave.
-2. I have connected my tables through primary and foreign keys ("tch_id" and "sch_id")
+2. I have connected my tables through primary and foreign keys (`tch_id` and `sch_id`)
 
 The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both "tch_id" and "wave" to uniquely identify rows since "tch_id" would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig9-6)).
 
@@ -217,7 +217,7 @@ There are many criteria to consider when choosing a tool to build your database 
   - What products do you already have access to? Your institution has a license for?
 - Consider security
   - Security in terms of participant confidentiality
-    - Does the tool meet HIPAA/FERPA requirements?
+    - Does the tool meet HIPAA/FERPA requirements? (see Chapter \@ref(storage) to learn more about data classification levels)
     - Can we limit access to the entire database? To specific tables?
       - Since this database contains PII you will want to place restrictions on who can access and enter data
   - Protect data loss
@@ -271,13 +271,13 @@ Your second option is to create a form that is linked to your tables. As you ent
 > **Note** <br> <br>
 If your participant tracking database is separate from your data collection tools, all information will need to be entered by your team using one of the ways mentioned in Section \@ref(track-enter). However, if your participant tracking tool is also your data collection/data capture tool (such as those who collect data using REDCap), fields such as data collection status (e.g., survey completed) may not need to be manually entered. Rather they may be automated to populate as "complete" once a participant submits their responses in the data collection tool.
 
-## Creating unique identifiers {#ids}
+## Creating unique identifiers {#track-ids}
 
 Participant unique identifiers are numeric or alphanumeric values and typically range from 2-10 digits. Assigning these identifiers is an important part of protecting the privacy of human participants. When publicly sharing your study data, all personally identifying information will be removed and these identifiers are what will allow you to uniquely identify and link participants in your data. 
 
 While there are several ways participant identifiers can be assigned (e.g., created by participants themselves, assigned by your data collection software), most commonly, the research team assigns these identifiers to participants. As participants are recruited and added to your participant database, you will assign them a unique participant ID. If confidentiality was promised to schools or districts, you will also want to assign identifiers to sites as well.
 
-It can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Chapter \@ref(document)). In developing that schema, there are several best practices to consider.
+It can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Section \@ref(document-sop)). In developing that schema, there are several best practices to consider.
 
 1. Participants must keep this same identifier for the entire project.
     - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure \@ref(fig:fig9-10)). The participant still keeps the same ID throughout the study. You can use other variables to identify the unique instances of that participant (e.g., cohort associated with that participant)

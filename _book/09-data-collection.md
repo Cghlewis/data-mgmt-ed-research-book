@@ -68,7 +68,7 @@ In education research you are most often submitting your application to your ins
 As part of your application, common documents you may be required to submit include the following [@cabrini_university_submissions_nodate; @duru_institutional_2023]:
 
 1. Certificates from human subjects training (e.g., CITI training^[https://about.citiprogram.org/])
-1. Research protocol (see Chapter \@ref(document))
+1. Research protocol (see Section \@ref(document-protocol))
     - When writing your protocol, make sure to review your IRB's rules around data handling and include this information in your plan. IRBs typically have specific rules for things such as how paper and electronic data must be stored and backed up, how long data should be retained, how data can be transferred and shared, and how data should be anonymized [@filip_san_2023].
 1. Study materials (e.g., recruitment materials)
 1. Copies of your instruments (e.g., surveys, interview guides, observation forms)
@@ -312,7 +312,7 @@ Once content piloting is completed, teams should be ready to begin building thei
     - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
     - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, an alert system for ecological momentary assessments, options to embed data, options to calculate scores in the tool)?
 1. Compliance and security
-    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant? (see Chapter \@ref(store) to learn more about data classification levels)
+    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant? (see Chapter \@ref(storage) to learn more about data classification levels)
     - Is the tool approved by your institution?
     - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
 1. Training needed
@@ -361,18 +361,18 @@ However, if you are building your instrument manually, adhering to the following
     - This includes all substantive questions, as well as items that are necessary for linking purposes (e.g., participant identifiers, rater ids for inter-rater reliability)
     - This does not include any variables from your data dictionary that will be derived (e.g., sum scores) or any grouping variables that will be added in during the data cleaning phase (e.g., treatment, cohort)
 1. Name all of your items the correct variable name from your data dictionary [@uk_data_service_quality_2023]
-    - For example, instead of using the platform default name of "Q2", rename the item to "tch_years"
-    - As we mentioned in Chapter \@ref(style), it's also best to not concatenate a time component to your variable names if your project is longitudinal. Doing so makes it difficult to reuse your instrument for other time periods, creating additional work for you or your team.
+    - For example, instead of using the platform default name of `Q2`, rename the item to `tch_years`
+    - As mentioned in Section \@ref(style-varname), it's also best to not concatenate a time component to your variable names if your project is longitudinal. Doing so makes it difficult to reuse your instrument for other time periods, creating additional work for you or your team.
 1. Code all values as they are in your data dictionary
-    - For example, 1 = "strongly agree", 2 = "agree", 3 = "disagree", 4 = "strongly disagree"
+    - For example, "strongly agree" = 1, "agree" = 2, "disagree" = 3, "strongly disagree" = 4
     - Many times tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary
     - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options
 1. Use data validation to reduce errors and missing data [@uk_data_service_quality_2023]
     - Content validation for open-text boxes
       - Restrict entry to the type assigned in your data dictionary (e.g., numeric)
-      - Restrict entry to the format assigned in your data dictionary (e.g., YYYY-MM-DD)
-      - Restrict ranges based on allowable ranges in your data dictionary (e.g., 1-50)
-          - This could even include validating against previous responses (e.g., if SchoolA was selected in a previous question, grade level should be between 6-8, if SchoolB was selected, grade level should be between 7-8)
+      - Restrict entry to the format assigned in your data dictionary (e.g., *YYYY-MM-DD*)
+      - Restrict ranges based on allowable ranges in your data dictionary (e.g., *1-50*)
+          - This could even include validating against previous responses (e.g., if "SchoolA" was selected in a previous question, grade level should be between *6-8*, if "SchoolB" was selected, grade level should be between *7-8*)
     - Response validation
       - Consider the use of forced-response and request-response options to reduce missing data
         - Forced-response options do not allow participants to move forward without completing an item. Request-response options notify a respondent if they skip a question and ask if they still would like to move forward without responding
@@ -422,14 +422,14 @@ There are many situations where collecting data electronically may not be feasib
 2. Have clear instructions for how to complete the paper form [@kopper_survey_2021]
    - Make sure to not only have overall instructions at the top of the form but also have explicit instructions for how each question should be completed
       - Where to write answers (e.g., not in the margin)
-      - How answers should be recorded (e.g., YYYY-MM-DD, or 3 digit number)
+      - How answers should be recorded (e.g., *YYYY-MM-DD*, 3 digit number)
       - How many answers should be recorded (e.g., circle only one answer, check all applicable boxes)
       - How to navigate branching logic (e.g., include visual arrows)
 3. Only ask for one piece of information per question to reduce confusion in interpretation
 
 Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig10-5)). Using the feedback collected, edit your tool as needed before sending it out into the field.
 
-Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Chapter \@ref(capture), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig10-7)) [@hart_florida_2018].
+Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(#capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig10-7)) [@hart_florida_2018].
 
 <div class="figure" style="text-align: center">
 <img src="img/annotated_instrument.PNG" alt="Annotated instrument from The Florida State Twin Registry project" width="80%" />
@@ -450,7 +450,7 @@ When building data collection tools, no matter if they are paper or electronic, 
 
 All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers.
 
-Figure \@ref(fig:fig10-8) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge" which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
+Figure \@ref(fig:fig10-8) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge", which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
 <div class="figure" style="text-align: center">
 <img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%" />
@@ -610,7 +610,7 @@ As mentioned in Chapter \@ref(style), it's important to collect data consistentl
 - Variable types
   - For example, if gender is collected as a numeric variable, keep it as a numeric variable
 - Value codes
-  - Make sure response options are consistently coded using the same values (e.g., 0 = "No", 1 = "Yes")
+  - Make sure response options are consistently coded using the same values (e.g., "no" = 0, "yes" = 1)
 - Question type and format
   - If a slider question was used for "Percent of time on homework", continue to ask that question using a slider question
   

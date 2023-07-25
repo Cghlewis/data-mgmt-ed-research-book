@@ -25,11 +25,11 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
     - Most electronic data collection tools provide an option to export to one or more file formats (e.g., SAV, CSV, TXT). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider might include:
       - Do you want the text values for responses or the numeric values? Your choice may limit your options.
       - Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options.
-      - Do you want a non-proprietary, interoperable format? If yes, you will not want to capture data in file types such as XLSX and SAV that require proprietary software to view.
+      - Do you want a non-proprietary, interoperable format? If yes, you will not want to capture data in file types such as XLSX and SPSS that require proprietary software to view.
       - Will any file types create issues for your variables?
-        - For instance, Microsoft Excel is well-known for applying unwanted formatting to values. As an example, if your assessment tool collects age in the format of `years-months`, oftentimes Microsoft Excel will change this variable into a date, converting a value such as `10-2` (10 years and 2 months old) to `2-Oct`. A more suitable file type in this situation may be a CSV or TXT file, which do not apply formatting.
+        - For instance, Microsoft Excel is well-known for applying unwanted formatting to values. As an example, if your assessment tool collects age in the format of "years-months", oftentimes Microsoft Excel will change this variable into a date, converting a value such as "10-2" (10 years and 2 months old) to "2-Oct". A more suitable file type in this situation may be a CSV or TXT file, which do not apply formatting.
       - Is there a file structure that you don't want to work with?
-        - As an example, the structure of a SAV file may look different compared to a XLSX file depending on the tool. In a tool like Qualtrics, an XLSX or CSV file may export with multiple header rows whereas a SAV file does not.
+        - As an example, the structure of an SPSS file may look different compared to a XLSX file depending on the tool. In a tool like Qualtrics, an XLSX or CSV file may export with multiple header rows whereas an SPSS file does not.
 1. What additional formatting options need to be considered?
     - In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
       - Do you want to export the text values or numeric values for categorical items?
@@ -37,32 +37,32 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
         - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column.
       - How do you want to recode seen but missing values? 
         - This option is commonly provided because "select all" questions are often split out into multiple variables, where a `1` indicates the option was selected, and blank represents either the option was **not selected** or that the item was skipped entirely. 
-        - Typically tools provide the option to recode to `0` or `-99`. You can also choose not to recode and leave those responses as blank. If the types of missing data do not matter to your study, then leaving missing values as blank is typically the most straightforward option. However, adding an extreme value like `-99` can make it easier to know if those blank "select all" values are a "no" response (recoded to `-99`) or if those values were never seen and actually represent a missing value (left as blank).
+        - Typically tools provide the option to recode to *0* or *-99*. You can also choose not to recode and leave those responses as blank. If the types of missing data do not matter to your study, then leaving missing values as blank is typically the most straightforward option. However, adding an extreme value like *-99* can make it easier to know if those blank "select all" values are a "no" response (recoded to *-99*) or if those values were never seen and actually represent a missing value (left as blank).
 1. Where will the file be stored and how will it be named?
     - This decision should be based on guidelines laid out in your style guide (see Chapter \@ref(style)). Important things to consider here are:
       - If the data contains identifiable information (e.g., name, IP Address, email), it needs to be stored securely with limited access (see Chapter \@ref(storage)).
       - While your tool may provide a name for your file, give it a more meaningful name based on your style guide rules. That name should indicate that it is a raw data file, along with other relevant metadata (e.g., project acronym, type of data, data collection wave, or the date the file was downloaded)
 1. What documentation needs to accompany the data capture?
     - As discussed in Section \@ref(document-dataset), there are additional documents that can be helpful to include alongside the file.
-      - A Readme can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of.
+      - A README can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of.
       - A changelog can also be very beneficial. It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.
 1. Who will capture the data?
-    - It doesn't necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign that person the responsibility of documenting any relevant information in the Readme.  
+    - It doesn't necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign that person the responsibility of documenting any relevant information in the README.  
 1. What checks need to happen before this data is handed off?
     - It is important for the person responsible for data capture to do a basic review of the file before handing this data off for the next step.
       - Does the format of the file look as expected? Does it have data in it? Are all the variables there as expected?
       - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with completed data in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data. 
         - Was a participant accidentally dropped from the file? Is someone incorrectly marked as complete in the tracking database? Are there duplicate entries in the file?
-          - If there are errors that can be corrected (e.g., someone incorrectly tracked a data point, a participant was left off in the capture process), those corrections should be made now. If there are corrections that involve manipulating the raw data (e.g., reconciling duplicate IDs in the data), those corrections should not be made at this time. Instead, those should be added to a Readme file to be corrected in the data cleaning phase. 
+          - If there are errors that can be corrected (e.g., someone incorrectly tracked a data point, a participant was left off in the capture process), those corrections should be made now. If there are corrections that involve manipulating the raw data (e.g., reconciling duplicate IDs in the data), those corrections should not be made at this time. Instead, those should be added to a README file to be corrected in the data cleaning phase. 
   
 > **Note** <br> <br>
-It is important to never make changes directly to the raw data files. This also includes not making changes directly to the data in your data collection tool. If you see errors in the raw data file that can't be fixed by simply re-downloading the data, make notes in a Readme for future correction as noted above. Those corrections can be made in the data cleaning process. The one exception to this rule is if you accidentally collect data on a non-consented participant. In this case, it may be best to delete data for this participant directly in your data collection tool so that no record is kept.
+It is important to never make changes directly to the raw data files. This also includes not making changes directly to the data in your data collection tool. If you see errors in the raw data file that can't be fixed by simply re-downloading the data, make notes in a README for future correction as noted above. Those corrections can be made in the data cleaning process. The one exception to this rule is if you accidentally collect data on a non-consented participant. In this case, it may be best to delete data for this participant directly in your data collection tool so that no record is kept.
 
 All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a CSV file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.
 
-As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions above should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to a SAV file can vary). Not only can this produce errors but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.
+As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions above should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.
 
-## Paper data capture
+## Paper data capture {#capture-paper}
 
 The most common method for capturing paper forms is manual entry. While capturing electronic data is fairly quick and straightforward, planning for and implementing paper data entry is much more involved. Similar to electronic data collection, you will want to start planning data entry long before your data is collected, and you will need to build your data entry tool before the data capture phase (e.g., when you are creating your data collection tools).
 
@@ -90,8 +90,8 @@ If however, you choose to use a spreadsheet program such as SPSS or Microsoft Ex
 When you export or save a dataset from your data entry tool, it should meet all of our data structure rules (see Chapter \@ref(structure)), and all of the variables should be formatted as we have described in our data dictionary, including correct name, variable type, and allowable values. In order to accomplish that goal, you need to build your data entry screens, whether in a spreadsheet or form layout, following rules similar to those discussed in Section \@ref(collect-build). 
 
 1. Make sure that your items are laid out in the same order that they appear on the paper form so that people entering the data can easily follow the flow [@reynolds_basics_2022].
-2. Using the annotated instrument we discussed in Section \@ref(collect-paper), name all of the items on your data entry screen to match the final item names (e.g., instead of "Q2" use the final name "tch_years"). 
-3. For quicker data entry, with less errors, allow people to enter the numeric values associated with response options on the annotated instrument rather than the text values (e.g., enter "1" rather than "strongly disagree"). Or if you prefer to use text values, build those as drop-down values, removing variation in entry.
+2. Using the annotated instrument we discussed in Section \@ref(collect-paper), name all of the items on your data entry screen to match the final item names (e.g., instead of `Q2` use the final name `tch_years`). 
+3. For quicker data entry, with less errors, allow people to enter the numeric values associated with response options on the annotated instrument rather than the text values (e.g., enter *1* rather than "strongly disagree"). Or if you prefer to use text values, build those as drop-down values, removing variation in entry.
 4. No matter which data entry tool you choose, make sure to include both content and response validation
     - Restrict data type, format, ranges, and values
     - Do not allow people to skip over items
@@ -109,9 +109,9 @@ While building a reliable data entry tool is absolutely important in ensuring da
 1. Specific data entry rules to follow
     - What values to enter for categorical variables (numeric values or text values)
     - If any items allow free-text entry, provide specific data entry rules to prevent inconsistencies. While adding data validation will help remove some inconsistencies, further rules may be needed depending on the items. As an example:
-      - Enter decimals with a leading zero (e.g. "0.4" not ".4")
-      - Enter "yes" values as "Y" (e.g., change "y" or "yes" to "Y")
-      - Only enter numeric values for measurements (e.g., "5" not "5cm")
+      - Enter decimals with a leading zero (e.g. *0.4* not *.4*)
+      - Enter "yes" values as "Y" (e.g., change any values of "y" or "yes" to "Y")
+      - Only enter numeric values for measurements (e.g., *5* not "5cm")
     - How to code missing data
     - What to do if someone comes across a variety of common data errors. As an example:
       - Someone who has circled more than one response to an item
@@ -122,7 +122,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
     - For example, staff can write their initials on a form after entry
 1. Who to notify when all forms have been entered.
 1. Steps to be performed before handing off the entered data.
-    - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. Most importantly, check to see that the correct number of participants exist in the file compared to your participant tracking database (e.g., no duplicate entries, no missing entries). If data entry or data tracking errors exist, fix mistakes as needed. If inherent data issues exist, make notes in a Readme to be corrected in the data cleaning phase.
+    - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. Most importantly, check to see that the correct number of participants exist in the file compared to your participant tracking database (e.g., no duplicate entries, no missing entries). If data entry or data tracking errors exist, fix mistakes as needed. If inherent data issues exist, make notes in a README to be corrected in the data cleaning phase.
     
 ```{r fig11-3, fig.cap="The flow of the decisions to make regarding the data entry process"}
 
@@ -146,7 +146,7 @@ Last, it is important to integrate quality control into this data entry process.
 3. Using that report, a designated team member/members makes corrections [@yenni_developing_2019]. This involves pulling out the original paper forms and seeing what the correct value is for each error.
     - There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways. 
     - However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your "master" raw data file.
-    - Figure \@ref(fig:fig11-4) is an example using this process. Data has been entered in two spreadsheets, then both files are imported into R where a comparison program is run to check for errors and a report is returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our "stress1" variable. Entry file 1 ("BASE") has a different value than entry file 2 ("COMPARE"). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
+      - Figure \@ref(fig:fig11-4) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
   
 ```{r fig11-4, out.width = "60%", fig.cap="A report displaying differences between two entry files"}
 
@@ -185,10 +185,10 @@ If not already included in the provider's data request process, it is important 
     - If you plan to link data, make sure to request a unique identifier that both you've collected and that exists in the external data (e.g., state student unique identifier), or a combination of identifiers (e.g., name and DOB), which allows you to link the external data to your existing original data.  
     - If you are planning to combine data from multiple sources (e.g., multiple school districts), this can require hours of harmonization to make data comparable due to variations in how data is collected across agencies. If there is some flexibility in the request process, it can be helpful to provide details to your data provider about how you would like the variables to be formatted, helping to standardize inputs and removing any room for interpretation [@feeney_using_2021]. 
       - Variable type (e.g., numeric, text)
-      - Variable formats (e.g., DOB as YYYY-MM-DD)
-      - Value groups (e.g., specify how to code free/reduced lunch groups)
+      - Variable formats (e.g., `DOB` as YYYY-MM-DD)
+      - Value coding (e.g., specify how to code FRPL categories)
       - How to handle missing data (e.g., leave cell blank)
-      - How to aggregate summary data (e.g., Number of days absent for the full year *or* by term)
+      - How to aggregate summary data (e.g., number of days absent for the full year **or** by term)
       - For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)
 
 Figure \@ref(fig:fig11-6) is an example of how you might provide this information to a data provider.
@@ -214,7 +214,7 @@ knitr::include_graphics("img/collect_request.PNG")
       - What each variable represents
       - What each value represents if the variable is categorical
       - How each variable is captured or calculated (e.g., hand entered)
-      - The universe for each variable (e.g., grades 3-5)
+      - The universe for each variable (e.g., grades *3-5*)
       - Any data quality concerns about any of the variables
     - If you receive new exports each year, make sure to request documentation each year. It is possible that the way variables are collected or recorded change over time.
 

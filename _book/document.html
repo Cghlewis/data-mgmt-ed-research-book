@@ -356,9 +356,9 @@ Figure 7.5: Example of content to include in a data governance plan
 </tr></tbody>
 </table></div>
 </div>
-<div id="protocol" class="section level3" number="7.2.4">
+<div id="document-protocol" class="section level3" number="7.2.4">
 <h3>
-<span class="header-section-number">7.2.4</span> Research protocol<a class="anchor" aria-label="anchor" href="#protocol"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.2.4</span> Research protocol<a class="anchor" aria-label="anchor" href="#document-protocol"><i class="fas fa-link"></i></a>
 </h3>
 <p>The research protocol is a comprehensive project plan document that describes the what, who, when, where, and how of your study. Many of the decisions made in your data management plan and while reviewing your planning checklists will be summarized in this document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. Make sure to follow your university’s specific template if provided, but common items typically included in a protocol are provided in Figure <a href="document.html#fig:fig7-6">7.6</a>.</p>
 <div class="figure" style="text-align: center">
@@ -367,7 +367,7 @@ Figure 7.5: Example of content to include in a data governance plan
 Figure 7.6: Common research protocol elements
 </p>
 </div>
-<p>When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user, such as known limitations in the data. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional <a href="document.html#supplement">supplemental information</a> can also be added as needed.</p>
+<p>When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user, such as known limitations in the data. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional <a href="#supplement">supplemental information</a> can also be added as needed.</p>
 <p><strong>Template and Resources</strong></p>
 <div class="inline-table"><table class="table table-sm">
 <colgroup>
@@ -407,9 +407,9 @@ Figure 7.6: Common research protocol elements
 </tbody>
 </table></div>
 </div>
-<div id="supplement" class="section level3" number="7.2.5">
+<div id="document-supplement" class="section level3" number="7.2.5">
 <h3>
-<span class="header-section-number">7.2.5</span> Supplemental documents<a class="anchor" aria-label="anchor" href="#supplement"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.2.5</span> Supplemental documents<a class="anchor" aria-label="anchor" href="#document-supplement"><i class="fas fa-link"></i></a>
 </h3>
 <p>There is a series of documents, that while they can absolutely be standalone documents, I am calling supplemental documents here because they can be added to your research protocol as an addendum at any point to further clarify specifics of your project.</p>
 <ol style="list-style-type: decimal">
@@ -455,9 +455,9 @@ Figure 7.9: Flowchart of an ECLS-K:2011 kindergarten assessment
 </ol>
 <p>You may also choose to attach any publications that have come from your data as an addendum to your protocol.</p>
 </div>
-<div id="sop" class="section level3" number="7.2.6">
+<div id="document-sop" class="section level3" number="7.2.6">
 <h3>
-<span class="header-section-number">7.2.6</span> Standard operating procedures<a class="anchor" aria-label="anchor" href="#sop"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.2.6</span> Standard operating procedures<a class="anchor" aria-label="anchor" href="#document-sop"><i class="fas fa-link"></i></a>
 </h3>
 <p>While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis <span class="citation">(<a href="references.html#ref-nucats_standard_nodate" role="doc-biblioref">NUCATS n.d.</a>)</span>. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision making processes. If you recall from Chapter <a href="plan.html#plan">5</a>, every step that we added to a data collection workflow is then added to an SOP and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (i.e., survey, assessments, observations), you should also have SOPs for any other decisions or processes that need to be repeated in a reproducible manner or followed in a specific way to maintain compliance <span class="citation">(<a href="references.html#ref-hollmann_ten_2020" role="doc-biblioref">Hollmann et al. 2020</a>)</span>. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure <a href="document.html#fig:fig7-10">7.10</a>. Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.</p>
 <div class="figure" style="text-align: center">
@@ -502,11 +502,11 @@ Figure 7.11: Standard operating procedure minimal template
 <h3>
 <span class="header-section-number">7.3.1</span> Readme<a class="anchor" aria-label="anchor" href="#readme"><i class="fas fa-link"></i></a>
 </h3>
-<p>A Readme is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. Readmes can be used in many different ways but I will cover three ways they are often used in data management.</p>
+<p>A README is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. READMEs can be used in many different ways but I will cover three ways they are often used in data management.</p>
 <ol style="list-style-type: decimal">
 <li>For conveying information to your colleagues
 <ul>
-<li>An example of this is if a study participant reaches out to a project coordinator to let them know that they entered the incorrect ID in their survey. When the project coordinator downloads the raw data file to be cleaned by the data manager for instance, they also create a file named “readme.txt” that contains this information and is saved alongside the file in the raw data folder. That way when the data manager goes to retrieve the file, they will see that a Readme is included and know to review that document first.</li>
+<li>An example of this is if a study participant reaches out to a project coordinator to let them know that they entered the incorrect ID in their survey. When the project coordinator downloads the raw data file to be cleaned by the data manager for instance, they also create a file named “readme.txt” that contains this information and is saved alongside the file in the raw data folder. That way when the data manager goes to retrieve the file, they will see that a README is included and know to review that document first.</li>
 </ul>
 </li>
 </ol>
@@ -526,14 +526,14 @@ Figure 7.11: Standard operating procedure minimal template
 <ol start="3" style="list-style-type: decimal">
 <li>For providing information about a set of files in a directory
 <ul>
-<li>It can be helpful to add Readmes to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes or suffixes used in datasets, or instrument response rates. Figure <a href="document.html#fig:fig7-12">7.12</a> is an example readme that can be used to describe all data sources shared in a project repository <span class="citation">(<a href="references.html#ref-neild_sharing_2022" role="doc-biblioref">Neild, Robinson, and Agufa 2022</a>)</span>.</li>
+<li>It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes or suffixes used in datasets, or instrument response rates. Figure <a href="document.html#fig:fig7-12">7.12</a> is an example README that can be used to describe all data sources shared in a project repository <span class="citation">(<a href="references.html#ref-neild_sharing_2022" role="doc-biblioref">Neild, Robinson, and Agufa 2022</a>)</span>.</li>
 </ul>
 </li>
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig7-12"></span>
-<img src="img/readme3.PNG" alt="Institute of Education Sciences example Readme for conveying information on files in a directory" width="75%"><p class="caption">
-Figure 7.12: Institute of Education Sciences example Readme for conveying information on files in a directory
+<img src="img/readme3.PNG" alt="Institute of Education Sciences example README for conveying information on files in a directory" width="75%"><p class="caption">
+Figure 7.12: Institute of Education Sciences example README for conveying information on files in a directory
 </p>
 </div>
 <p><strong>Template and Resources</strong></p>
@@ -549,20 +549,20 @@ Figure 7.12: Institute of Education Sciences example Readme for conveying inform
 <tbody>
 <tr class="odd">
 <td>Crystal Lewis</td>
-<td>Readme template for sharing information about a set of files in a directory <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD" class="uri"&gt;https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD&lt;/a&gt;&lt;/p&gt;'><sup>46</sup></a>
+<td>README template for sharing information about a set of files in a directory <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD" class="uri"&gt;https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD&lt;/a&gt;&lt;/p&gt;'><sup>46</sup></a>
 </td>
 </tr>
 <tr class="even">
 <td>Crystal Lewis</td>
-<td>Readme template for sharing project-level information <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc" class="uri"&gt;https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc&lt;/a&gt;&lt;/p&gt;'><sup>47</sup></a>
+<td>README template for sharing project-level information <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc" class="uri"&gt;https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc&lt;/a&gt;&lt;/p&gt;'><sup>47</sup></a>
 </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div id="change" class="section level3" number="7.3.2">
+<div id="document-change" class="section level3" number="7.3.2">
 <h3>
-<span class="header-section-number">7.3.2</span> Changelog<a class="anchor" aria-label="anchor" href="#change"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.3.2</span> Changelog<a class="anchor" aria-label="anchor" href="#document-change"><i class="fas fa-link"></i></a>
 </h3>
 <p>A changelog is a record of all of the versions of your data and code <span class="citation">(<a href="references.html#ref-uk_data_service_versioning_2023" role="doc-biblioref">UK Data Service 2023d</a>; <a href="references.html#ref-wilson_good_2017" role="doc-biblioref">Wilson et al. 2017</a>)</span>. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the education field where researchers often work with human subjects and identifiable data, users are most often not keeping their study data, during an active project, in a remote repository. Instead, data are usually kept in an institution-approved storage location. Even if a storage location has versioning such as Box or SharePoint, unless users are able to add contextual messages about changes made when saving versions (like a commit message with Git), users will still want to keep a changelog.</p>
 <p>A changelog provides data lineage, allowing the user to understand where the data originated as well as all transformations made to the data. It also supports data confidence, allowing the user to understand what version of the data they are currently using and to see if more recent versions have been created and why.</p>
@@ -729,7 +729,7 @@ Figure 7.18: Example student survey data dictionary
 <li>Does the team want to adjust any of the question/item wording?</li>
 <li>Does the data dictionary include everything the team plans to collect? Are any items missing?
 <ul>
-<li>If additional items are added to instruments at later time points, adding fields to your data dictionary, such as “time periods available”, can be really helpful to future users in understanding why some items may be missing data at certain time points.</li>
+<li>If additional items are added to instruments at later time points, adding fields to your data dictionary, such as <code>time periods available</code>, can be really helpful to future users in understanding why some items may be missing data at certain time points.</li>
 </ul>
 </li>
 </ul>
@@ -762,11 +762,10 @@ Figure 7.18: Example student survey data dictionary
 </ol>
 <p>In most situations these questions will not be easily answered without documentation and may require further detective work.</p>
 <ul>
-<li>Contact the person who originally collected the data to learn more about the instrument and the data.<br>
-</li>
+<li>Contact the person who originally collected the data to learn more about the instrument or data collection process.</li>
 <li>Contact the person who cleaned the data (if cleaned) to see what transformations they completed on the raw data.<br>
 </li>
-<li>Request access to the original instruments to review exact question wording, item response options, skip patterns, etc.</li>
+<li>If applicable, request access to the original instruments to review exact question wording, item response options, skip patterns, etc.</li>
 </ul>
 <p>Ultimately you should end up with a data dictionary structured similarly to the one above. You may add additional fields that help you keep track of further changes (e.g., a column for the old variable name and a column for your new variable name), and your transformations section may become more verbose as the values assigned previously may not align with the values you prefer based on your style guide or the existing measures. Otherwise, the data dictionary should still be constructed in the same manner mentioned above.</p>
 </div>
@@ -814,7 +813,7 @@ Figure 7.20: Example codebook from the SCOPE Coach Survey
 </div>
 <p>In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data is out of range or unexpected values appear.</p>
 <p>You can create separate codebooks per dataset or have them all contained in one document, clickable through a table of contents. Unlike a data dictionary, which I recommend creating manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebooks, including point and click statistical programs such as SPSS, or with a little programming knowledge you can more flexibly design codebooks using programs like R or SAS. For example, the R programming language has many packages that will create and export codebooks in a variety of formats from your existing dataset by just running a few functions <span class="citation">(<a href="references.html#ref-lewis_codebook_2023" role="doc-biblioref">Lewis 2023</a>)</span>.</p>
-<p>Last, you may notice as you review codebooks, that many will start with several pages of text, usually containing information about the project. When it comes time to share their data, it’s common for people to combine information from their research protocol or Readme files, into their codebooks, rather than sharing separate documents.</p>
+<p>Last, you may notice as you review codebooks, that many will start with several pages of text, usually containing information about the project. When it comes time to share their data, it’s common for people to combine information from their research protocol or README files, into their codebooks, rather than sharing separate documents.</p>
 <p><strong>Template and Resources</strong></p>
 <div class="inline-table"><table class="table table-sm">
 <colgroup>
@@ -936,15 +935,15 @@ Figure 7.26: Metadata comparison from an AERA Open project
 <li><a class="nav-link" href="#data-management-plan"><span class="header-section-number">7.2.1</span> Data management plan</a></li>
 <li><a class="nav-link" href="#checklists-and-meeting-notes"><span class="header-section-number">7.2.2</span> Checklists and meeting notes</a></li>
 <li><a class="nav-link" href="#roles-and-responsibilities-document"><span class="header-section-number">7.2.3</span> Roles and responsibilities document</a></li>
-<li><a class="nav-link" href="#protocol"><span class="header-section-number">7.2.4</span> Research protocol</a></li>
-<li><a class="nav-link" href="#supplement"><span class="header-section-number">7.2.5</span> Supplemental documents</a></li>
-<li><a class="nav-link" href="#sop"><span class="header-section-number">7.2.6</span> Standard operating procedures</a></li>
+<li><a class="nav-link" href="#document-protocol"><span class="header-section-number">7.2.4</span> Research protocol</a></li>
+<li><a class="nav-link" href="#document-supplement"><span class="header-section-number">7.2.5</span> Supplemental documents</a></li>
+<li><a class="nav-link" href="#document-sop"><span class="header-section-number">7.2.6</span> Standard operating procedures</a></li>
 </ul>
 </li>
 <li>
 <a class="nav-link" href="#document-dataset"><span class="header-section-number">7.3</span> Dataset Level</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#readme"><span class="header-section-number">7.3.1</span> Readme</a></li>
-<li><a class="nav-link" href="#change"><span class="header-section-number">7.3.2</span> Changelog</a></li>
+<li><a class="nav-link" href="#document-change"><span class="header-section-number">7.3.2</span> Changelog</a></li>
 <li><a class="nav-link" href="#data-cleaning-plan"><span class="header-section-number">7.3.3</span> Data cleaning plan</a></li>
 </ul>
 </li>

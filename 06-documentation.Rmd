@@ -155,7 +155,7 @@ Using the checklists reviewed during the planning phase, your team should begin 
 |Crystal Lewis | Three roles and responsibilities templates ^[https://drive.google.com/drive/folders/1nhDgOVfESrZLYfvcrTU_I2dnsOtq3TkV]|
 
 
-### Research protocol {#protocol}
+### Research protocol {#document-protocol}
 
 The research protocol is a comprehensive project plan document that describes the what, who, when, where, and how of your study. Many of the decisions made in your data management plan and while reviewing your planning checklists will be summarized in this document. If you are submitting your study to your Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig7-6).
 
@@ -177,7 +177,7 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 |University of Missouri| Protocol template ^[https://docs.research.missouri.edu/human_subjects/templates/Social_Behavioral_Educational_Protocol_Template.docx]|
 |University of Washington| Protocol checklist ^[https://depts.washington.edu/wildfire/resources/protckl.pdf]|
 
-### Supplemental documents {#supplement}
+### Supplemental documents {#document-supplement}
 
 There is a series of documents, that while they can absolutely be standalone documents, I am calling supplemental documents here because they can be added to your research protocol as an addendum at any point to further clarify specifics of your project.
 
@@ -223,7 +223,7 @@ Consent forms(see Chapter \@ref(collect)) can also be added as an addendum to re
 
 You may also choose to attach any publications that have come from your data as an addendum to your protocol.
 
-### Standard operating procedures {#sop}
+### Standard operating procedures {#document-sop}
 
 While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_nodate]. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision making processes. If you recall from Chapter \@ref(plan), every step that we added to a data collection workflow is then added to an SOP and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (i.e., survey, assessments, observations), you should also have SOPs for any other decisions or processes that need to be repeated in a reproducible manner or followed in a specific way to maintain compliance [@hollmann_ten_2020]. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig7-10). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
 
@@ -258,10 +258,10 @@ Not **all** of your dataset-level documentation will be created in the documenta
 
 ### Readme
 
-A Readme is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. Readmes can be used in many different ways but I will cover three ways they are often used in data management.
+A README is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. READMEs can be used in many different ways but I will cover three ways they are often used in data management.
 
 1. For conveying information to your colleagues
-    - An example of this is if a study participant reaches out to a project coordinator to let them know that they entered the incorrect ID in their survey. When the project coordinator downloads the raw data file to be cleaned by the data manager for instance, they also create a file named "readme.txt" that contains this information and is saved alongside the file in the raw data folder. That way when the data manager goes to retrieve the file, they will see that a Readme is included and know to review that document first.
+    - An example of this is if a study participant reaches out to a project coordinator to let them know that they entered the incorrect ID in their survey. When the project coordinator downloads the raw data file to be cleaned by the data manager for instance, they also create a file named "readme.txt" that contains this information and is saved alongside the file in the raw data folder. That way when the data manager goes to retrieve the file, they will see that a README is included and know to review that document first.
   
 ```
   - ID 5051 entered incorrectly. Should be 5015.
@@ -279,9 +279,9 @@ A Readme is a plain text document that contains information about your files. Th
 ```
 
 3. For providing information about a set of files in a directory
-    - It can be helpful to add Readmes to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes or suffixes used in datasets, or instrument response rates. Figure \@ref(fig:fig7-12) is an example readme that can be used to describe all data sources shared in a project repository [@neild_sharing_2022]. 
+    - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes or suffixes used in datasets, or instrument response rates. Figure \@ref(fig:fig7-12) is an example README that can be used to describe all data sources shared in a project repository [@neild_sharing_2022]. 
 
-```{r fig7-12, fig.cap="Institute of Education Sciences example Readme for conveying information on files in a directory", out.width = "75%"}
+```{r fig7-12, fig.cap="Institute of Education Sciences example README for conveying information on files in a directory", out.width = "75%"}
 
 knitr::include_graphics("img/readme3.PNG")
 
@@ -291,10 +291,10 @@ knitr::include_graphics("img/readme3.PNG")
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Readme template for sharing information about a set of files in a directory ^[https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD]|
-|Crystal Lewis| Readme template for sharing project-level information ^[https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc]|
+|Crystal Lewis | README template for sharing information about a set of files in a directory ^[https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD]|
+|Crystal Lewis| README template for sharing project-level information ^[https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc]|
 
-### Changelog {#change}
+### Changelog {#document-change}
 
 A changelog is a record of all of the versions of your data and code [@uk_data_service_versioning_2023; @wilson_good_2017]. While there are automatic ways to track your data and code through programs such as Git and GitHub, in the education field where researchers often work with human subjects and identifiable data, users are most often not keeping their study data, during an active project, in a remote repository. Instead, data are usually kept in an institution-approved storage location. Even if a storage location has versioning such as Box or SharePoint, unless users are able to add contextual messages about changes made when saving versions (like a commit message with Git), users will still want to keep a changelog.
 
@@ -419,7 +419,7 @@ The last step of creating your data dictionary, as it should be for every docume
   - Is everyone in agreement about who gets each item?  
   - Does the team want to adjust any of the question/item wording? 
   - Does the data dictionary include everything the team plans to collect? Are any items missing?
-      - If additional items are added to instruments at later time points, adding fields to your data dictionary, such as "time periods available", can be really helpful to future users in understanding why some items may be missing data at certain time points.
+      - If additional items are added to instruments at later time points, adding fields to your data dictionary, such as `time periods available`, can be really helpful to future users in understanding why some items may be missing data at certain time points.
 
 #### Creating a data dictionary from an existing data source
 
@@ -442,9 +442,9 @@ If documentation is not provided it is important to review the data and begin co
 
 In most situations these questions will not be easily answered without documentation and may require further detective work.
 
-- Contact the person who originally collected the data to learn more about the instrument and the data.  
+- Contact the person who originally collected the data to learn more about the instrument or data collection process. 
 - Contact the person who cleaned the data (if cleaned) to see what transformations they completed on the raw data.  
-- Request access to the original instruments to review exact question wording, item response options, skip patterns, etc.
+- If applicable, request access to the original instruments to review exact question wording, item response options, skip patterns, etc.
 
 Ultimately you should end up with a data dictionary structured similarly to the one above. You may add additional fields that help you keep track of further changes (e.g., a column for the old variable name and a column for your new variable name), and your transformations section may become more verbose as the values assigned previously may not align with the values you prefer based on your style guide or the existing measures. Otherwise, the data dictionary should still be constructed in the same manner mentioned above.
 
@@ -483,7 +483,7 @@ In addition to being an excellent resource for users to review your data without
 
 You can create separate codebooks per dataset or have them all contained in one document, clickable through a table of contents. Unlike a data dictionary, which I recommend creating manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebooks, including point and click statistical programs such as SPSS, or with a little programming knowledge you can more flexibly design codebooks using programs like R or SAS. For example, the R programming language has many packages that will create and export codebooks in a variety of formats from your existing dataset by just running a few functions [@lewis_codebook_2023].
 
-Last, you may notice as you review codebooks, that many will start with several pages of text, usually containing information about the project. When it comes time to share their data, it's common for people to combine information from their research protocol or Readme files, into their codebooks, rather than sharing separate documents.
+Last, you may notice as you review codebooks, that many will start with several pages of text, usually containing information about the project. When it comes time to share their data, it's common for people to combine information from their research protocol or README files, into their codebooks, rather than sharing separate documents.
 
 **Template and Resources**
 

@@ -167,7 +167,7 @@ Figure 9.2: Timeline for constructing and using a tracking database
 <h3>
 <span class="header-section-number">9.2.1</span> Relational databases<a class="anchor" aria-label="anchor" href="#relational-databases"><i class="fas fa-link"></i></a>
 </h3>
-<p>Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in Chapter <a href="structure.html#structure">3</a>. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys <span class="citation">(<a href="references.html#ref-bourgeois_information_2014" role="doc-biblioref">Bourgeois 2014</a>; <a href="references.html#ref-chen_database_2022" role="doc-biblioref">Chen 2022</a>)</span>. The general steps for building a relational database are below.</p>
+<p>Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in Section <a href="structure.html#structure-database">3.3.1</a>. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys <span class="citation">(<a href="references.html#ref-bourgeois_information_2014" role="doc-biblioref">Bourgeois 2014</a>; <a href="references.html#ref-chen_database_2022" role="doc-biblioref">Chen 2022</a>)</span>. The general steps for building a relational database are below.</p>
 <ol style="list-style-type: decimal">
 <li>Decide what fields you want to collect and on whom you want to collect them.</li>
 <li>Group those fields by entity (e.g.,students, teachers, schools) and purpose. Create tables for those groups.</li>
@@ -303,7 +303,7 @@ Figure 9.5: Example participant database model
 </li>
 </ul>
 </li>
-<li>I have connected my tables through primary and foreign keys (“tch_id” and “sch_id”)</li>
+<li>I have connected my tables through primary and foreign keys (<code>tch_id</code> and <code>sch_id</code>)</li>
 </ol>
 <p>The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both “tch_id” and “wave” to uniquely identify rows since “tch_id” would now be duplicated for each wave of data collection (see Figure <a href="track.html#fig:fig9-6">9.6</a>).</p>
 <div class="figure" style="text-align: center">
@@ -415,7 +415,7 @@ If your study involves anonymous data collection, you will no longer be able to 
 <ul>
 <li>Security in terms of participant confidentiality
 <ul>
-<li>Does the tool meet HIPAA/FERPA requirements?</li>
+<li>Does the tool meet HIPAA/FERPA requirements? (see Chapter <a href="storage.html#storage">12</a> to learn more about data classification levels)</li>
 <li>Can we limit access to the entire database? To specific tables?
 <ul>
 <li>Since this database contains PII you will want to place restrictions on who can access and enter data</li>
@@ -493,13 +493,13 @@ If your participant tracking database is separate from your data collection tool
 </blockquote>
 </div>
 </div>
-<div id="ids" class="section level2" number="9.4">
+<div id="track-ids" class="section level2" number="9.4">
 <h2>
-<span class="header-section-number">9.4</span> Creating unique identifiers<a class="anchor" aria-label="anchor" href="#ids"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.4</span> Creating unique identifiers<a class="anchor" aria-label="anchor" href="#track-ids"><i class="fas fa-link"></i></a>
 </h2>
 <p>Participant unique identifiers are numeric or alphanumeric values and typically range from 2-10 digits. Assigning these identifiers is an important part of protecting the privacy of human participants. When publicly sharing your study data, all personally identifying information will be removed and these identifiers are what will allow you to uniquely identify and link participants in your data.</p>
 <p>While there are several ways participant identifiers can be assigned (e.g., created by participants themselves, assigned by your data collection software), most commonly, the research team assigns these identifiers to participants. As participants are recruited and added to your participant database, you will assign them a unique participant ID. If confidentiality was promised to schools or districts, you will also want to assign identifiers to sites as well.</p>
-<p>It can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Chapter <a href="document.html#document">7</a>). In developing that schema, there are several best practices to consider.</p>
+<p>It can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Section <a href="document.html#document-sop">7.2.6</a>). In developing that schema, there are several best practices to consider.</p>
 <ol style="list-style-type: decimal">
 <li>Participants must keep this same identifier for the entire project.
 <ul>
@@ -581,7 +581,7 @@ The only time you will not assign unique identifiers is when you collect anonymo
 <li><a class="nav-link" href="#entering-data-in-a-form"><span class="header-section-number">9.3.2</span> Entering data in a form</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#ids"><span class="header-section-number">9.4</span> Creating unique identifiers</a></li>
+<li><a class="nav-link" href="#track-ids"><span class="header-section-number">9.4</span> Creating unique identifiers</a></li>
 </ul>
 
       <div class="book-extra">

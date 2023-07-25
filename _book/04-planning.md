@@ -114,7 +114,7 @@ But the format truly does not matter. Figure \@ref(fig:fig5-5) is a diagram of t
 <p class="caption">(\#fig:fig5-5)Example student survey workflow using a swimlane template</p>
 </div>
 
-If you have a working data collection timeline (see Chapter \@ref(document)) already created, you can even build time into your workflow. Figure \@ref(fig:fig5-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
+If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig5-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
 
 <div class="figure" style="text-align: center">
 <img src="img/gantt.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
@@ -122,7 +122,7 @@ If you have a working data collection timeline (see Chapter \@ref(document)) alr
 </div>
 
 
-While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all tasks (and all final decisions associated with those tasks) into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your SOPs and diagrams in other ways for reference. We will talk more about creating SOPs in Chapter \@ref(document).
+While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all tasks (and all final decisions associated with those tasks) into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your SOPs and diagrams in other ways for reference. We will talk more about creating SOPs in Section \@ref(document-sop).
 
 
 ### Benefits to visualizing a workflow

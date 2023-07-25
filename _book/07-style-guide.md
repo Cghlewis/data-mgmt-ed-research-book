@@ -5,7 +5,7 @@
 <p class="caption">(\#fig:fig8-1)Style guide in the research project life cycle</p>
 </div>
 
-A style guide provides general agreed upon rules for the formatting of information [@noauthor_style_2023]. As mentioned in the previous Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
+A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
 Style guides create standardization within and across projects. The benefits of using them consistently include:
 
@@ -154,11 +154,11 @@ A file naming style guide helps us to name files in a way that allows us to answ
 - Be consistent with delimiters and capitalization. Follow an existing naming convention.
 - Consider limiting the number of allowable characters to prevent hitting your path limit (as mentioned above)
 - Do not use `/` in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
-  - `YYYY-MM-DD` or `YYYYMMDD`
+  - *YYYY-MM-DD* or *YYYYMMDD*
   - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.
 - When versioning your files, pick a format and add it to your style guide
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
-  - As mentioned in our Chapter \@ref(document), it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a changelog.
+  - As mentioned in Section \@ref(document-change), it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a changelog.
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
 - Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
@@ -175,7 +175,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
     4. Only use lower case letters
     5. Keep names under 35 characters
     6. Use the following metadata file naming order:
-      - Order of use (if relevant–and always add a 0 before single digits)
+      - Order of use (if relevant – add a 0 before single digits)
       - Project
       - Cohort/Wave (if relevant)
       - Participant
@@ -198,7 +198,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
     me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
     me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
     
-## Variable naming {#varname}
+## Variable naming {#style-varname}
 
 This style guide will be a necessary document to have before you start to create your data dictionaries. Below are several considerations to review before developing your variable naming style guide. These are broken into two types of rules, those that are non-negotiable requirements that really should be included in your style guide (if you do not follow these rules you will run into serious problems in interpretation for both humans and machines), and then best practices suggestions that are recommended but not required.
 
@@ -272,8 +272,8 @@ Before moving on there is one last consideration for variable names. If your dat
 
 Depending on how you plan to combine your data over time, there are two different ways to account for time.
 
-1. Concatenate time to your variable names. You do this if you plan to merge your data across time in wide format (see Chapter \@ref(structure)). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your linking variables (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
-2.  Create time variables and add them to your data. You do this if you plan to append your data over time in long format (see Chapter \@ref(structure)). Appending your data in long format requires no additional work in terms of variable naming. As discussed in Chapter \@ref(structure), you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
+1. Concatenate time to your variable names. You do this if you plan to merge your data across time in wide format (see Section \@ref(#structure-datastructure)). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your linking variables (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
+2.  Create time variables and add them to your data. You do this if you plan to append your data over time in long format (see Section \@ref(#structure-datastructure)). Appending your data in long format requires no additional work in terms of variable naming. As discussed in Section \@ref(#structure-datastructure), you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
 
 During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) [@reynolds_basics_2022]. Waiting to combine data has benefits:
 
@@ -299,12 +299,12 @@ While the first and second method do add additional characters to your variable 
 
 ## Value Coding
 
-In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., "no" = 1) or it may be character categorical values with associated labels (e.g., "no" = 'n'). 
+In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., "no" = *1*) or it may be character categorical values with associated labels (e.g., "no" = 'n'). 
 
 First, if you are using a pre-existing measure, assign values and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures. Otherwise, you will be assigning your own values and labels. Some guidelines for assigning codes and labels (as well as examples for how to apply those guidelines) are below.
 
 - Values must be unique
-  - Do: Assign "yes" = 1 and "no" = 0 
+  - Do: Assign "yes" = 1 and "no" = 0  
   - Don't: Assign "yes" = 1 **and** "no" = 1
 - Values must be consistent within a variable
   - Do: For `gender` assign "male" = 'm'
@@ -315,23 +315,23 @@ First, if you are using a pre-existing measure, assign values and labels in the 
 - Values should be consistent across the project
   - Do: Assign "yes" = 1 and "no" = 0 as the value for all yes/no items 
   - Don't: Assign "yes" = 1 and "no" = 0 for some variables, and "yes" = 1 and "no" = 2 for others
-    - Unless a pre-existing measure determines how some variables are coded
+    - The exception here is if a pre-existing measure determines how values are coded. In that case, there may be some inconsistency across items
 - Order Likert-type scale response options in a logical way
   - Do: Assign "Strongly Disagree" = 1; "Disagree" = 2; "Agree" = 3; "Strongly Agree" = 4  
   - Don't: Assign "Strongly Disagree" = 1; "Disagree" = 3; "Agree" = 4; "Strongly Agree" = 2
-    - Unless a pre-existing measure tells you to code variables in a different way
+    - The exception here is if a pre-existing measure tells you to code variables in a different way
     
-## Missing Value Coding
+## Missing Value Coding {#style-missing}
 
 There is little agreement about how missing data should be coded [@white_nine_2013]. There are essentially two options.
 
 1. You can choose to leave all missing values as blank.
     - Benefits of this are that there is no chance of extreme values being mistaken as actual values
     - The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry [@broman_data_2018]
-    - There is also the consideration that some statistical programs do not allow blank values (e.g., MPlus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.
+    - There is also the consideration that some statistical programs do not allow blank values (e.g., Mplus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.
   
 2. The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
-    - A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., -97 = Not Applicable, -98 = Skipped) if that is important for your study. 
+    - A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., "Not Applicable" = -97, "Skipped" = -98) if that is important for your study. 
     - Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.
     - The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)
 

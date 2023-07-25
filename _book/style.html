@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 8 Style guide | Data Management in Large-Scale Education Research</title>
 <meta name="author" content="Crystal Lewis">
-<meta name="description" content="Figure 8.1: Style guide in the research project life cycle  A style guide provides general agreed upon rules for the formatting of information (“Style Guide” 2023). As mentioned in the previous...">
+<meta name="description" content="Figure 8.1: Style guide in the research project life cycle  A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter 7, style guides can be...">
 <meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Chapter 8 Style guide | Data Management in Large-Scale Education Research">
 <meta property="og:type" content="book">
 <meta property="og:image" content="/book_featured.PNG">
-<meta property="og:description" content="Figure 8.1: Style guide in the research project life cycle  A style guide provides general agreed upon rules for the formatting of information (“Style Guide” 2023). As mentioned in the previous...">
+<meta property="og:description" content="Figure 8.1: Style guide in the research project life cycle  A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter 7, style guides can be...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 8 Style guide | Data Management in Large-Scale Education Research">
-<meta name="twitter:description" content="Figure 8.1: Style guide in the research project life cycle  A style guide provides general agreed upon rules for the formatting of information (“Style Guide” 2023). As mentioned in the previous...">
+<meta name="twitter:description" content="Figure 8.1: Style guide in the research project life cycle  A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter 7, style guides can be...">
 <meta name="twitter:image" content="/book_featured.PNG">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -102,7 +102,7 @@
 Figure 8.1: Style guide in the research project life cycle
 </p>
 </div>
-<p>A style guide provides general agreed upon rules for the formatting of information <span class="citation">(<a href="references.html#ref-noauthor_style_2023" role="doc-biblioref"><span>“Style Guide”</span> 2023</a>)</span>. As mentioned in the previous Chapter <a href="document.html#document">7</a>, style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.</p>
+<p>A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter <a href="document.html#document">7</a>, style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.</p>
 <p>Style guides create standardization within and across projects. The benefits of using them consistently include:</p>
 <ul>
 <li>Creating interoperability: This allows data to easily be combined or compared across forms or time.</li>
@@ -286,7 +286,7 @@ Figure 8.2: xkcd comic on naming files
 <li>Do not use <code>/</code> in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
 <ul>
 <li>
-<code>YYYY-MM-DD</code> or <code>YYYYMMDD</code>
+<em>YYYY-MM-DD</em> or <em>YYYYMMDD</em>
 </li>
 <li>While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.</li>
 </ul>
@@ -294,7 +294,7 @@ Figure 8.2: xkcd comic on naming files
 <li>When versioning your files, pick a format and add it to your style guide
 <ul>
 <li>If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (<code>v01</code>, <code>v02</code>).</li>
-<li>As mentioned in our Chapter <a href="document.html#document">7</a>, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a changelog.</li>
+<li>As mentioned in Section <a href="document.html#document-change">7.3.2</a>, it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a changelog.</li>
 </ul>
 </li>
 <li>If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (<code>01_</code>, <code>02_</code>)</li>
@@ -318,7 +318,7 @@ Figure 8.2: xkcd comic on naming files
 4. Only use lower case letters
 5. Keep names under 35 characters
 6. Use the following metadata file naming order:
-  - Order of use (if relevant–and always add a 0 before single digits)
+  - Order of use (if relevant – add a 0 before single digits)
   - Project
   - Cohort/Wave (if relevant)
   - Participant
@@ -339,9 +339,9 @@ me_w1_stu_svy_raw_2022-11-03.csv
 me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
 me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R</code></pre>
 </div>
-<div id="varname" class="section level2" number="8.4">
+<div id="style-varname" class="section level2" number="8.4">
 <h2>
-<span class="header-section-number">8.4</span> Variable naming<a class="anchor" aria-label="anchor" href="#varname"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.4</span> Variable naming<a class="anchor" aria-label="anchor" href="#style-varname"><i class="fas fa-link"></i></a>
 </h2>
 <p>This style guide will be a necessary document to have before you start to create your data dictionaries. Below are several considerations to review before developing your variable naming style guide. These are broken into two types of rules, those that are non-negotiable requirements that really should be included in your style guide (if you do not follow these rules you will run into serious problems in interpretation for both humans and machines), and then best practices suggestions that are recommended but not required.</p>
 <p><strong>Mandatory:</strong></p>
@@ -449,8 +449,8 @@ t_stress5</code></pre>
 <p>Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well.</p>
 <p>Depending on how you plan to combine your data over time, there are two different ways to account for time.</p>
 <ol style="list-style-type: decimal">
-<li>Concatenate time to your variable names. You do this if you plan to merge your data across time in wide format (see Chapter <a href="structure.html#structure">3</a>). The reason you need to concatenate time to your variable names here is because your variable names will repeat (<code>anx1</code> in wave 1, <code>anx1</code> in wave 2). And remember from our guidelines above, all variable names in a dataset <strong>must</strong> be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your linking variables (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.</li>
-<li>Create time variables and add them to your data. You do this if you plan to append your data over time in long format (see Chapter <a href="structure.html#structure">3</a>). Appending your data in long format requires no additional work in terms of variable naming. As discussed in Chapter <a href="structure.html#structure">3</a>, you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as <code>time</code> or <code>wave</code> and add the appropriate value for each row.</li>
+<li>Concatenate time to your variable names. You do this if you plan to merge your data across time in wide format (see Section @ref(#structure-datastructure)). The reason you need to concatenate time to your variable names here is because your variable names will repeat (<code>anx1</code> in wave 1, <code>anx1</code> in wave 2). And remember from our guidelines above, all variable names in a dataset <strong>must</strong> be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your linking variables (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.</li>
+<li>Create time variables and add them to your data. You do this if you plan to append your data over time in long format (see Section @ref(#structure-datastructure)). Appending your data in long format requires no additional work in terms of variable naming. As discussed in Section @ref(#structure-datastructure), you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as <code>time</code> or <code>wave</code> and add the appropriate value for each row.</li>
 </ol>
 <p>During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>)</span>. Waiting to combine data has benefits:</p>
 <ol style="list-style-type: decimal">
@@ -501,12 +501,13 @@ t_stress5</code></pre>
 <h2>
 <span class="header-section-number">8.5</span> Value Coding<a class="anchor" aria-label="anchor" href="#value-coding"><i class="fas fa-link"></i></a>
 </h2>
-<p>In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., “no” = 1) or it may be character categorical values with associated labels (e.g., “no” = ‘n’).</p>
+<p>In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., “no” = <em>1</em>) or it may be character categorical values with associated labels (e.g., “no” = ‘n’).</p>
 <p>First, if you are using a pre-existing measure, assign values and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures. Otherwise, you will be assigning your own values and labels. Some guidelines for assigning codes and labels (as well as examples for how to apply those guidelines) are below.</p>
 <ul>
 <li>Values must be unique
 <ul>
-<li>Do: Assign “yes” = 1 and “no” = 0</li>
+<li>Do: Assign “yes” = 1 and “no” = 0<br>
+</li>
 <li>Don’t: Assign “yes” = 1 <strong>and</strong> “no” = 1</li>
 </ul>
 </li>
@@ -527,7 +528,7 @@ t_stress5</code></pre>
 <li>Do: Assign “yes” = 1 and “no” = 0 as the value for all yes/no items</li>
 <li>Don’t: Assign “yes” = 1 and “no” = 0 for some variables, and “yes” = 1 and “no” = 2 for others
 <ul>
-<li>Unless a pre-existing measure determines how some variables are coded</li>
+<li>The exception here is if a pre-existing measure determines how values are coded. In that case, there may be some inconsistency across items</li>
 </ul>
 </li>
 </ul>
@@ -538,16 +539,16 @@ t_stress5</code></pre>
 </li>
 <li>Don’t: Assign “Strongly Disagree” = 1; “Disagree” = 3; “Agree” = 4; “Strongly Agree” = 2
 <ul>
-<li>Unless a pre-existing measure tells you to code variables in a different way</li>
+<li>The exception here is if a pre-existing measure tells you to code variables in a different way</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
-<div id="missing-value-coding" class="section level2" number="8.6">
+<div id="style-missing" class="section level2" number="8.6">
 <h2>
-<span class="header-section-number">8.6</span> Missing Value Coding<a class="anchor" aria-label="anchor" href="#missing-value-coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.6</span> Missing Value Coding<a class="anchor" aria-label="anchor" href="#style-missing"><i class="fas fa-link"></i></a>
 </h2>
 <p>There is little agreement about how missing data should be coded <span class="citation">(<a href="references.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>. There are essentially two options.</p>
 <ol style="list-style-type: decimal">
@@ -556,12 +557,12 @@ t_stress5</code></pre>
 <li>Benefits of this are that there is no chance of extreme values being mistaken as actual values</li>
 <li>The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry <span class="citation">(<a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>
 </li>
-<li>There is also the consideration that some statistical programs do not allow blank values (e.g., MPlus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.</li>
+<li>There is also the consideration that some statistical programs do not allow blank values (e.g., Mplus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.</li>
 </ul>
 </li>
 <li>The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
 <ul>
-<li>A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., -97 = Not Applicable, -98 = Skipped) if that is important for your study.</li>
+<li>A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., “Not Applicable” = -97, “Skipped” = -98) if that is important for your study.</li>
 <li>Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.</li>
 <li>The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)</li>
 </ul>
@@ -647,10 +648,10 @@ Figure 8.3: Missing values assigned in the ECLS-K:2011 data file
 <li><a class="nav-link" href="#directory-structure"><span class="header-section-number">8.2</span> Directory structure</a></li>
 <li><a class="nav-link" href="#file-naming"><span class="header-section-number">8.3</span> File naming</a></li>
 <li>
-<a class="nav-link" href="#varname"><span class="header-section-number">8.4</span> Variable naming</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#time"><span class="header-section-number">8.4.1</span> Time</a></li></ul>
+<a class="nav-link" href="#style-varname"><span class="header-section-number">8.4</span> Variable naming</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#time"><span class="header-section-number">8.4.1</span> Time</a></li></ul>
 </li>
 <li><a class="nav-link" href="#value-coding"><span class="header-section-number">8.5</span> Value Coding</a></li>
-<li><a class="nav-link" href="#missing-value-coding"><span class="header-section-number">8.6</span> Missing Value Coding</a></li>
+<li><a class="nav-link" href="#style-missing"><span class="header-section-number">8.6</span> Missing Value Coding</a></li>
 <li><a class="nav-link" href="#coding"><span class="header-section-number">8.7</span> Coding</a></li>
 </ul>
 

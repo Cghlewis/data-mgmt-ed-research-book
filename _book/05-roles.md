@@ -84,7 +84,7 @@ There are many reasons to document staff roles and responsibilities and to store
 2. As new tasks arise, team members can refer to the document to see who is best fitted for the assignment.  
 3. Last, reviewing roles and responsibilities in a document also helps you more clearly see what responsibilities are assigned and how they are assigned. After reviewing the document you can make further revisions if responsibilities need to be added or further redistributed in any way.
 
-This document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-3) and Figure \@ref(fig:fig6-4) are two example templates. Note that these templates only list overarching responsibilities, not specific steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Chapter \@ref(document)) where names are attached to each task.
+This document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-3) and Figure \@ref(fig:fig6-4) are two example templates. Note that these templates only list overarching responsibilities, not specific steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Section \@ref(document-sop)) where names are attached to each task.
 
 <div class="figure" style="text-align: center">
 <img src="img/roles_responsibility1.PNG" alt="Roles and responsibilities document organized by role" width="70%" />

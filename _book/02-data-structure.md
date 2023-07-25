@@ -27,15 +27,15 @@ Unless your data is collected anonymously, every dataset **must** also have the 
 - One or more variables that are **unique identifiers**, sometimes called primary keys. These are variables that uniquely define rows in your dataset (i.e. help you identify duplicate rows), and they also allow you to link data that contain the same identifiers (for example link all student data). It is important to make sure these variables are consistently formatted across files (e.g., always character variables). 
 - If you plan to link datasets across entities (e.g., link teachers to schools or students to teachers) then you will also need secondary unique identifiers in your dataset (also called foreign keys) that allow you to link across datasets.
 
-We will talk more about creating these identification variables in Chapter \@ref(track).
+We will talk more about creating these identification variables in Section \@ref(track-ids).
 
 **Column attributes**
 
 It is important to know that variables have the following attributes:
 
-1. Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss style guides (see Chapter \@ref(style)).
+1. Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss style guides in Chapter \@ref(style).
 2. A measurement type (e.g., numeric, character, date) which can also be more narrowly defined as needed (e.g., continuous, categorical)
-3. Acceptable values (e.g., yes/no) or expected ranges (e.g., 1-25 or 2021-08-01 to 2021-12-15). Anything outside of those acceptable values or ranges is considered an error.
+3. Acceptable values (e.g., "yes"/"no") or expected ranges (e.g., *1-25* or *2021-08-01 to 2021-12-15*). Anything outside of those acceptable values or ranges is considered an error.
 4. Labels, descriptions of what the variable represents. This may be a label that you as the variable creator assigns (e.g., "Treatment condition") or they may be the actual wording of an item (e.g., "Do you enjoy pizza?").
 
 ### Rows
@@ -73,9 +73,9 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 </div>
   
 3. A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
-   - You lose the granularity of the information (e.g., `location` = `Los Angeles, CA` is less granular than having a `city` variable and a `state` variable separately)
-   - Your variable may become unanalyzable (e.g., a variable with a value `220/335` is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a `rate` variable with a value of `.657`.
-   - You may lose the variable type (e.g., if you want an `incident_rate` variable to be numeric, and you assign a value of `220/335`, that variable is no longer numeric)
+   - You lose the granularity of the information (e.g., `location` = "Los Angeles, CA" is less granular than having a `city` variable and a `state` variable separately)
+   - Your variable may become unanalyzable (e.g., a variable with a value "220/335" is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a `rate` variable with a value of *.657*.
+   - You may lose the variable type (e.g., if you want an `incident_rate` variable to be numeric, and you assign a value of "220/335", that variable is no longer numeric)
   
 <div class="figure" style="text-align: center">
 <img src="img/two_things.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
@@ -84,9 +84,9 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 4. All cell values should be explicit. This means all cells should be filled in with a physical value. 
    - Consider why a cell value is empty
-     - If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Chapter \@ref(style) for ideas.
+     - If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Section \@ref(style-missing) for ideas on coding missing values.
      - If a cell is left empty because it is "implied" to be the same value as above, the cells should be filled with the actual data  
-     - If the value for the cell is "implied" to be 0, fill the cells with 0  
+     - If the value for the cell is implied to be 0, fill the cells with an actual 0  
 
 <div class="figure" style="text-align: center">
 <img src="img/explicit.PNG" alt="A comparison of of variables with empty cells and variables with not empty cells" width="100%" />
@@ -121,7 +121,7 @@ Up until now we have been talking about one, standalone dataset. However, it is 
 
 In order to think about how to link data, we need to discuss two things: data structure and database design.
 
-### Database design {#database}
+### Database design {#structure-database}
 
 A database is "an organized collection of data stored as multiple datasets" [@usgs_what_nodate]. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.
 
@@ -149,7 +149,7 @@ And as you can imagine, as we add more forms, or begin to collect data across ti
 </div>
 
 
-### Data structure {#datastructure}
+### Data structure {#structure-datastructure}
 
 When it comes time to link our data, there are two ways we often think about linking or structuring our data, wide or long.
 
@@ -197,7 +197,7 @@ Storing data in long format is usually considered to be more efficient, potentia
 
 ## File types
 
-These rectangular datasets can be saved in a variety of file types. Some common file types in education research include interoperable formats such as CSV, TXT, or TSV, or proprietary formats such as XLSX, SAV (SPSS), or DTA (Stata). 
+These rectangular datasets can be saved in a variety of file types. Some common file types in education research include interoperable formats such as CSV, TXT, or TSV, or proprietary formats such as XLSX, SPSS, or Stata files. 
 
 When you save your files, they will have a file size. Both the number of columns as well as the number of rows in your dataset will contribute to your file size. Just to get a feel for what size your files might be, small datasets (for example 5 columns and <100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000-5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata (such as variable and value labels), such as a .sav file, will greatly increase your file size. We will talk about the pros and cons to different file formats in Chapter \@ref(share).
 
