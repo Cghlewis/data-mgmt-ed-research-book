@@ -80,6 +80,7 @@ fig:fig11-3
 fig:fig11-4
 fig:fig11-5
 fig:fig11-6
+fig:fig11-7
 preamble
 introduction
 why-this-book

@@ -37,14 +37,14 @@ What to include in a DMP varies some across funding agencies and the landscape o
     - What are the expected number of files? Expected number of rows/cases in each file?
 3. Format of data
     - Will data be in an electronic format?
-    - Will it be provided in a non-proprietary format? (e.g., .csv)
-    - Will more than one format be provided? (e.g., .sav and .csv)
+    - Will it be provided in a non-proprietary format? (e.g., CSV)
+    - Will more than one format be provided? (e.g., SAV and CSV)
     - Are there any tools needed to manipulate shared data?
     - Will code be available to support reproducibility?
 4. Documentation
     - What documentation will you share? (Consider project-level, dataset-level, and variable-level documentation)
     - What metadata will you create? 
-    - What format will your documentation be in? (e.g., .xml, .csv, .pdf)
+    - What format will your documentation be in? (e.g., XML, CSV, PDF)
     - What supplemental documents do you plan to include when sharing data? (e.g., consort diagrams, data collection instruments, consent forms)
 5. Standards
     - Do you plan to use any standards for things such as metadata, data formatting, terminology, or persistent identifiers (PIDs)?

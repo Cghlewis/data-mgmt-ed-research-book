@@ -34,7 +34,7 @@ An IRB is a formal organization designated to review and monitor human participa
 
 ### Background
 
-In 1974 the IRB was established as part of the National Research Act in response to a long history of unethical research that had been conducted with human participants [@qiao_brief_2018]. In 1979, the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979] outlined a set of ethical principles for doing research with human participants. Those ethical principles included the following [@duru_institutional_2023; @huisman_3_nodate]:
+In 1974 the IRB was established as part of the National Research Act in response to a long history of unethical research that had been conducted with human participants [@qiao_brief_2018]. In 1979, the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979] outlined a set of ethical principles for doing research with human participants. Those ethical principles included the following [@duru_institutional_2023; @huisman_3_2023]:
 
 1. Respect for persons
     - This included both protecting autonomy of participants by acquiring consent as well as providing a plan to protect participant privacy
@@ -101,7 +101,7 @@ With the revised Common Rule, additional requirements for informed consent were 
 - All information must be presented with sufficient detail to make decisions, not just bulleted lists of facts
 - The form must disclose any plans to use participant data for other future research
 
-Figure \@ref(fig:fig10-3) shows common elements that are included in a participant consent form [@bellevue_college_elements_nodate; @the_turing_way_community_turing_2022].
+Figure \@ref(fig:fig10-3) shows common elements that are included in a participant consent form [@bellevue_college_elements_2023; @the_turing_way_community_turing_2022].
 
 ```{r fig10-3, fig.cap="Common topics to include in an informed consent information sheet"}
 
@@ -187,16 +187,17 @@ In education research it is common to collaborate with external partners (e.g., 
 1. Memorandum of understanding (MOU)
    - This agreement provides a framework for collaboration. While not legally binding, it establishes a commitment to the partnership and outlines the responsibilities and expectations of each partner [@duru_grant_2021; @national_center_for_education_statistics_memoranda_nodate; @rel_west_data_nodate]. This document may also be synonymous with a letter of intent or letter of support.
 2. Data use agreement (DUA)
-   - A DUA is a contractual agreement that provides the terms and conditions for working with data that are restricted-use (i.e., contain sensitive or identifiable information), often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (i.e., a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into an MOU.
+   - A DUA, also sometimes referred to as a data sharing agreement, is a contractual agreement that provides the terms and conditions for working with data that are restricted-use (i.e., contain sensitive or identifiable information), often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (i.e., a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into an MOU.
 3. Non-disclosure agreement (NDA) 
-    - NDAs, which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_nodate] and are legally enforceable agreements.
+    - NDAs, which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_2023] and are legally enforceable agreements.
     
-Not only do the types of agreements required differ across partners, but how and when those agreements are submitted will also vary. As one example, when working with school districts, some districts may have informal data request systems in place where you simply submit required documentation for approval. Others may have formal systems in place, including their own institutional review process that involves a committee reviewal timeline. This process is often kicked off by submitting a research request application. In addition to providing information about the study, these requests often ask researchers to submit documents such as:
+Not only do the types of agreements required differ across partners, but how and when those agreements are submitted will also vary. As one example, when working with school districts, some districts may have informal research request systems in place where you simply submit required documentation for approval. Others may have formal systems in place, including their own institutional review process that involves a committee reviewal timeline. This process is often kicked off by submitting a research request application. In addition to providing information about the study, these requests often ask researchers to submit documents such as:
 
 - The researcher's institutional approved IRB documentation
 - Any required agreement forms (e.g., DUA, NDA, confidentiality agreement)
+- Copies of IRB approved data collection instruments
 - Consent/assent forms
-  - This may be a copy of the consent/assent forms submitted to your institutional IRB. However, in some cases, districts may require an additional consent form to be completed by parents, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019].
+  - This may be a copy of the consent/assent forms submitted to your institutional IRB. However, if you are also requesting school records data, districts may also require an additional consent form to be completed by parents/guardians, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019]. If your study meets a FERPA exception, it is possible that consent may not be required [@us_department_of_education_privacy_technical_assistance_center_ferpa_2014].
 
 Last, the order of when IRB applications are submitted and when these agreements are made will depend on both the IRBs you working with, as well as your research partners and external collaborators so make sure to start having these discussions early in order to have documents ready in an appropriate timeline.
 
@@ -205,9 +206,8 @@ Last, the order of when IRB applications are submitted and when these agreements
 |Source|Resource|
 |--------|-----------|
 |Amy O’Hara| Sample text for data use agreements ^[https://admindatahandbook.mit.edu/book/v1.0-rc4/appendix/dua_appendix.pdf]|
-|Columbia Public Schools|CPS Request Research Process^[https://www.cpsk12.org/cms/lib/MO01909752/Centricity/Domain/8329/Research_Process.pdf]|
 |Florida State University| Example data use agreement ^[https://www.research.fsu.edu/media/1091/hipaadatause.doc]|
-|REL West | Data use agreement checklist ^[https://ies.ed.gov/ncee/rel/regions/west/relwestFiles/pdf/CRP_Data_Sharing_Agreements_and_MOUs.pdf]|
+|REL West | Elements of a data sharing agreement/MOU ^[https://ies.ed.gov/ncee/rel/regions/west/relwestFiles/pdf/CRP_Data_Sharing_Agreements_and_MOUs.pdf]|
 |University of North Carolina|Data use agreement decision making flow chart ^[https://research.unc.edu/wp-content/uploads/sites/61/2013/04/CCM3_039360.pdf]|
 |University of Texas at Dallas|Common types of agreements ^[https://research.utdallas.edu/researchers/contracts/types-of-agreements]|
 
@@ -315,9 +315,9 @@ Once content piloting is completed, teams should be ready to begin building thei
     - Who is entering the data (i.e., data collectors, participants)?
       - If participants are entering data, is the tool accessible for your population?
     - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
-    - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, options to embed data, options to calculate scores in the tool)?
+    - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, an alert system for ecological momentary assessments, options to embed data, options to calculate scores in the tool)?
 1. Compliance and security
-    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant? (see Chapter \@ref(rdm) for more information about these regulations)
+    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant? (see Chapter \@ref(store) to learn more about data classification levels)
     - Is the tool approved by your institution?
     - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
 1. Training needed

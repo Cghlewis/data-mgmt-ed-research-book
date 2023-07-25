@@ -123,19 +123,19 @@ Figure 11.2: Common data capture methods
 </li>
 <li>What file type will the data be captured in?
 <ul>
-<li>Most electronic data collection tools provide an option to export to one or more file formats (e.g., .sav, .csv, .txt). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a .pdf file. The rectangular file type you choose will mostly depend on your project plans. Things to consider might include:
+<li>Most electronic data collection tools provide an option to export to one or more file formats (e.g., SAV, CSV, TXT). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider might include:
 <ul>
 <li>Do you want the text values for responses or the numeric values? Your choice may limit your options.</li>
 <li>Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options.</li>
-<li>Do you want a non-proprietary, interoperable format? If yes, you will not want to capture data in file types such as .xlsx and .sav that require proprietary software to view.</li>
+<li>Do you want a non-proprietary, interoperable format? If yes, you will not want to capture data in file types such as XLSX and SAV that require proprietary software to view.</li>
 <li>Will any file types create issues for your variables?
 <ul>
-<li>For instance, Microsoft Excel is well-known for applying unwanted formatting to values. As an example, if your assessment collects age in the format of <code>years-months</code>, oftentimes Microsoft Excel will change this variable into a date, converting a value such as <code>10-2</code> (10 years and 2 months old) to <code>2-Oct</code>. More suitable file types in this situation may be .csv or .txt files, which do not apply formatting.</li>
+<li>For instance, Microsoft Excel is well-known for applying unwanted formatting to values. As an example, if your assessment tool collects age in the format of <code>years-months</code>, oftentimes Microsoft Excel will change this variable into a date, converting a value such as <code>10-2</code> (10 years and 2 months old) to <code>2-Oct</code>. More suitable file types in this situation may be CST or TXT files, which do not apply formatting.</li>
 </ul>
 </li>
 <li>Is there a file structure that you don’t want to work with?
 <ul>
-<li>As an example, the structure of a .sav file may look different compared to a .xlsx file depending on the tool. In a tool like Qualtrics, an .xlsx or .csv file may export with multiple header rows whereas a .sav file does not.</li>
+<li>As an example, the structure of a SAV file may look different compared to a XLSX file depending on the tool. In a tool like Qualtrics, an XLSX or CSV file may export with multiple header rows whereas a SAV file does not.</li>
 </ul>
 </li>
 </ul>
@@ -211,8 +211,8 @@ Figure 11.2: Common data capture methods
 <p><strong>Note</strong> <br><br>
 It is important to never make changes directly to the raw data files. This also includes not making changes directly to the data in your data collection tool. If you see errors in the raw data file that can’t be fixed by simply re-downloading the data, make notes in a Readme for future correction as noted above. Those corrections can be made in the data cleaning process. The one exception to this rule is if you accidentally collect data on a non-consented participant. In this case, it may be best to delete data for this participant directly in your data collection tool so that no record is kept.</p>
 </blockquote>
-<p>All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a .csv file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.</p>
-<p>As discussed in Chapter <a href="plan.html#plan">5</a>, your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions above should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we’ve learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a .csv file compared to a .sav file can vary). Not only can this produce errors but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a .csv file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.</p>
+<p>All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a CSV file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.</p>
+<p>As discussed in Chapter <a href="plan.html#plan">5</a>, your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions above should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we’ve learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to a SAV file can vary). Not only can this produce errors but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.</p>
 </div>
 <div id="paper-data-capture" class="section level2" number="11.2">
 <h2>
@@ -343,7 +343,7 @@ The exception to this rule is if you collected an assessment that requires entry
 <ul>
 <li>There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways.</li>
 <li>However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your “master” raw data file.</li>
-<li>Figure <a href="capture.html#fig:fig11-4">11.4</a> is an example using this process. Data has been entered in two spreadsheets, then both files are imported into R where a comparison program is run to check for errors and a report is returned <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html" class="uri"&gt;https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html&lt;/a&gt;&lt;/p&gt;'><sup>77</sup></a>. You can see that it identifies an error in our “stress1” variable. Entry file 1 (“BASE”) has a different value than entry file 2 (“COMPARE”). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.</li>
+<li>Figure <a href="capture.html#fig:fig11-4">11.4</a> is an example using this process. Data has been entered in two spreadsheets, then both files are imported into R where a comparison program is run to check for errors and a report is returned <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html" class="uri"&gt;https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html&lt;/a&gt;&lt;/p&gt;'><sup>76</sup></a>. You can see that it identifies an error in our “stress1” variable. Entry file 1 (“BASE”) has a different value than entry file 2 (“COMPARE”). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.</li>
 </ul>
 </li>
 </ol>
@@ -372,34 +372,42 @@ If you are entering data into a proprietary scoring system that does not provide
 <h2>
 <span class="header-section-number">11.3</span> Extant data<a class="anchor" aria-label="anchor" href="#capture-extant"><i class="fas fa-link"></i></a>
 </h2>
-<p>It is common in education research to also collect external supplemental data sources to either link to your original data sources or to describe information about your sample. The process for collecting this data will vary widely depending on the source. Furthermore, the quality and usability of the data can also vary widely. In this section we are going to review some practices that will help you acquire better, more interpretable data. We will divide this discussion between two types of data sources, public and non-public.</p>
+<p>It is common in education research to also capture external supplemental data sources to either link to your original data sources or to describe information about your sample. The process for collecting this data will vary widely depending on the source. Furthermore, the quality and usability of the data can also vary widely. In this section we are going to review some practices that will help you acquire better, more interpretable data. We will divide this discussion between two types of data sources, non-public and public.</p>
 <div id="non-public-data-sources" class="section level3" number="11.3.1">
 <h3>
 <span class="header-section-number">11.3.1</span> Non-public data sources<a class="anchor" aria-label="anchor" href="#non-public-data-sources"><i class="fas fa-link"></i></a>
 </h3>
-<p>Non-public data sources are files that cannot be directly accessed from a public website. These sources are often individual level and may contain protected or sensitive information (e.g., student school records, individual level information in state longitudinal datasets). Acquiring these sources typically involves a data request process which may also include one or more of the agreements discussed in Section <a href="collect.html#collect-agreements">10.2.3</a> (e.g., participant consent, DUA). If not already included in the partner’s data request process, it is important to share the following information:</p>
+<p>Non-public data sources are files that cannot be directly accessed from a public website. These sources are often individual level and may contain protected or sensitive information (e.g., student school records). Acquiring these sources typically involves a data request process (see Figure <a href="capture.html#fig:fig11-5">11.5</a>) which may also include one or more of the agreements discussed in Section <a href="collect.html#collect-agreements">10.2.3</a> (e.g., participant consent, DUA).</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig11-5"></span>
+<img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%"><p class="caption">
+Figure 11.5: Example non-public confidential data request process
+</p>
+</div>
+<p>If not already included in the provider’s data request process, it is important to share the following information:</p>
 <ol style="list-style-type: decimal">
 <li>A list of variables you are requesting
 <ul>
-<li>If you plan to link data, make sure to request a unique identifier, or a combination of identifiers (e.g., name and DOB), which allow you to link the external data to your existing original data.</li>
-<li>If you are planning to combine data from multiple sources (e.g. multiple school districts), this can require hours of harmonization to make data comparable due to variations in how data is collected across agencies. If there is some flexibility in the request process, it can be helpful to provide details to your partner about how you would like the variables to be formatted, helping to standardize inputs and removing any room for interpretation <span class="citation">(<a href="references.html#ref-feeney_using_2021" role="doc-biblioref">Feeney et al. 2021</a>)</span>.
+<li>If you plan to link data, make sure to request a unique identifier that both you’ve collected and that exists in the external data (e.g., state student unique identifier), or a combination of identifiers (e.g., name and DOB), which allows you to link the external data to your existing original data.<br>
+</li>
+<li>If you are planning to combine data from multiple sources (e.g., multiple school districts), this can require hours of harmonization to make data comparable due to variations in how data is collected across agencies. If there is some flexibility in the request process, it can be helpful to provide details to your data provider about how you would like the variables to be formatted, helping to standardize inputs and removing any room for interpretation <span class="citation">(<a href="references.html#ref-feeney_using_2021" role="doc-biblioref">Feeney et al. 2021</a>)</span>.
 <ul>
-<li>Variable type (e.g., numeric or text)</li>
+<li>Variable type (e.g., numeric, text)</li>
 <li>Variable formats (e.g., DOB as YYYY-MM-DD)</li>
-<li>Value groups (e.g., specific free/reduced lunch groups)</li>
+<li>Value groups (e.g., specify how to code free/reduced lunch groups)</li>
 <li>How to handle missing data (e.g., leave cell blank)</li>
-<li>How to aggregate summary data (e.g., # of days absent for the full year or by term)</li>
+<li>How to aggregate summary data (e.g., Number of days absent for the full year <em>or</em> by term)</li>
 <li>For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)</li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
-<p>Figure <a href="capture.html#fig:fig11-5">11.5</a> is an example of how you might provide this information to a partner.</p>
+<p>Figure <a href="capture.html#fig:fig11-6">11.6</a> is an example of how you might provide this information to a data provider.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig11-5"></span>
-<img src="img/collect_request.PNG" alt="Example variable request for an external partner" width="100%"><p class="caption">
-Figure 11.5: Example variable request for an external partner
+<span style="display:block;" id="fig:fig11-6"></span>
+<img src="img/collect_request.PNG" alt="Example variable request for an external data provider" width="100%"><p class="caption">
+Figure 11.6: Example variable request for an external data provider
 </p>
 </div>
 <ol start="2" style="list-style-type: decimal">
@@ -426,12 +434,12 @@ Figure 11.5: Example variable request for an external partner
 <li>Request documentation to accompany your file
 <ul>
 <li>Receiving data dictionaries or codebooks along with your data will be vital in allowing you to correctly interpret variables. This is especially important when observing variations in how variables are measured across sites or even within sites across time (e.g., a test score is measured differently in a subsequent year)</li>
-<li>If documentation does not exist, provide your partner organization with a form to complete that allows them to enter relevant, variable information.
+<li>If documentation does not exist, provide the data provider with a form to complete that allows them to enter relevant, variable information.
 <ul>
 <li>What each variable represents</li>
 <li>What each value represents if the variable is categorical</li>
-<li>How it is captured or calculated (e.g., hand entered)</li>
-<li>What is the universe for the variable (e.g., grades 3-5)</li>
+<li>How each variable is captured or calculated (e.g., hand entered)</li>
+<li>The universe for each variable (e.g., grades 3-5)</li>
 <li>Any data quality concerns about any of the variables</li>
 </ul>
 </li>
@@ -439,23 +447,23 @@ Figure 11.5: Example variable request for an external partner
 </ul>
 </li>
 </ol>
-<p>Figure <a href="capture.html#fig:fig11-6">11.6</a> is an example of a document you can ask your partner organization to complete.</p>
+<p>Figure <a href="capture.html#fig:fig11-7">11.7</a> is an example of a document you can ask your data provider to complete.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig11-6"></span>
-<img src="img/collect_document.PNG" alt="Sample documentation form for an external partner to complete" width="80%"><p class="caption">
-Figure 11.6: Sample documentation form for an external partner to complete
+<span style="display:block;" id="fig:fig11-7"></span>
+<img src="img/collect_document.PNG" alt="Sample documentation form for an external data provider to complete" width="80%"><p class="caption">
+Figure 11.7: Sample documentation form for an external data provider to complete
 </p>
 </div>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) <span class="citation">(<a href="references.html#ref-levesque_guide_2015" role="doc-biblioref">Levesque, Fitzgerald, and Pfeiffer 2015</a>)</span>. These anomalies can happen due to human error or due to circustances such as student mobility. While you may be able to work with a partner to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).</p>
+When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) <span class="citation">(<a href="references.html#ref-levesque_guide_2015" role="doc-biblioref">Levesque, Fitzgerald, and Pfeiffer 2015</a>)</span>. These anomalies can happen due to human error or due to circumstances such as student mobility. While you may be able to work with your data provider to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).</p>
 </blockquote>
 </div>
 <div id="public-data-sources" class="section level3" number="11.3.2">
 <h3>
 <span class="header-section-number">11.3.2</span> Public data sources<a class="anchor" aria-label="anchor" href="#public-data-sources"><i class="fas fa-link"></i></a>
 </h3>
-<p>Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some sites may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:</p>
+<p>Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some organizations may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:</p>
 <ol style="list-style-type: decimal">
 <li>Find the associated documentation and read it thoroughly. Types of documentation to look for are:
 <ul>
@@ -471,7 +479,7 @@ When working with external datasets, it is possible to encounter inconsistencies
 </li>
 <li>Data quality documentation
 <ul>
-<li>This document helps make you aware of any known issues in the data</li>
+<li>This documentation helps make you aware of any known issues in the data</li>
 </ul>
 </li>
 </ul>
@@ -481,7 +489,7 @@ When working with external datasets, it is possible to encounter inconsistencies
 <li>Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.</li>
 </ul>
 </li>
-<li>If you extract data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be interoperable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different free/reduced price lunch categories). Depending on your data needs, it may be better to use a data source that aggregates and harmonizes variables across sites. Examples of such data sources include the Department of Education’s Common Core of Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://nces.ed.gov/ccd/" class="uri"&gt;https://nces.ed.gov/ccd/&lt;/a&gt;&lt;/p&gt;'><sup>78</sup></a> as well as the Urban Institute’s Education Data Portal <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://educationdata.urban.org/documentation/" class="uri"&gt;https://educationdata.urban.org/documentation/&lt;/a&gt;&lt;/p&gt;'><sup>79</sup></a>, which aggregates multiple databases into a single site.</li>
+<li>If you extract data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education’s Common Core of Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://nces.ed.gov/ccd/" class="uri"&gt;https://nces.ed.gov/ccd/&lt;/a&gt;&lt;/p&gt;'><sup>77</sup></a> or EDFacts <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www2.ed.gov/about/inits/ed/edfacts/index.html" class="uri"&gt;https://www2.ed.gov/about/inits/ed/edfacts/index.html&lt;/a&gt;&lt;/p&gt;'><sup>78</sup></a>. Or if needing to use multiple data sources, other tools, such as the Urban Institute’s Education Data Portal <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://educationdata.urban.org/documentation/" class="uri"&gt;https://educationdata.urban.org/documentation/&lt;/a&gt;&lt;/p&gt;'><sup>79</sup></a>, have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.</li>
 </ol>
 </div>
 </div>
@@ -526,7 +534,7 @@ When working with external datasets, it is possible to encounter inconsistencies
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-07-21.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-07-25.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
