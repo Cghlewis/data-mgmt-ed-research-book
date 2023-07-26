@@ -102,7 +102,7 @@ Before releasing your data entry tool into the world, you will want to pilot it 
 
 While building a reliable data entry tool is absolutely important in ensuring data quality, developing a clear and standard data entry process is even more important. Make sure to create a data entry process that includes the following things.
 
-1. Where paper forms should are stored, how they should be pulled, and how they should be returned.
+1. Where paper forms are stored, how they should be pulled, and how they should be returned.
     - Consider organizing your forms in a way so that people entering data know what has been entered and what has not been entered
 1. Where electronic entry databases or files are stored and how they will be named.
     - Similar to Section \@ref(capture-electronic), you will want to name these files according to your style guide (e.g., `proja_w1_stu_svy_raw_entry1.xlsx`).
