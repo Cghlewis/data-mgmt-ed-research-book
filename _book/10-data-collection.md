@@ -336,7 +336,7 @@ There are essentially three different ways you can go about obtaining consent fo
 3. Have participants consent to data sharing on a separate consent form, at a later time, after research activities are completed. 
     - Obtaining consent this way ensures the participants are fully aware of the data collected from them and can make an informed decision about the future of that data. 
     
-Consult with your IRB to determine the preferred method for obtaining consent for public data sharing.
+Consult with your IRB to determine the preferred method for obtaining consent for public data sharing. If you use method 2 or 3, it is very important that you not only track your participant study consent status in your tracking database (as discussed in Chapter \@ref(track)), but that you also add a field to track the consent status for data sharing so that you only publicly share data for those that have given you permission to do so. You will also want to consider who is included in your final analysis sample. If including all consented participants in your analysis, your publicly available dataset will not match your analysis sample if some people did not consent to data sharing. You may need to consider options such as using a data enclave to share the full sample for purposes of replication. We will discuss different methods of data sharing in Chapter \@ref(share).
 
 **Templates and Resources**
 
