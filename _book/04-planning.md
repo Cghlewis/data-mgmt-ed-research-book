@@ -11,17 +11,17 @@ Planning data management is distinct from the 2-5 page data management plan (DMP
 
 Funder required data management plans are hopeful outlines for future practices. However, the broad theory behind our DMPs do not actually prepare us for the complex implementation of those plans in practice [@borycz_implementing_2021]. Therefore, it is important to spend time, before your project begins, planning and preparing for data management. It is an upfront time investment but this sort of slow science leads to better data outcomes. Reproducibility begins in the planning phase. Taking time to create, document, and train staff on data management standards before your project begins helps to ensure that your processes are implemented with fidelity and can be replicated consistently throughout the entire study. 
 
-Planning the day to day management of your project data has many other benefits as well. It allows you to anticipate and overcome barriers to managing your data, such as communication issues, training needs, or potential tool issues. This type of planning also saves you time in the long run, removing the last minute scrambling that can occur when trying to organize your data at the end of a project. Last, this type of planning can mitigate errors. Viewing errors as problems created by poorly planned workflows, rather than individual failures, helps us to see how data management planning can lead to better data [@strand_error_nodate]. While data management planning can not remove all chances of errors creeping into your data [@eaker_what_2016], it can most certainly reduce those errors and prevent them from "compounding over time" (@alston_beginners_2021, p.4 ).
+Planning the day to day management of your project data has many other benefits as well. It allows you to anticipate and overcome barriers to managing your data, such as communication issues, training needs, or potential tool issues. This type of planning also saves you time in the long run, removing the last minute scrambling that can occur when trying to organize your data at the end of a project. Last, this type of planning can mitigate errors. Viewing errors as problems created by poorly planned workflows, rather than individual failures, helps us to see how data management planning can lead to better data [@strand_error_2021]. While data management planning can not remove all chances of errors creeping into your data [@eaker_what_2016], it can most certainly reduce those errors and prevent them from "compounding over time" [@alston_beginners_2021, p.4].
 
 ## Goals of planning
 
 This planning phase should include a series of regular meetings with core decision makers. During this data management planning time there are several goals to keep in mind.
 
-1. Flesh out project goals laid out in a grant proposal (i.e. what data needs to be collected to answer our research questions)
-1. Finalize a timeline for goals (i.e. when will data be collected)
-1. Lay out specific tasks needed to accomplish goals and come to a consensus regarding all necessary data management decisions (i.e. how will data be collected, stored, managed, and shared)
-1. Assign roles and responsibilities (i.e. who will be responsible for tasks)
-1. Make decisions around task management and communication (i.e. how will tasks be monitored and communication tracked)
+1. Flesh out project goals laid out in a grant proposal (i.e., what data needs to be collected to answer our research questions)
+1. Finalize a timeline for goals (i.e., when will data be collected)
+1. Lay out specific tasks needed to accomplish goals and come to a consensus regarding all necessary data management decisions (i.e., how will data be collected, stored, managed, and shared)
+1. Assign roles and responsibilities (i.e., who will be responsible for tasks)
+1. Make decisions around task management and communication (i.e., how will tasks be monitored and communication tracked)
 
 Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation (see Chapter \@ref(document)). All meeting notes can be stored in a central location such as a planning folder with notes ordered by date or in a running document. 
 
@@ -87,11 +87,11 @@ It's important to consider how each team and project are unique as you work thro
 
 ## Data management workflow
 
-The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a series of repeatable tasks that help you move through the stages of the research life cycle in an “organized and efficient manner” [@csp_library_research_csp_nodate]. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that show actionable steps in your data management process. The order of your steps should follow the general order of the data management life cycle (specifically the data collection cycle). You will want to have a workflow diagram for every piece of data that you collect. So for example, if you collect the following three items below, you will have three workflow diagrams.
+The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a series of repeatable tasks that help you move through the stages of the research life cycle in an “organized and efficient manner” [@csp_library_research_csp_2023]. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that show actionable steps in your data management process. The order of your steps should follow the general order of the data management life cycle (specifically the data collection cycle). You will want to have a workflow diagram for every piece of data that you collect. So for example, if you collect the following three items below, you will have three workflow diagrams.
 
 - Student online survey
 - Student paper assessment
-- Student district-level administrative data
+- Student school records
 
 Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig5-3) works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 

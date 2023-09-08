@@ -100,7 +100,7 @@ Before releasing your data entry tool into the world, you will want to pilot it 
 
 While building a reliable data entry tool is absolutely important in ensuring data quality, developing a clear and standard data entry process is even more important. Make sure to create a data entry process that includes the following things.
 
-1. Where paper forms should are stored, how they should be pulled, and how they should be returned.
+1. Where paper forms are stored, how they should be pulled, and how they should be returned.
     - Consider organizing your forms in a way so that people entering data know what has been entered and what has not been entered
 1. Where electronic entry databases or files are stored and how they will be named.
     - Similar to Section \@ref(capture-electronic), you will want to name these files according to your style guide (e.g., `proja_w1_stu_svy_raw_entry1.xlsx`).
@@ -167,7 +167,7 @@ It is common in education research to also capture external supplemental data so
 
 ### Non-public data sources
 
-Non-public data sources are files that cannot be directly accessed from a public website. These sources are often individual level and may contain protected or sensitive information (e.g., student school records). Acquiring these sources typically involves a data request process (see Figure \@ref(fig:fig11-5)) which may also include one or more of the agreements discussed in Section \@ref(collect-agreements) (e.g., participant consent, DUA). 
+Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., education records data, statewide longitudinal data systems). These data are typically individual level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification (e.g., student school records). Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig11-5)) which may also include one or more of the agreements discussed in Section \@ref(collect-agreements) (e.g., participant consent, DUA). 
 
 <div class="figure" style="text-align: center">
 <img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%" />
@@ -235,4 +235,4 @@ Publicly available data sources are typically aggregated (i.e., state, district,
       - This documentation helps make you aware of any known issues in the data
 2. Do not hesitate to reach out for help
     - Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
-3. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ^[https://nces.ed.gov/ccd/] or EDFacts ^[https://www2.ed.gov/about/inits/ed/edfacts/index.html]. Or if you are needing to use multiple data sources, other tools, such as the Urban Institute's Education Data Portal ^[https://educationdata.urban.org/documentation/], have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
+3. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ^[https://nces.ed.gov/ccd/] or EDFacts ^[https://www2.ed.gov/about/inits/ed/edfacts/index.html]. Or if you are needing to use multiple data sources, other tools, such as the Urban Institute’s Education Data Portal ^[https://educationdata.urban.org/documentation/], have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.

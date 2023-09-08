@@ -159,7 +159,7 @@ The research protocol is a comprehensive project plan document that describes th
 <p class="caption">(\#fig:fig7-6)Common research protocol elements</p>
 </div>
 
-When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user, such as known limitations in the data. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional [supplemental information](#supplement) can also be added as needed.
+When it comes time to deposit your data in a repository, the protocol can be revised to contain information helpful for a data end user, such as known limitations in the data. Content such as risks and benefits to participants might be removed, and numbers such as study sample count should be updated to show your final numbers. Additional supplemental information can also be added as needed (see Section \@ref(document-supplement)).
 
 **Template and Resources**
 

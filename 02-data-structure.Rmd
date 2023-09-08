@@ -1,12 +1,12 @@
 # Data Structure {#structure}
 
-Because data management is made up of just that, data, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize our data management process, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable data.
+Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize our data management process, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable information.
 
 ## Basics of a dataset
 
 In education research, data is often collected internally by your team using an instrument such as a questionnaire, an observation, an interview, or an assessment. However, data may also be collected from external entities, such as districts, states, or other agencies.
 
-Those data come in many forms (e.g., video, transcripts, documents, files), represented as text, numbers, or multimedia [@usgs_what_nodate]. In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. These datasets are organized in a rectangular format which allow the data to be machine-readable. Even in qualitative research, we are often wrangling data to be in a format that is analyzable and allows categorization.
+Those data come in many forms (e.g., video, transcripts, documents, data files), represented as text, numbers, or multimedia [@usgs_what_2023]. In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. These datasets are organized in a rectangular format which allow the data to be machine-readable. Even in qualitative research, we are often wrangling data to be in a format that is analyzable and allows categorization.
 
 These rectangular (also called tabular) datasets are made up of columns and rows. 
 
@@ -115,7 +115,7 @@ knitr::include_graphics("img/cell_color.PNG")
      2. A unique identifier was entered incorrectly. In this case you don't actually have a duplicate, you just have an incorrect unique identifier. This error would need to be remedied.
      3. More than one variable is used to identify unique participants and the row is not actually a duplicate. 
         - Take for example a student id and a class id. Multiple unique identifiers may be used if data is collected on participants in multiple locations and treated as unique data. In this case, the data is not truly duplicate because the combined identifiers are unique. 
-        - Another example of this is if your data is organized in long format (discussed in Section \@ref(datastructure)). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
+        - Another example of this is if your data is organized in long format (discussed in Section \@ref(structure-datastructure)). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.
     
 ```{r fig3-8, fig.cap="A comparison of data with duplicate cases and data with no duplicate cases"}
 
@@ -131,7 +131,7 @@ In order to think about how to link data, we need to discuss two things: data st
 
 ### Database design {#structure-database}
 
-A database is "an organized collection of data stored as multiple datasets" [@usgs_what_nodate]. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.
+A database is "an organized collection of data stored as multiple datasets" [@usgs_what_2023]. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.
 
 In database terminology, each dataset we have is considered a "table". Each table has a primary key that identifies unique entries within a table and each table can be connected through both primary and foreign keys. This linking of tables creates a relational database and we will talk more about this structure when we discuss participant data tracking (see Chapter \@ref(track)).
 

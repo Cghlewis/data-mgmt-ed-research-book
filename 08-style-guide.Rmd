@@ -1,6 +1,6 @@
 # Style guide {#style}
 
-```{r fig8-1, fig.cap="Style guide in the research project life cycle", out.width = "80%"}
+```{r fig9-1, fig.cap="Style guide in the research project life cycle", out.width = "80%"}
 
 knitr::include_graphics("img/lifecycle_team_doc.PNG")
 
@@ -92,7 +92,7 @@ When deciding how to structure your project directories (the organization of you
         - Only use lower case letters  
         - Use `-` to separate words  
     3. All previous versions of files must be placed into their respective "archive" folder
-        - A changelog should be placed in each "archive" folder to document changes between document versions
+        - A changelog should be placed in all data "archive" folders to document changes between file versions
 
 **Example directory structure created using a style guide**
 
@@ -105,30 +105,25 @@ project <- Node$new("project-new")
     ic1 <- intervention$AddChild("cohort-1")
     coach <- ic1$AddChild("coaching_materials")
      carchive <- coach$AddChild("archive")
-      coachchange <- carchive$AddChild("changelog.txt")
   projectmgmt <- project$AddChild("project-mgmt")
     pY1 <- projectmgmt$AddChild("cohort-1")
     sched <- pY1$AddChild("scheduling-materials")
      scarchive <- sched$AddChild("archive")
-      schedchange <- scarchive$AddChild("changelog.txt")
   documentation <- project$AddChild("documentation")
       sops <- documentation$AddChild("sops")
         proarchive <- sops$AddChild("archive")
-        prochange <- proarchive$AddChild("changelog.txt")
       datadictionary <- documentation$AddChild("data-dictionaries")
         darchive <- datadictionary$AddChild("archive")
-         dictchange <- darchive$AddChild("changelog.txt")
   data <- project$AddChild("data")
     y1 <- data$AddChild("cohort-1")
       studentd <- y1$AddChild("student")
       svy <- studentd$AddChild("survey")
-        rawarchive <- svy$AddChild("archive")
-        rachange <- rawarchive$AddChild("changelog.txt")
+        svyarchive <- svy$AddChild("archive")
+        svychange <- svyarchive$AddChild("changelog.txt")
   track <- project$AddChild("tracking")
     tY1 <- track$AddChild("cohort-1")
       trackingdb <- tY1$AddChild("participant-database")
         trarchive <- trackingdb$AddChild("archive")
-        trackchange <- trarchive$AddChild("changelog.txt")
       consent <- tY1$AddChild("parent-consents")
 
 print(project)
@@ -137,13 +132,13 @@ print(project)
 
 ## File naming
 
-```{r fig8-2, fig.cap="xkcd comic on naming files", out.width = "30%"}
+```{r fig9-2, fig.cap="xkcd comic on naming files", out.width = "30%"}
 
 knitr::include_graphics("img/xkcd.PNG")
 
 ```
 
-As @xkcd_documents_nodate so aptly points out in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As @xkcd_documents_nodate so aptly points out in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 
@@ -154,6 +149,7 @@ Our file names alone should be able to answer questions such as:
 A file naming style guide helps us to name files in a way that allows us to answer these questions. You can have one overarching file naming guide, or you may have file naming guides for different purposes that need different organizational strategies (for example one naming guide for project meeting notes, another naming guide for project data files). Let's walk through several conventions to consider when naming your files.
 
 - Make names descriptive (a user should be able to understand the contents of the file without opening it)
+- No PII should be used in a file name (e.g., participant name)
 - Never use spaces between words 
   - Use `-` or `_` to separate words. 
 - With the exception of `_` and `-`, never use special characters
@@ -164,13 +160,13 @@ A file naming style guide helps us to name files in a way that allows us to answ
   - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.
 - When versioning your files, pick a format and add it to your style guide
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
-  - As mentioned in Section \@ref(document-change), it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research. A more practical means of versioning may be to manually version files and track changes in a changelog.
+  - As mentioned in Section \@ref(document-change), it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research, and the tools that are used in the field (e.g., SharePoint) often don't have a way of documenting differences between versions. A more practical means of versioning, at least major file changes, may be to manually version files and track changes in a changelog.
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
 - Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
 - Keep redundant metadata in the file name
   - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
-  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder. Or always put the project name in the file name, even if the file is currently housed in a project folder.
+  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder, always put the project name in the file name, even if the file is currently housed in a project folder, or always put the word "raw" or "clean" in the file name, even if the file is housed in a "raw" or "clean" folder.
 - Choose an order for file name metadata (e.g., project -> time -> participant -> measure)
 
 **Example file naming style guide**
@@ -179,13 +175,13 @@ A file naming style guide helps us to name files in a way that allows us to answ
     2. Never use special characters
     3. Use _ to separate words
     4. Only use lower case letters
-    5. Keep names under 35 characters
+    5. Keep names under 40 characters
     6. Use the following metadata file naming order:
       - Order of use (if relevant – add a 0 before single digits)
       - Project
       - Cohort/Wave (if relevant)
       - Participant
-      - Measure
+      - Instrument
       - Further description
       - Date (always add)
       - Version (if necessary)
@@ -290,18 +286,18 @@ During an active project, it is actually best to not combine data and to store a
 
 While combining your datasets across time should not happen early on in your project, it is helpful to consider early on how you *might* combine data in the future. If you do plan to potentially merge data in a wide format, it can be helpful to go ahead and plan your rule for adding time to variable names, and add that rule to your style guide. Just be abundantly clear in your guide that this time component should only be added when datasets are combined.
 
-There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time to a sample variable, `s_gender`.
+There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time to a sample variable, `t_stress1`.
 
-- As a prefix or suffix with a generic abbreviation, such as `w1` for wave 1, added with a delimiter `_`
-  - `w1_s_gender` or `s_gender_w1`
-- As a prefix or suffix with a meaningful abbreviation, such as `f21` for fall 2021, added with a delimiter (`_`)
-  - `f21_s_gender` or `s_gender_f21`
+- As a prefix or suffix with a generic abbreviation, such as *w1* for "wave 1", added with a delimiter `_`
+  - `w1_t_stress1` or `t_stress_w1`
+- As a prefix or suffix with a meaningful abbreviation, such as *f21* for "fall 2021", added with a delimiter (`_`)
+  - `f21_t_stress1` or `t_stress1_f21`
 - One of the above options with no delimiter
-  - `w1s_gender` or `s_genderw1`
-- As a number embedded into your variable at a certain location, for instance, after an existing prefix such as `s` for `student survey`
-  - `s1_gender`, `s2_gender`
+  - `w1t_stress1` or `t_stress1w1`
+- As a number embedded into your variable at a certain location, for instance, after an existing prefix such as *t* which now represents "teacher survey" rather than "time"
+  - `t1_stress1`, `t2_stress1`
 
-While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is separated with a delimiter. Second, adding time as a standalone component also allows you to more easily, programmatically, manipulate the time component of your variable. This gives you more flexibility in working with your data, especially in selecting variables and restructuring your datasets.
+While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is labelled clearly *and* separated with a delimiter. Second, adding time as a prefix or suffix rather than embedding it within your variable allows you to more easily, programmatically, manipulate the time component of your variable. This gives you more flexibility in working with your data, especially in selecting variables and restructuring your datasets. Most importantly though, add this time component consistently to all variables (e.g., don't sometimes have time at the end of a variable name and other times in the middle of a variable name).
 
 ## Value Coding
 
@@ -349,7 +345,7 @@ Whichever method you choose, ultimately just make sure to adhere to these guidel
 - Use your values consistently within and across variables
 
 
-```{r fig8-3, fig.cap="Missing values assigned in the ECLS-K:2011 data file"}
+```{r fig9-3, fig.cap="Missing values assigned in the ECLS-K:2011 data file"}
 
 knitr::include_graphics("img/missing.PNG")
 

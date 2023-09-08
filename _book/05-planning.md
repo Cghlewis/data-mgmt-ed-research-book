@@ -1,39 +1,35 @@
 # Planning Data Management {#plan}
 
-```{r fig5-1, fig.cap="Planning in the research project life cycle", out.width = "80%"}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_plan2.PNG" alt="Planning in the research project life cycle" width="80%" />
+<p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
+</div>
 
-knitr::include_graphics("img/lifecycle_plan2.PNG")
-
-```
-
-Planning data management is distinct from the 2-5 page data management plan (DMP) discussed in the Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (things like how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites, etc). Team members such as PIs, project coordinators, and data managers, may be assisting in both planning processes.
+Planning data management is distinct from the 2-5 page data management plan (DMP) discussed in the Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (e.g., how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites). Team members such as investigators, project coordinators, and data managers, may be assisting in both planning processes.
 
 ## Why spend time on planning?
 
 Funder required data management plans are hopeful outlines for future practices. However, the broad theory behind our DMPs do not actually prepare us for the complex implementation of those plans in practice [@borycz_implementing_2021]. Therefore, it is important to spend time, before your project begins, planning and preparing for data management. It is an upfront time investment but this sort of slow science leads to better data outcomes. Reproducibility begins in the planning phase. Taking time to create, document, and train staff on data management standards before your project begins helps to ensure that your processes are implemented with fidelity and can be replicated consistently throughout the entire study. 
 
-Planning the day to day management of your project data has many other benefits as well. It allows you to anticipate and overcome barriers to managing your data, such as communication issues, training needs, or potential tool issues. This type of planning also saves you time in the long run, removing the last minute scrambling that can occur when trying to organize your data at the end of a project. Last, this type of planning can mitigate errors. Viewing errors as problems created by poorly planned workflows, rather than individual failures, helps us to see how data management planning can lead to better data [@strand_error_nodate]. While data management planning can not remove all chances of errors creeping into your data [@eaker_what_2016], it can most certainly reduce those errors and prevent them from "compounding over time" (@alston_beginners_2021, p.4 ).
+Planning the day to day management of your project data has many other benefits as well. It allows you to anticipate and overcome barriers to managing your data, such as communication issues, training needs, or potential tool issues. This type of planning also saves you time in the long run, removing the last minute scrambling that can occur when trying to organize your data at the end of a project. Last, this type of planning can mitigate errors. Viewing errors as problems created by poorly planned workflows, rather than individual failures, helps us to see how data management planning can lead to better data [@strand_error_2021]. While data management planning can not remove all chances of errors creeping into your data [@eaker_what_2016], it can most certainly reduce those errors and prevent them from "compounding over time" [@alston_beginners_2021, p.4].
 
 ## Goals of planning
 
-This planning phase should include a series of regular meetings with core decision makers. During this data management planning time there are several goals to keep in mind.
+This planning phase should include a series of regular meetings with core decision makers. There are several goals to accomplish during these meetings.
 
-1. Flesh out project goals laid out in a grant proposal (i.e. what data needs to be collected to answer our research questions)
-1. Finalize a timeline for goals (i.e. when will data be collected)
-1. Lay out specific tasks needed to accomplish goals and come to a consensus regarding all necessary data management decisions (i.e. how will data be collected, stored, managed, and shared)
-1. Assign roles and responsibilities (i.e. who will be responsible for tasks)
-1. Make decisions around task management and communication (i.e. how will tasks be monitored and communication tracked)
+1. Further flesh out project goals laid out in a grant proposal (e.g., confirm measures being collected in your study)
+1. Finalize a timeline for goals (e.g., when will data be collected)
+1. Lay out specific tasks needed to accomplish data management plans
+1. Assign roles and responsibilities for specific tasks
+1. Make decisions around how to manage tasks and communication
 
-Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation (see Chapter \@ref(document)). All meeting notes can be stored in a central location such as a planning folder with notes ordered by date or in a running document. 
-
-> **Note** <br> <br>
-The planning phase is an excellent time to start setting up your project file structure and file naming conventions according to your style guide (see Chapter \@ref(style)) so that your files are organized, understandable, and findable.
+Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation (see Chapter \@ref(document)). All meeting notes should be stored in a central location where team members can reference them as needed (e.g., a planning folder with notes ordered by date, a centrally located running document). 
 
 At the end of the planning period, the team should have a clear plan for what the project goals are, when goals should be accomplished, how goals will be accomplished, who is in charge of completing tasks associated with goals, and what additional resources are needed to accomplish goals.
 
-## Planning checklists {#checklist}
+## Planning checklists {#plan-checklist}
 
-Along with your existing data management plan, checklists are great tools to help guide your discussions as you work through this planning process with your team. Below are sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project. 
+Along with your existing data management plan and other grant application materials, checklists are great tools to help inform your meeting agendas as you work through this planning process with your team. Below are sample checklists, one for each phase of the research cycle. These checklists can be added to or amended and brought to your planning meetings to help your team think through the various data management decisions that need to be made at each phase of your research project. 
 
 **Planning checklists**
 
@@ -52,19 +48,16 @@ If this is your first time working through this book, these checklists are a gre
 
 ### Decision-making process
 
-As you move through the remaining chapters of this book, you will begin to learn recommended practices for each phase of the research cycle. Going through each checklist above, you can start to fill in the practices that work for your project for each phase of the study. 
-
 This decision-making process is personalized. Borghi and Van Gulick [@borghi_promoting_2022] view this process as a series of steps that a research team chooses, out of a the many possibilities not chosen. Maybe you won’t always be able to implement the “best practices” but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and rules and regulations.
 
-For example, one team may collect survey data on paper because their participants are young children, hand enter it into Excel because that is the only tool they have access to, and double enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand enter the data into FileMaker because that is the tool their team is familiar with, and double enter 100% because they have the budget and capacity to do that.
+For example, one team may collect survey data on paper because their participants are young children, hand enter it into Microsoft Excel because that is the only tool they have access to, and double enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand enter the data into FileMaker because that is the tool their team is familiar with, and double enter 100% because they have the budget and capacity to do that.
 
-Figure \@ref(fig:fig5-2) is a very simplified example of the decision making process, based on the [@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
+Figure \@ref(fig:fig6-2) is a very simplified example of the decision making process, based on the [@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
 
-```{r fig5-2, fig.cap="A simplified decision-making process", out.width = "60%"}
-
-knitr::include_graphics("img/decision-diagram.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/decision-diagram.PNG" alt="A simplified decision-making process" width="60%" />
+<p class="caption">(\#fig:fig6-2)A simplified decision-making process</p>
+</div>
 
 ### Checklist considerations
 
@@ -89,43 +82,39 @@ It's important to consider how each team and project are unique as you work thro
 
 ## Data management workflow
 
-The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a series of repeatable tasks that help you move through the stages of the research life cycle in an “organized and efficient manner” [@csp_library_research_csp_nodate]. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that show actionable steps in your data management process. The order of your steps should follow the general order of the data management life cycle (specifically the data collection cycle). You will want to have a workflow diagram for every piece of data that you collect. So for example, if you collect the following three items below, you will have three workflow diagrams.
+The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a series of repeatable tasks that help you move through the stages of the research life cycle in an “organized and efficient manner” [@csp_library_research_csp_2023]. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that show actionable steps in your data management process. The order of your steps should follow the general order of the data management life cycle (specifically the data collection cycle). You will want to have a workflow diagram for every piece of data that you collect. So for example, if you collect the following three items below, you will have three workflow diagrams.
 
 - Student online survey
 - Student paper assessment
-- Student district-level administrative data
+- Student school records
 
-Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig5-3) works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
+Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig6-3) works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 
-```{r fig5-3, fig.cap="A simple workflow template"}
-
-knitr::include_graphics("img/workflow1.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/workflow1.PNG" alt="A simple workflow template" width="100%" />
+<p class="caption">(\#fig:fig6-3)A simple workflow template</p>
+</div>
 
 Here is how we might complete this diagram for a student survey.
 
-```{r fig5-4, fig.cap="Example student survey workflow"}
+<div class="figure" style="text-align: center">
+<img src="img/workflow2.PNG" alt="Example student survey workflow" width="100%" />
+<p class="caption">(\#fig:fig6-4)Example student survey workflow</p>
+</div>
 
-knitr::include_graphics("img/workflow2.PNG")
+But the format truly does not matter. Figure \@ref(fig:fig6-5) is a diagram of the same student survey workflow as above, with more detailed added, and this time using a swimlane template instead, where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
 
-```
+<div class="figure" style="text-align: center">
+<img src="img/swimlane2.PNG" alt="Example student survey workflow using a swimlane template" width="100%" />
+<p class="caption">(\#fig:fig6-5)Example student survey workflow using a swimlane template</p>
+</div>
 
-But the format truly does not matter. Figure \@ref(fig:fig5-5) is a diagram of the same student survey workflow as above, with more detailed added, and this time using a swimlane template instead, where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
+If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig6-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
 
-```{r fig5-5, fig.cap="Example student survey workflow using a swimlane template"}
-
-knitr::include_graphics("img/swimlane2.PNG")
-
-```
-
-If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig5-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
-
-```{r fig5-6, fig.cap="Example student survey workflow using a Gantt chart"}
-
-knitr::include_graphics("img/gantt.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/gantt.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
+<p class="caption">(\#fig:fig6-6)Example student survey workflow using a Gantt chart</p>
+</div>
 
 
 While these workflow diagrams are excellent for high level views of what the process will be, we can see that we are unable to put fine details into this visual. So the last step of creating a workflow is to put all tasks (and all final decisions associated with those tasks) into a standard operating procedure (SOP). In your SOP you will add all necessary details of the process. You can also attach your diagram as an addendum or link your SOPs and diagrams in other ways for reference. We will talk more about creating SOPs in Section \@ref(document-sop).

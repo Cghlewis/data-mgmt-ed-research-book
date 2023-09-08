@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 3 Data Structure | Data Management in Large-Scale Education Research</title>
 <meta name="author" content="Crystal Lewis">
-<meta name="description" content="Because data management is made up of just that, data, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management...">
+<meta name="description" content="Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize...">
 <meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Chapter 3 Data Structure | Data Management in Large-Scale Education Research">
 <meta property="og:type" content="book">
 <meta property="og:image" content="/book_featured.PNG">
-<meta property="og:description" content="Because data management is made up of just that, data, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management...">
+<meta property="og:description" content="Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 3 Data Structure | Data Management in Large-Scale Education Research">
-<meta name="twitter:description" content="Because data management is made up of just that, data, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management...">
+<meta name="twitter:description" content="Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize...">
 <meta name="twitter:image" content="/book_featured.PNG">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -70,19 +70,19 @@
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
 <li><a class="" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
 <li><a class="active" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
-<li><a class="" href="dmp.html"><span class="header-section-number">4</span> Data Management Plan</a></li>
-<li><a class="" href="plan.html"><span class="header-section-number">5</span> Planning Data Management</a></li>
-<li><a class="" href="roles.html"><span class="header-section-number">6</span> Project Roles and Responsibilities</a></li>
-<li><a class="" href="document.html"><span class="header-section-number">7</span> Documentation</a></li>
-<li><a class="" href="style.html"><span class="header-section-number">8</span> Style guide</a></li>
-<li><a class="" href="track.html"><span class="header-section-number">9</span> Data Tracking</a></li>
-<li><a class="" href="collect.html"><span class="header-section-number">10</span> Data Collection</a></li>
-<li><a class="" href="capture.html"><span class="header-section-number">11</span> Data Capture</a></li>
-<li><a class="" href="storage.html"><span class="header-section-number">12</span> Data Storage and Security</a></li>
-<li><a class="" href="clean.html"><span class="header-section-number">13</span> Data Cleaning</a></li>
-<li><a class="" href="share.html"><span class="header-section-number">14</span> Data Sharing</a></li>
-<li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">15</span> Wrapping It Up</a></li>
-<li><a class="" href="call-to-action.html"><span class="header-section-number">16</span> Call to Action</a></li>
+<li><a class="" href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></li>
+<li><a class="" href="dmp.html"><span class="header-section-number">5</span> Data Management Plan</a></li>
+<li><a class="" href="plan.html"><span class="header-section-number">6</span> Planning Data Management</a></li>
+<li><a class="" href="roles.html"><span class="header-section-number">7</span> Project Roles and Responsibilities</a></li>
+<li><a class="" href="document.html"><span class="header-section-number">8</span> Documentation</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">9</span> Style guide</a></li>
+<li><a class="" href="track.html"><span class="header-section-number">10</span> Data Tracking</a></li>
+<li><a class="" href="collect.html"><span class="header-section-number">11</span> Data Collection</a></li>
+<li><a class="" href="capture.html"><span class="header-section-number">12</span> Data Capture</a></li>
+<li><a class="" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
+<li><a class="" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
+<li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">16</span> Wrapping It Up</a></li>
 <li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
@@ -96,13 +96,13 @@
 <h1>
 <span class="header-section-number">3</span> Data Structure<a class="anchor" aria-label="anchor" href="#structure"><i class="fas fa-link"></i></a>
 </h1>
-<p>Because data management is made up of just that, data, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize our data management process, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable data.</p>
+<p>Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize our data management process, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable information.</p>
 <div id="basics-of-a-dataset" class="section level2" number="3.1">
 <h2>
 <span class="header-section-number">3.1</span> Basics of a dataset<a class="anchor" aria-label="anchor" href="#basics-of-a-dataset"><i class="fas fa-link"></i></a>
 </h2>
 <p>In education research, data is often collected internally by your team using an instrument such as a questionnaire, an observation, an interview, or an assessment. However, data may also be collected from external entities, such as districts, states, or other agencies.</p>
-<p>Those data come in many forms (e.g., video, transcripts, documents, files), represented as text, numbers, or multimedia <span class="citation">(<a href="references.html#ref-usgs_what_nodate" role="doc-biblioref">USGS n.d.</a>)</span>. In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. These datasets are organized in a rectangular format which allow the data to be machine-readable. Even in qualitative research, we are often wrangling data to be in a format that is analyzable and allows categorization.</p>
+<p>Those data come in many forms (e.g., video, transcripts, documents, data files), represented as text, numbers, or multimedia <span class="citation">(<a href="references.html#ref-usgs_what_2023" role="doc-biblioref">USGS 2023</a>)</span>. In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. These datasets are organized in a rectangular format which allow the data to be machine-readable. Even in qualitative research, we are often wrangling data to be in a format that is analyzable and allows categorization.</p>
 <p>These rectangular (also called tabular) datasets are made up of columns and rows.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-1"></span>
@@ -124,11 +124,11 @@ Figure 3.1: Basic format of a dataset
 <li>One or more variables that are <strong>unique identifiers</strong>, sometimes called primary keys. These are variables that uniquely define rows in your dataset (i.e. help you identify duplicate rows), and they also allow you to link data that contain the same identifiers (for example link all student data). It is important to make sure these variables are consistently formatted across files (e.g., always character variables).</li>
 <li>If you plan to link datasets across entities (e.g., link teachers to schools or students to teachers) then you will also need secondary unique identifiers in your dataset (also called foreign keys) that allow you to link across datasets.</li>
 </ul>
-<p>We will talk more about creating these identification variables in Section <a href="track.html#track-ids">9.4</a>.</p>
+<p>We will talk more about creating these identification variables in Section <a href="track.html#track-ids">10.4</a>.</p>
 <p><strong>Column attributes</strong></p>
 <p>It is important to know that variables have the following attributes:</p>
 <ol style="list-style-type: decimal">
-<li>Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss style guides in Chapter <a href="style.html#style">8</a>.</li>
+<li>Unique names (no variable name in a dataset can repeat). We will talk more about variable naming when we discuss style guides in Chapter <a href="style.html#style">9</a>.</li>
 <li>A measurement type (e.g., numeric, character, date) which can also be more narrowly defined as needed (e.g., continuous, categorical)</li>
 <li>Acceptable values (e.g., “yes”/“no”) or expected ranges (e.g., <em>1-25</em> or <em>2021-08-01 to 2021-12-15</em>). Anything outside of those acceptable values or ranges is considered an error.</li>
 <li>Labels, descriptions of what the variable represents. This may be a label that you as the variable creator assigns (e.g., “Treatment condition”) or they may be the actual wording of an item (e.g., “Do you enjoy pizza?”).</li>
@@ -200,7 +200,7 @@ Figure 3.5: A comparison of two things being measured in one variable and two th
 <ul>
 <li>Consider why a cell value is empty
 <ul>
-<li>If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Section <a href="style.html#style-missing">8.6</a> for ideas on coding missing values.</li>
+<li>If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Section <a href="style.html#style-missing">9.6</a> for ideas on coding missing values.</li>
 <li>If a cell is left empty because it is “implied” to be the same value as above, the cells should be filled with the actual data<br>
 </li>
 <li>If the value for the cell is implied to be 0, fill the cells with an actual 0</li>
@@ -239,7 +239,7 @@ Figure 3.7: A comparison of variables with implicit values and variables with ex
 <li>More than one variable is used to identify unique participants and the row is not actually a duplicate.
 <ul>
 <li>Take for example a student id and a class id. Multiple unique identifiers may be used if data is collected on participants in multiple locations and treated as unique data. In this case, the data is not truly duplicate because the combined identifiers are unique.</li>
-<li>Another example of this is if your data is organized in long format (discussed in Section <a href="#datastructure"><strong>??</strong></a>). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.</li>
+<li>Another example of this is if your data is organized in long format (discussed in Section <a href="structure.html#structure-datastructure">3.3.2</a>). In this case unique study identifiers may repeat in the data but they should not repeat for the same form and same time period in your data.</li>
 </ul>
 </li>
 </ol>
@@ -264,8 +264,8 @@ Figure 3.8: A comparison of data with duplicate cases and data with no duplicate
 <h3>
 <span class="header-section-number">3.3.1</span> Database design<a class="anchor" aria-label="anchor" href="#structure-database"><i class="fas fa-link"></i></a>
 </h3>
-<p>A database is “an organized collection of data stored as multiple datasets” <span class="citation">(<a href="references.html#ref-usgs_what_nodate" role="doc-biblioref">USGS n.d.</a>)</span>. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.</p>
-<p>In database terminology, each dataset we have is considered a “table”. Each table has a primary key that identifies unique entries within a table and each table can be connected through both primary and foreign keys. This linking of tables creates a relational database and we will talk more about this structure when we discuss participant data tracking (see Chapter <a href="track.html#track">9</a>).</p>
+<p>A database is “an organized collection of data stored as multiple datasets” <span class="citation">(<a href="references.html#ref-usgs_what_2023" role="doc-biblioref">USGS 2023</a>)</span>. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.</p>
+<p>In database terminology, each dataset we have is considered a “table”. Each table has a primary key that identifies unique entries within a table and each table can be connected through both primary and foreign keys. This linking of tables creates a relational database and we will talk more about this structure when we discuss participant data tracking (see Chapter <a href="track.html#track">10</a>).</p>
 <p>Let’s take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students (a survey and an assessment) in one time period. Figure <a href="structure.html#fig:fig3-9">3.9</a> shows what variables were collected from each instrument and how each table can be linked together through a primary key (circled in yellow).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-9"></span>
@@ -306,7 +306,7 @@ Figure 3.11: Linking data through primary and foreign keys
 </li>
 <li>To link forms across participants</li>
 </ul>
-<p>The easiest scenario to think about this format is with repeated measure data. If we collect a survey on participants in both wave 1 and 2, those waves of data will all be in the same row (joined together on a unique ID) and each wave of data collection will be appended to a variable name to create unique variable names. We will dive deeper into different types of joins in Chapter <a href="clean.html#clean">13</a>.</p>
+<p>The easiest scenario to think about this format is with repeated measure data. If we collect a survey on participants in both wave 1 and 2, those waves of data will all be in the same row (joined together on a unique ID) and each wave of data collection will be appended to a variable name to create unique variable names. We will dive deeper into different types of joins in Chapter <a href="clean.html#clean">14</a>.</p>
 <blockquote>
 <p><strong>Note</strong> <br><br>
 It is important to note here, that if your data do not have unique identifiers (primary and/or foreign keys), as is in the case of anonymous data, you will be unable to merge data in a wide format.</p>
@@ -337,7 +337,7 @@ Figure 3.13: Data structured in long format
 <span class="header-section-number">3.3.2.3</span> Choosing wide vs long<a class="anchor" aria-label="anchor" href="#choosing-wide-vs-long"><i class="fas fa-link"></i></a>
 </h4>
 <p>There are different reasons for constructing your data one way or another. And it may be that you store or share your data in one format, and then restructure data into another format when it comes time for analysis.</p>
-<p>Storing data in long format is usually considered to be more efficient, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject <span class="citation">(<a href="references.html#ref-grace-martin_wide_2013" role="doc-biblioref">Grace-Martin 2013</a>)</span>. We will further review decision making around data structure in Chapter <a href="clean.html#clean">13</a>.</p>
+<p>Storing data in long format is usually considered to be more efficient, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject <span class="citation">(<a href="references.html#ref-grace-martin_wide_2013" role="doc-biblioref">Grace-Martin 2013</a>)</span>. We will further review decision making around data structure in Chapter <a href="clean.html#clean">14</a>.</p>
 </div>
 </div>
 </div>
@@ -346,13 +346,13 @@ Figure 3.13: Data structured in long format
 <span class="header-section-number">3.4</span> File types<a class="anchor" aria-label="anchor" href="#file-types"><i class="fas fa-link"></i></a>
 </h2>
 <p>These rectangular datasets can be saved in a variety of file types. Some common file types in education research include interoperable formats such as CSV, TXT, or TSV, or proprietary formats such as XLSX, SPSS, or Stata files.</p>
-<p>When you save your files, they will have a file size. Both the number of columns as well as the number of rows in your dataset will contribute to your file size. Just to get a feel for what size your files might be, small datasets (for example 5 columns and &lt;100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000-5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata (such as variable and value labels), such as a .sav file, will greatly increase your file size. We will talk about the pros and cons to different file formats in Chapter <a href="share.html#share">14</a>.</p>
+<p>When you save your files, they will have a file size. Both the number of columns as well as the number of rows in your dataset will contribute to your file size. Just to get a feel for what size your files might be, small datasets (for example 5 columns and &lt;100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000-5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata (such as variable and value labels), such as a .sav file, will greatly increase your file size. We will talk about the pros and cons to different file formats in Chapter <a href="share.html#share">15</a>.</p>
 
 </div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></div>
-<div class="next"><a href="dmp.html"><span class="header-section-number">4</span> Data Management Plan</a></div>
+<div class="next"><a href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
@@ -389,7 +389,7 @@ Figure 3.13: Data structured in long format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-07-25.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-08.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

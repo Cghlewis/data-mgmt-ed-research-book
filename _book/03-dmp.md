@@ -10,79 +10,98 @@
 Since 2013, even earlier for the National Science Foundation, most federal agencies that education researchers work with have required a data management plan (DMP) as part of their funding application [@holdren_ostp_2013]. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan for a research study that will result in data that can be shared with confidence, and free from errors, uncertainty, or violations of confidentiality. President Obama’s May 2013 Executive Order declared that “the default state of new and modernized government information resources shall be open and machine readable" [@the_white_house_executive_2013]. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release [@nelson_ostp_2022]. Even sooner than this, organizations like the National Institutes of Health (NIH) mandated that grant applicants, beginning January 2023, must submit a plan for both managing and sharing project data [@national_institutes_of_health_data_nodate]. The National Science Foundation (NSF) also released version 2.0 of their public access plan in February of 2023, describing how the agency plans to ensure that all scientific data, funded by the NSF and associated with peer-reviewed publications, is publicly shared [@national_science_foundation_nsf_2023].
 
 > **Note** <br> <br>
-In the last year, agencies have begun revising the phrase "data management plan" to include the word "sharing" to better represent the shifting emphasis on sharing publicly funded data. As an example, NIH now uses the term Data Management and Sharing Plan (DMS Plan), while the Institute of Education Sciences (IES) has chosen to use the term Data Sharing and Management Plan (DSMP). For the sake of simplicity, the term DMP is used throughout this book to generally represent these plans, no matter the precise name, across all federal agencies.
+In the last year, agencies have begun revising the phrase "data management plan" to include the word "sharing" to better represent the shifting emphasis on sharing publicly funded data. As an example, NIH now uses the term Data Management and Sharing Plan (DMS Plan), while the Institute of Education Sciences (IES) has chosen to use the term Data Sharing and Management Plan (DSMP) ^[https://ies.ed.gov/funding/pdf/2024_84305a.pdf]. For the sake of simplicity, the term DMP is used throughout this book to generally represent these plans, no matter the precise name, across all federal agencies.
 
 ### Why are DMPs important?
 
-Funding agencies see DMPs as important in maximizing scientific outputs from investments and increasing transparency. Mandating data sharing for federally funded projects leads to many benefits including accelerating discovery, greater collaboration, and building trust among data creators and users. In addition to the benefits viewed by funders, there are intrinsic benefits that come from having to write a data management plan. Having to thoughtfully plan and having transparency in that plan leads to better data management. Knowing that you will eventually be sharing your data and documentation with others outside of your team can motivate researchers to think hard about how to organize their data management practices in a way that will produce data that they trust to share with the outside world [@center_for_open_science_creating_nodate].
+Funding agencies see DMPs as important in maximizing scientific outputs from investments and increasing transparency. Mandating data sharing for federally funded projects leads to many benefits including accelerating discovery, greater collaboration, and building trust among data creators and users. In addition to the benefits viewed by funders, there are intrinsic benefits that come from having to write a data management plan. Having to thoughtfully plan and having transparency in that plan leads to better data management. Knowing that you will eventually be sharing your data and documentation with others outside of your team can motivate researchers to think hard about how to organize their data management practices in a way that will produce data that they trust to share with the outside world [@center_for_open_science_creating_2023]. Even if a DMP is not required by a funder, it should always be the first step of your planning process. Although brief, this document serves as the foundation for all future planning and provides your team with a shared understanding of data management expectations. 
 
 ## What is it?
 
-Generally, a data management plan is a supplemental 2-5 page document, submitted with your grant application, that contains details about how you plan to store, manage, and share your research data products. For most funders these DMPs are not part of the scoring process, but they are reviewed by a panel or program officer. Some funders may provide feedback or ask for revisions if they believe your plan and/or your budget and associated costs are not adequate.
+Typically, a data management plan is a supplemental 2-5 page document, submitted with your grant application, that contains high level decisions about how you plan to collect, store, manage, and share your research data products. For most funders these DMPs are not part of the scoring process, but they are reviewed by a panel or program officer. Some funders may provide feedback or ask for revisions if they believe your plan and/or your budget and associated costs are not adequate. Although this document is usually submitted to your funder, it should be considered a living document to be updated as plans change throughout a study.
 
 ### What to include?
 
-What to include in a DMP varies some across funding agencies and the landscape of requirements is currently evolving. You should check each funding agency’s site for their specific DMP requirements when submitting a proposal. With that said there are typically 10 common categories covered in a data management plan [@center_for_open_science_creating_nodate; @gonzales_ten_2022; @icpsr_guide_nodate; @michener_ten_2015] which we will review below.
+What to include in a DMP varies some across funding agencies and the landscape of requirements is currently evolving. You should check each funding agency’s site for their specific DMP requirements when submitting a proposal. With that said there are typically 10 common categories covered in a data management plan [@center_for_open_science_creating_2023; @gonzales_ten_2022; @icpsr_guide_nodate; @michener_ten_2015] which we will review below. Each category includes a brief description as well as links to relevant chapters to learn more information about best practices.
 
-1. Roles and responsibilities
+1. Description of data to be shared (See Chapters \@ref(collect), \@ref(capture), \@ref(clean), \@ref(share))
+    - What is the source of data? (e.g., surveys, assessments, observations, extant data)
+    - How will data be cleaned and curated data prior to data sharing?
+    - What will the level of aggregation be? (e.g., item-level, summary data, metadata only)
+      - Datasets from a project may need to be shared in different ways due to legal, ethical, or technical reasons.
+    - Will both raw and clean data be shared?
+    - What are the expected number of files? Expected number of rows/cases in each file?
+1. Format of data to be shared (See Chapters \@ref(clean) and \@ref(share))
+    - Will data be in an electronic format?
+    - Will it be provided in a non-proprietary format? (e.g., CSV)
+    - Will more than one format be provided? (e.g., SPSS and CSV)
+    - Are there any tools needed to manipulate or reproduce shared data? (e.g., software, code)
+      - Provide details for those tools. (e.g., how they can be accessed, version number, required operating system)
+1. Documentation to be shared (See Chapters \@ref(document) and \@ref(share))
+    - What documentation will you share?
+      - Consider project-level, dataset-level, and variable-level documentation.
+    - What format will your documentation be in? (e.g., XML, CSV, PDF)
+1. Standards (See Chapters \@ref(document) and \@ref(collect))
+    - Do you plan to use any standards for things such as metadata, data formatting, terminology, common data elements, or persistent identifiers (PIDs)?
+1. Data preservation (See Chapter \@ref(share))
+    - Where will data be archived?
+      - Many agencies are now requiring applicants to name a specific data repository in this section.
+    - What are the desirable characteristics of the repository? ^[ https://repository.si.edu/bitstream/handle/10088/113528/Desirable%20Characteristics%20of%20Data%20Repositories.pdf] (e.g., unique persistent identifiers assigned to data, metadata collected, records provenance, licensing)
+    - When will you deposit your study data in the repository and for how long will data remain accessible?
+    - How will you enable discoverability and reuse of data?
+1. Access, distribution, or reuse considerations (See Chapters \@ref(secure) and \@ref(share))
+    - Are there any legal, technical, or ethical factors affecting reuse, access, or distribution of your data?
+    - Will any data be restricted?
+    - Are access controls required (e.g., a data use agreement, data enclave)?
+1. Protection of privacy and confidentiality (See Chapters \@ref(secure), \@ref(clean), and \@ref(share))
+    - Do participants sign informed consent agreements? Does the consent communicate how participant data are expected to be used and shared?
+    - How will you prevent disclosure of personally identifiable information when you share data?
+1. Data security (See Chapter \@ref(store))
+   - How will security and integrity of data be maintained during a project? (e.g., consider data storage, access, backup, and transfer)
+1. Roles and responsibilities (See Chapter \@ref(roles))
     - What are the staff roles in management and long-term preservation of data?
     - Who ensures accessibility, reliability, and quality of data?
     - Is there a plan if a core team member leaves the project or institution?
-2. Types and amount of data
-    - How is data captured? (e.g., surveys, assessments, observations)
-    - Will data be item-level? Summary scores? Metadata only?
-      - Datasets from a project may need to be shared in different ways due to legal, ethical, or technical reasons.
-    - Will you share raw data and clean data?
-    - What are the expected number of files? Expected number of rows/cases in each file?
-3. Format of data
-    - Will data be in an electronic format?
-    - Will it be provided in a non-proprietary format? (e.g., CSV)
-    - Will more than one format be provided? (e.g., SAV and CSV)
-    - Are there any tools needed to manipulate shared data?
-    - Will code be available to support reproducibility?
-4. Documentation
-    - What documentation will you share? (Consider project-level, dataset-level, and variable-level documentation)
-    - What metadata will you create? 
-    - What format will your documentation be in? (e.g., XML, CSV, PDF)
-    - What supplemental documents do you plan to include when sharing data? (e.g., consort diagrams, data collection instruments, consent forms)
-5. Standards
-    - Do you plan to use any standards for things such as metadata, data formatting, terminology, or persistent identifiers (PIDs)?
-6. Method of data sharing
-    - How will you share your data? (Many agencies are now requiring applicants to name a specific data repository in this section)
-    - Will data be restricted and is a data enclave required?
-    - Is a data use agreement required?
-    - How will you license your data?
-    - Will your data have persistent unique identifiers?
-7. Circumstances preventing data sharing
-    - Do you have any data covered by FERPA/HIPAA that doesn't allow data sharing?
-    - Do you work with any partners that do not allow you to share data? (e.g., School districts, tribal regulations)
-    - Are you working with proprietary data?
-8. Privacy and rights of participants
-    - How will you prevent disclosure of personally identifiable information when you share data? How will you anonymize data (if applicable)?
-    - Do participants sign informed consent agreements? Does the consent communicate how participant data are expected to be used and shared?
-9. Data security
-    - How will you maintain participant privacy and confidentiality during your project?
-    - How will you prevent unauthorized access of data?
-    - Consider IRB requirements here.
-10. Schedule for data sharing
-    - When will you share your study data and for how long?
-11. Pre-registration (less commonly required)
+1. Pre-registration
     - Where and when will you pre-register your study?
 
-
-Again, the specifics of what should be included in each category will vary by funder. Here are sites to visit to learn more about the four most common federal education research funder DMP requirements.
+Again, the specifics of what should be included in each category will vary by funder. Here are sites to visit to learn more about the four most common federal education research funder DMP requirements. 
 
   - Institute of Education Sciences ^[https://ies.ed.gov/funding/datasharing_implementation.asp] ^[https://ies.ed.gov/funding/pdf/2024_84305a.pdf]
   - National Institutes of Health ^[https://sharing.nih.gov/data-management-and-sharing-policy/planning-and-budgeting-DMS/writing-a-data-management-and-sharing-plan]
   - National Institute of Justice ^[https://nij.ojp.gov/funding/data-archiving]
   - National Science Foundation ^[https://www.nsf.gov/bfa/dias/policy/dmpdocs/ehr.pdf]
   
+## Creating a data inventory
+
+In preparation for writing your DMP, it can be helpful to create a data inventory in a table format that allows you to visually see what data sources you are collecting, what the sensitivity level of those sources are, and how they will be collected, managed, stored, and shared [@filip_san_2023]. While this data inventory will not cover all the questions required in a DMP, this table allows you to strategically plan the details for how you will manage and share data for each source. This type of data inventory can not only help you write your DMP, but can also serve as an excellent planning or discussion tool throughout your entire project.
+
+Some fields you can add to this inventory include:
+
+- Instrument
+- Measures included in the instrument
+- Collection and capture method
+- Time periods collected
+- PII included
+- Sensitivity level
+- Data storage and access plan
+- Data ownership
+- How confidentiality will be secured
+- Data sharing method
+
+Figure \@ref(fig:fig4-2) is a simplified example of building this inventory for a study.
+
+<div class="figure" style="text-align: center">
+<img src="img/data_inventory.PNG" alt="Example data inventory" width="100%" />
+<p class="caption">(\#fig:fig4-2)Example data inventory</p>
+</div>
+
 
 ## Getting help
 
-Since DMPs are written before a project is funded, and therefore before additional staff members may be hired, oftentimes the investigators developing the grant proposal are the ones who write the DMP. However, when constructing your DMP it is well worth your time to enlist help. If you have an existing data manager or data team, you will most certainly want to consult with them when writing your plan to ensure your decisions are feasible. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. And last, if you plan to share your final data with a repository or institutional archive you will want to contact your repository when writing your plan as well. The repository may have its own requirements for how and when data must be shared and it is helpful to outline those guidelines in your data management plan at the time of submission. You can also specifically write the name of your repository into your data management plan as well. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
+Since DMPs are written before a project is funded, and therefore before additional staff members may be hired, oftentimes the investigators developing the grant proposal are the ones who write the DMP. However, when constructing your DMP it is well worth your time to enlist help. If you have an existing data manager or data team, you will most certainly want to consult with them when writing your plan to ensure your decisions are feasible. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. Also, if you plan to share your final data with a repository or institutional archive you will want to contact your repository when writing your plan as well. The repository may have its own requirements for how and when data must be shared and it is helpful to outline those guidelines in your data management plan at the time of submission. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
 
-Your DMP is a living document and you can always update your plan during or after your project completion. It may be helpful to keep in contact with your program officer regarding any potential changes throughout your project.
+As mentioned earlier, your DMP is a living document and you can always update your plan during or after your project completion. It may be helpful to keep in contact with your program officer regarding any potential changes throughout your project.
 
 If you are looking for guidance in writing a DMP, a variety of generic DMP templates for different federal agencies are available, as well as actual copies of submitted DMPs that some researchers graciously make publicly available for example purposes.
 
@@ -102,7 +121,7 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 
 ## Budgeting {#budget}
 
-As briefly mention above, funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include costs associated with data management personnel, specialized infrastructure, tools needed to collect, enter, organize, document, store, or share study data [@uk_data_service_data_2022], as well as fees associated with data preservation. Make sure to review your funder's documentation for information about allowable costs[@samuel_j_wood_library_research_nodate] and time frame for incurring costs. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
+Funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include costs associated with data management personnel, specialized infrastructure, tools needed to collect, enter, organize, document, store, or share study data [@uk_data_service_data_2022], as well as fees associated with data preservation. Make sure to review your funder's documentation for information about allowable costs[@samuel_j_wood_library_research_nodate] and time frame for incurring costs. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_nodate]:
 
 - Costs associated with curating and de-identifying data
 - Costs associated with developing data documentation

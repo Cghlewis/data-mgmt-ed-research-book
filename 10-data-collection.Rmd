@@ -1,16 +1,16 @@
 # Data Collection {#collect}
 
-```{r fig10-1, fig.cap="Data collection in the research project life cycle", out.width = "80%"}
+```{r fig11-1, fig.cap="Data collection in the research project life cycle", out.width = "80%"}
 
 knitr::include_graphics("img/lifecycle_track.PNG")
 
 ```
 
-When collecting original data as part of your study (i.e., you are administering your own survey or assessment as opposed to using existing data), data management best practices should be interwoven throughout your data collection process. The number one way to ensure the integrity of your data is to spend time planning your data collection efforts. Not only does planning minimize errors, it also keeps your data secure, valid, and relieves future data cleaning headaches. 
+Recall your data sources catalog (see Section \@ref(dmp-catalog)), created early on in your project. Each row of that catalog includes an instrument to be collected for your project. When collecting original data as part of your study (i.e., you are administering your own survey or assessment as opposed to using an externally collected data source), data management best practices should be interwoven throughout your data collection process. The number one way to ensure the integrity of your data is to spend time planning your data collection efforts. Not only does planning minimize errors, it also keeps your data secure, valid, and relieves future data cleaning headaches. 
 
-If you have ever created a data collection instrument and expected it to export data that looks like the image on the left (Figure \@ref(fig:fig10-2)), but instead you export data that looks like the image on the right, then you know what I mean. Collecting quality data doesn't just happen because you create an instrument, it takes careful consideration, structure, and care on the part of the entire team.
+If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig11-2), but instead you export data that looks like the image on the right, then you know what I mean. Collecting quality data doesn't just happen because you create an instrument, it takes careful consideration, structure, and care on the part of the entire team.
 
-```{r fig10-2, fig.cap="A comparison of data collected without planning and data collected with planning"}
+```{r fig11-2, fig.cap="A comparison of data collected without planning and data collected with planning"}
 
 knitr::include_graphics("img/bad_data_collect.PNG")
 
@@ -19,217 +19,32 @@ knitr::include_graphics("img/bad_data_collect.PNG")
 
 ## Quality assurance and control
 
-In addition to planning data collection logistics (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. As shown in Figure \@ref(fig:fig10-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
+In addition to planning data collection logistics (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. As shown in Figure \@ref(fig:fig11-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
 
 1. Quality assurance practices that happen before data is collected
     - Best practices associated with designing and building your data collection instruments
 2. Quality control practices implemented during data collection 
     - Best practices associated with managing and reviewing data during collection
 
-Before we dive into collecting data, it's important to first review the ethical and legal considerations of your data collection effort. When working with human subjects it is likely that an Institutional Review Board (IRB) will need to review and approve all of your data collection instruments as well as any agreement forms that will be collected as part of your study. Our next section will provide an overview of the IRB and its requirements as well as best practices for creating agreement forms for participants and partners.
-
-## Institutional Review Board
-
-An IRB is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. If you are conducting education research with human participants you will most likely have some interaction with and oversight from one or more IRBs. IRBs exist at institutions where research is conducted, including universities, school districts, state agencies, or research institutions, and in some industries such as clinical research, even independent IRBs are available for hire [@emanuel_should_2006]. Even within institutions there can be more than one IRB (e.g., a medical review board and a behavioral science review board) [@duru_institutional_2023]. Before reviewing potential requirements, let's review the history of this administrative body.
-
-### Background
-
-In 1974 the IRB was established as part of the National Research Act in response to a long history of unethical research that had been conducted with human participants [@qiao_brief_2018]. In 1979, the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979] outlined a set of ethical principles for doing research with human participants. Those ethical principles included the following [@duru_institutional_2023; @huisman_3_2023]:
-
-1. Respect for persons
-    - This included both protecting autonomy of participants by acquiring consent as well as providing a plan to protect participant privacy
-      - In practice this means acquiring consent in a way that ensures participants can comprehend what is being asked of them, ensuring that they understand that their participation is voluntary, and ensuring that they understand the plan to protect their privacy
-2. Beneficence
-    - This involved maximizing good and minimizing harm in the study, for both participants and society at large
-      - In practice this means taking time to assess risk and benefits of your study for both the intervention itself as well as the data collection efforts (e.g., how burdensome is the survey)
-3. Justice 
-    - This included providing additional care and consideration when working with subjects who are vulnerable to coercion or undue influence (e.g., children, prisoners), as well as making sure practices are non-exploitative and that there is fair distribution of costs and benefits across all participants
-      - In practice this involves fairness in the selection of participants
-
-Heavily influenced by the Belmont Report, in 1991 the Federal Policy for the Protection of Human Subjects was published, establishing core procedures for human subject protections. The policy, 45 CFR part 46 [@office_for_human_research_protections_45_2016], included four subparts. Subpart A, known as the "Common Rule" for the 15 federal departments and agencies which codified the policy in separate regulations, provided a set of protections for human subjects research including informed consent, review by an IRB, and compliance monitoring [@national_institute_of_justice_common_2007; @office_for_human_research_federal_2009].
-
-In 2018 the Common Rule was revised in order to better protect research participants and to reduce administrative burden [@office_for_human_research_office_for_human_research_revised_2018; @us_department_of_health_and_human_services_whats_nodate]. While many revisions were made, some changes that are applicable to education researchers include the following [@fordham_university_revised_nodate]:
-
-- Revisions and additions to exempt categories, many of which are applicable to research conducted in educational settings 
-- Reduced burden of continuing review, particularly for exempt and expedited studies
-- Clarifications on how informed consent should be organized, written, and provided
-
-### Requirements
-
-While each institution's IRB submission process is different, typically if your study involves working with human subjects you are required to submit an application to an IRB. Before submitting your application you will need to determine what review category your study falls under as the application differs depending on the category [@lafayette_college_three_nodate; @northwestern_university_exempt_nodate; @university_of_california_berkeley_exempt_2022].
-
-1. Exempt
-    - These studies usually involve minimal risk and fit within categories predefined by your IRB (e.g., evaluating the use of accepted or revised standardized tests). These studies typically involve a shorter review process and a quicker review than non-exempt studies. 
-2. Expedited
-    - These studies also involve minimal risk but do not meet criteria for exempt status (e.g., collection of voice, video, or image data from non-vulnerable populations).
-3. Full Review
-    - If a study does not fall into one of the two categories above (e.g., collection of information about illegal behavior), it requires full review, discussed by the full board at a convened meeting.
-    
-In education research you are most often submitting your application to your institution's IRB. However, there are situations where that process might vary. For instance, in the case of multi-site or cooperative, non-exempt projects, it may be necessary to submit a single IRB (sIRB). In this situation, an authorization agreement is signed by collaborating institutions and one institution is designated as the IRB-of-Record. This institution then becomes the authority for review and continuing oversight of study activities [@cornell_research_services_multi-site_2019; @university_of_michigan_authorization_2023].
-
-As part of your application, common documents you may be required to submit include the following [@cabrini_university_submissions_nodate; @duru_institutional_2023]:
-
-1. Certificates from human subjects training (e.g., CITI training^[https://about.citiprogram.org/])
-1. Research protocol (see Section \@ref(document-protocol))
-    - When writing your protocol, make sure to review your IRB's rules around data handling and include this information in your plan. IRBs typically have specific rules for things such as how paper and electronic data must be stored and backed up, how long data should be retained, how data can be transferred and shared, and how data should be anonymized [@filip_san_2023].
-1. Study materials (e.g., recruitment materials)
-1. Copies of your instruments (e.g., surveys, interview guides, observation forms)
-    - Note that these will need to be created before you can submit to your IRB so make sure to consider timing and start building your instruments early enough to give you time to submit to your IRB before data collection
-1. Copy of informed consent/assent forms
-    - Same as above, give yourself plenty of time to submit before you start participant recruitment
-1. If collecting data from sites (e.g., school districts) or sharing data between sites, supporting documentation from those partners may be required (MOUs, data use/sharing agreements, letters of support, confidentiality agreements)
-1. If partnering with other institutions, IRB approval letters from partner institutions may also be required
-
-The review process can take several weeks and it is common for the IRB to request revisions to materials. Make sure to review your timeline and give yourself plenty of time to work through this process before you need to begin recruitment and data collection. 
-
-### Agreements {#collect-agreements}
-
-There are several types of agreements that may be required for your research study for both ethical and legal reasons. Here we will discuss the most common type of agreements, informed consent and assent, as well as other agreements used when working with external partners including memorandum of understanding documents, data use agreements, and non-disclosure agreements. 
-
-#### Consents {#collect-consent}
-
-Informed consent involves obtaining a participant's voluntary agreement to participate in your research study. As described in the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979], informed consent should meet the following criteria [@huisman_3_2023]:
-
-- Describe the study and what is expected of the participant
-- Use accessible language to ensure comprehension. Avoid technical jargon and explain terms that may not be easily understood.
-- Explain that participation is voluntary
-- Review how participant privacy will be maintained
-
-With the revised Common Rule, additional requirements for informed consent were added [@fordham_university_revised_nodate].
-
-- The top of the consent must begin with a concise review of key information that allows participants to make informed decisions
-- All information must be presented with sufficient detail to make decisions, not just bulleted lists of facts
-- The form must disclose any plans to use participant data for other future research
-
-Figure \@ref(fig:fig10-3) shows common elements that are included in a participant consent form [@bellevue_college_elements_2023; @the_turing_way_community_turing_2022].
-
-```{r fig10-3, fig.cap="Common topics to include in an informed consent information sheet"}
-
-knitr::include_graphics("img/consent.PNG")
-
-```
-
-Depending on the type of research study, a participant signature or a check box denoting consent may be required. If so, it can be helpful to put the above information on a cover/information sheet, and then have a separate page for signed consent. Before signing, participants should be required to acknowledge that they
-
-- Have read and understood the information provided
-- Have been given the opportunity to ask questions
-- Understand that their participation is voluntary
-- Understand that they may withdraw from the study at any time
-
-Not all studies require active consent [@university_of_virginia_when_nodate]. Some studies may allow passive consent which may be obtained by providing an information sheet to all participants with the following type of information:
-
-_If you consent to be in this study, no additional action is required; simply move forward with the study._ 
-_If you choose to withdraw, you can notify a specified contact._
-
-Your institution's IRB will let you know which type of consent is required for your study and what language is required.
-
-##### Data sharing
-
-With an increase in federal data sharing requirements, it is very important to consider how you want to gain consent for public data sharing. @meyer_practical_2018 provides some general best practices to consider when adding language about public data sharing to a consent form.
-
-- Don’t promise to destroy your data (unless your funder/IRB explicitly requires it)
-  - Do incorporate data-retention and sharing plans including letting participants know who will have access to their data
-- Don’t promise to not share data
-  - Do get consent to retain and share data (consider adding the specific repository you plan to share your data in). 
-  - Consider offering tiered levels of consent for participants who may not want all of their data publicly shared but will allow some.
-- Don’t promise that research analyses of the collected data will be limited to certain topics
-  - Do say that data may be used for future research and share general purposes (e.g., replication, new analyses)
-- Do review the ways you plan to de-identify data but be thoughtful when considering risks of re-identification (ex: small sample size for sub-groups)
-
-There are essentially three different ways you can go about obtaining consent for data sharing [@gilmore_practical_2018].
-
-1. Include a line about public data sharing in your consent to participate to research.
-    - With this method, a participant who consents is agreeing to both participate in the research study and have their data shared publicly.
-2. Have participants consent to data sharing at the same time you provide the research study consent, but provide a separate consent form for the purposes of public data sharing.
-3. Have participants consent to data sharing on a separate consent form, at a later time, after research activities are completed. 
-    - Obtaining consent this way ensures the participants are fully aware of the data collected from them and can make an informed decision about the future of that data. 
-
-A limitation of using method 1, as discussed by Gilmore, et al. [-@gilmore_practical_2018], is that if a participant is uncomfortable with their data being publicly shared, you will then also lose them as a study participant. So method 2 or 3 may be your best option. If you choose to go with method 2 or 3, it is very important that you not only track your participant study consent status in your tracking database (as discussed in Chapter \@ref(track)), but that you also add a field to track the consent status for data sharing so that you only publicly share data for those that have given you permission to do so.
-
-
-#### Assents
-
-If your study involves participants under the age of 18, you may also be required to obtain a participant assent form, in addition to a parent/guardian consent form. The guidelines for when assent is needed varies across IRBs, but typically if a child is age 7 or older [@duru_institutional_2023], both assent and parent consent is needed. While including similar information as provided in the consent, these are usually shorter forms that require much more simplistic language depending on the age of the child.
-
-#### Collecting consent and assent
-
-Last, many institutions have started collecting electronic consent rather than paper consents, especially with a rise in remote data collection efforts. There are benefits to this method including reducing the manual labor of collecting paper forms and removing the need to store paper forms or scan them into an electronic form. However, there are still a few things to consider before collecting electronic consent [@lee_considerations_2020; @malow_redcap-based_2021].
-
-- Make sure your IRB approves this method
-- Use institution and IRB approved tools to collect consent (e.g., Qualtrics, DocuSign)
-- Find out what information is required by your IRB (e.g., signature, typed name, check box, date)
-- Consider how those consents will be stored (e.g., download PDFs, download spreadsheet, store in collection tool)
-
-If you are collecting paper consent or assent, there are still some additional things to consider.
-
-- If consents are sent out as packets, say to schools, make sure to have a system in place to track who each form belongs to. When consents start coming back, it's possible that names are illegible, or there are duplicate names across sites. Tracking the origin of each form could look something like this:
-  - Collecting class rosters ahead of time and pre-printing names and other identifiers (e.g., teacher, school) on consents before sending packets out (if this is allowed by both your IRB and the school)
-  - Asking teachers to print student and teacher name on each form before the consents/assents are handed out
-- If consents are collected by in-person data collectors, you will want a similar process
-  - Either pre-print names on forms or have data collectors print names and other identifiers (e.g., teacher, school) on forms as they are collected
-
-**Templates and Resources**
-
-|Source|Resource|
-|--------|-----------|
-|Anja Sautmann| Annontated informed consent checklist ^[https://www.povertyactionlab.org/sites/default/files/research-resources/rr_irb_annotated-informed-consent-checklist_0.pdf]|
-|Holly Lane, Wilhemina van Dijk|Example parent consent ^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
-|Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet ^[https://osf.io/3czbx]
-|Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing ^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
-|Melissa Kline Struhl|Lookit consent form template 5^[https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20consent%20form%20template%205.md]|
-|University of Virginia| A collection of consent and assent templates ^[https://research.virginia.edu/irb-sbs/consent-templates]|
-
-
-#### Other agreements 
-
-In education research it is common to collaborate with external partners (e.g., school districts, state agencies, nonprofit organizations) to implement a study and collect data. Those partnerships may involve several different types of agreements. Across different types of agencies and even across similar agency types (e.g., across school districts), the agreements required can vary widely. Let's review a few of the types of agreements that you may encounter.
-
-1. Memorandum of understanding (MOU)
-   - This agreement provides a framework for collaboration. While not legally binding, it establishes a commitment to the partnership and outlines the responsibilities and expectations of each partner [@duru_grant_2021; @national_center_for_education_statistics_memoranda_nodate; @rel_west_data_nodate]. This document may also be synonymous with a letter of intent or letter of support.
-2. Data use agreement (DUA)
-   - A DUA, also sometimes referred to as a data sharing agreement, is a contractual agreement that provides the terms and conditions for working with data that are restricted-use (i.e., contain sensitive or identifiable information), often protected under laws such as HIPAA or FERPA. In addition to describing what data will be shared and a time frame for sharing, DUAs may include information such as the purposes for which the data can be used, data security and safeguarding expectations, and data destruction rules [@feeney_using_2021; @fsu_office_of_research_research_nodate; @geraghty_formalize_2021]. DUAs are commonly written for data sharing when partnering with school districts. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (i.e., a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into an MOU.
-3. Non-disclosure agreement (NDA) 
-    - NDAs, which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_2023] and are legally enforceable agreements.
-    
-Not only do the types of agreements required differ across partners, but how and when those agreements are submitted will also vary. As one example, when working with school districts, some districts may have informal research request systems in place where you simply submit required documentation for approval. Others may have formal systems in place, including their own institutional review process that involves a committee reviewal timeline. This process is often kicked off by submitting a research request application. In addition to providing information about the study, these requests often ask researchers to submit documents such as:
-
-- The researcher's institutional approved IRB documentation
-- Any required agreement forms (e.g., DUA, NDA, confidentiality agreement)
-- Copies of IRB approved data collection instruments
-- Consent/assent forms
-  - This may be a copy of the consent/assent forms submitted to your institutional IRB. However, if you are also requesting school records data, districts may also require an additional consent form to be completed by parents/guardians, specifying the specific records that will be shared, before disclosing education records [@university_of_michigan_guidance_2019]. If your study meets a FERPA exception, it is possible that consent may not be required [@us_department_of_education_privacy_technical_assistance_center_ferpa_2014].
-
-Last, the order of when IRB applications are submitted and when these agreements are made will depend on both the IRBs you working with, as well as your research partners and external collaborators so make sure to start having these discussions early in order to have documents ready in an appropriate timeline.
-
-**Templates and Resources**
-
-|Source|Resource|
-|--------|-----------|
-|Amy O’Hara| Sample text for data use agreements ^[https://admindatahandbook.mit.edu/book/v1.0-rc4/appendix/dua_appendix.pdf]|
-|Florida State University| Example data use agreement ^[https://www.research.fsu.edu/media/1091/hipaadatause.doc]|
-|REL West | Elements of a data sharing agreement/MOU ^[https://ies.ed.gov/ncee/rel/regions/west/relwestFiles/pdf/CRP_Data_Sharing_Agreements_and_MOUs.pdf]|
-|University of North Carolina|Data use agreement decision making flow chart ^[https://research.unc.edu/wp-content/uploads/sites/61/2013/04/CCM3_039360.pdf]|
-|University of Texas at Dallas|Common types of agreements ^[https://research.utdallas.edu/researchers/contracts/types-of-agreements]|
-
-
 ## Quality Assurance {#collect-assurance}
 
-```{r fig10-4, fig.cap="Common education research data collection methods"}
+```{r fig11-3, fig.cap="Common education research data collection methods"}
 
 knitr::include_graphics("img/data_collected7.PNG")
 
 ```
 
-Now that we have a baseline understanding of ethical and legal considerations, we can dive in to protecting data quality during data collection. Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-4)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (think surveys, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
+Education researchers collect original data in many ways (see Figure \@ref(fig:fig11-3)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (think questionnaires, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
 
 The focus on forms is not to discount the importance of data collected through other means such as video or audio recording, where issues such as participant privacy and data security and integrity should absolutely also be considered. However, even with those types of data collection efforts, often teams are ultimately still coding that data using some sort of form (e.g., observation form), further supporting the need to build forms that collect quality data.
 
-When collecting information using forms you can certainly do your best to fix data errors after data collection during a cleaning process. However, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and building data collection tools in a way that produces valid, reliable, and more secure data. When creating your original data collection instruments, there are four ways to collect higher quality data.
+When collecting information using forms you can certainly do your best to fix data errors after data collection during a cleaning process. However, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and building data collection tools in a way that produces valid, reliable, and more secure data. When creating your original data collection instruments, there are five ways to collect higher quality data.
 
 1. Using good questionnaire design principles
 2. Implementing a series of pilot test
 3. Choosing data collection tools that meet your needs
 4. Building your instrument with the end in mind
+5. Ensure compliance
 
 We will discuss each of these phases below. 
 
@@ -238,12 +53,12 @@ If you are collecting data using a standardized assessment, along with a provide
 
 ### Questionnaire design {#collect-design}
 
-In Chapter \@ref(document) we discussed the importance of documenting all instrument items in your data dictionary before creating your data collection instruments. As you develop items to add to your data dictionary, it is vital to consider questionnaire design.
+In Chapter 8 we discussed the importance of documenting all instrument items in your data dictionary before creating your data collection instruments. As you develop items to add to each data dictionary for each original data source, it is vital to consider questionnaire design.
 
-While some instruments (e.g., cognitive assessments) typically have standardized items, other instruments, such as surveys, are often not predefined, allowing researchers freedom in the design of the instrument which can lead to negative effects such as errors, bias, and potential harm [@dime_analytics_data_2021; @northern_illinois_university_data_nodate]. Question ordering, response option ordering, question wording, and more can all impact participant responses. While questionnaire design is actually outside of the scope of this book, I have a few tips to help you collect more valid, reliable, and ethical survey data. In addition to following these tips, make sure to consult a methodologist when designing your questionnaire.
+While some instruments (e.g., cognitive assessments) typically have standardized items, other instruments, such as surveys, are often not predefined, allowing researchers freedom in the design of the instrument which can lead to negative effects such as errors, bias, and potential harm [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. Question ordering, response option ordering, question wording, and more can all impact participant responses. While questionnaire design is actually outside of the scope of this book, I have a few tips to help you collect more valid, reliable, and ethical survey data. In addition to following these tips, make sure to consult a methodologist when designing your questionnaire.
 
 1. Use existing standards if possible
-    - Organizations such as the @national_institutes_of_health_common_nodate and the @national_center_for_education_statistics_common_nodate have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
+    - Organizations such as the @national_institutes_of_health_common_2023 and the @national_center_for_education_statistics_common_2023 have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
         - Reduces bias
         - Allows for harmonization of data across your own research studies and also across the field
             - This allows researchers to draw conclusions using larger samples or by comparing data over time
@@ -271,7 +86,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 	  - Consider including one general free-text field in your survey to allow participants to provide additional information that they feel was not captured elsewhere
 4. Limit the collection of personally identifiable information (PII)
     - Collecting identifiable information is a balancing act between protecting participant confidentiality and collecting the information necessary to implement a study. We often need to collect some identifying information either for the purposes of record linking or for purposes related to study outcomes (e.g., scoring an assessment based on participant's age). 
-    - As a general rule, you only want to collect PII that is absolutely necessary for your project, and no more [@gaddy_principles_2020]. As discussed in Chapter \@ref(rdm), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., birthdate). Before sharing your data, all PII will need to be removed or altered to protect confidentiality.
+    - As a general rule, you only want to collect PII that is absolutely necessary for your project, and no more [@gaddy_principles_2020]. As discussed in Chapter \@ref(hsd), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., date of birth). Before sharing your data, all PII will need to be removed or altered to protect confidentiality.
 
 **Survey Design Resources**
 
@@ -284,13 +99,13 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 
 ### Pilot the instrument
 
-Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig10-5)):
+Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig11-5)):
 
 1. Gathering internal feedback on items
     - As discussed in Chapter \@ref(document), once all items for each instrument have been added to your data dictionary, have your team review the data dictionary and provide feedback
 2. Piloting an instrument for content
     - Once the team has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population and gather feedback
-    - If you are piloting your instrument with a small population (N < 10), and you are either gathering feedback from a checklist or collecting data using the instrument with no intent to disseminate outcomes as research data, then IRB approval will most likely not be required [@cornell_university_irb_2019; @stanford_university_use_nodate]. With that said, you should always consult with your institution's IRB because rules can vary.
+    - If you are piloting your instrument with a small population (N < 10), and you are either gathering feedback from a checklist or collecting data using the instrument with no intent to disseminate outcomes as research data, then IRB approval will most likely not be required [@cornell_university_irb_2019; @stanford_university_use_2023]. With that said, you should always consult with your institution's IRB because rules can vary.
 3. Piloting the instrument for data related issues
     - Once the instrument is created in your chosen data collection tool, share the instrument with your team for review
     - Here we are most interested in whether or not the data we are collecting are accurate, comprehensive, and usable
@@ -298,7 +113,7 @@ Gathering feedback on your instruments is an integral part to the quality assura
 
 Last, as you move through the piloting phases, remember to update any changes not only in your tool but also in your data dictionary and any other relevant documentation.
 	  
-```{r fig10-5, fig.cap="Data collection instrument pilot phases"}
+```{r fig11-4, fig.cap="Data collection instrument pilot phases"}
 
 knitr::include_graphics("img/pilot2.PNG")
 
@@ -307,7 +122,7 @@ knitr::include_graphics("img/pilot2.PNG")
 
 ### Choose quality data collection tools {#collect-tools}
 
-Once content piloting is completed, teams should be ready to begin building their instruments in their data collection tools (see Figure \@ref(fig:fig10-4)). Research teams may be restricted in the tools they use to collect their data for a variety of reasons including limited resources, research design, the population being studied, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, pick a tool that meets the various needs of your project while also providing data quality and security controls. Things to consider when choosing a data collection tool are:
+Once content piloting is completed, teams should be ready to begin building their instruments in their data collection tools (see Figure \@ref(fig:fig11-3)). Research teams may be restricted in the tools they use to collect their data for a variety of reasons including limited resources, research design, the population being studied, sensitivity levels of data, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, pick a tool that meets the various needs of your project while also providing data quality and security controls. Things to consider when choosing a data collection tool are:
 
 1. Pick the tool that meets the needs of your project
     - Is crowdsourcing required? 
@@ -317,8 +132,8 @@ Once content piloting is completed, teams should be ready to begin building thei
     - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
     - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, an alert system for ecological momentary assessments, options to embed data, options to calculate scores in the tool)?
 1. Compliance and security
-    - If you collect identifiable data, is the tool HIPAA compliant? FERPA compliant? (see Chapter \@ref(storage) to learn more about data classification levels)
-    - Is the tool approved by your institution?
+    - Consider the classification level of each data source (See Chapter \@ref(hsd))
+      - Which tools are approved by your institution to protect the sensitivity level of your data?
     - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
 1. Training needed
     - Is any additional team training needed to allow your team to use and/or build instruments in the tool?
@@ -330,9 +145,9 @@ Once content piloting is completed, teams should be ready to begin building thei
     - Does the tool have version control?
     - Does the tool have features to deal with fraud/bots?
 
-While there are a variety of tool options, in a nutshell when it comes to data collected via forms, we are collecting data in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
+While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_nodate;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_nodate].
 
-```{r fig10-6, fig.cap="Comparison of data collection tool benefits"}
+```{r fig11-5, fig.cap="Comparison of data collection tool benefits"}
 
 knitr::include_graphics("img/collect_benefits2.PNG")
 
@@ -404,7 +219,7 @@ However, if you are building your instrument manually, adhering to the following
     - Are all response options accounted for and coded as they should be?
     - Is skip logic shown as expected?
 
-Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig10-5)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actively try to break things [@kopper_questionnaire_2020]. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If there are problems with the tool, now is the time to find out. 
+Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig11-5)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actively try to break things [@kopper_questionnaire_2020]. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If there are problems with the tool, now is the time to find out. 
 
 After sample responses are collected from team members, export the sample data using your chosen data capture process (see Chapter \@ref(capture)) and review the data for the following:
 
@@ -433,11 +248,11 @@ There are many situations where collecting data electronically may not be feasib
       - How to navigate branching logic (e.g., include visual arrows)
 3. Only ask for one piece of information per question to reduce confusion in interpretation
 
-Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig10-5)). Using the feedback collected, edit your tool as needed before sending it out into the field.
+Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig11-4)). Using the feedback collected, edit your tool as needed before sending it out into the field.
 
-Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(#capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig10-7)) [@hart_florida_2018].
+Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(#capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig11-6)) [@hart_florida_2018].
 
-```{r fig10-7, fig.cap="Annotated instrument from The Florida State Twin Registry project", out.width = "80%"}
+```{r fig11-6, fig.cap="Annotated instrument from The Florida State Twin Registry project", out.width = "80%"}
 
 knitr::include_graphics("img/annotated_instrument.PNG")
 
@@ -457,9 +272,9 @@ When building data collection tools, no matter if they are paper or electronic, 
 
 All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers.
 
-Figure \@ref(fig:fig10-8) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge", which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
+Figure \@ref(fig:fig11-7) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge", which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
-```{r fig10-8, fig.cap="Process of creating a de-identified dataset", out.width = "90%"}
+```{r fig11-7, fig.cap="Process of creating a de-identified dataset", out.width = "90%"}
 
 knitr::include_graphics("img/de-identify.PNG")
 
@@ -500,11 +315,53 @@ If you take paper forms into the field consider doing the following to connect y
   - It is important to double and triple check study identifiers against your participant database to make sure the information is correct before removing the label or cover sheet
   - Make a plan for the labels/cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
 
-```{r fig10-9, fig.cap="Example cover sheet for a paper data collection instrument", out.width = "90%"}
+```{r fig11-8, fig.cap="Example cover sheet for a paper data collection instrument", out.width = "90%"}
 
 knitr::include_graphics("img/cover_sheet2.PNG")
 
 ```
+
+### Ensure compliance {#collect-irb}
+
+If you are collecting human subjects data and your study is considered research (see the \@ref(glossary) for definitions of these terms), it is important to consult with your applicable institutional review board (IRB) about their specific requirements before moving forward with any data collection efforts. As discussed in Chapter \@ref(hsd), an IRB is a committee that assesses the ethics and safety of research studies involving human subjects. If an IRB application is required for your project, the review process can take several weeks and it is common for the IRB to request revisions to submission materials. Make sure to review your timeline and give yourself plenty of time to work through this process before you need to begin recruitment and data collection. 
+
+Informed consent agreements, and assents for participants under the age of 18, are commonly required by IRBs for research studies that collect human subjects data. As discussed in Chapter \@ref(hsd), these agreements ensure that participants fully understand what is being asked of them and voluntarily agree to participate in your study. There are several categories of information that will be required for you to include in your consent form (e.g., description of study, types of data being collected, risks and benefits to participant, how participant privacy will be maintained) [@the_turing_way_community_turing_2022]. Make sure to consult with your applicable IRB about what should be included. However, with an increase in federal data sharing requirements, it is very important at this time to also consider how you want to gain consent for public data sharing. @meyer_practical_2018 provides some general best practices to consider when adding language about public data sharing to a consent form.
+
+- Don’t promise to destroy your data (unless your funder/IRB explicitly requires it)
+  - Do incorporate data retention and sharing plans including letting participants know who will have access to their data
+- Don’t promise to not share data
+  - Do get consent to retain and share data (consider adding the specific repository you plan to share your data in) 
+  - Consider offering tiered levels of consent for participants who may not want all of their data publicly shared but will allow some
+- Don’t promise that research analyses of the collected data will be limited to certain topics
+  - Do say that data may be used for future research and share general purposes (e.g., replication, new analyses)
+- Do review the ways you plan to de-identify data but be thoughtful when considering risks of re-identification (ex: small sample size for sub-groups)
+
+There are essentially three different ways you can go about obtaining consent for data sharing [@gilmore_practical_2018]. 
+
+1. Include a line about public data sharing in your consent to participate to research.
+    - With this method, a participant who consents is agreeing to both participate in the research study and have their data shared publicly.
+2. Have participants consent to data sharing at the same time that you provide the research study consent, but provide a separate consent form for the purposes of public data sharing.
+3. Have participants consent to data sharing on a separate consent form, at a later time, after research activities are completed. 
+    - Obtaining consent this way ensures the participants are fully aware of the data collected from them and can make an informed decision about the future of that data. 
+    
+Consult with your IRB to determine the preferred method for obtaining consent for public data sharing.
+
+**Templates and Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Anja Sautmann| Annotated informed consent checklist ^[https://www.povertyactionlab.org/sites/default/files/research-resources/rr_irb_annotated-informed-consent-checklist_0.pdf]|
+|Holly Lane, Wilhemina van Dijk|Example parent consent ^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
+|Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet ^[https://osf.io/3czbx]
+|Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing ^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
+|Melissa Kline Struhl|Lookit consent form template 5^[https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20consent%20form%20template%205.md]|
+|University of Virginia| A collection of consent and assent templates ^[https://research.virginia.edu/irb-sbs/consent-templates]|
+
+> **Note** <br> <br>
+The security of consent and assent forms should be a top priority to your team. Not only does it contain identifiable particiant information, but without this form, you no longer have consent to collect or maintain a participant's data. Whether you collect consent on paper or electronically, make sure you have a clear plan that includes:  
+- Using institution and IRB approved tools to collect consent  
+- If collecting paper consent, being able to clearly read a participant's name and other relevant information collected (e.g., participant printed name or signature alone may not be sufficient due to duplicate names, nicknames used, or illegible handwriting). One option is to pre-print names on forms or have teachers write student names on forms before handing them out  
+- Capturing consent forms and storing them securely and consistently. If forms are collected in the field, make sure they are promptly returned to the office and stored securely.  
 
 ## Quality Control
 
@@ -515,15 +372,15 @@ In addition to implementing quality assurance measures during your planning phas
 3. Tracking data collection daily
 4. Collecting data consistently
 
-We will discuss each of these measures now.
+We will discuss each of these measures in this section.
 
-### Field data management
+### Field data management {#collect-field}
 
 If your data collection efforts include field data collection (e.g., data collectors administering assessments in a school), there are several steps your team can implement that will keep your data more secure in the field, help a project coordinator keep better track of what happens in the field, and will lead to more accurate and usable data. Some best practices for field data collection include the following [@dime_analytics_data_2021]:
 
 - Keep your data secure in the field
   - Make sure all paper forms are kept in a folder (or even a lock box) with you at all times and that they are promptly returned to the office (e.g., not left in a car, not left at someone's home)
-  - Make sure all data collection devices (e.g., phones, tablets) are password protected and never left open and unattended. Keep all identifiable information encrypted on your field devices (i.e., data is encoded so that only those with a password can decipher it). You may also consider remote wiping capabilities on portable devices in the case of loss or theft [@otoole_data_2018]
+  - Make sure all electronic data collection devices (e.g., phones, tablets) are password protected and never left open and unattended. Keep all identifiable information encrypted on your field devices (i.e., data is encoded so that only those with a password can decipher it). You may also consider remote wiping capabilities on portable devices in the case of loss or theft [@otoole_data_2018]
 - Create tracking sheets to use in the field
   - These sheets should include the names and/or identifiers of every participant who data collectors will be collecting data from
   - Next to each participant, include any other relevant information to track such as 
@@ -532,24 +389,24 @@ If your data collection efforts include field data collection (e.g., data collec
     - Date the data was collected
     - As well as a notes section to describe any potential issues with the data (e.g., "Student had to leave the classroom halfway through the assessment - only partially completed")
   - This tracking sheet allows the project coordinator to keep track of what is occurring in the field so that information can be accurately recorded in the participant tracking database and forms can be sent back out for completion as needed
-- Check paper data in the field
+- Check physical data in the field
   - Immediately upon completing a form, have data collectors do spot checks. If any problems are found, follow up with the participant for correction if possible.
     - Check for missing data
     - Check for duplicate answers given
     - Check for answers provided outside of the assigned area (e.g., answers written in the margins)
     - Check calculations and scoring (e.g., basals, ceilings, raw scores)
 - Assign a field supervisor. This person is assigned to:
-  - Do another round of data checks in the field once the data collector returns paper forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
+  - Do another round of data checks in the field once the data collector returns physical forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
   - Ensure that all data and equipment is accounted for and returned to the office
   - Be available for trouble shooting as needed
-- Do another round of paper data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig10-10))
+- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-10))
   - The project coordinator may do this round of checking as they are tracking information in the participant database
   - If any issues are found, note that in the tracking database and send the form back out to the field for correction
-  - If your paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
+  - If paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
 - When a wave of data collection wraps up, collect feedback from data collectors to improve future data collection efforts
   - What went well? What didn't?
 
-```{r fig10-10, fig.cap="A series of spot checks that occur with paper data"}
+```{r fig11-9, fig.cap="A series of spot checks that occur with paper data"}
 
 knitr::include_graphics("img/spot_check.PNG")
 
@@ -563,7 +420,7 @@ knitr::include_graphics("img/spot_check.PNG")
 
 ### Ongoing data checks
 
-If you collect data via a web-based form, you will want to perform frequent data quality checks, similar to the checks you performed during the content and data piloting phase. You will want to check for both programming errors (i.e., skip logic programmed incorrectly) as well as response quality errors (e.g. bots, survey comprehension) [@dime_analytics_data_2021; @gibson_data_2021].
+If you collect data via a web-based form, you will want to perform frequent data quality checks, similar to the checks you performed during the content and data piloting phase. You will want to check for both programming errors (i.e., skip logic programmed incorrectly) as well as response quality errors (e.g., bots, survey comprehension) [@dime_analytics_data_2021; @gibson_data_2021].
 
 - Checks for comprehension
   - Are any questions being misinterpreted?
@@ -583,7 +440,7 @@ Some of these checks can be performed programmatically (i.e., you can write a va
 All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link to the instrument. <br><br>
 If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@arndt_collecting_2022; @simone_how_2019; @teitcher_detecting_2015]:   
 - Not posting the link on social media  
-- Using CAPTCHA verification  
+- Using CAPTCHA verification, or a CAPTCHA alternative, to distinguish human from machine    
 - Using tools that allow you to block suspicious geolocations  
 - Not automating payment upon survey completion    
 - Including open-ended questions   
@@ -598,7 +455,7 @@ Last, check your data thoroughly for bots or fraudulent responses before analyzi
 
 ### Tracking data collection
 
-Throughout data collection your team should be tracking the completion of forms (e.g., consents, paperwork, data collection forms). Your team may designate one person to track data (e.g., the project coordinator), or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more people at each site tracking data as it comes in. 
+Throughout data collection your team should be tracking the completion of forms (e.g., consents, paperwork, data collection forms) in your participant database (see Chapter \@ref(track)). This includes paper forms, electronic forms stored on devices, as well as web-based data coming in. Your team may designate one person to track data (e.g., the project coordinator), or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more people at each site tracking data as it comes in. 
 
 Some tracking best practices include:
 
@@ -635,13 +492,13 @@ Last, collecting data consistently also means measuring things in the same way o
 
 ## Review
 
-Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig10-11) helps us to see when these practices fit into the different phases our workflow.
+Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-10) helps us to see when these practices fit into the different phases our workflow.
 
 Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed. 
 
-```{r fig10-11, fig.cap = "Integrating quality assurance and control into a data collection workflow"}
+```{r fig11-10, fig.cap = "Integrating quality assurance and control into a data collection workflow"}
 
-knitr::include_graphics("img/data_collect_workflow2.PNG")
+knitr::include_graphics("img/data_collect_workflow3.PNG")
 
 ```
 

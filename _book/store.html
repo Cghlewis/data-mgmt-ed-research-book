@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 13 Data Storage and Security | Data Management in Large-Scale Education Research</title>
+<meta name="author" content="Crystal Lewis">
+<meta name="description" content="Figure 13.1: Data storage in the research project life cycle  As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during...">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta property="og:title" content="Chapter 13 Data Storage and Security | Data Management in Large-Scale Education Research">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/book_featured.PNG">
+<meta property="og:description" content="Figure 13.1: Data storage in the research project life cycle  As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 13 Data Storage and Security | Data Management in Large-Scale Education Research">
+<meta name="twitter:description" content="Figure 13.1: Data storage in the research project life cycle  As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during...">
+<meta name="twitter:image" content="/book_featured.PNG">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Data Management in Large-Scale Education Research</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
+<li><a class="" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
+<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
+<li><a class="" href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></li>
+<li><a class="" href="dmp.html"><span class="header-section-number">5</span> Data Management Plan</a></li>
+<li><a class="" href="plan.html"><span class="header-section-number">6</span> Planning Data Management</a></li>
+<li><a class="" href="roles.html"><span class="header-section-number">7</span> Project Roles and Responsibilities</a></li>
+<li><a class="" href="document.html"><span class="header-section-number">8</span> Documentation</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">9</span> Style guide</a></li>
+<li><a class="" href="track.html"><span class="header-section-number">10</span> Data Tracking</a></li>
+<li><a class="" href="collect.html"><span class="header-section-number">11</span> Data Collection</a></li>
+<li><a class="" href="capture.html"><span class="header-section-number">12</span> Data Capture</a></li>
+<li><a class="active" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
+<li><a class="" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
+<li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">16</span> Wrapping It Up</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/Cghlewis/data-mgmt-ed-research-book">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="store" class="section level1" number="13">
+<h1>
+<span class="header-section-number">13</span> Data Storage and Security<a class="anchor" aria-label="anchor" href="#store"><i class="fas fa-link"></i></a>
+</h1>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig13-1"></span>
+<img src="img/lifecycle_store.PNG" alt="Data storage in the research project life cycle" width="80%"><p class="caption">
+Figure 13.1: Data storage in the research project life cycle
+</p>
+</div>
+<p>As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study. Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.</p>
+<ol style="list-style-type: decimal">
+<li>File safety: Ensuring that your files are not lost, corrupted, or edited unexpectedly</li>
+<li>Protecting confidentiality: Making sure that sensitive information is not seen or accessed by unauthorized individuals</li>
+<li>Accessibility and usability of files: Making sure that your team can easily find files and that they are able to understand what the files contain</li>
+</ol>
+<div id="store-plan" class="section level2" number="13.1">
+<h2>
+<span class="header-section-number">13.1</span> Planning short-term data storage<a class="anchor" aria-label="anchor" href="#store-plan"><i class="fas fa-link"></i></a>
+</h2>
+<p>When planning a storage and security process, for data files in particular, it is important to gather all relevant information before making a plan. A typical process for developing a plan may begin like this:</p>
+<ol style="list-style-type: decimal">
+<li>Review what data needs to be stored and how often
+<ul>
+<li>Use documents such as your data sources catalog (see Section <a href="dmp.html#dmp-catalog">5.3</a>) and your data collection timeline (see Section <a href="document.html#document-supplement">8.2.6</a>) to better understand your data storage needs.</li>
+</ul>
+</li>
+<li>Take an inventory of what data storage solutions are available to you
+<ul>
+<li>In terms of electronic data, institutions have different licenses or partnerships with varying software companies and they may approve and not approve different tools (e.g. Dropbox, SharePoint, Box, Google Drive).</li>
+</ul>
+</li>
+<li>Consider compliance
+<ul>
+<li>Make note of any data storage laws, policies, or agreements that your data is subject too (e.g., IRB policies, data sharing agreements, funder policies).</li>
+</ul>
+</li>
+<li>Review classification levels
+<ul>
+<li>Review each data source’s classification level (see <a href="hsd.html#hsd-dcl">4.2</a>) to ensure that you are making decisions that are appropriate for the sensitivity level your data.</li>
+</ul>
+</li>
+</ol>
+<p>This process should help narrow down your data storage solutions for each data source. However, from there a series of decisions need to be made depending on the type of data you are working with, paper (e.g., a paper consent form) or electronic (e.g., a CSV file of questionnaire data, a Microsoft Access participant tracking database). The remainder of this section will review a series of decisions to make for each type of data, as well as provide some best practices along the way.</p>
+<div id="electronic-data-1" class="section level3" number="13.1.1">
+<h3>
+<span class="header-section-number">13.1.1</span> Electronic data<a class="anchor" aria-label="anchor" href="#electronic-data-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Once you have reviewed all relevant information from Section <a href="store.html#store-plan">13.1</a>, several more decisions will need to be made when deciding on and setting up your structures for storing and securely working with electronic data.</p>
+<ol style="list-style-type: decimal">
+<li>Reviewing additional criteria
+<ul>
+<li>After narrowing down storage solutions based on available tools (e.g., cloud storage, institution network drive, personal device) that meet your compliance needs, electronic data storage locations can be further narrowed based on other criteria.
+<ul>
+<li>Versioning availability: While manually versioning is beneficial for major changes, it is very helpful to store your files in a location that has automated versioning as a fail-safe in case of accidents such as unintended overwriting of files.</li>
+<li>Size of the storage space: You will need to make sure your storage contains enough space for your files. Consider how many files you will be storing, as well as the size of your files (e.g., number of rows and columns in each dataset)</li>
+<li>Comfort level of your team: It is helpful to choose a storage space that your team is comfortable working in or you have the ability to train them in how to use it</li>
+<li>Accessibility: Consider the accessibility of your storage location for users (e.g., how staff access the location off-site), as well as the compatibility with different operating system</li>
+<li>Collaboration: Consider how the storage method handles multi-user editing of files</li>
+<li>File sharing: It can be very beneficial to use a storage platform that allows sharing files through links, rather than sharing the actual file. That way if updates are made to the file, those changes are shown in the link, rather than having to send an updated version of the file.</li>
+<li>Costs: Consider if there are any costs associated with any of your potential storage solutions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Choose a final storage location
+<ul>
+<li>While you may be allowed to store files in different locations depending on their sensitivity level, a more effective solution is to create a collaborative research environment <span class="citation">(<a href="references.html#ref-uk_data_service_file_2023" role="doc-biblioref">UK Data Service 2023b</a>)</span>. To do this, designate the highest level of security needed (e.g., an institution network drive), and keep all, or as many as possible, project-related files stored in that same location, assigning access to files and folders as needed. Keeping all files located in a central, consistent location often provides the benefit of data security (e.g., automated backups, not having different versions of documents on different computers) as well as accessibility (i.e., team members can find documents).</li>
+</ul>
+</li>
+<li>Set up your folder structure according to your style guide
+<ul>
+<li>Following your style guide, create a folder structure before team members begin storing files so that they are stored consistently.
+<ul>
+<li>If not already designated in your style guide, note that a best practice, and possibly a mandate from your institution, is to store your participant tracking database separately from your research study data (i.e., a separate folder with restricted access). Not only does the participant tracking database contain PII, but it is the one linking key between your study codes and your participant names and should not be stored alongside your datasets.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Set up additional security systems
+<ul>
+<li>Data backups
+<ul>
+<li>It is important to regularly backup up your data. Consider using something similar to the 3-2-1 rule, keeping three copies of your data, on two different types of storage media, in more than one location <span class="citation">(<a href="references.html#ref-briney_data_2015" role="doc-biblioref">Briney 2015</a>; <a href="references.html#ref-uk_data_service_backup_2023" role="doc-biblioref">UK Data Service 2023a</a>)</span>. Talk with your institution IT department for help with setting up this system.</li>
+</ul>
+</li>
+<li>User access
+<ul>
+<li>Assign user access to folders and files based sensitivity levels, quality control needs, and applicable policies, agreements, or plans.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Designate rules for working securely with data
+<ul>
+<li>Complete required trainings (e.g., CITI trainings, IT training, internal training)</li>
+<li>Consistently name folders and files
+<ul>
+<li>As you begin to save files in your project folder, you will also want to have team members consistently name and version files according to your style guide.</li>
+</ul>
+</li>
+<li>Do not keep copies of files
+<ul>
+<li>Outside of making data backups, do not keep copies of files in different folders. This opens the door for edits being made to one copy and not the other. If this happens, different team members may be working with different versions of files. If you want to have a copy of a file in more than one location (e.g., an SOP in the <code>documentation folder</code> and the <code>project coordination folder</code>), some storage systems allow you to link to documents from other location (i.e., the project coordination folder contains a link to the SOP in the documentation folder).</li>
+</ul>
+</li>
+<li>Secure your devices <span class="citation">(<a href="references.html#ref-otoole_data_2018" role="doc-biblioref">O’Toole et al. 2018</a>; <a href="references.html#ref-princeton_university_best_2023" role="doc-biblioref">Princeton University 2023a</a>)</span>
+<ul>
+<li>Choose safe passwords to protect devices</li>
+<li>Do not leave devices open and unattended when working in the field</li>
+<li>Have protection on your devices (e.g., up to date antivirus software, firewall, encryption)</li>
+<li>When working remotely, use password protected wifi and use secure connections (e.g., VPN, 2FA) when working with data files</li>
+<li>Any files stored on detachable media (e.g., external hard drive, CDs, flash drives) should typically be stored behind two locked doors when not in use</li>
+</ul>
+</li>
+<li>Securely transmit data files
+<ul>
+<li>When transmitting data, either internally or externally, it is important that you use secure methods, especially when data contain PII. As a general rule, no moderate or highly sensitive data should be transmitted via email. Use a secure, institution approved, file transfer method that includes encryption.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="paper-data-1" class="section level3" number="13.1.2">
+<h3>
+<span class="header-section-number">13.1.2</span> Paper data<a class="anchor" aria-label="anchor" href="#paper-data-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Working with paper data involves reviewing another set of decisions while planning for data storage and security.</p>
+<ol style="list-style-type: decimal">
+<li>Choose a final storage location
+<ul>
+<li>Choose your final location based on available tools and applicable laws, policies, and agreements. Most commonly required, is if paper files contain PII, they should be stored behind two locked doors (e.g., a locked file cabinet in a locked storage room).</li>
+</ul>
+</li>
+<li>Consistently structure your file cabinets and folders
+<ul>
+<li>While you may not have a style guide created for organizing physical folders and files, it is still important to consistently structure and name them for clarity. As an example, organize drawers by data source (e.g., student survey), and further organize folders by time period.</li>
+</ul>
+</li>
+<li>Securely work with files
+<ul>
+<li>As discussed in Section <a href="collect.html#collect-field">11.3.1</a> and Section <a href="capture.html#capture-entry">12.2.3</a>, as team members work with files, it is important that staff understand the rules and process for returning files back to the designated storage location when not in use (i.e., no files left on desks).</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div id="planning-long-term-storage" class="section level2" number="13.2">
+<h2>
+<span class="header-section-number">13.2</span> Planning long-term storage<a class="anchor" aria-label="anchor" href="#planning-long-term-storage"><i class="fas fa-link"></i></a>
+</h2>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig13-2"></span>
+<img src="img/lifecycle_store2.PNG" alt="Long-term data storage in the research project life cycle" width="80%"><p class="caption">
+Figure 13.2: Long-term data storage in the research project life cycle
+</p>
+</div>
+<p>In addition to planning for short-term storage, during an active project, you will need to plan for long-term storage and use of files after a project is complete (see Figure <a href="store.html#fig:fig13-2">13.2</a>). While your project may be ending, there are still many reasons to retain your data long-term including internal reuse, opportunities to make corrections (e.g., going back to paper files if an error is found in the data), and data retention requirements from funders and institutions. In this section we will discuss how to care for internal files, while public data sharing and archiving will be discussed in Chapter <a href="share.html#share">15</a>.</p>
+<ol style="list-style-type: decimal">
+<li>First, review your requirements for data retention and destruction
+<ul>
+<li>There may be varying requirements for both data retention and destruction depending on your oversight (e.g., institution requirements, funder requirements, data sharing agreement requirements). It is common for oversight to require that you retain your data anywhere from 3-5 years and there may be specific destruction requirements for data that contain PII. Make sure to review documentation from relevant policies to determine what is required.</li>
+</ul>
+</li>
+<li>Make a plan for retention and destruction
+<ul>
+<li>If you are required to retain your data for a specified number of years, consider how you will continue to store data, and documentation, in a way that meets your original goals (e.g., data safety, protecting confidentiality, accessibility and usability of files).
+<ul>
+<li>Paper
+<ul>
+<li>When it comes to paper data, many institutions have records management departments that can assist you with long-term storage of paper files. These departments typically store your physical files for a designated set of time, as well as assist in destruction of files once that period has ended. Note that you may not want to use this solution until you are certain you will no longer need to easily access your paper files (e.g., for fixing errors, entering any additional information). If destroying paper files on your own (e.g., sometimes it is required to destroy documents containing PII, such as contact lists or classroom rosters, as soon as they are no longer needed), make sure to choose a quality destruction method such as paper shredding.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Electronic
+<ul>
+<li>For electronic data long-term storage, you will want to consider two things, file formats and storage location <span class="citation">(<a href="references.html#ref-briney_data_2015" role="doc-biblioref">Briney 2015</a>)</span>.
+<ul>
+<li>File formats
+<ul>
+<li>First, choose file types that are widely used (i.e., don’t require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete. This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.</li>
+</ul>
+</li>
+<li>Storage location
+<ul>
+<li>Similar to choosing file formats, choose a storage location that is accessible and not at risk of becoming corrupt or obsolete (e.g., think obsolescence of floppy disks). If your short-term storage solution meets these requirements (e.g., your institution network drive), you may not need to do anything different in preparing for long-term storage, but it will be important to continue implementing good practices to keep your data safe (e.g., continuing data backups). When it comes time to destroy data, make sure to permanently delete files, including all backups of files. When deleting PII, this often involves more than just moving files to the trash can on your computer. Work with your institution IT department during this process.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If maintaining your electronic data long-term sounds like too much effort for your team, there are other options. Many universities have institutional repositories that often include services such as data curation and preservation. Additionally, there are several external repositories that offer curation and preservation services where you may be able to deposit your data for long-term storage. It’s possible that depositing your data in one of these two options may also align with publicly sharing your data, which we will review in Chapter <a href="share.html#share">15</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consider how you will share data internally
+<ul>
+<li>Although this may come up prior to the end of the project, it is important to consider where you will store final datasets, how you will notify team members of their availability, and how you will allow team members to access data. An example of this process may look like this:
+<ul>
+<li>Storing all finalized datasets in a “master dataset folder” (see Chapter <a href="clean.html#clean">14</a> for more information)</li>
+<li>Adding descriptions of the finalized datasets to a data inventory (see Section <a href="document.html#document-inventory">8.1.4</a>) that is shared on a team wiki</li>
+<li>Creating a data request process for team members to get primary investigator (PI) approval before accessing data files</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="documenting-and-disseminating-your-plan" class="section level2" number="13.3">
+<h2>
+<span class="header-section-number">13.3</span> Documenting and disseminating your plan<a class="anchor" aria-label="anchor" href="#documenting-and-disseminating-your-plan"><i class="fas fa-link"></i></a>
+</h2>
+<p>Once you make a plan for short and long-term data storage, that plan should be added to all required documentation (e.g., DMP, IRB research protocol, informed consent forms). Once your plan has been approved, it is important to not deviate from that plan unless your revisions have also been approved. This is especially important in the case of informed consents. Once participants have agreed to the consent terms, those terms should be honored.</p>
+<p>Make sure to assign responsibilities to team members for both short and long-term storage tasks such as creating directory structures, adding and removing storage access, overseeing data backups, monitoring training compliance, and facilitating internal data requests. Without oversight of these processes, it is easy for errors to occur.</p>
+<p>Last, all information needs to be disseminated to team members in the form of documentation and training to ensure fidelity to your data storage and security plan. As discussed in Chapters <a href="roles.html#roles">7</a> and <a href="document.html#document">8</a>, while team members can review data management plans and research protocols, this information may be more clearly disseminated, with full details outlined, in documents such as team data security policies and team or project roles and responsibilities documents. In addition, make sure to embed this information into any team or project related staff training.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="capture.html"><span class="header-section-number">12</span> Data Capture</a></div>
+<div class="next"><a href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#store"><span class="header-section-number">13</span> Data Storage and Security</a></li>
+<li>
+<a class="nav-link" href="#store-plan"><span class="header-section-number">13.1</span> Planning short-term data storage</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#electronic-data-1"><span class="header-section-number">13.1.1</span> Electronic data</a></li>
+<li><a class="nav-link" href="#paper-data-1"><span class="header-section-number">13.1.2</span> Paper data</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#planning-long-term-storage"><span class="header-section-number">13.2</span> Planning long-term storage</a></li>
+<li><a class="nav-link" href="#documenting-and-disseminating-your-plan"><span class="header-section-number">13.3</span> Documenting and disseminating your plan</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/blob/master/12-data-storage.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/edit/master/12-data-storage.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-08.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -45,7 +45,7 @@ The size of a research team and the roles that exist are dependent on factors su
 
 ## Assigning roles and responsibilities
 
-Early on in a project you may start to generally assign roles in your data management plan. Remember if you submitted a DMP, you are often required to state who will be responsible for activities such as data integrity and security. Then, once your project is funded and you start to have a better idea of your goals and your budget, you can flesh out the details of your roles. During the planning phase, using tools such as your planning checklists will help you think through more specific responsibilities and tasks associated with each role. When assigning roles and responsibilities, there are several factors to consider [@valentine_best_nodate].
+Early on in a project you may start to generally assign roles in your data management plan. Remember if you submitted a DMP, you are often required to state who will be responsible for activities such as data integrity and security. Then, once your project is funded and you start to have a better idea of your goals and your budget, you can flesh out the details of your roles. During the planning phase, using tools such as your planning checklists will help you think through more specific responsibilities and tasks associated with each role. When assigning roles and responsibilities, there are several factors to consider [@valentine_best_2011].
 
 1. Required skillset
 
@@ -101,6 +101,7 @@ Since there is no one template for creating a roles and responsibility document,
 - Links to related standard operating procedures (e.g., for building a participant tracking database you may link to the specific SOP that lays out steps for building the tool)
 - Names of other staff members (if any) that assist with or also contribute to each responsibility
 - Timing of each responsibility (e.g., weekly, ongoing, the month of February)
+- Name of team members who will take on responsibilities in case of a team member's absence
 
 ## Data management role
 
