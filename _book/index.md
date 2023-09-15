@@ -1,7 +1,7 @@
 ---
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-09-08"
+date: "2023-09-15"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -70,7 +70,7 @@ This book will also not talk about analysis or preparing data for analysis throu
 
 ## Who this book is for
 
-This book is for anyone involved in a research study involving original data collection. In particular, this book focuses on quantitative, observational data collection, although I do think that many of the practices covered can also apply to qualitative data collection as well. This book also applies to any team member, ranging from PIs, to data managers, to project staff, to students, to contractual data collectors. The contents of this book are useful for anyone who may have a part in planning, collecting, or organizing research study data.
+This book is for anyone involved in a research study involving original data collection. In particular, this book focuses on quantitative data, typically collected from human participants, although I do think that many of the practices covered can also apply to other types of data as well. This book also applies to any team member, ranging from PIs, to data managers, to project staff, to students, to contractual data collectors. The contents of this book are useful for anyone who may have a part in planning, collecting, or organizing research study data.
 
 ## Final note
 

@@ -48,11 +48,11 @@ If this is your first time working through this book, these checklists are a gre
 
 ### Decision-making process
 
-This decision-making process is personalized. Borghi and Van Gulick [@borghi_promoting_2022] view this process as a series of steps that a research team chooses, out of a the many possibilities not chosen. Maybe you won’t always be able to implement the “best practices” but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and rules and regulations.
+This decision-making process is personalized. Borghi and Van Gulick [@borghi_promoting_2022] view this process as a series of steps that a research team chooses, out of all the many possibilities not chosen. Maybe you won’t always be able to implement the “best practices” but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and rules and regulations.
 
 For example, one team may collect survey data on paper because their participants are young children, hand enter it into Microsoft Excel because that is the only tool they have access to, and double enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand enter the data into FileMaker because that is the tool their team is familiar with, and double enter 100% because they have the budget and capacity to do that.
 
-Figure \@ref(fig:fig6-2) is a very simplified example of the decision making process, based on the [@borghi_promoting_2022] flow chart. Of course in real life we are often choosing between many more than just two options!
+Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making process, based on the [@borghi_promoting_2022] flow chart. Of course, in real life we are often choosing between many more than just two options!
 
 <div class="figure" style="text-align: center">
 <img src="img/decision-diagram.PNG" alt="A simplified decision-making process" width="60%" />

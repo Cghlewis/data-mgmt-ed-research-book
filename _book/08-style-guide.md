@@ -217,7 +217,7 @@ This style guide will be a necessary document to have before you start to create
 - Do not start a variable name with a number. This is not allowed in many statistical programs.
 - All variable names should be unique
   - This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project. The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).
-  - So, for example if you collect student gender from a survey and you also collect student gender from school records, differentiate between the two (`s_gender` and `d_gender`)
+  - So, for example if you collect student gender from a survey and you also collect student gender from district student records, differentiate between the two (`s_gender` and `d_gender`)
 - If you substantively change an item (substantive wording OR response options change) after at least one round of data has been collected, version your variable names in order to reduce errors in interpretation.
   - For example revised `anx1` becomes `anx1_v2`
 
@@ -230,29 +230,35 @@ This style guide will be a necessary document to have before you start to create
 - If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.
 - Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
   - Snake case (scale_sum) – preferred method for variable names
+    - While pascal case and camel case are also options, the use of underscores helps more clearly delineate relevant pieces of metadata in your variable names
   - Kebab case (scale-sum) – don’t use for variable names
   - Train case (Scale-Sum) – don’t use for variable names
+- If a variable includes a "select all" option, start all associated variables with the same prefix (`cert_elem`, `cert_secondary`, `cert_leader`, `cert_other`). Again this allows you to easily see grouped items, as well as easily programatically manipulate those items as needed.
 - Consider denoting reverse coding in the variable name to reduce confusion (`anx1_r`)
 - Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier [@riederer_column_2020].
   - mean = mean
   - scaled score = ss
   - percentile rank = pr
-- Include an indication of the measure in the variable name (for example as a prefix) so you always know what instrument the item came from. This can also help with the unique variable name requirement above.
+- Include an indication of the instrument in the variable name. This can also help with the unique variable name requirement above.
+  - t = teacher self-report
   - s = student self-report
-  - t = teach report on students
-  - `s_anx1`, `t_conf2`
+  - tr = teacher rating of student
+  - d = district student records
+  - `t_conf1`, `s_anx2`, `tr_relate4`, `d_gender`
 
 **Example variable naming style guide**
 
     1. Use snake case
     2. Keep names under 32 characters
     3. Use meaningful variable names
-    4. If part of a scale, use scale abbreviation plus item number from the scale (not order number)
-    5. Include an indication of the measure as a prefix in the variable name
-      - student self-report survey = s_
-      - teacher self-report survey = t_
-      - district student level data = d_
-    6. Denote reverse coded variables using suffix `_r`
+    4. Use unique variable names within and across data sources
+    5. If part of a scale, use scale abbreviation plus item number from the scale
+    6. Include an indication of the instrument as a prefix in the variable name
+      - student self-report = s_
+      - teacher self-report = t_
+      - parent report on students = p_
+      - district student records = d_
+    7. Denote reverse coded variables using suffix `_r`
     
 **Example variable names created using a style guide**
 
@@ -260,40 +266,33 @@ This style guide will be a necessary document to have before you start to create
     s_anx1_r
     s_gender
     d_gender
+    t_gender
     t_stress5
+    p_relate
 
 ### Time
 
-Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well.
+Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well. Recall from Chapter \@ref(structure), there are two ways you can link data over time, in wide format or long format. 
 
-Depending on how you plan to combine your data over time, there are two different ways to account for time.
+1. If combining data over time in long format, no changes need to be made to your variable names. Variable names should be identically named over time. To account for a time component, you will simply include a new variable (e.g., `time`, `year`, `wave`) and add the appropriate value for each row.
 
-1. Concatenate time to your variable names. You do this if you plan to merge your data across time in wide format (see Section \@ref(#structure-datastructure)). The reason you need to concatenate time to your variable names here is because your variable names will repeat (`anx1` in wave 1, `anx1` in wave 2). And remember from our guidelines above, all variable names in a dataset **must** be unique. In order to create unique variable names and correctly interpret when items were given, we add time to our variable names. The only variables you will not assign time to are your linking variables (such as student unique identifier, teacher unique identifier, and so on). Those variables need to stay identical for linking purposes and will only appear once in your data after merging.
-2.  Create time variables and add them to your data. You do this if you plan to append your data over time in long format (see Section \@ref(#structure-datastructure)). Appending your data in long format requires no additional work in terms of variable naming. As discussed in Section \@ref(#structure-datastructure), you actually want your variables to be identically formatted and named across time when appending. So here, in order to differentiate when items were asked, we add a new variable such as `time` or `wave` and add the appropriate value for each row.
+2. If combining data in wide format, you will need to concatenate time to all of your time varying variable names (i.e., not your subject unique identifier). This removes the problem of having non-unique variable names (e.g., `anx1` in wave 1 and `anx1` in wave 2) and allows you to interpret when each variable was collected. How you concatenate time to your variable names is up to you. Just make sure to continue adding time consistently to all variable names (i.e., same location, same format) and remember to follow variable naming best practices (e.g., never start a variable name with a number). 
 
-During an active project, it is actually best to not combine data and to store all datasets as distinct files until you are either ready to internally use your data or you are ready to publicly share your data (during the preparing for archiving phase). At that time you can make a decision on the best way to combine your data (if you need to combine them at all), and programatically add time to variable names (if necessary) [@reynolds_basics_2022]. Waiting to combine data has benefits:
+Before adding a time component, either as a new variable or as part of a variable name, it's important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., `wave 1` = fall of the study year, `wave 2` = spring of the study year, `wave 3` = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., `pre`/`post`,`fall 22`/`spring 23`, `2022`/`2023`). Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
 
-1. Having variables named consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave.
+<div class="figure" style="text-align: center">
+<img src="img/time_component.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%" />
+<p class="caption">(\#fig:fig9-3)Examples of how time might be added to your data based on a variety of scenarios</p>
+</div>
+
+With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period. There are a few benefits of this method:
+
+1. Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave [@reynolds_basics_2022].
 2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
 
-#### Time in variable names
+So with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.
 
-While combining your datasets across time should not happen early on in your project, it is helpful to consider early on how you *might* combine data in the future. If you do plan to potentially merge data in a wide format, it can be helpful to go ahead and plan your rule for adding time to variable names, and add that rule to your style guide. Just be abundantly clear in your guide that this time component should only be added when datasets are combined.
-
-There is no right or wrong way to assign time in your variable names necessarily. Just make sure you continue to follow the rules from above (such as never starting a variable name with a number). Below are some options for adding time to a sample variable, `t_stress1`.
-
-- As a prefix or suffix with a generic abbreviation, such as *w1* for "wave 1", added with a delimiter `_`
-  - `w1_t_stress1` or `t_stress_w1`
-- As a prefix or suffix with a meaningful abbreviation, such as *f21* for "fall 2021", added with a delimiter (`_`)
-  - `f21_t_stress1` or `t_stress1_f21`
-- One of the above options with no delimiter
-  - `w1t_stress1` or `t_stress1w1`
-- As a number embedded into your variable at a certain location, for instance, after an existing prefix such as *t* which now represents "teacher survey" rather than "time"
-  - `t1_stress1`, `t2_stress1`
-
-While the first and second method do add additional characters to your variable name, there are also benefits to adding time in these ways. First, it can be easier to visually spot and interpret the time component when it is labelled clearly *and* separated with a delimiter. Second, adding time as a prefix or suffix rather than embedding it within your variable allows you to more easily, programmatically, manipulate the time component of your variable. This gives you more flexibility in working with your data, especially in selecting variables and restructuring your datasets. Most importantly though, add this time component consistently to all variables (e.g., don't sometimes have time at the end of a variable name and other times in the middle of a variable name).
-
-## Value Coding
+## Value coding
 
 In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., "no" = *1*) or it may be character categorical values with associated labels (e.g., "no" = 'n'). 
 
@@ -317,7 +316,7 @@ First, if you are using a pre-existing measure, assign values and labels in the 
   - Don't: Assign "Strongly Disagree" = 1; "Disagree" = 3; "Agree" = 4; "Strongly Agree" = 2
     - The exception here is if a pre-existing measure tells you to code variables in a different way
     
-## Missing Value Coding {#style-missing}
+## Missing value coding {#style-missing}
 
 There is little agreement about how missing data should be coded [@white_nine_2013]. There are essentially two options.
 
@@ -333,7 +332,7 @@ There is little agreement about how missing data should be coded [@white_nine_20
 
 Whichever method you choose, ultimately just make sure to adhere to these guidelines:
 
-- If you decide to fill with defined missing values, use values that match your variable type (e.g., numeric missing values for numeric variables) [@tourangeau_early_2015; @icpsr_guide_nodate]
+- If you decide to fill with defined missing values, use values that match your variable type (e.g., numeric missing values for numeric variables) [@tourangeau_early_2015; @icpsr_guide_2020]
   - I will say that there is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character (or string) column. If you do not care about the different types of missingness, you could easily then choose to change all missing values to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.
 - If you use numeric values, use extreme values that do not actually occur in your data
 - Use your values consistently within and across variables
@@ -341,12 +340,12 @@ Whichever method you choose, ultimately just make sure to adhere to these guidel
 
 <div class="figure" style="text-align: center">
 <img src="img/missing.PNG" alt="Missing values assigned in the ECLS-K:2011 data file" width="100%" />
-<p class="caption">(\#fig:fig9-3)Missing values assigned in the ECLS-K:2011 data file</p>
+<p class="caption">(\#fig:fig9-4)Missing values assigned in the ECLS-K:2011 data file</p>
 </div>
 
 ## Coding
 
-If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to google existing style guides in that language.
+If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.
 
 - Consider building and implementing coding templates [@daskalova_coding_nodate; @farewell_my_2018] 
   - Templates can standardize the format of syntax files (such as using standard headers to break up code)

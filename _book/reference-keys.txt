@@ -2,7 +2,7 @@ fig:fig2-1
 fig:fig3-1
 fig:fig3-2
 fig:fig3-3
-fig:fig2-4
+fig:fig3-4
 fig:fig3-5
 fig:fig3-6
 fig:fig3-7
@@ -55,6 +55,7 @@ fig:fig8-27
 fig:fig9-1
 fig:fig9-2
 fig:fig9-3
+fig:fig9-4
 fig:fig10-1
 fig:fig10-2
 fig:fig10-3
@@ -85,6 +86,7 @@ fig:fig12-6
 fig:fig12-7
 fig:fig13-1
 fig:fig13-2
+fig:fig13-3
 preamble
 introduction
 why-this-book
@@ -120,7 +122,7 @@ structure-datastructure
 wide-format
 long-format
 choosing-wide-vs-long
-file-types
+structure-format
 hsd
 identifiability-of-a-dataset
 hsd-dcl
@@ -157,7 +159,6 @@ project-team-members
 other-roles
 assigning-roles-and-responsibilities
 roledoc
-data-management-role
 document
 team-level
 lab-manual
@@ -193,7 +194,6 @@ directory-structure
 file-naming
 style-varname
 time
-time-in-variable-names
 value-coding
 style-missing
 coding

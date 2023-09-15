@@ -22,7 +22,7 @@ Typically, a data management plan is a supplemental 2-5 page document, submitted
 
 ### What to include?
 
-What to include in a DMP varies some across funding agencies and the landscape of requirements is currently evolving. You should check each funding agency’s site for their specific DMP requirements when submitting a proposal. With that said there are generally 10 common categories covered in a data management plan [@center_for_open_science_creating_2023; @gonzales_ten_2022; @icpsr_guide_nodate; @michener_ten_2015] which we will review below.
+What to include in a DMP varies some across funding agencies and the landscape of requirements is currently evolving. You should check each funding agency’s site for their specific DMP requirements when submitting a proposal. With that said there are generally 10 common categories covered in a data management plan [@center_for_open_science_creating_2023; @gonzales_ten_2022; @icpsr_guide_2020; @michener_ten_2015] which we will review below.
 
 1. Description of data to be shared (See Chapters \@ref(collect), \@ref(capture), \@ref(clean), \@ref(share))
     - What is the source of data? (e.g., surveys, assessments, observations, extant data)
@@ -74,7 +74,7 @@ Again, the specifics of what should be included in each category will vary by fu
   
 ## Creating a data sources catalog {#dmp-catalog}
 
-In preparation for writing your DMP, it can be helpful to create a data sources catalog that allows you to visually see what data sources you are collecting, what the sensitivity level of those sources are, and how they will be collected, managed, stored, and shared [@filip_san_2023]. While this catalog will not cover all the questions required in a DMP, this table allows you to strategically plan the details for how you will manage and share data for each source. This type of data inventory cannot only help you write your DMP, but can also serve as an excellent planning or discussion tool throughout your entire project.
+In preparation for writing your DMP, it can be helpful to create a data sources catalog that allows you to visually see what data sources you are collecting, what the sensitivity level of those sources are, and how they will be collected, managed, stored, and shared [@filip_san_2023]. While this catalog will not cover all the questions required in a DMP, this table allows you to strategically plan the details for how you will manage and share data for each source. This type of data inventory cannot only help you write your DMP, but can also serve as an excellent planning or discussion tool throughout your entire project. Ultimately, each data source in your catalog, multiplied by the number of cohorts and/or waves it is collected, will give you an approximate estimate of your final number of distinct data files at the end of your study.
 
 Some fields you can add to this catalog include:
 
@@ -83,8 +83,8 @@ Some fields you can add to this catalog include:
 - Source (who completes the instrument)
 - Measures included in the instrument
 - Collection and capture method
-- Time periods collected
-- Planned number and size of data files for each source (e.g., 2 student assessment files (T1, T2), with ~500 rows per file)
+- Data collection waves
+- Planned number and size of data files for each source (e.g., two student assessment files (T1, T2), with ~500 rows per file)
 - PII included
 - Sensitivity level based on your institution's policies
 - Data storage and access plan
@@ -92,7 +92,7 @@ Some fields you can add to this catalog include:
 - How confidentiality will be secured
 - Data sharing method
 
-Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a hypothetical study.
+Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a hypothetical study. In this hypothetical example, if we only collected data for one year, we would end up with six datasets at the end of our study, three teacher-level files and three student-level files. In chapter \@ref(share), we will discuss whether to share these as unique datasets, or larger merged files combined by unit of analysis (e.g., student-level merged file, teacher-level merged file).
 
 <div class="figure" style="text-align: center">
 <img src="img/data_catalog.PNG" alt="Example data sources catalog" width="100%" />

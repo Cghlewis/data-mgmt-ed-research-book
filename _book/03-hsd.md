@@ -16,7 +16,7 @@ A term often used when discussing identifiable information is personally identif
 When collecting data and creating datasets, you will be working with one or more of these four types of data files.
 
 1. Identifiable: Data includes personally identifiable information. It is common for your raw research study data to be identifiable.
-2. Coded: In this type of data file, PII has been removed or distorted and names are replaced with a code. The only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data (see Chapter \@ref(track)). Coded data is typically the type of file you create after cleaning your raw study data.
+2. Coded: In this type of data file, PII has been removed or distorted and names are replaced with a code (i.e., a unique participant identifier). The only way to link the data back to an individual is through that code. The identifying code file (linking key) is stored separate from the research data (see Chapter \@ref(track)). Coded data is typically the type of file you create after cleaning your raw study data.
 3. De-identified: In this type of file, identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists). This is typically what you create when publicly sharing your research study data.
 4. Anonymous: In an anonymous dataset, no identifying information is ever collected and so there should be little to no risk of identifying a specific participant.
 
@@ -48,15 +48,15 @@ When collecting identifiable data, there are laws, policies, departments, and ag
 
 1. IRB: An Institutional Review Board (IRB) is a formal organization designated to review and monitor human participant research and ensure that the welfare, rights, and privacy of research participants are maintained throughout the project [@oregon_state_university_what_2012]. In particular the IRB is concerned with three ethical principles established in the Belmont Report [@the_national_commission_for_the_protection_of_human_subjects_of_biomedical_and_behavioral_research_belmont_1979]; respect for persons (i.e., protecting the autonomy of participants), beneficence (i.e., minimizing harm and maximizing good), and justice (i.e., fair distribution of burdens and benefits)[@duru_institutional_2023; @gaddy_principles_2020]. When conducting human subjects research, it is important to review your local IRB's policies and procedures to determine if your study requires IRB approval.
 
-2. Information Technology Department: These institutional departments often vet data collection, transfer, and storage tools and are the authority on what tools are approved for research use. They may also be your source for determining data classification levels for data security.
+2. IT department: Institutional information technology (IT) departments often vet data collection, transfer, and storage tools and are the authority on what tools are approved for research use. They may also be your source for determining classification levels for data security.
 
 ### Agreements
 
-1. Informed Consent/Assent: Consent involves informing a participant of what data will be collected for your research study and how it will be handled and used, as well as obtaining a participant's voluntary agreement to participate in your study. If your study involves participants under the age of 18, you may also be required to obtain a participant assent form, in addition to a parent/guardian consent form.
+1. Informed consent/assent: Consent involves informing a participant of what data will be collected for your research study and how it will be handled and used, as well as obtaining a participant's voluntary agreement to participate in your study. If your study involves participants under the age of 18, you may also be required to obtain a participant assent form, in addition to a parent/guardian consent form.
 
 2. DUA: A data use agreement (DUA), also sometimes referred to as a data sharing agreement (DSA), is a contractual agreement that provides the terms and conditions for sharing data. DUAs are commonly written for data sharing when partnering with school districts or state agencies. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (i.e., a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into other documents such as a Memorandum of Understanding (MOU).
 
-3. NDA: Non-disclosure agreement (NDAs), which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_2023] and are legally enforceable agreements.
+3. NDA: Non-disclosure agreements (NDAs), which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_2023] and are legally enforceable agreements.
 
 ### Funders
 
@@ -69,9 +69,9 @@ Throughout the remaining chapters of this book we will review ways to keep ident
 
 1. In most situations it will be important to get consent to collect identifiers. Consult with your local IRB to determine what is required. See Section \@ref(collect-irb)
 1. Collect as few identifiers as possible. Only collect what is necessary. See Section \@ref(collect-design) for more information.
-1. Follow rules laid out in applicable laws (e.g., FERPA), policies (e.g., data classification levels), and agreements (e.g., informed consent, district data sharing agreement) when collecting, storing, and sharing data. 
+1. Follow rules laid out in applicable laws, policies, and agreements when collecting, storing, and sharing data. This includes, but is not limited to, using approved tools for data collection, capture, and storage, assigning appropriate data access levels, and transmitting data using approved methods. See Chapters \@ref(collect), \@ref(capture), \@ref(store) for more information.
 1. Remove names in data and replace them with codes (i.e., unique study identifiers). See Chapter \@ref(track) for more information.
 1. Fully de-identify data before data sharing. See Chapter \@ref(clean) for more information.
-1. Use data sharing agreements as needed when sharing data. See Chapter \@ref(share) for more information.
+1. Use data sharing agreements and controlled-access as needed when publicly sharing data. See Chapter \@ref(share) for more information.
 
 
