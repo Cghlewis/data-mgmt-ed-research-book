@@ -83,7 +83,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 4. All cell values should be explicit. This means all cells that are not missing values should be filled in with a physical value. 
     - Consider why a cell value is empty
       - If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Section \@ref(style-missing) for ideas on coding missing values.
-      - If a cell is left empty because it is "implied" to be the same value as above, the cells should be filled with the actual data
+      - If a cell is left empty because it is implied to be the same value as above, the cells should be filled with the actual data
       - If an empty cell is implied to be 0, fill the cells with an actual 0
 
 <div class="figure" style="text-align: center">
@@ -114,7 +114,7 @@ In database terminology, each dataset we have is considered a "table". Each tabl
 Let's take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students, a survey and an assessment, in one time period. Figure \@ref(fig:fig3-8) shows what variables were collected from each instrument and how each table can be linked together through a primary key (denoted by rectangles).
 
 <div class="figure" style="text-align: center">
-<img src="img/link0v02.PNG" alt="Linking data through primary keys" width="100%" />
+<img src="img/link0v02.PNG" alt="Linking data through primary keys" width="70%" />
 <p class="caption">(\#fig:fig3-8)Linking data through primary keys</p>
 </div>
 

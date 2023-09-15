@@ -67,7 +67,7 @@ Let's compare a very simple example of building a tracking database using a rela
 
 #### Relational model
 
-In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
 <div class="figure" style="text-align: center">
 <img src="img/participant1v01.PNG" alt="Participant database built using a relational model" width="100%" />
@@ -106,7 +106,7 @@ Depending on the design of your study and the structure of the database model, w
 
 #### Non-relational model
 
-Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig10-4)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.
+Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig10-4)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors [@borer_simple_2009].
 
 <div class="figure" style="text-align: center">
 <img src="img/participant2v02.PNG" alt="Participant database built in using a non-relational model" width="100%" />
@@ -137,10 +137,10 @@ Once you make decisions regarding these questions, you can begin to design your 
 I have designed this database model in this way:
 
 1. I have four tables total
-    - Two tables (the teacher table and school table) have information that should be fairly constant based on my project assumptions (name, email, consent, one time payments sent out)
+    - Two tables (the teacher table and school table) have information that should be fairly constant based on my project assumptions (name, email, consent, one time documents received)
       - If at any time this information changes (e.g., withdraw status, new last name, new contact person), I would update that information in the appropriate table and make a note of when and why the change occurred in my `notes` field
     - Two tables are for my longitudinal information
-      - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. In this example, I assume that grade level may change, maybe because my data collection waves occur across school years and teachers may move around.
+      - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years and assume it's possible that teachers may switch grade levels. 
 2. I have connected my tables through primary and foreign keys (`tch_id` and `sch_id`)
 
 The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-6)).

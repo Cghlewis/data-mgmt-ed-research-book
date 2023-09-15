@@ -179,7 +179,7 @@ Figure 10.2: Example timeline for constructing and using a tracking database
 <h4>
 <span class="header-section-number">10.2.1.1</span> Relational model<a class="anchor" aria-label="anchor" href="#relational-model"><i class="fas fa-link"></i></a>
 </h4>
-<p>In Figure <a href="track.html#fig:fig10-3">10.3</a> we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these participants. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.</p>
+<p>In Figure <a href="track.html#fig:fig10-3">10.3</a> we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-3"></span>
 <img src="img/participant1v01.PNG" alt="Participant database built using a relational model" width="100%"><p class="caption">
@@ -247,7 +247,7 @@ If we want to see a table with both student and teacher information, we can simp
 <h4>
 <span class="header-section-number">10.2.1.2</span> Non-relational model<a class="anchor" aria-label="anchor" href="#non-relational-model"><i class="fas fa-link"></i></a>
 </h4>
-<p>Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure <a href="track.html#fig:fig10-4">10.4</a>). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors.</p>
+<p>Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure <a href="track.html#fig:fig10-4">10.4</a>). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-4"></span>
 <img src="img/participant2v02.PNG" alt="Participant database built in using a non-relational model" width="100%"><p class="caption">
@@ -287,14 +287,14 @@ Figure 10.5: Example participant database model
 <ol style="list-style-type: decimal">
 <li>I have four tables total
 <ul>
-<li>Two tables (the teacher table and school table) have information that should be fairly constant based on my project assumptions (name, email, consent, one time payments sent out)
+<li>Two tables (the teacher table and school table) have information that should be fairly constant based on my project assumptions (name, email, consent, one time documents received)
 <ul>
 <li>If at any time this information changes (e.g., withdraw status, new last name, new contact person), I would update that information in the appropriate table and make a note of when and why the change occurred in my <code>notes</code> field</li>
 </ul>
 </li>
 <li>Two tables are for my longitudinal information
 <ul>
-<li>This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. In this example, I assume that grade level may change, maybe because my data collection waves occur across school years and teachers may move around.</li>
+<li>This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years and assume it’s possible that teachers may switch grade levels.</li>
 </ul>
 </li>
 </ul>

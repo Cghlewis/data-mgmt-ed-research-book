@@ -171,7 +171,7 @@ It is common in education research to also capture external supplemental data so
 
 ### Non-public data sources
 
-Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-5)) which may also include one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
+Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-5)). This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
 
 ```{r fig12-5, fig.cap="Example non-public confidential data request process"}
 
