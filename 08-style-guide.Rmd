@@ -284,7 +284,7 @@ Before moving on there is one last consideration for variable names. If your dat
 
 2. If combining data in wide format, you will need to concatenate time to all of your time varying variable names (i.e., not your subject unique identifier). This removes the problem of having non-unique variable names (e.g., `anx1` in wave 1 and `anx1` in wave 2) and allows you to interpret when each variable was collected. How you concatenate time to your variable names is up to you. Just make sure to continue adding time consistently to all variable names (i.e., same location, same format) and remember to follow variable naming best practices (e.g., never start a variable name with a number). 
 
-Before adding a time component, either as a new variable or as part of a variable name, it's important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., `wave 1` = fall of the study year, `wave 2` = spring of the study year, `wave 3` = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., `pre`/`post`,`fall 22`/`spring 23`, `2022`/`2023`). Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
+Before adding a time component, either as a new variable or as part of a variable name, it's important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., `wave 1` = fall of the study year, `wave 2` = spring of the study year, `wave 3` = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., `pre`/`post`, `fall22`/`spring23`, `2022`/`2023`). Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
 
 ```{r fig9-3, fig.cap="Examples of how time might be added to your data based on a variety of scenarios"}
 
@@ -297,57 +297,62 @@ With all of that said, during an active project, it is actually best to not add 
 1. Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave [@reynolds_basics_2022].
 2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
 
-So with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.
+So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.
 
 ## Value coding
 
-In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., "no" = *1*) or it may be character categorical values with associated labels (e.g., "no" = 'n'). 
+Oftentimes in education research we codify categorical values. This coding of values helps in both data entry, data scoring, and data analysis. As an example, rather than referring to the lengthier values of "yes" or "no" in a variable, we may code those values into a code/label pair. The code can be numeric (e.g., "yes" = 1 | "no" = 0) or character (e.g., "yes" = 'y' | "no" = 'n'), depending on your needs. Ultimately, only the code appears in your data, while the code/label pair is represented in your data dictionary, allowing users to interpret the meaning of each code.
 
-First, if you are using a pre-existing measure, assign values and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures. Otherwise, you will be assigning your own values and labels. Some guidelines for assigning codes and labels (as well as examples for how to apply those guidelines) are below.
+If you are planning to code any categorical variable values for your study, it can be helpful to include general guidelines in your style guide for assigning those codes. Some general good practices are outlined below.
 
-- Values must be unique
-  - Do: Assign "yes" = 1 and "no" = 0  
-  - Don't: Assign "yes" = 1 **and** "no" = 1
-- Values must be consistent within a variable
+First, if you are using a pre-existing measure, assign codes and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures.
+
+Otherwise, if you are assigning your own codes:
+
+- Codes must be unique
+  - Do: Assign "yes" = 1 | "no" = 0
+  - Don't: Assign "yes" = 1 | "no" = 1
+- Codes must be consistent within a variable
   - Do: For `gender` assign "male" = 'm'
   - Don't: For `gender` allow "male" = 'm' or 'M' or 'Male' or 'male'
-- Values must be consistent across time
-  - Do: Assign `anx1` values of "yes" = 1 and "no" = 0 in wave 1 **and** wave 2
-  - Don't: Assign `anx1` values of "yes" = 1 and "no" = 0 in wave 1 and values of "yes" = 1 and "no" = 2 in wave 2 
-- Values should be consistent across the project
-  - Do: Assign "yes" = 1 and "no" = 0 as the value for all yes/no items 
-  - Don't: Assign "yes" = 1 and "no" = 0 for some variables, and "yes" = 1 and "no" = 2 for others
+- Codes must be consistent across time
+  - Do: For `anx1` assign "yes" = 1 | "no" = 0 in wave 1 **and** wave 2
+  - Don't: For `anx1` assign "yes" = 1 | "no" = 0 in wave 1 **but** "yes" = 1 | "no" = 2 in wave 2 
+- Codes should be consistent across the project
+  - Do: Assign "yes" = 1 | "no" = 0 as the value for all yes/no items 
+  - Don't: Assign "yes" = 1 | "no" = 0 for some variables, and "yes" = 1 | "no" = 2 for others
     - The exception here is if a pre-existing measure determines how values are coded. In that case, there may be some inconsistency across items
 - Order Likert-type scale response options in a logical way
-  - Do: Assign "Strongly Disagree" = 1; "Disagree" = 2; "Agree" = 3; "Strongly Agree" = 4  
-  - Don't: Assign "Strongly Disagree" = 1; "Disagree" = 3; "Agree" = 4; "Strongly Agree" = 2
+  - Do: Assign "Strongly Disagree" = 1 | "Disagree" = 2 | "Agree" = 3 | "Strongly Agree" = 4 
+  - Don't: Assign "Strongly Disagree" = 1 | "Disagree" = 3 | "Agree" = 4 | "Strongly Agree" = 2
     - The exception here is if a pre-existing measure tells you to code variables in a different way
     
-## Missing value coding {#style-missing}
+### Missing value coding {#style-missing}
 
-There is little agreement about how missing data should be coded [@white_nine_2013]. There are essentially two options.
+There is little agreement about how missing data should be assigned [@white_nine_2013]. There are essentially two options.
 
 1. You can choose to leave all missing values as blank.
-    - Benefits of this are that there is no chance of extreme values being mistaken as actual values
+    - Benefits of this option is that there is no chance of assigned missing value codes (e.g., -999) being mistaken as actual values
     - The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry [@broman_data_2018]
     - There is also the consideration that some statistical programs do not allow blank values (e.g., Mplus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.
   
-2. The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
-    - A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., "Not Applicable" = -97, "Skipped" = -98) if that is important for your study. 
-    - Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.
-    - The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)
+2. The other option is to define missing codes and add them to your data. This code can be numeric (e.g., "missing" = -999) or character (e.g., "missing" = 'NA') and it may be one consistent code applied to all missing data, or it may be multiple codes assigned for different types of missing data.
+    - One benefit of this method is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the value was not deleted or skipped over during data entry.
+    - Another benefit is that this allows you to specify distinct reasons for missing data (e.g., "Not Applicable" = -97, "Skipped" = -98) if that is important for your study. 
+    - The biggest problem that can occur with this method is that either your codes could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if 'NULL' is used in a numeric variable, that variable will no longer be numeric)
 
-Whichever method you choose, ultimately just make sure to adhere to these guidelines:
+Ultimately, whichever method you choose, there are several guidelines you should follow. 
 
-- If you decide to fill with defined missing values, use values that match your variable type (e.g., numeric missing values for numeric variables) [@tourangeau_early_2015; @icpsr_guide_2020]
-  - I will say that there is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character (or string) column. If you do not care about the different types of missingness, you could easily then choose to change all missing values to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.
-- If you use numeric values, use extreme values that do not actually occur in your data
-- Use your values consistently within and across variables
+1. If you decide to fill with defined missing codes, use values that match your variable type (e.g., numeric codes for numeric variables) [@tourangeau_early_2015; @icpsr_guide_2020]
+    - There is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character column. If you do not care about the different types of missingness, you could easily then choose to change all missing codes to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.
+2. If you use numeric values, use extreme values that do not actually occur in your data
+3. Use your values consistently within and across variables
 
+In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Figure \@ref(fig:fig9-4)).
 
-```{r fig9-4, fig.cap="Missing values assigned in the ECLS-K:2011 data file"}
+```{r fig9-4, fig.cap="Example missing value code schema used for numeric variables"}
 
-knitr::include_graphics("img/missing.PNG")
+knitr::include_graphics("img/missing2.PNG")
 
 ```
 
@@ -355,14 +360,14 @@ knitr::include_graphics("img/missing.PNG")
 
 If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.
 
-- Consider building and implementing coding templates [@daskalova_coding_nodate; @farewell_my_2018] 
+- Consider building and implementing coding templates [@daskalova_coding_2020; @farewell_my_2018] 
   - Templates can standardize the format of syntax files (such as using standard headers to break up code)
   - They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)
 - Use comments throughout your code to clearly explain the purpose of each code chunk
   - The format of these comments will be dependent on your coding language
-    - R uses `#`
-    - SPSS and Stata use `*`
-- Improve code readability by using [@wickham_welcome_nodate; @san_martin_stata_2023]
+    - R uses `#` at the start of a comment
+    - SPSS and Stata use `*` at the start of a comment
+- Improve code readability by using [@wickham_welcome_2021; @san_martin_stata_2023]
   - spaces
   - indentation
   - setting a line limit for your code (e.g., 80 characters)
@@ -372,6 +377,6 @@ If your team plans to clean data using code, it can be very helpful to create a 
   - No spaces in object names
   - No special characters except `_` to separate words
   - No names that are existing program keywords (`if`, `for`, etc.)
-- Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by using functions, loops, or macros for repetitive code chunks
+- Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by following the DRY (don't repeat yourself) principle. Consider using functions, loops, or macros for repetitive code chunks.
 - Record session information for future users
   - Record both version information as well as operating system information relevant to your code to increase the reproducibility of your code

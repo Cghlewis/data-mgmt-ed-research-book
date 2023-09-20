@@ -32,7 +32,7 @@ It is important to know that variables have the following attributes:
 2. A measurement type
     - Examples include numeric, character, or date, which can also be more narrowly defined as needed (e.g., continuous, categorical)
 3. Acceptable values 
-    - Examples include categorical values (e.g., ""yes"|"no") or expected ranges (e.g., *1-25* or *2021-08-01 to 2021-12-15*). Anything outside of those acceptable values or ranges is considered an error.
+    - Examples include categorical values (e.g., "yes"|"no") or expected ranges (e.g., *1-25* or *2021-08-01 to 2021-12-15*). Anything outside of those acceptable values or ranges is considered an error.
 4. Labels
     - Descriptions of what the variable represents. This may be a label that you, as the variable creator, assigns (e.g., "Treatment condition") or it may be the actual wording of an item (e.g., "Do you enjoy pizza?").
 
@@ -62,25 +62,36 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 <p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
 </div>
 
-2. Your columns should adhere to your variable type.
+2. Column values should be consistent. Both humans and machines have difficulty categorizing information that is not coded consistently.
+    - For text categorical values, use controlled vocabulary and keep consistent spelling, case, and spacing
+    - For date values, keep consistent format
+    - For numeric values, keep consistent decimal places
+
+<div class="figure" style="text-align: center">
+<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and consistent variable values" width="100%" />
+<p class="caption">(\#fig:fig3-4)A comparison of inconsistent and consistent variable values</p>
+</div>
+
+
+3. Your columns should adhere to your variable type.
     - For example, if you have a numeric variable, such as age, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
   
 <div class="figure" style="text-align: center">
 <img src="img/var_type.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
-<p class="caption">(\#fig:fig3-4)A comparison of variables adhering and not adhering to a data type</p>
+<p class="caption">(\#fig:fig3-5)A comparison of variables adhering and not adhering to a data type</p>
 </div>
   
-3. A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
+4. A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
    - You lose the granularity of the information (e.g., `location` = "Los Angeles, CA" is less granular than having a `city` variable and a `state` variable separately)
    - Your variable may become unanalyzable (e.g., a variable with a value "220/335" is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a `rate` variable with a value of *.657*.
    - You may lose the variable type (e.g., if you want an `incident_rate` variable to be numeric, and you assign a value of "220/335", that variable is no longer numeric)
   
 <div class="figure" style="text-align: center">
 <img src="img/two_things.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
-<p class="caption">(\#fig:fig3-5)A comparison of two things being measured in one variable and two things being measured across two variables</p>
+<p class="caption">(\#fig:fig3-6)A comparison of two things being measured in one variable and two things being measured across two variables</p>
 </div>
 
-4. All cell values should be explicit. This means all cells that are not missing values should be filled in with a physical value. 
+5. All cell values should be explicit. This means all cells that are not missing values should be filled in with a physical value. 
     - Consider why a cell value is empty
       - If a value is actually missing, you can either leave those cells as blank or fill them with your pre-determined missing values (e.g., -99). See Section \@ref(style-missing) for ideas on coding missing values.
       - If a cell is left empty because it is implied to be the same value as above, the cells should be filled with the actual data
@@ -88,15 +99,15 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 <div class="figure" style="text-align: center">
 <img src="img/explicit.PNG" alt="A comparison of variables with empty cells and variables with not empty cells" width="100%" />
-<p class="caption">(\#fig:fig3-6)A comparison of variables with empty cells and variables with not empty cells</p>
+<p class="caption">(\#fig:fig3-7)A comparison of variables with empty cells and variables with not empty cells</p>
 </div>
 
-5. All variables should be explicit. No variables should be implied using color coding.
+6. All variables should be explicit. No variables should be implied using color coding.
     - If you want to indicate information, add an indicator variable to do this rather than cell coloring    
     
 <div class="figure" style="text-align: center">
 <img src="img/cell_colorv02.PNG" alt="A comparison of variables with implicit values and variables with explicit values" width="100%" />
-<p class="caption">(\#fig:fig3-7)A comparison of variables with implicit values and variables with explicit values</p>
+<p class="caption">(\#fig:fig3-8)A comparison of variables with implicit values and variables with explicit values</p>
 </div>
 
 ## Linking data
@@ -111,25 +122,25 @@ A database is "an organized collection of data stored as multiple datasets" [@us
 
 In database terminology, each dataset we have is considered a "table". Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys). Each table can be connected through both primary and foreign keys. This linking of tables creates a relational database and we will talk more about this structure when we discuss participant data tracking (see Chapter \@ref(track)).
 
-Let's take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students, a survey and an assessment, in one time period. Figure \@ref(fig:fig3-8) shows what variables were collected from each instrument and how each table can be linked together through a primary key (denoted by rectangles).
+Let's take the simplest example, where we only have primary keys in our data. Here we collected two pieces of data from students, a survey and an assessment, in one time period. Figure \@ref(fig:fig3-9) shows what variables were collected from each instrument and how each table can be linked together through a primary key (denoted by rectangles).
 
 <div class="figure" style="text-align: center">
 <img src="img/link0v02.PNG" alt="Linking data through primary keys" width="70%" />
-<p class="caption">(\#fig:fig3-8)Linking data through primary keys</p>
+<p class="caption">(\#fig:fig3-9)Linking data through primary keys</p>
 </div>
 
-However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (e.g., students, nested in classrooms, nested in schools). Let's take another example where we collected data from three instruments: a student assessment, a teacher survey, and a school intake form. Figure \@ref(fig:fig3-9) shows what variables exist in each dataset (with primary keys being denoted by rectangles) and how each table can be linked together through a foreign key (denoted by ovals).
+However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (e.g., students, nested in classrooms, nested in schools). Let's take another example where we collected data from three instruments: a student assessment, a teacher survey, and a school intake form. Figure \@ref(fig:fig3-10) shows what variables exist in each dataset (with primary keys being denoted by rectangles) and how each table can be linked together through a foreign key (denoted by ovals).
 
 <div class="figure" style="text-align: center">
 <img src="img/link1v01.PNG" alt="Linking data through foreign keys" width="100%" />
-<p class="caption">(\#fig:fig3-9)Linking data through foreign keys</p>
+<p class="caption">(\#fig:fig3-10)Linking data through foreign keys</p>
 </div>
 
-And as you can imagine, as we add more forms, or begin to collect data across time, the database structure begins to become even more complex. Figure \@ref(fig:fig3-10) is another example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.
+And as you can imagine, as we add more forms, or begin to collect data across time, the database structure begins to become even more complex. Figure \@ref(fig:fig3-11) is another example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.
 
 <div class="figure" style="text-align: center">
 <img src="img/link2v02.PNG" alt="Linking data through primary and foreign keys" width="70%" />
-<p class="caption">(\#fig:fig3-10)Linking data through primary and foreign keys</p>
+<p class="caption">(\#fig:fig3-11)Linking data through primary and foreign keys</p>
 </div>
 
 
@@ -152,14 +163,14 @@ The easiest scenario to think about this format is with repeated measure data. I
 
 <div class="figure" style="text-align: center">
 <img src="img/wide.PNG" alt="Example linking forms across time in wide format" width="80%" />
-<p class="caption">(\#fig:fig3-11)Example linking forms across time in wide format</p>
+<p class="caption">(\#fig:fig3-12)Example linking forms across time in wide format</p>
 </div>
 
-A more complicated scenario is merging across participants (e.g., merging teacher data into student data). This is often a many to one join (e.g., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. We will dive deeper into different types of joins in Chapter \@ref(clean).
+A more complicated scenario is merging across participants (e.g., merging teacher data into student data). This is often a many to one join (e.g., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. Although describing all of the different types of joins will be outside the scope of this book, there are many resources available to help you decide which join type is appropriate for your needs ^[https://r4ds.hadley.nz/joins].
 
 <div class="figure" style="text-align: center">
 <img src="img/wide2.PNG" alt="Example linking forms across participants in wide format" width="80%" />
-<p class="caption">(\#fig:fig3-12)Example linking forms across participants in wide format</p>
+<p class="caption">(\#fig:fig3-13)Example linking forms across participants in wide format</p>
 </div>
 
 > **Note** <br> <br>
@@ -176,7 +187,7 @@ In this scenario, we no longer add the data collection wave to variable names. H
 
 <div class="figure" style="text-align: center">
 <img src="img/long.PNG" alt="Data structured in long format" width="100%" />
-<p class="caption">(\#fig:fig3-13)Data structured in long format</p>
+<p class="caption">(\#fig:fig3-14)Data structured in long format</p>
 </div>
 
 #### Choosing wide vs long

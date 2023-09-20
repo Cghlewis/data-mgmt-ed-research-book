@@ -12,6 +12,7 @@ fig:fig3-10
 fig:fig3-11
 fig:fig3-12
 fig:fig3-13
+fig:fig3-14
 fig:fig4-1
 fig:fig5-1
 fig:fig5-2
@@ -182,7 +183,7 @@ data-cleaning-plan
 variable-level
 document-dictionary
 creating-a-data-dictionary-for-an-original-data-source
-creating-a-data-dictionary-from-an-existing-data-source
+document-extant
 time-well-spent
 codebook
 metadata
@@ -245,7 +246,7 @@ store
 store-plan
 electronic-data-1
 paper-data-1
-planning-long-term-storage
+store-long
 documenting-and-disseminating-your-plan
 clean
 foundational-knowledge

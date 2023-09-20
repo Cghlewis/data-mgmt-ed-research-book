@@ -44,7 +44,7 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
       - Costs: Consider if there are any costs associated with any of your potential storage solutions
 
 2. Choose a final storage location
-    - While you may be allowed to store files in different locations depending on their sensitivity level, a more effective solution is to create a collaborative research environment [@uk_data_service_file_2023]. To do this, designate the highest level of security needed (e.g., an institution network drive), and keep all, or as many as possible, project-related files stored in that same location, assigning access to files and folders as needed. Keeping all files located in a central, consistent location often provides the benefit of data security (e.g., automated backups, not having different versions of documents on different computers) as well as accessibility (i.e., team members can find documents).
+    - While you may be allowed to store files in different locations depending on their sensitivity level, a more effective solution is to create a collaborative research environment [@uk_data_service_research_2023]. To do this, designate the highest level of security needed (e.g., an institution network drive), and keep all, or as many as possible, project-related files stored in that same location, assigning access to files and folders as needed. Keeping all files located in a central, consistent location often provides the benefit of data security (e.g., automated backups, not having different versions of documents on different computers) as well as accessibility (i.e., team members can find documents).
   
 3. Set up your folder structure according to your style guide
     - Following your style guide, create a folder structure before team members begin storing files so that they are stored consistently. 
@@ -53,7 +53,7 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
 
 4. Set up additional security systems
     - Data backups
-      - It is important to regularly backup up your data. Consider using something similar to the 3-2-1 rule, keeping three copies of your data, on two different types of storage media, in more than one location [@briney_data_2015; @uk_data_service_backup_2023]. Talk with your institution IT department for help with setting up this system.
+      - It is important to regularly backup up your data. Consider using something similar to the 3-2-1 rule, keeping three copies of your data, on two different types of storage media, in more than one location [@briney_data_2015; @uk_data_service_research_2023]. Talk with your institution IT department for help with setting up this system.
     - User access
       - Assign user access to folders and files based on sensitivity levels, quality control needs, and applicable policies, agreements, or plans.
 
@@ -86,7 +86,7 @@ Working with paper data involves reviewing another set of decisions while planni
 3. Securely work with files
     - As discussed in Section \@ref(collect-field) and Section \@ref(capture-entry), as team members work with files, it is important that staff understand the rules and process for returning files back to the designated storage location when not in use (i.e., no files left on desks).
 
-## Planning long-term storage
+## Planning long-term storage {#store-long}
 
 <div class="figure" style="text-align: center">
 <img src="img/lifecycle_store2.PNG" alt="Long-term data storage in the research project life cycle" width="80%" />

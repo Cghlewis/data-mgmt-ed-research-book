@@ -5,7 +5,7 @@
 <p class="caption">(\#fig:fig7-1)Planning in the research project life cycle</p>
 </div>
 
-Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons including the following [@uk_data_service_roles_2023]:
+Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons including the following [@uk_data_service_research_2023]:
 
 1. It allows team members to begin standardizing workflows
 1. When team members know exactly what is expected of them, it keeps data more secure

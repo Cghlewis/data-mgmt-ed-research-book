@@ -458,7 +458,7 @@ p_relate</code></pre>
 <li><p>If combining data over time in long format, no changes need to be made to your variable names. Variable names should be identically named over time. To account for a time component, you will simply include a new variable (e.g., <code>time</code>, <code>year</code>, <code>wave</code>) and add the appropriate value for each row.</p></li>
 <li><p>If combining data in wide format, you will need to concatenate time to all of your time varying variable names (i.e., not your subject unique identifier). This removes the problem of having non-unique variable names (e.g., <code>anx1</code> in wave 1 and <code>anx1</code> in wave 2) and allows you to interpret when each variable was collected. How you concatenate time to your variable names is up to you. Just make sure to continue adding time consistently to all variable names (i.e., same location, same format) and remember to follow variable naming best practices (e.g., never start a variable name with a number).</p></li>
 </ol>
-<p>Before adding a time component, either as a new variable or as part of a variable name, it’s important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., <code>wave 1</code> = fall of the study year, <code>wave 2</code> = spring of the study year, <code>wave 3</code> = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., <code>pre</code>/<code>post</code>,<code>fall 22</code>/<code>spring 23</code>, <code>2022</code>/<code>2023</code>). Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
+<p>Before adding a time component, either as a new variable or as part of a variable name, it’s important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., <code>wave 1</code> = fall of the study year, <code>wave 2</code> = spring of the study year, <code>wave 3</code> = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., <code>pre</code>/<code>post</code>, <code>fall22</code>/<code>spring23</code>, <code>2022</code>/<code>2023</code>). Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-3"></span>
 <img src="img/time_component.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%"><p class="caption">
@@ -470,39 +470,40 @@ Figure 9.3: Examples of how time might be added to your data based on a variety 
 <li>Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>)</span>.</li>
 <li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point.</li>
 </ol>
-<p>So with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.</p>
+<p>So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.</p>
 </div>
 </div>
 <div id="value-coding" class="section level2" number="9.5">
 <h2>
 <span class="header-section-number">9.5</span> Value coding<a class="anchor" aria-label="anchor" href="#value-coding"><i class="fas fa-link"></i></a>
 </h2>
-<p>In addition to naming variables in a standardized way, variables values also need to be added consistently. Value codes apply to any of your categorical variable. This may be numeric categorical values with associated labels (e.g., “no” = <em>1</em>) or it may be character categorical values with associated labels (e.g., “no” = ‘n’).</p>
-<p>First, if you are using a pre-existing measure, assign values and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures. Otherwise, you will be assigning your own values and labels. Some guidelines for assigning codes and labels (as well as examples for how to apply those guidelines) are below.</p>
+<p>Oftentimes in education research we codify categorical values. This coding of values helps in both data entry, data scoring, and data analysis. As an example, rather than referring to the lengthier values of “yes” or “no” in a variable, we may code those values into a code/label pair. The code can be numeric (e.g., “yes” = 1 | “no” = 0) or character (e.g., “yes” = ‘y’ | “no” = ‘n’), depending on your needs. Ultimately, only the code appears in your data, while the code/label pair is represented in your data dictionary, allowing users to interpret the meaning of each code.</p>
+<p>If you are planning to code any categorical variable values for your study, it can be helpful to include general guidelines in your style guide for assigning those codes. Some general good practices are outlined below.</p>
+<p>First, if you are using a pre-existing measure, assign codes and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later on based on those measures.</p>
+<p>Otherwise, if you are assigning your own codes:</p>
 <ul>
-<li>Values must be unique
+<li>Codes must be unique
 <ul>
-<li>Do: Assign “yes” = 1 and “no” = 0<br>
-</li>
-<li>Don’t: Assign “yes” = 1 <strong>and</strong> “no” = 1</li>
+<li>Do: Assign “yes” = 1 | “no” = 0</li>
+<li>Don’t: Assign “yes” = 1 | “no” = 1</li>
 </ul>
 </li>
-<li>Values must be consistent within a variable
+<li>Codes must be consistent within a variable
 <ul>
 <li>Do: For <code>gender</code> assign “male” = ‘m’</li>
 <li>Don’t: For <code>gender</code> allow “male” = ‘m’ or ‘M’ or ‘Male’ or ‘male’</li>
 </ul>
 </li>
-<li>Values must be consistent across time
+<li>Codes must be consistent across time
 <ul>
-<li>Do: Assign <code>anx1</code> values of “yes” = 1 and “no” = 0 in wave 1 <strong>and</strong> wave 2</li>
-<li>Don’t: Assign <code>anx1</code> values of “yes” = 1 and “no” = 0 in wave 1 and values of “yes” = 1 and “no” = 2 in wave 2</li>
+<li>Do: For <code>anx1</code> assign “yes” = 1 | “no” = 0 in wave 1 <strong>and</strong> wave 2</li>
+<li>Don’t: For <code>anx1</code> assign “yes” = 1 | “no” = 0 in wave 1 <strong>but</strong> “yes” = 1 | “no” = 2 in wave 2</li>
 </ul>
 </li>
-<li>Values should be consistent across the project
+<li>Codes should be consistent across the project
 <ul>
-<li>Do: Assign “yes” = 1 and “no” = 0 as the value for all yes/no items</li>
-<li>Don’t: Assign “yes” = 1 and “no” = 0 for some variables, and “yes” = 1 and “no” = 2 for others
+<li>Do: Assign “yes” = 1 | “no” = 0 as the value for all yes/no items</li>
+<li>Don’t: Assign “yes” = 1 | “no” = 0 for some variables, and “yes” = 1 | “no” = 2 for others
 <ul>
 <li>The exception here is if a pre-existing measure determines how values are coded. In that case, there may be some inconsistency across items</li>
 </ul>
@@ -511,9 +512,8 @@ Figure 9.3: Examples of how time might be added to your data based on a variety 
 </li>
 <li>Order Likert-type scale response options in a logical way
 <ul>
-<li>Do: Assign “Strongly Disagree” = 1; “Disagree” = 2; “Agree” = 3; “Strongly Agree” = 4<br>
-</li>
-<li>Don’t: Assign “Strongly Disagree” = 1; “Disagree” = 3; “Agree” = 4; “Strongly Agree” = 2
+<li>Do: Assign “Strongly Disagree” = 1 | “Disagree” = 2 | “Agree” = 3 | “Strongly Agree” = 4</li>
+<li>Don’t: Assign “Strongly Disagree” = 1 | “Disagree” = 3 | “Agree” = 4 | “Strongly Agree” = 2
 <ul>
 <li>The exception here is if a pre-existing measure tells you to code variables in a different way</li>
 </ul>
@@ -521,53 +521,54 @@ Figure 9.3: Examples of how time might be added to your data based on a variety 
 </ul>
 </li>
 </ul>
-</div>
-<div id="style-missing" class="section level2" number="9.6">
-<h2>
-<span class="header-section-number">9.6</span> Missing value coding<a class="anchor" aria-label="anchor" href="#style-missing"><i class="fas fa-link"></i></a>
-</h2>
-<p>There is little agreement about how missing data should be coded <span class="citation">(<a href="references.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>. There are essentially two options.</p>
+<div id="style-missing" class="section level3" number="9.5.1">
+<h3>
+<span class="header-section-number">9.5.1</span> Missing value coding<a class="anchor" aria-label="anchor" href="#style-missing"><i class="fas fa-link"></i></a>
+</h3>
+<p>There is little agreement about how missing data should be assigned <span class="citation">(<a href="references.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>. There are essentially two options.</p>
 <ol style="list-style-type: decimal">
 <li>You can choose to leave all missing values as blank.
 <ul>
-<li>Benefits of this are that there is no chance of extreme values being mistaken as actual values</li>
+<li>Benefits of this option is that there is no chance of assigned missing value codes (e.g., -999) being mistaken as actual values</li>
 <li>The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry <span class="citation">(<a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>
 </li>
 <li>There is also the consideration that some statistical programs do not allow blank values (e.g., Mplus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.</li>
 </ul>
 </li>
-<li>The other option is to define missing values and add them to your data. This may be one consistent value (i.e., the word NULL or the letters NA, or it may be extreme numeric values such as -999 or -98)
+<li>The other option is to define missing codes and add them to your data. This code can be numeric (e.g., “missing” = -999) or character (e.g., “missing” = ‘NA’) and it may be one consistent code applied to all missing data, or it may be multiple codes assigned for different types of missing data.
 <ul>
-<li>A benefit of this method are that using defined values allows you to specify distinct reasons for missing data (e.g., “Not Applicable” = -97, “Skipped” = -98) if that is important for your study.</li>
-<li>Another benefit is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the the value was not deleted for skipped over during data entry.</li>
-<li>The biggest problem that can occur with this method is that either your extreme values could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if NULL is used in a numeric variable, that variable will no longer be numeric)</li>
+<li>One benefit of this method is that this removes the uncertainty that we had with blank cells. If a value is filled, we are now certain the value was not deleted or skipped over during data entry.</li>
+<li>Another benefit is that this allows you to specify distinct reasons for missing data (e.g., “Not Applicable” = -97, “Skipped” = -98) if that is important for your study.</li>
+<li>The biggest problem that can occur with this method is that either your codes could be mistaken for actual values (if someone misses the documentation on missing values), or if you use a value that does not match your variable type, then you introduce new variable type issues (e.g., if ‘NULL’ is used in a numeric variable, that variable will no longer be numeric)</li>
 </ul>
 </li>
 </ol>
-<p>Whichever method you choose, ultimately just make sure to adhere to these guidelines:</p>
+<p>Ultimately, whichever method you choose, there are several guidelines you should follow.</p>
+<ol style="list-style-type: decimal">
+<li>If you decide to fill with defined missing codes, use values that match your variable type (e.g., numeric codes for numeric variables) <span class="citation">(<a href="references.html#ref-tourangeau_early_2015" role="doc-biblioref">Tourangeau 2015</a>; <a href="references.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR 2020</a>)</span>
 <ul>
-<li>If you decide to fill with defined missing values, use values that match your variable type (e.g., numeric missing values for numeric variables) <span class="citation">(<a href="references.html#ref-tourangeau_early_2015" role="doc-biblioref">Tourangeau 2015</a>; <a href="references.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR n.d.</a>)</span>
-<ul>
-<li>I will say that there is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character (or string) column. If you do not care about the different types of missingness, you could easily then choose to change all missing values to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.</li>
+<li>There is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character column. If you do not care about the different types of missingness, you could easily then choose to change all missing codes to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.</li>
 </ul>
 </li>
 <li>If you use numeric values, use extreme values that do not actually occur in your data</li>
 <li>Use your values consistently within and across variables</li>
-</ul>
+</ol>
+<p>In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Figure <a href="style.html#fig:fig9-4">9.4</a>).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-4"></span>
-<img src="img/missing.PNG" alt="Missing values assigned in the ECLS-K:2011 data file" width="100%"><p class="caption">
-Figure 9.4: Missing values assigned in the ECLS-K:2011 data file
+<img src="img/missing2.PNG" alt="Example missing value code schema used for numeric variables" width="100%"><p class="caption">
+Figure 9.4: Example missing value code schema used for numeric variables
 </p>
 </div>
 </div>
-<div id="coding" class="section level2" number="9.7">
+</div>
+<div id="coding" class="section level2" number="9.6">
 <h2>
-<span class="header-section-number">9.7</span> Coding<a class="anchor" aria-label="anchor" href="#coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.6</span> Coding<a class="anchor" aria-label="anchor" href="#coding"><i class="fas fa-link"></i></a>
 </h2>
 <p>If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.</p>
 <ul>
-<li>Consider building and implementing coding templates <span class="citation">(<a href="references.html#ref-daskalova_coding_nodate" role="doc-biblioref">Daskalova n.d.</a>; <a href="references.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>
+<li>Consider building and implementing coding templates <span class="citation">(<a href="references.html#ref-daskalova_coding_2020" role="doc-biblioref">Daskalova 2020</a>; <a href="references.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>
 <ul>
 <li>Templates can standardize the format of syntax files (such as using standard headers to break up code)</li>
 <li>They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)</li>
@@ -577,15 +578,13 @@ Figure 9.4: Missing values assigned in the ECLS-K:2011 data file
 <ul>
 <li>The format of these comments will be dependent on your coding language
 <ul>
-<li>R uses <code>#</code>
-</li>
-<li>SPSS and Stata use <code>*</code>
-</li>
+<li>R uses <code>#</code> at the start of a comment</li>
+<li>SPSS and Stata use <code>*</code> at the start of a comment</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Improve code readability by using <span class="citation">(<a href="references.html#ref-wickham_welcome_nodate" role="doc-biblioref">Wickham n.d.</a>; <a href="references.html#ref-san_martin_stata_2023" role="doc-biblioref">San Martin, Rodriguez-Ramirez, and Suzuki 2023</a>)</span>
+<li>Improve code readability by using <span class="citation">(<a href="references.html#ref-wickham_welcome_2021" role="doc-biblioref">Wickham 2021</a>; <a href="references.html#ref-san_martin_stata_2023" role="doc-biblioref">San Martin, Rodriguez-Ramirez, and Suzuki 2023</a>)</span>
 <ul>
 <li>spaces</li>
 <li>indentation</li>
@@ -604,7 +603,7 @@ Figure 9.4: Missing values assigned in the ECLS-K:2011 data file
 <li>No names that are existing program keywords (<code>if</code>, <code>for</code>, etc.)</li>
 </ul>
 </li>
-<li>Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by using functions, loops, or macros for repetitive code chunks</li>
+<li>Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by following the DRY (don’t repeat yourself) principle. Consider using functions, loops, or macros for repetitive code chunks.</li>
 <li>Record session information for future users
 <ul>
 <li>Record both version information as well as operating system information relevant to your code to increase the reproducibility of your code</li>
@@ -626,9 +625,10 @@ Figure 9.4: Missing values assigned in the ECLS-K:2011 data file
 <li>
 <a class="nav-link" href="#style-varname"><span class="header-section-number">9.4</span> Variable naming</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#time"><span class="header-section-number">9.4.1</span> Time</a></li></ul>
 </li>
-<li><a class="nav-link" href="#value-coding"><span class="header-section-number">9.5</span> Value coding</a></li>
-<li><a class="nav-link" href="#style-missing"><span class="header-section-number">9.6</span> Missing value coding</a></li>
-<li><a class="nav-link" href="#coding"><span class="header-section-number">9.7</span> Coding</a></li>
+<li>
+<a class="nav-link" href="#value-coding"><span class="header-section-number">9.5</span> Value coding</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#style-missing"><span class="header-section-number">9.5.1</span> Missing value coding</a></li></ul>
+</li>
+<li><a class="nav-link" href="#coding"><span class="header-section-number">9.6</span> Coding</a></li>
 </ul>
 
       <div class="book-extra">
@@ -646,7 +646,7 @@ Figure 9.4: Missing values assigned in the ECLS-K:2011 data file
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-15.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-20.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

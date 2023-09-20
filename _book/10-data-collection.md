@@ -101,7 +101,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig11-5)):
 
 1. Gathering internal feedback on items
-    - As discussed in Chapter \@ref(document), once all items for each instrument have been added to your data dictionary, have your team review the data dictionary and provide feedback
+    - As discussed in Section \@ref(document-dictionary), once all items for each instrument have been added to your data dictionary, have your team review the data dictionary and provide feedback
 2. Piloting an instrument for content
     - Once the team has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population and gather feedback. Consult with your IRB to determine if approval is required before piloting your instrument with your study population.
 3. Piloting the instrument for data related issues
@@ -162,7 +162,7 @@ However, when collecting data on various tablets in the field, if the forms are 
 
 ### Build with the end in mind {#collect-build}
 
-Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_quality_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
+Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_research_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
 
 The process for building your tools with the end in mind is fairly different for electronic tools compared to paper forms so we are going to talk about these two processes separately.
 
@@ -175,14 +175,14 @@ However, if you are building your instrument manually, adhering to the following
 1. Include all items from your data dictionary
     - This includes all substantive questions, as well as items that are necessary for linking purposes (e.g., participant identifiers, rater ids for inter-rater reliability)
     - This does not include any variables from your data dictionary that will be derived (e.g., sum scores) or any grouping variables that will be added in during the data cleaning phase (e.g., treatment, cohort)
-1. Name all of your items the correct variable name from your data dictionary [@uk_data_service_quality_2023]
+1. Name all of your items the correct variable name from your data dictionary [@uk_data_service_research_2023]
     - For example, instead of using the platform default name of `Q2`, rename the item to `tch_years`
     - As mentioned in Section \@ref(style-varname), it's also best to not concatenate a time component to your variable names if your project is longitudinal. Doing so makes it difficult to reuse your instrument for other time periods, creating additional work for you or your team.
 1. Code all values as they are in your data dictionary
     - For example, "strongly agree" = 1, "agree" = 2, "disagree" = 3, "strongly disagree" = 4
     - Many times tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary
     - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options
-1. Use data validation to reduce errors and missing data [@uk_data_service_quality_2023]
+1. Use data validation to reduce errors and missing data [@uk_data_service_research_2023]
     - Content validation for open-text boxes
       - Restrict entry to the type assigned in your data dictionary (e.g., numeric)
       - Restrict entry to the format assigned in your data dictionary (e.g., *YYYY-MM-DD*)
@@ -196,7 +196,7 @@ However, if you are building your instrument manually, adhering to the following
     - Become familiar with the various questions types available in your tool (e.g., rank order, multiple choice, text box, slider scale)
     - Become familiar with the various formats (e.g., radio button, drop-down, checkbox)
     - For example, if your item is a rank order question (ranking 3 items), creating this question as a multi-line, free-text entry form may lead to duplicate entries (such as entering a rank of 1 more than once). However, using something like a rank order question type with a drag and drop format ensures that participants are not allowed to duplicate rankings.
-1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_quality_2023]
+1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023]
     - For example, list school name as a drop-down item rather than having participants enter a school name
       - This prevents variation in text entry (e.g., "Sunvalley Middle", "sunvalley", "Snvally Middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values
 1. If there is an infinite number of response options for an item or the number of options is large, use an open-text box
