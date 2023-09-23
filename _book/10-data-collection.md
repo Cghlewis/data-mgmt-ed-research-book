@@ -107,7 +107,7 @@ Gathering feedback on your instruments is an integral part to the quality assura
 3. Piloting the instrument for data related issues
     - Once the instrument is created in your chosen data collection tool, share the instrument with your team for review. Here we are most interested in whether or not the data we are collecting are accurate, comprehensive, and usable. We will discuss this phase in greater detail in Section \@ref(collect-build).
 
-Last, as you move through the piloting phases, remember to update any changes not only in your tool but also in your data dictionary and any other relevant documentation.
+Last, as you move through the piloting phases, remember to make updates not only in your tool but also in your data dictionary and any other relevant documentation (e.g., data cleaning plan). 
 	  
 <div class="figure" style="text-align: center">
 <img src="img/pilot2.PNG" alt="Data collection instrument pilot phases" width="100%" />
@@ -226,7 +226,7 @@ After sample responses are collected from team members, export the sample data u
 
 If any issues are found either through team feedback or while reviewing the exported sample data, take time to update the tool as well as your documentation as needed before starting data collection.
 
-Last, this is also the time to update your data dictionary. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data you learn that a "select all" question differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary.
+Last, this is also the time to update your data dictionary. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data you learn that a "select all" question differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary. This is also a great time to update your data cleaning plan with any new transformations that will be required. 
 
 #### Paper data collection {#collect-paper}
 
@@ -263,14 +263,7 @@ When building data collection tools, no matter if they are paper or electronic, 
 - There is too much room for error
   - If names are hand entered, there are endless issues with case sensitivity, spelling errors, special characters, spacing, and so forth
 
-All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers.
-
-Figure \@ref(fig:fig11-7) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter \@ref(track)), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a "merge", which we will discuss more in Chapter \@ref(clean), as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
-
-<div class="figure" style="text-align: center">
-<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%" />
-<p class="caption">(\#fig:fig11-7)Process of creating a de-identified dataset</p>
-</div>
+All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers (see Section \@ref(clean-check) for more information about this process).
 
 Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above [@dime_analytics_data_2021; @gibson_survey_2020]. We will discuss these methods separately for electronic data and paper data.
 
@@ -309,7 +302,7 @@ If you take paper forms into the field consider doing the following to connect y
 
 <div class="figure" style="text-align: center">
 <img src="img/cover_sheet2.PNG" alt="Example cover sheet for a paper data collection instrument" width="90%" />
-<p class="caption">(\#fig:fig11-8)Example cover sheet for a paper data collection instrument</p>
+<p class="caption">(\#fig:fig11-7)Example cover sheet for a paper data collection instrument</p>
 </div>
 
 ### Ensure compliance {#collect-irb}
@@ -390,7 +383,7 @@ If your data collection efforts include field data collection (e.g., data collec
   - Do another round of data checks in the field once the data collector returns physical forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
   - Ensure that all data and equipment is accounted for and returned to the office
   - Be available for trouble shooting as needed
-- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-10))
+- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-8))
   - The project coordinator may do this round of checking as they are tracking information in the participant database
   - If any issues are found, note that in the tracking database and send the form back out to the field for correction
   - If paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
@@ -399,7 +392,7 @@ If your data collection efforts include field data collection (e.g., data collec
 
 <div class="figure" style="text-align: center">
 <img src="img/spot_check.PNG" alt="A series of spot checks that occur with paper data" width="100%" />
-<p class="caption">(\#fig:fig11-9)A series of spot checks that occur with paper data</p>
+<p class="caption">(\#fig:fig11-8)A series of spot checks that occur with paper data</p>
 </div>
 
 **Tracking sheet templates**
@@ -482,13 +475,13 @@ Last, collecting data consistently also means measuring things in the same way o
 
 ## Review
 
-Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-10) helps us to see when these practices fit into the different phases our workflow.
+Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-9) helps us to see when these practices fit into the different phases our workflow.
 
 Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed. 
 
 <div class="figure" style="text-align: center">
 <img src="img/data_collect_workflow3.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%" />
-<p class="caption">(\#fig:fig11-10)Integrating quality assurance and control into a data collection workflow</p>
+<p class="caption">(\#fig:fig11-9)Integrating quality assurance and control into a data collection workflow</p>
 </div>
 
 **Instrument Workflow Resources**

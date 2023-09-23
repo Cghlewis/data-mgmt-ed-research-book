@@ -50,7 +50,7 @@ The cells are the observations associated with each case in your data. Cells are
 </div>
 
 
-## Dataset organization rules
+## Dataset organization rules {#structure-rules}
 
 In order for your dataset to be machine-readable and analyzable, it should adhere to a set of structural rules [@broman_data_2018; @wickham_tidy_2014]. 
 
@@ -62,14 +62,14 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 <p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
 </div>
 
-2. Column values should be consistent. Both humans and machines have difficulty categorizing information that is not coded consistently.
+2. Column values should be consistent. Both humans and machines have difficulty categorizing information that is not measured, coded, or formatted consistently.
     - For text categorical values, use controlled vocabulary and keep consistent spelling, case, and spacing
     - For date values, keep consistent format
-    - For numeric values, keep consistent decimal places
+    - For numeric values, measure in consistent units and keep consistent decimal places
 
 <div class="figure" style="text-align: center">
-<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and consistent variable values" width="100%" />
-<p class="caption">(\#fig:fig3-4)A comparison of inconsistent and consistent variable values</p>
+<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and uniform variable values" width="100%" />
+<p class="caption">(\#fig:fig3-4)A comparison of inconsistent and uniform variable values</p>
 </div>
 
 
@@ -154,9 +154,9 @@ When we structure our data in a wide format, all data collected on a unique subj
 
 This type of format can be used for the following situations:  
     
-- To link forms within subjects, within and/or across time
+- To link forms within same participant type, within and/or across time
     - This is commonly used to create comprehensive subject-level datasets (e.g., all student data combined into a student-level dataset)
-- To link forms across participants
+- To link forms across different participant types
     - Such as a student survey and teacher survey
 
 The easiest scenario to think about this format is with repeated measure data. If we collect a survey on participants in both wave 1 and 2, those waves of data will all be in the same row (joined together on a unique ID) and each wave of data collection will be appended to a variable name to create unique variable names. This is typically a one-to-one merge where each participant will only appear once in each dataset. 
@@ -190,7 +190,7 @@ In this scenario, we no longer add the data collection wave to variable names. H
 <p class="caption">(\#fig:fig3-14)Data structured in long format</p>
 </div>
 
-#### Choosing wide vs long
+#### Choosing wide vs long {#structure-reshape}
 
 There are different reasons for structuring your linked data one way or another. Storing linked data in long format is usually considered to be more efficient than storing in wide format, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject [@grace-martin_wide_2013]. It may be that you structure data in one format for one reason (e.g., storing or sharing), and then restructure data into another format a different reason (e.g., analysis). Luckily, this type of restructuring can be done fairly quickly in many statistical programs. We will further review decision making around data structure in Chapters \@ref(clean) and \@ref(share).
 

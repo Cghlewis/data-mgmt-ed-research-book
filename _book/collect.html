@@ -285,7 +285,7 @@ If you are collecting data using a standardized assessment, along with a provide
 </ul>
 </li>
 </ol>
-<p>Last, as you move through the piloting phases, remember to update any changes not only in your tool but also in your data dictionary and any other relevant documentation.</p>
+<p>Last, as you move through the piloting phases, remember to make updates not only in your tool but also in your data dictionary and any other relevant documentation (e.g., data cleaning plan).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig11-4"></span>
 <img src="img/pilot2.PNG" alt="Data collection instrument pilot phases" width="100%"><p class="caption">
@@ -490,7 +490,7 @@ However, when collecting data on various tablets in the field, if the forms are 
 <li>Is data exporting in an analyzable, rectangular format?</li>
 </ol>
 <p>If any issues are found either through team feedback or while reviewing the exported sample data, take time to update the tool as well as your documentation as needed before starting data collection.</p>
-<p>Last, this is also the time to update your data dictionary. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data you learn that a “select all” question differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary.</p>
+<p>Last, this is also the time to update your data dictionary. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data you learn that a “select all” question differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary. This is also a great time to update your data cleaning plan with any new transformations that will be required.</p>
 </div>
 <div id="collect-paper" class="section level4" number="11.2.4.2">
 <h4>
@@ -549,14 +549,7 @@ Figure 11.6: Annotated instrument from The Florida State Twin Registry project
 </ul>
 </li>
 </ul>
-<p>All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers.</p>
-<p>Figure <a href="collect.html#fig:fig11-7">11.7</a> shows what a data de-identification process looks like <span class="citation">(<a href="references.html#ref-otoole_data_2018" role="doc-biblioref">O’Toole et al. 2018</a>)</span>. Dataset 1 would be the incoming survey data with identifiers, Dataset 2 would be a roster exported from your participant database (see Chapter <a href="track.html#track">10</a>), and Dataset 3 is your clean, de-identified dataset, created by merging Dataset 1 with Dataset 2 on your unique identifier and dropping your identifying variables. I want to emphasize the importance of using a “merge”, which we will discuss more in Chapter <a href="clean.html#clean">14</a>, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.</p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig11-7"></span>
-<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%"><p class="caption">
-Figure 11.7: Process of creating a de-identified dataset
-</p>
-</div>
+<p>All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers (see Section <a href="clean.html#clean-check">14.3.1</a> for more information about this process).</p>
 <p>Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above <span class="citation">(<a href="references.html#ref-dime_analytics_data_2021" role="doc-biblioref">DIME Analytics 2021a</a>; <a href="references.html#ref-gibson_survey_2020" role="doc-biblioref">Gibson and Louw 2020</a>)</span>. We will discuss these methods separately for electronic data and paper data.</p>
 <blockquote>
 <p><strong>Note</strong> <br><br>
@@ -619,9 +612,9 @@ Remember that if you collect anonymous data, you will not be able to link data a
 </li>
 </ul>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig11-8"></span>
+<span style="display:block;" id="fig:fig11-7"></span>
 <img src="img/cover_sheet2.PNG" alt="Example cover sheet for a paper data collection instrument" width="90%"><p class="caption">
-Figure 11.8: Example cover sheet for a paper data collection instrument
+Figure 11.7: Example cover sheet for a paper data collection instrument
 </p>
 </div>
 </div>
@@ -777,7 +770,7 @@ The security of consent and assent forms should be a top priority to your team. 
 <li>Be available for trouble shooting as needed</li>
 </ul>
 </li>
-<li>Do another round of physical data spot checking as soon as the data is returned to the office (see Figure <a href="collect.html#fig:fig11-10">11.10</a>)
+<li>Do another round of physical data spot checking as soon as the data is returned to the office (see Figure <a href="collect.html#fig:fig11-8">11.8</a>)
 <ul>
 <li>The project coordinator may do this round of checking as they are tracking information in the participant database</li>
 <li>If any issues are found, note that in the tracking database and send the form back out to the field for correction</li>
@@ -791,9 +784,9 @@ The security of consent and assent forms should be a top priority to your team. 
 </li>
 </ul>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig11-9"></span>
+<span style="display:block;" id="fig:fig11-8"></span>
 <img src="img/spot_check.PNG" alt="A series of spot checks that occur with paper data" width="100%"><p class="caption">
-Figure 11.9: A series of spot checks that occur with paper data
+Figure 11.8: A series of spot checks that occur with paper data
 </p>
 </div>
 <p><strong>Tracking sheet templates</strong></p>
@@ -936,12 +929,12 @@ Last, check your data thoroughly for bots or fraudulent responses before analyzi
 <h2>
 <span class="header-section-number">11.4</span> Review<a class="anchor" aria-label="anchor" href="#review"><i class="fas fa-link"></i></a>
 </h2>
-<p>Recall from Chapter <a href="plan.html#plan">6</a>, we discussed designing and visualizing a data collection workflow during your planning phase. As we’ve learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure <a href="collect.html#fig:fig11-10">11.10</a> helps us to see when these practices fit into the different phases our workflow.</p>
+<p>Recall from Chapter <a href="plan.html#plan">6</a>, we discussed designing and visualizing a data collection workflow during your planning phase. As we’ve learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure <a href="collect.html#fig:fig11-9">11.9</a> helps us to see when these practices fit into the different phases our workflow.</p>
 <p>Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter <a href="document.html#document">8</a>), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig11-10"></span>
+<span style="display:block;" id="fig:fig11-9"></span>
 <img src="img/data_collect_workflow3.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%"><p class="caption">
-Figure 11.10: Integrating quality assurance and control into a data collection workflow
+Figure 11.9: Integrating quality assurance and control into a data collection workflow
 </p>
 </div>
 <p><strong>Instrument Workflow Resources</strong></p>
@@ -1013,7 +1006,7 @@ Figure 11.10: Integrating quality assurance and control into a data collection w
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-20.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

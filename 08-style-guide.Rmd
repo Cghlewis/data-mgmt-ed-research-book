@@ -299,7 +299,7 @@ With all of that said, during an active project, it is actually best to not add 
 
 So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.
 
-## Value coding
+## Value coding {#style-codes}
 
 Oftentimes in education research we codify categorical values. This coding of values helps in both data entry, data scoring, and data analysis. As an example, rather than referring to the lengthier values of "yes" or "no" in a variable, we may code those values into a code/label pair. The code can be numeric (e.g., "yes" = 1 | "no" = 0) or character (e.g., "yes" = 'y' | "no" = 'n'), depending on your needs. Ultimately, only the code appears in your data, while the code/label pair is represented in your data dictionary, allowing users to interpret the meaning of each code.
 
@@ -343,7 +343,7 @@ There is little agreement about how missing data should be assigned [@white_nine
 
 Ultimately, whichever method you choose, there are several guidelines you should follow. 
 
-1. If you decide to fill with defined missing codes, use values that match your variable type (e.g., numeric codes for numeric variables) [@tourangeau_early_2015; @icpsr_guide_2020]
+1. If you decide to fill with defined missing codes, use values that match your variable type (e.g., numeric codes for numeric variables) [@icpsr_guide_2020; @white_nine_2013]
     - There is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character column. If you do not care about the different types of missingness, you could easily then choose to change all missing codes to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match variable type.
 2. If you use numeric values, use extreme values that do not actually occur in your data
 3. Use your values consistently within and across variables

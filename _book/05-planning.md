@@ -64,8 +64,8 @@ Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making pro
 It's important to consider how each team and project are unique as you work through these planning checklists. A technique that might work well for one team, may not work out so well for another. Make sure to consider the following:
 
 1. All external requirements
-    - Do your practices align with the plan laid out in your DMP? If no, you may need to revise your DMP to match your new decisions - remember your DMP is a living document.
-    - Do your practices meet all other external compliance requirements such as those from your Institutional Review Board, your institutional policies, project partner requirements, or government mandates?
+    - Do your practices align with the plan laid out in your DMP? If no, you may need to revise your DMP to match your new decisions (remember your DMP is a living document).
+    - Do your practices meet all other compliance requirements (e.g., IRB requirements, IT department requirements, consent agreements, data sharing agreements)?
 2. The skill set of your team
     - How does the skill set of your team align with the practices you plan to implement? Will additional training be required?
 3. Your available tools

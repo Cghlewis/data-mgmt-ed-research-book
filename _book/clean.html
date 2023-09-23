@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 14 Data Cleaning | Data Management in Large-Scale Education Research</title>
 <meta name="author" content="Crystal Lewis">
-<meta name="description" content="14.1 Foundational knowledge   14.2 Data structure   14.3 Data cleaning plan   14.4 Data validation   14.5 Why use code?">
+<meta name="description" content="Figure 14.1: Data cleaning in the research project life cycle  Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before...">
 <meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Chapter 14 Data Cleaning | Data Management in Large-Scale Education Research">
 <meta property="og:type" content="book">
 <meta property="og:image" content="/book_featured.PNG">
-<meta property="og:description" content="14.1 Foundational knowledge   14.2 Data structure   14.3 Data cleaning plan   14.4 Data validation   14.5 Why use code?">
+<meta property="og:description" content="Figure 14.1: Data cleaning in the research project life cycle  Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 14 Data Cleaning | Data Management in Large-Scale Education Research">
-<meta name="twitter:description" content="14.1 Foundational knowledge   14.2 Data structure   14.3 Data cleaning plan   14.4 Data validation   14.5 Why use code?">
+<meta name="twitter:description" content="Figure 14.1: Data cleaning in the research project life cycle  Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before...">
 <meta name="twitter:image" content="/book_featured.PNG">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -96,29 +96,474 @@
 <h1>
 <span class="header-section-number">14</span> Data Cleaning<a class="anchor" aria-label="anchor" href="#clean"><i class="fas fa-link"></i></a>
 </h1>
-<div id="foundational-knowledge" class="section level2" number="14.1">
-<h2>
-<span class="header-section-number">14.1</span> Foundational knowledge<a class="anchor" aria-label="anchor" href="#foundational-knowledge"><i class="fas fa-link"></i></a>
-</h2>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-1"></span>
+<img src="img/lifecycle_clean.PNG" alt="Data cleaning in the research project life cycle" width="80%"><p class="caption">
+Figure 14.1: Data cleaning in the research project life cycle
+</p>
 </div>
-<div id="data-structure" class="section level2" number="14.2">
+<p>Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before it is in a format that you will confidently want to share for analysis. What is done in that data processing, or data cleaning, phase will depend on your project and your data. However, in this chapter we will review some standard data cleaning steps that should be considered for every education research project.</p>
+<p>What is most important to emphasize here is that data cleaning needs to happen every wave of data collection. Once a wave of data has been collected and captured and the raw data has been stored, your data cleaning process should begin. In a best case scenario, the data cleaning is wrapped up before your next wave of data collection. Cleaning data each wave, as opposed to waiting until the end of your project, has two large benefits.</p>
+<ol style="list-style-type: decimal">
+<li>Allows you to catch errors early on and fix them
+<ul>
+<li>While cleaning your data you may find that all data is missing unexpectedly for one of your variables, or that values are incorrectly coded, or that you forgot to restrict the input type. If you are cleaning data each wave, you are able to then correct any errors in your instrument in order to collect better data next round.</li>
+</ul>
+</li>
+<li>Data is ready when you need it
+<ul>
+<li>Proposal, report, and publication deadlines come up fast. As various needs arise, rather than having to first take time to clean your data, or waiting for someone on your team to clean it, data will always be cleaned and available for use because it is cleaned on a regularly occurring schedule.</li>
+</ul>
+</li>
+</ol>
+<div id="data-cleaning-for-data-sharing" class="section level2" number="14.1">
 <h2>
-<span class="header-section-number">14.2</span> Data structure<a class="anchor" aria-label="anchor" href="#data-structure"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.1</span> Data cleaning for data sharing<a class="anchor" aria-label="anchor" href="#data-cleaning-for-data-sharing"><i class="fas fa-link"></i></a>
 </h2>
+<p>Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset cleaned for general data sharing purposes and a dataset cleaned for a specific analysis. The former means that the dataset is still in its truest, raw form, but has been minimally altered to allow the data to be correctly interpreted. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.</p>
+<p>Ultimately, you can think of data in three distinct phases (see Figure <a href="clean.html#fig:fig14-2">14.2</a>).</p>
+<ol style="list-style-type: decimal">
+<li>Raw data
+<ul>
+<li>This is the untouched raw file that comes directly from your data collection source. If your data is collected electronically, this is the file you extract from your tool. If your data is collected on paper, this is the data that has been entered into a machine-readable format.</li>
+<li>In education research this data is typically not shared outside of the research team as it usually contains identifiable information and often needs further wrangling to be decipherable by an end user.</li>
+</ul>
+</li>
+<li>The general clean study data
+<ul>
+<li>This is the dataset that you will publicly share. This is the data we will be discussing in this chapter.</li>
+</ul>
+</li>
+<li>Your analytic data
+<ul>
+<li>This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book.</li>
+</ul>
+</li>
+</ol>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-2"></span>
+<img src="img/clean_data.PNG" alt="The three phases of data" width="80%"><p class="caption">
+Figure 14.2: The three phases of data
+</p>
 </div>
-<div id="data-cleaning-plan-1" class="section level2" number="14.3">
+</div>
+<div id="clean-criteria" class="section level2" number="14.2">
 <h2>
-<span class="header-section-number">14.3</span> Data cleaning plan<a class="anchor" aria-label="anchor" href="#data-cleaning-plan-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.2</span> Data quality criteria<a class="anchor" aria-label="anchor" href="#clean-criteria"><i class="fas fa-link"></i></a>
 </h2>
+<p>Before cleaning our data, we need to have a shared understanding for what we expect our data to look like once it is cleaned. Adhering to common standards for data quality allows our data to be consistently cleaned and organized within and across projects. There are several data quality criteria that are commonly agreed upon <span class="citation">(<a href="references.html#ref-decoster_systematic_2023" role="doc-biblioref">DeCoster 2023</a>; <a href="references.html#ref-elgabry_ultimate_2019" role="doc-biblioref">Elgabry 2019</a>; <a href="references.html#ref-schmidt_facilitating_2021" role="doc-biblioref">Schmidt et al. 2021</a>; <a href="references.html#ref-van_bochove_data_2023" role="doc-biblioref">Bochove, Alper, and Gu 2023</a>)</span>. Upon cleaning your data for general data sharing, your data should meet the following criteria.</p>
+<ol style="list-style-type: decimal">
+<li>Complete
+<ul>
+<li>The number of rows in your dataset should match the number of completed forms tracked in your participant tracking database. This means that all forms that you collected have been captured (either entered or retrieved). It also means that you have removed all extraneous data that doesn’t belong (e.g., duplicates, participants who aren’t in the final sample).</li>
+<li>The number of columns in your data match the number of variables you have in your data dictionary (i.e., no variables were accidentally dropped). Similarly, there should be no unexpected missing data for variables (i.e., if the data was collected, it should exist in your dataset).</li>
+</ul>
+</li>
+<li>Valid
+<ul>
+<li>Variables conform to the constraints that you have laid out in your data dictionary (e.g., variable types, allowable variable values and ranges, item-level missing values align with variable universe rules and defined skip patterns)</li>
+</ul>
+</li>
+<li>Accurate
+<ul>
+<li>Oftentimes there is no way to know whether a value is true or not.
+<ul>
+<li>However, it is possible to use your implicit knowledge of a participant or a data source (i.e., ghost knowledge) <span class="citation">(<a href="references.html#ref-boykis_ghosts_2021" role="doc-biblioref">Boykis 2021</a>)</span> to determine if values are inaccurate (e.g., a value exists for a school where you know data was not collected that wave).</li>
+<li>It is also possible to check for alignment of variable values within and across sources to determine accuracy
+<ul>
+<li>For example, in a student-level dataset, if grade level = 2, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consistent
+<ul>
+<li>Variable values are consistently measured, formatted, or coded within a column (e.g., all values of survey date are formatted as YYYY-MM-DD).</li>
+<li>Across waves and cohorts of data collection, all repeated variables are consistently measured, formatted, or coded as well (e.g., free/reduced priced lunch is consistently coded using the same code/label pair across all cohorts).</li>
+</ul>
+</li>
+<li>De-identified
+<ul>
+<li>If confidentiality is promised to participants, data needs to be de-identified. At the early phases of data cleaning, this simply means that all direct identifiers (see Chapter <a href="hsd.html#hsd">4</a>) are removed from the data and replaced with study codes (i.e., participant unique identifier). Before publicly sharing data, additional work will be required to remove indirect identifiers as well and we will discuss this more in Chapter <a href="share.html#share">15</a>.</li>
+</ul>
+</li>
+<li>Interpretable
+<ul>
+<li>Variables are named to match your data dictionary and those variable names should be both human and machine-readable (see Section <a href="style.html#style-varname">9.4</a>). Variable and value labels are added as embedded metadata as needed to aid in interpretation.</li>
+</ul>
+</li>
+<li>Analyzable
+<ul>
+<li>The dataset is in a rectangular (rows and columns), machine-readable format and adheres to basic data structure rules (see Section <a href="structure.html#structure-rules">3.2</a>).</li>
+</ul>
+</li>
+</ol>
 </div>
-<div id="data-validation" class="section level2" number="14.4">
+<div id="data-cleaning-checklist" class="section level2" number="14.3">
 <h2>
-<span class="header-section-number">14.4</span> Data validation<a class="anchor" aria-label="anchor" href="#data-validation"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.3</span> Data cleaning checklist<a class="anchor" aria-label="anchor" href="#data-cleaning-checklist"><i class="fas fa-link"></i></a>
 </h2>
+<p>Recall from Section <a href="document.html#document-plan">8.3.3</a>, that it is helpful to write up your data cleaning plan, for each raw dataset, before you begin cleaning your data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure <a href="document.html#fig:fig8-15">8.15</a>).</p>
+<p>In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data in a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section <a href="clean.html#clean-criteria">14.2</a>, it can be helpful to follow a standardized checklist of data cleaning steps (see Figure <a href="clean.html#fig:fig14-3">14.3</a>). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-3"></span>
+<img src="img/data_clean_check.PNG" alt="Data cleaning checklist" width="80%"><p class="caption">
+Figure 14.3: Data cleaning checklist
+</p>
 </div>
-<div id="why-use-code" class="section level2" number="14.5">
+<p>As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps are fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>; <a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth (SSOT) for that data source. If you make errors in your data cleaning process, you should always be able to go back to your SSOT to start over again if you need to. Second, reviewing your raw data should always be step number two. Waiting to review your data until after you’ve started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file.</p>
+<div id="clean-check" class="section level3" number="14.3.1">
+<h3>
+<span class="header-section-number">14.3.1</span> Checklist steps<a class="anchor" aria-label="anchor" href="#clean-check"><i class="fas fa-link"></i></a>
+</h3>
+<p>Let’s review what each step specifically involves so that as you write your data cleaning plan, you are able to determine which steps are relevant to cleaning your specific data source.</p>
+<ol style="list-style-type: decimal">
+<li>Access your raw data
+<ul>
+<li>If you use code to clean your data, you will read your raw data file into a statistical program (e.g., R, Stata) and export a clean data file, ensuring the raw data file is never touched. If you manually clean your data, you should make a copy of the raw data file and rename it to your clean data file, ensuring you are not writing over your SSOT.</li>
+<li>Part of accessing your raw data may also involve putting it into an analyzable format (e.g., if your second row of data is variable labels, you will want to drop that second row in this process so that you are only left with variable names in the first row and values associated with each variable in all remaining cells)</li>
+</ul>
+</li>
+<li>Review your raw data
+<ul>
+<li>Check the rows in your data
+<ul>
+<li>Do the number of cases in your data match the number of tracked forms in your participant tracking database?</li>
+</ul>
+</li>
+<li>Check the columns in your data
+<ul>
+<li>Do the number of variables in your data dictionary match the number of variables in your dataset?</li>
+<li>Are the variable types and values as expected?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-4"></span>
+<img src="img/review_raw.PNG" alt="Reviewing rows and columns in a raw data file" width="100%"><p class="caption">
+Figure 14.4: Reviewing rows and columns in a raw data file
+</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Adjust number of cases
+<ul>
+<li>Find missing cases
+<ul>
+<li>If cases are marked as complete in your tracking database but their data is missing, investigate the error. Was a form incorrectly tracked in your tracking database? Was a form not entered during the data capture phase?
+<ul>
+<li>If there is an error in your tracking database, fix the error at this time</li>
+<li>Otherwise, search for missing forms, add them to your raw data, and start again at step #1 of your data cleaning process.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Remove duplicate cases
+<ul>
+<li>First, make sure your duplicates are true duplicates (not incorrectly assigned names or IDs). Any incorrect identifiers should be corrected at this time.
+<ul>
+<li>If you have true duplicates (participants who completed a form more than once or their data was entered more than once), duplicates will need to be removed
+<ul>
+<li>Follow the decisions written in your documentation (e.g., research protocol, SOP) to ensure you are removing duplicates consistently. An example rule could be to always keep the first complete record of a form.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Remove any participants who are not part of your final sample (i.e., did not meet inclusion criteria)</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+In the special case where you purposefully collect duplicate observations on a participant (i.e., for reliability purposes), you will only want to keep one row per participant in your final study dataset. Again, a decision rule will need to be added to documentation so duplicates are dealt with consistently (e.g., always keep the primary observer’s record).</p>
+</blockquote>
+<ol start="4" style="list-style-type: decimal">
+<li>De-identify data
+<ul>
+<li>If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter <a href="share.html#share">15</a>, we will also discuss dealing with indirect identifiers before publicly sharing your data.</li>
+<li>Figure <a href="clean.html#fig:fig14-5">14.5</a> shows what a data de-identification process looks like <span class="citation">(<a href="references.html#ref-otoole_data_2018" role="doc-biblioref">O’Toole et al. 2018</a>)</span>. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., <code>first_name</code> and <code>last_name</code>) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.</li>
+</ul>
+</li>
+</ol>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-5"></span>
+<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%"><p class="caption">
+Figure 14.5: Process of creating a de-identified dataset
+</p>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>Drop any irrelevant columns not included in your data dictionary
+<ul>
+<li>Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.</li>
+</ul>
+</li>
+<li>Split columns as needed
+<ul>
+<li>As discussed in Section <a href="structure.html#structure-rules">3.2</a>, a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable.</li>
+</ul>
+</li>
+</ol>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-6"></span>
+<img src="img/clean_split.PNG" alt="Splitting one column into multiple columns" width="80%"><p class="caption">
+Figure 14.6: Splitting one column into multiple columns
+</p>
+</div>
+<ol start="7" style="list-style-type: decimal">
+<li>Rename variables
+<ul>
+<li>Rename variables to correspond with the names provided in your data dictionary.</li>
+</ul>
+</li>
+<li>Normalize variables
+<ul>
+<li>Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why?
+<ul>
+<li>It may be that you need to remove unexpected characters such as $ or % that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-7"></span>
+<img src="img/clean_normalize.PNG" alt="Normalizing a variable" width="40%"><p class="caption">
+Figure 14.7: Normalizing a variable
+</p>
+</div>
+<ol start="9" style="list-style-type: decimal">
+<li>Standardize variables
+<ul>
+<li>Are columns consistently measured, coded, and formatted according to your data dictionary? If no, they need to be standardized.
+<ul>
+<li>This may involve rescaling variables (e.g., age measured in months in wave 1 and age measured in years in wave 2 would need to be rescaled)</li>
+<li>This may mean updating a variable format (e.g., converting to a consistent date format)</li>
+<li>Or it may mean collapsing categories of free text categorical variables (e.g., ‘m’ | ‘M’ | ‘male’ = ‘male’)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+In the case of Figure <a href="clean.html#fig:fig14-7">14.7</a>, this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes.</p>
+</blockquote>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-8"></span>
+<img src="img/clean_standardize.PNG" alt="Standardizing a variable" width="40%"><p class="caption">
+Figure 14.8: Standardizing a variable
+</p>
+</div>
+<ol start="10" style="list-style-type: decimal">
+<li>Update variable types
+<ul>
+<li>After normalizing and standardizing variables, you can now convert any variable types that do not match the types you’ve listed in your data dictionary (e.g., convert a string to numeric)</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+It’s important to normalize before updating your variable types. Updating your variable types before normalizing could result in lost data (i.e., converting a character column to numeric, when the column still contains cells with character values, will often recode those cells to missing).</p>
+</blockquote>
+<ol start="11" style="list-style-type: decimal">
+<li>Recode variables
+<ul>
+<li>If your categorical value codes (see Chapter <a href="style.html#style-codes">9.5</a>) do not match your data dictionary, now is the time to recode those (e.g., you expected “no” = 1, but the data exported as “no” = 14)</li>
+<li>As discussed in Chapter <a href="structure.html#structure-rules">3.2</a>, this also includes recoding implicit values, explicitly (e.g., if a missing value is implied to be 0, recode them to 0)</li>
+<li>You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item)</li>
+</ul>
+</li>
+</ol>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-9"></span>
+<img src="img/clean_reverse.PNG" alt="Reverse coding a variable" width="30%"><p class="caption">
+Figure 14.9: Reverse coding a variable
+</p>
+</div>
+<ol start="12" style="list-style-type: decimal">
+<li>Construct additional variables
+<ul>
+<li>This is not the time to construct analysis-specific variables. This is the time to create or calculate variables that should always be a part of the core study dataset. These variables should be chosen by your data management working group early on and added to your data dictionary.</li>
+<li>Examples of variables to consider creating or calculating:
+<ul>
+<li>cohort</li>
+<li>time component (e.g., wave, time, year)</li>
+<li>treatment</li>
+<li>measure composite or summary scores</li>
+<li>completion variables or data quality flags</li>
+<li>variables created for composite/summary scoring purposes (e.g., age)</li>
+<li>variables that you want added to the core sharing dataset (e.g., categorizing an open-ended text response variable based on a documented pre-defined coding schema)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+Some of these variables may exist in other sources (e.g., treatment may exist in your participant tracking database). If so, these variables won’t need to be created or calculated, they can simply be merged into your clean dataset using a technique similar to the one described in data de-identification step. You can export a file from your participant tracking database that contains unique identifier/s as well as the variables you need, and join on similar unique identifiers across files (e.g., unique teacher ID), bringing in the necessary variables from an outside source.</p>
+</blockquote>
+<ol start="13" style="list-style-type: decimal">
+<li>Add missing values
+<ul>
+<li>Assign missing value codes based on your designated schema (as documented in your data dictionary and style guide).</li>
+</ul>
+</li>
+<li>Add metadata <span class="citation">(<a href="references.html#ref-uk_data_service_research_2023" role="doc-biblioref">UK Data Service 2023</a>)</span>
+<ul>
+<li>While interoperable file types (e.g., CSV) are highly recommended for storing data, it can be extremely helpful to create another copy of your clean data in a format, such as SPSS, that allows for embedded metadata. These file types allow you to embed variable and value code labels that can be very handy for a data user. This can be especially helpful if you plan to export your variables with numeric values (1 | 0), rather than text values (“yes” | “no”). In this case, rather than having to flip back and forth between a file and a data dictionary to interpret codes, users can review information about the variables within the file itself. While future data users may not have a license for the proprietary file type, these file formats can often be opened in free/open source software (e.g., GNU PSPP) or can usually be easily imported into a variety of other statistical programs which can interpret the metadata (e.g., importing SPSS files into R or Stata).</li>
+</ul>
+</li>
+<li>Data validation
+<ul>
+<li>Errors in the data can happen for many reasons, some of which come from the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, merging errors). At minimum you should validate, or check your data for errors, at the end of your data cleaning process. Ideally though, you should be checking every one of your transformations along the way as well.</li>
+<li>Data validation should begin with the manual method of opening your clean data and eyeballing it. Believe it or not, this can actually be a very useful error-catching technique. However, it should not be your only error-catching technique. You should also create tables, calculate summary and reliability statistics, and create univariate and bivariate plots to search for errors. Codebooks are great documents for summarizing and reviewing a lot of this information <span class="citation">(<a href="references.html#ref-arslan_how_2019" role="doc-biblioref">Arslan 2019</a>)</span>.</li>
+<li>You can organize your data validation process by our data quality criteria. The following is a sampling of checks you should complete during your validation process <span class="citation">(<a href="references.html#ref-cessda_training_team_cessda_2017" role="doc-biblioref">CESSDA Training Team 2017</a>; <a href="references.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR 2020</a>; <a href="references.html#ref-strand_error_2021" role="doc-biblioref">Strand 2021</a>; <a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>; <a href="references.html#ref-uk_data_service_research_2023" role="doc-biblioref">UK Data Service 2023</a>)</span>:
+<ul>
+<li>Complete
+<ul>
+<li>Check for missing cases/duplicate cases
+<ul>
+<li>It can also be helpful to check Ns by cluster variables for completeness (e.g., number of students per teacher, number of teachers per school) <span class="citation">(<a href="references.html#ref-decoster_systematic_2023" role="doc-biblioref">DeCoster 2023</a>)</span>
+</li>
+</ul>
+</li>
+<li>Check for missing columns/too many columns</li>
+</ul>
+</li>
+<li>Valid and Consistent
+<ul>
+<li>Check for unallowed categories or values out of range
+<ul>
+<li>Checking by groups can also help illuminate issues (e.g., compare age and grade level) <span class="citation">(<a href="references.html#ref-riederer_make_2021" role="doc-biblioref">Riederer 2021</a>)</span>
+</li>
+</ul>
+</li>
+<li>Check for invalid, non-unique, or missing study IDs</li>
+<li>Check for incorrect variable types</li>
+<li>Check for incorrect formatting</li>
+<li>Check missing values (i.e., do they align with variable universe rules and skip patterns)</li>
+</ul>
+</li>
+<li>Accurate
+<ul>
+<li>Cross check for agreement across variables (e.g., a student in 2nd grade should be associated with a 2nd grade teacher)</li>
+<li>Checks for other project-specific unique situations</li>
+</ul>
+</li>
+<li>De-identified
+<ul>
+<li>Are all direct identifiers removed?</li>
+</ul>
+</li>
+<li>Interpretable
+<ul>
+<li>Are all variables correctly named?</li>
+<li>Is metadata applied to all variables?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If during your validation process you find errors, you first want to determine where the errors originated (i.e., data entry, data export, data cleaning), and correct them in the appropriate location. If errors occurred outside of the cleaning process, this may involve creating a new raw data file and starting the cleaning process again at step 1.
+<ul>
+<li>If you find true values (i.e., they represent what the participant actually reported) that are inaccurate, uninterpretable, or outside of a valid range, you will need to make a personal decision on how to deal with those. Some examples of how you might deal with true errors include:
+<ul>
+<li>Leave the data as is, make a note of the errors in documentation, and allow future researchers to deal with those values during the analysis process.</li>
+<li>Assign a value code (e.g., “inaccurate value” = -90) to recode those values to</li>
+<li>Create data quality indicator variables to denote which cells have untrustworthy values (e.g., <code>age</code> contains the true values and <code>age_q</code> contains 0 = “no concerns” | 1 = “quality concerns”).</li>
+<li>If you find inconsistencies across different sources, you could choose one form as your source of truth and recode values based on that form</li>
+<li>If there are true errors where the correct answer can be easily inferred (e.g., a 3-item rank order question is completed as 1, 2, 4), sometimes logical or deductive editing can be used in those cases and the value is replaced with the logical correction <span class="citation">(<a href="references.html#ref-ipums_usa_introduction_2023" role="doc-biblioref">IPUMS USA 2023</a>; <a href="references.html#ref-seastrom_nces_2002" role="doc-biblioref">Seastrom 2002</a>)</span>.</li>
+</ul>
+</li>
+<li>No matter what your decision is, make sure it is documented in the appropriate places (e.g., data dictionary, data cleaning plan, research protocol)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>At this point, your dataset should be clean. However, there may be additional transformations to be performed depending on how you plan to store and/or share your datasets.</p>
+<ol start="15" style="list-style-type: decimal">
+<li>Merge and/or append data
+<ul>
+<li>In this step you can merge and/or append forms within or across time (recall Section <a href="structure.html#structure-datastructure">3.3.2</a>).
+<ul>
+<li>Merging is joining forms horizontally, by one (e.g., <code>stu_id</code>) or more (e.g., <code>first_name</code> and <code>last_name</code>) unique identifiers (see Figure <a href="clean.html#fig:fig14-10">14.10</a>)
+<ul>
+<li>This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names (e.g., “w1_”, “w2_”)</li>
+<li>However this type of merging can also be used to link forms within time or link forms across participant types (e.g., merging student data with teacher data on <code>tch_id</code>)</li>
+</ul>
+</li>
+<li>Appending is stacking forms on top of each other and columns are matched by variable names. In this case, variable names and variable types should be identical across time in order for the matching to work (see Figure <a href="clean.html#fig:fig14-11">14.11</a>).
+<ul>
+<li>Appending may be used to combine longitudinal data within participants in long format. In this case it will be necessary to include a new variable that indicates the time period associated with each row.</li>
+<li>However, appending is also often used for combining forms collected from different links or captured using multiple databases within a time period (e.g., data collected across sites or cohorts)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Once your merging or appending is complete, it will be very important to do additional validation checks
+<ul>
+<li>Do you have the correct number of rows and columns after merging or appending?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.</p>
+</blockquote>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-10"></span>
+<img src="img/clean_merge.PNG" alt="An example of merging data across forms from the same participant, in the same wave" width="80%"><p class="caption">
+Figure 14.10: An example of merging data across forms from the same participant, in the same wave
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-11"></span>
+<img src="img/clean_append.PNG" alt="An example of appending data collected on the same form across sites" width="80%"><p class="caption">
+Figure 14.11: An example of appending data collected on the same form across sites
+</p>
+</div>
+<ol start="16" style="list-style-type: decimal">
+<li>Reshape data
+<ul>
+<li>Recall Section <a href="structure.html#structure-reshape">3.3.2.3</a> where we reviewed various reasons for structuring your data in wide or long format.
+<ul>
+<li>In wide format, all data collected on a unique subject will be in one row. Here, unique identifiers should not repeat.</li>
+<li>In long format, participant identifiers can repeat, and unique rows are identified through a combination of variables (e.g., <code>stu_id</code> and <code>wave</code> together).</li>
+</ul>
+</li>
+<li>If at some point after merging or appending your data, you find you need to reshape data into a new format, this restructuring process will need to be added to your data cleaning process.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+Having your time component concatenated to the beginning or end of a variable name, rather than embedded into your variable name (as it is in Figure <a href="clean.html#fig:fig14-12">14.12</a>), makes this back and forth restructuring process much easier to do in statistical programs.</p>
+</blockquote>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-12"></span>
+<img src="img/clean_reshape.PNG" alt="A comparison of long and wide format" width="80%"><p class="caption">
+Figure 14.12: A comparison of long and wide format
+</p>
+</div>
+<ol start="17" style="list-style-type: decimal">
+<li>Save your clean data
+<ul>
+<li>The final step of your cleaning process will be to export or save your clean data. You can save your files in one or more file types depending on your needs. It can be helpful to save your data in more than one format to meet various analysis, long-term storage, or data sharing needs (i.e., an interoperable format like CSV, and a format that contains embedded metadata such as SPSS).</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div id="data-cleaning-workflow" class="section level2" number="14.4">
 <h2>
-<span class="header-section-number">14.5</span> Why use code?<a class="anchor" aria-label="anchor" href="#why-use-code"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4</span> Data cleaning workflow<a class="anchor" aria-label="anchor" href="#data-cleaning-workflow"><i class="fas fa-link"></i></a>
 </h2>
 
 </div>
@@ -130,11 +575,12 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#clean"><span class="header-section-number">14</span> Data Cleaning</a></li>
-<li><a class="nav-link" href="#foundational-knowledge"><span class="header-section-number">14.1</span> Foundational knowledge</a></li>
-<li><a class="nav-link" href="#data-structure"><span class="header-section-number">14.2</span> Data structure</a></li>
-<li><a class="nav-link" href="#data-cleaning-plan-1"><span class="header-section-number">14.3</span> Data cleaning plan</a></li>
-<li><a class="nav-link" href="#data-validation"><span class="header-section-number">14.4</span> Data validation</a></li>
-<li><a class="nav-link" href="#why-use-code"><span class="header-section-number">14.5</span> Why use code?</a></li>
+<li><a class="nav-link" href="#data-cleaning-for-data-sharing"><span class="header-section-number">14.1</span> Data cleaning for data sharing</a></li>
+<li><a class="nav-link" href="#clean-criteria"><span class="header-section-number">14.2</span> Data quality criteria</a></li>
+<li>
+<a class="nav-link" href="#data-cleaning-checklist"><span class="header-section-number">14.3</span> Data cleaning checklist</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#clean-check"><span class="header-section-number">14.3.1</span> Checklist steps</a></li></ul>
+</li>
+<li><a class="nav-link" href="#data-cleaning-workflow"><span class="header-section-number">14.4</span> Data cleaning workflow</a></li>
 </ul>
 
       <div class="book-extra">
@@ -152,7 +598,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-20.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

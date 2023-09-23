@@ -167,9 +167,9 @@ Figure 3.2: Representation of a cell value
 </div>
 </div>
 </div>
-<div id="dataset-organization-rules" class="section level2" number="3.2">
+<div id="structure-rules" class="section level2" number="3.2">
 <h2>
-<span class="header-section-number">3.2</span> Dataset organization rules<a class="anchor" aria-label="anchor" href="#dataset-organization-rules"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.2</span> Dataset organization rules<a class="anchor" aria-label="anchor" href="#structure-rules"><i class="fas fa-link"></i></a>
 </h2>
 <p>In order for your dataset to be machine-readable and analyzable, it should adhere to a set of structural rules <span class="citation">(<a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>; <a href="references.html#ref-wickham_tidy_2014" role="doc-biblioref">Wickham 2014</a>)</span>.</p>
 <ol style="list-style-type: decimal">
@@ -182,18 +182,18 @@ Figure 3.3: A comparison of non-rectangular and rectangular data
 </p>
 </div>
 <ol start="2" style="list-style-type: decimal">
-<li>Column values should be consistent. Both humans and machines have difficulty categorizing information that is not coded consistently.
+<li>Column values should be consistent. Both humans and machines have difficulty categorizing information that is not measured, coded, or formatted consistently.
 <ul>
 <li>For text categorical values, use controlled vocabulary and keep consistent spelling, case, and spacing</li>
 <li>For date values, keep consistent format</li>
-<li>For numeric values, keep consistent decimal places</li>
+<li>For numeric values, measure in consistent units and keep consistent decimal places</li>
 </ul>
 </li>
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-4"></span>
-<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and consistent variable values" width="100%"><p class="caption">
-Figure 3.4: A comparison of inconsistent and consistent variable values
+<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and uniform variable values" width="100%"><p class="caption">
+Figure 3.4: A comparison of inconsistent and uniform variable values
 </p>
 </div>
 <ol start="3" style="list-style-type: decimal">
@@ -303,12 +303,12 @@ Figure 3.11: Linking data through primary and foreign keys
 <p>When we structure our data in a wide format, all data collected on a unique subject will be in one row. Subjects should not be duplicated in your data in this format.</p>
 <p>This type of format can be used for the following situations:</p>
 <ul>
-<li>To link forms within subjects, within and/or across time
+<li>To link forms within same participant type, within and/or across time
 <ul>
 <li>This is commonly used to create comprehensive subject-level datasets (e.g., all student data combined into a student-level dataset)</li>
 </ul>
 </li>
-<li>To link forms across participants
+<li>To link forms across different participant types
 <ul>
 <li>Such as a student survey and teacher survey</li>
 </ul>
@@ -347,9 +347,9 @@ Figure 3.14: Data structured in long format
 </p>
 </div>
 </div>
-<div id="choosing-wide-vs-long" class="section level4" number="3.3.2.3">
+<div id="structure-reshape" class="section level4" number="3.3.2.3">
 <h4>
-<span class="header-section-number">3.3.2.3</span> Choosing wide vs long<a class="anchor" aria-label="anchor" href="#choosing-wide-vs-long"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3.2.3</span> Choosing wide vs long<a class="anchor" aria-label="anchor" href="#structure-reshape"><i class="fas fa-link"></i></a>
 </h4>
 <p>There are different reasons for structuring your linked data one way or another. Storing linked data in long format is usually considered to be more efficient than storing in wide format, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically required data to be in long format, where the unit of analysis is each measurement for the subject <span class="citation">(<a href="references.html#ref-grace-martin_wide_2013" role="doc-biblioref">Grace-Martin 2013</a>)</span>. It may be that you structure data in one format for one reason (e.g., storing or sharing), and then restructure data into another format a different reason (e.g., analysis). Luckily, this type of restructuring can be done fairly quickly in many statistical programs. We will further review decision making around data structure in Chapters <a href="clean.html#clean">14</a> and <a href="share.html#share">15</a>.</p>
 </div>
@@ -379,7 +379,7 @@ Figure 3.14: Data structured in long format
 <li><a class="nav-link" href="#cells"><span class="header-section-number">3.1.3</span> Cells</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#dataset-organization-rules"><span class="header-section-number">3.2</span> Dataset organization rules</a></li>
+<li><a class="nav-link" href="#structure-rules"><span class="header-section-number">3.2</span> Dataset organization rules</a></li>
 <li>
 <a class="nav-link" href="#linking-data"><span class="header-section-number">3.3</span> Linking data</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#structure-database"><span class="header-section-number">3.3.1</span> Database design</a></li>
@@ -404,7 +404,7 @@ Figure 3.14: Data structured in long format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-20.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
