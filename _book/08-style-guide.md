@@ -348,7 +348,7 @@ In your value coding style guide, you can add general rules to follow, or it may
 <p class="caption">(\#fig:fig9-4)Example missing value code schema used for numeric variables</p>
 </div>
 
-## Coding
+## Coding {#style-code}
 
 If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.
 

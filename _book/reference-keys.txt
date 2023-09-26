@@ -208,7 +208,7 @@ style-varname
 time
 style-codes
 style-missing
-coding
+style-code
 track
 benefits
 building-your-database
@@ -265,6 +265,9 @@ clean-criteria
 data-cleaning-checklist
 clean-check
 data-cleaning-workflow
+preliminary-steps
+data-cleaning-practices
+data-versioning-practices
 share
 why-share-your-data
 considering-fair-principles
