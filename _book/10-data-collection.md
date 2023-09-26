@@ -277,8 +277,8 @@ There are many ways you might consider collecting unique identifiers other than 
 
 1. Create unique links for participants
     - Many tools will allow you to preload a contact list of participants (from your participant database) that includes both their names and study IDs. Using this list, the tool can create unique links for each participant. This is the most error-proof way to ensure study IDs are entered correctly. 
-    - When you export your data, the correct ID is already linked to each participant and you can choose to not export names in the data. 
-    - If using this method, make sure to build a data check into the system. When a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?". In order to protect other participant identities, do not share full names. 
+    - When you export your data, the correct ID is already linked to each participant and you can choose to not export identifying information (e.g., names, emails) in the data. 
+    - If using this method, make sure to build a data check into the system. For example, when a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?". In order to protect participant identities, do not share full names. 
       - If they say yes, they move forward. If they say no, the system redirects them to someone to contact. This ensures that participants are not completing someone else’s survey and IDs are connected to the correct participant.
 2. Provide one link to all participants and separately, in an email, in person, or by mail, provide participants with their study ID to enter into the system. 
     - This might be a preferred method if you are collecting data in a computer lab or on tablets at a school site, or if your tool does not have the option to create unique links

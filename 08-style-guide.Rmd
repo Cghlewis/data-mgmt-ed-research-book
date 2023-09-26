@@ -59,9 +59,9 @@ When deciding how to structure your project directories (the organization of you
 - When creating your folder structure, strike a balance between a deep and shallow structure
   - Too shallow leads to too many files in one folder which is difficult to sort through
   - Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
-    - An example file path with 69 characters `W:\team\projecta\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv`
+    - An example file path with 70 characters `W:\team\projecta\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv`
   - Examples of file path limits:  
-    - SharePoint/OneDrive path limit is 400 characters [@microsoft_restrictions_nodate]
+    - SharePoint/OneDrive path limit is 400 characters [@microsoft_restrictions_2023]
     - Windows path limit is 260 characters [@ashcraft_naming_2022]
 - Create folders that are specific enough that you can limit access
   - For example you will want to limit user access to folders that hold Personally Identifiable Information (PII)
@@ -138,7 +138,7 @@ knitr::include_graphics("img/xkcd.PNG")
 
 ```
 
-As @xkcd_documents_nodate so aptly points out in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As @xkcd_documents_2023 so aptly points out in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 
@@ -284,7 +284,7 @@ Before moving on there is one last consideration for variable names. If your dat
 
 2. If combining data in wide format, you will need to concatenate time to all of your time varying variable names (i.e., not your subject unique identifier). This removes the problem of having non-unique variable names (e.g., `anx1` in wave 1 and `anx1` in wave 2) and allows you to interpret when each variable was collected. How you concatenate time to your variable names is up to you. Just make sure to continue adding time consistently to all variable names (i.e., same location, same format) and remember to follow variable naming best practices (e.g., never start a variable name with a number). 
 
-Before adding a time component, either as a new variable or as part of a variable name, it's important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., `wave 1` = fall of the study year, `wave 2` = spring of the study year, `wave 3` = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., `pre`/`post`, `fall22`/`spring23`, `2022`/`2023`). Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
+Before adding a time component, either as a new variable or as part of a variable name, it's important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine samples collected in the same relative time periods (e.g., `wave 1` = fall of the study year, `wave 2` = spring of the study year, `wave 3` = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
 
 ```{r fig9-3, fig.cap="Examples of how time might be added to your data based on a variety of scenarios"}
 
@@ -297,7 +297,7 @@ With all of that said, during an active project, it is actually best to not add 
 1. Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave [@reynolds_basics_2022].
 2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
 
-So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.
+So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added when you are ready to combine files. Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.
 
 ## Value coding {#style-codes}
 

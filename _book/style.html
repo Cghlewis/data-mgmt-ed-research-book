@@ -173,13 +173,13 @@ Figure 9.1: Style guide in the research project life cycle
 <li>Too shallow leads to too many files in one folder which is difficult to sort through</li>
 <li>Too deep leads to too many clicks to get to one file, plus file paths can max out with too many characters. A file path includes the full length of both folders and file names
 <ul>
-<li>An example file path with 69 characters <code>W:\team\projecta\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv</code>
+<li>An example file path with 70 characters <code>W:\team\projecta\data\wave1\student\survey\projecta-w1-stu-svy-raw.csv</code>
 </li>
 </ul>
 </li>
 <li>Examples of file path limits:
 <ul>
-<li>SharePoint/OneDrive path limit is 400 characters <span class="citation">(<a href="references.html#ref-microsoft_restrictions_nodate" role="doc-biblioref">Microsoft n.d.</a>)</span>
+<li>SharePoint/OneDrive path limit is 400 characters <span class="citation">(<a href="references.html#ref-microsoft_restrictions_2023" role="doc-biblioref">Microsoft 2023</a>)</span>
 </li>
 <li>Windows path limit is 260 characters <span class="citation">(<a href="references.html#ref-ashcraft_naming_2022" role="doc-biblioref">Ashcraft 2022</a>)</span>
 </li>
@@ -260,7 +260,7 @@ Figure 9.1: Style guide in the research project life cycle
 Figure 9.2: xkcd comic on naming files
 </p>
 </div>
-<p>As <span class="citation">xkcd (<a href="references.html#ref-xkcd_documents_nodate" role="doc-biblioref">n.d.</a>)</span> so aptly points out in Figure <a href="style.html#fig:fig9-2">9.2</a>, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don’t consider how unclear our file names will be for future users (including ourselves).</p>
+<p>As <span class="citation">xkcd (<a href="references.html#ref-xkcd_documents_2023" role="doc-biblioref">n.d.</a>)</span> so aptly points out in Figure <a href="style.html#fig:fig9-2">9.2</a>, many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don’t consider how unclear our file names will be for future users (including ourselves).</p>
 <p>Our file names alone should be able to answer questions such as:</p>
 <ul>
 <li>What are these documents?</li>
@@ -458,7 +458,7 @@ p_relate</code></pre>
 <li><p>If combining data over time in long format, no changes need to be made to your variable names. Variable names should be identically named over time. To account for a time component, you will simply include a new variable (e.g., <code>time</code>, <code>year</code>, <code>wave</code>) and add the appropriate value for each row.</p></li>
 <li><p>If combining data in wide format, you will need to concatenate time to all of your time varying variable names (i.e., not your subject unique identifier). This removes the problem of having non-unique variable names (e.g., <code>anx1</code> in wave 1 and <code>anx1</code> in wave 2) and allows you to interpret when each variable was collected. How you concatenate time to your variable names is up to you. Just make sure to continue adding time consistently to all variable names (i.e., same location, same format) and remember to follow variable naming best practices (e.g., never start a variable name with a number).</p></li>
 </ol>
-<p>Before adding a time component, either as a new variable or as part of a variable name, it’s important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine data, collected in the same periods, across cohorts (e.g., <code>wave 1</code> = fall of the study year, <code>wave 2</code> = spring of the study year, <code>wave 3</code> = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you (e.g., <code>pre</code>/<code>post</code>, <code>fall22</code>/<code>spring23</code>, <code>2022</code>/<code>2023</code>). Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
+<p>Before adding a time component, either as a new variable or as part of a variable name, it’s important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine samples collected in the same relative time periods (e.g., <code>wave 1</code> = fall of the study year, <code>wave 2</code> = spring of the study year, <code>wave 3</code> = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-3"></span>
 <img src="img/time_component.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%"><p class="caption">
@@ -470,7 +470,7 @@ Figure 9.3: Examples of how time might be added to your data based on a variety 
 <li>Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>)</span>.</li>
 <li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point.</li>
 </ol>
-<p>So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added at the time of merging (if merging data is necessary at all). Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.</p>
+<p>So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added when you are ready to combine files. Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.</p>
 </div>
 </div>
 <div id="style-codes" class="section level2" number="9.5">

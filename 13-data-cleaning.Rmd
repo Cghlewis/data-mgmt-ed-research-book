@@ -317,11 +317,11 @@ However, writing code alone will not provide all of the desired benefits. There 
 2. Follow a coding style guide
     - As we discussed in Chapter \@ref(style), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
 3. Use relative file paths
-    - In a point and click environment (e.g., Excel), we typically open or read in a file by going to `file` -> `open`. However, when writing code, we usually import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
+    - In a point and click environment (e.g., Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
     
-        **Example absolute file path:** "C:/Users/myname/projecta/data/proja_w1_stu_svy_raw.csv"
+        **Example absolute file path:** "/Users/username/projecta/data/raw/proja_stu_svy_raw.csv"
                   
-        **Example relative file path:** "data/proja_w1_stu_svy_raw.csv"
+        **Example relative file path:** "raw/proja_stu_svy_raw.csv"
 
 4. Review your data upon import
     - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 

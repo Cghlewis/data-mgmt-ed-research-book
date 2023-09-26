@@ -291,7 +291,7 @@ A README is a plain text document that contains information about your files. Th
 ```
 
 3. For providing information about a set of files in a directory
-    - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes or acronyms used in datasets (e.g., w1_ = wave 1), or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository [@neild_sharing_2022]. 
+    - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes or acronyms used in datasets (e.g., w1_ = wave 1 - fall of study year), or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository [@neild_sharing_2022]. 
 
 ```{r fig8-13, fig.cap="Institute of Education Sciences example README for conveying information on files in a directory", out.width = "75%"}
 
