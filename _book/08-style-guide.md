@@ -128,11 +128,11 @@ When deciding how to structure your project directories (the organization of you
 ## File naming
 
 <div class="figure" style="text-align: center">
-<img src="img/xkcd.PNG" alt="xkcd comic on naming files" width="30%" />
-<p class="caption">(\#fig:fig9-2)xkcd comic on naming files</p>
+<img src="img/xkcd.PNG" alt="Documents, from Randall Munroe’s xkcd" width="30%" />
+<p class="caption">(\#fig:fig9-2)Documents, from Randall Munroe’s xkcd</p>
 </div>
 
-As @xkcd_documents_2023 so aptly points out in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As seen in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 

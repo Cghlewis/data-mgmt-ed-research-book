@@ -17,7 +17,7 @@ What is most important to emphasize here is that data cleaning needs to happen e
 
 ## Data cleaning for data sharing
 
-Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset cleaned for general data sharing purposes and a dataset cleaned for a specific analysis. The former means that the dataset is still in its truest, raw form, but has been minimally altered to allow the data to be correctly interpreted. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.
+Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted [@cook_how-guide_2021; @neild_sharing_2022; @van_dijk_open_2021]. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.
 
 Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig:fig14-2)).
 
@@ -27,7 +27,7 @@ Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig
 2. The general clean study data
     - This is the dataset that you will publicly share and is the one we will be discussing in this chapter.
 3. Your analytic data
-    - This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book. 
+    - This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis [@reynolds_basics_2022]. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book. 
 
 ```{r fig14-2, fig.cap="The three phases of data", out.width = "80%"}
 
@@ -99,10 +99,10 @@ knitr::include_graphics("img/review_raw.PNG")
     - Find missing cases
       - If cases are marked as complete in your tracking database but their data is missing, investigate the error. Was a form incorrectly tracked in your tracking database? Was a form not entered during the data capture phase?
         - If there is an error in your tracking database, fix the error at this time
-        - Otherwise, search for missing forms, add them to your raw data, and start again at step #1 of your data cleaning process.
+        - Otherwise, search for missing forms, add them to your raw data, and start again at step number 1 of your data cleaning process.
     - Find missing variables
       - If you are missing any variables, investigate the error. Was a variable incorrectly added to your data dictionary? Or was a variable somehow dropped in the data capture process or in our data import or file copying process?
-        - Fix the error in the appropriate location and then start again at step #1
+        - Fix the error in the appropriate location and then start again at step number 1
         
 4. Adjust the sample
     - Remove duplicate cases
@@ -141,7 +141,7 @@ knitr::include_graphics("img/clean_split.PNG")
     
 9. Normalize variables
     - Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why? 
-      - As an example, it may be that you need to remove unexpected characters such as $ or % that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
+      - As an example, it may be that you need to remove unexpected characters such as `$` or `%` that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
 
 ```{r fig14-7, fig.cap="Normalizing a variable", out.width = "40%"}
 
@@ -156,7 +156,7 @@ knitr::include_graphics("img/clean_normalize.PNG")
       - Or it may mean collapsing categories of free text categorical variables (e.g., 'm' | 'M' | 'male' = 'male')
 
 > **Note** <br> <br>
-In the case of Figure \@ref(fig:fig14-7), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes.
+In the case of Figure \@ref(fig:fig14-7), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.
 
 ```{r fig14-8, fig.cap="Standardizing a variable", out.width = "40%"}
 
@@ -185,8 +185,8 @@ knitr::include_graphics("img/clean_reverse.PNG")
     - This is not the time to construct analysis-specific variables. This is the time to create or calculate variables that should always be a part of the core study dataset. These variables should be chosen by your data management working group early on and added to your data dictionary.
     - Examples of variables to consider creating or calculating:
       - cohort
-      - time component (e.g., wave, time, year)
-      - treatment
+      - time component (e.g., `wave`, `time`, `year`)
+      - grouping variables (e.g., randomization, clusters)
       - measure composite or summary scores
       - completion variables or data quality flags
       - variables created for composite/summary scoring purposes (e.g., age)
@@ -318,10 +318,9 @@ However, writing code alone will not provide all of the desired benefits. There 
     - As we discussed in Chapter \@ref(style), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
 3. Use relative file paths
     - In a point and click environment (e.g., Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
-    
-        **Example absolute file path:** "/Users/username/projecta/data/raw/proja_stu_svy_raw.csv"
-                  
-        **Example relative file path:** "raw/proja_stu_svy_raw.csv"
+
+    - **Example absolute file path:**       "/Users/username/projecta/data/raw/proja_stu_svy_raw.csv  
+    - **Example relative file path:** "raw/proja_stu_svy_raw.csv"
 
 4. Review your data upon import
     - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
@@ -360,6 +359,3 @@ The last part of the workflow to consider is where you will store your data and 
 However, once your final datasets are saved, it is common that at some point you will find an error in your data and/or your code. Yet, once you’ve shared your data and code with others, it will be imperative that you do not save over existing versions of those files. You will need to version both your code and your data, following the guidelines laid out in your style guide. Versioning your final files, and keeping track of those different versions in a changelog (see Section \@ref(document-change)), allows you to track data lineage, helping users understand where the data originated as well as all transformations made to the data. While you can version any files that you choose, I am specifically referring to final files here, not in-progress, working files that have not yet been shared with others.
 
 Last, along with assigning someone to oversee data cleaning, it will be important to assign someone to oversee this versioning process. Versioning files and updating documentation takes time and consideration, and that responsibility will need to be explicitly laid out in order to ensure it isn't forgotten. 
-
-
-

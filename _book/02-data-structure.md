@@ -21,7 +21,7 @@ The columns in your dataset will consist of the following types of variables:
 
 - Variables you collect (from an instrument or from an external source)
 - Variables you create (e.g., cohort, intervention, time, derivations)
-  - Unless your data is collected anonymously, one of these variables must include values that uniquely identify subjects in your data (e.g., a student unique identifier). 
+  - Unless your data is collected anonymously, at least one of these variables must include values that uniquely identify subjects in your data (e.g., a student unique identifier). 
 
 **Column attributes**
 

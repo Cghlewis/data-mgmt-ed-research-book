@@ -120,7 +120,7 @@ Figure 14.1: Data cleaning in the research project life cycle
 <h2>
 <span class="header-section-number">14.1</span> Data cleaning for data sharing<a class="anchor" aria-label="anchor" href="#data-cleaning-for-data-sharing"><i class="fas fa-link"></i></a>
 </h2>
-<p>Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset cleaned for general data sharing purposes and a dataset cleaned for a specific analysis. The former means that the dataset is still in its truest, raw form, but has been minimally altered to allow the data to be correctly interpreted. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.</p>
+<p>Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted <span class="citation">(<a href="references.html#ref-cook_how-guide_2021" role="doc-biblioref">Cook et al. 2021</a>; <a href="references.html#ref-neild_sharing_2022" role="doc-biblioref">Neild, Robinson, and Agufa 2022</a>; <a href="references.html#ref-van_dijk_open_2021" role="doc-biblioref">Dijk, Schatschneider, and Hart 2021</a>)</span>. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.</p>
 <p>Ultimately, you can think of data in three distinct phases (see Figure <a href="clean.html#fig:fig14-2">14.2</a>).</p>
 <ol style="list-style-type: decimal">
 <li>Raw data
@@ -136,7 +136,7 @@ Figure 14.1: Data cleaning in the research project life cycle
 </li>
 <li>Your analytic data
 <ul>
-<li>This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book.</li>
+<li>This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>)</span>. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book.</li>
 </ul>
 </li>
 </ol>
@@ -256,7 +256,7 @@ Figure 14.4: Reviewing rows and columns in a raw data file
 <li>If cases are marked as complete in your tracking database but their data is missing, investigate the error. Was a form incorrectly tracked in your tracking database? Was a form not entered during the data capture phase?
 <ul>
 <li>If there is an error in your tracking database, fix the error at this time</li>
-<li>Otherwise, search for missing forms, add them to your raw data, and start again at step #1 of your data cleaning process.</li>
+<li>Otherwise, search for missing forms, add them to your raw data, and start again at step number 1 of your data cleaning process.</li>
 </ul>
 </li>
 </ul>
@@ -265,7 +265,7 @@ Figure 14.4: Reviewing rows and columns in a raw data file
 <ul>
 <li>If you are missing any variables, investigate the error. Was a variable incorrectly added to your data dictionary? Or was a variable somehow dropped in the data capture process or in our data import or file copying process?
 <ul>
-<li>Fix the error in the appropriate location and then start again at step #1</li>
+<li>Fix the error in the appropriate location and then start again at step number 1</li>
 </ul>
 </li>
 </ul>
@@ -337,7 +337,7 @@ Figure 14.6: Splitting one column into multiple columns
 <ul>
 <li>Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why?
 <ul>
-<li>As an example, it may be that you need to remove unexpected characters such as $ or % that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.</li>
+<li>As an example, it may be that you need to remove unexpected characters such as <code>$</code> or <code>%</code> that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.</li>
 </ul>
 </li>
 </ul>
@@ -364,7 +364,7 @@ Figure 14.7: Normalizing a variable
 </ol>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-In the case of Figure <a href="clean.html#fig:fig14-7">14.7</a>, this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes.</p>
+In the case of Figure <a href="clean.html#fig:fig14-7">14.7</a>, this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.</p>
 </blockquote>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-8"></span>
@@ -405,8 +405,8 @@ Figure 14.9: Reverse coding a variable
 <li>Examples of variables to consider creating or calculating:
 <ul>
 <li>cohort</li>
-<li>time component (e.g., wave, time, year)</li>
-<li>treatment</li>
+<li>time component (e.g., <code>wave</code>, <code>time</code>, <code>year</code>)</li>
+<li>grouping variables (e.g., randomization, clusters)</li>
 <li>measure composite or summary scores</li>
 <li>completion variables or data quality flags</li>
 <li>variables created for composite/summary scoring purposes (e.g., age)</li>
@@ -639,11 +639,9 @@ Figure 14.12: A comparison of long and wide format
 </li>
 <li>Use relative file paths
 <ul>
-<li>
-<p>In a point and click environment (e.g., Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us.</p>
-<p><strong>Example absolute file path:</strong> “/Users/username/projecta/data/raw/proja_stu_svy_raw.csv”</p>
-<p><strong>Example relative file path:</strong> “raw/proja_stu_svy_raw.csv”</p>
-</li>
+<li><p>In a point and click environment (e.g., Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us.</p></li>
+<li><p><strong>Example absolute file path:</strong> “/Users/username/projecta/data/raw/proja_stu_svy_raw.csv<br></p></li>
+<li><p><strong>Example relative file path:</strong> “raw/proja_stu_svy_raw.csv”</p></li>
 </ul>
 </li>
 <li>Review your data upon import
@@ -758,7 +756,7 @@ Figure 14.12: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-09-26.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-06.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

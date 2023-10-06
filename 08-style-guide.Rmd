@@ -132,13 +132,13 @@ print(project)
 
 ## File naming
 
-```{r fig9-2, fig.cap="xkcd comic on naming files", out.width = "30%"}
+```{r fig9-2, fig.cap="Documents, from Randall Munroe’s xkcd", out.width = "30%"}
 
 knitr::include_graphics("img/xkcd.PNG")
 
 ```
 
-As @xkcd_documents_2023 so aptly points out in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As seen in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 

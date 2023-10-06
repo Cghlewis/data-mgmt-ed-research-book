@@ -4,7 +4,7 @@ In addition to understanding data structure, we also need a foundational underst
 
 ## Identifiability of a dataset
 
-When working with human subjects there are two types of identifiers you may collect in your study, direct and indirect. Direct identifiers are unique to an individual and can be used to identify a participant. Indirect identifiers do not alone identify a particular individual, but if combined with other information or if category numbers are small, could be used to identify a participant.
+When working with human subjects there are two types of identifiers you may collect in your study, direct and indirect. Direct identifiers are unique to an individual and can be used to identify a participant. Indirect identifiers are not necessarily unique to a particular individual, but if combined with other information they could be used to identify a participant [@kopper_data_2023].
 
 <div class="figure" style="text-align: center">
 <img src="img/identifiers.PNG" alt="Examples of direct and indirect identifiers" width="80%" />
@@ -40,9 +40,9 @@ When collecting identifiable data, there are laws, policies, departments, and ag
 
 1. FERPA: The Family Educational Rights and Privacy Act (FERPA) is a federal law protecting the privacy of student education records. The law applies to elementary and secondary schools, as well as post-secondary institutions which receive federal funds from the Department of Education. FERPA provides a list of personally identifiable information often contained in education records ^[https://www.ecfr.gov/current/title-34/subtitle-A/part-99]. 
 
-2. HIPAA: The Health Insurance Portability and Accountability Act (HIPAA) provides federal protection for the privacy of protected health information (PHI) collected by covered entities serving patients. The HIPAA Privacy Rule provides a list of 18 identifiers that should be protected ^[https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#standard].
+2. HIPAA: The Health Insurance Portability and Accountability Act (HIPAA) provides federal protection for the privacy of protected health information (PHI) collected by covered entities serving patients. The HIPAA Privacy Rule provides a list of 18 identifiers that should be protected ^[https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance].
 
-3. Common Rule: In 1991 the Federal Policy for the Protection of Human Subjects was published, establishing core procedures for human subject protections. The policy, 45 CFR part 46 [@office_for_human_research_protections_45_2016], included four subparts. Subpart A, known as the "Common Rule", provided a set of protections for human subjects research including informed consent, review by an IRB, and compliance monitoring [@national_institute_of_justice_common_2007; @office_for_human_research_federal_2009]. In 2018 the Common Rule was revised in order to better protect research participants and to reduce administrative burden [@office_for_human_research_office_for_human_research_revised_2018; @us_department_of_health_and_human_services_whats_2018]. 
+3. Common Rule: In 1991 the Federal Policy for the Protection of Human Subjects was published, establishing core procedures for human subject protections. The policy, 45 CFR part 46 [@office_for_human_research_protections_45_2016], included four subparts. Subpart A, known as the "Common Rule", provided a set of protections for human subjects research including informed consent, review by an IRB, and compliance monitoring [@national_institute_of_justice_common_2007; @office_for_human_research_protections_federal_2009]. In 2018 the Common Rule was revised in order to better protect research participants and to reduce administrative burden [@office_for_human_research_protections_revised_2018; @us_department_of_health_and_human_services_whats_2018]. 
 
 ### Institutions and departments
 

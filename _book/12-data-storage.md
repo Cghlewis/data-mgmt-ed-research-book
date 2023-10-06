@@ -105,9 +105,14 @@ In addition to planning for short-term storage, during an active project, you wi
     - Electronic
       - For electronic data long-term storage, you will want to consider two things, file formats and storage location [@borer_simple_2009; @briney_data_2015].
         - File formats 
-          - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete. This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
+          - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete (see Figure \@ref(fig:fig13-3)). This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
         - Storage location
           - Similar to choosing file formats, choose a storage location that is accessible and not at risk of becoming corrupt or obsolete (e.g., think obsolescence of floppy disks). If your short-term storage solution meets these requirements (e.g., your institution network drive), you may not need to do anything different in preparing for long-term storage, but it will be important to continue implementing good practices to keep your data safe (e.g., continuing data backups). When it comes time to destroy data, make sure to permanently delete files, including all backups of files. When deleting PII, this often involves more than just moving files to the trash can on your computer. Work with your institution IT department during this process. 
+
+<div class="figure" style="text-align: center">
+<img src="img/file_types.PNG" alt="Examples of non-proprietary file formats" width="70%" />
+<p class="caption">(\#fig:fig13-3)Examples of non-proprietary file formats</p>
+</div>
 
 3. Consider how you will share data internally
     - At the end of a project, or possibly earlier in the project, it is important to consider where you will store final datasets in your storage location (i.e., a specific folder), how you will notify team members of their availability, and how you will allow team members, and other research partners, to access data. An example of this process may look like this:
@@ -117,15 +122,15 @@ In addition to planning for short-term storage, during an active project, you wi
         - Design a system for requesting access (e.g., designate a person to email, develop a survey form that is submitted to a designated person)
           - In that system, the researcher should describe what data they are requesting (i.e., what variables, from what time periods), as well as the purpose of their analysis. It may be helpful to build a data request process that involves providing data dictionaries and other documentation to researchers to review before requesting data.
         - Decide who needs to review the request to ensure all requested information is available (e.g., a data manager), and who needs to give final approval for the data request submission (e.g., a PI)
-        - Design a system for gathering data for requestors (e.g., will you provide researchers will full datasets or will you narrow datasets based on specific requests)
-          - If narrowing datasets for researchers, where will new datasets be stored? (e.g., a "data request" folder) (see Figure \@ref(fig:fig13-3))
+        - Design a system for gathering data for requestors (e.g., will you provide researchers with full datasets or will you narrow datasets based on specific requests)
+          - If narrowing datasets for researchers, where will new datasets be stored? (e.g., a "data request" folder) (see Figure \@ref(fig:fig13-4))
         - Consider how you will share datasets with researchers (e.g., a secure link to a cloud folder, using secure file transfer)
         - Consider how you will track data requests
           - It is important to keep track of data requests in case of situations such as errors found in the data. In those cases, you can reach back out to researchers to inform them that errors were found and new versions of the data are available.
 
 <div class="figure" style="text-align: center">
 <img src="img/data-request.PNG" alt="Example set up for a data request folder" width="70%" />
-<p class="caption">(\#fig:fig13-3)Example set up for a data request folder</p>
+<p class="caption">(\#fig:fig13-4)Example set up for a data request folder</p>
 </div>
 
 Last, if maintaining your electronic data long-term sounds like too much effort for your team, there are other options. Many universities have institutional repositories that often include services such as data curation and preservation. Additionally, there are several external repositories that offer curation and preservation services where you may be able to deposit your data for long-term storage. It's possible that depositing your data in one of these two options may also align with publicly sharing your data, which we will review in Chapter \@ref(share).

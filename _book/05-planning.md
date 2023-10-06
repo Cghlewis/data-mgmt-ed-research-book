@@ -52,7 +52,7 @@ This decision-making process is personalized. Borghi and Van Gulick [@borghi_pro
 
 For example, one team may collect survey data on paper because their participants are young children, hand enter it into Microsoft Excel because that is the only tool they have access to, and double enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand enter the data into FileMaker because that is the tool their team is familiar with, and double enter 100% because they have the budget and capacity to do that.
 
-Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making process, based on the [@borghi_promoting_2022] flow chart. Of course, in real life we are often choosing between many more than just two options!
+Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making process, based on a @borghi_promoting_2022 flow chart. Of course, in real life we are often choosing between many more than just two options!
 
 <div class="figure" style="text-align: center">
 <img src="img/decision-diagram.PNG" alt="A simplified decision-making process" width="60%" />
@@ -109,7 +109,7 @@ But the format truly does not matter. Figure \@ref(fig:fig6-5) is a diagram of t
 <p class="caption">(\#fig:fig6-5)Example student survey workflow using a swimlane template</p>
 </div>
 
-If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig6-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_gantt_nodate] in order to better capture the expected timeline.
+If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig6-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_grant_2021] in order to better capture the expected timeline.
 
 <div class="figure" style="text-align: center">
 <img src="img/gantt.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
