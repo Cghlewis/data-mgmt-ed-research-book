@@ -277,7 +277,7 @@ preliminary-steps
 data-cleaning-practices
 data-versioning-practices
 share
-why-share-your-data
+share-why
 data-sharing-flow-chart
 share-able
 where-to-share
