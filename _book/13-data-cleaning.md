@@ -214,7 +214,7 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
         - Are all direct identifiers removed?
       - Interpretable
         - Are all variables correctly named?
-        - Is metadata applied to all variables?
+        - Is metadata applied to all variables? Is the metadata accurate (e.g., value labels correct, variable labels correct)?
     - If during your validation process you find errors, you first want to determine where the errors originated (i.e., data entry, data export, data cleaning), and correct them in the appropriate location. If errors occurred in the data entry or data export/saving process, this may involve creating a new raw data file and starting the cleaning process again at step 1. 
       - If, however, you find true values that are inaccurate, uninterpretable, or outside of a valid range (i.e., they represent what the participant actually reported), you will need to make a personal decision on how to deal with those. Some examples of how you might deal with true errors include:
         - Leave the data as is, make a note of the errors in documentation, and allow future researchers to deal with those values during the analysis process.
@@ -282,8 +282,8 @@ Next, you will want to gather all of the necessary documentation that will be us
     - In this document, variables should be named and coded according to your style guide and all variables and transformations approved by the data management working group.
 2. Data cleaning plan
     - This should include a series of steps based off of our standardized data cleaning checklist, and all transformations have been reviewed by the data management working group.
-3. ReadMe file
-    - This includes any ReadMe files, stored alongside raw data files, that contain notes that may be relevant to your data cleaning process (e.g., a project coordinator notes that “ID 1234 should actually be ID 1235”). You will want to integrate this information into your data cleaning plan as needed.
+3. README file
+    - This includes any README files, stored alongside raw data files, that contain notes that may be relevant to your data cleaning process (e.g., a project coordinator notes that “ID 1234 should actually be ID 1235”). You will want to integrate this information into your data cleaning plan as needed.
 4. Participant tracking database
     - Make sure that this database is up to date so that you can compare form completion status numbers to the Ns in your dataset.
 
@@ -303,12 +303,12 @@ However, writing code alone will not provide all of the desired benefits. There 
 1. Do all transformations in code
     - Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.
 2. Follow a coding style guide
-    - As we discussed in Chapter \@ref(style), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
+    - As we discussed in Section \@ref(style-code), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
 3. Use relative file paths
-    - In a point and click environment (e.g., Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
+    - In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
 
-    - **Example absolute file path:**       "/Users/username/projecta/data/raw/proja_stu_svy_raw.csv  
-    - **Example relative file path:** "raw/proja_stu_svy_raw.csv"
+      **Example absolute file path:** "/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv"  
+      **Example relative file path:** "raw/proja_stu_svy_raw.csv"
 
 4. Review your data upon import
     - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
@@ -338,7 +338,7 @@ However, writing code alone will not provide all of the desired benefits. There 
 While I highly recommend using code to clean your data for all the reasons previously mention, I acknowledge that code writing does require technical expertise that not everyone may have. If you need to clean your data manually, the most important thing in this case then, is to document every transformation. Here you have two options. 
 
   - If cleaning data using the point and click menu in a program such as SPSS, when performing a transformation you can use a "paste" type button to copy all associated commands into a syntax file that can easily be reused [@kathawalla_easing_2021].
-  - If using a program such as Excel for data cleaning, it will be important to add detailed notes into your data cleaning plan that would allow anyone to replicate your exact data cleaning process by hand [@the_carpentries_data_2023].
+  - If using a program such as Microsoft Excel for data cleaning, it will be important to add detailed notes into your data cleaning plan that would allow anyone to replicate your exact data cleaning process by hand [@the_carpentries_data_2023].
 
 ### Data versioning practices
 

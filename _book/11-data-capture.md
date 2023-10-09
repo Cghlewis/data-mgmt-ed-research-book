@@ -5,12 +5,13 @@
 <p class="caption">(\#fig:fig12-1)Data capture in the research project life cycle</p>
 </div>
 
-After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
+After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a flat file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
 
 <div class="figure" style="text-align: center">
 <img src="img/capture.PNG" alt="Common data capture methods" width="60%" />
 <p class="caption">(\#fig:fig12-2)Common data capture methods</p>
 </div>
+
 
 ## Electronic data capture {#capture-electronic}
 
@@ -20,7 +21,7 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
     - The most common way to capture data in an electronic format is to download it from your platform.
     - Another option you may have for web-based forms is to capture data via an API (application programming interface). If you regularly need to review your data before your final capture, using an API can be a great way to remove the burden of manually logging into a program and going through the point and click process of downloading a file. Instead you can write a script, in a program such as R, to extract the data. Once the script is created, you can run it as often as you want. However, this is only an option if your tool has an API available (e.g., Qualtrics).
 1. What file type will the data be captured in?
-    - Most electronic data collection tools provide an option to export to one or more file formats (e.g., SAV, CSV, TXT). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider might include:
+    - Most electronic data collection tools provide an option to export to one or more file formats (e.g., SPSS, CSV, TXT). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider might include:
       - Do you want the text values for responses or the numeric values? Your choice may limit your options (e.g., text values may be available in a CSV but not in an SPSS file).
       - Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options (e.g., an SPSS file allows you to export the numeric values while also being able to view the variable and value labels in the file).
       - Do you want a non-proprietary, interoperable format? If yes, you will not want to capture data in file types such as XLSX and SPSS that require proprietary software to view.
@@ -119,7 +120,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
     - For example, staff can write their initials on a form after entry
 1. Steps to be performed before handing off the entered data
     - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. Most importantly, check to see that the correct number of participants exist in the file compared to your participant tracking database (e.g., no duplicate entries, no missing entries). If data entry or data tracking errors exist, fix mistakes as needed. If inherent data issues exist, make notes in a README to be corrected in the data cleaning phase.
-1. Last, similar to electronic data capture (see Section \@ref(capture-electronic)), you will want to make decisions about final file types (e.g., this will be relevant if you use a database for data entry and need to export files), where final files will be stored, and how they will be named.
+1. Last, similar to electronic data capture (see Section \@ref(capture-electronic)), you will want to make decisions about final file types (e.g., CSV, XLSX, SPSS), where final files will be stored, and how they will be named.
 1. Who will oversee this process? (i.e., creating entry forms, answering questions, conducting final checks)
     
 <div class="figure" style="text-align: center">
@@ -159,7 +160,7 @@ If you are entering data into a proprietary scoring system that does not provide
 
 ### Scanning forms
 
-Although less common now, it is possible that you may collect paper data using forms which can be scanned and converted automatically into a machine-readable dataset. Depending on whether your team is personally doing the scanning or whether an external company captures the data, this has the potential to save you time and energy compared to a manual data entry process. These may also have the potential to be less error-prone than manual entry, yet this process is still not error-free and caution should be taken when capturing this data [@jorgensen_validation_1998]. It is still important to do data checks to ensure that the correct values were recorded in the electronic file. 
+Although less common now, it is possible that you may collect paper data using forms which can be scanned and converted automatically into a machine-readable dataset. Depending on whether your team is personally doing the scanning or whether an external company captures the data, this has the potential to save you time and energy compared to a manual data entry process. These may also have the potential to be less error-prone than manual entry, yet this process is still not error-free and caution should be taken when capturing this data [@jorgensen_validation_1998]. It is still important to do data checks to ensure that the correct values were recorded in the electronic file.
 
 ## Extant data {#capture-extant}
 

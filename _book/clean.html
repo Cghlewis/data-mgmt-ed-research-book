@@ -476,7 +476,7 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
 <li>Interpretable
 <ul>
 <li>Are all variables correctly named?</li>
-<li>Is metadata applied to all variables?</li>
+<li>Is metadata applied to all variables? Is the metadata accurate (e.g., value labels correct, variable labels correct)?</li>
 </ul>
 </li>
 </ul>
@@ -598,9 +598,9 @@ Figure 14.12: A comparison of long and wide format
 <li>This should include a series of steps based off of our standardized data cleaning checklist, and all transformations have been reviewed by the data management working group.</li>
 </ul>
 </li>
-<li>ReadMe file
+<li>README file
 <ul>
-<li>This includes any ReadMe files, stored alongside raw data files, that contain notes that may be relevant to your data cleaning process (e.g., a project coordinator notes that “ID 1234 should actually be ID 1235”). You will want to integrate this information into your data cleaning plan as needed.</li>
+<li>This includes any README files, stored alongside raw data files, that contain notes that may be relevant to your data cleaning process (e.g., a project coordinator notes that “ID 1234 should actually be ID 1235”). You will want to integrate this information into your data cleaning plan as needed.</li>
 </ul>
 </li>
 <li>Participant tracking database
@@ -634,14 +634,15 @@ Figure 14.12: A comparison of long and wide format
 </li>
 <li>Follow a coding style guide
 <ul>
-<li>As we discussed in Chapter <a href="style.html#style">9</a>, creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.</li>
+<li>As we discussed in Section <a href="style.html#style-code">9.6</a>, creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.</li>
 </ul>
 </li>
 <li>Use relative file paths
 <ul>
-<li><p>In a point and click environment (e.g., Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us.</p></li>
-<li><p><strong>Example absolute file path:</strong> “/Users/username/projecta/data/raw/proja_stu_svy_raw.csv<br></p></li>
-<li><p><strong>Example relative file path:</strong> “raw/proja_stu_svy_raw.csv”</p></li>
+<li>
+<p>In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us.</p>
+<p><strong>Example absolute file path:</strong> “/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv”<br><strong>Example relative file path:</strong> “raw/proja_stu_svy_raw.csv”</p>
+</li>
 </ul>
 </li>
 <li>Review your data upon import
@@ -705,7 +706,7 @@ Figure 14.12: A comparison of long and wide format
 <p>While I highly recommend using code to clean your data for all the reasons previously mention, I acknowledge that code writing does require technical expertise that not everyone may have. If you need to clean your data manually, the most important thing in this case then, is to document every transformation. Here you have two options.</p>
 <ul>
 <li>If cleaning data using the point and click menu in a program such as SPSS, when performing a transformation you can use a “paste” type button to copy all associated commands into a syntax file that can easily be reused <span class="citation">(<a href="references.html#ref-kathawalla_easing_2021" role="doc-biblioref">Kathawalla, Silverstein, and Syed 2021</a>)</span>.</li>
-<li>If using a program such as Excel for data cleaning, it will be important to add detailed notes into your data cleaning plan that would allow anyone to replicate your exact data cleaning process by hand <span class="citation">(<a href="references.html#ref-the_carpentries_data_2023" role="doc-biblioref">The Carpentries 2023</a>)</span>.</li>
+<li>If using a program such as Microsoft Excel for data cleaning, it will be important to add detailed notes into your data cleaning plan that would allow anyone to replicate your exact data cleaning process by hand <span class="citation">(<a href="references.html#ref-the_carpentries_data_2023" role="doc-biblioref">The Carpentries 2023</a>)</span>.</li>
 </ul>
 </div>
 <div id="data-versioning-practices" class="section level3" number="14.4.3">
@@ -756,7 +757,7 @@ Figure 14.12: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-07.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-09.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

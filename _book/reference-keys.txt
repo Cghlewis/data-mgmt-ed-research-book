@@ -283,9 +283,8 @@ share-able
 where-to-share
 choosing-a-repository
 what-data-to-share
-organizing-data-files
-combining-data
-keeping-data-separate
+processing-of-files
+organizing-files
 file-formats
 assess-disclosure-risk
 mitigating-disclosure-risk
