@@ -360,7 +360,7 @@ knitr::include_graphics("img/missing2.PNG")
 
 If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.
 
-- Consider building and implementing coding templates [@daskalova_coding_2020; @farewell_my_2018] 
+- Consider building and implementing coding templates [@castaneda_nice_2019; @farewell_my_2018] 
   - Templates can standardize the format of syntax files (such as using standard headers to break up code)
   - They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)
 - Use comments throughout your code to clearly explain the purpose of each code chunk

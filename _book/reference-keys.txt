@@ -107,6 +107,7 @@ fig:fig15-4
 fig:fig15-5
 fig:fig15-6
 fig:fig15-7
+fig:fig16-1
 preamble
 introduction
 why-this-book
@@ -120,7 +121,7 @@ final-note
 acknowledgements
 rdm
 what-is-research-data-management
-standards
+data-management-standards
 why-care-about-research-data-management
 external-reasons
 personal-reasons
@@ -295,7 +296,8 @@ when-to-share
 repository-file-structure
 roles-and-responsibilities
 retraction-and-revisions
-wrapping-it-up-1
-connecting-practices-to-outcomes
-putting-in-the-work
+additional-considerations
+multi-site-collaborations
+multi-project-sites
+summary
 glossary

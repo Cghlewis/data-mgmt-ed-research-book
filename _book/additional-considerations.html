@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 16 Additional considerations | Data Management in Large-Scale Education Research</title>
+<meta name="author" content="Crystal Lewis">
+<meta name="description" content="Up until this point, we have mostly focused on a simplistic workflow for one team with one project. However, it is becoming more common for projects to include multi-site collaborations (e.g., a...">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta property="og:title" content="Chapter 16 Additional considerations | Data Management in Large-Scale Education Research">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/book_featured.PNG">
+<meta property="og:description" content="Up until this point, we have mostly focused on a simplistic workflow for one team with one project. However, it is becoming more common for projects to include multi-site collaborations (e.g., a...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 16 Additional considerations | Data Management in Large-Scale Education Research">
+<meta name="twitter:description" content="Up until this point, we have mostly focused on a simplistic workflow for one team with one project. However, it is becoming more common for projects to include multi-site collaborations (e.g., a...">
+<meta name="twitter:image" content="/book_featured.PNG">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Data Management in Large-Scale Education Research</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
+<li><a class="" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
+<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
+<li><a class="" href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></li>
+<li><a class="" href="dmp.html"><span class="header-section-number">5</span> Data Management Plan</a></li>
+<li><a class="" href="plan.html"><span class="header-section-number">6</span> Planning Data Management</a></li>
+<li><a class="" href="roles.html"><span class="header-section-number">7</span> Project Roles and Responsibilities</a></li>
+<li><a class="" href="document.html"><span class="header-section-number">8</span> Documentation</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">9</span> Style guide</a></li>
+<li><a class="" href="track.html"><span class="header-section-number">10</span> Data Tracking</a></li>
+<li><a class="" href="collect.html"><span class="header-section-number">11</span> Data Collection</a></li>
+<li><a class="" href="capture.html"><span class="header-section-number">12</span> Data Capture</a></li>
+<li><a class="" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
+<li><a class="" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
+<li><a class="active" href="additional-considerations.html"><span class="header-section-number">16</span> Additional considerations</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/Cghlewis/data-mgmt-ed-research-book">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="additional-considerations" class="section level1" number="16">
+<h1>
+<span class="header-section-number">16</span> Additional considerations<a class="anchor" aria-label="anchor" href="#additional-considerations"><i class="fas fa-link"></i></a>
+</h1>
+<p>Up until this point, we have mostly focused on a simplistic workflow for one team with one project. However, it is becoming more common for projects to include multi-site collaborations (e.g., a grant shared across multiple research institutions), and for teams to have multiple projects. Both of these add complexity to data management which I will briefly address.</p>
+<div id="multi-site-collaborations" class="section level3" number="16.0.1">
+<h3>
+<span class="header-section-number">16.0.1</span> Multi-site collaborations<a class="anchor" aria-label="anchor" href="#multi-site-collaborations"><i class="fas fa-link"></i></a>
+</h3>
+<p>Multi-site, or multi-team, collaborations require additional planning around roles and responsibilities, workflows, and standards. Jumping into multi-site collaborations with out spending time cross-team planning often leads to unfortunate data security and quality concerns. Before a project begins, consider documenting expectations in a collaboration agreement. Review everything in a typical data management checklist but come to an agreement on decisions. The following types of multi-site issues should also be addressed <span class="citation">(<a href="references.html#ref-briney_data_2015" role="doc-biblioref">Briney 2015</a>; <a href="references.html#ref-schmitt_data_2011" role="doc-biblioref">Schmitt and Burchinal 2011</a>)</span>.</p>
+<ul>
+<li>How will teams maintain consistency in procedures across sites? (e.g. shared SOPs, shared style guides, oversight of practices)
+<ul>
+<li>If each site is handling their own data tracking, capture, entry, and cleaning procedures, it is imperative that these processes are standardized to allow for datasets to be integrated.</li>
+</ul>
+</li>
+<li>How will teams handle data ownership?</li>
+<li>What are the roles and responsibilities across sites?</li>
+<li>What tools will be used to allow for multi-site data tracking, collection, entry, storage, and sharing?</li>
+</ul>
+<p>Documents such as a RACI chart (see Chapter <a href="roles.html#roles">7</a>) can be helpful in laying out expectations for team collaborations (Figure <a href="additional-considerations.html#fig:fig16-1">16.1</a>). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. Assigning levels of responsibility to each site allows collaborators to clearly see what is expected from them in a project. Then within site tasks can then be further assigned to specific roles.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig16-1"></span>
+<img src="img/raci.PNG" alt="Example of a RACI chart for a multi-site project collaboration" width="80%"><p class="caption">
+Figure 16.1: Example of a RACI chart for a multi-site project collaboration
+</p>
+</div>
+</div>
+<div id="multi-project-sites" class="section level3" number="16.0.2">
+<h3>
+<span class="header-section-number">16.0.2</span> Multi-project sites<a class="anchor" aria-label="anchor" href="#multi-project-sites"><i class="fas fa-link"></i></a>
+</h3>
+<p>Similar to multi-site projects, organizing multiple projects within a team requires additional coordination. As your center grows, the sophistication of your center should grow with it. Consider doing the following <span class="citation">(<a href="references.html#ref-van_den_eynden_managing_2011" role="doc-biblioref">Van den Eynden et al. 2011</a>)</span>:</p>
+<ol style="list-style-type: decimal">
+<li>Centralize resources
+<ul>
+<li>Create templates, SOPs, and style guides that can be used across projects. Utilize your team wiki to post shared resources in a central location where team members can easily access them. Centralizing resources reduces duplication of efforts, and also improves standardization, allowing you to more easily compare data across projects.</li>
+</ul>
+</li>
+<li>Encourage team science
+<ul>
+<li>As you receive more grants, the “lone cowboy” model of having just one person manage everything becomes even less feasible <span class="citation">(<a href="references.html#ref-reynolds_data_2014" role="doc-biblioref">J. H. Reynolds et al. 2014</a>)</span>. Embrace the idea that it takes a team of people, skilled in many different areas (e.g., project management expertise, data expertise, content expertise), to do quality research. With more than one grant, it is potentially more feasible to hire people to fill specialized roles, and to fund them across multiple grants.</li>
+</ul>
+</li>
+<li>Create oversight roles
+<ul>
+<li>Along with creating standards that are applied across projects, it becomes important to assign someone to oversee fidelity to those standards. Create a hierarchy that includes both oversight and mentoring to prevent internal drift.</li>
+</ul>
+</li>
+<li>Create support systems
+<ul>
+<li>If your team is large enough, and you have multiple people working on data management across different projects, it may be helpful to create an internal data core. This internal group of data people can meet on a regular schedule to share knowledge and resources, develop and modify shared documentation, and develop internal data trainings for staff, increasing capacity for your center.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="summary" class="section level3" number="16.0.3">
+<h3>
+<span class="header-section-number">16.0.3</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
+</h3>
+<p><em>Collecting data is a bit like cooking a good meal. If you clean as you go, when you are full and sleepy you will have much less to do.</em><br><em>- Felicia <span class="citation">LeClere (<a href="references.html#ref-leclere_too_2010" role="doc-biblioref">2010</a>)</span></em></p>
+<p>Slow science is often used to describe an antithesis to the increasingly fast pace of academic research, instead suggesting that science should be a slower, more methodical process <span class="citation">(<a href="references.html#ref-frith_fast_2020" role="doc-biblioref">Frith 2020</a>)</span>. Likewise, if we hurry a research project along without spending time putting quality data management processes into place, we increase the possibility that we end up putting research into the world that we cannot trust. Instead we should take time to plan data management before a project begins, and implement quality practices throughout the life cycle. While it may be difficult to support this slow process early on, remember that data management gets easier the more you do it. Once you have templates, protocols, and style guides in place, those documents and processes can be reused as often as you want, easing any prior development burdens <span class="citation">(<a href="references.html#ref-levenstein_data_2018" role="doc-biblioref">Levenstein and Lyle 2018</a>)</span>.</p>
+<p>There is no one-size-fits-all approach to data management though <span class="citation">(<a href="references.html#ref-bergmann_buffet_2023" role="doc-biblioref">Bergmann 2023</a>; <a href="references.html#ref-reynolds_data_2014" role="doc-biblioref">J. H. Reynolds et al. 2014</a>)</span>. Projects are nuanced and there is no way to anticipate every way in which each specific project’s data needs to be managed. Instead, use the “buffet approach” and implement what works best for your project and your team <span class="citation">(<a href="references.html#ref-bergmann_buffet_2023" role="doc-biblioref">Bergmann 2023</a>)</span>. What matters most is that those practices are implemented consistently within your project, and that ultimately they produce quality data products that are accepted in the field. Similarly, while it is possible that all of the practices mentioned in this book work for your project, it is unlikely that your team has the bandwidth to do it all. Instead, implement “good enough” practices that allow you to achieve the quality outcomes you desire <span class="citation">(<a href="references.html#ref-borghi_promoting_2022" role="doc-biblioref">Borghi and Van Gulick 2022</a>; <a href="references.html#ref-wilson_good_2017" role="doc-biblioref">Wilson et al. 2017</a>)</span>. You don’t have to create all the documentation or use the most sophisticated data cleaning methods. You simply need to use methods that are good enough to reach your goals. Also make sure to periodically review your data management practices to ensure you are keeping up with changing requirements, technologies, standards, or team/project needs.</p>
+<p>Last, as the awareness of the necessity of good data management continues to grow in our field, we can only hope that systemic changes will continue to happen that make data management easier for education researchers. Integrating data management content into required college coursework would improve data management practices for all the researchers who are out there “winging it” because they learned data management through informal methods. With requirements for data management and sharing expanding, <span class="citation">Wilson et al. (<a href="references.html#ref-wilson_good_2017" role="doc-biblioref">2017</a>)</span> suggest that “it is unfair as well as counterproductive to insist that researchers do things without teaching them how”. Similarly, developing shared standards for the field of education would do wonders in easing the burden on researchers who are having to make on the fly data management decisions and also would improve the consistency of quality and usability of publicly shared data products.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="share.html"><span class="header-section-number">15</span> Data Sharing</a></div>
+<div class="next"><a href="glossary.html"><span class="header-section-number">17</span> Glossary</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li>
+<a class="nav-link" href="#additional-considerations"><span class="header-section-number">16</span> Additional considerations</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#multi-site-collaborations"><span class="header-section-number">16.0.1</span> Multi-site collaborations</a></li>
+<li><a class="nav-link" href="#multi-project-sites"><span class="header-section-number">16.0.2</span> Multi-project sites</a></li>
+<li><a class="nav-link" href="#summary"><span class="header-section-number">16.0.3</span> Summary</a></li>
+</ul>
+</li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/blob/master/15-wrap-up.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/edit/master/15-wrap-up.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-14.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

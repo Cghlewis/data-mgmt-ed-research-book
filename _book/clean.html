@@ -82,7 +82,7 @@
 <li><a class="" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
 <li><a class="active" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
 <li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
-<li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">16</span> Wrapping It Up</a></li>
+<li><a class="" href="additional-considerations.html"><span class="header-section-number">16</span> Additional considerations</a></li>
 <li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
@@ -136,7 +136,7 @@ Figure 14.1: Data cleaning in the research project life cycle
 </li>
 <li>Your analytic data
 <ul>
-<li>This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>)</span>. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book.</li>
+<li>This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">T. Reynolds, Schatschneider, and Logan 2022</a>)</span>. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book.</li>
 </ul>
 </li>
 </ol>
@@ -435,7 +435,7 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
 <ul>
 <li>Errors in the data can happen for many reasons, some of which come from the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, merging errors). At minimum you should validate, or check, your data for errors at the end of your data cleaning process. Ideally though, you should be checking every one of your transformations along the way as well.</li>
 <li>Data validation should begin with the manual method of opening your clean data and eyeballing it. Believe it or not, this can actually be a very useful error-catching technique. However, it should not be your only error-catching technique. You should also create tables, calculate summary and reliability statistics, and create univariate and bivariate plots to search for errors. Codebooks are great documents for summarizing and reviewing a lot of this information <span class="citation">(<a href="references.html#ref-arslan_how_2019" role="doc-biblioref">Arslan 2019</a>)</span>.</li>
-<li>You can organize your data validation process by our data quality criteria. The following is a sampling of checks you should complete during your validation process <span class="citation">(<a href="references.html#ref-cessda_training_team_cessda_2017" role="doc-biblioref">CESSDA Training Team 2017</a>; <a href="references.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR 2020</a>; <a href="references.html#ref-strand_error_2021" role="doc-biblioref">Strand 2021</a>; <a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">Reynolds, Schatschneider, and Logan 2022</a>; <a href="references.html#ref-uk_data_service_research_2023" role="doc-biblioref">UK Data Service 2023</a>)</span>:
+<li>You can organize your data validation process by our data quality criteria. The following is a sampling of checks you should complete during your validation process <span class="citation">(<a href="references.html#ref-cessda_training_team_cessda_2017" role="doc-biblioref">CESSDA Training Team 2017</a>; <a href="references.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR 2020</a>; <a href="references.html#ref-strand_error_2021" role="doc-biblioref">Strand 2021</a>; <a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">T. Reynolds, Schatschneider, and Logan 2022</a>; <a href="references.html#ref-uk_data_service_research_2023" role="doc-biblioref">UK Data Service 2023</a>)</span>:
 <ul>
 <li>Complete
 <ul>
@@ -500,51 +500,68 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
 </ol>
 <p>At this point, your dataset should be clean. However, there may be additional transformations to be performed depending on how you plan to store and/or share your datasets.</p>
 <ol start="17" style="list-style-type: decimal">
-<li>Merge data
+<li>Join data
 <ul>
-<li>Merging is joining forms horizontally, by one (e.g., <code>stu_id</code>) or more (e.g., <code>first_name</code> and <code>last_name</code>) unique identifiers (see Figure <a href="clean.html#fig:fig14-10">14.10</a>)
+<li>There are two ways you may need to join data, horizontally or vertically.
+<ul>
+<li>Joining forms horizontally, also called merging, involves matching rows by on one (e.g., <code>stu_id</code>) or more (e.g., <code>first_name</code> and <code>last_name</code>) unique identifiers (see Figure <a href="clean.html#fig:fig14-10">14.10</a>)
 <ul>
 <li>This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names (e.g., “w1_”, “w2_”)</li>
 <li>However this type of merging can also be used to link forms within time or link forms across participant types (e.g., merging student data with teacher data on <code>tch_id</code>)</li>
+<li>There are several different types of horizontal joins (e.g., left, right, inner, full). While diving into the different types of joins is outside of the scope of this book, resources for further learning will be provided.</li>
 </ul>
 </li>
-</ul>
-</li>
-</ol>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-10"></span>
-<img src="img/clean_merge.PNG" alt="An example of merging data across forms from the same participant, in the same wave" width="80%"><p class="caption">
-Figure 14.10: An example of merging data across forms from the same participant, in the same wave
-</p>
-</div>
-<ol start="18" style="list-style-type: decimal">
-<li>Append data
-<ul>
-<li>Appending is stacking forms on top of each other and columns are matched by variable names. In this case, variable names and variable types should be identical across forms in order for the matching to work (see Figure <a href="clean.html#fig:fig14-11">14.11</a>).
+<li>Joining forms vertically, also called appending, involves stacking forms on top of each other, matching columns by variable names. In this case, variable names and variable types should be identical across forms in order for the matching to work (see Figure <a href="clean.html#fig:fig14-11">14.11</a>).
 <ul>
 <li>Appending may be used to combine longitudinal data within participants in long format. Here it will be necessary to include a new variable that indicates the time period associated with each row.</li>
 <li>However, appending is also often used for combining forms collected from different links or captured using multiple databases (e.g., data collected across sites or cohorts)</li>
 </ul>
 </li>
-<li>Once your merging or appending is complete, it will be very important to do additional validation checks
-<ul>
-<li>Do you have the correct number of rows and columns after merging or appending?</li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
+<ul>
+<li>Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.</li>
+<li>Once your merging or appending is complete, it will be very important to do additional validation checks. Do you have the correct number of rows and columns after merging or appending?</li>
+</ul>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig14-10"></span>
+<img src="img/clean_merge.PNG" alt="An example of merging student data across forms" width="80%"><p class="caption">
+Figure 14.10: An example of merging student data across forms
+</p>
+</div>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-11"></span>
 <img src="img/clean_append.PNG" alt="An example of appending data collected on the same form across sites" width="80%"><p class="caption">
 Figure 14.11: An example of appending data collected on the same form across sites
 </p>
 </div>
-<blockquote>
-<p><strong>Note</strong> <br><br>
-Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.</p>
-</blockquote>
-<ol start="19" style="list-style-type: decimal">
+<p><strong>Resources</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="42%">
+<col width="57%">
+</colgroup>
+<thead><tr class="header">
+<th>Source</th>
+<th>Resource</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Data Carpentry</td>
+<td>A review of different types of horizontal joins <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html" class="uri"&gt;https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html&lt;/a&gt;&lt;/p&gt;'><sup>82</sup></a>
+</td>
+</tr>
+<tr class="even">
+<td>David E. Caughlin</td>
+<td>A review of horizontal and vertical joins <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://rforhr.com/join.html" class="uri"&gt;https://rforhr.com/join.html&lt;/a&gt;&lt;/p&gt;'><sup>83</sup></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="18" style="list-style-type: decimal">
 <li>Reshape data
 <ul>
 <li>Recall Section <a href="structure.html#structure-datastructure">3.3.2</a> where we reviewed various reasons for structuring your data in wide or long format.
@@ -559,7 +576,7 @@ Depending on how your data is collected or captured, as well as how you want to 
 </ol>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-Having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-12">14.12</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-12">14.12</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
 </blockquote>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-12"></span>
@@ -567,10 +584,10 @@ Having your time component concatenated to the beginning or end of a variable na
 Figure 14.12: A comparison of long and wide format
 </p>
 </div>
-<ol start="20" style="list-style-type: decimal">
+<ol start="19" style="list-style-type: decimal">
 <li>Save your clean data
 <ul>
-<li>The final step of your cleaning process will be to export or save your clean data. You can save your files in one or more file types depending on your needs. It can be helpful to save your data in more than one format to meet various analysis, long-term storage, or data sharing needs (i.e., an interoperable format like CSV, and a format that contains embedded metadata such as SPSS).</li>
+<li>The final step of your cleaning process will be to export or save your clean data. You can save your files in one or more file types depending on your needs. It can be helpful to save your data in more than one format to meet various analysis, long-term storage, or data sharing needs (e.g., an interoperable format like CSV, and a format that contains embedded metadata such as SPSS).</li>
 </ul>
 </li>
 </ol>
@@ -668,7 +685,7 @@ Figure 14.12: A comparison of long and wide format
 <li>Write functions for repeatable tasks
 <ul>
 <li>As best as you can, it is important to follow the DRY (don’t repeat yourself) principle and never write the same code twice. Not only does it make your script more readable, but it reduces the errors that might be created through things like copy and paste.</li>
-<li>Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.com/blog/dict_clean/" class="uri"&gt;https://cghlewis.com/blog/dict_clean/&lt;/a&gt;&lt;/p&gt;'><sup>81</sup></a>.</li>
+<li>Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.com/blog/dict_clean/" class="uri"&gt;https://cghlewis.com/blog/dict_clean/&lt;/a&gt;&lt;/p&gt;'><sup>84</sup></a>.</li>
 </ul>
 </li>
 <li>Check each transformation
@@ -699,7 +716,7 @@ Figure 14.12: A comparison of long and wide format
 </li>
 <li>Do code review
 <ul>
-<li>If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>82</sup></a>.</li>
+<li>If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>85</sup></a>.</li>
 </ul>
 </li>
 </ol>
@@ -757,7 +774,7 @@ Figure 14.12: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-09.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-14.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -124,20 +124,22 @@ If you are looking for guidance in writing a DMP, a variety of generic DMP templ
 
 ## Budgeting {#budget}
 
-Funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include costs associated with data management personnel, specialized infrastructure, tools needed to collect, enter, organize, document, store, or share study data [@uk_data_service_data_2022], as well as fees associated with data preservation. Make sure to review your funder's documentation for information about allowable costs[@samuel_j_wood_library_research_2023] and time frame for incurring costs. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_2023]:
+Funding agencies acknowledge that there are costs associated with implementing your data management plan and allow you to explain these costs in your budget narrative. Costs associated with the entire data life cycle should be considered and may include costs associated with data management personnel, specialized infrastructure, tools needed to collect, enter, organize, document, store, or share study data [@uk_data_service_data_2022], as well as fees associated with data preservation. Make sure to review your funder's documentation for information about allowable costs [@samuel_j_wood_library_research_2023] and time frame for incurring costs. Examples of potential allowable costs include [@national_institutes_of_health_budgeting_2023]:
 
 - Costs associated with curating and de-identifying data
 - Costs associated with developing data documentation
 - Fees associated with depositing data for long-term sharing in a repository
 
-It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. Luckily a few organizations have developed resources to aid in estimating those costs. 
+It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. Recommended amounts range anywhere from 5-30% of your budget for data stewardship [@mons_invest_2020; @reynolds_data_2014]. Luckily a few organizations have developed resources to aid in estimating these costs. Although exercise caution when using tools; they may not always account for every cost and could result in an underestimation of costs [@michigan_state_university_budgeting_2023]. 
 
 **Resources**
 
 |Source|Resource|
 |--------|-----------|
+|DataOne| Considerations for providing budget information for a DMP ^[https://dataoneorg.github.io/Education/bestpractices/provide-budget-information]|
+|J-PAL| Research proposal budget considerations ^[https://www.povertyactionlab.org/resource/grant-proposals]|
+|National Institutes of Mental Health Data Archive | NDA Data Submission Cost Estimation Tool^[https://s3.amazonaws.com/nda.nih.gov/Documents/NDA_Data_Submission_Cost_Estimation_Tool.xlsx]|
 |UK Data Service | Data management costing tool and checklist ^[https://ukdataservice.ac.uk//app/uploads/costingtool.pdf]|
 |University of Twente | Estimating RDM costs review list ^[https://www.utwente.nl/en/service-portal/services/lisa/resources/files/library-public/dcc-rdm-costs-estimation.pdf]|
 |Utrecht University| Estimating the costs of data management review list ^[https://www.utwente.nl/en/service-portal/services/lisa/resources/files/library-public/dcc-rdm-costs-estimation.pdf]|
-|DataOne| Considerations for providing budget information for a DMP ^[https://dataoneorg.github.io/Education/bestpractices/provide-budget-information]|
-|J-PAL| Research proposal budget considerations ^[https://www.povertyactionlab.org/resource/grant-proposals]|
+

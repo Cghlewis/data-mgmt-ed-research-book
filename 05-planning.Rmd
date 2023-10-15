@@ -16,11 +16,11 @@ Planning the day to day management of your project data has many other benefits 
 
 ## Goals of planning
 
-This planning phase should include a series of regular meetings with core decision makers. There are several goals to accomplish during these meetings.
+This planning phase should include a series of regular meetings with core decision makers. For this purpose, it can be helpful to form a data management working group (DMWG), consisting of PIs, key project staff, and other decision makers (e.g., methodologists), who can attend planning meetings and provide feedback as needed throughout the project [@van_bochove_data_2023]. There are several goals to accomplish during these planning meetings.
 
 1. Further flesh out project goals laid out in a grant proposal (e.g., confirm measures being collected in your study)
-1. Finalize a timeline for goals (e.g., when will data be collected)
-1. Lay out specific tasks needed to accomplish data management plans
+1. Finalize a timeline for goals (e.g., confirm the data collection timeline)
+1. Lay out specific tasks required in order to accomplish data management plans
 1. Assign roles and responsibilities for specific tasks
 1. Make decisions around how to manage tasks and communication
 
