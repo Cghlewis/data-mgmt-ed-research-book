@@ -12,7 +12,14 @@ Multi-site, or multi-team, collaborations require additional planning around rol
 - What are the roles and responsibilities across sites?
 - What tools will be used to allow for multi-site data tracking, collection, entry, storage, and sharing?
 
-Documents such as a RACI chart (see Chapter \@ref(roles)) can be helpful in laying out expectations for team collaborations (Figure \@ref(fig:fig16-1)). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. Assigning levels of responsibility to each site allows collaborators to clearly see what is expected from them in a project. Then within site tasks can then be further assigned to specific roles.
+Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying out expectations for team collaborations (Figure \@ref(fig:fig16-1)). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. 
+
+- Responsible: The site is responsible for completing this task.
+- Accountable: The site provides oversight, ensuring the the task is completed with fidelity.
+- Consulted: The site is always consulted before a decision is made on this task.
+- Informed: The site is provided high-level information about decisions that are made.
+
+Assigning levels of responsibility to each site allows collaborators to clearly see what is expected from them in a project. Within site tasks can then be further assigned to specific roles.
 
 ```{r fig16-1, fig.cap="Example of a RACI chart for a multi-site project collaboration", out.width = "80%"}
 
@@ -20,7 +27,7 @@ knitr::include_graphics("img/raci.PNG")
 
 ```
 
-### Multi-project sites
+### Multi-project teams
 
 Similar to multi-site projects, organizing multiple projects within a team requires additional coordination. As your center grows, the sophistication of your center should grow with it. Consider doing the following [@van_den_eynden_managing_2011]:
 
@@ -38,7 +45,7 @@ Similar to multi-site projects, organizing multiple projects within a team requi
 
 *Collecting data is a bit like cooking a good meal. If you clean as you go, when you are full and sleepy you will have much less to do.*<br> *- Felicia @leclere_too_2010*
 
-Slow science is often used to describe an antithesis to the increasingly fast pace of academic research, instead suggesting that science should be a slower, more methodical process [@frith_fast_2020]. Likewise, if we hurry a research project along without spending time putting quality data management processes into place, we increase the possibility that we end up putting research into the world that we cannot trust. Instead we should take time to plan data management before a project begins, and implement quality practices throughout the life cycle. While it may be difficult to support this slow process early on, remember that data management gets easier the more you do it. Once you have templates, protocols, and style guides in place, those documents and processes can be reused as often as you want, easing any prior development burdens [@levenstein_data_2018].
+Slow science is often used to describe an antithesis to the increasingly fast pace of academic research, instead suggesting that science should be a slower, more methodical process [@frith_fast_2020]. Likewise, if we hurry a research project along without spending time putting quality data management processes into place, we increase the possibility that we end up putting research into the world that we cannot trust. Instead we should take time to plan data management before a project begins, and implement quality practices throughout the life cycle. While it may be difficult to support this slow process early on, remember that data management gets easier the more you do it. Once you have templates, protocols, and style guides in place, those documents and processes can be reused, easing burdens in future projects [@levenstein_data_2018].
 
 There is no one-size-fits-all approach to data management though [@bergmann_buffet_2023; @reynolds_data_2014]. Projects are nuanced and there is no way to anticipate every way in which each specific project's data needs to be managed. Instead, use the "buffet approach" and implement what works best for your project and your team [@bergmann_buffet_2023]. What matters most is that those practices are implemented consistently within your project, and that ultimately they produce quality data products that are accepted in the field. Similarly, while it is possible that all of the practices mentioned in this book work for your project, it is unlikely that your team has the bandwidth to do it all. Instead, implement "good enough" practices that allow you to achieve the quality outcomes you desire [@borghi_promoting_2022; @wilson_good_2017]. You don't have to create all the documentation or use the most sophisticated data cleaning methods. You simply need to use methods that are good enough to reach your goals. Also make sure to periodically review your data management practices to ensure you are keeping up with changing requirements, technologies, standards, or team/project needs.
 

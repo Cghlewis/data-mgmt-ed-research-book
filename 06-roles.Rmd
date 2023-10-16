@@ -86,7 +86,7 @@ There are many reasons to document staff roles and responsibilities and to store
 2. As new tasks arise, team members can refer to the document to see who is best fitted for the assignment.  
 3. Last, reviewing roles and responsibilities in a document also helps you more clearly see what responsibilities are assigned and how they are assigned. After reviewing the document you can make further revisions if responsibilities need to be added or further redistributed in any way.
 
-This document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig7-3) and Figure \@ref(fig:fig7-4) are two example templates. Note that these templates only list overarching responsibilities, not specific steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Section \@ref(document-sop)) where names are attached to each task.
+Figure \@ref(fig:fig7-3) is one example of a roles and responsibilities document that organizes information by roles. Note that this document only lists overarching responsibilities, not specific steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Section \@ref(document-sop)) where names are attached to each task. 
 
 ```{r fig7-3, fig.cap="Roles and responsibilities document organized by role", out.width = "70%"}
 
@@ -94,15 +94,23 @@ knitr::include_graphics("img/roles_responsibility1.PNG")
 
 ```
 
-```{r fig7-4, fig.cap="Roles and responsibilities document organized by phase", out.width = "70%"}
+However, this document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig7-4) is an example of organizing information by phases of the research life cycle. 
+
+```{r fig7-4, fig.cap="Roles and responsibilities organized by phase", out.width = "70%"}
 
 knitr::include_graphics("img/roles_responsibility2.PNG")
 
 ```
 
-Since there is no one template for creating a roles and responsibility document, you can really add whatever information helps to most clearly convey the assignments. Some additional columns you may consider adding include:
+Last, any additional information can be added to these documents to help clarify responsibilities.
 
 - Links to related standard operating procedures (e.g., for building a participant tracking database you may link to the specific SOP that lays out steps for building the tool)
 - Names of other staff members (if any) that assist with or also contribute to each responsibility
 - Timing of each responsibility (e.g., weekly, ongoing, the month of February)
 - Name of team members who will take on responsibilities in case of a team member's absence
+
+**Templates**
+
+|Source|Resource|
+|--------|-----------|
+|Crystal Lewis | Three roles and responsibilities templates ^[https://drive.google.com/drive/folders/1nhDgOVfESrZLYfvcrTU_I2dnsOtq3TkV]|

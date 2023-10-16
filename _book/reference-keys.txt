@@ -298,6 +298,6 @@ roles-and-responsibilities
 retraction-and-revisions
 additional-considerations
 multi-site-collaborations
-multi-project-sites
+multi-project-teams
 summary
 glossary
