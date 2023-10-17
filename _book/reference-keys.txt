@@ -97,8 +97,6 @@ fig:fig14-6
 fig:fig14-7
 fig:fig14-8
 fig:fig14-9
-fig:fig14-10
-fig:fig14-11
 fig:fig14-12
 fig:fig15-1
 fig:fig15-2
@@ -137,13 +135,14 @@ columns
 rows
 cells
 structure-rules
-linking-data
+structure-link
 structure-database
+horizontal-joins
+vertical-joins
 structure-datastructure
 wide-format
 long-format
 structure-reshape
-structure-format
 hsd
 identifiability-of-a-dataset
 hsd-dcl

@@ -453,24 +453,33 @@ p_relate</code></pre>
 <h3>
 <span class="header-section-number">9.4.1</span> Time<a class="anchor" aria-label="anchor" href="#time"><i class="fas fa-link"></i></a>
 </h3>
-<p>Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well. Recall from Chapter <a href="structure.html#structure">3</a>, there are two ways you can link data over time, in wide format or long format.</p>
+<p>Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well. Recall from Section <a href="structure.html#structure-datastructure">3.3.2</a>, there are two ways you can link and structure longitudinal data, in wide format or long format.</p>
 <ol style="list-style-type: decimal">
 <li><p>If combining data over time in long format, no changes need to be made to your variable names. Variable names should be identically named over time. To account for a time component, you will simply include a new variable (e.g., <code>time</code>, <code>year</code>, <code>wave</code>) and add the appropriate value for each row.</p></li>
 <li><p>If combining data in wide format, you will need to concatenate time to all of your time varying variable names (i.e., not your subject unique identifier). This removes the problem of having non-unique variable names (e.g., <code>anx1</code> in wave 1 and <code>anx1</code> in wave 2) and allows you to interpret when each variable was collected. How you concatenate time to your variable names is up to you. Just make sure to continue adding time consistently to all variable names (i.e., same location, same format) and remember to follow variable naming best practices (e.g., never start a variable name with a number).</p></li>
 </ol>
-<p>Before adding a time component, either as a new variable or as part of a variable name, it’s important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine samples collected in the same relative time periods (e.g., <code>wave 1</code> = fall of the study year, <code>wave 2</code> = spring of the study year, <code>wave 3</code> = fall of the follow up year). However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
+<p>Before adding a time component, either as a new variable or as part of a variable name, it’s important to decide what values you want to assign to time. This will depend entirely on your study design and how you intend to use time in your analyses. When working with cohorts, it can be helpful to choose generic time values that allow you to combine samples collected in the same relative time periods. For example:</p>
+<ul>
+<li>
+<code>wave 1</code> = fall of the study year</li>
+<li>
+<code>wave 2</code> = spring of the study year</li>
+<li>
+<code>wave 3</code> = fall of the follow up year</li>
+</ul>
+<p>However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-3"></span>
-<img src="img/time_component.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%"><p class="caption">
+<img src="img/fig9-3.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%"><p class="caption">
 Figure 9.3: Examples of how time might be added to your data based on a variety of scenarios
 </p>
 </div>
-<p>With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period. There are a few benefits of this method:</p>
+<p>With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period. There are a few benefits of this method.</p>
 <ol style="list-style-type: decimal">
 <li>Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">T. Reynolds, Schatschneider, and Logan 2022</a>)</span>.</li>
 <li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point.</li>
 </ol>
-<p>So, with that said, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added when you are ready to combine files. Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.</p>
+<p>Therefore, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should only be added when you are ready to combine files. Once you are ready to combine files, either for an analysis or other reasons, you can fairly quickly add a time variable or programatically concatenate time to variable names using a statistical program (e.g., R) or even in a program like Microsoft Excel.</p>
 </div>
 </div>
 <div id="style-codes" class="section level2" number="9.5">
@@ -566,7 +575,7 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <h2>
 <span class="header-section-number">9.6</span> Coding<a class="anchor" aria-label="anchor" href="#style-code"><i class="fas fa-link"></i></a>
 </h2>
-<p>If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (such as R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.</p>
+<p>If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (e.g., R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.</p>
 <ul>
 <li>Consider building and implementing coding templates <span class="citation">(<a href="references.html#ref-castaneda_nice_2019" role="doc-biblioref">Castañeda 2019</a>; <a href="references.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>
 <ul>

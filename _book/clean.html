@@ -502,66 +502,26 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
 <ol start="17" style="list-style-type: decimal">
 <li>Join data
 <ul>
-<li>There are two ways you may need to join data, horizontally or vertically.
+<li>Recall from Section <a href="structure.html#structure-link">3.3</a>, that there are two ways you may need to join your forms, horizontally or vertically.
 <ul>
-<li>Joining forms horizontally, also called merging, involves matching rows by on one (e.g., <code>stu_id</code>) or more (e.g., <code>first_name</code> and <code>last_name</code>) unique identifiers (see Figure <a href="clean.html#fig:fig14-10">14.10</a>)
+<li>Joining forms horizontally (merging)
 <ul>
-<li>This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names (e.g., “w1_”, “w2_”)</li>
-<li>However this type of merging can also be used to link forms within time or link forms across participant types (e.g., merging student data with teacher data on <code>tch_id</code>)</li>
-<li>There are several different types of horizontal joins (e.g., left, right, inner, full). While diving into the different types of joins is outside of the scope of this book, resources for further learning will be provided.</li>
+<li>This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names if they are not already included (e.g., “w1_”, “w2_”)</li>
+<li>This type of merging can also be used to link forms within time (e.g., student survey and student assessment) or link forms across participant types (e.g., link student data with teacher data)</li>
 </ul>
 </li>
-<li>Joining forms vertically, also called appending, involves stacking forms on top of each other, matching columns by variable names. In this case, variable names and variable types should be identical across forms in order for the matching to work (see Figure <a href="clean.html#fig:fig14-11">14.11</a>).
+<li>Joining forms vertically (appending)
 <ul>
 <li>Appending may be used to combine longitudinal data within participants in long format. Here it will be necessary to include a new variable that indicates the time period associated with each row.</li>
-<li>However, appending is also often used for combining forms collected from different links or captured using multiple databases (e.g., data collected across sites or cohorts)</li>
+<li>However, appending is also often used for combining forms collected from different links or captured in separate tables (e.g., data collected across sites or cohorts)</li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-</ol>
-<ul>
 <li>Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.</li>
 <li>Once your merging or appending is complete, it will be very important to do additional validation checks. Do you have the correct number of rows and columns after merging or appending?</li>
 </ul>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-10"></span>
-<img src="img/clean_merge.PNG" alt="An example of merging student data across forms" width="80%"><p class="caption">
-Figure 14.10: An example of merging student data across forms
-</p>
-</div>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-11"></span>
-<img src="img/clean_append.PNG" alt="An example of appending data collected on the same form across sites" width="80%"><p class="caption">
-Figure 14.11: An example of appending data collected on the same form across sites
-</p>
-</div>
-<p><strong>Resources</strong></p>
-<div class="inline-table"><table class="table table-sm">
-<colgroup>
-<col width="42%">
-<col width="57%">
-</colgroup>
-<thead><tr class="header">
-<th>Source</th>
-<th>Resource</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>Data Carpentry</td>
-<td>A review of different types of horizontal joins <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html" class="uri"&gt;https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html&lt;/a&gt;&lt;/p&gt;'><sup>83</sup></a>
-</td>
-</tr>
-<tr class="even">
-<td>David E. Caughlin</td>
-<td>A review of horizontal and vertical joins <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://rforhr.com/join.html" class="uri"&gt;https://rforhr.com/join.html&lt;/a&gt;&lt;/p&gt;'><sup>84</sup></a>
-</td>
-</tr>
-</tbody>
-</table></div>
-<ol start="18" style="list-style-type: decimal">
+</li>
 <li>Reshape data
 <ul>
 <li>Recall Section <a href="structure.html#structure-datastructure">3.3.2</a> where we reviewed various reasons for structuring your data in wide or long format.
@@ -576,12 +536,12 @@ Figure 14.11: An example of appending data collected on the same form across sit
 </ol>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-12">14.12</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-12">14.10</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
 </blockquote>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-12"></span>
 <img src="img/clean_reshape.PNG" alt="A comparison of long and wide format" width="80%"><p class="caption">
-Figure 14.12: A comparison of long and wide format
+Figure 14.10: A comparison of long and wide format
 </p>
 </div>
 <ol start="19" style="list-style-type: decimal">
@@ -710,7 +670,7 @@ Figure 14.12: A comparison of long and wide format
 <li>Write functions for repeatable tasks
 <ul>
 <li>As best as you can, it is important to follow the DRY (don’t repeat yourself) principle and never write the same code twice. Not only does it make your script more readable, but it reduces the errors that might be created through things like copy and paste.</li>
-<li>Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.com/blog/dict_clean/" class="uri"&gt;https://cghlewis.com/blog/dict_clean/&lt;/a&gt;&lt;/p&gt;'><sup>85</sup></a>.</li>
+<li>Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.com/blog/dict_clean/" class="uri"&gt;https://cghlewis.com/blog/dict_clean/&lt;/a&gt;&lt;/p&gt;'><sup>84</sup></a>.</li>
 </ul>
 </li>
 <li>Validate your data before exporting and review after exporting
@@ -730,7 +690,7 @@ Figure 14.12: A comparison of long and wide format
 </li>
 <li>Do code review
 <ul>
-<li>If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>86</sup></a>.</li>
+<li>If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>85</sup></a>.</li>
 </ul>
 </li>
 </ol>

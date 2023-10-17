@@ -54,10 +54,12 @@ This database may be a standalone structure, used only for tracking and anonymiz
 
 ### Relational databases
 
-Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases, first introduced in Section \@ref(structure-database). Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables are related through keys [@bourgeois_information_2014; @chen_database_2022]. There are three general steps for building a relational database. 
+Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables can be related through keys (see Section \@ref(structure-database)) [@bourgeois_information_2014; @chen_database_2022]. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. 
+
+There are three general steps for building a relational database. 
 
 1. Create tables made up of fields (i.e., variables)
-2. Choose one or more fields to uniquely identify rows in those tables as primary keys. These keys should not change at any point. Typically these keys are your assigned unique study IDs.
+2. Choose one or more primary key fields to uniquely identify rows in those tables. These keys should not change at any point. Typically these keys are your assigned unique study IDs.
 3. Create relationships between tables through both primary and foreign keys
 
 We can also further refine our database through normalization, structuring our database according to normal form rules [@bourgeois_information_2014; @nguyen_relational_2017; @the_nobles_normalization_2020] to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is completely acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.
@@ -67,7 +69,7 @@ Let's compare a very simple example of building a tracking database using a rela
 
 #### Relational model
 
-In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database: schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
 <div class="figure" style="text-align: center">
 <img src="img/participant1v01.PNG" alt="Participant database built using a relational model" width="100%" />
@@ -123,21 +125,21 @@ Before you can begin to construct your database, you will need to think through 
 1. Do you want to use a relational table structure?
 2. How many tables do you want to construct?
     - Consider entities (e.g., student, teacher, school)
-    - Consider purpose (e.g., student enrollment table, student wave 1 data collection table, student wave 2 data collection table)
+    - Consider purpose (e.g., enrollment info, wave 1 data collection tracking, wave 2 data collection tracking)
 3. What fields do you want to include in each table?
 4. If using a relational table structure, what fields will you use to relate tables?
 
 Once you make decisions regarding these questions, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-5) I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection. 
 
 <div class="figure" style="text-align: center">
-<img src="img/participant3v02.PNG" alt="Example participant database model" width="80%" />
+<img src="img/fig10-5.PNG" alt="Example participant database model" width="80%" />
 <p class="caption">(\#fig:fig10-5)Example participant database model</p>
 </div>
 
 I have designed this database model in this way:
 
 1. I have four tables total
-    - Two tables (the teacher table and school table) have information that should be fairly constant based on my project assumptions (name, email, consent, one time documents received)
+    - Two tables (teacher info and school info tables) have information that should be fairly constant based on my project assumptions (name, email, consent, one time documents received)
       - If at any time this information changes (e.g., withdraw status, new last name, new contact person), I would update that information in the appropriate table and make a note of when and why the change occurred in my `notes` field
     - Two tables are for my longitudinal information
       - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years and assume it's possible that teachers may switch grade levels. 
@@ -146,7 +148,7 @@ I have designed this database model in this way:
 The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-6)).
 
 <div class="figure" style="text-align: center">
-<img src="img/participant4v02.PNG" alt="Example participant database model" width="80%" />
+<img src="img/fig10-6.PNG" alt="Example participant database model" width="80%" />
 <p class="caption">(\#fig:fig10-6)Example participant database model</p>
 </div>
 
@@ -257,7 +259,7 @@ Your first option is to manually enter data in a spreadsheet format for each par
 
 ### Entering data in a form
 
-Your second option is to create a form that is linked to your tables. As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, REDCap, and even Google Forms which populates into Google Sheets.
+Your second option is to create a form that is linked to your tables. As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, FileMaker, REDCap, and even Google Forms which populates into Google Sheets.
 
 - Pros: This method reduces data entry errors as you are only working on one participant form at a time
 - Cons: Takes some time, and possibly expertise, to set up the data entry forms

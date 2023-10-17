@@ -227,35 +227,15 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
 At this point, your dataset should be clean. However, there may be additional transformations to be performed depending on how you plan to store and/or share your datasets.
 
 17. Join data
-    - There are two ways you may need to join data, horizontally or vertically.
-      - Joining forms horizontally, also called merging, involves matching rows by on one (e.g., `stu_id`) or more (e.g., `first_name` and `last_name`) unique identifiers (see Figure \@ref(fig:fig14-10))
-        - This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names (e.g., "w1_", "w2_")
-        - However this type of merging can also be used to link forms within time or link forms across participant types (e.g., merging student data with teacher data on `tch_id`)
-        - There are several different types of horizontal joins (e.g., left, right, inner, full). While diving into the different types of joins is outside of the scope of this book, resources for further learning will be provided.
-      - Joining forms vertically, also called appending, involves stacking forms on top of each other, matching columns by variable names. In this case, variable names and variable types should be identical across forms in order for the matching to work (see Figure \@ref(fig:fig14-11)).
+    - Recall from Section \@ref(structure-link), that there are two ways you may need to join your forms, horizontally or vertically.
+      - Joining forms horizontally (merging)
+        - This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names if they are not already included (e.g., "w1_", "w2_")
+        - This type of merging can also be used to link forms within time (e.g., student survey and student assessment) or link forms across participant types (e.g., link student data with teacher data)
+      - Joining forms vertically (appending)
         - Appending may be used to combine longitudinal data within participants in long format. Here it will be necessary to include a new variable that indicates the time period associated with each row.
-        - However, appending is also often used for combining forms collected from different links or captured using multiple databases (e.g., data collected across sites or cohorts) 
-  - Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.
-  - Once your merging or appending is complete, it will be very important to do additional validation checks. Do you have the correct number of rows and columns after merging or appending?
-
-        
-<div class="figure" style="text-align: center">
-<img src="img/clean_merge.PNG" alt="An example of merging student data across forms" width="80%" />
-<p class="caption">(\#fig:fig14-10)An example of merging student data across forms</p>
-</div>
-      
-<div class="figure" style="text-align: center">
-<img src="img/clean_append.PNG" alt="An example of appending data collected on the same form across sites" width="80%" />
-<p class="caption">(\#fig:fig14-11)An example of appending data collected on the same form across sites</p>
-</div>
-
-
-**Resources**
-
-|Source|Resource|
-|--------|-----------|
-|Data Carpentry |A review of different types of horizontal joins ^[https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html]|
-|David E. Caughlin| A review of horizontal and vertical joins ^[https://rforhr.com/join.html]|
+        - However, appending is also often used for combining forms collected from different links or captured in separate tables (e.g., data collected across sites or cohorts) 
+    - Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.
+    - Once your merging or appending is complete, it will be very important to do additional validation checks. Do you have the correct number of rows and columns after merging or appending?
 
 18. Reshape data
     - Recall Section \@ref(structure-datastructure) where we reviewed various reasons for structuring your data in wide or long format. 
