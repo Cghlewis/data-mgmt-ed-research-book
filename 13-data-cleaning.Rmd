@@ -202,15 +202,15 @@ Some of these variables may exist in other sources (e.g., treatment may exist in
     - While interoperable file types (e.g., CSV) are highly recommended for storing data, it can be extremely helpful to create another copy of your clean data in a format, such as SPSS, that allows for embedded metadata. These file types allow you to embed variable and value code labels that can be very handy for a data user. This can be especially helpful if you plan to export your variables with numeric values (1 | 0), rather than text values ("yes" | "no"). In this case, rather than having to flip back and forth between a file and a data dictionary to interpret codes, users can review information about the variables within the file itself. While future data users may not have a license for the proprietary file type, these file formats can often be opened in free/open source software (e.g., GNU PSPP) or can usually be easily imported into a variety of other statistical programs which can interpret the metadata (e.g., importing SPSS files into R or Stata).
 
 16. Data validation
-    - Errors in the data can happen for many reasons, some of which come from the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, merging errors). At minimum you should validate, or check, your data for errors at the end of your data cleaning process. Ideally though, you should be checking every one of your transformations along the way as well.
-    - Data validation should begin with the manual method of opening your clean data and eyeballing it. Believe it or not, this can actually be a very useful error-catching technique. However, it should not be your only error-catching technique. You should also create tables, calculate summary and reliability statistics, and create univariate and bivariate plots to search for errors. Codebooks are great documents for summarizing and reviewing a lot of this information [@arslan_how_2019].
+    - Errors in the data can happen for many reasons, some of which come from the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, joining errors). It is good practice to assume that some amount of error is inevitable, even with the best data management practices in place. Yet, errors won't be found if you don't actively look for them [@palmer_advice_2023]. At minimum you should always validate, or check, your data for errors at the end of your data cleaning process. Ideally though, you should be checking every one of your transformations along the way as well.
+    - Data validation should begin with the manual method of opening your clean data and eyeballing it. Believe it or not, this can actually be a very useful error-catching technique. However, it should not be your only technique. You should also create tables, calculate summary and reliability statistics, and create univariate and bivariate plots to search for errors. Codebooks are great documents for summarizing and reviewing a lot of this information [@arslan_how_2019]. 
     - You can organize your data validation process by our data quality criteria. The following is a sampling of checks you should complete during your validation process [@cessda_training_team_cessda_2017; @icpsr_guide_2020;@strand_error_2021; @reynolds_basics_2022; @uk_data_service_research_2023]:
       - Complete
         - Check for missing cases/duplicate cases
           - It can also be helpful to check Ns by cluster variables for completeness (e.g., number of students per teacher, number of teachers per school) [@decoster_systematic_2023] 
         - Check for missing columns/too many columns
       - Valid and Consistent
-        - Check for unallowed categories or values out of range
+        - Check for unallowed categories or values out of range.
           - Checking by groups can also help illuminate issues (e.g., compare age and grade level) [@riederer_make_2021]
         - Check for invalid, non-unique, or missing study IDs
         - Check for incorrect variable types
@@ -307,56 +307,69 @@ Next, you will want to gather all of the necessary documentation that will be us
 
 Once you gather your documentation, you are ready to begin the data cleaning process.
 
-### Data cleaning practices
+### Cleaning data using code
 
-While you can clean data through a point and click method in a program like SPSS or Excel, cleaning data manually is typically not reproducible, leads to errors, and is time consuming. The number one practice that you can implement to improve the reproducibility, reliability, and efficiency of your work is to clean data using code [@borer_simple_2009]. The code can be written in any program your team chooses (e.g., R, SAS, Stata). While writing code, or syntax, may seem time consuming up front, it has numerous benefits.  
+While you can clean data through a point and click method in a program like SPSS or Microsoft Excel, cleaning data manually is typically not reproducible, leads to errors, and is time consuming. The number one practice that you can implement to improve the reproducibility, reliability, and efficiency of your work is to clean data using code [@borer_simple_2009]. The code can be written in any program your team chooses (e.g., R, SAS, Stata). While writing code, or syntax, may seem time consuming up front, it has numerous benefits.  
 
   - It helps you to be more thoughtful in your data cleaning process  
   - It allows others to review your work and catch potential errors  
   - It can actually save you an enormous amount of time in the future if you plan to clean data for the same form multiple times (in say a longitudinal study)  
   - It allows others to reproduce your work. By simply re-running your code file, they should be able to get the same resulting dataset that you created.   
 
-However, writing code alone will not provide all of the desired benefits. There are several additional practices that must be implemented during this process.
+However, writing code alone will not provide all of the desired benefits. There is more that must be considered.
 
-1. Do all transformations in code
-    - Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.
-2. Follow a coding style guide
+1. Choose an appropriate tool to code in. Assess things such as:
+    - Your comfort level with the program as well as available support
+    - Cost and access to the program
+    - Interoperability of the program (i.e., will others be able to open, review, and run your code)
+    - Limitations (e.g., file size limitations, variable character count limitations)
+    - Default settings (e.g., how the program performs rounding)
+1. Follow a coding style guide
     - As we discussed in Section \@ref(style-code), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
-3. Use relative file paths
+1. Use relative file paths
     - In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
 
       **Example absolute file path:** "/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv"  
       **Example relative file path:** "raw/proja_stu_svy_raw.csv"
 
-4. Review your data upon import
+1. Review your data upon import
     - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
-5. Use comments
+1. Do all transformations in code
+    - Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.
+1. Use comments
     - Code comments help you to organize and communicate your thought process. While your syntax may seem intuitive to you, it is not necessarily clear to others. As you clean your data according to your data cleaning plan, comment every step in your syntax, explaining what that specific line of code is doing.
-6. Don’t do anything random 
-    - Everything in your syntax must be replicable. Yet, there are a few scenarios where, without much thought, you could be producing different results each time you run your code.
-      - If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) [@klein_practical_2018]. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.
-      - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
-7. Write functions for repeatable tasks
-    - As best as you can, it is important to follow the DRY (don't repeat yourself) principle and never write the same code twice. Not only does it make your script more readable, but it reduces the errors that might be created through things like copy and paste.
-    - Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names ^[https://cghlewis.com/blog/dict_clean/].
-8. Check each transformation
+1. Check each transformation
     - As mentioned in Section \@ref(clean-check), check your work along the way, don’t wait until the end of your script. For each transformation in your data:
-      - Review your variables/cases before and after the transformations
+      - Review your variables/cases before and after the transformations.
       - Review all errors and warning codes
         - Some warnings may be innocuous (just messages)
         - Some errors are telling you that your code did not run, you need to fix something
         - Other warnings are telling you that your code did run but it did not run as you expected it to. If you don’t pay attention to these warnings, you may end up with unexpected results. 
-9. Validate your data before exporting
-    - As we also discussed in Section \@ref(clean-check), this is when you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes exist in the data before you export it.
-10. Record your session info
+1. Don’t do anything random 
+    - Everything in your syntax must be replicable. Yet, there are a few scenarios where, without much thought, you could be producing different results each time you run your code.
+      - If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) [@klein_practical_2018]. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.
+      - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
+1. Write functions for repeatable tasks
+    - As best as you can, it is important to follow the DRY (don't repeat yourself) principle and never write the same code twice. Not only does it make your script more readable, but it reduces the errors that might be created through things like copy and paste.
+    - Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names ^[https://cghlewis.com/blog/dict_clean/].
+1. Validate your data before exporting and review after exporting
+    - As we discussed in Section \@ref(clean-check), before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
+      - While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE. (e.g., test that `stu_id` falls within the range of 1000--2000).
+    - After exporting your data, open the exported file. Does everything look as you expected (e.g., maybe you expected missing data to export as blanks but they exported as "NA")?
+1. Record your session info
     - Information about software/package versions and operating system used should be recorded in a text or log file so that future users can review the requirements needed for running your code. If users run into errors running your code, this information may help them troubleshoot.
-11. Do code review
+1. Do code review
     - If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process ^[https://github.com/tgerke/r-code-review-checklist].
 
-While I highly recommend using code to clean your data for all the reasons previously mention, I acknowledge that code writing does require technical expertise that not everyone may have. If you need to clean your data manually, the most important thing in this case then, is to document every transformation. Here you have two options. 
+### Cleaning data manually
 
-  - If cleaning data using the point and click menu in a program such as SPSS, when performing a transformation you can use a "paste" type button to copy all associated commands into a syntax file that can easily be reused [@kathawalla_easing_2021].
-  - If using a program such as Microsoft Excel for data cleaning, it will be important to add detailed notes into your data cleaning plan that would allow anyone to replicate your exact data cleaning process by hand [@the_carpentries_data_2023].
+While cleaning data with code is the preferred method for the reasons previously mentioned, it does require technical expertise that not every team may have. If your team needs to clean data manually, consider two important things.
+
+1. Choose a tool based on the same criteria used when choosing a coding tool (i.e., comfort level, cost and access, interoperability, and default settings). Be aware of the potential formatting issues mentioned in Chapter \@ref(capture) when cleaning with tools like Microsoft Excel.
+
+2. Once you begin cleaning your data manually, it is imperative that you document every transformation to enable reproducibility. This may look different depending on the tool you use. 
+    - If cleaning data using the point and click menu in a program such as SPSS, when performing a transformation use a "paste" type button to copy all associated commands into a syntax file that can easily be reused [@kathawalla_easing_2021].
+    - If using a program such as Microsoft Excel for data cleaning, add notes into your data cleaning plan that are detailed enough to allow anyone to replicate your exact data cleaning process by hand [@the_carpentries_data_2023].
 
 ### Data versioning practices
 

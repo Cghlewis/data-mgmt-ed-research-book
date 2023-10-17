@@ -275,7 +275,8 @@ data-cleaning-checklist
 clean-check
 data-cleaning-workflow
 preliminary-steps
-data-cleaning-practices
+cleaning-data-using-code
+cleaning-data-manually
 data-versioning-practices
 share
 share-why
