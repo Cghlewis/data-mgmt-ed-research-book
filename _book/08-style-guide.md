@@ -1,9 +1,6 @@
 # Style guide {#style}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="80%" />
-<p class="caption">(\#fig:fig9-1)Style guide in the research project life cycle</p>
-</div>
+![(\#fig:fig9-1)Style guide in the research project life cycle](img/lifecycle_team_doc.PNG){width=80%}
 
 A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
 
@@ -127,10 +124,7 @@ When deciding how to structure your project directories (the organization of you
 
 ## File naming
 
-<div class="figure" style="text-align: center">
-<img src="img/xkcd.PNG" alt="Documents, from Randall Munroe’s xkcd" width="30%" />
-<p class="caption">(\#fig:fig9-2)Documents, from Randall Munroe’s xkcd</p>
-</div>
+![(\#fig:fig9-2)Documents, from Randall Munroe’s xkcd](img/xkcd.PNG){width=30%}
 
 As seen in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
@@ -286,10 +280,7 @@ Before adding a time component, either as a new variable or as part of a variabl
     
 However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
 
-<div class="figure" style="text-align: center">
-<img src="img/fig9-3.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%" />
-<p class="caption">(\#fig:fig9-3)Examples of how time might be added to your data based on a variety of scenarios</p>
-</div>
+![(\#fig:fig9-3)Examples of how time might be added to your data based on a variety of scenarios](img/fig9-3.PNG){width=100%}
 
 With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period. There are a few benefits of this method.
 
@@ -349,10 +340,7 @@ Ultimately, whichever method you choose, there are several guidelines you should
 
 In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Figure \@ref(fig:fig9-4)).
 
-<div class="figure" style="text-align: center">
-<img src="img/missing2.PNG" alt="Example missing value code schema used for numeric variables" width="100%" />
-<p class="caption">(\#fig:fig9-4)Example missing value code schema used for numeric variables</p>
-</div>
+![(\#fig:fig9-4)Example missing value code schema used for numeric variables](img/missing2.PNG){width=100%}
 
 ## Coding {#style-code}
 

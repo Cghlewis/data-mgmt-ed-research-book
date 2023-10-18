@@ -1,16 +1,10 @@
 # Data Capture {#capture}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_capture.PNG" alt="Data capture in the research project life cycle" width="90%" />
-<p class="caption">(\#fig:fig12-1)Data capture in the research project life cycle</p>
-</div>
+![(\#fig:fig12-1)Data capture in the research project life cycle](img/lifecycle_capture.PNG){width=90%}
 
 After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a flat file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
 
-<div class="figure" style="text-align: center">
-<img src="img/capture.PNG" alt="Common data capture methods" width="60%" />
-<p class="caption">(\#fig:fig12-2)Common data capture methods</p>
-</div>
+![(\#fig:fig12-2)Common data capture methods](img/capture.PNG){width=60%}
 
 
 ## Electronic data capture {#capture-electronic}
@@ -124,10 +118,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
 1. Last, similar to electronic data capture (see Section \@ref(capture-electronic)), you will want to make decisions about final file types (e.g., CSV, XLSX, SPSS), where final files will be stored, and how they will be named.
 1. Who will oversee this process? (i.e., creating entry forms, answering questions, conducting final checks)
     
-<div class="figure" style="text-align: center">
-<img src="img/data_entry_process2.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
-<p class="caption">(\#fig:fig12-3)The flow of the decisions to make regarding the data entry process</p>
-</div>
+![(\#fig:fig12-3)The flow of the decisions to make regarding the data entry process](img/data_entry_process2.PNG){width=100%}
 
 > **Note** <br> <br>
 As a reminder, the data capture phase is a time to do only that, capture the data that is already collected. This is not a time to score, calculate, or add additional fields. This is a time to enter the exact items that are found on the form. Creating additional variables or performing further data quality checks will occur during the data cleaning phase. <br><br>
@@ -147,10 +138,7 @@ Last, it is important to integrate quality control into this data entry process.
     - However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your "master" raw data file.
       - Figure \@ref(fig:fig11-4) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
   
-<div class="figure" style="text-align: center">
-<img src="img/double-enter.PNG" alt="A report displaying differences between two entry files" width="60%" />
-<p class="caption">(\#fig:fig12-4)A report displaying differences between two entry files</p>
-</div>
+![(\#fig:fig12-4)A report displaying differences between two entry files](img/double-enter.PNG){width=60%}
   
 Depending on the amount of data that is collected this can be a time consuming process. Double data entry is a matter of weighing costs and benefits. While double entering all of your data is the best way to reduce data errors, the cost of double entering all of your data might be too high, and you may decide to only double enter a portion of your data and gain a smaller benefit.
 
@@ -171,10 +159,7 @@ It is common in education research to also capture external supplemental data so
 
 Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-5)). This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
 
-<div class="figure" style="text-align: center">
-<img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%" />
-<p class="caption">(\#fig:fig12-5)Example non-public confidential data request process</p>
-</div>
+![(\#fig:fig12-5)Example non-public confidential data request process](img/data_request_process.PNG){width=100%}
 
 If not already included in the provider's data request process, it is important to share the following information:
 
@@ -190,10 +175,7 @@ If not already included in the provider's data request process, it is important 
 
 Figure \@ref(fig:fig12-6) is an example of how you might provide this information to a data provider.
 
-<div class="figure" style="text-align: center">
-<img src="img/collect_request.PNG" alt="Example variable request for an external data provider" width="100%" />
-<p class="caption">(\#fig:fig12-6)Example variable request for an external data provider</p>
-</div>
+![(\#fig:fig12-6)Example variable request for an external data provider](img/collect_request.PNG){width=100%}
 
 2. Clarify the periods you are requesting data for
     - This may be the current year alone, or you may also need the previous year as well for comparison
@@ -216,10 +198,7 @@ Figure \@ref(fig:fig12-6) is an example of how you might provide this informatio
 
 Figure \@ref(fig:fig12-7) is an example of a document you can ask your data provider to complete.
 
-<div class="figure" style="text-align: center">
-<img src="img/collect_document.PNG" alt="Sample documentation form for an external data provider to complete" width="80%" />
-<p class="caption">(\#fig:fig12-7)Sample documentation form for an external data provider to complete</p>
-</div>
+![(\#fig:fig12-7)Sample documentation form for an external data provider to complete](img/collect_document.PNG){width=80%}
 
 > **Note** <br> <br>
 When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) [@levesque_guide_2015]. These anomalies can happen due to human error or due to circumstances such as student mobility. While you may be able to work with your data provider to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).
