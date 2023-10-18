@@ -21,7 +21,10 @@ Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying 
 
 Assigning levels of responsibility to each site allows collaborators to clearly see what is expected from them in a project. Within site tasks can then be further assigned to specific roles.
 
-![(\#fig:fig16-1)Example of a RACI chart for a multi-site project collaboration](img/raci.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/raci.PNG" alt="Example of a RACI chart for a multi-site project collaboration" width="80%" />
+<p class="caption">(\#fig:fig16-1)Example of a RACI chart for a multi-site project collaboration</p>
+</div>
 
 ### Multi-project teams
 

@@ -1,6 +1,9 @@
 # Data Cleaning {#clean}
 
-![(\#fig:fig14-1)Data cleaning in the research project life cycle](img/lifecycle_clean.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_clean.PNG" alt="Data cleaning in the research project life cycle" width="80%" />
+<p class="caption">(\#fig:fig14-1)Data cleaning in the research project life cycle</p>
+</div>
 
 Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before it is in a format that you will confidently want to share for analysis. What is done in that data processing, or data cleaning, phase will depend on your project and your data. However, in this chapter we will review some standard data cleaning steps that should be considered for every education research project. 
 
@@ -25,7 +28,10 @@ Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig
 3. Your analytic data
     - This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis [@reynolds_basics_2022]. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book. 
 
-![(\#fig:fig14-2)The three phases of data](img/clean_data.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/clean_data.PNG" alt="The three phases of data" width="80%" />
+<p class="caption">(\#fig:fig14-2)The three phases of data</p>
+</div>
 
 ## Data quality criteria {#clean-criteria}
 
@@ -58,7 +64,10 @@ Recall from Section \@ref(document-plan), that it is helpful to write up your da
 In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section \@ref(clean-criteria), it can be helpful to follow a standardized checklist of data cleaning steps (see Figure \@ref(fig:fig14-3)). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.
 
 
-![(\#fig:fig14-3)Data cleaning checklist](img/data_clean_check.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/data_clean_check.PNG" alt="Data cleaning checklist" width="80%" />
+<p class="caption">(\#fig:fig14-3)Data cleaning checklist</p>
+</div>
 
 As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps are fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file [@borer_simple_2009; @broman_data_2018]. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth (SSOT) for that data source. If you make errors in your data cleaning process, you should always be able to go back to your SSOT to start over again if you need to. Second, reviewing your raw data should always be step number two. Waiting to review your data until after you've started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file. 
 
@@ -77,7 +86,10 @@ Let's review what each step specifically involves so that as you write your data
       - Do the number of variables in your data dictionary match the number of variables in your dataset? Remember we are only looking for variables that are captured directly from our source (i.e., not derived variables)?
       - Are the variable types and values as expected?
 
-![(\#fig:fig14-4)Reviewing rows and columns in a raw data file](img/review_raw.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/review_raw.PNG" alt="Reviewing rows and columns in a raw data file" width="100%" />
+<p class="caption">(\#fig:fig14-4)Reviewing rows and columns in a raw data file</p>
+</div>
 
 3. Find missing data
     - Find missing cases
@@ -102,7 +114,10 @@ In the special case where you purposefully collect duplicate observations on a p
     - If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter \@ref(share), we will also discuss dealing with indirect identifiers before publicly sharing your data.
     - Figure \@ref(fig:fig14-5) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., `first_name` and `last_name`) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
-![(\#fig:fig14-5)Process of creating a de-identified dataset](img/de-identify.PNG){width=90%}
+<div class="figure" style="text-align: center">
+<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%" />
+<p class="caption">(\#fig:fig14-5)Process of creating a de-identified dataset</p>
+</div>
 
 6. Drop any irrelevant columns not included in your data dictionary
     - Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.
@@ -110,7 +125,10 @@ In the special case where you purposefully collect duplicate observations on a p
 7. Split columns as needed
     - As discussed in Section \@ref(structure-rules), a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable. 
 
-![(\#fig:fig14-6)Splitting one column into multiple columns](img/clean_split.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/clean_split.PNG" alt="Splitting one column into multiple columns" width="80%" />
+<p class="caption">(\#fig:fig14-6)Splitting one column into multiple columns</p>
+</div>
 
 8. Rename variables
     - Rename variables to correspond with the names provided in your data dictionary.
@@ -119,7 +137,10 @@ In the special case where you purposefully collect duplicate observations on a p
     - Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why? 
       - As an example, it may be that you need to remove unexpected characters such as `$` or `%` that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
 
-![(\#fig:fig14-7)Normalizing a variable](img/clean_normalize.PNG){width=40%}
+<div class="figure" style="text-align: center">
+<img src="img/clean_normalize.PNG" alt="Normalizing a variable" width="40%" />
+<p class="caption">(\#fig:fig14-7)Normalizing a variable</p>
+</div>
 
 10. Standardize variables
     - Are columns consistently measured, coded, and formatted according to your data dictionary? If no, they need to be standardized.
@@ -130,7 +151,10 @@ In the special case where you purposefully collect duplicate observations on a p
 > **Note** <br> <br>
 In the case of Figure \@ref(fig:fig14-7), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.
 
-![(\#fig:fig14-8)Standardizing a variable](img/clean_standardize.PNG){width=40%}
+<div class="figure" style="text-align: center">
+<img src="img/clean_standardize.PNG" alt="Standardizing a variable" width="40%" />
+<p class="caption">(\#fig:fig14-8)Standardizing a variable</p>
+</div>
 
 11. Update variable types
     - After normalizing and standardizing variables, you can now convert any variable types that do not match the types you've listed in your data dictionary (e.g., convert a string to numeric)
@@ -143,7 +167,10 @@ It's important to normalize before updating your variable types. Updating your v
     - As discussed in Chapter \@ref(structure-rules), this also includes recoding implicit values, explicitly (e.g., if a missing value is implied to be 0, recode them to 0)
     - You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item)
 
-![(\#fig:fig14-9)Reverse coding a variable](img/clean_reverse.PNG){width=30%}
+<div class="figure" style="text-align: center">
+<img src="img/clean_reverse.PNG" alt="Reverse coding a variable" width="30%" />
+<p class="caption">(\#fig:fig14-9)Reverse coding a variable</p>
+</div>
 
 13. Construct additional variables
     - This is not the time to construct analysis-specific variables. This is the time to create or calculate variables that should always be a part of the core study dataset. These variables should be chosen by your data management working group early on and added to your data dictionary.
@@ -219,7 +246,10 @@ At this point, your dataset should be clean. However, there may be additional tr
 > **Note** <br><br>
 If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure \@ref(fig:fig14-12)), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.
 
-![(\#fig:fig14-12)A comparison of long and wide format](img/clean_reshape.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/clean_reshape.PNG" alt="A comparison of long and wide format" width="80%" />
+<p class="caption">(\#fig:fig14-12)A comparison of long and wide format</p>
+</div>
 
 19. Save your clean data
     - The final step of your cleaning process will be to export or save your clean data. You can save your files in one or more file types depending on your needs. It can be helpful to save your data in more than one format to meet various analysis, long-term storage, or data sharing needs (e.g., an interoperable format like CSV, and a format that contains embedded metadata such as SPSS). 

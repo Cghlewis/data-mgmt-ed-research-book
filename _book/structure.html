@@ -271,7 +271,7 @@ Figure 3.8: A comparison of variables with implicit values and variables with ex
 <p>In database terminology, each dataset we have is considered a “table”. Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys). See Figure <a href="structure.html#fig:fig3-9">3.9</a> for an example of three tables that contain primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Furthermore, tables can be joined either horizontally or vertically.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-9"></span>
-<img src="img/fig3-9.PNG" alt="Three tables with primary and foreign keys" width="90%"><p class="caption">
+<img src="img/fig3-9.PNG" alt="Three tables with primary and foreign keys" width="100%"><p class="caption">
 Figure 3.9: Three tables with primary and foreign keys
 </p>
 </div>
@@ -290,7 +290,7 @@ Figure 3.10: Linking data through primary keys
 <p>However, we are often not only collecting data across different forms, but we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let’s look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure <a href="structure.html#fig:fig3-11">3.11</a> shows how we can now link the foreign key in the student assessment (<code>tch_id</code>) with the primary key (<code>tch_id</code>) in the teacher survey. In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-11"></span>
-<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="70%"><p class="caption">
+<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="90%"><p class="caption">
 Figure 3.11: Linking data through foreign keys
 </p>
 </div>

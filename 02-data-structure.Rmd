@@ -130,7 +130,7 @@ A database is "an organized collection of data stored as multiple datasets" [@us
 
 In database terminology, each dataset we have is considered a "table". Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys). See Figure \@ref(fig:fig3-9) for an example of three tables that contain primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Furthermore, tables can be joined either horizontally or vertically.
 
-```{r fig3-9, out.width='90%', fig.cap="Three tables with primary and foreign keys"}
+```{r fig3-9, fig.cap="Three tables with primary and foreign keys"}
 
 knitr::include_graphics("img/fig3-9.PNG")
 
@@ -150,7 +150,7 @@ knitr::include_graphics("img/fig3-10.PNG")
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let's look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure \@ref(fig:fig3-11) shows how we can now link the foreign key in the student assessment (`tch_id`) with the primary key (`tch_id`) in the teacher survey. In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. 
 
-```{r fig3-11, fig.cap="Linking data through foreign keys", out.width='70%'}
+```{r fig3-11, fig.cap="Linking data through foreign keys", out.width='90%'}
 
 knitr::include_graphics("img/fig3-11.PNG")
 
