@@ -1,9 +1,6 @@
 # Data Sharing {#share}
 
-<div class="figure" style="text-align: center">
-<img src="img/lifecycle_share.PNG" alt="Data sharing in the research project life cycle" width="80%" />
-<p class="caption">(\#fig:fig15-1)Data sharing in the research project life cycle</p>
-</div>
+![(\#fig:fig15-1)Data sharing in the research project life cycle](img/lifecycle_share.PNG){width=80%}
 
 Throughout a project, teams are internally sharing data and materials with a variety of people (e.g., team members, collaborators, funders) who use that information for a variety of purposes (e.g., analyses, reports, to answer questions). Yet, at the end of a project, or possibly earlier, it's important for researchers to also consider making their research data available for broader public use. However, publicly sharing project data and materials requires a lot of consideration. In this chapter we will first review reasons for why you should publicly share your data, and then we will work through a series of decisions to make before sharing your data.
 
@@ -15,10 +12,7 @@ The most notable reason for openly sharing data is that there are a growing numb
 
 There is a series of decisions to be made when sharing your data (see Figure \@ref(fig:fig15-2)). While in some cases data sharing may not occur until the end of your project, many of your data sharing decisions will actually need to be made at the beginning of your project, when you write your DMP (see Chapter \@ref(dmp)). These decisions will inform both your workflow during your active project, as well as the steps you need to perform when preparing your data for archiving. Planning your data management practices around your data sharing plan early on, can also help reduce any significant burden that may otherwise be caused by data sharing [@klein_practical_2018; @levenstein_data_2018].
 
-<div class="figure" style="text-align: center">
-<img src="img/data_share_flow2.PNG" alt="Decisions to be made before publicly sharing study data" width="90%" />
-<p class="caption">(\#fig:fig15-2)Decisions to be made before publicly sharing study data</p>
-</div>
+![(\#fig:fig15-2)Decisions to be made before publicly sharing study data](img/data_share_flow2.PNG){width=90%}
 
 In this section we will walk through the flow chart, discussing what information is needed to make decisions as well as best practices associated with each decision. 
 
@@ -72,10 +66,7 @@ However, due to supporter requirements (e.g., agency partner, institution, funde
 
 Figure \@ref(fig:fig15-3), modified from a flow chart created by @borghi_promoting_2022, can help you work through the process of choosing where to share each data source. Ultimately though, no matter where you choose to share your data, it is important to make this decision early on because this decision will impact many of the other decisions that need to be made. In particular, if you choose to deposit data in a repository, you will want to review repository specific requirements and standards to make sure they are accounted for in your DMP (e.g., data format requirements, metadata schemas used) and in your data management processes throughout the study. Making this decision early on also allows you to begin creating a schedule for ongoing data deposits throughout your study if that is something you want to consider doing, or if it is required by your funder [@icpsr_guide_2020].
 
-<div class="figure" style="text-align: center">
-<img src="img/data_share_location.PNG" alt="A series of decisions to make when deciding where to share data" width="100%" />
-<p class="caption">(\#fig:fig15-3)A series of decisions to make when deciding where to share data</p>
-</div>
+![(\#fig:fig15-3)A series of decisions to make when deciding where to share data](img/data_share_location.PNG){width=100%}
 
 #### Choosing a repository
 
@@ -229,10 +220,7 @@ De-identification is a process of balancing risks and benefits. In assessing dis
 
 If you find that de-identifying the data alters your data in a way that distorts data quality or structure, or if you believe that the risks of sharing your data are still more than minimal, you should consider sharing in a controlled manner [@icpsr_guide_2020; @meyer_practical_2018; @morehouse_responsible_2023; @neild_sharing_2022; @schatschneider_-identification_2021]. As discussed in Section \@ref(share-able), it is still possible to share these files through restricted access. In a repository these files can be shared through means such as secure downloads, virtual data enclaves, or even onsite data enclaves. Access to these restricted data are permitted only through an application process where requestors complete a detailed data use agreement. See Figure \@ref(fig:fig15-4) for an example of a restricted access dataset available from the @united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022 on ICPSR.
 
-<div class="figure" style="text-align: center">
-<img src="img/icpsr_restricted.PNG" alt="An example of a restricted access dataset on ICPSR" width="100%" />
-<p class="caption">(\#fig:fig15-4)An example of a restricted access dataset on ICPSR</p>
-</div>
+![(\#fig:fig15-4)An example of a restricted access dataset on ICPSR](img/icpsr_restricted.PNG){width=100%}
 
 If you are not sharing data in a repository that allows you to share restricted data, you can still share metadata in a repository, along with information for users to contact you about requesting access to restricted-use data that you share through your own personal system. No matter where you share data, in order to maximize public benefit, you should still consider openly sharing some data. That may simply be summary statistics (e.g., means, standard deviations) provided in tables. Or it could involve you sharing two sets of files. For example a public access version of a file with sensitive variables removed/altered and a restricted-use version of the same file with sensitive variables retained. However, be sure to consider all possible disclosure risks before sharing to ensure that someone with access to both the restricted and public files are not able to identify individuals. Also make sure that no inconsistencies between files are created during this process [@icpsr_guide_2020; @logan_data_2021; @neild_sharing_2022; @schatschneider_-identification_2021] .
 
@@ -255,10 +243,7 @@ You will want to share documents from all levels of your project (project, data,
     - Project-level README
       - A README can serve many purposes, and in this case, a README at the top of your data sharing directory can be beneficial in outlining very high level information about the project (i.e., title, overview, contributors), as well providing a file tree that describes how files are organized in the directory (Figure \@ref(fig:fig15-5)).
 
-<div class="figure" style="text-align: center">
-<img src="img/project_readme.PNG" alt="An example project-level README" width="80%" />
-<p class="caption">(\#fig:fig15-5)An example project-level README</p>
-</div>
+![(\#fig:fig15-5)An example project-level README](img/project_readme.PNG){width=80%}
 
 2. Dataset-level documentation
     - Dataset-level README
@@ -268,10 +253,7 @@ You will want to share documents from all levels of your project (project, data,
     - Data cleaning plans
       - While I do not recommend sharing data cleaning code, I do think it can be helpful to share your data cleaning plans. Providing these plans provides at least some transparency into the process of transforming your raw data into your clean shareable data.
 
-<div class="figure" style="text-align: center">
-<img src="img/data_readme.PNG" alt="An example dataset-level README" width="100%" />
-<p class="caption">(\#fig:fig15-6)An example dataset-level README</p>
-</div>
+![(\#fig:fig15-6)An example dataset-level README](img/data_readme.PNG){width=100%}
 
 3. Variable-level documentation
     - Data dictionaries and/or codebooks
@@ -298,10 +280,7 @@ Your repository may also have preferences for when data should be deposited. For
 
 Some repositories have a predefined file structure and will require little to no effort on your part to set this up. However, many repositories are more hands off and will allow you to set up structures in any way that works well for you. Similar to how you followed a style guide (Chapter \@ref(style)) for setting up your internal team and project electronic file structures, you will want to follow style guide rules when setting up your data sharing file structure. Be organized about how you store information and be descriptive in how you name folders and files. You want to remove as many cognitive barriers as possible to increase the likelihood that your materials are reused. If someone opens your project and they feel confused at any point about what they are looking at, it is likely they will leave and move on to a new project. Users want to feel confident that they understand what is in your project and how they should use the materials. Figure \@ref(fig:fig15-7) is an example of how you might set up a repository for a small project that collected longitudinal data for both students and teachers. In setting up this structure, also make sure to use any additional services provided by your repository that may also aid discoverability and interpretation (e.g., wikis, linking to other relevant materials).
 
-<div class="figure" style="text-align: center">
-<img src="img/data_sharing_structure.PNG" alt="An example of how you might structure your data sharing folder" width="100%" />
-<p class="caption">(\#fig:fig15-7)An example of how you might structure your data sharing folder</p>
-</div>
+![(\#fig:fig15-7)An example of how you might structure your data sharing folder](img/data_sharing_structure.PNG){width=100%}
 
 ## Roles and responsibilities
 

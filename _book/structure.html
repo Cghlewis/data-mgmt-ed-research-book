@@ -268,36 +268,42 @@ Figure 3.8: A comparison of variables with implicit values and variables with ex
 <span class="header-section-number">3.3.1</span> Database design<a class="anchor" aria-label="anchor" href="#structure-database"><i class="fas fa-link"></i></a>
 </h3>
 <p>A database is “an organized collection of data stored as multiple datasets” <span class="citation">(<a href="references.html#ref-usgs_what_2023" role="doc-biblioref">USGS 2023</a>)</span>. Sometimes this database is actually housed in a database software system (such as SQLite or FileMaker), and other times we are loosely using the term database to simply define how we are linking disparate datasets together that are stored individually in some file system. No matter the storage system, the general concepts here will be applicable.</p>
-<p>In database terminology, each dataset we have is considered a “table”. Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys). Furthermore, these tables can be joined either horizontally or vertically.</p>
+<p>In database terminology, each dataset we have is considered a “table”. Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys). See Figure <a href="structure.html#fig:fig3-9">3.9</a> for an example of three tables that contain primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Furthermore, tables can be joined either horizontally or vertically.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig3-9"></span>
+<img src="img/fig3-9.PNG" alt="Three tables with primary and foreign keys" width="90%"><p class="caption">
+Figure 3.9: Three tables with primary and foreign keys
+</p>
+</div>
 <div id="horizontal-joins" class="section level4" number="3.3.1.1">
 <h4>
 <span class="header-section-number">3.3.1.1</span> Horizontal joins<a class="anchor" aria-label="anchor" href="#horizontal-joins"><i class="fas fa-link"></i></a>
 </h4>
 <p>Joining tables horizontally, also called merging, involves matching rows by one (e.g., <code>stu_id</code>) or more (e.g., <code>first_name</code> and <code>last_name</code>) keys, resulting in a table of combined information. There are several different types of horizontal joins (e.g., left, right, inner, full). While diving into the different types of joins is outside of the scope of this book, resources for further learning will be provided. For now, just assume that the joins we discuss are all left joins (i.e., all records from our first table will be matched to any available records in our second table).</p>
-<p>To better understand horizontal joins, let’s take the simple example in Figure <a href="structure.html#fig:fig3-9">3.9</a>, where we only have a primary key (<code>stu_id</code>) in each table, no foreign keys. Here we collected two forms from students (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge, where each student only appears once in each table.</p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig3-9"></span>
-<img src="img/fig3-9.PNG" alt="Linking data through primary keys" width="90%"><p class="caption">
-Figure 3.9: Linking data through primary keys
-</p>
-</div>
-<p>However, we are often not only collecting data across different forms, but we are also collecting nested data across different participants (e.g., students, nested in classrooms, nested in schools). Let’s take another example where we collected data from two instruments (a student assessment and a teacher survey). Figure <a href="structure.html#fig:fig3-10">3.10</a> shows how we can now link the foreign key in the student assessment (<code>tch_id</code>) with the primary key (<code>tch_id</code>) in the teacher survey. In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom.</p>
+<p>To better understand horizontal joins, let’s take the simple example in Figure <a href="structure.html#fig:fig3-9">3.9</a>, where we only have a primary keys (<code>stu_id</code>) in each table, no foreign keys. Here we collected two forms from students (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge because each student only appears once in each table.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-10"></span>
-<img src="img/fig3-10.PNG" alt="Linking data through foreign keys" width="70%"><p class="caption">
-Figure 3.10: Linking data through foreign keys
+<img src="img/fig3-10.PNG" alt="Linking data through primary keys" width="90%"><p class="caption">
+Figure 3.10: Linking data through primary keys
 </p>
 </div>
-<p>And as you can imagine, as we add more forms, the database structure begins to become even more complex. Figure <a href="structure.html#fig:fig3-11">3.11</a> is an example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participants can be linked by primary keys, and forms across participants can be linked by foreign keys.</p>
+<p>However, we are often not only collecting data across different forms, but we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let’s look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure <a href="structure.html#fig:fig3-11">3.11</a> shows how we can now link the foreign key in the student assessment (<code>tch_id</code>) with the primary key (<code>tch_id</code>) in the teacher survey. In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig3-11"></span>
+<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="70%"><p class="caption">
+Figure 3.11: Linking data through foreign keys
+</p>
+</div>
+<p>And as you can imagine, as we add more forms, the database structure begins to become even more complex. Figure <a href="structure.html#fig:fig3-12">3.12</a> is an example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participant types can be linked by primary keys, and forms across participant types can be linked by foreign keys.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:fig3-12"></span>
 <img src="img/link2v02.PNG" alt="Linking data through primary and foreign keys" width="70%"><p class="caption">
-Figure 3.11: Linking data through primary and foreign keys
+Figure 3.12: Linking data through primary and foreign keys
 </p>
 </div>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-It is important to note here, that if your data do not have unique identifiers in your tables, as is in the case of anonymous data, you will be unable to join data horizontally.</p>
+It is important to note here, that if you do not have unique identifiers in your tables, as is in the case of anonymous data, you will be unable to join data horizontally.</p>
 </blockquote>
 </div>
 <div id="vertical-joins" class="section level4" number="3.3.1.2">
@@ -305,11 +311,11 @@ It is important to note here, that if your data do not have unique identifiers i
 <span class="header-section-number">3.3.1.2</span> Vertical joins<a class="anchor" aria-label="anchor" href="#vertical-joins"><i class="fas fa-link"></i></a>
 </h4>
 <p>Joining tables vertically, also called appending, involves stacking forms on top of each other. Here, rather than joining by primary and foreign keys, we are matching columns by variable names. In this case, variable names and variable types should be identical across forms in order for the matching to work.</p>
-<p>Let’s take a simple example where we collected a survey from two different sites, using two different forms. Those forms were entered into two separate tables and we want to combine that data. Figure <a href="structure.html#fig:fig3-12">3.12</a>, shows how we could vertically join those tables.</p>
+<p>Let’s take a simple example where we collected a survey from two different sites, using two different forms. Those forms were entered into two separate tables and we want to combine that data. Figure <a href="structure.html#fig:fig3-13">3.13</a>, shows how we could vertically join those tables.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig3-12"></span>
-<img src="img/fig3-12.PNG" alt="Appending data across sites" width="100%"><p class="caption">
-Figure 3.12: Appending data across sites
+<span style="display:block;" id="fig:fig3-13"></span>
+<img src="img/fig3-13.PNG" alt="Appending data across sites" width="100%"><p class="caption">
+Figure 3.13: Appending data across sites
 </p>
 </div>
 <p><strong>Resources</strong></p>
@@ -347,11 +353,11 @@ Figure 3.12: Appending data across sites
 <span class="header-section-number">3.3.2.1</span> Wide format<a class="anchor" aria-label="anchor" href="#wide-format"><i class="fas fa-link"></i></a>
 </h4>
 <p>When we structure our data in a wide format, all data collected on a unique subject will be in one row. Subjects should not be duplicated in your data in this format.</p>
-<p>In order to structure data in wide format, we join our tables horizontally. Before joining though, each wave of data collection will be appended to a variable name to create unique variable names. Figure <a href="structure.html#fig:fig3-13">3.13</a> shows of an example of how we could structure two waves of data collection in wide format.</p>
+<p>In order to structure data in wide format, we join our tables horizontally. Before joining though, each wave of data collection will be appended to a variable name to create unique variable names. Figure <a href="structure.html#fig:fig3-14">3.14</a> shows of an example of how we could structure two waves of data collection in wide format.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig3-13"></span>
-<img src="img/fig3-13.PNG" alt="Example linking forms across time in wide format" width="80%"><p class="caption">
-Figure 3.13: Example linking forms across time in wide format
+<span style="display:block;" id="fig:fig3-14"></span>
+<img src="img/fig3-14.PNG" alt="Example linking forms across time in wide format" width="80%"><p class="caption">
+Figure 3.14: Example linking forms across time in wide format
 </p>
 </div>
 </div>
@@ -360,11 +366,11 @@ Figure 3.13: Example linking forms across time in wide format
 <span class="header-section-number">3.3.2.2</span> Long format<a class="anchor" aria-label="anchor" href="#long-format"><i class="fas fa-link"></i></a>
 </h4>
 <p>In long data a participant can, and often will, repeat in your dataset, and unique rows will now be identified through a combination of variables (e.g., <code>stu_id</code> and <code>wave</code> together will be your primary key).</p>
-<p>In order to structure data in long format, we join our tables vertically. In this scenario, we no longer add the data collection wave to variable names. However, a time period variable should be added to denote the wave associated with each row of data. Figure <a href="structure.html#fig:fig3-14">3.14</a> shows of an example of how we could structure two waves of data collection in long format.</p>
+<p>In order to structure data in long format, we join our tables vertically. In this scenario, we no longer add the data collection wave to variable names. However, a time period variable should be added to denote the wave associated with each row of data. Figure <a href="structure.html#fig:fig3-15">3.15</a> shows of an example of how we could structure two waves of data collection in long format.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig3-14"></span>
-<img src="img/fig3-14.PNG" alt="Data structured in long format" width="100%"><p class="caption">
-Figure 3.14: Data structured in long format
+<span style="display:block;" id="fig:fig3-15"></span>
+<img src="img/fig3-15.PNG" alt="Example linking forms across time in long format" width="100%"><p class="caption">
+Figure 3.15: Example linking forms across time in long format
 </p>
 </div>
 </div>

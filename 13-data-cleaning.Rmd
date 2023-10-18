@@ -301,7 +301,7 @@ However, writing code alone will not provide all of the desired benefits. There 
     - Cost and access to the program
     - Interoperability of the program (i.e., will others be able to open, review, and run your code)
     - Limitations (e.g., file size limitations, variable character count limitations)
-    - Default settings (e.g., how the program performs rounding)
+    - Default settings (e.g., how the program performs rounding, how dates are stored)
 1. Follow a coding style guide
     - As we discussed in Section \@ref(style-code), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
 1. Use relative file paths
