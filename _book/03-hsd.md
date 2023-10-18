@@ -6,7 +6,10 @@ In addition to understanding data structure, we also need a foundational underst
 
 When working with human subjects there are two types of identifiers you may collect in your study, direct and indirect. Direct identifiers are unique to an individual and can be used to identify a participant. Indirect identifiers are not necessarily unique to a particular individual, but if combined with other information they could be used to identify a participant [@kopper_data_2023].
 
-![(\#fig:fig4-1)Examples of direct and indirect identifiers](img/identifiers.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/identifiers.PNG" alt="Examples of direct and indirect identifiers" width="80%" />
+<p class="caption">(\#fig:fig4-1)Examples of direct and indirect identifiers</p>
+</div>
 
 A term often used when discussing identifiable information is personally identifiable information (PII). This term broadly refers to information that can be used to identify a participant. There is no agreed upon list for what fields should be included in a list of PII but generally it includes both the direct and indirect types of information shown in Figure \@ref(fig:fig4-1).
 

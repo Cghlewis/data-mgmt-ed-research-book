@@ -1,6 +1,9 @@
 # Data Management Plan {#dmp}
 
-![(\#fig:fig5-1)Data management plan in the research project life cycle](img/lifecycle_dmp2.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_dmp2.PNG" alt="Data management plan in the research project life cycle" width="80%" />
+<p class="caption">(\#fig:fig5-1)Data management plan in the research project life cycle</p>
+</div>
 
 ## History and purpose
 
@@ -91,7 +94,10 @@ Some fields you can add to this catalog include:
 
 Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a hypothetical study. In this hypothetical example, if we only collected data for one year, we would end up with six datasets at the end of our study, three teacher-level files and three student-level files. In chapter \@ref(share), we will discuss whether to share these as unique datasets, or larger merged files combined by unit of analysis (e.g., student-level merged file, teacher-level merged file).
 
-![(\#fig:fig5-2)Example data sources catalog](img/data_catalog.PNG){width=100%}
+<div class="figure" style="text-align: center">
+<img src="img/data_catalog.PNG" alt="Example data sources catalog" width="100%" />
+<p class="caption">(\#fig:fig5-2)Example data sources catalog</p>
+</div>
 
 
 ## Getting help

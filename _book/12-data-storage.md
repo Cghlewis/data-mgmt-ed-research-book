@@ -1,6 +1,9 @@
 # Data Storage and Security {#store}
 
-![(\#fig:fig13-1)Data storage in the research project life cycle](img/lifecycle_store.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_store.PNG" alt="Data storage in the research project life cycle" width="80%" />
+<p class="caption">(\#fig:fig13-1)Data storage in the research project life cycle</p>
+</div>
 
 As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study. Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.
 
@@ -86,7 +89,10 @@ Working with paper data involves reviewing another set of decisions while planni
 
 ## Planning long-term storage {#store-long}
 
-![(\#fig:fig13-2)Long-term data storage in the research project life cycle](img/lifecycle_store2.PNG){width=80%}
+<div class="figure" style="text-align: center">
+<img src="img/lifecycle_store2.PNG" alt="Long-term data storage in the research project life cycle" width="80%" />
+<p class="caption">(\#fig:fig13-2)Long-term data storage in the research project life cycle</p>
+</div>
 
 In addition to planning for short-term storage, during an active project, you will need to plan for long-term storage and use of files after a project is complete (see Figure \@ref(fig:fig13-2)). While your project may be ending, there are still many reasons to retain your data long-term including internal reuse, opportunities to make corrections (e.g., going back to paper files if an error is found in the data), and data retention requirements from funders and institutions. In this section we will discuss how to care for internal files, while public data sharing and archiving will be discussed in Chapter \@ref(share).
 
@@ -104,7 +110,10 @@ In addition to planning for short-term storage, during an active project, you wi
         - Storage location
           - Similar to choosing file formats, choose a storage location that is accessible and not at risk of becoming corrupt or obsolete (e.g., think obsolescence of floppy disks). If your short-term storage solution meets these requirements (e.g., your institution network drive), you may not need to do anything different in preparing for long-term storage, but it will be important to continue implementing good practices to keep your data safe (e.g., continuing data backups). When it comes time to destroy data, make sure to permanently delete files, including all backups of files. When deleting PII, this often involves more than just moving files to the trash can on your computer. Work with your institution IT department during this process. 
 
-![(\#fig:fig13-3)Examples of non-proprietary file formats](img/file_types.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/file_types.PNG" alt="Examples of non-proprietary file formats" width="70%" />
+<p class="caption">(\#fig:fig13-3)Examples of non-proprietary file formats</p>
+</div>
 
 3. Consider how you will share data internally
     - At the end of a project, or possibly earlier in the project, it is important to consider where you will store final datasets in your storage location (i.e., a specific folder), how you will notify team members of their availability, and how you will allow team members, and other research partners, to access data. An example of this process may look like this:
@@ -120,7 +129,10 @@ In addition to planning for short-term storage, during an active project, you wi
         - Consider how you will track data requests
           - It is important to keep track of data requests in case of situations such as errors found in the data. In those cases, you can reach back out to researchers to inform them that errors were found and new versions of the data are available.
 
-![(\#fig:fig13-4)Example set up for a data request folder](img/data-request.PNG){width=70%}
+<div class="figure" style="text-align: center">
+<img src="img/data-request.PNG" alt="Example set up for a data request folder" width="70%" />
+<p class="caption">(\#fig:fig13-4)Example set up for a data request folder</p>
+</div>
 
 Last, if maintaining your electronic data long-term sounds like too much effort for your team, there are other options. Many universities have institutional repositories that often include services such as data curation and preservation. Additionally, there are several external repositories that offer curation and preservation services where you may be able to deposit your data for long-term storage. It's possible that depositing your data in one of these two options may also align with publicly sharing your data, which we will review in Chapter \@ref(share).
   
