@@ -140,7 +140,7 @@ knitr::include_graphics("img/fig3-9.PNG")
 
 Joining tables horizontally, also called merging, involves matching rows by one (e.g., `stu_id`) or more (e.g., `first_name` and `last_name`) keys, resulting in a table of combined information. There are several different types of horizontal joins (e.g., left, right, inner, full). While diving into the different types of joins is outside of the scope of this book, resources for further learning will be provided. For now, just assume that the joins we discuss are all left joins (i.e., all records from our first table will be matched to any available records in our second table).
 
-To better understand horizontal joins, let's take the simple example in Figure \@ref(fig:fig3-9), where we only have a primary keys (`stu_id`) in each table, no foreign keys. Here we collected two forms from students (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge because each student only appears once in each table. 
+To better understand horizontal joins, let's take the simple example in Figure \@ref(fig:fig3-10), where we only have a primary keys (`stu_id`) in each table, no foreign keys. Here we collected two forms from students (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge because each student only appears once in each table. 
 
 ```{r fig3-10, out.width='90%', fig.cap="Linking data through primary keys"}
 
