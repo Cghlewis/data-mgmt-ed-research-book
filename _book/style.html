@@ -81,9 +81,10 @@
 <li><a class="" href="capture.html"><span class="header-section-number">12</span> Data Capture</a></li>
 <li><a class="" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
 <li><a class="" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
-<li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
-<li><a class="" href="additional-considerations.html"><span class="header-section-number">16</span> Additional considerations</a></li>
-<li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
+<li><a class="" href="store-long.html"><span class="header-section-number">15</span> Data Archiving</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">16</span> Data Sharing</a></li>
+<li><a class="" href="additional-considerations.html"><span class="header-section-number">17</span> Additional considerations</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">18</span> Glossary</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -575,7 +576,7 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <h2>
 <span class="header-section-number">9.6</span> Coding<a class="anchor" aria-label="anchor" href="#style-code"><i class="fas fa-link"></i></a>
 </h2>
-<p>If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (e.g., R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.</p>
+<p>If your team plans to clean data using code it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (e.g., R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.</p>
 <ul>
 <li>Consider building and implementing coding templates <span class="citation">(<a href="references.html#ref-castaneda_nice_2019" role="doc-biblioref">Castañeda 2019</a>; <a href="references.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>
 <ul>
@@ -583,9 +584,30 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <li>They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)</li>
 </ul>
 </li>
+</ul>
+<p>One example of what this might look.</p>
+<pre><code>#### Overview ####
+# Associated project: 
+# Script purpose:
+# Data cleaning plan followed:
+# Created by: 
+# Date created:
+# Code checked by:
+# Code checked date:
+
+#### Workspace setup ####
+
+# Settings, packages, root paths
+
+#### Cleaning code section 1 ####
+
+#### Cleaning code section 2 ####
+...
+</code></pre>
+<ul>
 <li>Use comments throughout your code to clearly explain the purpose of each code chunk
 <ul>
-<li>The format of these comments will be dependent on your coding language
+<li>While your syntax may seem intuitive to you, it is not necessarily clear to others. As you write your code, comment every step in your syntax, explaining what that specific line of code is doing. The format of these comments will be dependent on your coding language.
 <ul>
 <li>R uses <code>#</code> at the start of a comment</li>
 <li>SPSS and Stata use <code>*</code> at the start of a comment</li>
@@ -602,9 +624,17 @@ Figure 9.4: Example missing value code schema used for numeric variables
 </li>
 <li>Use relative file paths for reproducibility
 <ul>
-<li>Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths. It is important to set file paths relative the directory you are working in <span class="citation">(<a href="references.html#ref-wickham_welcome_2017" role="doc-biblioref">Wickham and Grolemund 2017</a>)</span>.</li>
+<li>In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing a file path, a location where a file lives, in our syntax. Rather than writing the full, absolute file path, it is a good practice to write the path relative to the directory you are working in <span class="citation">(<a href="references.html#ref-wickham_welcome_2017" role="doc-biblioref">Wickham and Grolemund 2017</a>)</span>. Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths.</li>
 </ul>
 </li>
+</ul>
+<pre><code># Example absolute file path
+"/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv"  
+
+# Example relative file path
+"raw/proja_stu_svy_raw.csv"
+</code></pre>
+<ul>
 <li>If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules
 <ul>
 <li>No spaces in object names</li>
@@ -612,10 +642,14 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <li>No names that are existing program keywords (<code>if</code>, <code>for</code>, etc.)</li>
 </ul>
 </li>
+<li>Don’t repeat yourself
+<ul>
 <li>Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by following the DRY (don’t repeat yourself) principle. Consider using functions, loops, or macros for repetitive code chunks.</li>
+</ul>
+</li>
 <li>Record session information for future users
 <ul>
-<li>Record both version information as well as operating system information relevant to your code to increase the reproducibility of your code</li>
+<li>Information about software/package versions and operating systems used should be recorded in a text or log file to increase the reproducibility of your code. If users run into errors running your code, this information may help them troubleshoot.</li>
 </ul>
 </li>
 </ul>
@@ -655,7 +689,7 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-17.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

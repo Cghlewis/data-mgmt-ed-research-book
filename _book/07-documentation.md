@@ -103,7 +103,7 @@ A data inventory maps all datasets collected by the research team across all pro
 <p class="caption">(\#fig:fig8-5)Example of a team data inventory</p>
 </div>
 
-### Data security policy
+### Data security policy {#document-security}
 
 A data security policy is a set of formal guidelines for working with data within an organization. This policy, which can be named many other things (e.g., data governance plan, data security protocol or plan, data responsibility plan), should broadly cover how team members are allowed to work with data in a way that protects research participant privacy, ensures quality control, and adheres to legal, ethical, and technical guidelines. Documenting this information ensures a cohesive understanding among team members regarding the terms and conditions of project data use [@cessda_training_team_cessda_2017]. A data security policy can be added to a lab manual, or can be created as a separate document where team members can even sign [@filip_san_2023] or check a box acknowledging that they have read and understand the policy.
 

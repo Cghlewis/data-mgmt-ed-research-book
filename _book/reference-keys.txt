@@ -86,9 +86,6 @@ fig:fig12-5
 fig:fig12-6
 fig:fig12-7
 fig:fig13-1
-fig:fig13-2
-fig:fig13-3
-fig:fig13-4
 fig:fig14-1
 fig:fig14-2
 fig:fig14-3
@@ -99,6 +96,7 @@ fig:fig14-7
 fig:fig14-8
 fig:fig14-9
 fig:fig14-12
+tab:tab13-1
 fig:fig15-1
 fig:fig15-2
 fig:fig15-3
@@ -186,7 +184,7 @@ lab-manual
 wiki
 onboardingoffboarding
 document-inventory
-data-security-policy
+document-security
 style-guide
 project-level
 data-management-plan
@@ -266,7 +264,6 @@ store
 store-plan
 electronic-data-1
 paper-data-1
-store-long
 documenting-and-disseminating-your-plan
 clean
 data-cleaning-for-data-sharing
@@ -278,6 +275,11 @@ preliminary-steps
 cleaning-data-using-code
 cleaning-data-manually
 data-versioning-practices
+store-long
+long-term-storage
+make-a-plan
+internal-data-use
+using-a-repository
 share
 share-why
 data-sharing-flow-chart
@@ -294,7 +296,7 @@ final-review-of-disclosure-risk
 what-documentation-to-share
 file-formats-1
 when-to-share
-repository-file-structure
+share-file
 roles-and-responsibilities
 retraction-and-revisions
 additional-considerations

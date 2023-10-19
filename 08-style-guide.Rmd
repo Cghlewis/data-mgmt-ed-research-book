@@ -364,13 +364,36 @@ knitr::include_graphics("img/missing2.PNG")
 
 ## Coding {#style-code}
 
-If your team plans to clean data using code, it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (e.g., R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.
+If your team plans to clean data using code it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (e.g., R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.
 
 - Consider building and implementing coding templates [@castaneda_nice_2019; @farewell_my_2018] 
   - Templates can standardize the format of syntax files (such as using standard headers to break up code)
   - They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)
+
+One example of what this might look.
+  
+```
+#### Overview ####
+# Associated project: 
+# Script purpose:
+# Data cleaning plan followed:
+# Created by: 
+# Date created:
+# Code checked by:
+# Code checked date:
+
+#### Workspace setup ####
+
+# Settings, packages, root paths
+
+#### Cleaning code section 1 ####
+
+#### Cleaning code section 2 ####
+...
+
+```
 - Use comments throughout your code to clearly explain the purpose of each code chunk
-  - The format of these comments will be dependent on your coding language
+  - While your syntax may seem intuitive to you, it is not necessarily clear to others. As you write your code, comment every step in your syntax, explaining what that specific line of code is doing. The format of these comments will be dependent on your coding language.
     - R uses `#` at the start of a comment
     - SPSS and Stata use `*` at the start of a comment
 - Improve code readability by using [@wickham_welcome_2021; @san_martin_stata_2023]
@@ -378,11 +401,21 @@ If your team plans to clean data using code, it can be very helpful to create a 
   - indentation
   - setting a line limit for your code (e.g., 80 characters)
 - Use relative file paths for reproducibility
-  - Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths. It is important to set file paths relative the directory you are working in [@wickham_welcome_2017].
+  - In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing a file path, a location where a file lives, in our syntax. Rather than writing the full, absolute file path, it is a good practice to write the path relative to the directory you are working in [@wickham_welcome_2017]. Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths.
+
+```
+# Example absolute file path
+"/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv"  
+
+# Example relative file path
+"raw/proja_stu_svy_raw.csv"
+
+```
 - If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules
   - No spaces in object names
   - No special characters except `_` to separate words
   - No names that are existing program keywords (`if`, `for`, etc.)
-- Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by following the DRY (don't repeat yourself) principle. Consider using functions, loops, or macros for repetitive code chunks.
+- Don't repeat yourself
+  - Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by following the DRY (don't repeat yourself) principle. Consider using functions, loops, or macros for repetitive code chunks.
 - Record session information for future users
-  - Record both version information as well as operating system information relevant to your code to increase the reproducibility of your code
+  - Information about software/package versions and operating systems used should be recorded in a text or log file to increase the reproducibility of your code. If users run into errors running your code, this information may help them troubleshoot.

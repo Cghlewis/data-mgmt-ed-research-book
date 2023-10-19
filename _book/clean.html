@@ -81,9 +81,10 @@
 <li><a class="" href="capture.html"><span class="header-section-number">12</span> Data Capture</a></li>
 <li><a class="" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
 <li><a class="active" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
-<li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
-<li><a class="" href="additional-considerations.html"><span class="header-section-number">16</span> Additional considerations</a></li>
-<li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
+<li><a class="" href="store-long.html"><span class="header-section-number">15</span> Data Archiving</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">16</span> Data Sharing</a></li>
+<li><a class="" href="additional-considerations.html"><span class="header-section-number">17</span> Additional considerations</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">18</span> Glossary</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -186,7 +187,7 @@ Figure 14.2: The three phases of data
 </li>
 <li>De-identified
 <ul>
-<li>If confidentiality is promised to participants, data needs to be de-identified. At the early phases of data cleaning, this simply means that all direct identifiers (see Chapter <a href="hsd.html#hsd">4</a>) are removed from the data and replaced with study codes (i.e., participant unique identifier). Before publicly sharing data, additional work may be required to remove indirect identifiers as well and we will discuss this more in Chapter <a href="share.html#share">15</a>.</li>
+<li>If confidentiality is promised to participants, data needs to be de-identified. At the early phases of data cleaning, this simply means that all direct identifiers (see Chapter <a href="hsd.html#hsd">4</a>) are removed from the data and replaced with study codes (i.e., participant unique identifier). Before publicly sharing data, additional work may be required to remove indirect identifiers as well and we will discuss this more in Chapter <a href="share.html#share">16</a>.</li>
 </ul>
 </li>
 <li>Interpretable
@@ -298,7 +299,7 @@ In the special case where you purposefully collect duplicate observations on a p
 <ol start="5" style="list-style-type: decimal">
 <li>De-identify data
 <ul>
-<li>If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter <a href="share.html#share">15</a>, we will also discuss dealing with indirect identifiers before publicly sharing your data.</li>
+<li>If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter <a href="share.html#share">16</a>, we will also discuss dealing with indirect identifiers before publicly sharing your data.</li>
 <li>Figure <a href="clean.html#fig:fig14-5">14.5</a> shows what a data de-identification process looks like <span class="citation">(<a href="references.html#ref-otoole_data_2018" role="doc-biblioref">O’Toole et al. 2018</a>)</span>. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., <code>first_name</code> and <code>last_name</code>) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.</li>
 </ul>
 </li>
@@ -615,15 +616,7 @@ Figure 14.10: A comparison of long and wide format
 </li>
 <li>Follow a coding style guide
 <ul>
-<li>As we discussed in Section <a href="style.html#style-code">9.6</a>, creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.</li>
-</ul>
-</li>
-<li>Use relative file paths
-<ul>
-<li>
-<p>In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us.</p>
-<p><strong>Example absolute file path:</strong> “/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv”<br><strong>Example relative file path:</strong> “raw/proja_stu_svy_raw.csv”</p>
-</li>
+<li>As discussed in Section <a href="style.html#style-code">9.6</a>, coding best practices such as using relative file paths, including comments, and recording session information, allow your processes to be more reproducible and reduces errors. Adding best practices to a code style guide ensures that all team members are setting up their files in a consistent manner, further improving the usability of code.</li>
 </ul>
 </li>
 <li>Review your data upon import
@@ -636,9 +629,14 @@ Figure 14.10: A comparison of long and wide format
 <li>Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.</li>
 </ul>
 </li>
-<li>Use comments
+<li>Don’t do anything random
 <ul>
-<li>Code comments help you to organize and communicate your thought process. While your syntax may seem intuitive to you, it is not necessarily clear to others. As you clean your data according to your data cleaning plan, comment every step in your syntax, explaining what that specific line of code is doing.</li>
+<li>Everything in your syntax must be replicable. Yet, there are a few scenarios where, without even realizing it, you could be producing different results each time you run your code.
+<ul>
+<li>If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) <span class="citation">(<a href="references.html#ref-klein_practical_2018" role="doc-biblioref">Klein et al. 2018</a>)</span>. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.</li>
+<li>Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop the second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Check each transformation
@@ -657,43 +655,38 @@ Figure 14.10: A comparison of long and wide format
 </li>
 </ul>
 </li>
-<li>Don’t do anything random
-<ul>
-<li>Everything in your syntax must be replicable. Yet, there are a few scenarios where, without much thought, you could be producing different results each time you run your code.
-<ul>
-<li>If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) <span class="citation">(<a href="references.html#ref-klein_practical_2018" role="doc-biblioref">Klein et al. 2018</a>)</span>. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.</li>
-<li>Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Write functions for repeatable tasks
-<ul>
-<li>As best as you can, it is important to follow the DRY (don’t repeat yourself) principle and never write the same code twice. Not only does it make your script more readable, but it reduces the errors that might be created through things like copy and paste.</li>
-<li>Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.com/blog/dict_clean/" class="uri"&gt;https://cghlewis.com/blog/dict_clean/&lt;/a&gt;&lt;/p&gt;'><sup>84</sup></a>.</li>
-</ul>
-</li>
 <li>Validate your data before exporting and review after exporting
 <ul>
 <li>As we discussed in Section <a href="clean.html#clean-check">14.3.1</a>, before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
 <ul>
-<li>While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE. (e.g., test that <code>stu_id</code> falls within the range of 1000–2000).</li>
+<li>While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE (e.g., test that <code>stu_id</code> falls within the range of 1000–2000).</li>
 </ul>
 </li>
 <li>After exporting your data, open the exported file. Does everything look as you expected (e.g., maybe you expected missing data to export as blanks but they exported as “NA”)?</li>
 </ul>
 </li>
-<li>Record your session info
-<ul>
-<li>Information about software/package versions and operating system used should be recorded in a text or log file so that future users can review the requirements needed for running your code. If users run into errors running your code, this information may help them troubleshoot.</li>
-</ul>
-</li>
 <li>Do code review
 <ul>
-<li>If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>85</sup></a>.</li>
+<li>If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process.</li>
 </ul>
 </li>
 </ol>
+<p><strong>Resources</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="42%">
+<col width="57%">
+</colgroup>
+<thead><tr class="header">
+<th>Source</th>
+<th>Resource</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td>Travis Gerke</td>
+<td>R Code Review Checklist <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>85</sup></a>
+</td>
+</tr></tbody>
+</table></div>
 </div>
 <div id="cleaning-data-manually" class="section level3" number="14.4.3">
 <h3>
@@ -715,7 +708,7 @@ Figure 14.10: A comparison of long and wide format
 <h3>
 <span class="header-section-number">14.4.4</span> Data versioning practices<a class="anchor" aria-label="anchor" href="#data-versioning-practices"><i class="fas fa-link"></i></a>
 </h3>
-<p>The last part of the workflow to consider is where you will store your data and how you will version it. As we’ve discussed previously, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. As discussed in Chapter <a href="store.html#store">13</a>, you may keep these clean datasets in their respective individual folders (e.g., wave 1 - student survey folder, wave 2 - teacher survey folder), or you may choose to move all finalized datasets to a “master folder” in order to keep all clean datasets in one accessible location. What is most important here is to not copy files across folders; keeping one single master dataset per data source for authenticity purposes <span class="citation">(<a href="references.html#ref-cessda_training_team_cessda_2017" role="doc-biblioref">CESSDA Training Team 2017</a>; <a href="references.html#ref-uk_data_service_research_2023" role="doc-biblioref">UK Data Service 2023</a>)</span>. Also, make sure to limit access as needed based on requirements covered in Chapter <a href="store.html#store">13</a>.</p>
+<p>The last part of the workflow to consider is where you will store your data and how you will version it. As we’ve discussed previously, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. During an active project, it is typically best to keep finalized clean datasets in their respective individual folders (e.g., <code>w1_stu_svy</code> folder, <code>w2_stu_svy</code> folder), rather than moving all clean files to a separate “master folder”. If changes need to be made to files, it is easier to keep track of files in their original locations. However, what is most important here is to not copy files across folders; keep one single master dataset per data source for authenticity purposes <span class="citation">(<a href="references.html#ref-cessda_training_team_cessda_2017" role="doc-biblioref">CESSDA Training Team 2017</a>; <a href="references.html#ref-uk_data_service_research_2023" role="doc-biblioref">UK Data Service 2023</a>)</span>. Also, make sure to limit access as needed based on requirements covered in Chapter <a href="store.html#store">13</a>.</p>
 <p>However, once your final datasets are saved, it is common that at some point you will find an error in your data and/or your code. Yet, once you’ve shared your data and code with others, it will be imperative that you do not save over existing versions of those files. You will need to version both your code and your data, following the guidelines laid out in your style guide. Versioning your final files, and keeping track of those different versions in a changelog (see Section <a href="document.html#document-change">8.3.2</a>), allows you to track data lineage, helping users understand where the data originated as well as all transformations made to the data. While you can version any files that you choose, I am specifically referring to final files here, not in-progress, working files that have not yet been shared with others.</p>
 <p>Last, along with assigning someone to oversee data cleaning, it will be important to assign someone to oversee this versioning process. Versioning files and updating documentation takes time and consideration, and that responsibility will need to be explicitly laid out in order to ensure it isn’t forgotten.</p>
 
@@ -725,7 +718,7 @@ Figure 14.10: A comparison of long and wide format
 
   <div class="chapter-nav">
 <div class="prev"><a href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></div>
-<div class="next"><a href="share.html"><span class="header-section-number">15</span> Data Sharing</a></div>
+<div class="next"><a href="store-long.html"><span class="header-section-number">15</span> Data Archiving</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
@@ -760,7 +753,7 @@ Figure 14.10: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-17.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

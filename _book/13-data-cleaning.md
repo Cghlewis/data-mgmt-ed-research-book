@@ -293,19 +293,15 @@ However, writing code alone will not provide all of the desired benefits. There 
     - Limitations (e.g., file size limitations, variable character count limitations)
     - Default settings (e.g., how the program performs rounding, how dates are stored)
 1. Follow a coding style guide
-    - As we discussed in Section \@ref(style-code), creating a code style guide for your project ensures that all team members are setting up their files in a consistent manner. This reduces the variation across code files and allows your code to be more usable by others. Developing code templates for team members to use also helps to create further standardization.
-1. Use relative file paths
-    - In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to `file` -> `open` and navigating to the file's location. However, when writing code, we import a file by writing out our file path in our syntax. A file path is the location where a file lives. When writing out those paths, it is a good practice to write paths relative the directory you are working in, as opposed to writing a full, absolute file path. Writing absolute file paths in our syntax reduces the reproducibility of our code because future users often have different file paths than us. 
-
-      **Example absolute file path:** "/Users/crystal/proja/data/raw/proja_stu_svy_raw.csv"  
-      **Example relative file path:** "raw/proja_stu_svy_raw.csv"
-
+    - As discussed in Section \@ref(style-code), coding best practices such as using relative file paths,  including comments, and recording session information, allow your processes to be more reproducible and reduces errors. Adding best practices to a code style guide ensures that all team members are setting up their files in a consistent manner, further improving the usability of code.
 1. Review your data upon import
     - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
 1. Do all transformations in code
     - Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.
-1. Use comments
-    - Code comments help you to organize and communicate your thought process. While your syntax may seem intuitive to you, it is not necessarily clear to others. As you clean your data according to your data cleaning plan, comment every step in your syntax, explaining what that specific line of code is doing.
+1. Don’t do anything random 
+    - Everything in your syntax must be replicable. Yet, there are a few scenarios where, without even realizing it, you could be producing different results each time you run your code.
+      - If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) [@klein_practical_2018]. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.
+      - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop the second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
 1. Check each transformation
     - As mentioned in Section \@ref(clean-check), check your work along the way, don’t wait until the end of your script. For each transformation in your data:
       - Review your variables/cases before and after the transformations.
@@ -313,21 +309,18 @@ However, writing code alone will not provide all of the desired benefits. There 
         - Some warnings may be innocuous (just messages)
         - Some errors are telling you that your code did not run, you need to fix something
         - Other warnings are telling you that your code did run but it did not run as you expected it to. If you don’t pay attention to these warnings, you may end up with unexpected results. 
-1. Don’t do anything random 
-    - Everything in your syntax must be replicable. Yet, there are a few scenarios where, without much thought, you could be producing different results each time you run your code.
-      - If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) [@klein_practical_2018]. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.
-      - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
-1. Write functions for repeatable tasks
-    - As best as you can, it is important to follow the DRY (don't repeat yourself) principle and never write the same code twice. Not only does it make your script more readable, but it reduces the errors that might be created through things like copy and paste.
-    - Similarly, find ways to automate some of your tasks. For instance, rather than renaming all of your variables by hand, use your data dictionary to automate tasks like this. This not only increases efficiency but also reduces mistakes you might make when typing out variable names ^[https://cghlewis.com/blog/dict_clean/].
 1. Validate your data before exporting and review after exporting
     - As we discussed in Section \@ref(clean-check), before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
-      - While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE. (e.g., test that `stu_id` falls within the range of 1000--2000).
+      - While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE (e.g., test that `stu_id` falls within the range of 1000--2000).
     - After exporting your data, open the exported file. Does everything look as you expected (e.g., maybe you expected missing data to export as blanks but they exported as "NA")?
-1. Record your session info
-    - Information about software/package versions and operating system used should be recorded in a text or log file so that future users can review the requirements needed for running your code. If users run into errors running your code, this information may help them troubleshoot.
 1. Do code review
-    - If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as the readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process ^[https://github.com/tgerke/r-code-review-checklist].
+    - If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process.
+
+**Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Travis Gerke | R Code Review Checklist ^[https://github.com/tgerke/r-code-review-checklist]|
 
 ### Cleaning data manually
 
@@ -341,7 +334,7 @@ While cleaning data with code is the preferred method for the reasons previously
 
 ### Data versioning practices
 
-The last part of the workflow to consider is where you will store your data and how you will version it. As we've discussed previously, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. As discussed in Chapter \@ref(store), you may keep these clean datasets in their respective individual folders (e.g., wave 1 - student survey folder, wave 2 - teacher survey folder), or you may choose to move all finalized datasets to a "master folder" in order to keep all clean datasets in one accessible location. What is most important here is to not copy files across folders; keeping one single master dataset per data source for authenticity purposes [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. Also, make sure to limit access as needed based on requirements covered in Chapter \@ref(store).
+The last part of the workflow to consider is where you will store your data and how you will version it. As we've discussed previously, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. During an active project, it is typically best to keep finalized clean datasets in their respective individual folders (e.g., `w1_stu_svy` folder, `w2_stu_svy` folder), rather than moving all clean files to a separate "master folder". If changes need to be made to files, it is easier to keep track of files in their original locations. However, what is most important here is to not copy files across folders; keep one single master dataset per data source for authenticity purposes [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. Also, make sure to limit access as needed based on requirements covered in Chapter \@ref(store).
 
 However, once your final datasets are saved, it is common that at some point you will find an error in your data and/or your code. Yet, once you’ve shared your data and code with others, it will be imperative that you do not save over existing versions of those files. You will need to version both your code and your data, following the guidelines laid out in your style guide. Versioning your final files, and keeping track of those different versions in a changelog (see Section \@ref(document-change)), allows you to track data lineage, helping users understand where the data originated as well as all transformations made to the data. While you can version any files that you choose, I am specifically referring to final files here, not in-progress, working files that have not yet been shared with others.
 

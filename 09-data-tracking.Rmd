@@ -91,7 +91,6 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 ```{r tab10-1}
 
 library(tidyverse)
-library(huxtable)
 
 tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade,
                 "Hoover", "Elizabeth", "Simpson", "Lisa", 2,
@@ -99,9 +98,8 @@ tibble::tribble (~t_l_name, ~t_f_name, ~s_l_name, ~s_f_name, ~grade,
                  "Krabappel", "Edna", "Prince", "Martin", 4,
                  "Krabappel", "Edna", "Simpson", "Bart", 4,
                  "Krabappel" , "Edna", "Van Houten", "Milhouse", 4) %>%
-  as_hux () %>%
-  set_caption('Example roster created by querying our relational database tables') %>%
-  set_background_color(evens, everywhere, "grey95")
+  knitr::kable(caption = "Example roster created by querying our relational database tables",
+               align = c('c', 'c', 'c', 'c', 'c'))
   
 ```
 
