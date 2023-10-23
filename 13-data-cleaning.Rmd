@@ -51,7 +51,7 @@ Before cleaning our data, we need to have a shared understanding for what we exp
         - For example, in a student-level dataset, if grade level = 2, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district. 
 4. Consistent
     - Variable values are consistently measured, formatted, or coded within a column (e.g., all values of survey date are formatted as YYYY-MM-DD).
-    - Across waves and cohorts of data collection, all repeated variables are consistently measured, formatted, or coded as well (e.g., free/reduced priced lunch is consistently coded using the same code/label pair across all cohorts).
+    - Across repeated collections of the same form, all variables are consistently measured, formatted, or coded as well (e.g., free/reduced priced lunch is consistently coded using the same code/label pair across all cohorts).
 5. De-identified
     - If confidentiality is promised to participants, data needs to be de-identified. At the early phases of data cleaning, this simply means that all direct identifiers (see Chapter \@ref(hsd)) are removed from the data and replaced with study codes (i.e., participant unique identifier). Before publicly sharing data, additional work may be required to remove indirect identifiers as well and we will discuss this more in Chapter \@ref(share).
 6. Interpretable
@@ -59,9 +59,9 @@ Before cleaning our data, we need to have a shared understanding for what we exp
 7. Analyzable
     - The dataset is in a rectangular (rows and columns), machine-readable format and adheres to basic data structure rules (see Section \@ref(structure-rules)).
     
-## Data cleaning checklist
+## Data cleaning checklist {#clean-check}
 
-Recall from Section \@ref(document-plan), that it is helpful to write up your data cleaning plan, for each raw dataset, before you begin cleaning your data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure \@ref(fig:fig8-15)).
+Recall from Section \@ref(document-plan), that it is helpful to write a data cleaning plan, for each dataset in your data sources catalog (see Section \@ref(document-catalog)), before you begin cleaning your raw data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure \@ref(fig:fig8-15)).
 
 In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section \@ref(clean-criteria), it can be helpful to follow a standardized checklist of data cleaning steps (see Figure \@ref(fig:fig14-3)). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.
 
@@ -269,11 +269,11 @@ knitr::include_graphics("img/clean_reshape.PNG")
 
 ## Data cleaning workflow
 
-Data cleaning is not a standalone process. It should be part of a larger, well-planned workflow that is designed to produce standardized, reproducible, and reliable datasets. Ignoring this planning and jumping into data cleaning in a haphazard way only leads to more work after the cleaning process, having to organize our messy work so that others can understand what we did. 
+Data cleaning is not a standalone process. It should be part of a larger, well-planned workflow that is designed to produce standardized, reproducible, and reliable datasets. Ignoring this planning and jumping into data cleaning in a haphazard way only leads to more work after the cleaning process, having to organize our messy work so that others can understand what we did. Assign someone to oversee this workflow and designate a time frame for when data cleaning should both begin and be finalized each wave.
 
 ### Preliminary steps
 
-The first part in creating a data cleaning workflow is making sure that your folder structure is set up according to your style guide, and that your folders and files are consistently named according to your style guide. It is important that the metadata in your names is always provided in the same order (e.g., `project_time_participant_instrument_type.ext`). Breaking away from a standardized naming convention begins to erode the reproducibility of your work. 
+The first part in creating a data cleaning workflow is making sure that your folder structure is set up according to your style guide, and that your folders and files are consistently named according to your style guide. It is also important that the metadata in your names is always provided in the same order (e.g., `project` -> `time` -> `participant` -> `instrument` -> `type`). Breaking away from a standardized naming convention begins to erode the reproducibility of your work. 
 
 Next, you will want to gather all of the necessary documentation that will be used throughout your cleaning process.
 

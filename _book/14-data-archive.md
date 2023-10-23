@@ -27,10 +27,9 @@ Once you understand requirements, make a plan for retention and destruction. If 
           - Design this master data folder like you would a public repository folder (see Section \@ref(share-file))
             - Add a README that describes what files the folder contains
             - Move relevant documentation from other locations to this folder (e.g., data dictionaries, project-level documentation)
-          - Add descriptions of the finalized datasets to a data inventory to inform your team of their availability (see Section \@ref(document-inventory))  
     - When it comes time to destroy data, make sure to permanently delete files, including all backups of files. When deleting PII, this often involves more than just moving files to the trash can on your computer. Work with your institution IT department during this process.
 
-Last, make sure to document your plan, including time frames for retention and destruction, in the appropriate locations (e.g., DMP, research protocol, informed consent agreements, team data security policy). Assign responsibilities for all tasks including short-term boxing or destruction of physical files and wrangling or destruction of electronic files, as well as ongoing long-term maintenance of files, and document in your roles and responsibilities document.
+Last, make sure to document your plan, including time frames for retention and destruction, in the appropriate locations (e.g., DMP, research protocol, informed consent agreements, team data security policy). Assign and document responsibilities for short-term tasks such as boxing or destruction of physical files, as well as ongoing long-term tasks such as maintenance of files.
 
 <br>
 
@@ -47,14 +46,15 @@ Table: (\#tab:tab15-1)Potential long-term storage file types
 
 At the end of a project, or possibly earlier in the project, team members will want to begin analyzing data. It is important to consider where you will store finalized datasets for internal use, how you will notify team members of their availability, and how you will allow team members, and other research collaborators, to access data. Most likely you will not want researchers going in to folders and grabbing datasets without consulting with a core team member first. Therefore, it is important to develop a system for providing data to researchers on an as-needed basis. Create a data request process for team members, or external collaborators, to request access to finalized study datasets. Several things will need to be considered.
 
-1. Design a system for requesting access (e.g., designate a person to email, develop a survey form that is submitted to a designated person)
+1. Add descriptions of the finalized datasets to a data inventory to inform your team of their availability (see Section \@ref(document-inventory))  
+2. Design a system for requesting access (e.g., designate a person to email, develop a survey form that is submitted to a designated person)
     - In that system, the researcher should describe what data they are requesting (i.e., what variables, from what time periods), as well as the purpose of their analysis. It may be helpful to build a data request process that involves providing data dictionaries and other documentation to researchers to review before requesting data.
     - This system should also include collecting any required agreement forms from requestors (e.g., data sharing agreements)
-2. Decide who needs to review the request to ensure the application is complete (e.g., a data manager), and who needs to give final approval for the data request submission (e.g., a PI)
-3. Design a system for gathering data for requestors (e.g., will you provide researchers with full datasets or will you narrow datasets based on specific requests)
+3. Decide who needs to review the request to ensure the application is complete (e.g., a data manager), and who needs to give final approval for the data request submission (e.g., a PI)
+4. Design a system for gathering data for requestors (e.g., will you provide researchers with full datasets or will you narrow datasets based on specific requests)
     - If narrowing datasets for researchers, where will new datasets be stored? (e.g., a "data request" folder)
-4. Consider how you will share datasets with researchers (e.g., a secure link to a cloud folder, using secure file transfer)
-5. Consider how you will track data requests
+5. Consider how you will share datasets with researchers (e.g., a secure link to a cloud folder, using secure file transfer)
+6. Consider how you will track data requests
     - It is important to keep track of data requests in case of situations such as errors found in the data (e.g., a data request log with name, date, and email of requestor). In those cases, you can reach back out to researchers to inform them that errors were found and new versions of the data are available.
 
 Here is an example of how you might structure a data request folder.

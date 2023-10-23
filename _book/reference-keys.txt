@@ -223,7 +223,7 @@ building-your-database
 relational-databases
 relational-model
 non-relational-model
-structuring-the-database
+designing-the-database
 choosing-fields
 structuring-fields
 choosing-a-tool
@@ -244,7 +244,7 @@ identifiers
 electronic-data
 paper-data
 collect-irb
-quality-control
+collect-control
 collect-field
 ongoing-data-checks
 tracking-data-collection
@@ -266,11 +266,11 @@ store
 store-plan
 store-electronic
 paper-data-1
+oversee-the-plan
 documenting-and-disseminating-your-plan
 clean
 data-cleaning-for-data-sharing
 clean-criteria
-data-cleaning-checklist
 clean-check
 data-cleaning-workflow
 preliminary-steps

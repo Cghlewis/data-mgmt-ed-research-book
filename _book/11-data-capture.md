@@ -45,7 +45,7 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
 </div>
 
 4. Where will the file be stored?  
-    - This decision should be based on guidelines laid out in your style guide (see Chapter \@ref(style)) and your applicable data security documents and agreements (i.e., data management plan, data security plan, research protocol). 
+    - This decision should be based on guidelines you've laid out in both your data storage documentation (see Chapter \@ref(store)), which will be based on both data security guidelines, as well as your style guide rules. 
     
 5. How will files be named?  
     - While your tool may provide a name for your file, it may need to be renamed something more meaningful based on your style guide rules (e.g., `projecta_w1_stu_svy_raw_2023-09-01.csv`). Most importantly, name your files consistently across data sources and waves.
@@ -97,7 +97,7 @@ If however, you choose to use a spreadsheet program such as SPSS or Microsoft Ex
       
 ### Build with the end in mind
 
-When you export or save a dataset from your data entry tool, it should meet all of our data structure rules (see Chapter \@ref(structure)), and all of the variables should be formatted as we have described in our data dictionary, including correct name, variable type, and allowable values. In order to accomplish that goal, you need to build your data entry screens, whether in a spreadsheet or form layout, following rules similar to those discussed in Section \@ref(collect-build). 
+When you export or save a dataset from your data entry tool, it should meet all of our data organization rules (see Chapter \@ref(structure)), and all of the variables should be formatted as we have described in our data dictionary, including correct name, variable type, and allowable values. In order to accomplish that goal, you need to build your data entry screens, whether in a spreadsheet or form layout, following rules similar to those discussed in Section \@ref(collect-build). 
 
 1. Make sure that your items are laid out in the same order that they appear on the paper form so that people entering the data can easily follow the flow [@reynolds_basics_2022].
 2. Using the annotated instrument we discussed in Section \@ref(collect-paper), name all of the items on your data entry screen to match the final item names (e.g., instead of `Q2` use the final name `tch_years`). 
@@ -132,7 +132,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
 1. Steps to be performed before handing off the entered data
     - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. Most importantly, check to see that the correct number of participants exist in the file compared to your participant tracking database (e.g., no duplicate entries, no missing entries). If data entry or data tracking errors exist, fix mistakes as needed. If inherent data issues exist, make notes in a README to be corrected in the data cleaning phase.
 1. Last, similar to electronic data capture (see Section \@ref(capture-electronic)), you will want to make decisions about final file types (e.g., CSV, XLSX, SPSS), where final files will be stored, and how they will be named.
-1. Who will oversee this process? (i.e., creating entry forms, answering questions, conducting final checks)
+1. Who will enter data and who will oversee this process? (i.e., creating entry forms, answering questions, conducting final checks)
     
 <div class="figure" style="text-align: center">
 <img src="img/data_entry_process2.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
@@ -231,7 +231,7 @@ Figure \@ref(fig:fig12-8) is an example of a document you can ask your data prov
 <p class="caption">(\#fig:fig12-8)Sample documentation form for an external data provider to complete</p>
 </div>
 
-Once you begin receiving these files, it is important to review them before saving them and preparing for further data cleaning. Review files to ensure all participants are accounted for and all requested variables are accounted for. Also make sure you have all necessary information to correctly interpret the data (i.e., any required documentation). Last, just like you would during data collection, track the information received in your participant tracking database (i.e., track school record received for `stu_id` = 1234). This will also help you identify potential duplicates or missing data. If any errors are found, reach back out to your contact for help as needed.
+Once you begin receiving these files, it is important to review them before saving them and preparing for further data cleaning. Review files to ensure all participants are accounted for and all requested variables are accounted for. Also make sure you have all necessary information to correctly interpret the data (i.e., any required documentation). Last, just like you would during data collection, track the information received in your participant tracking database (i.e., track school record received for `stu_id` = 1234). This will also help you identify potential duplicates or missing data. If any errors are found, reach back out to your contact for help as needed. Last, store files in a manner that adheres to applicable agreements, and name the files according to your style guide rules.
 
 > **Note** <br> <br>
 When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) [@levesque_guide_2015]. These anomalies can happen due to human error or due to circumstances such as student mobility. While you may be able to work with your data provider to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).
@@ -252,3 +252,5 @@ Publicly available data sources are typically aggregated (i.e., state, district,
 3. Do not hesitate to reach out for help
     - Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
 4. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ^[https://nces.ed.gov/ccd/] or EDFacts ^[https://www2.ed.gov/about/inits/ed/edfacts/index.html]. Or if you are needing to use multiple data sources, other tools, such as the Urban Institute’s Education Data Portal ^[https://educationdata.urban.org/documentation/], have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
+
+Once files are extracted, store them according to your data storage plans (see Chapter \@ref(store)) and name them according to your style guide rules.

@@ -306,7 +306,14 @@ Some repositories have a predefined file structure and will require little to no
 
 ## Roles and responsibilities
 
-As with every phase in the research life cycle, it is so important the you assign roles and responsibilities throughout this process. At the beginning of your project, take an inventory of the expertise and capacity you have to share data and take note of any gaps. Do you need more expertise in data de-identification techniques? Do you need more expertise in developing data use agreements or assigning licenses? If yes, begin looking into who may fill these gaps (e.g., research data librarians, methodologists, data curation specialists at your repository). Consider all of the responsibilities that will need to be covered during this process. Many of the required tasks (e.g., data cleaning, documentation) will not require additional planning, as those roles and responsibilities are designated in other phases. However, there are several new tasks (e.g., creating data use agreements, assessing disclosure risk) that will be specific to this phase, and some tasks will vary depending on if you are sharing through a repository or institutional archive (e.g., communicating with repository staff, troubleshooting issues) or sharing on your own (e.g., developing a data request and sharing system). A few organizations have put together data sharing checklists. These checklists may help you begin assigning team members to specified responsibilities.
+As with every phase in the research life cycle, it is so important to assign roles and responsibilities throughout this process. At the beginning of your project, take an inventory of the expertise and capacity you have to share data and take note of any gaps. 
+
+- Do you need more expertise in data de-identification techniques? 
+- Do you need more expertise in developing data use agreements or assigning licenses? 
+
+If yes, begin looking into who may fill these gaps (e.g., research data librarians, methodologists, data curation specialists at your repository). Consider all of the responsibilities that will need to be covered during this process. Many of the required tasks (e.g., data cleaning, documentation) will not require additional planning, as those roles and responsibilities are designated in other phases. However, there are several new tasks (e.g., creating data use agreements, assessing disclosure risk) that will be specific to this phase, and some tasks will vary depending on if you are sharing through a repository or institutional archive (e.g., communicating with repository staff, troubleshooting issues) or sharing on your own (e.g., developing a data request and sharing system). A few organizations have put together data sharing checklists. These checklists may help you begin assigning team members to specified responsibilities.
+
+Once your data sharing plan is formalized, it should be documented in all necessary locations (e.g., DMP, research protocol, SOPs, informed consent forms).
 
 **Resources**
 

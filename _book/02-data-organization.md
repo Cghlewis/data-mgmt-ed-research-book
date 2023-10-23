@@ -1,6 +1,6 @@
-# Data Structure {#structure}
+# Data Organization {#structure}
 
-Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basic structure of data helps us write our Data Management Plan, organize our data management process, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable information.
+Before we jump into the data life cycle, we need to have a basic understanding of what data looks like. Understanding the basics of data organization helps us develop our data management plan, create our data dictionaries, build our data collection tools, and clean our data, all in ways that allow us to have analyzable information.
 
 ## Basics of a dataset
 
@@ -10,11 +10,10 @@ Those data come in many forms (e.g., video, transcripts, documents, data files),
 
 These rectangular (also called tabular) datasets are made up of columns and rows. 
 
-```{r fig3-1, out.width='80%', fig.cap="Basic format of a dataset"}
-
-knitr::include_graphics("img/rectangle.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/rectangle.PNG" alt="Basic format of a dataset" width="80%" />
+<p class="caption">(\#fig:fig3-1)Basic format of a dataset</p>
+</div>
 
 ### Columns {#columns}
 
@@ -45,11 +44,10 @@ The rows in your dataset are aligned with subjects (also called records or cases
 
 The cells are the observations associated with each case in your data. Cells are made up of key/value pairs, created at the intersection of a column and a row. Consider an example where we collect a survey from students. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value/observation that corresponds to that row/column pair (i.e., that participant and that question).
 
-```{r fig3-2, fig.cap="Representation of a cell value", out.width='70%'}
-
-knitr::include_graphics("img/cell_value.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/cell_value.PNG" alt="Representation of a cell value" width="70%" />
+<p class="caption">(\#fig:fig3-2)Representation of a cell value</p>
+</div>
 
 
 ## Dataset organization rules {#structure-rules}
@@ -59,41 +57,37 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 
 1. The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 
-```{r fig3-3, fig.cap="A comparison of non-rectangular and rectangular data"}
-
-knitr::include_graphics("img/rectangle2.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/rectangle2.PNG" alt="A comparison of non-rectangular and rectangular data" width="100%" />
+<p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
+</div>
 
 2. Column values should be consistent. Both humans and machines have difficulty categorizing information that is not measured, coded, or formatted consistently.
     - For text categorical values, use controlled vocabulary and keep consistent spelling, case, and spacing
     - For date values, keep consistent format
     - For numeric values, measure in consistent units and keep consistent decimal places
 
-```{r fig3-4, fig.cap="A comparison of inconsistent and uniform variable values"}
-
-knitr::include_graphics("img/consistent_values.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and uniform variable values" width="100%" />
+<p class="caption">(\#fig:fig3-4)A comparison of inconsistent and uniform variable values</p>
+</div>
 
 
 3. Your columns should adhere to your variable type.
     - For example, if you have a numeric variable, such as `age`, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
   
-```{r fig3-5, fig.cap="A comparison of variables adhering and not adhering to a data type"}
-
-knitr::include_graphics("img/var_type.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/var_type.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
+<p class="caption">(\#fig:fig3-5)A comparison of variables adhering and not adhering to a data type</p>
+</div>
   
 4. A variable should only collect one piece of information. This allows you to more easily work with your variables.
     - For example, rather than combining the number of incidents and the number of enrolled students in the same variable, separate this information into two variables. This allows you to aggregate information as needed (e.g., calculate an incident rate).
   
-```{r fig3-6, fig.cap="A comparison of two things being measured in one variable and two things being measured across two variables"}
-
-knitr::include_graphics("img/two_things.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/two_things.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
+<p class="caption">(\#fig:fig3-6)A comparison of two things being measured in one variable and two things being measured across two variables</p>
+</div>
 
 5. All cell values should be explicit. This means all cells that are not missing values should be filled in with a physical value. 
     - Consider why a cell value is empty
@@ -101,20 +95,18 @@ knitr::include_graphics("img/two_things.PNG")
       - If a cell is left empty because it is implied to be the same value as above, the cells should be filled with the actual data
       - If an empty cell is implied to be 0, fill the cells with an actual 0
 
-```{r fig3-7, fig.cap="A comparison of variables with empty cells and variables with not empty cells"}
-
-knitr::include_graphics("img/explicit.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/explicit.PNG" alt="A comparison of variables with empty cells and variables with not empty cells" width="100%" />
+<p class="caption">(\#fig:fig3-7)A comparison of variables with empty cells and variables with not empty cells</p>
+</div>
 
 6. All variables should be explicit. No variables should be implied using color coding.
     - If you want to indicate information, add an indicator variable to do this rather than cell coloring    
     
-```{r fig3-8, fig.cap="A comparison of variables with implicit values and variables with explicit values"}
-
-knitr::include_graphics("img/cell_colorv02.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/cell_colorv02.PNG" alt="A comparison of variables with implicit values and variables with explicit values" width="100%" />
+<p class="caption">(\#fig:fig3-8)A comparison of variables with implicit values and variables with explicit values</p>
+</div>
 
 ## Linking data {#structure-link}
 
@@ -128,11 +120,10 @@ A database is "an organized collection of data stored as multiple datasets" [@us
 
 In database terminology, each dataset we have is considered a "table". Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys). See Figure \@ref(fig:fig3-9) for an example of three tables that contain primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Furthermore, tables can be joined either horizontally or vertically.
 
-```{r fig3-9, fig.cap="Three tables with primary and foreign keys"}
-
-knitr::include_graphics("img/fig3-9.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/fig3-9.PNG" alt="Three tables with primary and foreign keys" width="100%" />
+<p class="caption">(\#fig:fig3-9)Three tables with primary and foreign keys</p>
+</div>
 
 #### Horizontal joins
 
@@ -140,27 +131,24 @@ Joining tables horizontally, also called merging, involves matching rows by one 
 
 To better understand horizontal joins, let's take the simple example in Figure \@ref(fig:fig3-10), where we only have a primary keys (`stu_id`) in each table, no foreign keys. Here we collected two forms from students (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge because each student only appears once in each table. 
 
-```{r fig3-10, out.width='90%', fig.cap="Linking data through primary keys"}
-
-knitr::include_graphics("img/fig3-10.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/fig3-10.PNG" alt="Linking data through primary keys" width="90%" />
+<p class="caption">(\#fig:fig3-10)Linking data through primary keys</p>
+</div>
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let's look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure \@ref(fig:fig3-11) shows how we can now link the foreign key in the student assessment (`tch_id`) with the primary key (`tch_id`) in the teacher survey. In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. 
 
-```{r fig3-11, fig.cap="Linking data through foreign keys", out.width='90%'}
-
-knitr::include_graphics("img/fig3-11.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="90%" />
+<p class="caption">(\#fig:fig3-11)Linking data through foreign keys</p>
+</div>
 
 And as you can imagine, as we add more forms, the database structure begins to become even more complex. Figure \@ref(fig:fig3-12) is an example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participant types can be linked by primary keys, and forms across participant types can be linked by foreign keys.
 
-```{r fig3-12, out.width='70%', fig.cap="Linking data through primary and foreign keys"}
-
-knitr::include_graphics("img/link2v02.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/link2v02.PNG" alt="Linking data through primary and foreign keys" width="70%" />
+<p class="caption">(\#fig:fig3-12)Linking data through primary and foreign keys</p>
+</div>
 
 > **Note** <br> <br>
 It is important to note here, that if you do not have unique identifiers in your tables, as is in the case of anonymous data, you will be unable to join data horizontally.
@@ -171,11 +159,10 @@ Joining tables vertically, also called appending, involves stacking forms on top
 
 Let's take a simple example where we collected a survey from two different sites, using two different forms. Those forms were entered into two separate tables and we want to combine that data. Figure \@ref(fig:fig3-13), shows how we could vertically join those tables.
 
-```{r fig3-13, fig.cap="Appending data across sites"}
-
-knitr::include_graphics("img/fig3-13.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/fig3-13.PNG" alt="Appending data across sites" width="100%" />
+<p class="caption">(\#fig:fig3-13)Appending data across sites</p>
+</div>
 
 **Resources**
 
@@ -194,11 +181,10 @@ When we structure our data in a wide format, all data collected on a unique subj
 
 In order to structure data in wide format, we join our tables horizontally. Before joining though, each wave of data collection will be appended to a variable name to create unique variable names. Figure \@ref(fig:fig3-14) shows of an example of how we could structure two waves of data collection in wide format. 
 
-```{r fig3-14, out.width='80%', fig.cap="Example linking forms across time in wide format"}
-
-knitr::include_graphics("img/fig3-14.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/fig3-14.PNG" alt="Example linking forms across time in wide format" width="80%" />
+<p class="caption">(\#fig:fig3-14)Example linking forms across time in wide format</p>
+</div>
 
 #### Long format
 
@@ -206,11 +192,10 @@ In long data a participant can, and often will, repeat in your dataset, and uniq
 
 In order to structure data in long format, we join our tables vertically. In this scenario, we no longer add the data collection wave to variable names. However, a time period variable should be added to denote the wave associated with each row of data. Figure \@ref(fig:fig3-15) shows of an example of how we could structure two waves of data collection in long format. 
 
-```{r fig3-15, fig.cap="Example linking forms across time in long format"}
-
-knitr::include_graphics("img/fig3-15.PNG")
-
-```
+<div class="figure" style="text-align: center">
+<img src="img/fig3-15.PNG" alt="Example linking forms across time in long format" width="100%" />
+<p class="caption">(\#fig:fig3-15)Example linking forms across time in long format</p>
+</div>
 
 #### Choosing wide vs long {#structure-reshape}
 

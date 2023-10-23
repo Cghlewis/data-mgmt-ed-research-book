@@ -64,6 +64,12 @@ There are three general steps for building a relational database.
 
 We can also further refine our database through normalization, structuring our database according to normal form rules [@bourgeois_information_2014; @nguyen_relational_2017; @the_nobles_normalization_2020] to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is completely acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.
 
+**Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Omar Elgabry |A series of posts on database fundamentals ^[https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0]|
+
 Let's compare a very simple example of building a tracking database using a relational model and a non-relational model.
 
 
@@ -110,18 +116,18 @@ Now imagine that we built a non-relational database, such as three tabs in an Ex
 > **Note** <br> <br>
 If your study includes a variety of related entities, tracked over waves of time, a relational database will be very helpful to build. If however, you are only tracking one entity (e.g., just students) for one wave of data collection, then a database might be overkill and a simple spreadsheet will work just fine.
 
-### Structuring the database
+### Designing the database
 
-Before you can begin to construct your database, you will need to think through the following pieces of information.
+Before you can begin to design your database, you will need to think through the following pieces of information.
 
-1. Do you want to use a relational table structure?
+1. Do you want to use a relational table design?
 2. How many tables do you want to construct?
     - Consider entities (e.g., student, teacher, school)
     - Consider purpose (e.g., enrollment info, wave 1 data collection tracking, wave 2 data collection tracking)
 3. What fields do you want to include in each table?
-4. If using a relational table structure, what fields will you use to relate tables?
+4. If using a relational table design, what fields will you use to relate tables?
 
-Once you make decisions regarding these questions, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-5) I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection.
+Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-5) I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
 
 <div class="figure" style="text-align: center">
 <img src="img/fig10-5.PNG" alt="Example participant database model" width="80%" />
@@ -134,7 +140,7 @@ I have designed this database model in this way:
     - Two tables (teacher info and school info tables) have information that should be fairly constant based on my project assumptions (name, email, consent, one time documents received)
       - If at any time this information changes (e.g., withdraw status, new last name, new contact person), I would update that information in the appropriate table and make a note of when and why the change occurred in my `notes` field
     - Two tables are for my longitudinal information
-      - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years and assume it's possible that teachers may switch grade levels. 
+      - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years because I assume it's possible that teachers may switch grade levels. As another example, if this scenario included student-level data collection, you could imagine that we may put teacher ID into our student longitudinal tables, knowing that students move into different classrooms across years.
 2. I have connected my tables through primary and foreign keys (`tch_id` and `sch_id`)
 3. With information separated into four tables, I can also now limit access as needed (e.g., only allow data entry staff access to the de-identified tables, or restricting entry to only the current wave of data preventing accidental overwriting of existing data)
 

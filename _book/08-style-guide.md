@@ -98,7 +98,6 @@ When deciding how to structure your project directories (the organization of you
 **Example directory structure created using a style guide**
 
 ```
-
 project_new/
 │   ├── planning
 |       ├── grant_mgmt
@@ -309,7 +308,7 @@ However, when not working with cohorts or if you have a dataset that does not fa
 <p class="caption">(\#fig:fig9-3)Examples of how time might be added to your data based on a variety of scenarios</p>
 </div>
 
-With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period. There are a few benefits of this method.
+With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period (e.g., `proja_w1_stu_svy_clean.csv`. There are a few benefits of this method.
 
 1. Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave [@reynolds_basics_2022].
 2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 

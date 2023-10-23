@@ -76,7 +76,7 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
 
 ### Paper data
 
-Working with paper data involves reviewing another set of decisions while planning for data storage and security. 
+Working with paper data involves reviewing another set of decisions when planning for data storage and security. 
 
 1. Choose a final storage location
     - After reviewing available locations as well as applicable laws, policies, and agreements, you will want to consider additional criteria such as accessibility of the storage site, your physical storage size needs, storage costs, and the security of the location. Most commonly required for any files containing PII, is to store them behind two locked doors (e.g., a locked file cabinet in a locked storage room).
@@ -85,13 +85,14 @@ Working with paper data involves reviewing another set of decisions while planni
     - While you may not have a style guide created for organizing physical folders and files, it is still important to consistently structure and name them for clarity. As an example, organize drawers by data source (e.g., student survey), and further organize folders by time period.
 
 3. Securely work with files
-    - As discussed in Section \@ref(collect-field) and Section \@ref(capture-entry), as team members work with files, it is important that staff understand the rules and process for returning files back to the designated storage location when not in use (i.e., no files left on desks).
+    - As discussed in Section \@ref(collect-field) and Section \@ref(capture-entry), as team members work with files, it is important that staff understand the rules and process for returning files back to the designated storage location when not in use (i.e., no files left on desks). 
+    
+### Oversee the plan
 
+Whether working with electronic or paper data, make sure to assign responsibilities to team members for tasks such as creating electronic directory structures or physical folder structures, adding and removing storage access, overseeing data backups, and monitoring training compliance. Without oversight of these processes, it is easy for errors to occur. 
 
 ## Documenting and disseminating your plan
 
 Once you make a plan for short-term data storage, that plan should be added to all necessary documentation (e.g., DMP, research protocol, informed consent forms). Once your plan has been approved, it is important to not deviate from that plan unless your revisions have also been approved. This is especially important in the case of informed consents. Once participants have agreed to data storage terms in the consent (e.g., how identifying information will be stored separate from study data), those terms should be honored.
 
-Make sure to assign responsibilities to team members for tasks such as creating directory structures, adding and removing storage access, overseeing data backups, and monitoring training compliance. Without oversight of these processes, it is easy for errors to occur. 
-
-Last, all information needs to be disseminated to team members in the form of documentation and training to ensure fidelity to your data storage and security plan. As discussed in Chapters \@ref(roles) and \@ref(document), while team members can review data management plans and research protocols, this information may be more clearly disseminated in documents such as a team data security policy and team or project roles and responsibilities documents. In addition, make sure to embed this information into any team or project related staff training.
+Last, all information needs to be disseminated to team members to ensure fidelity to your data storage and security plan. Add pertinent information to documents that staff are required to review (i.e., team data security policy or onboarding checklists) to ensure the information is reviewed. In addition, make sure to embed this information into any team or project related staff training.

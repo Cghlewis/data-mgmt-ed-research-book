@@ -69,7 +69,7 @@
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
 <li><a class="" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
-<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
+<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Organization</a></li>
 <li><a class="" href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></li>
 <li><a class="" href="dmp.html"><span class="header-section-number">5</span> Data Management Plan</a></li>
 <li><a class="" href="plan.html"><span class="header-section-number">6</span> Planning Data Management</a></li>
@@ -176,6 +176,22 @@ Figure 10.2: Example timeline for constructing and using a tracking database
 <li>Create relationships between tables through both primary and foreign keys</li>
 </ol>
 <p>We can also further refine our database through normalization, structuring our database according to normal form rules <span class="citation">(<a href="references.html#ref-bourgeois_information_2014" role="doc-biblioref">Bourgeois 2014</a>; <a href="references.html#ref-nguyen_relational_2017" role="doc-biblioref">Nguyen 2017</a>; <a href="references.html#ref-the_nobles_normalization_2020" role="doc-biblioref">The Nobles 2020</a>)</span> to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is completely acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.</p>
+<p><strong>Resources</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="42%">
+<col width="57%">
+</colgroup>
+<thead><tr class="header">
+<th>Source</th>
+<th>Resource</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td>Omar Elgabry</td>
+<td>A series of posts on database fundamentals <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0" class="uri"&gt;https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0&lt;/a&gt;&lt;/p&gt;'><sup>64</sup></a>
+</td>
+</tr></tbody>
+</table></div>
 <p>Let’s compare a very simple example of building a tracking database using a relational model and a non-relational model.</p>
 <div id="relational-model" class="section level4" number="10.2.1.1">
 <h4>
@@ -259,13 +275,13 @@ If your study includes a variety of related entities, tracked over waves of time
 </blockquote>
 </div>
 </div>
-<div id="structuring-the-database" class="section level3" number="10.2.2">
+<div id="designing-the-database" class="section level3" number="10.2.2">
 <h3>
-<span class="header-section-number">10.2.2</span> Structuring the database<a class="anchor" aria-label="anchor" href="#structuring-the-database"><i class="fas fa-link"></i></a>
+<span class="header-section-number">10.2.2</span> Designing the database<a class="anchor" aria-label="anchor" href="#designing-the-database"><i class="fas fa-link"></i></a>
 </h3>
-<p>Before you can begin to construct your database, you will need to think through the following pieces of information.</p>
+<p>Before you can begin to design your database, you will need to think through the following pieces of information.</p>
 <ol style="list-style-type: decimal">
-<li>Do you want to use a relational table structure?</li>
+<li>Do you want to use a relational table design?</li>
 <li>How many tables do you want to construct?
 <ul>
 <li>Consider entities (e.g., student, teacher, school)</li>
@@ -273,9 +289,9 @@ If your study includes a variety of related entities, tracked over waves of time
 </ul>
 </li>
 <li>What fields do you want to include in each table?</li>
-<li>If using a relational table structure, what fields will you use to relate tables?</li>
+<li>If using a relational table design, what fields will you use to relate tables?</li>
 </ol>
-<p>Once you make decisions regarding these questions, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In Figure <a href="track.html#fig:fig10-5">10.5</a> I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection.</p>
+<p>Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure <a href="track.html#fig:fig10-5">10.5</a> I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-5"></span>
 <img src="img/fig10-5.PNG" alt="Example participant database model" width="80%"><p class="caption">
@@ -293,7 +309,7 @@ Figure 10.5: Example participant database model
 </li>
 <li>Two tables are for my longitudinal information
 <ul>
-<li>This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years and assume it’s possible that teachers may switch grade levels.</li>
+<li>This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years because I assume it’s possible that teachers may switch grade levels. As another example, if this scenario included student-level data collection, you could imagine that we may put teacher ID into our student longitudinal tables, knowing that students move into different classrooms across years.</li>
 </ul>
 </li>
 </ul>
@@ -544,6 +560,7 @@ The only time you will not assign unique identifiers is when you collect anonymo
 
 </div>
 </div>
+
   <div class="chapter-nav">
 <div class="prev"><a href="style.html"><span class="header-section-number">9</span> Style guide</a></div>
 <div class="next"><a href="collect.html"><span class="header-section-number">11</span> Data Collection</a></div>
@@ -555,7 +572,7 @@ The only time you will not assign unique identifiers is when you collect anonymo
 <li>
 <a class="nav-link" href="#building-your-database"><span class="header-section-number">10.2</span> Building your database</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#relational-databases"><span class="header-section-number">10.2.1</span> Relational databases</a></li>
-<li><a class="nav-link" href="#structuring-the-database"><span class="header-section-number">10.2.2</span> Structuring the database</a></li>
+<li><a class="nav-link" href="#designing-the-database"><span class="header-section-number">10.2.2</span> Designing the database</a></li>
 <li><a class="nav-link" href="#choosing-fields"><span class="header-section-number">10.2.3</span> Choosing fields</a></li>
 <li><a class="nav-link" href="#choosing-a-tool"><span class="header-section-number">10.2.4</span> Choosing a tool</a></li>
 </ul>

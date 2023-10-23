@@ -40,7 +40,7 @@ When collecting information using forms you can certainly do your best to fix da
 We will discuss each of these phases below. 
 
 > **Note** <br> <br>
-If you are collecting data using a standardized assessment, along with a provided instrument (e.g., a computer-adaptive testing program), most of the information in this section will not be applicable. In those situations, it is best to adhere to all guidelines provided by the assessment company.
+If you are collecting data using a standardized assessment, along with a provided instrument (e.g., a computer-adaptive testing program), most of the information in this section will not be applicable as it is best to adhere to all guidelines provided by the assessment company. You can skip to Section \@ref(collect-irb). 
 
 ### Questionnaire design {#collect-design}
 
@@ -154,7 +154,7 @@ However, when collecting data on various tablets in the field, if the forms are 
 
 ### Build with the end in mind {#collect-build}
 
-Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_research_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
+Last, you will want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_research_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
 
 The process for building your tools with the end in mind is fairly different for electronic tools compared to paper forms so we are going to talk about these two processes separately.
 
@@ -346,7 +346,7 @@ The security of consent and assent forms should be a top priority to your team. 
 - If collecting paper consent, being able to clearly read a participant's name and other relevant information collected (e.g., participant printed name or signature alone may not be sufficient due to duplicate names, nicknames used, or illegible handwriting). One option is to pre-print names and other relevant information on forms or have school staff write participant names on forms before handing them out.  
 - Capturing consent forms and storing them securely and consistently. If forms are collected in the field, make sure they are promptly returned to the office and stored securely.  
 
-## Quality control
+## Quality control {#collect-control}
 
 In addition to implementing quality assurance measures during your planning phases, it is equally important to implement several quality control measures while data collection is underway. Those measures include:
 
@@ -435,7 +435,7 @@ Some tracking best practices include:
 
 ### Collecting data consistently
 
-As mentioned in Chapter \@ref(style), it's important to collect data consistently for the entire project to ensure interoperability. Keep the following consistent across both time and forms (e.g., Spanish and English version of a form, link for SchoolA and link for SchoolB):
+As mentioned in Chapter \@ref(style), it's important to collect data consistently for the entire project to ensure interoperability. Keep the following consistent across repeated collections of the same form (e.g., Spanish and English version of a form):
 
 - Variable names
   - Use the same names for the same items (and remember it's best to not add a time component to your variable names at this time)

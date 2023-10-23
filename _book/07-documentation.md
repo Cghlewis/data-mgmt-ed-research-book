@@ -52,7 +52,7 @@ A lab manual, or team handbook, creates common knowledge across your team [@mehr
 A wiki is a webpage that allows users to collaboratively edit and manage content. It can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. Wikis can be built and housed in many tools (e.g., SharePoint, Teams, Notion, GitHub). While some lab wikis are public, most are not and can be restricted to invited users only. Wikis are a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents and policies, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
 <div class="figure" style="text-align: center">
-<img src="img/wiki3.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
+<img src="img/wiki4.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
 <p class="caption">(\#fig:fig8-3)Example team wiki with links to frequently requested information</p>
 </div>
 
@@ -144,7 +144,7 @@ As discussed in Chapter \@ref(dmp), if your project is federally funded it is li
 
 ### Data sources catalog {#document-catalog}
 
-Also, as reviewed in Section \@ref(dmp-catalog), a data sources catalog is an excellent project planning tool that should be developed early on during the DMP phase. This spreadsheet helps you succinctly summarize the data sources you will collect for your project, as well as plan the details of how and when data will be collected and managed. This document serves as a referral source for the remaining planning phases of your project and should be a living document to be updated as needed.
+Also, as reviewed in Section \@ref(dmp-catalog), a data sources catalog is an excellent project planning tool that should be developed early on during the DMP phase. This spreadsheet helps you succinctly summarize the data sources you will collect for your project, as well as plan the details of how data will be collected, managed, and shared. This document serves as a referral source for the remaining planning phases of your project and should be a living document to be updated as needed.
 
 ### Checklists and meeting notes
 
@@ -323,11 +323,11 @@ These changelogs will most likely not be created until the data capture and data
 
 ### Data cleaning plan {#document-plan}
 
-A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset you plan to collect (e.g., student survey, student assessment, teacher survey, district student school records data). Because this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
+A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset listed in your data sources catalog (see Section \@ref(document-catalog)). Since this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
 
 This document can be started in the documentation phase, but will most likely continue to be updated throughout the study. Typically the person responsible for cleaning the data will write the data cleaning plans, but the documents can then be brought to a planning meeting allowing your DMWG to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. In addition to the changelog, this data cleaning plan (as well as any syntax used) provides all documentation necessary to assess data provenance, a historical record of a data file's journey. 
 
-Before writing any data cleaning plans, it can be very helpful for your team to have agreed upon general norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently. These standards can be written down and stored in a central team or project location for referral and then used to guide your process as you write your data cleaning plan. We will review what types of transformations you should consider adding to this type of norms document in Chapter \@ref(clean). 
+A data cleaning plan should be based upon agreed upon norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently (see Section \@ref(clean-criteria)). These norms can be operationalized into a checklist of transformations that can inform your data cleaning plan, along with your data dictionary and other relevant documentation. We will review what types of transformations you should consider adding to your data cleaning plan in Section \@ref(clean-check). 
 
 <div class="figure" style="text-align: center">
 <img src="img/data_cleaning_plan3.PNG" alt="A simplistic data cleaning plan" width="60%" />
@@ -355,6 +355,8 @@ This document should be structured similar to a dataset, with variable names in 
 <p class="caption">(\#fig:fig8-17)Fields to include in a data dictionary</p>
 </div>
 
+You should build one data dictionary for each instrument you plan to collect, including both original data collection instruments as well as external data sources (e.g., school records data source). If there are five data sources in your data sources catalog, you should end up with five data dictionaries. 
+
 #### Creating a data dictionary for an original data source
 
 When you are collecting data for an original source, there are a few things that are helpful to have when creating your data dictionaries: 
@@ -378,9 +380,7 @@ When you are collecting data for an original source, there are a few things that
 <p class="caption">(\#fig:fig8-18)Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)</p>
 </div>
 
-You will then build one data dictionary for each instrument you plan to collect (e.g., student survey data dictionary, teacher survey data dictionary, student assessment data dictionary). If there are five data sources in your data sources catalog, and four of them are collected by your team (i.e., one is an extant dataset), you should end up with four data dictionaries for your original data. All measures/items for each instrument will be included in the data dictionary. 
-
-As you build your data dictionaries, consider the following:
+All measures/items for each instrument will be included in the data dictionary. As you build your data dictionaries, consider the following:
 
   - Item names
     - Are your variable names meeting the requirements laid out in your style guide? 
@@ -400,6 +400,7 @@ As you build your data dictionaries, consider the following:
       - Time component (e.g., `wave`, `time`, `year`)
       - Derived variables
         - This includes both variables your team derives (e.g., mean scores, reverse coded variables, variable checks) as well as variables derived from any scoring programs (e.g., percentile ranks, grade equivalent scores)
+          - Make sure to account for anomalies such as how to calculate scores with missing data
       - Metadata (Variables that your tool collects such as IPAddress, completion, language)
   - What items should be removed before public data sharing (i.e., personally identifiable information)
 
