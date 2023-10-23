@@ -1,6 +1,6 @@
 # Data Archiving {#store-long}
 
-```{r fig14-1, fig.cap="Long-term data storage in the research project life cycle", out.width = "80%"}
+```{r fig15-1, fig.cap="Long-term data storage in the research project life cycle", out.width = "80%"}
 
 knitr::include_graphics("img/lifecycle_archive.PNG")
 
@@ -10,7 +10,7 @@ Once you have gone through all cycles of data collection and you are preparing t
 
 ## Long-term storage
 
-The first thing you will want to do when planning to store your data long-term is review your requirements for data retention and destruction. There may be various requirements for both data retention and destruction depending on your oversight (e.g., institution, funder, or data sharing agreement requirements). It is common for oversight to require that you retain your data anywhere from 3-5 years and there may be specific destruction requirements for data that contain PII or data covered by a data use agreement. Make sure to review relevant policies and agreements to determine what is required.
+The first thing you will want to do when planning to store your data long-term is review your requirements for data retention and destruction. There may be various requirements for both data retention and destruction depending on your oversight (e.g., institution, funder, or data sharing agreement requirements). It is common for oversight to require that you retain your data anywhere from 3-10 years and there may be specific destruction requirements for data that contain PII or data covered by a data use agreement. Make sure to review relevant policies and agreements to determine what is required.
 
 ### Make a plan 
 
@@ -21,10 +21,10 @@ Once you understand requirements, make a plan for retention and destruction. If 
   - Electronic
     - For electronic data long-term storage, you will want to consider two things, file formats and storage location [@borer_simple_2009; @briney_data_2015].
       - File formats 
-        - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete (see Table \@ref(tab:tab13-1)). This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
+        - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete (see Table \@ref(tab:tab15-1)). This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
       - Storage location
         - Similar to choosing file formats, choose a storage location that is accessible and not at risk of becoming corrupt or obsolete (e.g., think obsolescence of floppy disks). Also, make sure that you are able to continue restricting access as needed. If your short-term storage solution meets these requirements (e.g., your institution network drive), you may not need to do anything different in preparing for long-term storage, but it will be important to continue implementing good practices to keep your data safe (e.g., continuing data backups, checking that hardware and software is up to date).  
-        - Within your storage location, consider moving all finalized datasets (i.e., cleaned and de-identified) into a "master data" folder for ease of accessibility
+        - Within your storage location, consider moving all finalized datasets (i.e., cleaned and de-identified) into a "master data" folder for ease of accessibility. Restrict access to reduce unintended modification of files.
           - Design this master data folder like you would a public repository folder (see Section \@ref(share-file))
             - Add a README that describes what files the folder contains
             - Move relevant documentation from other locations to this folder (e.g., data dictionaries, project-level documentation)
@@ -35,7 +35,7 @@ Last, make sure to document your plan, including time frames for retention and d
 
 <br>
 
-```{r tab13-1}
+```{r tab15-1}
 
 library(tidyverse)
 
@@ -47,7 +47,7 @@ tibble::tribble (~Type, ~`Non-proprietary formats`, ~`Other commonly accepted fo
   
 ```
 
-## Internal data use
+## Internal data use {#store-long-use}
 
 At the end of a project, or possibly earlier in the project, team members will want to begin analyzing data. It is important to consider where you will store finalized datasets for internal use, how you will notify team members of their availability, and how you will allow team members, and other research collaborators, to access data. Most likely you will not want researchers going in to folders and grabbing datasets without consulting with a core team member first. Therefore, it is important to develop a system for providing data to researchers on an as-needed basis. Create a data request process for team members, or external collaborators, to request access to finalized study datasets. Several things will need to be considered.
 
@@ -63,15 +63,15 @@ At the end of a project, or possibly earlier in the project, team members will w
 
 Here is an example of how you might structure a data request folder.
   
-```text
+```
 
 data_requests/
 ├── data_request_log.xlsx
-│   ├── lastname1_firstname1.xlsx
+│   ├── lastname1_firstname1_2023-03-02
 |       ├── projname_lname-fname_data-sharing-agreement_2023-04-08.pdf
 │       ├── projname_stu_svy_data-dictionary.xlsx
 │       └── projname_lname-fname_stu_svy_clean_2023-05-02.csv
-│   ├── lastname2_firstname2.xlsx
+│   ├── lastname2_firstname2_2023-03-19
 │       ├── archive
 │           ├── changelog.xlsx
 |           └── projname_tch_svy_clean_2023-05-15.csv
@@ -93,5 +93,5 @@ Ultimately, you want to establish a standardized and efficient process that redu
 
 ## Using a repository
 
-Last, if maintaining your electronic data long-term sounds like too much effort for your team, there are other options. Many universities have institutional repositories that often include services such as data curation and preservation. Additionally, there are several external repositories that offer curation and preservation services where you may be able to deposit your data for long-term storage. It's possible that depositing your data in one of these two options may also align with publicly sharing your data, which we will review in Chapter \@ref(share).
+Last, if maintaining your electronic data long-term sounds like too much effort for your team, there are other options. Many universities have institutional repositories that may include services such as data curation and preservation. Additionally, there are several external repositories that offer curation and preservation services where you may be able to deposit your data for long-term storage. It's possible that depositing your data in one of these two options may also align with publicly sharing your data, which we will review in Chapter \@ref(share).
   

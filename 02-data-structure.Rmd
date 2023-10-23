@@ -39,7 +39,7 @@ It is important to know that variables have the following attributes:
 
 ### Rows
 
-The rows in your dataset are aligned with subjects, or cases, in your data. Subjects in your dataset may be students, teachers, schools, locations, and so forth. The unique subject identifier variable mentioned above will denote which row belongs to which subject. 
+The rows in your dataset are aligned with subjects (also called records or cases) in your data. Subjects in your dataset may be students, teachers, schools, locations, and so forth. The unique subject identifier variable mentioned above will denote which row belongs to which subject. 
 
 ### Cells
 
@@ -78,7 +78,7 @@ knitr::include_graphics("img/consistent_values.PNG")
 
 
 3. Your columns should adhere to your variable type.
-    - For example, if you have a numeric variable, such as age, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
+    - For example, if you have a numeric variable, such as `age`, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
   
 ```{r fig3-5, fig.cap="A comparison of variables adhering and not adhering to a data type"}
 
@@ -86,10 +86,8 @@ knitr::include_graphics("img/var_type.PNG")
 
 ```
   
-4. A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
-   - You lose the granularity of the information (e.g., `location` = "Los Angeles, CA" is less granular than having a `city` variable and a `state` variable separately)
-   - Your variable may become unanalyzable (e.g., a variable with a value "220/335" is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a `rate` variable with a value of *.657*.
-   - You may lose the variable type (e.g., if you want an `incident_rate` variable to be numeric, and you assign a value of "220/335", that variable is no longer numeric)
+4. A variable should only collect one piece of information. This allows you to more easily work with your variables.
+    - For example, rather than combining the number of incidents and the number of enrolled students in the same variable, separate this information into two variables. This allows you to aggregate information as needed (e.g., calculate an incident rate).
   
 ```{r fig3-6, fig.cap="A comparison of two things being measured in one variable and two things being measured across two variables"}
 

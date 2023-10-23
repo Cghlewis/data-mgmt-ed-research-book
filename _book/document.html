@@ -114,7 +114,7 @@ Figure 8.1: Data documentation in the research project life cycle
 <li>Providing searchability through metadata</li>
 </ul>
 <p>We are going to cover four levels of documentation in this chapter: team-level, project-level, dataset-level, and variable-level. While most of the documentation discussed does fall within its eponymous phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a human-readable format that works well for your team (e.g., Word, PDF, TXT, Google Doc, XLSX, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable. See Section <a href="store-long.html#store-long">15</a> for more information.</p>
-<p>The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder and other governing bodies (see Chapters <a href="hsd.html#hsd">4</a> &amp; <a href="dmp.html#dmp">5</a>). No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Implementing documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret the document more easily. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together). Ultimately though, all of your documents should be reviewed with your data management working group in order to gather feedback and reach consensus.</p>
+<p>The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder and other governing bodies (see Chapters <a href="hsd.html#hsd">4</a> &amp; <a href="dmp.html#dmp">5</a>). No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Implementing documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret the document more easily. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together). Ultimately though, all of your documents should be reviewed with your data management working group (DMWG) in order to gather feedback and reach consensus (see Chapter <a href="plan.html#plan">6</a>).</p>
 <p>Each type of documentation discussed below is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of Figure <a href="document.html#fig:fig8-1">8.1</a> above, team members should revisit documentation each time new data is collected, or more often if needed, to ensure documentation still aligns with actual practices. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why.</p>
 <blockquote>
 <p><strong>Note</strong> <br><br>
@@ -260,7 +260,7 @@ Figure 8.4: Sample data topics to add to onboarding and offboarding checklists
 </ul>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig8-5"></span>
-<img src="img/data_inventory.PNG" alt="Example of a team data inventory" width="100%"><p class="caption">
+<img src="img/data_inventory2.PNG" alt="Example of a team data inventory" width="100%"><p class="caption">
 Figure 8.5: Example of a team data inventory
 </p>
 </div>
@@ -730,8 +730,10 @@ Figure 8.18: Pulling relevant information for the Connor Davidson Resilience Sca
 <ul>
 <li>What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary.
 <ul>
-<li>Identifiers (unique participant ids, rater ids)</li>
-<li>Grouping variables (treatment, cohort)</li>
+<li>Primary keys (e.g., <code>stu_id</code>, <code>rater_id</code>)</li>
+<li>Foreign keys (e.g., <code>tch_id</code> in a student file)</li>
+<li>Grouping variables (e.g., <code>treatment</code>, <code>cohort</code>, <code>cluster</code>, <code>dosage</code>, <code>block</code>)</li>
+<li>Time component (e.g., <code>wave</code>, <code>time</code>, <code>year</code>)</li>
 <li>Derived variables
 <ul>
 <li>This includes both variables your team derives (e.g., mean scores, reverse coded variables, variable checks) as well as variables derived from any scoring programs (e.g., percentile ranks, grade equivalent scores)</li>
@@ -751,7 +753,7 @@ Figure 8.18: Pulling relevant information for the Connor Davidson Resilience Sca
 Figure 8.19: Example student survey data dictionary
 </p>
 </div>
-<p>The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document/s with your team. Gather your DMWG and review the following types of questions:</p>
+<p>The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document with your team. Gather your DMWG and review the following types of questions:</p>
 <ul>
 <li>Is everyone in agreement about how variables are named, acceptable variable ranges, how values are coded, and our variable types and formats?</li>
 <li>Is everyone in agreement about who gets each item?<br>
@@ -890,7 +892,7 @@ Figure 8.23: Common metadata elements
 </p>
 </div>
 <p>Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata <span class="citation">(<a href="references.html#ref-gilmore_practical_2018" role="doc-biblioref">Gilmore, Kennedy, and Adolph 2018</a>; <a href="references.html#ref-icpsr_icpsr_2023" role="doc-biblioref">ICPSR 2023</a>; <a href="references.html#ref-ldbase_information_2023" role="doc-biblioref">LDbase 2023</a>)</span>. All of the information needed for this metadata can be gathered from the documents we’ve discussed earlier in this chapter.</p>
-<p>Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML <span class="citation">(<a href="references.html#ref-icpsr_icpsr_2023" role="doc-biblioref">ICPSR 2023</a>)</span> or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure <a href="document.html#fig:fig8-24">8.24</a> is an example of how ICPSR Open displays the metadata information on a project page <span class="citation">(<a href="references.html#ref-page_design_2020" role="doc-biblioref">Page, Lenard, and Keele 2020</a>)</span>. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section <a href="document.html#metastandards">8.5.1</a>) if we want as well.</p>
+<p>Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML (Extensible Markup Language) or JSON-LD (JavaScript Object Notation-Linked Data). We can see what this metadata looks like to humans once it is submitted. Figure <a href="document.html#fig:fig8-24">8.24</a> is an example of how ICPSR Open displays the metadata information on a project page <span class="citation">(<a href="references.html#ref-page_design_2020" role="doc-biblioref">Page, Lenard, and Keele 2020</a>)</span>. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section <a href="document.html#metastandards">8.5.1</a>) if we want as well.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig8-24"></span>
 <img src="img/metadata_project.PNG" alt="Example metadata displayed on an ICPSR Open project page" width="95%"><p class="caption">
@@ -933,6 +935,22 @@ Figure 8.27: Metadata comparison from an AERA Open project
 </div>
 <p>If you plan to archive your data, first check with your repository to see if they follow any standards. For example, both the OSF <span class="citation">(<a href="references.html#ref-gueguen_new_2023" role="doc-biblioref">Gueguen 2023</a>)</span> and Figshare <span class="citation">(<a href="references.html#ref-figshare_figshare_2023" role="doc-biblioref">Figshare 2023</a>)</span> repositories currently use the DataCite schema, while ICPSR uses the DDI standard <span class="citation">(<a href="references.html#ref-icpsr_icpsr_2023" role="doc-biblioref">ICPSR 2023</a>)</span>. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.</p>
 <p>If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core <span class="citation">(<a href="references.html#ref-university_of_iowa_libraries_metadata_2023" role="doc-biblioref">University of Iowa Libraries 2023</a>)</span>, and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.</p>
+<p><strong>Resources</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="42%">
+<col width="57%">
+</colgroup>
+<thead><tr class="header">
+<th>Source</th>
+<th>Resource</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td>Registry of Research Data Repositories</td>
+<td>A searchable database of repositories and their metadata standards <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www.re3data.org/" class="uri"&gt;https://www.re3data.org/&lt;/a&gt;&lt;/p&gt;'><sup>63</sup></a>
+</td>
+</tr></tbody>
+</table></div>
 </div>
 </div>
 <div id="wrapping-it-up" class="section level2" number="8.6">
@@ -1006,7 +1024,7 @@ Figure 8.27: Metadata comparison from an AERA Open project
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-19.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

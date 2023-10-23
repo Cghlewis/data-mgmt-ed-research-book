@@ -153,7 +153,7 @@ Figure 3.1: Basic format of a dataset
 <h3>
 <span class="header-section-number">3.1.2</span> Rows<a class="anchor" aria-label="anchor" href="#rows"><i class="fas fa-link"></i></a>
 </h3>
-<p>The rows in your dataset are aligned with subjects, or cases, in your data. Subjects in your dataset may be students, teachers, schools, locations, and so forth. The unique subject identifier variable mentioned above will denote which row belongs to which subject.</p>
+<p>The rows in your dataset are aligned with subjects (also called records or cases) in your data. Subjects in your dataset may be students, teachers, schools, locations, and so forth. The unique subject identifier variable mentioned above will denote which row belongs to which subject.</p>
 </div>
 <div id="cells" class="section level3" number="3.1.3">
 <h3>
@@ -200,7 +200,7 @@ Figure 3.4: A comparison of inconsistent and uniform variable values
 <ol start="3" style="list-style-type: decimal">
 <li>Your columns should adhere to your variable type.
 <ul>
-<li>For example, if you have a numeric variable, such as age, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.</li>
+<li>For example, if you have a numeric variable, such as <code>age</code>, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.</li>
 </ul>
 </li>
 </ol>
@@ -211,11 +211,9 @@ Figure 3.5: A comparison of variables adhering and not adhering to a data type
 </p>
 </div>
 <ol start="4" style="list-style-type: decimal">
-<li>A variable should only collect one piece of information. If a variable contains more than one piece of information you may have the following issues:
+<li>A variable should only collect one piece of information. This allows you to more easily work with your variables.
 <ul>
-<li>You lose the granularity of the information (e.g., <code>location</code> = “Los Angeles, CA” is less granular than having a <code>city</code> variable and a <code>state</code> variable separately)</li>
-<li>Your variable may become unanalyzable (e.g., a variable with a value “220/335” is not analyzable as a numeric variable). If you are interested in a rate, you can calculate a <code>rate</code> variable with a value of <em>.657</em>.</li>
-<li>You may lose the variable type (e.g., if you want an <code>incident_rate</code> variable to be numeric, and you assign a value of “220/335”, that variable is no longer numeric)</li>
+<li>For example, rather than combining the number of incidents and the number of enrolled students in the same variable, separate this information into two variables. This allows you to aggregate information as needed (e.g., calculate an incident rate).</li>
 </ul>
 </li>
 </ol>
@@ -424,7 +422,7 @@ Figure 3.15: Example linking forms across time in long format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-19.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

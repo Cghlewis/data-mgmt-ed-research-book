@@ -23,7 +23,7 @@ This planning phase should include a series of regular meetings with core decisi
 1. Assign roles and responsibilities for specific tasks
 1. Make decisions around how to manage tasks and communication
 
-Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation (see Chapter \@ref(document)). All meeting notes should be stored in a central location where team members can reference them as needed (e.g., a planning folder with notes ordered by date, a centrally located running document). 
+Make sure to come to every meeting with an agenda to stay on track and to take detailed notes. These notes will be the basis for creating all of your documentation (see Chapter \@ref(document)). All meeting notes should be stored in a central location where team members can reference them as needed (e.g., a planning folder with notes ordered by date, a centrally located running document).
 
 At the end of the planning period, the team should have a clear plan for what the project goals are, when goals should be accomplished, how goals will be accomplished, who is in charge of completing tasks associated with goals, and what additional resources are needed to accomplish goals.
 
@@ -83,7 +83,7 @@ It's important to consider how each team and project are unique as you work thro
 
 ## Data management workflow
 
-The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a series of repeatable tasks that help you move through the stages of the research life cycle in an organized and efficient manner. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that show actionable steps in your data management process. The order of your steps should follow the general order of the data management life cycle (specifically the data collection cycle). You will want to have a workflow diagram for every piece of data that you collect. So for example, if you collect the following three items below, you will have three workflow diagrams.
+The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a series of repeatable tasks that help you move through the stages of the research life cycle in an organized and efficient manner. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that show actionable steps in your data management process. The order of your steps should follow the general order of the data management life cycle (specifically the data collection cycle). You will want to have a workflow diagram for every source in your data sources catalog (see Section \@ref(dmp-catalog)). So for example, if you collect the following three items below, you will have three workflow diagrams.
 
 - Student online survey
 - Student paper assessment

@@ -299,6 +299,7 @@ Figure 10.5: Example participant database model
 </ul>
 </li>
 <li>I have connected my tables through primary and foreign keys (<code>tch_id</code> and <code>sch_id</code>)</li>
+<li>With information separated into four tables, I can also now limit access as needed (e.g., only allow data entry staff access to the de-identified tables, or restricting entry to only the current wave of data preventing accidental overwriting of existing data)</li>
 </ol>
 <p>The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both <code>tch_id</code> and <code>wave</code> to uniquely identify rows since <code>tch_id</code> would now be duplicated for each wave of data collection (see Figure <a href="track.html#fig:fig10-6">10.6</a>).</p>
 <div class="figure" style="text-align: center">
@@ -583,7 +584,7 @@ The only time you will not assign unique identifiers is when you collect anonymo
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-19.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

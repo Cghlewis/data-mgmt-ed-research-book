@@ -85,6 +85,7 @@ fig:fig12-4
 fig:fig12-5
 fig:fig12-6
 fig:fig12-7
+fig:fig12-8
 fig:fig13-1
 fig:fig14-1
 fig:fig14-2
@@ -96,8 +97,8 @@ fig:fig14-7
 fig:fig14-8
 fig:fig14-9
 fig:fig14-12
-tab:tab13-1
 fig:fig15-1
+tab:tab15-1
 fig:fig15-2
 fig:fig15-3
 fig:fig15-4
@@ -212,7 +213,7 @@ general-good-practices
 directory-structure
 file-naming
 style-varname
-time
+style-time
 style-codes
 style-missing
 style-code
@@ -248,6 +249,7 @@ collect-field
 ongoing-data-checks
 tracking-data-collection
 collecting-data-consistently
+bot-detection
 review
 capture
 capture-electronic
@@ -262,7 +264,7 @@ non-public-data-sources
 public-data-sources
 store
 store-plan
-electronic-data-1
+store-electronic
 paper-data-1
 documenting-and-disseminating-your-plan
 clean
@@ -278,7 +280,7 @@ data-versioning-practices
 store-long
 long-term-storage
 make-a-plan
-internal-data-use
+store-long-use
 using-a-repository
 share
 share-why
@@ -288,7 +290,7 @@ where-to-share
 choosing-a-repository
 what-data-to-share
 processing-of-files
-organizing-files
+share-combine
 file-formats
 assess-disclosure-risk
 mitigating-disclosure-risk

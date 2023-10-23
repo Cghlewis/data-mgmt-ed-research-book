@@ -47,7 +47,6 @@ Before we dive in to particular types of style guides, there are a few things to
     - Train case (Scale-Sum)
 4. Character length matters. Computers are unable to read names that surpass a certain character length. This applies to file paths, file names, and variable names. Considerations for each type of limit are reviewed below.
 
-
 ## Directory structure
 
 When deciding how to structure your project directories (the organization of your operating systems folders and files), there are several things you want to consider.
@@ -79,54 +78,56 @@ When deciding how to structure your project directories (the organization of you
 
 **Example directory structure style guide**
 
-    1. All project directories follow this hierarchical metadata structure  
-        - Level 1: Name of project  
-        - Level 2: Life cycle folders  
-        - Level 3: Data collection wave folders (if relevant)  
-        - Level 4: Participant folder (if relevent)
-        - Level 5: Specific content folder  
-        - Level 6: Archive folders  
-    2. All folders should be named according to these rules  
-        - Meaningful name but no longer than 20 characters  
-        - No spaces or special characters in folder names  
-        - Only use lower case letters  
-        - Use `-` to separate words  
-    3. All previous versions of files must be placed into their respective "archive" folder
+```
+1. All project directories follow this hierarchical metadata structure  
+    - Level 1: Name of project  
+    - Level 2: Life cycle folders  
+    - Level 3: Data collection wave folders (if relevant)  
+    - Level 4: Participant folder (if relevent)
+    - Level 5: Specific content folder  
+    - Level 6: Archive folders  
+2. All folders should be named according to these rules  
+    - Meaningful name but no longer than 20 characters  
+    - No spaces or special characters in folder names  
+    - Only use lower case letters  
+    - Use `-` to separate words  
+3. All previous versions of files must be placed into their respective "archive" folder
         - A changelog should be placed in all data "archive" folders to document changes between file versions
+
+```
 
 **Example directory structure created using a style guide**
 
-```{r comment=NA} 
+```
 
-library(data.tree)
-
-project <- Node$new("project-new")
-  intervention <- project$AddChild("intervention")
-    ic1 <- intervention$AddChild("cohort-1")
-    coach <- ic1$AddChild("coaching_materials")
-     carchive <- coach$AddChild("archive")
-  projectmgmt <- project$AddChild("project-mgmt")
-    pY1 <- projectmgmt$AddChild("cohort-1")
-    sched <- pY1$AddChild("scheduling-materials")
-     scarchive <- sched$AddChild("archive")
-  documentation <- project$AddChild("documentation")
-      sops <- documentation$AddChild("sops")
-        proarchive <- sops$AddChild("archive")
-      datadictionary <- documentation$AddChild("data-dictionaries")
-        darchive <- datadictionary$AddChild("archive")
-  data <- project$AddChild("data")
-    y1 <- data$AddChild("cohort-1")
-      studentd <- y1$AddChild("student")
-      svy <- studentd$AddChild("survey")
-        svyarchive <- svy$AddChild("archive")
-        svychange <- svyarchive$AddChild("changelog.txt")
-  track <- project$AddChild("tracking")
-    tY1 <- track$AddChild("cohort-1")
-      trackingdb <- tY1$AddChild("participant-database")
-        trarchive <- trackingdb$AddChild("archive")
-      consent <- tY1$AddChild("parent-consents")
-
-print(project)
+project_new/
+│   ├── planning
+|       ├── grant_mgmt
+|          └── proposal_docs
+|       ├── meetings
+|          ├── agendas
+|          └── notes
+|   ├── project_mgmt
+|       ├── hiring_materials
+|       └── scheduling_materials
+|   ├── documentation
+|       ├── data_dictionaries
+|       ├── project_new_data_sources_catalog.xlsx
+|       ├── research_protocol
+|       └── sops
+|   ├── tracking
+│       ├── parent_consents
+│       └── participant_tracking_database
+│   ├── data
+│       ├── cohort_1
+│           ├── student
+|               ├── survey
+|                   ├── archive
+|                       └── changelog.txt
+|               ├── assessment
+|                   ├── archive
+|                       └── changelog.txt
+└── ...
 
 ```
 
@@ -157,6 +158,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
 - Consider limiting the number of allowable characters to prevent hitting your path limit (as mentioned above)
 - Do not use `/` in dates and format them consistently. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
   - *YYYY-MM-DD* or *YYYYMMDD*
+    - Using the ISO 8601 standard ensures that dates are consistently formatted and correctly interpreted (e.g., "06-01-2023" is interpreted as DD-MM-YYYY in Europe, while it is often interpreted as MM-DD-YYYY in the U.S.)
   - While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.
 - When versioning your files, pick a format and add it to your style guide
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
@@ -171,34 +173,40 @@ A file naming style guide helps us to name files in a way that allows us to answ
 
 **Example file naming style guide**
 
-    1. Never use spaces between words
-    2. Never use special characters
-    3. Use _ to separate words
-    4. Only use lower case letters
-    5. Keep names under 40 characters
-    6. Use the following metadata file naming order:
-      - Order of use (if relevant – add a 0 before single digits)
-      - Project
-      - Cohort/Wave (if relevant)
-      - Participant
-      - Instrument
-      - Further description
-      - Date (always add)
-      - Version (if necessary)
-    7. Format dates as YYYY-MM-DD
-    8. If there are multiple versions of a document on the same date, version using v# with a leading 0.
-    9. Use the following abbreviations
-      - student = stu
-      - survey = svy
-      - wave = w
-      - project math efficacy = me
+```
+1. Never use spaces between words
+2. Never use special characters
+3. Use _ to separate words
+4. Only use lower case letters
+5. Keep names under 40 characters
+6. Use the following metadata file naming order:
+  - Order of use (if relevant – add a 0 before single digits)
+  - Project
+  - Cohort/Wave (if relevant)
+  - Participant
+  - Instrument
+  - Further description
+  - Date (always add)
+  - Version (if necessary)
+7. Format dates as YYYY-MM-DD
+8. If there are multiple versions of a document on the same date, version using v# with a leading 0.
+9. Use the following abbreviations
+  - student = stu
+  - survey = svy
+  - wave = w
+  - project math efficacy = me
+
+```
 
 **Example file names created using a style guide**
 
-    me_stu_svy_sop_2022-08-01.docx
-    me_w1_stu_svy_raw_2022-11-03.csv
-    me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
-    me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
+```
+me_stu_svy_sop_2022-08-01.docx
+me_w1_stu_svy_raw_2022-11-03.csv
+me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
+me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
+
+```
     
 ## Variable naming {#style-varname}
 
@@ -254,29 +262,35 @@ This style guide will be a necessary document to have before you start to create
 
 **Example variable naming style guide**
 
-    1. Use snake case
-    2. Keep names under 32 characters
-    3. Use meaningful variable names
-    4. Use unique variable names within and across data sources
-    5. If part of a scale, use scale abbreviation plus item number from the scale
-    6. Include an indication of the instrument as a prefix in the variable name
-      - student self-report = s_
-      - teacher self-report = t_
-      - parent report on students = p_
-      - district student records = d_
-    7. Denote reverse coded variables using suffix `_r`
-    
+```
+1. Use snake case
+2. Keep names under 32 characters
+3. Use meaningful variable names
+4. Use unique variable names within and across data sources
+5. If part of a scale, use scale abbreviation plus item number from the scale
+6. Include an indication of the instrument as a prefix in the variable name
+  - student self-report = s_
+  - teacher self-report = t_
+  - parent report on students = p_
+  - district student records = d_
+7. Denote reverse coded variables using suffix `_r`
+
+```
+
 **Example variable names created using a style guide**
 
-    s_anx1
-    s_anx1_r
-    s_gender
-    d_gender
-    t_gender
-    t_stress5
-    p_relate
+```
+s_anx1
+s_anx1_r
+s_gender
+d_gender
+t_gender
+t_stress5
+p_relate
 
-### Time
+```
+
+### Time {#style-time}
 
 Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well. Recall from Section \@ref(structure-datastructure), there are two ways you can link and structure longitudinal data, in wide format or long format. 
 
@@ -361,6 +375,9 @@ In your value coding style guide, you can add general rules to follow, or it may
 knitr::include_graphics("img/missing2.PNG")
 
 ```
+
+> **Note** <br> <br> 
+It is important to note here that there is a difference between a string value of "NA" or "NULL" that is inserted, verses an `NA` or `NULL` value that is assigned to blank values by a specific platform. For instance, blank numeric values in R are represented as the symbol NA. Yet this value is treated as missing, not as the string "NA".
 
 ## Coding {#style-code}
 

@@ -69,7 +69,7 @@ Throughout the remaining chapters of this book we will review ways to keep ident
 
 1. In most situations it will be important to get consent to collect identifiers. Consult with your local IRB to determine what is required. See Section \@ref(collect-irb)
 1. Collect as few identifiers as possible. Only collect what is necessary. See Section \@ref(collect-design) for more information.
-1. Follow rules laid out in applicable laws, policies, and agreements when collecting, storing, and sharing data. This includes, but is not limited to, using approved tools for data collection, capture, and storage, assigning appropriate data access levels, and transmitting data using approved methods. See Chapters \@ref(collect), \@ref(capture), \@ref(store) for more information.
+1. Follow rules laid out in applicable laws, policies, and agreements when collecting, storing, and sharing data. This includes, but is not limited to, using approved tools for data collection, capture, and storage, assigning appropriate data access levels, and transmitting data using approved methods. See Chapters \@ref(collect), \@ref(capture), \@ref(store), and \@ref(store-long) for more information.
 1. Remove names in data and replace them with codes (i.e., unique study identifiers). See Chapter \@ref(track) for more information.
 1. Fully de-identify data before data sharing. See Chapter \@ref(clean) for more information.
 1. Use data sharing agreements and controlled-access as needed when publicly sharing data. See Chapter \@ref(share) for more information.

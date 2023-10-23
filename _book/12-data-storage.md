@@ -29,7 +29,7 @@ When planning a storage and security process, for data files in particular, it i
 
 This process should help narrow down your data storage solutions for each data source. However, from there a series of decisions need to be made depending on the type of data you are working with, paper (e.g., a paper consent form) or electronic (e.g., a CSV file of questionnaire data, a Microsoft Access participant tracking database). The remainder of this section will review a series of decisions to make for each type of data, as well as provide some best practices along the way.
 
-### Electronic data
+### Electronic data {#store-electronic}
 
 Once you have reviewed all relevant information from Section \@ref(store-plan), several more decisions will need to be made when deciding on and setting up your structures for storing and securely working with electronic data.
 

@@ -34,25 +34,35 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
     - In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
       - Do you want to export the text values or numeric values for categorical items?
       - How do you want to export "select all" questions?
-        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column.
+        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column. As you can imagine, the former option can get messy if your response options contain commas (see Figure \@ref(fig:fig12-3)).
       - How do you want to recode seen but missing values? 
         - This option is commonly provided because "select all" questions are often split out into multiple variables, where a `1` indicates the option was selected, and blank represents either the option was **not selected** or that the item was skipped entirely. 
         - Typically tools provide the option to recode to *0* or *-99*. You can also choose not to recode and leave those responses as blank. If the types of missing data do not matter to your study, then leaving missing values as blank is typically the most straightforward option. However, adding an extreme value like *-99* can make it easier to know if those blank "select all" values are a "no" response (recoded to *-99*) or if those values were never seen and actually represent a missing value (left as blank).
-1. Where will the file be stored?
+
+<div class="figure" style="text-align: center">
+<img src="img/fig12-3.PNG" alt="Two different ways you may export a select all question" width="100%" />
+<p class="caption">(\#fig:fig12-3)Two different ways you may export a select all question</p>
+</div>
+
+4. Where will the file be stored?  
     - This decision should be based on guidelines laid out in your style guide (see Chapter \@ref(style)) and your applicable data security documents and agreements (i.e., data management plan, data security plan, research protocol). 
-1. How will files be named?
-      - While your tool may provide a name for your file, it may need to be renamed something more meaningful based on your style guide rules (e.g., `projecta_w1_stu_svy_raw_2023-09-01.csv`). Most importantly, name your files consistently across data sources and waves.
-1. What documentation needs to accompany the data capture?
-    - As discussed in Section \@ref(document-dataset), there are additional documents that can be helpful to include alongside the file.
-      - A README can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of.
-      - A changelog can also be very beneficial. It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.
-1. Who will capture the data?
+    
+5. How will files be named?  
+    - While your tool may provide a name for your file, it may need to be renamed something more meaningful based on your style guide rules (e.g., `projecta_w1_stu_svy_raw_2023-09-01.csv`). Most importantly, name your files consistently across data sources and waves.
+      
+6. What documentation needs to accompany the data capture?  
+    - As discussed in Section \@ref(document-dataset), there are additional documents that can be helpful to include alongside the file.  
+      - A README can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of.  
+      - A changelog can also be very beneficial. It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.  
+      
+7. Who will capture the data?  
     - It doesn't necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign that person the responsibility of documenting any relevant information in the README.  
-1. What checks need to happen before this data is handed off?
-    - It is important for the person responsible for data capture to do a basic review of the file before handing this data off for the next step.
-      - Does the format of the file look as expected? Does it have data in it? Are all the variables there as expected?
-      - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with completed data in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data. 
-        - Was a participant accidentally dropped from the file? Is someone incorrectly marked as complete in the tracking database? Are there duplicate entries in the file?
+    
+8. What checks need to happen before this data is handed off?  
+    - It is important for the person responsible for data capture to do a basic review of the file before handing this data off for the next step.  
+      - Does the format of the file look as expected? Does it have data in it? Are all the variables there as expected?  
+      - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with completed data in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data.  
+        - Was a participant accidentally dropped from the file? Is someone incorrectly marked as complete in the tracking database? Are there duplicate entries in the file?  
           - If there are errors that can be corrected (e.g., someone incorrectly tracked a data point, a participant was left off in the capture process), those corrections should be made now. If there are corrections that involve manipulating the raw data (e.g., reconciling duplicate IDs in the data), those corrections should not be made at this time. Instead, those should be added to a README file to be corrected in the data cleaning phase. 
   
 > **Note** <br> <br>
@@ -126,7 +136,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
     
 <div class="figure" style="text-align: center">
 <img src="img/data_entry_process2.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
-<p class="caption">(\#fig:fig12-3)The flow of the decisions to make regarding the data entry process</p>
+<p class="caption">(\#fig:fig12-4)The flow of the decisions to make regarding the data entry process</p>
 </div>
 
 > **Note** <br> <br>
@@ -145,11 +155,11 @@ Last, it is important to integrate quality control into this data entry process.
 3. Using that report, a designated team member/members makes corrections [@yenni_developing_2019]. This involves pulling out the original paper forms and seeing what the correct value is for each error.
     - There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways. 
     - However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your "master" raw data file.
-      - Figure \@ref(fig:fig11-4) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
+      - Figure \@ref(fig:fig12-5) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
   
 <div class="figure" style="text-align: center">
 <img src="img/double-enter.PNG" alt="A report displaying differences between two entry files" width="60%" />
-<p class="caption">(\#fig:fig12-4)A report displaying differences between two entry files</p>
+<p class="caption">(\#fig:fig12-5)A report displaying differences between two entry files</p>
 </div>
   
 Depending on the amount of data that is collected this can be a time consuming process. Double data entry is a matter of weighing costs and benefits. While double entering all of your data is the best way to reduce data errors, the cost of double entering all of your data might be too high, and you may decide to only double enter a portion of your data and gain a smaller benefit.
@@ -169,11 +179,11 @@ It is common in education research to also capture external supplemental data so
 
 ### Non-public data sources
 
-Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-5)). This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
+Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-6)). It is important to begin looking into this during your planning phase to understand when the request should be initiated. This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
 
 <div class="figure" style="text-align: center">
 <img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%" />
-<p class="caption">(\#fig:fig12-5)Example non-public confidential data request process</p>
+<p class="caption">(\#fig:fig12-6)Example non-public confidential data request process</p>
 </div>
 
 If not already included in the provider's data request process, it is important to share the following information:
@@ -188,11 +198,11 @@ If not already included in the provider's data request process, it is important 
       - How to aggregate summary data (e.g., number of days absent for the full year **or** by term)
       - For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)
 
-Figure \@ref(fig:fig12-6) is an example of how you might provide this information to a data provider.
+Figure \@ref(fig:fig12-7) is an example of how you might provide this information to a data provider.
 
 <div class="figure" style="text-align: center">
 <img src="img/collect_request.PNG" alt="Example variable request for an external data provider" width="100%" />
-<p class="caption">(\#fig:fig12-6)Example variable request for an external data provider</p>
+<p class="caption">(\#fig:fig12-7)Example variable request for an external data provider</p>
 </div>
 
 2. Clarify the periods you are requesting data for
@@ -214,12 +224,14 @@ Figure \@ref(fig:fig12-6) is an example of how you might provide this informatio
       - Any data quality concerns about any of the variables
     - If you receive new exports each year, make sure to request documentation each year. It is possible that the way variables are collected or recorded change over time.
 
-Figure \@ref(fig:fig12-7) is an example of a document you can ask your data provider to complete.
+Figure \@ref(fig:fig12-8) is an example of a document you can ask your data provider to complete.
 
 <div class="figure" style="text-align: center">
 <img src="img/collect_document.PNG" alt="Sample documentation form for an external data provider to complete" width="80%" />
-<p class="caption">(\#fig:fig12-7)Sample documentation form for an external data provider to complete</p>
+<p class="caption">(\#fig:fig12-8)Sample documentation form for an external data provider to complete</p>
 </div>
+
+Once you begin receiving these files, it is important to review them before saving them and preparing for further data cleaning. Review files to ensure all participants are accounted for and all requested variables are accounted for. Also make sure you have all necessary information to correctly interpret the data (i.e., any required documentation). Last, just like you would during data collection, track the information received in your participant tracking database (i.e., track school record received for `stu_id` = 1234). This will also help you identify potential duplicates or missing data. If any errors are found, reach back out to your contact for help as needed.
 
 > **Note** <br> <br>
 When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) [@levesque_guide_2015]. These anomalies can happen due to human error or due to circumstances such as student mobility. While you may be able to work with your data provider to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).

@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 19 Example relative file path | Data Management in Large-Scale Education Research</title>
+<meta name="author" content="Crystal Lewis">
+<meta name="description" content="“raw/proja_stu_svy_raw.csv” - If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules  - No spaces in object names ...">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta property="og:title" content="Chapter 19 Example relative file path | Data Management in Large-Scale Education Research">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/book_featured.PNG">
+<meta property="og:description" content="“raw/proja_stu_svy_raw.csv” - If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules  - No spaces in object names ...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 19 Example relative file path | Data Management in Large-Scale Education Research">
+<meta name="twitter:description" content="“raw/proja_stu_svy_raw.csv” - If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules  - No spaces in object names ...">
+<meta name="twitter:image" content="/book_featured.PNG">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Data Management in Large-Scale Education Research</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
+<li><a class="" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
+<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
+<li><a class="" href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></li>
+<li><a class="" href="dmp.html"><span class="header-section-number">5</span> Data Management Plan</a></li>
+<li><a class="" href="plan.html"><span class="header-section-number">6</span> Planning Data Management</a></li>
+<li><a class="" href="roles.html"><span class="header-section-number">7</span> Project Roles and Responsibilities</a></li>
+<li><a class="" href="document.html"><span class="header-section-number">8</span> Documentation</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">9</span> Style guide</a></li>
+<li><a class="" href="associated-project.html"><span class="header-section-number">10</span> Associated project:</a></li>
+<li><a class="" href="script-purpose.html"><span class="header-section-number">11</span> Script purpose:</a></li>
+<li><a class="" href="data-cleaning-plan-followed.html"><span class="header-section-number">12</span> Data cleaning plan followed:</a></li>
+<li><a class="" href="created-by.html"><span class="header-section-number">13</span> Created by:</a></li>
+<li><a class="" href="date-created.html"><span class="header-section-number">14</span> Date created:</a></li>
+<li><a class="" href="code-checked-by.html"><span class="header-section-number">15</span> Code checked by:</a></li>
+<li><a class="" href="code-checked-date.html"><span class="header-section-number">16</span> Code checked date:</a></li>
+<li><a class="" href="settings-packages-root-paths.html"><span class="header-section-number">17</span> Settings, packages, root paths</a></li>
+<li><a class="" href="example-absolute-file-path.html"><span class="header-section-number">18</span> Example absolute file path</a></li>
+<li><a class="active" href="example-relative-file-path.html"><span class="header-section-number">19</span> Example relative file path</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">20</span> Data Sharing</a></li>
+<li><a class="" href="additional-considerations.html"><span class="header-section-number">21</span> Additional considerations</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">22</span> Glossary</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/Cghlewis/data-mgmt-ed-research-book">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="example-relative-file-path" class="section level1" number="19">
+<h1>
+<span class="header-section-number">19</span> Example relative file path<a class="anchor" aria-label="anchor" href="#example-relative-file-path"><i class="fas fa-link"></i></a>
+</h1>
+<p>“raw/proja_stu_svy_raw.csv”</p>
+<pre><code>- If you create objects in your program (like you do in R or Python), consider adding object naming rules similar to variable naming rules
+  - No spaces in object names
+  - No special characters except `_` to separate words
+  - No names that are existing program keywords (`if`, `for`, etc.)
+- Don't repeat yourself
+  - Reduce duplication, improve efficiency, and increase your ability to troubleshoot errors by following the DRY (don't repeat yourself) principle. Consider using functions, loops, or macros for repetitive code chunks.
+- Record session information for future users
+  - Information about software/package versions and operating systems used should be recorded in a text or log file to increase the reproducibility of your code. If users run into errors running your code, this information may help them troubleshoot.
+
+&lt;!--chapter:end:08-style-guide.Rmd--&gt;
+
+# Data Tracking {#track}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-1)Tracking in the research project life cycle&lt;/p&gt;
+&lt;/div&gt;
+
+During your project you will want to be able to answer both progress and summary questions about your recruitment and data collection activities.
+
+1. How many participants consented to be in our study? How many have we lost during our study and why?
+2. How much progress have we made in this cycle of data collection? How much data do we have left to collect?
+3. How many forms did we collect each cycle and why are we missing data for some forms?
+
+Questions like these will arise many times throughout your study for both your own project coordination purposes, as well as for external progress reporting and publication purposes. Yet, how will you answer these questions? Will you dig through papers, search through emails, and download in-progress data, each time you need to answer a question about the status of your project activities? A better solution is to track all project activities in a participant tracking database. 
+
+A participant tracking database is an essential component of both project management and data management. This database contains all study participants, their relevant study information, as well as tracking information about their completion of project milestones. This database has two underlying purposes.
+
+1. To serve as a roster of study participants and a "master key" [@pacific_university_oregon_data_2014] that houses both identifying participant information as well as assigned unique study identifiers. 
+2. To aid in project coordination and reporting, tracking the movement of participants as well as completion of milestones, throughout a study. 
+
+This database is considered your single source of truth (SSOT) concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection measure, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+I want to reiterate this single source of truth concept. Information is often coming in from multiple sources (e.g., data collectors in the field, emails to project coordinators from teachers, conversations with administrators). It is important to train your team that all relevant contact information that is gleaned (e.g., name change, new email, moved out of district) must be updated in the participant tracking database alone. If people track this information in other sources, such as their own personal spreadsheets, there is no longer a single source of truth, there are multiple sources of truth. This makes it very difficult to keep track of what is going on in a project. Whether a single person is designated to update information in this database, or multiple, make sure team members know either how to update information or who to contact to update information.
+
+## Benefits
+
+A thorough and complete participant database that is updated regularly is beneficial for the following reasons:
+
+1. Protecting participant confidentiality
+    - Assigning unique study identifiers (i.e., codes) that are only linked to a participant's true identity within this one database is necessary for maintaining participant confidentiality. This database is stored in a restricted secure location (see Chapter \@ref(store)), separate from where the identifiable and coded study datasets are stored, and is typically destroyed at a period of time after a project's completion.
+2. Project coordination and record keeping
+    - This database can be used as a customer relation management (CRM) tool, storing all participant contact information, as well as tracking correspondence. It can also be used as a project coordination tool, storing scheduling information that is useful for planning activities such as data collection.
+    - Integrating this database into your daily workflow allows your team to easily report the status of data collection activities (e.g., as of today we have completed 124 out of 150 assessments). Furthermore, checking and tracking incoming data daily, compared to after data collection is complete, reduces the likelihood of missing data.
+    - Last, thorough tracking allows you to explain missing data in reports and publications (e.g., teacher 1234 went on maternity leave).
+3. Sample rostering
+    - At any time you can pull a study roster from this database that accurately reflects a participant's current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your CONSORT diagram.
+4. Data cleaning
+    - As part of your data cleaning process, all raw dataset sample sizes should compared against what is reported as complete in your participant database to ensure that no participants are missing from your final datasets
+    - Furthermore, this database can be used for de-identifying data. If data is collected with identifiers such as name, a roster from the tracking database can be used to merge in unique study identifiers so that name can be removed. A similar process can be used to merge in other assigned variables contained in the database such as treatment or cohort.
+
+## Building your database
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/tracking_db4.PNG" alt="Example timeline for constructing and using a tracking database" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-2)Example timeline for constructing and using a tracking database&lt;/p&gt;
+&lt;/div&gt;
+
+While the tracking phase appears after collection in Figure \@ref(fig:fig10-1), it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs (see Figure \@ref(fig:fig10-2) for example of what this workflow may look like). Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
+
+While a project coordinator can build this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when creating this system. This ensures that your system is set up efficiently and comprehensively.
+
+This database may be a standalone structure, used only for tracking and anonymization purposes, or it may be integrated as part of your larger study system, where all study data is collected and/or entered as well.
+
+### Relational databases
+
+Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of relational databases. A relational database organizes information into tables, made up of records (rows) and fields (columns), and tables can be related through keys (see Section \@ref(structure-database)) [@bourgeois_information_2014; @chen_database_2022]. Using a relational database to track participant information, compared to disparate, non-connected spreadsheets, has many benefits including reducing data entry errors and improving efficiency. 
+
+There are three general steps for building a relational database. 
+
+1. Create tables made up of fields (i.e., variables)
+2. Choose one or more primary key fields to uniquely identify rows in those tables. These keys should not change at any point. Typically these keys are your assigned unique study IDs.
+3. Create relationships between tables through both primary and foreign keys
+
+We can also further refine our database through normalization, structuring our database according to normal form rules [@bourgeois_information_2014; @nguyen_relational_2017; @the_nobles_normalization_2020] to reduce redundancy and improve data integrity. Going in to more detail about normalization is outside of the scope of this book and building a database that follows all the normal form rules requires specific expertise, which most teams may not have. So with that said, it is completely acceptable to build a database that is not perfectly optimized but that works well for your team! The most important thing to consider when building a relational database is to not duplicate information across tables. Any one field should only need to be updated in one location, never more than one.
+
+Let's compare a very simple example of building a tracking database using a relational model and a non-relational model.
+
+
+#### Relational model
+
+In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/participant1v01.PNG" alt="Participant database built using a relational model" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-3)Participant database built using a relational model&lt;/p&gt;
+&lt;/div&gt;
+
+We can see here that across each table we have no duplicated information. The student table only contains student-level information, the teacher table only contains teacher-level information, and the school table only contains school-level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
+If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user. 
+
+Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables, seen in Table \@ref(tab:tab10-1).
+
+`SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade`    
+`FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
+`ORDER BY t_l_name, t_f_name, s_l_name, s_f_name`    
+
+
+Table: (\#tab:tab10-1)Example roster created by querying our relational database tables
+
+| t_l_name  | t_f_name  |  s_l_name  | s_f_name | grade |
+|:---------:|:---------:|:----------:|:--------:|:-----:|
+|  Hoover   | Elizabeth |  Simpson   |   Lisa   |   2   |
+|  Hoover   | Elizabeth |   Wiggum   |  Ralph   |   2   |
+| Krabappel |   Edna    |   Prince   |  Martin  |   4   |
+| Krabappel |   Edna    |  Simpson   |   Bart   |   4   |
+| Krabappel |   Edna    | Van Houten | Milhouse |   4   |
+
+Depending on the design of your study and the structure of the database model, writing these queries can become more complicated. Again, this is where you want to strike a balance between creating a structure that reduces inefficiencies in data entry but also isn't too complicated to query based on the expertise of your team.
+
+#### Non-relational model
+
+Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig10-4)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors [@borer_simple_2009].
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/participant2v02.PNG" alt="Participant database built in using a non-relational model" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-4)Participant database built in using a non-relational model&lt;/p&gt;
+&lt;/div&gt;
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If your study includes a variety of related entities, tracked over waves of time, a relational database will be very helpful to build. If however, you are only tracking one entity (e.g., just students) for one wave of data collection, then a database might be overkill and a simple spreadsheet will work just fine.
+
+### Structuring the database
+
+Before you can begin to construct your database, you will need to think through the following pieces of information.
+
+1. Do you want to use a relational table structure?
+2. How many tables do you want to construct?
+    - Consider entities (e.g., student, teacher, school)
+    - Consider purpose (e.g., enrollment info, wave 1 data collection tracking, wave 2 data collection tracking)
+3. What fields do you want to include in each table?
+4. If using a relational table structure, what fields will you use to relate tables?
+
+Once you make decisions regarding these questions, you can begin to design your database structure. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-5) I am designing a database structure for a scenario where I will be collecting information from teachers in schools, over two waves of data collection. 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/fig10-5.PNG" alt="Example participant database model" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-5)Example participant database model&lt;/p&gt;
+&lt;/div&gt;
+
+I have designed this database model in this way:
+
+1. I have four tables total
+    - Two tables (teacher info and school info tables) have information that should be fairly constant based on my project assumptions (name, email, consent, one time documents received)
+      - If at any time this information changes (e.g., withdraw status, new last name, new contact person), I would update that information in the appropriate table and make a note of when and why the change occurred in my `notes` field
+    - Two tables are for my longitudinal information
+      - This is where I will track my data collection activities each wave, as well as any information that may change each wave, again based on the assumptions of my project. For example, I may put grade level in my longitudinal tables if I collect data across years and assume it's possible that teachers may switch grade levels. 
+2. I have connected my tables through primary and foreign keys (`tch_id` and `sch_id`)
+
+The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-6)).
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/fig10-6.PNG" alt="Example participant database model" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-6)Example participant database model&lt;/p&gt;
+&lt;/div&gt;
+
+While these examples are for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project. 
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If your study involves anonymous data collection, you will no longer be able to track data associated with any specific individual. However, it is still helpful to create some form of a tracking system. Creating a simplified database, with tables based on your sites for instance (school table, district table) allows you to still track your project management and data collection efforts (e.g., number of student surveys received per school per wave, payment sent to school).
+
+### Choosing fields
+
+As you design your database model, you will also need to choose what fields to include in each table. The fields you choose to include will be dependent on your particular study design. While your participant tracking database may be the same database you enter all of your study data, for the purposes of this chapter we are only considering fields that are relevant for project coordination and participant de-identification. We are not concerned with fields that are collected as part of your data collection measures (i.e., survey items). You can consider your participant tracking database as an **internal** database that is only used for coordination, summary, and linking purposes. This is not a database where you would export data for external data sharing. 
+
+Below are ideas of field you may consider adding to your database. Depending on the design and assumptions of your study, some of these may be collected once, others may be collected more than once, longitudinally.
+
+**Ideas of fields to collect:**
+
+- Study IDs (primary and foreign keys for a relational database)
+- Names (participants and sites)
+- Contact information
+- Information relevant to project coordination (grade level, class periods, block schedules)
+- Other necessary linking identifiers (double IDs, district/school IDs)
+- Information helpful for data collection scheduling (blocks, class times)
+- Consent/assent status
+- Inclusion/exclusion criteria status
+- Enrollment status
+- Randomization (treatment/control)
+- Grouping information (cohort)
+- Summary information not already accounted (# of consents sent out, # of students in class, # of teachers in school)
+- Administrative data status (W-9 received, MOUs received)
+- Movement/withdraw status
+- Data collection status (unique fields for each instrument)
+- Incentive status (gift cards sent out)
+- Notes
+  - Reasons for changes (for example changes in name, email)
+  - Reasons for movement/withdraw
+  - Communication with participants
+  - Reasons for missing data
+  - Errors in data
+
+#### Structuring fields
+
+As you choose your fields you also need to make some decisions about how you will structure those fields.
+
+1. Set data types for your fields (e.g., character, integer, date)
+    - Restrict entry values to only allowable data types to reduce errors
+2. Set allowable values and ranges
+    - For example, a categorical status field may only allow "complete", "partially complete" or "incomplete"
+3. Do not lump separate pieces of information together in a field
+    - For example separate out `first name` and `last name` into two fields
+4. Name your fields according to the variable naming rules we discussed in Chapter \@ref(style)
+
+### Choosing a tool
+
+There are many criteria to consider when choosing a tool to build your database in.
+
+- Choose a tool that is customizable to your needs
+  - Can you build a relational table structure?
+  - Can you export files? Can you connect to the database via application programming interfaces (APIs)?
+  - Can you query data?
+- Choose a tool that is user-friendly
+  - You don't want a tool with a steep learning curve for users
+- If you are running a project across multiple sites, consider the accessibility of the tool
+  - For example, you may want a tool that is cloud-based so that all site coordinators can access it
+  - You may also want to make sure multiple users can access it at the same time
+- Choose a tool that is interoperable
+  - For instance, some tools may have difficulties running on certain operating systems
+- Consider cost and licensing
+  - There are many free tools, but they may not provide all of the functionality you want
+  - What products do you already have access to (i.e., your institution has a license for)?
+- Consider security
+  - Which tools are approved by your institution to protect the sensitivity level of this data (See Chapter \@ref(hsd))?
+  - Can you limit access to the entire database? To specific tables?
+    - If multiple people are entering data, you may want to restrict access/editing capabilities for some tables
+  - Protect data loss
+    - Can you backup the system?
+    - Can you protect against overwriting data?
+    - Can you keep versions of the database in case a mistake is ever made and you need to go back to an older version?
+- Data quality protection
+  - Can you set up data quality constraints (e.g., restrict input values/types)? 
+  
+There are many tool options you can choose from. A sampling of those options are below. These tools represent a wide range from the criteria above. Take some time to review your options to see which one best meets your needs.
+
+  - Microsoft Access
+  - Microsoft Excel
+  - Quickbase
+  - Airtable
+  - REDCap
+  - Claris FileMaker
+  - Google Sheets and Google Forms
+  - Forms that feed into a relational database, maintained using a SQL (structured query language) database engine such as SQLite, MySQL, or PostgreSQL
+
+
+## Entering data {#track-enter}
+
+Your last consideration when building your database will be, how do you want your team to enter data into your database? There are many ways to enter data including manually entering data, importing data, integrating your data collection platform and your tracking database, or even scanning forms using QR codes. While some of those options may work great for your project, here we are going to talk about the two simplest and most common options: manually entering data into a spreadsheet view, and manually entering data into a form.
+
+### Entering data in a spreadsheet view
+
+Your first option is to manually enter data in a spreadsheet format for each participant in a row. This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access.  There are both pros and cons to this method.
+
+- Pros: This is the quickest and easiest method. It also allows you to view all the data holistically.
+- Cons: This method can lead to errors if someone enters data on the wrong row/record.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-7)Example spreadsheet view data entry&lt;/p&gt;
+&lt;/div&gt;
+
+### Entering data in a form
+
+Your second option is to create a form that is linked to your tables. As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, FileMaker, REDCap, and even Google Forms which populates into Google Sheets.
+
+- Pros: This method reduces data entry errors as you are only working on one participant form at a time
+- Cons: Takes some time, and possibly expertise, to set up the data entry forms
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/form-view-new.PNG" alt="Example form view data entry" width="70%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-8)Example form view data entry&lt;/p&gt;
+&lt;/div&gt;
+
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If your participant tracking database is separate from your data collection tools, all information will need to be entered by your team using one of the ways mentioned in Section \@ref(track-enter). However, if your participant tracking tool is also your data collection/data capture tool (such as those who collect data using REDCap), fields such as data collection status (e.g., survey completed) may not need to be manually entered. Rather they may be automated to populate as "complete" once a participant submits their responses in the data collection tool.
+
+## Creating unique identifiers {#track-ids}
+
+One of the most important parts of keeping this participant tracking database is assigning unique participant identifiers. As soon as participants are entered into your database, a unique study ID should be assigned. If confidentiality was promised to schools or districts, you will also want to assign identifiers to sites as well. Assigning these identifiers is an important part of protecting the privacy of human participants. When publicly sharing your study data, all personally identifying information will be removed and these identifiers (i.e., codes), are what will allow you to uniquely identify and link participants in your data. 
+
+Participant unique identifiers are numeric or alphanumeric values and typically range from 2-10 digits. While there are several ways participant identifiers can be assigned (e.g., created by participants themselves, assigned by your data collection software), most commonly, the research team assigns these identifiers to participants. 
+
+Before assigning identifiers, it can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Section \@ref(document-sop)). In developing that schema, there are several best practices to consider.
+
+1. Participants must keep this same identifier for the entire project.
+    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure \@ref(fig:fig10-10)). The participant still keeps the same ID throughout the study. In these cases, you will use a combination of variables to identify the unique instances of that participant (e.g., `stu_id` and `cohort`).
+    - Having a static participant ID allows you to track the flow of each participant through your study and provides the added benefit of helping to measure dosage.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-10)Example of keeping participant IDs for the entire study&lt;/p&gt;
+&lt;/div&gt;
+
+2. Participant identifiers must be unique within and across entities
+    - For example, no duplicating IDs within students or across teachers and schools
+    - Not duplicating within entities is imperative to maintain uniqueness of records, while not duplicating across reduces confusion about who a form belongs to and reduces potential errors
+3. The identifier should be randomly assigned and be completely distinct from any personal information to protect confidentiality.
+    - Do not sort by identifying information (e.g., names, date of birth) and then assign IDs in sequential order
+    - Do not group by identifying information (e.g., grade level, teacher) and then assign IDs in sequential order
+    - Do not include identifying information (e.g., initials) as part of an identifier
+4. Do not embed project information into the ID that has the potential to change
+    - Some researchers prefer to embed a project-level ID or acronym into a participant ID to help with tracking of information, especially when running multiple studies using identical forms across studies. This is absolutely okay because it is assumed this information never changes. 
+    - However, embedding information such as wave or session into an identifier variable guarantees that your identifiers will not remain constant. This information should be added to your dataset in other ways (i.e., either as as its own variable or concatenated to variable names)
+    - Embedding information such as teacher IDs, school IDs, treatment, or cohort also has the potential to cause problems. In longitudinal studies, depending on the study design, it is possible that students move to other study teachers, teachers move to other study schools, or participants get re-recruited into other cohorts. Any of these issues would cause problems if this information was embedded into an ID because the ID would no longer reflect accurate information and would require IDs to be changed, breaking best practice #1. Again, these additional identifiers can be tracked as separate variables (e.g., `stu_id`, `tch_id`, `sch_id`, `cohort`, `treatment`, `wave`) and added to forms and datasets as needed
+5. Last, while less important during the data tracking phase, in your study datasets these identifiers should be stored as character variables. Even if an ID variable is all numbers, it should be stored as character type. This helps prevent people from inappropriately working with these values (i.e., taking a mean of an ID variable).
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/id_schema.PNG" alt="Example of a study id schema created using best practices" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig10-9)Example of a study id schema created using best practices&lt;/p&gt;
+&lt;/div&gt;
+
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.
+
+
+&lt;!--chapter:end:09-data-tracking.Rmd--&gt;
+
+# Data Collection {#collect}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/lifecycle_track.PNG" alt="Data collection in the research project life cycle" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-1)Data collection in the research project life cycle&lt;/p&gt;
+&lt;/div&gt;
+
+When collecting original data as part of your study (i.e., you are administering your own survey or assessment as opposed to using an externally collected data source), data management best practices should be interwoven throughout your data collection process. The number one way to ensure the integrity of your data is to spend time planning your data collection efforts. Not only does planning minimize errors, it also keeps your data secure, valid, and relieves future data cleaning headaches. 
+
+If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig11-2), but instead you export data that looks like the image on the right, then you know what I mean. Collecting quality data doesn't just happen because you create an instrument, it takes careful consideration, structure, and care on the part of the entire team.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/bad_data_collect.PNG" alt="A comparison of data collected without planning and data collected with planning" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-2)A comparison of data collected without planning and data collected with planning&lt;/p&gt;
+&lt;/div&gt;
+
+
+## Quality assurance and control
+
+When planning your data collection efforts, first pull out your data sources catalog (see Section \@ref(document-catalog)). This document will be a guide during your data collection planning period. Recall that every row in that document is an original instrument to be collected for your study. Some of your data sources may also include external datasets, which we will discuss in Chapter \@ref(capture).
+
+In addition to planning data collection logistics for your original data sources (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. As shown in Figure \@ref(fig:fig11-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
+
+1. Quality assurance practices that happen before data is collected
+    - Best practices associated with designing and building your data collection instruments
+2. Quality control practices implemented during data collection 
+    - Best practices associated with managing and reviewing data during collection
+
+## Quality assurance {#collect-assurance}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/data_collected7.PNG" alt="Common education research data collection methods" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-3)Common education research data collection methods&lt;/p&gt;
+&lt;/div&gt;
+
+Education researchers collect original data in many ways (see Figure \@ref(fig:fig11-3)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (i.e., think questionnaires, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
+
+The focus on forms is not to discount the importance of data collected through other means such as video or audio recording, where issues such as participant privacy and data security and integrity should absolutely also be considered. However, even with those types of data collection efforts, often teams are ultimately still coding that data using some sort of form (e.g., observation form), further supporting the need to build forms that collect quality data.
+
+When collecting information using forms you can certainly do your best to fix data errors after data collection during a cleaning process. However, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and building data collection tools in a way that produces valid, reliable, and more secure data. When creating your original data collection instruments, there are five ways to collect higher quality data.
+
+1. Using good questionnaire design principles
+2. Implementing a series of pilot test
+3. Choosing data collection tools that meet your needs
+4. Building your instrument with the end in mind
+5. Ensure compliance
+
+We will discuss each of these phases below. 
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If you are collecting data using a standardized assessment, along with a provided instrument (e.g., a computer-adaptive testing program), most of the information in this section will not be applicable. In those situations, it is best to adhere to all guidelines provided by the assessment company.
+
+### Questionnaire design {#collect-design}
+
+In Chapter 8 we discussed the importance of documenting all instrument items in your data dictionary before creating your data collection instruments. As you develop items to add to each data dictionary for each original data source, it is vital to consider questionnaire design.
+
+While some instruments (e.g., cognitive assessments) typically have standardized items, other instruments, such as surveys, are often not predefined, allowing researchers freedom in the design of the instrument which can lead to negative effects such as errors, bias, and potential harm [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. Question ordering, response option ordering, question wording, and more can all impact participant responses. While questionnaire design is actually outside of the scope of this book, I have a few tips to help you collect more valid, reliable, and ethical survey data. In addition to following these tips, make sure to consult a methodologist when designing your questionnaire.
+
+1. Use existing standards if possible
+    - Organizations such as the @national_institutes_of_health_common_2023 and the @national_center_for_education_statistics_common_2023 have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
+        - Reduces bias
+        - Allows for harmonization of data across your own research studies and also across the field
+            - This allows researchers to draw conclusions using larger samples or by comparing data over time
+            - It also reduces the costs of integrating datasets
+        - Improves interpretation of information
+2. Make sure questions are clearly worded and answer choices are clear and comprehensive
+    - Consider how the language might be interpreted. Is the question wording confusing? Can the response options be misinterpreted?
+        - Rather than asking "What county are you from?" when looking for the participant's current location, be more specific and ask "What county do you currently reside in?"
+        - Rather than asking "Which parent are you?" and providing the response options "m" and "f", where "m" and "f" could be interpreted as "male" or "female", clearly write out the response options and make sure they are comprehensive (mother, father, legal guardian, and so forth)
+        - Rather than asking "Do your children not have siblings?" which can be confusing, remove the negative and ask "Do your children have siblings?" [@reynolds_basics_2022]
+      - Is the question leading/biased?
+        - Are the response options ordered in a leading way?
+      - Is there no one way to answer this question?
+        - Are response categories mutually exclusive and exhaustive [@icpsr_guide_2020]?
+3. Consider data ethics in your questionnaire design [@gaddy_principles_2020; @kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_2023; @narvaiz_data_2023]
+    - Consider the why of each item and tie your questions to outcomes
+        - Don't cause undue burden on participants by collecting more data just to have more data
+        - If collecting demographic information, provide an explanation of why that information is necessary and how it will be used in your research
+    - Review question wording
+      - Does it have potential to do harm to participants? Do the benefits outweigh the risks?
+      - If sensitive questions are included, make sure to discuss how you will protect respondent's information
+    -  Make questions inclusive of the population while also capturing the categories relevant for research
+        - If a question is multiple choice, still include an "other" option with an open-text field
+        - For demographic information, allow participants to select more than one option
+      - Consider including one general free-text field in your survey to allow participants to provide additional information that they feel was not captured elsewhere
+4. Limit the collection of personally identifiable information (PII)
+    - Collecting identifiable information is a balancing act between protecting participant confidentiality and collecting the information necessary to implement a study. We often need to collect some identifying information either for the purposes of record linking or for purposes related to study outcomes (e.g., scoring an assessment based on participant's age). 
+    - As a general rule, you only want to collect PII that is absolutely necessary for your project, and no more [@gaddy_principles_2020]. As discussed in Chapter \@ref(hsd), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., date of birth). Before sharing your data, all PII will need to be removed or altered to protect confidentiality.
+
+**Survey Design Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Sarah Kopper, Katie Parry|Survey design ^[https://www.povertyactionlab.org/resource/survey-design]|
+|Pew Research Center|Writing survey questions ^[https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/]|
+|Stefanie Stantcheva| How to run surveys: A guide to creating your own identifying variation and revealing the invisible ^[https://www.nber.org/system/files/working_papers/w30527/w30527.pdf]|
+|World Bank|Survey content-focused pilot checklist ^[https://dimewiki.worldbank.org/Checklist:_Content-focused_Pilot]|
+
+### Pilot the instrument
+
+Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig11-5)):
+
+1. Gathering internal feedback on items
+    - As discussed in Section \@ref(document-dictionary), once all items for each instrument have been added to your data dictionary, have your data management working group (see Chapter \@ref(plan)) review the data dictionary and provide feedback
+2. Piloting an instrument for content
+    - Once your DMWG has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population and gather feedback. Consult with your IRB to determine if approval is required before piloting your instrument with your study population.
+3. Piloting the instrument for data related issues
+    - Once the instrument is created in your chosen data collection tool, share the instrument with your team for review. Here we are most interested in whether or not the data we are collecting are accurate, comprehensive, and usable. We will discuss this phase in greater detail in Section \@ref(collect-build).
+
+Last, as you move through the piloting phases, remember to make updates not only in your tool but also in your data dictionary and any other relevant documentation (e.g., data cleaning plan). 
+      
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/pilot2.PNG" alt="Data collection instrument pilot phases" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-4)Data collection instrument pilot phases&lt;/p&gt;
+&lt;/div&gt;
+
+
+### Choose quality data collection tools {#collect-tools}
+
+Once content piloting is completed, teams should be ready to begin building their instruments in their data collection tools (see Figure \@ref(fig:fig11-3)). Research teams may be restricted in the tools they use to collect their data for a variety of reasons including limited resources, research design, the population being studied, sensitivity levels of data, or the chosen instrument (e.g., an existing assessment can only be collected using a provided tool). However, if you have the flexibility to choose how you collect your data, pick a tool that meets the various needs of your project while also providing data quality and security controls. Things to consider when choosing a data collection tool are:
+
+1. Pick the tool that meets the needs of your project
+    - Is crowdsourcing required? 
+    - Is multi-site access required?
+    - Who is entering the data (i.e., data collectors, participants)?
+      - If participants are entering data, is the tool accessible for your population?
+    - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
+    - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, an alert system for ecological momentary assessments, options to embed data, options to calculate scores in the tool)?
+1. Compliance and security
+    - Consider the classification level of each data source (See Chapter \@ref(hsd))
+      - Which tools are approved by your institution to protect the sensitivity level of your data?
+    - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
+1. Training needed
+    - Is any additional team training needed to allow your team to use and/or build instruments in the tool?
+1. Associated costs
+    - Is there a cost associated with the tool? Do you have the budget for the tool?
+    - Will there be additional costs down the line (e.g., collecting data on paper means someone will need to hand enter the data later)?
+1. Data quality features
+    - Does the tool allow you to set up data validation?
+    - Does the tool have version control?
+    - Does the tool have features to deal with fraud/bots?
+
+While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_2020;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_2023].
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/collect_benefits2.PNG" alt="Comparison of data collection tool benefits" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-5)Comparison of data collection tool benefits&lt;/p&gt;
+&lt;/div&gt;
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If you choose to collect data in an electronic format, I highly recommend using a web-based tool that directly feeds into a shared database rather than through offline tools that store data on individual devices. Using a web-based tool, all data is stored remotely in the same database and can be easily downloaded or connected to at any time. No additional work is required. &lt;br&gt; &lt;br&gt;
+However, when collecting data on various tablets in the field, if the forms are offline and cannot be later connected to a web-based form, then all data will be stored individually on each tablet. This not only may be less secure (e.g., a tablet becomes corrupted), it may also require additional data wrangling work including downloading data from each tablet to a secure storage location each day and then combining all files into a single dataset. If you use an electronic tool but your site does not have internet, consider using one of the many tools (e.g., Qualtrics, SurveyCTO) that allow you to collect data using their offline app and then upload that data back to the platform once you have an internet connection again.
+
+**Tool Comparison Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Michael Gibson, Wim Louw|Survey platform comparison^[https://www.povertyactionlab.org/resource/survey-programming]|
+|Washington State University Libraries|Software for sensitive data^[https://libguides.libraries.wsu.edu/rdmlibguide/ethics]|
+|Benjamin Douglas, et al. | Data quality in online human-subjects research comparison of tools^[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0279720]|
+
+
+### Build with the end in mind {#collect-build}
+
+Last, you want to build your tool with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_research_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. 
+
+The process for building your tools with the end in mind is fairly different for electronic tools compared to paper forms so we are going to talk about these two processes separately.
+
+#### Electronic data collection {#collect-electronic}
+
+The first thing you will want to do before building your tool is bring out your data dictionary. This data dictionary will be your guide as you build your instrument. Some tools, such as REDCap, provide the option to upload your data dictionary which can then be used to automate the creation of data collection forms as opposed to building them from scratch [@patridge_research_2018].
+
+However, if you are building your instrument manually, adhering to the following guidelines will ensure you collect data that is easier to interpret and more usable, and it will also reduce the amount of time you will need to spend on future data cleaning [@lewis_how_2022].
+
+1. Include all items from your data dictionary
+    - This includes all substantive questions, as well as items that are necessary for linking purposes (e.g., participant identifiers, rater ids for inter-rater reliability)
+    - This does not include any variables from your data dictionary that will be derived (e.g., sum scores) or any grouping variables that will be added in during the data cleaning phase (e.g., treatment, cohort)
+1. Name all of your items the correct variable name from your data dictionary [@uk_data_service_research_2023]
+    - For example, instead of using the platform default name of `Q2`, rename the item to `tch_years`
+    - As mentioned in Section \@ref(style-varname), it's also best to not concatenate a time component to your variable names if your project is longitudinal. Doing so makes it difficult to reuse your instrument for other time periods, creating additional work for you or your team.
+1. Code all values as they are in your data dictionary
+    - For example, "strongly agree" = 1, "agree" = 2, "disagree" = 3, "strongly disagree" = 4
+    - Many times tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary
+    - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options
+1. Use data validation to reduce errors and missing data [@uk_data_service_research_2023]
+    - Content validation for open-text boxes
+      - Restrict entry to the type assigned in your data dictionary (e.g., numeric)
+      - Restrict entry to the format assigned in your data dictionary (e.g., *YYYY-MM-DD*)
+      - Restrict ranges based on allowable ranges in your data dictionary (e.g., *1-50*)
+          - This could even include validating against previous responses (e.g., if "SchoolA" was selected in a previous question, grade level should be between *6-8*, if "SchoolB" was selected, grade level should be between *7-8*)
+    - Response validation
+      - Consider the use of forced-response and request-response options to reduce missing data
+        - Forced-response options do not allow participants to move forward without completing an item. Request-response options notify a respondent if they skip a question and ask if they still would like to move forward without responding
+        -  Be aware that adding a forced-response option to sensitive questions has the potential to be harmful and produce bad data. If adding a forced-response option to a sensitive question, consider allowing those participants to opt-out in another way (e.g., "Prefer not to answer"). 
+1. Choose an appropriate type and format to display the item
+    - Become familiar with the various questions types available in your tool (e.g., rank order, multiple choice, text box, slider scale)
+    - Become familiar with the various formats (e.g., radio button, drop-down, checkbox)
+    - For example, if your item is a rank order question (ranking 3 items), creating this question as a multi-line, free-text entry form may lead to duplicate entries (such as entering a rank of 1 more than once). However, using something like a rank order question type with a drag and drop format ensures that participants are not allowed to duplicate rankings.
+1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023]
+    - For example, list school name as a drop-down item rather than having participants enter a school name
+      - This prevents variation in text entry (e.g., "Sunvalley Middle", "sunvalley", "Snvally Middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values
+1. If there is an infinite number of response options for an item or the number of options is large, use an open-text box
+    - If you can create a searchable field in your tool, allowing your participants to easily sift through all of the options, you absolutely should. Otherwise, use a text-box as opposed to having participants scroll through a large list of options
+    - Consider adding examples of possible response options to clarify what you are looking for
+    - Using open-ended text boxes does not mean you cannot regroup this information into categories later during a cleaning process. It is just more time-consuming and requires interpretation and decision-making on the part of the data cleaner
+1. Only ask for one piece of information per question 
+    - For example, rather than asking "Please list the number of students in your algebra class and geometry class", split those into two separate questions so those questions download as two separate items in your dataset
+    - This also includes more simple examples such as splitting first name and last name into two separate fields
+    - This prevents confusion in case a participant or data collector swaps the order of information
+1. To protect participant privacy and ensure the integrity of data, consider adding a line to the introduction of your web-based instrument, instructing participants to close their browser upon completion so that others may not access their responses
+1. Last, if possible, export the instrument to a human-readable document to perform final checks
+    - Are all questions accounted for?
+    - Are all response options accounted for and coded as they should be?
+    - Is skip logic shown as expected?
+
+Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig11-5)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actively try to break things [@kopper_questionnaire_2020]. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If there are problems with the tool, now is the time to find out. 
+
+After sample responses are collected from team members, export the sample data using your chosen data capture process (see Chapter \@ref(capture)) and review the data for the following:
+
+1. Are there any unexpected or missing variables?
+2. Are there any unexpected variable names?
+3. Are there unexpected values for variables?
+4. Are there missing values where you expect data?
+5. Are there unexpected variable formats?
+6. Is data exporting in an analyzable, rectangular format?
+
+If any issues are found either through team feedback or while reviewing the exported sample data, take time to update the tool as well as your documentation as needed before starting data collection.
+
+Last, this is also the time to update your data dictionary. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data you learn that a "select all" question differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary. This is also a great time to update your data cleaning plan with any new transformations that will be required. 
+
+#### Paper data collection {#collect-paper}
+
+There are many situations where collecting data electronically may not be feasible or the best option for your project. While it is definitely trickier to design a paper tool in a way that prevents bad data, there are still steps you can take to improve data quality.
+
+1. Use your data dictionary as a guide as you create your paper form
+    - Make sure all questions are included and all response options are accurately added to the form
+2. Have clear instructions for how to complete the paper form [@kopper_survey_2021]
+   - Make sure to not only have overall instructions at the top of the form but also have explicit instructions for how each question should be completed
+      - Where to write answers (e.g., not in the margin)
+      - How answers should be recorded (e.g., *YYYY-MM-DD*, 3 digit number)
+      - How many answers should be recorded (e.g., circle only one answer, check all applicable boxes)
+      - How to navigate branching logic (e.g., include visual arrows)
+3. Only ask for one piece of information per question to reduce confusion in interpretation
+
+Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig11-4)). Using the feedback collected, edit your tool as needed before sending it out into the field.
+
+Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(#capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig11-6)) [@hart_florida_2018].
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/annotated_instrument.PNG" alt="Annotated instrument from The Florida State Twin Registry project" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-6)Annotated instrument from The Florida State Twin Registry project&lt;/p&gt;
+&lt;/div&gt;
+
+#### Identifiers
+
+When building data collection tools, no matter if they are paper or electronic, it is vitally important to make sure you are collecting unique identifiers [@kopper_survey_2021]. Whether you have participants enter a unique identifier into a form or you link study ID to each form in some other way, it's important to not accidentally collect anonymous data. Without unique identifiers in your data, you will be unable to link data across time and forms. If possible, you want to avoid collecting names as unique identifiers for the following reasons [@mckenzie_falsehoods_2010]:
+
+- To protect confidentiality we want to use names as little as possible on forms
+  - If they are used on forms, we want to remove them as soon as possible
+- Names are not unique
+  - If you do collect names, you'll want to ask for additional identifying information that when combined, make a participant unique (e.g., student name and email)
+- Names change (e.g., someone gets married/divorced)
+- There is too much room for error
+  - If names are hand entered, there are endless issues with case sensitivity, spelling errors, special characters, spacing, and so forth
+
+All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers (see Section \@ref(clean-check) for more information about this process).
+
+Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of the issues above [@dime_analytics_data_2021; @gibson_survey_2020]. We will discuss these methods separately for electronic data and paper data.
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If your study is designed to collect anonymous data, then you will not assign study identifiers and no participant identifying information should be collected in your instruments (e.g., name, email, date of birth). You will also want to make sure that if your tool collects identifying metadata such as IP Address or worker IDs in the case of crowdsourcing tools (e.g., MTurk), this information will not be included in your downloaded data. &lt;br&gt;&lt;br&gt;
+Remember that if you collect anonymous data, you will not be able to link data across measures or across time. However, if your study randomizes participants by an entity (e.g., school or district), you will need to collect identifying information from that entity in order to cluster on that information (e.g., school name).
+
+##### Electronic Data
+
+There are many ways you might consider collecting unique identifiers other than names. A few possible options are provided below. The method you choose will depend on your data collection design, your participant population, your tool capabilities, and your team expertise.
+
+1. Create unique links for participants
+    - Many tools will allow you to preload a contact list of participants (from your participant database) that includes both their names and study IDs. Using this list, the tool can create unique links for each participant. This is the most error-proof way to ensure study IDs are entered correctly. 
+    - When you export your data, the correct ID is already linked to each participant and you can choose to not export identifying information (e.g., names, emails) in the data. 
+    - If using this method, make sure to build a data check into the system. For example, when a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?". In order to protect participant identities, do not share full names. 
+      - If they say yes, they move forward. If they say no, the system redirects them to someone to contact. This ensures that participants are not completing someone else’s survey and IDs are connected to the correct participant.
+2. Provide one link to all participants and separately, in an email, in person, or by mail, provide participants with their study ID to enter into the system. 
+    - This might be a preferred method if you are collecting data in a computer lab or on tablets at a school site, or if your tool does not have the option to create unique links
+    - This can possibly introduce error if a participant enters their study ID incorrectly. 
+      - Similar to the first option, after a participant enters their ID, verify their identity
+    - Note that participants are only becoming aware of their own study identifier, not the identifiers associated with other participants. However, if your team, or your IRB, is uncomfortable with participants knowing their study IDs you can also consider using a "double ID" which is yet another set of unchanging unique identifiers that you use for the sole purpose of data collection. Those identifiers will need to be tracked in your participant tracking database and will need to be replaced with study IDs in the clean data
+3. If you have not previously assigned study identifiers (i.e., your consent and assent process is a part of your instrument), you can have participants enter their identifying information (e.g., name) and then have the tool assign a unique identifier to the participants
+    - Using this method, you can potentially download two separate files
+      - One with just the instrument data and assigned study ID, with name removed
+      - One with just identifying information and assigned study ID (this information will be added to your participant tracking database)
+    
+##### Paper Data
+
+If you take paper forms into the field consider doing the following to connect your data to a participant [@otoole_data_2018; @reynolds_basics_2022].
+
+- Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then use either a removable label with participant name and other relevant information and place that over the ID or attach a cover sheet with this information. When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
+  - It is this ID only that you will enter into your data entry form during the data capture process, no name.
+  - Removing the label/cover sheet also ensures that your data entry team only sees the study ID when they enter data, increasing privacy by minimizing the number of people who see see participant names.
+  - It is important to double and triple check study identifiers against your participant database to make sure the information is correct before removing the label or cover sheet
+  - Make a plan for the labels/cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/cover_sheet2.PNG" alt="Example cover sheet for a paper data collection instrument" width="90%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-7)Example cover sheet for a paper data collection instrument&lt;/p&gt;
+&lt;/div&gt;
+
+### Ensure compliance {#collect-irb}
+
+If you are collecting human subjects data and your study is considered research (see Chapter \@ref(glossary) for definitions of these terms), it is important to consult with your applicable institutional review board (IRB) about their specific requirements before moving forward with any data collection efforts. As discussed in Chapter \@ref(hsd), an IRB is a committee that assesses the ethics and safety of research studies involving human subjects. If an IRB application is required for your project, the review process can take several weeks and it is common for the IRB to request revisions to submission materials. Make sure to review your timeline and give yourself plenty of time to work through this process before you need to begin recruitment and data collection. 
+
+Informed consent agreements, and assents for participants under the age of 18, are commonly required by IRBs for research studies that collect human subjects data. As discussed in Chapter \@ref(hsd), these agreements ensure that participants fully understand what is being asked of them and voluntarily agree to participate in your study. There are several categories of information that will be required for you to include in your consent form (e.g., description of study, types of data being collected, risks and benefits to participant, how participant privacy will be maintained) [@the_turing_way_community_turing_2022]. Make sure to consult with your applicable IRB about what should be included. However, with an increase in federal data sharing requirements, it is very important at this time to also consider how you want to gain consent for public data sharing [@levenstein_data_2018]. There are two risks posed by data sharing and it is important to address both in your consent---loss of privacy and using data for purposes participants did not agree to. @meyer_practical_2018 provides some general best practices to consider when adding language about public data sharing to a consent form.
+
+- Don’t promise to destroy your data (unless your funder/IRB explicitly requires it)
+  - Do incorporate data retention and sharing plans including letting participants know who will have access to their data
+- Don’t promise to not share data
+  - Do get consent to retain and share data (consider adding the specific repository you plan to share your data in) 
+  - Consider offering tiered levels of consent for participants who may not want all of their data publicly shared but will allow some
+- Don’t promise that research analyses of the collected data will be limited to certain topics
+  - Do say that data may be used for future research and share general purposes (e.g., replication, new analyses)
+- Do review the ways you plan to de-identify data but be thoughtful when considering risks of re-identification (e.g., small sample size for sub-groups)
+
+There are essentially three different ways you can go about obtaining consent for data sharing [@gilmore_practical_2018]. 
+
+1. Include a line about public data sharing in your consent to participate to research.
+    - With this method, a participant who consents is agreeing to both participate in the research study and have their data shared publicly.
+2. Have participants consent to data sharing at the same time that you provide the research study consent, but provide a separate consent form for the purposes of public data sharing.
+3. Have participants consent to data sharing on a separate consent form, at a later time, after research activities are completed. 
+    - Obtaining consent this way ensures the participants are fully aware of the data collected from them and can make an informed decision about the future of that data. 
+    
+Consult with your IRB to determine the preferred method for obtaining consent for public data sharing. If you use method 2 or 3, it is very important that you not only track your participant study consent status in your tracking database (as discussed in Chapter \@ref(track)), but that you also add a field to track the consent status for data sharing so that you only publicly share data for those that have given you permission to do so. You will also want to consider who is included in your final analysis sample. If including all consented participants in your analysis, your publicly available dataset will not match your analysis sample if some people did not consent to data sharing. You may need to consider options such as using a controlled-access repository to share the full sample for purposes of replication. We will discuss different methods of data sharing in Chapter \@ref(share).
+
+**Templates and Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Anja Sautmann| Annotated informed consent checklist ^[https://www.povertyactionlab.org/sites/default/files/research-resources/rr_irb_annotated-informed-consent-checklist_0.pdf]|
+|Holly Lane, Wilhemina van Dijk|Example parent consent ^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
+|ICPSR | Recommended Informed Consent Language for Data Sharing ^[https://www.icpsr.umich.edu/web/pages/datamanagement/confidentiality/conf-language.html]|
+|Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet ^[https://osf.io/3czbx]
+|Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing ^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
+|Melissa Kline Struhl|Lookit consent form template 5^[https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20consent%20form%20template%205.md]|
+|University of Virginia| A collection of consent and assent templates ^[https://research.virginia.edu/irb-sbs/consent-templates]|
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+The security of consent and assent forms should be a top priority to your team. Not only does it contain identifiable particiant information, but without this form, you no longer have consent to collect a participant's data. Whether you collect consent on paper or electronically, make sure you have a clear plan that includes:  
+- Using institution and IRB approved tools to collect consent  
+- If collecting paper consent, being able to clearly read a participant's name and other relevant information collected (e.g., participant printed name or signature alone may not be sufficient due to duplicate names, nicknames used, or illegible handwriting). One option is to pre-print names and other relevant information on forms or have school staff write participant names on forms before handing them out.  
+- Capturing consent forms and storing them securely and consistently. If forms are collected in the field, make sure they are promptly returned to the office and stored securely.  
+
+## Quality control
+
+In addition to implementing quality assurance measures during your planning phases, it is equally important to implement several quality control measures while data collection is underway. Those measures include:
+
+1. Field data management
+2. Ongoing data checks
+3. Tracking data collection daily
+4. Collecting data consistently
+
+We will discuss each of these measures in this section.
+
+### Field data management {#collect-field}
+
+If your data collection efforts include field data collection (e.g., data collectors administering assessments in a school), there are several steps your team can implement that will keep your data more secure in the field, help a project coordinator keep better track of what happens in the field, and will lead to more accurate and usable data. Some best practices for field data collection include the following [@dime_analytics_data_2021]:
+
+- Keep your data secure in the field
+  - Make sure all paper forms are kept in a folder (or even a lock box) with you at all times and that they are promptly returned to the office (e.g., not left in a car, not left at someone's home)
+  - Make sure all electronic data collection devices (e.g., phones, tablets) are password protected and never left open and unattended. Keep all identifiable information encrypted on your field devices (i.e., data is encoded so that only those with a password can decipher it). You may also consider remote wiping capabilities on portable devices in the case of loss or theft [@otoole_data_2018]
+- Create tracking sheets to use in the field
+  - These sheets should include the names and/or identifiers of every participant who data collectors will be collecting data from
+  - Next to each participant, include any other relevant information to track such as 
+    - Was the data collected (i.e., a check box)
+    - Who collected the data (i.e., data collector initials or ID)
+    - Date the data was collected
+    - As well as a notes section to describe any potential issues with the data (e.g., "Student had to leave the classroom halfway through the assessment - only partially completed")
+  - This tracking sheet allows the project coordinator to keep track of what is occurring in the field so that information can be accurately recorded in the participant tracking database and forms can be sent back out for completion as needed
+- Check physical data in the field
+  - Immediately upon completing a form, have data collectors do spot checks. If any problems are found, follow up with the participant for correction if possible.
+    - Check for missing data
+    - Check for duplicate answers given
+    - Check for answers provided outside of the assigned area (e.g., answers written in the margins)
+    - Check calculations and scoring (e.g., basals, ceilings, raw scores)
+- Assign a field supervisor. This person is assigned to:
+  - Do another round of data checks in the field once the data collector returns physical forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
+  - Ensure that all data and equipment is accounted for and returned to the office
+  - Be available for trouble shooting as needed
+- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-8))
+  - The project coordinator may do this round of checking as they are tracking information in the participant database
+  - If any issues are found, note that in the tracking database and send the form back out to the field for correction
+  - If paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
+- When a wave of data collection wraps up, collect feedback from data collectors to improve future data collection efforts
+  - What went well? What didn't?
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/spot_check.PNG" alt="A series of spot checks that occur with paper data" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-8)A series of spot checks that occur with paper data&lt;/p&gt;
+&lt;/div&gt;
+
+**Tracking sheet templates**
+
+|Source|Resource|
+|--------|-----------|
+|Crystal Lewis| Field tracking sheet template ^[https://docs.google.com/spreadsheets/d/1CeIXvTBtU9O3GNzfFaAMtb69Z2HyOLuPQWsxy7jOWdU/edit?usp=sharing]|
+
+### Ongoing data checks
+
+If you collect data via a web-based form, you will want to perform frequent data quality checks, similar to the checks you performed during the content and data piloting phase. You will want to check for both programming errors (i.e., skip logic programmed incorrectly) as well as response quality errors (e.g., bots, survey comprehension) [@dime_analytics_data_2021; @gibson_data_2021].
+
+- Checks for comprehension
+  - Are any questions being misinterpreted?
+- Checks for missing data
+  - Are items being skipped that should not be skipped?
+  - Are participants/data collectors not finishing forms?
+- Checks for ranges and formats
+  - Are values in unexpected formats or falling outside of unexpected ranges?
+- Checks for duplicate forms
+  - Are there duplicate entries for participants?
+- Is skip logic working as expected?
+  - Are people being directed to the correct location based on their responses to items?
+
+Some of these checks can be performed programmatically (i.e., you can write a validation script in a program such as R, and run that script on a recurring schedule during data collection to check for things such as values out of range). Other checks may be a manual check of data (e.g., such as downloading your data on a recurring schedule and reviewing open-ended questions for nonsensical responses). If errors are found, consider revising your instrument to prevent future errors if this is possible without jeopardizing the consistency of your data.
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+All of the web-based data collection efforts in this chapter assume you are making a private link that you are sharing with a targeted list (e.g., students in a classroom, teachers in a school). However, there may be times when you need to publicly recruit and collect data for your study and this opens your instrument up for a plethora of data quality issues. Bots, fraudulent data, and incoherent or synthetic responses are all issues that can plague your online data collection efforts, particularly with crowdsourcing platforms [@douglas_data_2023; @veselovsky_artificial_2023; @webb_too_2022]. If possible, avoid using public survey links. One possible workaround would be to first create a public link with a screener. Then after participants are verified through the screener, send a private, unique link to the instrument. &lt;br&gt;&lt;br&gt;
+If a workaround is not possible and you need to use a public link, some suggestions that can help you both secure your instrument and detect fraud include the following [@arndt_collecting_2022; @simone_how_2019; @teitcher_detecting_2015]:   
+- Not posting the link on social media  
+- Using CAPTCHA verification, or a CAPTCHA alternative, to distinguish human from machine    
+- Using tools that allow you to block suspicious geolocations  
+- Not automating payment upon survey completion    
+- Including open-ended questions   
+- Building attention/logic checks into the survey  
+- Asking some of the same questions twice (once early on and again at the end)   &lt;br&gt;&lt;br&gt;
+Last, check your data thoroughly for bots or fraudulent responses before analyzing it and before providing payments to participants. The following types of things are worth looking into further:  
+- Forms being completed in a very short period of time   
+- Forms being collected from suspicious geolocations    
+- Duplicated or nonsensical responses to open-ended questions  
+- Nonsensical responses to attention or logic checking questions    
+- Inconsistent responses across repeated questions  
+
+### Tracking data collection
+
+Throughout data collection your team should be tracking the completion of forms (e.g., consents, paperwork, data collection forms) in your participant database (see Chapter \@ref(track)). This includes paper forms, electronic forms stored on devices, as well as web-based data coming in. Your team may designate one person to track data (e.g., the project coordinator), or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more people at each site tracking data as it comes in. 
+
+Some tracking best practices include:
+
+1. Only track data that you physically have (paper or electronic)
+    - Never track data as "complete" that someone just tells you they collected. 
+      - You can always mark this information in a "notes" field but do not track it as "complete" until you have the physical data. 
+2. Track daily during data collection
+    - Do not wait until the end of data collection to track what data was collected
+    - This helps ensure that you don't miss the opportunity to collect data that you *thought* you had but never actually collected
+3. Only track complete data as "complete"
+    - Review all data before marking it as complete, including consents, assents, and other administrative forms. If a form is only partially completed and you plan to send it back out to the field for completion, mark this in the "notes" but do not mark it as "completed". If you have a "partially completed" option, you can mark this option.
+
+### Collecting data consistently
+
+As mentioned in Chapter \@ref(style), it's important to collect data consistently for the entire project to ensure interoperability. Keep the following consistent across both time and forms (e.g., Spanish and English version of a form, link for SchoolA and link for SchoolB):
+
+- Variable names
+  - Use the same names for the same items (and remember it's best to not add a time component to your variable names at this time)
+- Variable types
+  - For example, if gender is collected as a numeric variable, keep it as a numeric variable
+- Value codes
+  - Make sure response options are consistently coded using the same values (e.g., "no" = 0, "yes" = 1)
+- Question type and format
+  - If a slider question was used for "Percent of time on homework", continue to ask that question using a slider question
+  
+Failing to collect your data consistently has many consequences:
+
+1. It can make it difficult or impossible to compare outcomes
+2. It makes your work less reproducible
+3. It reduces your ability to physically combine data (i.e., you cannot append dissimilar variables)
+4. It can lead to errors in interpretation
+
+Last, collecting data consistently also means measuring things in the same way over time or across forms so that you don't bias your results. The slightest change in item wording or response options can result in dramatic changes to outcomes [@icpsr_introduction_2022; @pew_research_center_writing_2023].
+
+## Review
+
+Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-9) helps us to see when these practices fit into the different phases our workflow.
+
+Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/data_collect_workflow3.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig11-9)Integrating quality assurance and control into a data collection workflow&lt;/p&gt;
+&lt;/div&gt;
+
+**Instrument Workflow Resources**
+
+|Source|Resource|
+|--------|-----------|
+|DIME Wiki| Questionnaire design timeline^[https://dimewiki.worldbank.org/Questionnaire_Design]|
+|Sarah Kopper, Katie Parry | Five key steps in the process of survey design^[https://www.povertyactionlab.org/resource/survey-design]|
+
+
+&lt;!--chapter:end:10-data-collection.Rmd--&gt;
+
+# Data Capture {#capture}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/lifecycle_capture.PNG" alt="Data capture in the research project life cycle" width="90%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-1)Data capture in the research project life cycle&lt;/p&gt;
+&lt;/div&gt;
+
+After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a flat file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/capture.PNG" alt="Common data capture methods" width="60%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-2)Common data capture methods&lt;/p&gt;
+&lt;/div&gt;
+
+
+## Electronic data capture {#capture-electronic}
+
+As discussed in Chapter \@ref(collect), electronic data can be collected using a variety of software (either web-based or offline). Since electronic forms typically funnel data into a spreadsheet or database, it makes the process of data capture much easier compared to paper data. However, there is still much to consider.
+
+1. How will the data be captured?
+    - The most common way to capture web-based forms is to download it from your platform.
+      - You may also be able to capture data via an API (application programming interface). If you regularly need to review your data before your final capture, using an API can be a great way to remove the burden of manually logging into a program and going through the point and click process of downloading a file. Instead you can write a script, in a program such as R, to extract the data. Once the script is created, you can run it as often as you want. However, this is only an option if your tool has an API available (e.g., Qualtrics).
+    - If you are using non-networked tools, consider how you will securely pull files off of devices.
+1. What file type will the data be captured in?
+    - Most electronic data collection tools provide an option to export to one or more file formats (e.g., SPSS, CSV, TXT). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider might include:
+      - Do you want the text values for responses or the numeric values? Your choice may limit your options (e.g., text values may be available in a CSV but not in an SPSS file).
+      - Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options (e.g., an SPSS file allows you to export the numeric values while also being able to view the variable and value labels in the file).
+      - Do you want a non-proprietary, interoperable format? If yes, you will not want to capture data in file types such as XLSX and SPSS that require proprietary software to view.
+      - Will any file types create issues for your variables?
+        - For instance, Microsoft Excel is well-known for applying unwanted formatting to values. As an example, if your assessment tool collects age in the format of "years-months", oftentimes Excel will change this variable into a date, converting a value such as "10-2" (10 years and 2 months old) to "2-Oct". A more suitable file type in this situation may be a CSV or TXT file, which do not apply formatting.
+      - Is there a file structure that you don't want to work with?
+        - As an example, the structure of an SPSS file may look different compared to a XLSX file depending on the tool. In a tool like Qualtrics, an XLSX or CSV file may export with multiple header rows whereas an SPSS file does not.
+1. What additional formatting options need to be considered?
+    - In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
+      - Do you want to export the text values or numeric values for categorical items?
+      - How do you want to export "select all" questions?
+        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column.
+      - How do you want to recode seen but missing values? 
+        - This option is commonly provided because "select all" questions are often split out into multiple variables, where a `1` indicates the option was selected, and blank represents either the option was **not selected** or that the item was skipped entirely. 
+        - Typically tools provide the option to recode to *0* or *-99*. You can also choose not to recode and leave those responses as blank. If the types of missing data do not matter to your study, then leaving missing values as blank is typically the most straightforward option. However, adding an extreme value like *-99* can make it easier to know if those blank "select all" values are a "no" response (recoded to *-99*) or if those values were never seen and actually represent a missing value (left as blank).
+1. Where will the file be stored?
+    - This decision should be based on guidelines laid out in your style guide (see Chapter \@ref(style)) and your applicable data security documents and agreements (i.e., data management plan, data security plan, research protocol). 
+1. How will files be named?
+      - While your tool may provide a name for your file, it may need to be renamed something more meaningful based on your style guide rules (e.g., `projecta_w1_stu_svy_raw_2023-09-01.csv`). Most importantly, name your files consistently across data sources and waves.
+1. What documentation needs to accompany the data capture?
+    - As discussed in Section \@ref(document-dataset), there are additional documents that can be helpful to include alongside the file.
+      - A README can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of.
+      - A changelog can also be very beneficial. It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.
+1. Who will capture the data?
+    - It doesn't necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign that person the responsibility of documenting any relevant information in the README.  
+1. What checks need to happen before this data is handed off?
+    - It is important for the person responsible for data capture to do a basic review of the file before handing this data off for the next step.
+      - Does the format of the file look as expected? Does it have data in it? Are all the variables there as expected?
+      - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with completed data in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data. 
+        - Was a participant accidentally dropped from the file? Is someone incorrectly marked as complete in the tracking database? Are there duplicate entries in the file?
+          - If there are errors that can be corrected (e.g., someone incorrectly tracked a data point, a participant was left off in the capture process), those corrections should be made now. If there are corrections that involve manipulating the raw data (e.g., reconciling duplicate IDs in the data), those corrections should not be made at this time. Instead, those should be added to a README file to be corrected in the data cleaning phase. 
+  
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+It is important to never make changes directly to the raw data files. This also includes not making changes directly to the data in your data collection tool. If you see errors in the raw data file that can't be fixed by simply re-downloading the data, make notes in a README for future correction as noted above. Those corrections can be made in the data cleaning process. The one exception to this rule is if you accidentally collect data on a non-consented participant. In this case, it may be best to delete data for this participant directly in your data collection tool so that no record is kept.
+
+All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a CSV file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.
+
+As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.
+
+## Paper data capture {#capture-paper}
+
+The most common method for capturing paper forms is manual entry. While capturing electronic data is fairly quick and straightforward, planning for and implementing paper data entry is much more involved. Similar to electronic data collection, you will want to start planning data entry long before your data is collected, and you will need to build your data entry tool before the data capture phase (e.g., when you are creating your data collection tools).
+
+As you can imagine, manually entering data comes with the potential for many data quality issues. In developing a data entry process, it is important to implement quality assurance practices similar to those we discussed in Section \@ref(collect-assurance).
+
+1. Choose a quality data entry tool
+1. Build your data entry form with the end in mind
+1. Develop a data entry procedure
+
+### Choose a quality data entry tool
+
+When choosing a data entry tool, if you are already using a relational database for your participant tracking, it may make the most sense to use this same database for data entry so that data can be stored in one location and tables can be linked (e.g., REDCap, FileMaker, Microsoft Access). However, if you need to choose a new tool for data entry, the criteria for choosing one will be similar to those reviewed in Section \@ref(collect-tools). Considerations for project needs, security, costs, and data quality should all still be reviewed.
+
+In addition to reviewing those criteria, it can also be very beneficial to use a tool that allows you to create entry forms, similar to the form we saw in Figure \@ref(fig:fig10-8), rather than entering directly into a spreadsheet. Building a data entry form that is laid out similar to the paper form can help reduce errors in data entry. Data that is entered into the form is then fed into a table that can be exported.
+
+If however, you choose to use a spreadsheet program such as SPSS or Microsoft Excel for data entry, it is important to be aware of some of the limitations and possible issues with these tools including:  
+
+  - Possible formatting issues
+    - For example, Microsoft Excel formatting may cause errors in your data (e.g., dates get formatted as numeric, strings get formatted as dates, leading zeros get dropped from values)
+  - Potential to skip around
+    - In a spreadsheet, the ability to click anywhere makes it very easy to enter data into the wrong cell or to skip cells completely [@eaker_what_2016]. You may even write over existing data on accident. It's also possible to incorrectly sort data resulting in errors [@reynolds_basics_2022].
+      
+### Build with the end in mind
+
+When you export or save a dataset from your data entry tool, it should meet all of our data structure rules (see Chapter \@ref(structure)), and all of the variables should be formatted as we have described in our data dictionary, including correct name, variable type, and allowable values. In order to accomplish that goal, you need to build your data entry screens, whether in a spreadsheet or form layout, following rules similar to those discussed in Section \@ref(collect-build). 
+
+1. Make sure that your items are laid out in the same order that they appear on the paper form so that people entering the data can easily follow the flow [@reynolds_basics_2022].
+2. Using the annotated instrument we discussed in Section \@ref(collect-paper), name all of the items on your data entry screen to match the final item names (e.g., instead of `Q2` use the final name `tch_years`). 
+3. For quicker data entry, with less errors, allow people to enter the numeric values associated with response options on the annotated instrument rather than the text values (e.g., enter *1* rather than "strongly disagree"). Or if you prefer to use text values, build those as drop-down values, removing variation in entry.
+4. No matter which data entry tool you choose, make sure to include both content and response validation
+    - Restrict data type, format, ranges, and values
+    - Do not allow people to skip over items
+
+Before releasing your data entry tool into the world, you will want to pilot it for issues, just like we did for electronic data collection tools (see Section \@ref(collect-electronic)). Collect sample responses from team members and collect feedback on what did or did not work well for them while entering data. Then download, using your chosen download format, or simply review the data if it is already in its final format (e.g., Microsoft Excel). Check that the data looks as you expect it to and make edits to the entry tool as needed.
+
+### Develop a data entry procedure {#capture-entry}
+
+While building a reliable data entry tool is absolutely important in ensuring data quality, developing a clear and standard data entry process is even more important. Make sure to create a data entry process that includes the following things.
+
+1. Where paper forms are stored, how they should be pulled, and how they should be returned to the storage location.
+    - Consider organizing your forms in a way so that people entering data know what has been entered and what has not been entered
+1. Where electronic entry databases or files are stored and how they will be named.
+    - Similar to Section \@ref(capture-electronic), you will want to name these files according to your style guide (e.g., `proja_w1_stu_svy_raw_entry1.xlsx`).
+1. Specific data entry rules to follow
+    - What values to enter for categorical variables (numeric values or text values)
+    - If any items allow free-text entry, provide specific data entry rules to prevent inconsistencies. While adding data validation will help remove some inconsistencies, further rules may be needed depending on the items. As an example:
+      - Enter decimals with a leading zero (e.g. *0.4* not *.4*)
+      - Enter "yes" values as "Y" (e.g., change any values of "y" or "yes" to "Y")
+      - Only enter numeric values for measurements (e.g., *5* not "5cm")
+    - How to code missing data
+    - What to do if someone comes across a variety of common data errors. As an example:
+      - Someone who has circled more than one response to an item
+      - Someone who has written responses in the margin
+      - Someone who has written a value out of range or an unallowable response
+1. How to denote that a form has been entered
+    - For example, staff can write their initials on a form after entry
+1. Steps to be performed before handing off the entered data
+    - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. Most importantly, check to see that the correct number of participants exist in the file compared to your participant tracking database (e.g., no duplicate entries, no missing entries). If data entry or data tracking errors exist, fix mistakes as needed. If inherent data issues exist, make notes in a README to be corrected in the data cleaning phase.
+1. Last, similar to electronic data capture (see Section \@ref(capture-electronic)), you will want to make decisions about final file types (e.g., CSV, XLSX, SPSS), where final files will be stored, and how they will be named.
+1. Who will oversee this process? (i.e., creating entry forms, answering questions, conducting final checks)
+    
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/data_entry_process2.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-3)The flow of the decisions to make regarding the data entry process&lt;/p&gt;
+&lt;/div&gt;
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+As a reminder, the data capture phase is a time to do only that, capture the data that is already collected. This is not a time to score, calculate, or add additional fields. This is a time to enter the exact items that are found on the form. Creating additional variables or performing further data quality checks will occur during the data cleaning phase. &lt;br&gt;&lt;br&gt;
+The exception to this rule is if you collected an assessment that requires entry into a proprietary scoring program. Once data is entered, these tools often export a file that includes derived scores for the assessment and these are still considered raw captured data sources. As an aside, if only raw scores are entered into your scoring program, you may consider also entering raw item-level information using your own data capture process. Unless item-level variables are proprietary or include identifiable information, it can be beneficial to include both item-level and summary variables in your final project datasets.
+
+
+#### Double entry
+
+Last, it is important to integrate quality control into this data entry process. In their studies, @schmitt_data_2011 have found an error-rate between 5-10% when data are entered only once and that having a second person double-check data entry improves data quality. While there are several ways of double checking data including visual checking and read aloud methods, the double entry method has been shown to be the most reliable error-reducing technique [@barchard_comparing_2020], ensuring that what is displayed on the paper form is what is entered into the database. A typical double entry process looks something like this:
+
+1. A designated team member creates two identical entry forms. One person enters forms in the first entry screen, a different person enters forms in the second entry screen. Depending on your tool this might be two separate files, two separate tabs in a spreadsheet, or two separate tables or forms in a database.
+    - It is important here that the second entry is completed by a different person so that systematic errors that are created by one person's interpretation of information are not repeated across files. 
+2. When both entries are complete, a system is used to check for inconsistencies across datasets. 
+    - This system varies across tools. Some tools have built in systematic ways to check for errors across entry screens. Other tools may require you to build your own system (e.g., write formulas to compare cells or draft syntax to compare spreadsheets). Ultimately, once those comparisons are done, you should have a report that tells you where errors exist across the two forms.
+3. Using that report, a designated team member/members makes corrections [@yenni_developing_2019]. This involves pulling out the original paper forms and seeing what the correct value is for each error.
+    - There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways. 
+    - However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your "master" raw data file.
+      - Figure \@ref(fig:fig11-4) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
+  
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/double-enter.PNG" alt="A report displaying differences between two entry files" width="60%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-4)A report displaying differences between two entry files&lt;/p&gt;
+&lt;/div&gt;
+  
+Depending on the amount of data that is collected this can be a time consuming process. Double data entry is a matter of weighing costs and benefits. While double entering all of your data is the best way to reduce data errors, the cost of double entering all of your data might be too high, and you may decide to only double enter a portion of your data and gain a smaller benefit.
+
+Whatever your decisions are throughout this process, document every decision in an SOP and assign team members for each step. This includes assigning someone to create double entry files, oversee data entry, create a double entry comparison system, conduct the comparison, make corrections, and do the final checks before handing the data off. Make sure to train your team on this system so that it is implemented consistently. For any types of technical processes, in addition to in-person training sessions, it can also be helpful to record and share videos covering procedures that team members can be review as often as necessary.
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+If you are entering data into a proprietary scoring system that does not provide a double entry option, make sure to consider other ways you can reduce data entry errors (e.g., batch upload of double entered raw values).
+
+### Scanning forms
+
+Although less common now, it is possible that you may collect paper data using forms which can be scanned and converted automatically into a machine-readable dataset. Depending on whether your team is personally doing the scanning or whether an external company captures the data, this has the potential to save you time and energy compared to a manual data entry process. These may also have the potential to be less error-prone than manual entry, yet this process is still not error-free and caution should be taken when capturing this data [@jorgensen_validation_1998]. It is still important to do data checks to ensure that the correct values were recorded in the electronic file.
+
+## Extant data {#capture-extant}
+
+It is common in education research to also capture external supplemental data sources to either link to your original data sources or to describe information about your sample. The process for capturing this externally collected data will vary widely depending on the source. Furthermore, the quality and usability of the data can also vary widely. In this section we are going to review some practices that will help you acquire better, more interpretable data. We will divide this discussion between two types of data sources, non-public and public.
+
+### Non-public data sources
+
+Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-5)). This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-5)Example non-public confidential data request process&lt;/p&gt;
+&lt;/div&gt;
+
+If not already included in the provider's data request process, it is important to share the following information:
+
+1. A list of variables you are requesting
+    - If you plan to link data, make sure to request a unique identifier that both you've collected and that exists in the external data (e.g., state student unique identifier), or a combination of identifiers (e.g., name and DOB), which allows you to link the external data to your existing original data.  
+    - If you are planning to combine data from multiple sources (e.g., multiple school districts), this can require hours of harmonization to make data comparable due to variations in how data is collected across agencies. If there is some flexibility in the request process, it can be helpful to provide details to your data provider about how you would like the variables to be formatted, helping to standardize inputs and removing any room for interpretation [@feeney_using_2021]. 
+      - Variable type (e.g., numeric, text)
+      - Variable formats (e.g., `DOB` as YYYY-MM-DD)
+      - Value coding (e.g., specify how to code FRPL categories)
+      - How to handle missing data (e.g., leave cell blank)
+      - How to aggregate summary data (e.g., number of days absent for the full year **or** by term)
+      - For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)
+
+Figure \@ref(fig:fig12-6) is an example of how you might provide this information to a data provider.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/collect_request.PNG" alt="Example variable request for an external data provider" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-6)Example variable request for an external data provider&lt;/p&gt;
+&lt;/div&gt;
+
+2. Clarify the periods you are requesting data for
+    - This may be the current year alone, or you may also need the previous year as well for comparison
+3. Ask how and when data will be shared
+    - Ask how many data files will be provided and what each file will contain (e.g., enrollment file, assessment file, attendance file)
+    - Provide a preferred file format for the data (e.g., CSV file)
+    - Request a timeline for when data will be shared  
+    - Ask how data will be shared (e.g., email, drop in a secure folder). If the data contain identifiable information, make sure to use a secure file transfer method (see Chapter \@ref(store)). Once received, make sure to follow any data sharing agreements around how data should be stored.  
+4. Identify points of contact
+    - Not only do you need contact information for acquiring the data, you also need to know who to contact for any questions or concerns that come up after the data is received.
+5. Request documentation to accompany your file
+    - Receiving data dictionaries or codebooks along with your data will be vital in allowing you to correctly interpret variables. This is especially important when observing variations in how variables are measured across sites or even within sites across time (e.g., a test score is measured differently in a subsequent year)
+    - If documentation does not exist, provide the data provider with a form to complete that allows them to enter relevant, variable information.
+      - What each variable represents
+      - What each value represents if the variable is categorical
+      - How each variable is captured or calculated (e.g., hand entered)
+      - The universe for each variable (e.g., grades *3-5*)
+      - Any data quality concerns about any of the variables
+    - If you receive new exports each year, make sure to request documentation each year. It is possible that the way variables are collected or recorded change over time.
+
+Figure \@ref(fig:fig12-7) is an example of a document you can ask your data provider to complete.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/collect_document.PNG" alt="Sample documentation form for an external data provider to complete" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig12-7)Sample documentation form for an external data provider to complete&lt;/p&gt;
+&lt;/div&gt;
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+When working with external datasets, it is possible to encounter inconsistencies across data sources (e.g., a student is shown in a different school across two files), as well as duplicate records within a data source (e.g., a student has two state reading assessment scores) [@levesque_guide_2015]. These anomalies can happen due to human error or due to circumstances such as student mobility. While you may be able to work with your data provider to solve some data issues, for others it may be important for you to develop and document your own data management rules that you consistently apply to your external data sources during the data cleaning phase (e.g., if duplicate assessment records exist, the earliest assessment date is used).
+
+### Public data sources 
+
+Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some organizations may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:
+
+1. Extract the data early on in your project.
+    - Even if it is not the most up to date data that you need, it's important to get a sense early on for what the data looks like (e.g., what variables are included, what file types data is stored in, how the files are structured). This helps you prepare for future data wrangling needs.
+2. Find the associated documentation and read it thoroughly. Types of documentation to look for are:
+    - Data dictionaries or codebooks
+      - These documents will help you interpret and use variables correctly
+    - Changelogs
+      - Public data sources are constantly updating (e.g., new data is acquired, errors are found). It's important to understand what version of the data you working with.
+    - Data quality documentation
+      - This documentation helps make you aware of any known issues in the data
+3. Do not hesitate to reach out for help
+    - Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
+4. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ^[https://nces.ed.gov/ccd/] or EDFacts ^[https://www2.ed.gov/about/inits/ed/edfacts/index.html]. Or if you are needing to use multiple data sources, other tools, such as the Urban Institute’s Education Data Portal ^[https://educationdata.urban.org/documentation/], have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
+
+&lt;!--chapter:end:11-data-capture.Rmd--&gt;
+
+# Data Storage and Security {#store}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/lifecycle_store.PNG" alt="Data storage in the research project life cycle" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig13-1)Data storage in the research project life cycle&lt;/p&gt;
+&lt;/div&gt;
+
+As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study. Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.
+
+1. File safety: Ensuring that your files are not lost, corrupted, or edited unexpectedly
+2. Protecting confidentiality: Making sure that sensitive information is not seen or accessed by unauthorized individuals
+3. Accessibility and usability of files: Making sure that your team can easily find files and that they are able to understand what the files contain
+
+## Planning short-term data storage {#store-plan}
+
+When planning a storage and security process, for data files in particular, it is important to gather all relevant information before making a plan. A typical process for developing a plan may begin like this:
+
+1. Review what data needs to be stored and how often
+    - Use documents such as your data sources catalog (see Section \@ref(dmp-catalog)) and your data collection timeline (see Section \@ref(document-supplement)) to better understand your data storage needs.
+
+2. Take an inventory of what data storage solutions are available to you
+    - In terms of electronic data, institutions have different licenses or partnerships with varying software companies and they may approve and not approve different tools (e.g. Dropbox, SharePoint, Box, Google Drive).
+
+3. Consider compliance
+    - Make note of any data storage laws, policies, or agreements that your data is subject too (e.g., IRB policies, data sharing agreements, funder policies).
+
+4. Review classification levels
+    - Review each data source's classification level (see \@ref(hsd-dcl)) to ensure that you are making decisions that are appropriate for the sensitivity level your data.
+
+This process should help narrow down your data storage solutions for each data source. However, from there a series of decisions need to be made depending on the type of data you are working with, paper (e.g., a paper consent form) or electronic (e.g., a CSV file of questionnaire data, a Microsoft Access participant tracking database). The remainder of this section will review a series of decisions to make for each type of data, as well as provide some best practices along the way.
+
+### Electronic data {#store-electronic}
+
+Once you have reviewed all relevant information from Section \@ref(store-plan), several more decisions will need to be made when deciding on and setting up your structures for storing and securely working with electronic data.
+
+1. Reviewing additional criteria
+    - After narrowing down storage solutions based on available tools (e.g., cloud storage, institution network drive, personal device) that meet your compliance needs, electronic data storage locations can be further narrowed based on other criteria.
+      - Versioning availability: While manually versioning is beneficial for major changes, it is very helpful to store your files in a location that has automated versioning as a fail-safe in case of accidents such as unintended overwriting of files.
+      - Size of the storage space: You will need to make sure your storage contains enough space for your files.
+        - Consider how many files you will be storing, as well as the size of your files (e.g., number of rows and columns in each dataset). Just to get a feel for what size your files might be, small datasets (e.g., 5 columns and &lt;100 rows) may be less than 100 KB. Datasets with several hundred variables and several thousand cases may start to be in the 1,000--5,000 KB range. The type of file you use also changes the size of your data. Saving data in a format that contains embedded metadata, such as an SPSS file, will greatly increase your file size.
+      - Comfort level of your team: It is helpful to choose a storage space that your team is comfortable working in or you have the ability to train them in how to use it
+      - Accessibility: Consider the accessibility of your storage location for users (e.g., how staff access the location off-site), as well as the compatibility with different operating system
+      - Collaboration: Consider how the storage method handles multi-user editing of files
+      - File sharing: It can be very beneficial to use a storage platform that allows sharing files through links, rather than sharing the actual file. That way if updates are made to the file, those changes are shown in the link, rather than having to send an updated version of the file.
+      - Costs: Consider if there are any costs associated with any of your potential storage solutions
+
+2. Choose a final storage location
+    - While you may be allowed to store files in different locations depending on their sensitivity level, a more effective solution is to create a collaborative research environment [@uk_data_service_research_2023]. To do this, designate the highest level of security needed (e.g., an institution network drive), and keep all, or as many as possible, project-related files stored in that same location, assigning access to files and folders as needed. Keeping all files located in a central, consistent location often provides the benefit of data security (e.g., user access controls, not having different versions of documents on different computers) as well as accessibility (i.e., team members can find documents).
+  
+3. Design your folder structure according to your style guide
+    - Following your style guide, create a folder structure before team members begin storing files so that they are stored consistently. 
+      - If not already designated in your style guide, note that a best practice, and possibly a mandate from your institution, is to store your participant tracking database separately from your research study data (i.e., a separate folder with restricted access). Not only does the participant tracking database contain PII, but it is the one linking key between your study codes and your participant names and should not be stored alongside your datasets.
+      - Similarly, any informed consent forms collected electronically should also not be stored alongside research study data. They should be stored in a separate, secure location.
+
+4. Set up additional security systems
+    - Data backups
+      - It is important to regularly backup up your data. Consider using something similar to the 3-2-1 rule, keeping three copies of your data, on two different types of storage media, in more than one location [@briney_data_2015; @uk_data_service_research_2023]. Talk with your institution IT department for help with setting up this system.
+    - User access
+      - Assign user access to folders and files based on sensitivity levels, quality control needs, and applicable policies, agreements, or plans.
+
+5. Designate rules for working securely with data
+    - Complete required trainings (e.g., CITI trainings, IT training, internal training)
+    - Consistently name folders and files
+      - As you begin to save files in your project folder, you will also want to have team members consistently name and version files according to your style guide. 
+    - Do not keep copies of files
+      - Outside of making data backups, do not keep copies of files in different folders. This opens the door for edits being made to one copy and not the other. If this happens, different team members may be working with different versions of files. If you want to have a copy of a file in more than one location (e.g., an SOP in the `documentation folder` and the `project coordination folder`), some storage systems allow you to link to documents from other location (i.e., the project coordination folder contains a link to the SOP in the documentation folder).
+    - Secure your devices [@otoole_data_2018; @princeton_university_best_2023]
+      - Choose safe passwords to protect devices
+      - Do not leave devices open and unattended when working in the field
+      - Have protection on your devices (e.g., up to date antivirus software, firewall, encryption)
+      - When working remotely, use password protected wifi and use secure connections (e.g., VPN, 2FA) when working with data files
+      - Any files stored on detachable media (e.g., external hard drive, CDs, flash drives) should typically be stored behind two locked doors when not in use
+    - Securely transmit data files
+      - When transmitting data, either internally or externally, it is important that you use secure methods, especially when data contain PII. As a general rule, no moderate or highly sensitive data should be transmitted via email. Use a secure, institution approved, file transfer method that includes encryption.
+      
+
+### Paper data
+
+Working with paper data involves reviewing another set of decisions while planning for data storage and security. 
+
+1. Choose a final storage location
+    - After reviewing available locations as well as applicable laws, policies, and agreements, you will want to consider additional criteria such as accessibility of the storage site, your physical storage size needs, storage costs, and the security of the location. Most commonly required for any files containing PII, is to store them behind two locked doors (e.g., a locked file cabinet in a locked storage room).
+
+2. Consistently structure your file cabinets and folders
+    - While you may not have a style guide created for organizing physical folders and files, it is still important to consistently structure and name them for clarity. As an example, organize drawers by data source (e.g., student survey), and further organize folders by time period.
+
+3. Securely work with files
+    - As discussed in Section \@ref(collect-field) and Section \@ref(capture-entry), as team members work with files, it is important that staff understand the rules and process for returning files back to the designated storage location when not in use (i.e., no files left on desks).
+
+
+## Documenting and disseminating your plan
+
+Once you make a plan for short-term data storage, that plan should be added to all necessary documentation (e.g., DMP, research protocol, informed consent forms). Once your plan has been approved, it is important to not deviate from that plan unless your revisions have also been approved. This is especially important in the case of informed consents. Once participants have agreed to data storage terms in the consent (e.g., how identifying information will be stored separate from study data), those terms should be honored.
+
+Make sure to assign responsibilities to team members for tasks such as creating directory structures, adding and removing storage access, overseeing data backups, and monitoring training compliance. Without oversight of these processes, it is easy for errors to occur. 
+
+Last, all information needs to be disseminated to team members in the form of documentation and training to ensure fidelity to your data storage and security plan. As discussed in Chapters \@ref(roles) and \@ref(document), while team members can review data management plans and research protocols, this information may be more clearly disseminated in documents such as a team data security policy and team or project roles and responsibilities documents. In addition, make sure to embed this information into any team or project related staff training.
+
+&lt;!--chapter:end:12-data-storage.Rmd--&gt;
+
+# Data Cleaning {#clean}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/lifecycle_clean.PNG" alt="Data cleaning in the research project life cycle" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-1)Data cleaning in the research project life cycle&lt;/p&gt;
+&lt;/div&gt;
+
+Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before it is in a format that you will confidently want to share for analysis. What is done in that data processing, or data cleaning, phase will depend on your project and your data. However, in this chapter we will review some standard data cleaning steps that should be considered for every education research project. 
+
+What is most important to emphasize here is that data cleaning needs to happen every wave of data collection. Once a wave of data has been collected and captured and the raw data has been stored, your data cleaning process should begin. In a best case scenario, the data cleaning is wrapped up before your next wave of data collection. Cleaning data each wave, as opposed to waiting until the end of your project, has two large benefits.
+
+1. Allows you to catch errors early on and fix them
+    - While cleaning your data you may find that all data is missing unexpectedly for one of your variables, or that values are incorrectly coded, or that you forgot to restrict the input type. If you are cleaning data each wave, you are able to then correct any errors in your instrument in order to collect better data next round.
+2. Data is ready when you need it
+    - Proposal, report, and publication deadlines come up fast. As various needs arise, rather than having to first take time to clean your data, or waiting for someone on your team to clean it, data will always be cleaned and available for use because it is cleaned on a regularly occurring schedule. 
+
+## Data cleaning for data sharing
+
+Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted [@cook_how-guide_2021; @neild_sharing_2022; @van_dijk_open_2021]. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.
+
+Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig:fig14-2)).
+
+1. Raw data
+    - This is the untouched raw file that comes directly from your data collection source. If your data is collected electronically, this is the file you extract from your tool. If your data is collected on paper, this is the data that has been entered into a machine-readable format.
+    - In education research this data is typically not shared outside of the research team as it usually contains identifiable information and often needs further wrangling to be decipherable by an end user.
+2. The general clean study data
+    - This is the dataset that you will publicly share and is the one we will be discussing in this chapter.
+3. Your analytic data
+    - This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis [@reynolds_basics_2022]. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book. 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/clean_data.PNG" alt="The three phases of data" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-2)The three phases of data&lt;/p&gt;
+&lt;/div&gt;
+
+## Data quality criteria {#clean-criteria}
+
+Before cleaning our data, we need to have a shared understanding for what we expect our data to look like once it is cleaned. Adhering to common standards for data quality allows our data to be consistently cleaned and organized within and across projects. There are several data quality criteria that are commonly agreed upon [@decoster_systematic_2023; @elgabry_ultimate_2019; @schmidt_facilitating_2021; @van_bochove_data_2023]. Upon cleaning your data for general data sharing, your data should meet the following criteria.
+
+1. Complete
+    - The number of rows in your dataset should match the number of completed forms tracked in your participant tracking database. This means that all forms that you collected have been captured (either entered or retrieved). It also means that you have removed all extraneous data that doesn’t belong (e.g., duplicates, participants who aren’t in the final sample).
+    - The number of columns in your data match the number of variables you have in your data dictionary (i.e., no variables were accidentally dropped). Similarly, there should be no unexpected missing data for variables (i.e., if the data was collected, it should exist in your dataset). 
+2. Valid
+    - Variables conform to the constraints that you have laid out in your data dictionary (e.g., variable types, allowable variable values and ranges, item-level missing values align with variable universe rules and defined skip patterns)
+3. Accurate
+    - Oftentimes there is no way to know whether a value is true or not. 
+      - However, it is possible to use your implicit knowledge of a participant or a data source (i.e., ghost knowledge) [@boykis_ghosts_2021] to determine if values are inaccurate (e.g., a value exists for a school where you know data was not collected that wave). 
+      - It is also possible to check for alignment of variable values within and across sources to determine accuracy
+        - For example, in a student-level dataset, if grade level = 2, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district. 
+4. Consistent
+    - Variable values are consistently measured, formatted, or coded within a column (e.g., all values of survey date are formatted as YYYY-MM-DD).
+    - Across waves and cohorts of data collection, all repeated variables are consistently measured, formatted, or coded as well (e.g., free/reduced priced lunch is consistently coded using the same code/label pair across all cohorts).
+5. De-identified
+    - If confidentiality is promised to participants, data needs to be de-identified. At the early phases of data cleaning, this simply means that all direct identifiers (see Chapter \@ref(hsd)) are removed from the data and replaced with study codes (i.e., participant unique identifier). Before publicly sharing data, additional work may be required to remove indirect identifiers as well and we will discuss this more in Chapter \@ref(share).
+6. Interpretable
+    - Variables are named to match your data dictionary and those variable names should be both human and machine-readable (see Section \@ref(style-varname)). Variable and value labels are added as embedded metadata as needed to aid in interpretation.
+7. Analyzable
+    - The dataset is in a rectangular (rows and columns), machine-readable format and adheres to basic data structure rules (see Section \@ref(structure-rules)).
+    
+## Data cleaning checklist
+
+Recall from Section \@ref(document-plan), that it is helpful to write up your data cleaning plan, for each raw dataset, before you begin cleaning your data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure \@ref(fig:fig8-15)).
+
+In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section \@ref(clean-criteria), it can be helpful to follow a standardized checklist of data cleaning steps (see Figure \@ref(fig:fig14-3)). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/data_clean_check.PNG" alt="Data cleaning checklist" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-3)Data cleaning checklist&lt;/p&gt;
+&lt;/div&gt;
+
+As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps are fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file [@borer_simple_2009; @broman_data_2018]. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth (SSOT) for that data source. If you make errors in your data cleaning process, you should always be able to go back to your SSOT to start over again if you need to. Second, reviewing your raw data should always be step number two. Waiting to review your data until after you've started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file. 
+
+### Checklist steps {#clean-check}
+
+Let's review what each step specifically involves so that as you write your data cleaning plan, you are able to determine which steps are relevant to cleaning your specific data source.
+
+1. Access your raw data
+    - If you use code to clean your data, you will read your raw data file into a statistical program (e.g., R, Stata) and export a clean data file, ensuring the raw data file is never touched. If you manually clean your data, you should make a copy of the raw data file and rename it to your clean data file, ensuring you are not writing over your SSOT. 
+    - Part of accessing your raw data may also involve putting it into an analyzable format (e.g., if your second row of data is variable labels, you will want to drop that second row in this process so that you are only left with variable names in the first row and values associated with each variable in all remaining cells)
+
+2. Review your raw data
+    - Check the rows in your data
+      - Do the number of cases in your data match the number of tracked forms in your participant tracking database?
+    - Check the columns in your data
+      - Do the number of variables in your data dictionary match the number of variables in your dataset? Remember we are only looking for variables that are captured directly from our source (i.e., not derived variables)?
+      - Are the variable types and values as expected?
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/review_raw.PNG" alt="Reviewing rows and columns in a raw data file" width="100%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-4)Reviewing rows and columns in a raw data file&lt;/p&gt;
+&lt;/div&gt;
+
+3. Find missing data
+    - Find missing cases
+      - If cases are marked as complete in your tracking database but their data is missing, investigate the error. Was a form incorrectly tracked in your tracking database? Was a form not entered during the data capture phase?
+        - If there is an error in your tracking database, fix the error at this time
+        - Otherwise, search for missing forms, add them to your raw data, and start again at step number 1 of your data cleaning process.
+    - Find missing variables
+      - If you are missing any variables, investigate the error. Was a variable incorrectly added to your data dictionary? Or was a variable somehow dropped in the data capture process or in our data import or file copying process?
+        - Fix the error in the appropriate location and then start again at step number 1
+        
+4. Adjust the sample
+    - Remove duplicate cases
+      - First, make sure your duplicates are true duplicates (not incorrectly assigned names or IDs). Any incorrect identifiers should be corrected at this time. 
+        - If you have true duplicates (participants who completed a form more than once or their data was entered more than once), duplicates will need to be removed
+          - Follow the decisions written in your documentation (e.g., research protocol, SOP) to ensure you are removing duplicates consistently. An example rule could be to always keep the first complete record of a form.
+    - Remove any participants who are not part of your final sample (i.e., did not meet inclusion criteria)
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+In the special case where you purposefully collect duplicate observations on a participant (i.e., for reliability purposes), you will only want to keep one row per participant in your final study dataset. Again, a decision rule will need to be added to documentation so duplicates are dealt with consistently (e.g., always keep the primary observer's record).
+
+5. De-identify data
+    - If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter \@ref(share), we will also discuss dealing with indirect identifiers before publicly sharing your data.
+    - Figure \@ref(fig:fig14-5) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., `first_name` and `last_name`) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-5)Process of creating a de-identified dataset&lt;/p&gt;
+&lt;/div&gt;
+
+6. Drop any irrelevant columns not included in your data dictionary
+    - Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.
+    
+7. Split columns as needed
+    - As discussed in Section \@ref(structure-rules), a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable. 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/clean_split.PNG" alt="Splitting one column into multiple columns" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-6)Splitting one column into multiple columns&lt;/p&gt;
+&lt;/div&gt;
+
+8. Rename variables
+    - Rename variables to correspond with the names provided in your data dictionary.
+    
+9. Normalize variables
+    - Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why? 
+      - As an example, it may be that you need to remove unexpected characters such as `$` or `%` that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/clean_normalize.PNG" alt="Normalizing a variable" width="40%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-7)Normalizing a variable&lt;/p&gt;
+&lt;/div&gt;
+
+10. Standardize variables
+    - Are columns consistently measured, coded, and formatted according to your data dictionary? If no, they need to be standardized.
+      - This may involve rescaling variables (e.g., age measured in months in wave 1 and age measured in years in wave 2 would need to be rescaled)
+      - This may mean updating a variable format (e.g., converting to a consistent date format)
+      - Or it may mean collapsing categories of free text categorical variables (e.g., 'm' | 'M' | 'male' = 'male')
+
+&gt; **Note** &lt;br&gt; &lt;br&gt;
+In the case of Figure \@ref(fig:fig14-7), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/clean_standardize.PNG" alt="Standardizing a variable" width="40%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-8)Standardizing a variable&lt;/p&gt;
+&lt;/div&gt;
+
+11. Update variable types
+    - After normalizing and standardizing variables, you can now convert any variable types that do not match the types you've listed in your data dictionary (e.g., convert a string to numeric)
+
+&gt; **Note** &lt;br&gt;&lt;br&gt;
+It's important to normalize before updating your variable types. Updating your variable types before normalizing could result in lost data (i.e., converting a character column to numeric, when the column still contains cells with character values, will often recode those cells to missing).
+    
+12. Recode variables
+    - If your categorical value codes (see Chapter \@ref(style-codes)) do not match your data dictionary, now is the time to recode those (e.g., you expected "no" = 1, but the data exported as "no" = 14)
+    - As discussed in Chapter \@ref(structure-rules), this also includes recoding implicit values, explicitly (e.g., if a missing value is implied to be 0, recode them to 0)
+    - You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item)
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/clean_reverse.PNG" alt="Reverse coding a variable" width="30%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-9)Reverse coding a variable&lt;/p&gt;
+&lt;/div&gt;
+
+13. Construct additional variables
+    - This is not the time to construct analysis-specific variables. This is the time to create or calculate variables that should always be a part of the core study dataset. These variables should be chosen by your data management working group early on and added to your data dictionary. Examples of variables you might add:
+    - time components (e.g., `wave`)
+    - grouping variables (e.g., `treatment`)
+    - linking identifiers (e.g., `sch_id` in a teacher file)
+    - measure composite or summary scores
+    - completion variables or data quality flags
+    - variables created for composite/summary scoring purposes (e.g., `age`)
+    - variables that you want added to the core sharing dataset (e.g., categorizing an open-ended text response variable)
+
+&gt; **Note** &lt;br&gt;&lt;br&gt;
+Some of these variables may exist in other sources (e.g., treatment may exist in your participant tracking database). If so, these variables won't need to be created or calculated, they can simply be merged into your clean dataset using a technique similar to the one described in data de-identification step. You can export a file from your participant tracking database that contains unique identifier/s as well as the variables you need, and join on similar unique identifiers across files (e.g., unique teacher ID), bringing in the necessary variables from an outside source.
+
+14. Add missing values
+    - Assign missing value codes based on your designated schema (as documented in your data dictionary and style guide). 
+
+15. Add metadata [@uk_data_service_research_2023]
+    - While interoperable file types (e.g., CSV) are highly recommended for storing data, it can be extremely helpful to create another copy of your clean data in a format, such as SPSS, that allows for embedded metadata. These file types allow you to embed variable and value code labels that can be very handy for a data user. This can be especially helpful if you plan to export your variables with numeric values (1 | 0), rather than text values ("yes" | "no"). In this case, rather than having to flip back and forth between a file and a data dictionary to interpret codes, users can review information about the variables within the file itself. While future data users may not have a license for the proprietary file type, these file formats can often be opened in free/open source software (e.g., GNU PSPP) or can usually be easily imported into a variety of other statistical programs which can interpret the metadata (e.g., importing SPSS files into R or Stata).
+
+16. Data validation
+    - Errors in the data can happen for many reasons, some of which come from the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, joining errors). It is good practice to assume that some amount of error is inevitable, even with the best data management practices in place. Yet, errors won't be found if you don't actively look for them [@palmer_advice_2023]. At minimum you should always validate, or check, your data for errors at the end of your data cleaning process. Ideally though, you should be checking every one of your transformations along the way as well.
+    - Data validation should begin with the manual method of opening your clean data and eyeballing it. Believe it or not, this can actually be a very useful error-catching technique. However, it should not be your only technique. You should also create tables, calculate summary and reliability statistics, and create univariate and bivariate plots to search for errors. Codebooks are great documents for summarizing and reviewing a lot of this information [@arslan_how_2019]. 
+    - You can organize your data validation process by our data quality criteria. The following is a sampling of checks you should complete during your validation process [@cessda_training_team_cessda_2017; @icpsr_guide_2020;@strand_error_2021; @reynolds_basics_2022; @uk_data_service_research_2023]:
+      - Complete
+        - Check for missing cases/duplicate cases
+          - It can also be helpful to check Ns by cluster variables for completeness (e.g., number of students per teacher, number of teachers per school) [@decoster_systematic_2023] 
+        - Check for missing columns/too many columns
+      - Valid and Consistent
+        - Check for unallowed categories or values out of range.
+          - Checking by groups can also help illuminate issues (e.g., compare age and grade level) [@riederer_make_2021]
+        - Check for invalid, non-unique, or missing study IDs
+        - Check for incorrect variable types
+        - Check for incorrect formatting
+        - Check missing values (i.e., do they align with variable universe rules and skip patterns)
+      - Accurate
+        - Cross check for agreement across variables (e.g., a student in 2nd grade should be associated with a 2nd grade teacher)
+        - Checks for other project-specific unique situations
+      - De-identified
+        - Are all direct identifiers removed?
+      - Interpretable
+        - Are all variables correctly named?
+        - Is metadata applied to all variables? Is the metadata accurate (e.g., value labels correct, variable labels correct)?
+    - If during your validation process you find errors, you first want to determine where the errors originated (i.e., data entry, data export, data cleaning), and correct them in the appropriate location. If errors occurred in the data entry or data export/saving process, this may involve creating a new raw data file and starting the cleaning process again at step 1. 
+      - If, however, you find true values that are inaccurate, uninterpretable, or outside of a valid range (i.e., they represent what the participant actually reported), you will need to make a personal decision on how to deal with those. Some examples of how you might deal with true errors include:
+        - Leave the data as is, make a note of the errors in documentation, and allow future researchers to deal with those values during the analysis process.
+        - Assign a value code (e.g., "inaccurate value" = -90) to recode those values to
+        - Create data quality indicator variables to denote which cells have untrustworthy values (e.g., `age` contains the true values and `age_q` contains 0 = "no concerns" | 1 = "quality concerns").
+        - If you find inconsistencies across different sources, you could choose one form as your source of truth and recode values based on that form
+        - If there are true errors where the correct answer can be easily inferred (e.g., a 3-item rank order question is completed as 1, 2, 4), sometimes logical or deductive editing can be used in those cases and the value is replaced with the logical correction [@ipums_usa_introduction_2023; @seastrom_nces_2002]. 
+      - No matter what your decision is, make sure it is documented in the appropriate places for future users (e.g., data dictionary, data cleaning plan, research protocol)
+
+At this point, your dataset should be clean. However, there may be additional transformations to be performed depending on how you plan to store and/or share your datasets.
+
+17. Join data
+    - Recall from Section \@ref(structure-link), that there are two ways you may need to join your forms, horizontally or vertically.
+      - Joining forms horizontally (merging)
+        - This is commonly used to link longitudinal data within participants in wide format. In this case it will be necessary to append a time component to your time varying variable names if they are not already included (e.g., "w1_", "w2_")
+        - This type of merging can also be used to link forms within time (e.g., student survey and student assessment) or link forms across participant types (e.g., link student data with teacher data)
+      - Joining forms vertically (appending)
+        - Appending may be used to combine longitudinal data within participants in long format. Here it will be necessary to include a new variable that indicates the time period associated with each row.
+        - However, appending is also often used for combining forms collected from different links or captured in separate tables (e.g., data collected across sites or cohorts) 
+    - Depending on how your data is collected or captured, as well as how you want to structure your data, you may use a combination of both merging and appending to create your desired dataset.
+    - Once your merging or appending is complete, it will be very important to do additional validation checks. Do you have the correct number of rows and columns after merging or appending?
+
+18. Reshape data
+    - Recall Section \@ref(structure-datastructure) where we reviewed various reasons for structuring your data in wide or long format. 
+      - In wide format, all data collected on a unique subject will be in one row. Here, unique identifiers should not repeat.
+      - In long format, participant identifiers can repeat, and unique rows are identified through a combination of variables (e.g., `stu_id` and `wave` together).
+    - If at some point after merging or appending your data, you find you need to reshape data into a new format, this restructuring process will need to be added to your data cleaning process. 
+
+&gt; **Note** &lt;br&gt;&lt;br&gt;
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure \@ref(fig:fig14-12)), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/clean_reshape.PNG" alt="A comparison of long and wide format" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig14-12)A comparison of long and wide format&lt;/p&gt;
+&lt;/div&gt;
+
+19. Save your clean data
+    - The final step of your cleaning process will be to export or save your clean data. You can save your files in one or more file types depending on your needs. It can be helpful to save your data in more than one format to meet various analysis, long-term storage, or data sharing needs (e.g., an interoperable format like CSV, and a format that contains embedded metadata such as SPSS). 
+
+## Data cleaning workflow
+
+Data cleaning is not a standalone process. It should be part of a larger, well-planned workflow that is designed to produce standardized, reproducible, and reliable datasets. Ignoring this planning and jumping into data cleaning in a haphazard way only leads to more work after the cleaning process, having to organize our messy work so that others can understand what we did. 
+
+### Preliminary steps
+
+The first part in creating a data cleaning workflow is making sure that your folder structure is set up according to your style guide, and that your folders and files are consistently named according to your style guide. It is important that the metadata in your names is always provided in the same order (e.g., `project_time_participant_instrument_type.ext`). Breaking away from a standardized naming convention begins to erode the reproducibility of your work. 
+
+Next, you will want to gather all of the necessary documentation that will be used throughout your cleaning process.
+
+1. Data dictionary
+    - In this document, variables should be named and coded according to your style guide and all variables and transformations approved by the data management working group.
+2. Data cleaning plan
+    - This should include a series of steps based off of our standardized data cleaning checklist, and all transformations have been reviewed by the data management working group.
+3. README file
+    - This includes any README files, stored alongside raw data files, that contain notes that may be relevant to your data cleaning process (e.g., a project coordinator notes that “ID 1234 should actually be ID 1235”). You will want to integrate this information into your data cleaning plan as needed.
+4. Participant tracking database
+    - Make sure that this database is up to date so that you can compare form completion status numbers to the Ns in your dataset.
+
+Once you gather your documentation, you are ready to begin the data cleaning process.
+
+### Cleaning data using code
+
+While you can clean data through a point and click method in a program like SPSS or Microsoft Excel, cleaning data manually is typically not reproducible, leads to errors, and is time consuming. The number one practice that you can implement to improve the reproducibility, reliability, and efficiency of your work is to clean data using code [@borer_simple_2009]. The code can be written in any program your team chooses (e.g., R, SAS, Stata). While writing code, or syntax, may seem time consuming up front, it has numerous benefits.  
+
+  - It helps you to be more thoughtful in your data cleaning process  
+  - It allows others to review your work and catch potential errors  
+  - It can actually save you an enormous amount of time in the future if you plan to clean data for the same form multiple times (in say a longitudinal study)  
+  - It allows others to reproduce your work. By simply re-running your code file, they should be able to get the same resulting dataset that you created.   
+
+However, writing code alone will not provide all of the desired benefits. There is more that must be considered.
+
+1. Choose an appropriate tool to code in. Assess things such as:
+    - Your comfort level with the program as well as available support
+    - Cost and access to the program
+    - Interoperability of the program (i.e., will others be able to open, review, and run your code)
+    - Limitations (e.g., file size limitations, variable character count limitations)
+    - Default settings (e.g., how the program performs rounding, how dates are stored)
+1. Follow a coding style guide
+    - As discussed in Section \@ref(style-code), coding best practices such as using relative file paths,  including comments, and recording session information, allow your processes to be more reproducible and reduces errors. Adding best practices to a code style guide ensures that all team members are setting up their files in a consistent manner, further improving the usability of code.
+1. Review your data upon import
+    - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
+1. Do all transformations in code
+    - Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.
+1. Don’t do anything random 
+    - Everything in your syntax must be replicable. Yet, there are a few scenarios where, without even realizing it, you could be producing different results each time you run your code.
+      - If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) [@klein_practical_2018]. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.
+      - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop the second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
+1. Check each transformation
+    - As mentioned in Section \@ref(clean-check), check your work along the way, don’t wait until the end of your script. For each transformation in your data:
+      - Review your variables/cases before and after the transformations.
+      - Review all errors and warning codes
+        - Some warnings may be innocuous (just messages)
+        - Some errors are telling you that your code did not run, you need to fix something
+        - Other warnings are telling you that your code did run but it did not run as you expected it to. If you don’t pay attention to these warnings, you may end up with unexpected results. 
+1. Validate your data before exporting and review after exporting
+    - As we discussed in Section \@ref(clean-check), before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
+      - While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE (e.g., test that `stu_id` falls within the range of 1000--2000).
+    - After exporting your data, open the exported file. Does everything look as you expected (e.g., maybe you expected missing data to export as blanks but they exported as "NA")?
+1. Do code review
+    - If you have more than one person on your team who understands code, code review is a great practice to integrate into your workflow. This is the process of having someone, other than yourself, review your code for things such as readability, usability, and efficiency. Through code review it’s possible to create more interpretable code as well as catch errors you were not aware of. Code review checklists can be implemented to standardize this process.
+
+**Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Travis Gerke | R Code Review Checklist ^[https://github.com/tgerke/r-code-review-checklist]|
+
+### Cleaning data manually
+
+While cleaning data with code is the preferred method for the reasons previously mentioned, it does require technical expertise that not every team may have. If your team needs to clean data manually, consider two important things.
+
+1. Choose a tool based on the same criteria used when choosing a coding tool (i.e., comfort level, cost and access, interoperability, and default settings). Be aware of the potential formatting issues mentioned in Chapter \@ref(capture) when cleaning with tools like Microsoft Excel.
+
+2. Once you begin cleaning your data manually, it is imperative that you document every transformation to enable reproducibility. This may look different depending on the tool you use. 
+    - If cleaning data using the point and click menu in a program such as SPSS, when performing a transformation use a "paste" type button to copy all associated commands into a syntax file that can easily be reused [@kathawalla_easing_2021].
+    - If using a program such as Microsoft Excel for data cleaning, add notes into your data cleaning plan that are detailed enough to allow anyone to replicate your exact data cleaning process by hand [@the_carpentries_data_2023].
+
+### Data versioning practices
+
+The last part of the workflow to consider is where you will store your data and how you will version it. As we've discussed previously, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. During an active project, it is typically best to keep finalized clean datasets in their respective individual folders (e.g., `w1_stu_svy` folder, `w2_stu_svy` folder), rather than moving all clean files to a separate "master folder". If changes need to be made to files, it is easier to keep track of files in their original locations. However, what is most important here is to not copy files across folders; keep one single master dataset per data source for authenticity purposes [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. Also, make sure to limit access as needed based on requirements covered in Chapter \@ref(store).
+
+However, once your final datasets are saved, it is common that at some point you will find an error in your data and/or your code. Yet, once you’ve shared your data and code with others, it will be imperative that you do not save over existing versions of those files. You will need to version both your code and your data, following the guidelines laid out in your style guide. Versioning your final files, and keeping track of those different versions in a changelog (see Section \@ref(document-change)), allows you to track data lineage, helping users understand where the data originated as well as all transformations made to the data. While you can version any files that you choose, I am specifically referring to final files here, not in-progress, working files that have not yet been shared with others.
+
+Last, along with assigning someone to oversee data cleaning, it will be important to assign someone to oversee this versioning process. Versioning files and updating documentation takes time and consideration, and that responsibility will need to be explicitly laid out in order to ensure it isn't forgotten. 
+
+&lt;!--chapter:end:13-data-cleaning.Rmd--&gt;
+
+# Data Archiving {#store-long}
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/lifecycle_archive.PNG" alt="Long-term data storage in the research project life cycle" width="80%" /&gt;
+&lt;p class="caption"&gt;(\#fig:fig15-1)Long-term data storage in the research project life cycle&lt;/p&gt;
+&lt;/div&gt;
+
+Once you have gone through all cycles of data collection and you are preparing to wrap up your grant, you will need to switch gears and start thinking about implementing your archiving plan to ensure that your files are still accessible and usable, long after a project is complete. While your project may be ending, there are still many reasons to retain your data long-term including future analyses, opportunities to make corrections (e.g., going back to paper files if an error is found in the data), and data retention requirements from funders and institutions. In this section we will discuss how to care for files internally, while public data sharing and archiving will be discussed in Chapter \@ref(share). However, these processes (preparing to internally archive and preparing to publicly share data) will most likely be happening at the same time.
+
+## Long-term storage
+
+The first thing you will want to do when planning to store your data long-term is review your requirements for data retention and destruction. There may be various requirements for both data retention and destruction depending on your oversight (e.g., institution, funder, or data sharing agreement requirements). It is common for oversight to require that you retain your data anywhere from 3-10 years and there may be specific destruction requirements for data that contain PII or data covered by a data use agreement. Make sure to review relevant policies and agreements to determine what is required.
+
+### Make a plan 
+
+Once you understand requirements, make a plan for retention and destruction. If you are required to retain your data for a specified number of years, consider how you will continue to store data and documents in a way that meets your original goals (e.g., data safety, protecting confidentiality, accessibility and usability of files). You will need to consider both paper and electronic files.
+
+  - Paper
+    - At the end of your project you will want to begin boxing up paper files for long-term storage. Make sure to clearly label all boxes in case you need to return to files at a later point. Many institutions have records management departments that can assist you with long-term storage of paper files. These departments typically store your physical files for a designated set of time, as well as assist in destruction of files once that period has ended. Note that you may not want to use this solution until you are certain you will no longer need to easily access your paper files (e.g., for fixing errors, entering any additional information). If destroying paper files on your own, make sure to choose a quality destruction method such as paper shredding.
+  - Electronic
+    - For electronic data long-term storage, you will want to consider two things, file formats and storage location [@borer_simple_2009; @briney_data_2015].
+      - File formats 
+        - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete (see Table \@ref(tab:tab15-1)). This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
+      - Storage location
+        - Similar to choosing file formats, choose a storage location that is accessible and not at risk of becoming corrupt or obsolete (e.g., think obsolescence of floppy disks). Also, make sure that you are able to continue restricting access as needed. If your short-term storage solution meets these requirements (e.g., your institution network drive), you may not need to do anything different in preparing for long-term storage, but it will be important to continue implementing good practices to keep your data safe (e.g., continuing data backups, checking that hardware and software is up to date).  
+        - Within your storage location, consider moving all finalized datasets (i.e., cleaned and de-identified) into a "master data" folder for ease of accessibility. Restrict access to reduce unintended modification of files.
+          - Design this master data folder like you would a public repository folder (see Section \@ref(share-file))
+            - Add a README that describes what files the folder contains
+            - Move relevant documentation from other locations to this folder (e.g., data dictionaries, project-level documentation)
+          - Add descriptions of the finalized datasets to a data inventory to inform your team of their availability (see Section \@ref(document-inventory))  
+    - When it comes time to destroy data, make sure to permanently delete files, including all backups of files. When deleting PII, this often involves more than just moving files to the trash can on your computer. Work with your institution IT department during this process.
+
+Last, make sure to document your plan, including time frames for retention and destruction, in the appropriate locations (e.g., DMP, research protocol, informed consent agreements, team data security policy). Assign responsibilities for all tasks including short-term boxing or destruction of physical files and wrangling or destruction of electronic files, as well as ongoing long-term maintenance of files, and document in your roles and responsibilities document.
+
+&lt;br&gt;
+
+
+Table: (\#tab:tab15-1)Potential long-term storage file types
+
+|Type                      |Non-proprietary formats |Other commonly accepted formats |
+|:-------------------------|:-----------------------|:-------------------------------|
+|Text documentation        |PDF, TXT, HTML, XML     |DOCX                            |
+|Rectangular documentation |CSV                     |XLSX                            |
+|Datasets                  |CSV, TSV                |SPSS, STATA, SAS, R, XLSX       |
+
+## Internal data use {#store-long-use}
+
+At the end of a project, or possibly earlier in the project, team members will want to begin analyzing data. It is important to consider where you will store finalized datasets for internal use, how you will notify team members of their availability, and how you will allow team members, and other research collaborators, to access data. Most likely you will not want researchers going in to folders and grabbing datasets without consulting with a core team member first. Therefore, it is important to develop a system for providing data to researchers on an as-needed basis. Create a data request process for team members, or external collaborators, to request access to finalized study datasets. Several things will need to be considered.
+
+1. Design a system for requesting access (e.g., designate a person to email, develop a survey form that is submitted to a designated person)
+    - In that system, the researcher should describe what data they are requesting (i.e., what variables, from what time periods), as well as the purpose of their analysis. It may be helpful to build a data request process that involves providing data dictionaries and other documentation to researchers to review before requesting data.
+    - This system should also include collecting any required agreement forms from requestors (e.g., data sharing agreements)
+2. Decide who needs to review the request to ensure the application is complete (e.g., a data manager), and who needs to give final approval for the data request submission (e.g., a PI)
+3. Design a system for gathering data for requestors (e.g., will you provide researchers with full datasets or will you narrow datasets based on specific requests)
+    - If narrowing datasets for researchers, where will new datasets be stored? (e.g., a "data request" folder)
+4. Consider how you will share datasets with researchers (e.g., a secure link to a cloud folder, using secure file transfer)
+5. Consider how you will track data requests
+    - It is important to keep track of data requests in case of situations such as errors found in the data (e.g., a data request log with name, date, and email of requestor). In those cases, you can reach back out to researchers to inform them that errors were found and new versions of the data are available.
+
+Here is an example of how you might structure a data request folder.
+  </code></pre>
+<p>data_requests/
+├── data_request_log.xlsx
+│ ├── lastname1_firstname1_2023-03-02
+| ├── projname_lname-fname_data-sharing-agreement_2023-04-08.pdf
+│ ├── projname_stu_svy_data-dictionary.xlsx
+│ └── projname_lname-fname_stu_svy_clean_2023-05-02.csv
+│ ├── lastname2_firstname2_2023-03-19
+│ ├── archive
+│ ├── changelog.xlsx
+| └── projname_tch_svy_clean_2023-05-15.csv
+| ├── projname_lname2-fname2_data-sharing-agreement_2023-04-22.pdf
+│ ├── projname_tch_svy_data-dictionary.xlsx
+| └── projname_lname2-fname2_tch_svy_clean_2023-06-10.csv
+|<br>
+└── …</p>
+<p>```</p>
+<p>Ultimately, you want to establish a standardized and efficient process that reduces the burden on team members responsible for reviewing, approving, and fulfilling data requests and also removes any ambiguity about how users should request access to data <span class="citation">(<a href="references.html#ref-institute_of_education_sciences_slds_2019" role="doc-biblioref">Institute of Education Sciences 2019</a>)</span>. As always, roles and responsibilities will need to be assigned to each step of this process. Often the person who facilitates internal data requests for one project, will likely be the same person that fulfills data requests for all projects. Document this request process in your data security policy (see Section <a href="document.html#document-security">8.1.5</a>) so that team members know how to request data and who to work with.</p>
+<p><strong>Resources</strong></p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="42%">
+<col width="57%">
+</colgroup>
+<thead><tr class="header">
+<th>Source</th>
+<th>Resource</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td>Kristin Briney</td>
+<td>Project Close-Out Checklist for Research Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://authors.library.caltech.edu/records/yr0y9-z4q70" class="uri"&gt;https://authors.library.caltech.edu/records/yr0y9-z4q70&lt;/a&gt;&lt;/p&gt;'><sup>64</sup></a>
+</td>
+</tr></tbody>
+</table></div>
+<div id="using-a-repository" class="section level2" number="19.1">
+<h2>
+<span class="header-section-number">19.1</span> Using a repository<a class="anchor" aria-label="anchor" href="#using-a-repository"><i class="fas fa-link"></i></a>
+</h2>
+<p>Last, if maintaining your electronic data long-term sounds like too much effort for your team, there are other options. Many universities have institutional repositories that may include services such as data curation and preservation. Additionally, there are several external repositories that offer curation and preservation services where you may be able to deposit your data for long-term storage. It’s possible that depositing your data in one of these two options may also align with publicly sharing your data, which we will review in Chapter <a href="share.html#share">20</a>.</p>
+
+</div>
+</div>
+
+  <div class="chapter-nav">
+<div class="prev"><a href="example-absolute-file-path.html"><span class="header-section-number">18</span> Example absolute file path</a></div>
+<div class="next"><a href="share.html"><span class="header-section-number">20</span> Data Sharing</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-relative-file-path"><span class="header-section-number">19</span> Example relative file path</a></li>
+<li><a class="nav-link" href="#using-a-repository"><span class="header-section-number">19.1</span> Using a repository</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/blob/master/14-data-archive.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/edit/master/14-data-archive.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-22.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -17,7 +17,7 @@ Documentation is a collection of files that contain procedural and descriptive i
 
 We are going to cover four levels of documentation in this chapter: team-level, project-level, dataset-level, and variable-level. While most of the documentation discussed does fall within its eponymous phase in the research life cycle, some documents will be created earlier or later and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a human-readable format that works well for your team (e.g., Word, PDF, TXT, Google Doc, XLSX, HTML, OneNote, etc.). When projects are closing out and you are preparing to share your data, you can consider, at that time, how to best make your documents more sustainable, interoperable, and searchable. See Section \@ref(store-long) for more information.
 
-The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder and other governing bodies (see Chapters \@ref(hsd) & \@ref(dmp)). No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Implementing documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret the document more easily. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together). Ultimately though, all of your documents should be reviewed with your data management working group in order to gather feedback and reach consensus. 
+The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder and other governing bodies (see Chapters \@ref(hsd) & \@ref(dmp)). No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Implementing documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret the document more easily. These documents are best created by the team member that directly oversees the process and sometimes that may include a collaborative effort (for example both a project coordinator and a data manager may build documents together). Ultimately though, all of your documents should be reviewed with your data management working group (DMWG) in order to gather feedback and reach consensus (see Chapter \@ref(plan)). 
 
 Each type of documentation discussed below is a living document to be updated as procedures change or new information is received. As seen in the cyclical section of Figure \@ref(fig:fig8-1) above, team members should revisit documentation each time new data is collected, or more often if needed, to ensure documentation still aligns with actual practices. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents along the way so that staff know that they are working with the most recent version and can see when documents have been updated and why. 
 
@@ -99,7 +99,7 @@ A data inventory maps all datasets collected by the research team across all pro
 -   How datasets are related
 
 <div class="figure" style="text-align: center">
-<img src="img/data_inventory.PNG" alt="Example of a team data inventory" width="100%" />
+<img src="img/data_inventory2.PNG" alt="Example of a team data inventory" width="100%" />
 <p class="caption">(\#fig:fig8-5)Example of a team data inventory</p>
 </div>
 
@@ -394,8 +394,10 @@ As you build your data dictionaries, consider the following:
     - Are there any field standards that dictate how an items values should be coded?
   - Additional Items
     - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
-      - Identifiers (unique participant ids, rater ids)
-      - Grouping variables (treatment, cohort)
+      - Primary keys (e.g., `stu_id`, `rater_id`)
+      - Foreign keys (e.g., `tch_id` in a student file)
+      - Grouping variables (e.g., `treatment`, `cohort`, `cluster`, `dosage`, `block`)
+      - Time component (e.g., `wave`, `time`, `year`)
       - Derived variables
         - This includes both variables your team derives (e.g., mean scores, reverse coded variables, variable checks) as well as variables derived from any scoring programs (e.g., percentile ranks, grade equivalent scores)
       - Metadata (Variables that your tool collects such as IPAddress, completion, language)
@@ -408,7 +410,7 @@ For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig8-19
 <p class="caption">(\#fig:fig8-19)Example student survey data dictionary</p>
 </div>
 
-The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document/s with your team. Gather your DMWG and review the following types of questions:
+The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document with your team. Gather your DMWG and review the following types of questions:
 
   - Is everyone in agreement about how variables are named, acceptable variable ranges, how values are coded, and our variable types and formats? 
   - Is everyone in agreement about who gets each item?  
@@ -507,7 +509,7 @@ The most common metadata elements [@dahdul_research_2023; @hayslett_libguides_20
 
 Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_2023; @ldbase_information_2023]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
-Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML [@icpsr_icpsr_2023] or JSON-LD. We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig8-24) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
+Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML (Extensible Markup Language) or JSON-LD (JavaScript Object Notation-Linked Data). We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig8-24) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
 
 <div class="figure" style="text-align: center">
 <img src="img/metadata_project.PNG" alt="Example metadata displayed on an ICPSR Open project page" width="95%" />
@@ -551,6 +553,11 @@ If you plan to archive your data, first check with your repository to see if the
 
 If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_metadata_2023], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
 
+**Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Registry of Research Data Repositories|A searchable database of repositories and their metadata standards ^[https://www.re3data.org/]|
 
 ## Wrapping it up
 

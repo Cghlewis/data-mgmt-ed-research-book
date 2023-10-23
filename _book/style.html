@@ -222,34 +222,39 @@ Figure 9.1: Style guide in the research project life cycle
     - Only use lower case letters  
     - Use `-` to separate words  
 3. All previous versions of files must be placed into their respective "archive" folder
-    - A changelog should be placed in all data "archive" folders to document changes between file versions</code></pre>
+        - A changelog should be placed in all data "archive" folders to document changes between file versions
+</code></pre>
 <p><strong>Example directory structure created using a style guide</strong></p>
-<pre><code>                               levelName
-1  project-new                          
-2   ¦--intervention                     
-3   ¦   °--cohort-1                     
-4   ¦       °--coaching_materials       
-5   ¦           °--archive              
-6   ¦--project-mgmt                     
-7   ¦   °--cohort-1                     
-8   ¦       °--scheduling-materials     
-9   ¦           °--archive              
-10  ¦--documentation                    
-11  ¦   ¦--sops                         
-12  ¦   ¦   °--archive                  
-13  ¦   °--data-dictionaries            
-14  ¦       °--archive                  
-15  ¦--data                             
-16  ¦   °--cohort-1                     
-17  ¦       °--student                  
-18  ¦           °--survey               
-19  ¦               °--archive          
-20  ¦                   °--changelog.txt
-21  °--tracking                         
-22      °--cohort-1                     
-23          ¦--participant-database     
-24          ¦   °--archive              
-25          °--parent-consents          </code></pre>
+<pre><code>
+project_new/
+│   ├── planning
+|       ├── grant_mgmt
+|          └── proposal_docs
+|       ├── meetings
+|          ├── agendas
+|          └── notes
+|   ├── project_mgmt
+|       ├── hiring_materials
+|       └── scheduling_materials
+|   ├── documentation
+|       ├── data_dictionaries
+|       ├── project_new_data_sources_catalog.xlsx
+|       ├── research_protocol
+|       └── sops
+|   ├── tracking
+│       ├── parent_consents
+│       └── participant_tracking_database
+│   ├── data
+│       ├── cohort_1
+│           ├── student
+|               ├── survey
+|                   ├── archive
+|                       └── changelog.txt
+|               ├── assessment
+|                   ├── archive
+|                       └── changelog.txt
+└── ...
+</code></pre>
 </div>
 <div id="file-naming" class="section level2" number="9.3">
 <h2>
@@ -284,6 +289,9 @@ Figure 9.2: Documents, from Randall Munroe’s xkcd
 <ul>
 <li>
 <em>YYYY-MM-DD</em> or <em>YYYYMMDD</em>
+<ul>
+<li>Using the ISO 8601 standard ensures that dates are consistently formatted and correctly interpreted (e.g., “06-01-2023” is interpreted as DD-MM-YYYY in Europe, while it is often interpreted as MM-DD-YYYY in the U.S.)</li>
+</ul>
 </li>
 <li>While the first way adds more characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.</li>
 </ul>
@@ -329,12 +337,14 @@ Figure 9.2: Documents, from Randall Munroe’s xkcd
   - student = stu
   - survey = svy
   - wave = w
-  - project math efficacy = me</code></pre>
+  - project math efficacy = me
+</code></pre>
 <p><strong>Example file names created using a style guide</strong></p>
 <pre><code>me_stu_svy_sop_2022-08-01.docx
 me_w1_stu_svy_raw_2022-11-03.csv
 me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
-me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R</code></pre>
+me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
+</code></pre>
 </div>
 <div id="style-varname" class="section level2" number="9.4">
 <h2>
@@ -441,7 +451,8 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R</code></pre>
   - teacher self-report = t_
   - parent report on students = p_
   - district student records = d_
-7. Denote reverse coded variables using suffix `_r`</code></pre>
+7. Denote reverse coded variables using suffix `_r`
+</code></pre>
 <p><strong>Example variable names created using a style guide</strong></p>
 <pre><code>s_anx1
 s_anx1_r
@@ -449,10 +460,11 @@ s_gender
 d_gender
 t_gender
 t_stress5
-p_relate</code></pre>
-<div id="time" class="section level3" number="9.4.1">
+p_relate
+</code></pre>
+<div id="style-time" class="section level3" number="9.4.1">
 <h3>
-<span class="header-section-number">9.4.1</span> Time<a class="anchor" aria-label="anchor" href="#time"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.4.1</span> Time<a class="anchor" aria-label="anchor" href="#style-time"><i class="fas fa-link"></i></a>
 </h3>
 <p>Before moving on there is one last consideration for variable names. If your data is longitudinal, you may need to add rules for accounting for time in your variable names as well. Recall from Section <a href="structure.html#structure-datastructure">3.3.2</a>, there are two ways you can link and structure longitudinal data, in wide format or long format.</p>
 <ol style="list-style-type: decimal">
@@ -570,6 +582,10 @@ Figure 9.3: Examples of how time might be added to your data based on a variety 
 Figure 9.4: Example missing value code schema used for numeric variables
 </p>
 </div>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+It is important to note here that there is a difference between a string value of “NA” or “NULL” that is inserted, verses an <code>NA</code> or <code>NULL</code> value that is assigned to blank values by a specific platform. For instance, blank numeric values in R are represented as the symbol NA. Yet this value is treated as missing, not as the string “NA”.</p>
+</blockquote>
 </div>
 </div>
 <div id="style-code" class="section level2" number="9.6">
@@ -666,7 +682,7 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <li><a class="nav-link" href="#directory-structure"><span class="header-section-number">9.2</span> Directory structure</a></li>
 <li><a class="nav-link" href="#file-naming"><span class="header-section-number">9.3</span> File naming</a></li>
 <li>
-<a class="nav-link" href="#style-varname"><span class="header-section-number">9.4</span> Variable naming</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#time"><span class="header-section-number">9.4.1</span> Time</a></li></ul>
+<a class="nav-link" href="#style-varname"><span class="header-section-number">9.4</span> Variable naming</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#style-time"><span class="header-section-number">9.4.1</span> Time</a></li></ul>
 </li>
 <li>
 <a class="nav-link" href="#style-codes"><span class="header-section-number">9.5</span> Value coding</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#style-missing"><span class="header-section-number">9.5.1</span> Missing value coding</a></li></ul>
@@ -689,7 +705,7 @@ Figure 9.4: Example missing value code schema used for numeric variables
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-19.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

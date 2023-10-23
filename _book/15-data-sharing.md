@@ -64,7 +64,7 @@ However, due to supporter requirements (e.g., agency partner, institution, funde
 3. Share through a lab, personal, or project website
     - While this system provides some accessibility, it is not sustainable. This method requires a significant commitment from your team. Sharing in this way requires to you publicize your site to increase visibility, as well as commit the resources to building and maintaining a secure and reliable data request pipeline. Furthermore, websites change and links break, reducing the long-term accessibility of your data. 
 4. Informal peer-to-peer sharing
-    - This may work well for peers but doesn’t make a broader audience aware of the availability of your data and keeps the burden of data maintenance and responding to requests on you and your staff. Also, with no formal request system in place, this makes it difficult for the requestor to know who to contact to request data or what information is needed to retrieve the data.
+    - Here you might use a data request process similar to the internal one discussed in Section \@ref(store-long-use). Yet, while informal methods such as email may work fine for peers, it doesn’t make a broader audience aware of the availability of your data and keeps the burden of data maintenance and responding to requests on you and your staff. 
 5. Supplemental materials attached to an article or stored on a publisher’s website
     - Here a concern is that materials will be lost if a journal changes publishers or a publisher changes its website.
 6. A “data available upon request” statement in a publication
@@ -151,7 +151,7 @@ As discussed in Chapter \@ref(clean), there are three levels of data files, raw,
 
 Instead I suggest to share the general clean datasets discussed in Chapter \@ref(clean). These datasets have all direct identifiers removed, they have been curated to allow for easier interpretation of variables, and they contain all of the information necessary to validate any research findings. In the same repository, it is also possible to share any analytic datasets created that will allow replication of any specific reports or publications. 
 
-#### Organizing files 
+#### Organizing files {#share-combine}
 
 If you are collecting data across time, across different forms, or across different cohorts, you will want to consider whether or not you want to combine files before sharing or provide distinct files that users can merge on their own [@neild_sharing_2022].
 
@@ -204,6 +204,7 @@ When dealing with both indirect identifiers and sensitive variables, there are a
   - Collapsing categories (e.g., creating an "other" category for all special education categories with cells less than 5)
   - Creating summary variables (e.g., use `date of data collection` and `date of birth` to create an age variable, allowing you to remove both `date of birth` and `date of data collection`)
   - Report in larger units (e.g., reporting age in years as opposed to age in months, or reporting state or region-level geography as opposed to county or district)
+    - For geography in particular, the HIPAA safe harbor method recommends removing all geography smaller than state [@us_department_of_health_and_human_services_guidance_2012]
 - Truncation: Also called top or bottom coding, this involves restricting the upper and lower ranges to mask outliers (e.g., top code any income above \$150k to "\$150k or higher")
 - Share unlinked files: If you find that the potential for re-identification is caused when linking across files (e.g., linking a student file to a teacher file), and the indirect information contained in those files is necessary for analysis purposes, you may consider sharing a set of files that do not contain linking variables. However, this is not ideal as it limits future use cases for your data.
 
