@@ -1,8 +1,8 @@
 # Data Management Plan {#dmp}
 
-```{r fig5-1, fig.cap="Data management plan in the research project life cycle", out.width = "80%"}
+```{r fig5-1, fig.cap="Data management plan in the research project life cycle"}
 
-knitr::include_graphics("img/lifecycle_dmp2.PNG")
+knitr::include_graphics("img/fig5-1.PNG")
 
 ```
 
@@ -98,7 +98,7 @@ Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a 
 
 ```{r fig5-2, fig.cap="Example data sources catalog"}
 
-knitr::include_graphics("img/data_catalog.PNG")
+knitr::include_graphics("img/fig5-2.PNG")
 
 ```
 

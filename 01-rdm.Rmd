@@ -105,7 +105,7 @@ You can see in Figure \@ref(fig:fig2-1), how throughout the project, data manage
 
 ```{r fig2-1, fig.cap="The research project life cycle"}
 
-knitr::include_graphics("img/cl_lifecycle2.PNG")
+knitr::include_graphics("img/fig2-1.PNG")
 
 ```
 

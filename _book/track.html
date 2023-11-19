@@ -99,7 +99,7 @@
 </h1>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-1"></span>
-<img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="80%"><p class="caption">
+<img src="img/fig10-1.PNG" alt="Tracking in the research project life cycle" width="100%"><p class="caption">
 Figure 10.1: Tracking in the research project life cycle
 </p>
 </div>
@@ -155,13 +155,7 @@ I want to reiterate this single source of truth concept. Information is often co
 <h2>
 <span class="header-section-number">10.2</span> Building your database<a class="anchor" aria-label="anchor" href="#building-your-database"><i class="fas fa-link"></i></a>
 </h2>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig10-2"></span>
-<img src="img/tracking_db4.PNG" alt="Example timeline for constructing and using a tracking database" width="100%"><p class="caption">
-Figure 10.2: Example timeline for constructing and using a tracking database
-</p>
-</div>
-<p>While the tracking phase appears after collection in Figure <a href="track.html#fig:fig10-1">10.1</a>, it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs (see Figure <a href="track.html#fig:fig10-2">10.2</a> for example of what this workflow may look like). Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.</p>
+<p>While the tracking phase appears after collection in Figure <a href="track.html#fig:fig10-1">10.1</a>, it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools, in the “Create Instruments” phase. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.</p>
 <p>While a project coordinator can build this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when creating this system. This ensures that your system is set up efficiently and comprehensively.</p>
 <p>This database may be a standalone structure, used only for tracking and anonymization purposes, or it may be integrated as part of your larger study system, where all study data is collected and/or entered as well.</p>
 <div id="relational-databases" class="section level3" number="10.2.1">
@@ -188,7 +182,7 @@ Figure 10.2: Example timeline for constructing and using a tracking database
 </tr></thead>
 <tbody><tr class="odd">
 <td>Omar Elgabry</td>
-<td>A series of posts on database fundamentals <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0" class="uri"&gt;https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0&lt;/a&gt;&lt;/p&gt;'><sup>64</sup></a>
+<td>A series of posts on database fundamentals <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0" class="uri"&gt;https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0&lt;/a&gt;&lt;/p&gt;'><sup>66</sup></a>
 </td>
 </tr></tbody>
 </table></div>
@@ -197,11 +191,11 @@ Figure 10.2: Example timeline for constructing and using a tracking database
 <h4>
 <span class="header-section-number">10.2.1.1</span> Relational model<a class="anchor" aria-label="anchor" href="#relational-model"><i class="fas fa-link"></i></a>
 </h4>
-<p>In Figure <a href="track.html#fig:fig10-3">10.3</a> we have three entities we need to track in our database—schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.</p>
+<p>In Figure <a href="track.html#fig:fig10-3">10.2</a> we have three entities we need to track in our database—schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-3"></span>
 <img src="img/participant1v01.PNG" alt="Participant database built using a relational model" width="100%"><p class="caption">
-Figure 10.3: Participant database built using a relational model
+Figure 10.2: Participant database built using a relational model
 </p>
 </div>
 <p>We can see here that across each table we have no duplicated information. The student table only contains student-level information, the teacher table only contains teacher-level information, and the school table only contains school-level information. This is a huge time saver. Imagine if a teacher’s last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table.
@@ -262,11 +256,11 @@ If we want to see a table with both student and teacher information, we can simp
 <h4>
 <span class="header-section-number">10.2.1.2</span> Non-relational model<a class="anchor" aria-label="anchor" href="#non-relational-model"><i class="fas fa-link"></i></a>
 </h4>
-<p>Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure <a href="track.html#fig:fig10-4">10.4</a>). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
+<p>Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure <a href="track.html#fig:fig10-4">10.3</a>). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-4"></span>
 <img src="img/participant2v02.PNG" alt="Participant database built in using a non-relational model" width="100%"><p class="caption">
-Figure 10.4: Participant database built in using a non-relational model
+Figure 10.3: Participant database built in using a non-relational model
 </p>
 </div>
 <blockquote>
@@ -291,11 +285,11 @@ If your study includes a variety of related entities, tracked over waves of time
 <li>What fields do you want to include in each table?</li>
 <li>If using a relational table design, what fields will you use to relate tables?</li>
 </ol>
-<p>Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure <a href="track.html#fig:fig10-5">10.5</a> I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.</p>
+<p>Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure <a href="track.html#fig:fig10-5">10.4</a> I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-5"></span>
 <img src="img/fig10-5.PNG" alt="Example participant database model" width="80%"><p class="caption">
-Figure 10.5: Example participant database model
+Figure 10.4: Example participant database model
 </p>
 </div>
 <p>I have designed this database model in this way:</p>
@@ -317,11 +311,11 @@ Figure 10.5: Example participant database model
 <li>I have connected my tables through primary and foreign keys (<code>tch_id</code> and <code>sch_id</code>)</li>
 <li>With information separated into four tables, I can also now limit access as needed (e.g., only allow data entry staff access to the de-identified tables, or restricting entry to only the current wave of data preventing accidental overwriting of existing data)</li>
 </ol>
-<p>The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both <code>tch_id</code> and <code>wave</code> to uniquely identify rows since <code>tch_id</code> would now be duplicated for each wave of data collection (see Figure <a href="track.html#fig:fig10-6">10.6</a>).</p>
+<p>The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both <code>tch_id</code> and <code>wave</code> to uniquely identify rows since <code>tch_id</code> would now be duplicated for each wave of data collection (see Figure <a href="track.html#fig:fig10-6">10.5</a>).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-6"></span>
 <img src="img/fig10-6.PNG" alt="Example participant database model" width="80%"><p class="caption">
-Figure 10.6: Example participant database model
+Figure 10.5: Example participant database model
 </p>
 </div>
 <p>While these examples are for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project.</p>
@@ -478,7 +472,7 @@ If your study involves anonymous data collection, you will no longer be able to 
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-7"></span>
 <img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%"><p class="caption">
-Figure 10.7: Example spreadsheet view data entry
+Figure 10.6: Example spreadsheet view data entry
 </p>
 </div>
 </div>
@@ -494,7 +488,7 @@ Figure 10.7: Example spreadsheet view data entry
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-8"></span>
 <img src="img/form-view-new.PNG" alt="Example form view data entry" width="70%"><p class="caption">
-Figure 10.8: Example form view data entry
+Figure 10.7: Example form view data entry
 </p>
 </div>
 <blockquote>
@@ -513,7 +507,7 @@ If your participant tracking database is separate from your data collection tool
 <ol style="list-style-type: decimal">
 <li>Participants must keep this same identifier for the entire project.
 <ul>
-<li>This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure <a href="track.html#fig:fig10-10">10.9</a>). The participant still keeps the same ID throughout the study. In these cases, you will use a combination of variables to identify the unique instances of that participant (e.g., <code>stu_id</code> and <code>cohort</code>).</li>
+<li>This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure <a href="track.html#fig:fig10-10">10.8</a>). The participant still keeps the same ID throughout the study. In these cases, you will use a combination of variables to identify the unique instances of that participant (e.g., <code>stu_id</code> and <code>cohort</code>).</li>
 <li>Having a static participant ID allows you to track the flow of each participant through your study and provides the added benefit of helping to measure dosage.</li>
 </ul>
 </li>
@@ -521,7 +515,7 @@ If your participant tracking database is separate from your data collection tool
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-10"></span>
 <img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%"><p class="caption">
-Figure 10.9: Example of keeping participant IDs for the entire study
+Figure 10.8: Example of keeping participant IDs for the entire study
 </p>
 </div>
 <ol start="2" style="list-style-type: decimal">
@@ -550,7 +544,7 @@ Figure 10.9: Example of keeping participant IDs for the entire study
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-9"></span>
 <img src="img/id_schema.PNG" alt="Example of a study id schema created using best practices" width="100%"><p class="caption">
-Figure 10.10: Example of a study id schema created using best practices
+Figure 10.9: Example of a study id schema created using best practices
 </p>
 </div>
 <blockquote>
@@ -601,7 +595,7 @@ The only time you will not assign unique identifiers is when you collect anonymo
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

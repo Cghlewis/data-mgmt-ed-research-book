@@ -99,7 +99,7 @@
 </h1>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-1"></span>
-<img src="img/lifecycle_clean.PNG" alt="Data cleaning in the research project life cycle" width="80%"><p class="caption">
+<img src="img/fig14-1.PNG" alt="Data cleaning in the research project life cycle" width="100%"><p class="caption">
 Figure 14.1: Data cleaning in the research project life cycle
 </p>
 </div>
@@ -143,7 +143,7 @@ Figure 14.1: Data cleaning in the research project life cycle
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-2"></span>
-<img src="img/clean_data.PNG" alt="The three phases of data" width="80%"><p class="caption">
+<img src="img/fig14-2.PNG" alt="The three phases of data" width="100%"><p class="caption">
 Figure 14.2: The three phases of data
 </p>
 </div>
@@ -210,14 +210,14 @@ Figure 14.2: The three phases of data
 <p>In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section <a href="clean.html#clean-criteria">14.2</a>, it can be helpful to follow a standardized checklist of data cleaning steps (see Figure <a href="clean.html#fig:fig14-3">14.3</a>). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-3"></span>
-<img src="img/data_clean_check.PNG" alt="Data cleaning checklist" width="80%"><p class="caption">
+<img src="img/fig14-3.PNG" alt="Data cleaning checklist" width="100%"><p class="caption">
 Figure 14.3: Data cleaning checklist
 </p>
 </div>
 <p>As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps are fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>; <a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth (SSOT) for that data source. If you make errors in your data cleaning process, you should always be able to go back to your SSOT to start over again if you need to. Second, reviewing your raw data should always be step number two. Waiting to review your data until after you’ve started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file.</p>
-<div id="clean-check" class="section level3" number="14.3.1">
+<div id="clean-steps" class="section level3" number="14.3.1">
 <h3>
-<span class="header-section-number">14.3.1</span> Checklist steps<a class="anchor" aria-label="anchor" href="#clean-check"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.3.1</span> Checklist steps<a class="anchor" aria-label="anchor" href="#clean-steps"><i class="fas fa-link"></i></a>
 </h3>
 <p>Let’s review what each step specifically involves so that as you write your data cleaning plan, you are able to determine which steps are relevant to cleaning your specific data source.</p>
 <ol style="list-style-type: decimal">
@@ -245,7 +245,7 @@ Figure 14.3: Data cleaning checklist
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-4"></span>
-<img src="img/review_raw.PNG" alt="Reviewing rows and columns in a raw data file" width="100%"><p class="caption">
+<img src="img/fig14-4.PNG" alt="Reviewing rows and columns in a raw data file" width="100%"><p class="caption">
 Figure 14.4: Reviewing rows and columns in a raw data file
 </p>
 </div>
@@ -299,10 +299,14 @@ In the special case where you purposefully collect duplicate observations on a p
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-5"></span>
-<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%"><p class="caption">
+<img src="img/fig14-5.PNG" alt="Process of creating a de-identified dataset" width="100%"><p class="caption">
 Figure 14.5: Process of creating a de-identified dataset
 </p>
 </div>
+<blockquote>
+<p><strong>Note</strong> <br><br>
+At this point in data cleaning, if your data contain open-text responses, you should be reviewing free text for identifiable information. Remove any instance of names and replace with a placeholder such as <name> to indicate the information was redacted.</name></p>
+</blockquote>
 <ol start="6" style="list-style-type: decimal">
 <li>Drop any irrelevant columns not included in your data dictionary
 <ul>
@@ -317,7 +321,7 @@ Figure 14.5: Process of creating a de-identified dataset
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-6"></span>
-<img src="img/clean_split.PNG" alt="Splitting one column into multiple columns" width="80%"><p class="caption">
+<img src="img/fig14-6.PNG" alt="Splitting one column into multiple columns" width="100%"><p class="caption">
 Figure 14.6: Splitting one column into multiple columns
 </p>
 </div>
@@ -340,7 +344,7 @@ Figure 14.6: Splitting one column into multiple columns
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-7"></span>
-<img src="img/clean_normalize.PNG" alt="Normalizing a variable" width="40%"><p class="caption">
+<img src="img/fig14-7.PNG" alt="Normalizing a variable" width="50%"><p class="caption">
 Figure 14.7: Normalizing a variable
 </p>
 </div>
@@ -364,7 +368,7 @@ In the case of Figure <a href="clean.html#fig:fig14-7">14.7</a>, this kind of st
 </blockquote>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-8"></span>
-<img src="img/clean_standardize.PNG" alt="Standardizing a variable" width="40%"><p class="caption">
+<img src="img/fig14-8.PNG" alt="Standardizing a variable" width="50%"><p class="caption">
 Figure 14.8: Standardizing a variable
 </p>
 </div>
@@ -390,7 +394,7 @@ It’s important to normalize before updating your variable types. Updating your
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig14-9"></span>
-<img src="img/clean_reverse.PNG" alt="Reverse coding a variable" width="30%"><p class="caption">
+<img src="img/fig14-9.PNG" alt="Reverse coding a variable" width="50%"><p class="caption">
 Figure 14.9: Reverse coding a variable
 </p>
 </div>
@@ -534,11 +538,11 @@ As noted in Section <a href="style.html#style-time">9.4.1</a>, in many cases it�
 </ol>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-12">14.10</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-10">14.10</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
 </blockquote>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-12"></span>
-<img src="img/clean_reshape.PNG" alt="A comparison of long and wide format" width="80%"><p class="caption">
+<span style="display:block;" id="fig:fig14-10"></span>
+<img src="img/fig14-10.PNG" alt="A comparison of long and wide format" width="100%"><p class="caption">
 Figure 14.10: A comparison of long and wide format
 </p>
 </div>
@@ -618,7 +622,7 @@ Figure 14.10: A comparison of long and wide format
 </li>
 <li>Review your data upon import
 <ul>
-<li>As we discussed in Section <a href="clean.html#clean-check">14.3</a>, it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed.</li>
+<li>As we discussed in Section <a href="clean.html#clean-steps">14.3.1</a>, it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed.</li>
 </ul>
 </li>
 <li>Do all transformations in code
@@ -638,7 +642,7 @@ Figure 14.10: A comparison of long and wide format
 </li>
 <li>Check each transformation
 <ul>
-<li>As mentioned in Section <a href="clean.html#clean-check">14.3</a>, check your work along the way, don’t wait until the end of your script. For each transformation in your data:
+<li>As mentioned in Section <a href="clean.html#clean-steps">14.3.1</a>, check your work along the way, don’t wait until the end of your script. For each transformation in your data:
 <ul>
 <li>Review your variables/cases before and after the transformations.</li>
 <li>Review all errors and warning codes
@@ -654,7 +658,7 @@ Figure 14.10: A comparison of long and wide format
 </li>
 <li>Validate your data before exporting and review after exporting
 <ul>
-<li>As we discussed in Section <a href="clean.html#clean-check">14.3</a>, before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
+<li>As we discussed in Section <a href="clean.html#clean-steps">14.3.1</a>, before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
 <ul>
 <li>While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE (e.g., test that <code>stu_id</code> falls within the range of 1000–2000).</li>
 </ul>
@@ -680,7 +684,7 @@ Figure 14.10: A comparison of long and wide format
 </tr></thead>
 <tbody><tr class="odd">
 <td>Travis Gerke</td>
-<td>R Code Review Checklist <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>88</sup></a>
+<td>R Code Review Checklist <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>90</sup></a>
 </td>
 </tr></tbody>
 </table></div>
@@ -723,7 +727,7 @@ Figure 14.10: A comparison of long and wide format
 <li><a class="nav-link" href="#data-cleaning-for-data-sharing"><span class="header-section-number">14.1</span> Data cleaning for data sharing</a></li>
 <li><a class="nav-link" href="#clean-criteria"><span class="header-section-number">14.2</span> Data quality criteria</a></li>
 <li>
-<a class="nav-link" href="#clean-check"><span class="header-section-number">14.3</span> Data cleaning checklist</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#clean-check"><span class="header-section-number">14.3.1</span> Checklist steps</a></li></ul>
+<a class="nav-link" href="#clean-check"><span class="header-section-number">14.3</span> Data cleaning checklist</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#clean-steps"><span class="header-section-number">14.3.1</span> Checklist steps</a></li></ul>
 </li>
 <li>
 <a class="nav-link" href="#data-cleaning-workflow"><span class="header-section-number">14.4</span> Data cleaning workflow</a><ul class="nav navbar-nav">
@@ -750,7 +754,7 @@ Figure 14.10: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

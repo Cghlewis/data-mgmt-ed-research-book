@@ -1,7 +1,7 @@
 # Data Tracking {#track}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_track.PNG" alt="Tracking in the research project life cycle" width="80%" />
+<img src="img/fig10-1.PNG" alt="Tracking in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig10-1)Tracking in the research project life cycle</p>
 </div>
 
@@ -41,12 +41,7 @@ A thorough and complete participant database that is updated regularly is benefi
 
 ## Building your database
 
-<div class="figure" style="text-align: center">
-<img src="img/tracking_db4.PNG" alt="Example timeline for constructing and using a tracking database" width="100%" />
-<p class="caption">(\#fig:fig10-2)Example timeline for constructing and using a tracking database</p>
-</div>
-
-While the tracking phase appears after collection in Figure \@ref(fig:fig10-1), it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs (see Figure \@ref(fig:fig10-2) for example of what this workflow may look like). Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
+While the tracking phase appears after collection in Figure \@ref(fig:fig10-1), it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools, in the "Create Instruments" phase. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
 
 While a project coordinator can build this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when creating this system. This ensures that your system is set up efficiently and comprehensively.
 

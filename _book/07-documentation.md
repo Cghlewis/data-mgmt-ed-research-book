@@ -1,7 +1,7 @@
 # Documentation {#document}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_doc.PNG" alt="Data documentation in the research project life cycle" width="80%" />
+<img src="img/fig8-1.PNG" alt="Data documentation in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig8-1)Data documentation in the research project life cycle</p>
 </div>
 
@@ -30,7 +30,7 @@ Creating and maintaining these documents **is an investment**. Make sure to acco
 Team-level data management documentation typically contains data governance rules that apply to the entire team, across all projects. While these documents can be amended any time, they should be started long before you apply for a grant, when your lab, center, or institution is formed (see Figure \@ref(fig:fig8-2)). 
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_teamdoc2.PNG" alt="Team-level documentation in the research project life cycle" width="70%" />
+<img src="img/fig8-2.PNG" alt="Team-level documentation in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig8-2)Team-level documentation in the research project life cycle</p>
 </div>
 
@@ -52,7 +52,7 @@ A lab manual, or team handbook, creates common knowledge across your team [@mehr
 A wiki is a webpage that allows users to collaboratively edit and manage content. It can either be created alongside the lab manual or as an alternative to the lab manual is a team wiki. Wikis can be built and housed in many tools (e.g., SharePoint, Teams, Notion, GitHub). While some lab wikis are public, most are not and can be restricted to invited users only. Wikis are a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents and policies, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
 <div class="figure" style="text-align: center">
-<img src="img/wiki4.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
+<img src="img/fig8-3.PNG" alt="Example team wiki with links to frequently requested information" width="100%" />
 <p class="caption">(\#fig:fig8-3)Example team wiki with links to frequently requested information</p>
 </div>
 
@@ -77,7 +77,7 @@ Similarly, while **offboarding** checklists will contain a lot of procedural inf
 Data related topics to consider adding to your onboarding and offboarding checklists are included in Figure \@ref(fig:fig8-4).
 
 <div class="figure" style="text-align: center">
-<img src="img/onboard_offboard2.PNG" alt="Sample data topics to add to onboarding and offboarding checklists" width="100%" />
+<img src="img/fig8-4.PNG" alt="Sample data topics to add to onboarding and offboarding checklists" width="100%" />
 <p class="caption">(\#fig:fig8-4)Sample data topics to add to onboarding and offboarding checklists</p>
 </div>
 
@@ -85,8 +85,8 @@ Data related topics to consider adding to your onboarding and offboarding checkl
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Sample data topics to add to an onboarding checklist ^[https://docs.google.com/document/d/1xyU5Q0uUD-PqRKRmMJKpD9lKaGQI6pjs]|
-|Crystal Lewis | Sample data topics to add to an offboarding checklist ^[https://docs.google.com/document/d/1W57cYuYyiqltQNXUITP-jVIf84jao4Ef]|
+|Crystal Lewis | Sample data topics to add to an onboarding checklist ^[https://osf.io/yzsc8]|
+|Crystal Lewis | Sample data topics to add to an offboarding checklist ^[https://osf.io/h4kwf]|
 
 ### Data inventory {#document-inventory}
 
@@ -94,12 +94,12 @@ A data inventory maps all datasets collected by the research team across all pro
 
 -   Project associated with each dataset
 -   Dates that each dataset was collected
--   Storage location of each dataset
 -   Details about each dataset (what the dataset contains, how it is organized, what questions can be answered with the data)
 -   How datasets are related
+-   Storage location of each dataset or who to contact for access
 
 <div class="figure" style="text-align: center">
-<img src="img/data_inventory2.PNG" alt="Example of a team data inventory" width="100%" />
+<img src="img/fig8-5.PNG" alt="Example of a team data inventory" width="100%" />
 <p class="caption">(\#fig:fig8-5)Example of a team data inventory</p>
 </div>
 
@@ -110,7 +110,7 @@ A data security policy is a set of formal guidelines for working with data withi
 Ideas of content to include in a data security policy are included in Figure \@ref(fig:fig8-6).
 
 <div class="figure" style="text-align: center">
-<img src="img/data_security_plan.PNG" alt="Example of content to include in a data security policy" width="100%" />
+<img src="img/fig8-6.PNG" alt="Example of content to include in a data security policy" width="100%" />
 <p class="caption">(\#fig:fig8-6)Example of content to include in a data security policy</p>
 </div>
 
@@ -118,7 +118,7 @@ Ideas of content to include in a data security policy are included in Figure \@r
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Data security policy template ^[https://docs.google.com/document/d/1fCFBULZeCBRyt0v2k4-Jb_9zBrk9En29]|
+|Crystal Lewis | Data security policy template ^[https://osf.io/6rgfd]|
 |SYNC Lab | Data security protocol ^[https://eur-synclab.github.io/data-management/data-security.html#keep-paper-data-logs-questionnaires-mri-checklists-locked-up]|
 |University of Nebraska-Lincoln|Research data and security checklist ^[https://uofnelincoln.sharepoint.com/:b:/s/ResearchComplianceServicesSharepoint/Ebr9awmFio1Mj3PTgb-GnSIBoS7xSua7uT-jePT2qtGTlw?e=RbRs50]
 
@@ -158,7 +158,9 @@ Using the checklists reviewed during the planning phase, your team should begin 
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Three roles and responsibilities templates ^[https://drive.google.com/drive/folders/1nhDgOVfESrZLYfvcrTU_I2dnsOtq3TkV]|
+|Crystal Lewis | Roles and responsibilities by phase template ^[https://osf.io/hdqt4]|
+|Crystal Lewis | Roles and responsibilities by phase wide template ^[https://osf.io/5n2ke]|
+|Crystal Lewis | Roles and responsibilities by role template ^[https://osf.io/3yp7x]|
 
 
 ### Research protocol {#document-protocol}
@@ -166,7 +168,7 @@ Using the checklists reviewed during the planning phase, your team should begin 
 The research protocol is a comprehensive project plan document that describes the what, who, when, where, and how of your study. Many of the decisions made in your data management plan and while reviewing your planning checklists will be summarized in this document. If you are submitting your study to an Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides all context needed for you and others to effectively interpret and use your data. Make sure to follow your university's specific template if provided, but common items typically included in a protocol are provided in Figure \@ref(fig:fig8-7).
 
 <div class="figure" style="text-align: center">
-<img src="img/protocol2.PNG" alt="Common research protocol elements" width="100%" />
+<img src="img/fig8-7.PNG" alt="Common research protocol elements" width="100%" />
 <p class="caption">(\#fig:fig8-7)Common research protocol elements</p>
 </div>
 
@@ -176,7 +178,7 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|A template to create a project-level summary document for data sharing (based on an IRB research protocol) ^[https://docs.google.com/document/d/1wOLFFurs0t2rANxyD6rQ7xoFbg5LPmeA]|
+|Crystal Lewis|A template to create a project-level summary document for data sharing (based on an IRB research protocol) ^[https://osf.io/q6g8d]|
 |Jeffrey Shero, Sara Hart|IRB protocol template with a focus on data sharing ^[https://figshare.com/articles/preprint/IRB_Protocol_Template/13218797]|
 |The Ohio State University| Protocol template ^[http://orrp.osu.edu/files/2011/10/GuidelinesforWritingaResearchProtocol.pdf]|
 |University of Missouri| Protocol template ^[https://docs.research.missouri.edu/human_subjects/templates/Social_Behavioral_Educational_Protocol_Template.docx]|
@@ -191,16 +193,16 @@ There is a series of documents, that while they can absolutely be standalone doc
 The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. When you first create these timelines they will be based on your best estimates of the time it will take to complete milestones, but like all documents we've discussed, they can be updated as you learn more about the reality of the workload. This document can be both a helpful planning tool (for both project and data teams) in preparing for times of heavier and lighter workloads, as well as an excellent document to share with future data users to better understand waves of data collection. There is no one format for how to create this document. Figure \@ref(fig:fig8-8) is an example of one way to visualize a data collection timeline.
 
 <div class="figure" style="text-align: center">
-<img src="img/timeline.PNG" alt="Example data collection timeline" width="100%" />
+<img src="img/fig8-8.PNG" alt="Example data collection timeline" width="100%" />
 <p class="caption">(\#fig:fig8-8)Example data collection timeline</p>
 </div>
 
 2. Participant flow diagram
 
-A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. As seen in Figure \@ref(fig:fig8-9), these diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams, [@schulz_consort_2010]. They provide a means to understand how participants are randomized and assigned to treatment groups. As you can imagine though, this diagram cannot be started until participants are recruited and enrolled and must be updated as each wave of data is collected. Your participant tracking database, which we will discuss in Chapter \@ref(track), will inform the creation of this diagram.
+A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. As seen in Figure \@ref(fig:fig8-9), these diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams [@schulz_consort_2010]. They provide a means to understand how participants are randomized and assigned to treatment groups. As you can imagine though, this diagram cannot be started until participants are recruited and enrolled and must be updated as each wave of data is collected. Your participant tracking database, which we will discuss in Chapter \@ref(track), will inform the creation of this diagram.
 
 <div class="figure" style="text-align: center">
-<img src="img/consort2.PNG" alt="Example participant flow diagram" width="70%" />
+<img src="img/fig8-9.PNG" alt="Example participant flow diagram" width="100%" />
 <p class="caption">(\#fig:fig8-9)Example participant flow diagram</p>
 </div>
 
@@ -210,11 +212,11 @@ Unless a form is proprietary, actual copies of instruments can be included as su
 
 4. Flowchart of data collection instruments/screeners
 
-You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data [@tourangeau_early_2015].
+You can also include flowcharts of how participants were provided or assigned to different instruments or screeners to help users better understand issues such as missing data.
 
 <div class="figure" style="text-align: center">
-<img src="img/flowchart.PNG" alt="Flowchart of an ECLS-K:2011 kindergarten assessment" width="70%" />
-<p class="caption">(\#fig:fig8-10)Flowchart of an ECLS-K:2011 kindergarten assessment</p>
+<img src="img/fig8-10.PNG" alt="Example instrument decision making flowchart" width="100%" />
+<p class="caption">(\#fig:fig8-10)Example instrument decision making flowchart</p>
 </div>
 
 5. Consent forms
@@ -230,14 +232,14 @@ You may also choose to attach any publications that have come from your data as 
 While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_2023]. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision making processes. If you recall from Chapter \@ref(plan), every step that we added to a data collection workflow is then added to an SOP and the details fleshed out. Not only will you have an SOP for each type of data you are collecting (i.e., survey, assessments, observations), you should also have SOPs for any other decisions or processes that need to be repeated in a reproducible manner or followed in a specific way to maintain compliance [@hollmann_ten_2020]. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig8-11). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
 
 <div class="figure" style="text-align: center">
-<img src="img/sopchecks.PNG" alt="Examples of data management processes or decisions to develop an SOP for" width="100%" />
-<p class="caption">(\#fig:fig8-11)Examples of data management processes or decisions to develop an SOP for</p>
+<img src="img/fig8-11.PNG" alt="Examples of data management SOPs to create" width="100%" />
+<p class="caption">(\#fig:fig8-11)Examples of data management SOPs to create</p>
 </div>
 
 In addition to giving staff instruction on how to perform tasks, SOPs also create transparency in practices, allow for continuity when staff turnover or go out on leave, create standardization in procedures, and last, because an SOP should include versioning information, they allow you to accurately report changes in procedures throughout the project. You will want to create a template that is used consistently across all procedures, by all staff who build SOPs. 
 
 <div class="figure" style="text-align: center">
-<img src="img/sop.PNG" alt="Standard operating procedure minimal template" width="75%" />
+<img src="img/fig8-12.PNG" alt="Standard operating procedure minimal template" width="100%" />
 <p class="caption">(\#fig:fig8-12)Standard operating procedure minimal template</p>
 </div>
 
@@ -247,7 +249,7 @@ In developing your SOP template, like the one in Figure \@ref(fig:fig8-12), you 
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|SOP template ^[https://docs.google.com/document/d/1q84UCsn_DVL9aaO_n5T_LCjwLy96FPPB]|
+|Crystal Lewis|SOP template ^[https://osf.io/yq3np]|
 
 
 ## Dataset-level {#document-dataset}
@@ -279,19 +281,19 @@ A README is a plain text document that contains information about your files. Th
 ```
 
 3. For providing information about a set of files in a directory
-    - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including the source of the information in the file, how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes, or acronyms used in datasets (e.g., w1_ = wave 1), or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository [@neild_sharing_2022]. 
+    - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets, including the source of the information in the file, how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes, or acronyms used in datasets (e.g., w1_ = wave 1), or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository. 
 
 <div class="figure" style="text-align: center">
-<img src="img/readme3.PNG" alt="Institute of Education Sciences example README for conveying information on files in a directory" width="75%" />
-<p class="caption">(\#fig:fig8-13)Institute of Education Sciences example README for conveying information on files in a directory</p>
+<img src="img/fig8-13.PNG" alt="Example README for conveying information about files in a directory" width="100%" />
+<p class="caption">(\#fig:fig8-13)Example README for conveying information about files in a directory</p>
 </div>
 
 **Templates and Resources**
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | README template for sharing information about a set of files in a directory ^[https://docs.google.com/document/d/1JWeKLDqtuk79beNJBv5xHueMwki0c7xD]|
-|Crystal Lewis| README template for sharing project-level information ^[https://docs.google.com/document/d/1rbED1r0fGAk5CREslc8qQ5378EBV5759eSqdQbp4fHc]|
+|Crystal Lewis | README template for sharing information about a set of files in a directory ^[https://osf.io/tk4cb]|
+|Crystal Lewis| README template for sharing project-level information ^[https://osf.io/d3pum]|
 
 ### Changelog {#document-change}
 
@@ -308,7 +310,7 @@ In its simplest form a changelog should contain the following:
 It can also be helpful to record additional information such as who made the change and a link to any code used to transform the data [@cessda_training_team_cessda_2017].
 
 <div class="figure" style="text-align: center">
-<img src="img/changelog.PNG" alt="Example changelog for a clean student survey data file" width="100%" />
+<img src="img/fig8-14.PNG" alt="Example changelog for a clean student survey data file" width="100%" />
 <p class="caption">(\#fig:fig8-14)Example changelog for a clean student survey data file</p>
 </div>
 
@@ -318,7 +320,7 @@ These changelogs will most likely not be created until the data capture and data
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|Changelog template ^[https://docs.google.com/spreadsheets/d/1fVFv_QOk90NmDW_9R_h9UnvOY79TbcPOub-dL9zqDuo]|
+|Crystal Lewis|Changelog template ^[https://osf.io/trw6b]|
 
 
 ### Data cleaning plan {#document-plan}
@@ -329,11 +331,24 @@ This document can be started in the documentation phase, but will most likely co
 
 A data cleaning plan should be based upon agreed upon norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently (see Section \@ref(clean-criteria)). These norms can be operationalized into a checklist of transformations that can inform your data cleaning plan, along with your data dictionary and other relevant documentation. We will review what types of transformations you should consider adding to your data cleaning plan in Section \@ref(clean-check). 
 
-<div class="figure" style="text-align: center">
-<img src="img/data_cleaning_plan3.PNG" alt="A simplistic data cleaning plan" width="60%" />
-<p class="caption">(\#fig:fig8-15)A simplistic data cleaning plan</p>
-</div>
+A simplistic data cleaning plan, stored in a TXT file and named something like `pa_stu_svy_data_cleaning_plan.txt`, might contain steps like this.
 
+```
+1. Import raw data
+2. Review data (rows and columns)
+3. Remove duplicate cases if they exist (using rules from applicable SOP and README)
+4. De-identify data (bring in study IDs and remove names)
+5. Rename variables based on data dictionary
+6. Fix variable types as needed
+7. Reverse code anx1, anx2, anx3
+8. Calculate anx_mean
+9. Merge in treatment and tch_id variables from roster file
+10. Add missing value codes
+11. Add variable and value labels based on data dictionary
+12. Run final data validation checks
+13. Export data as an SPSS file
+
+```
 
 ## Variable-level
 
@@ -341,19 +356,29 @@ Our last category of documentation is variable-level documentation. When we thin
 
 ### Data dictionary {#document-dictionary}
 
-A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_2023; @gonzales_ten_2022; @uc_merced_library_what_2023]. This document is most useful if created during the documentation phase and used throughout a study for both planning and interpretation purposes (see Figure \@ref(fig:fig8-16)) [@lewis_using_2022; @van_bochove_data_2023]. 
+A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_2023; @gonzales_ten_2022; @uc_merced_library_what_2023]. This document is most useful if created during the documentation phase and used throughout a study for both planning and interpretation purposes (see Figure \@ref(fig:fig8-15)) [@lewis_using_2022; @van_bochove_data_2023]. 
 
 <div class="figure" style="text-align: center">
-<img src="img/dictionary_map.PNG" alt="The many uses for a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig8-16)The many uses for a data dictionary</p>
+<img src="img/fig8-15.PNG" alt="The many uses for a data dictionary" width="100%" />
+<p class="caption">(\#fig:fig8-15)The many uses for a data dictionary</p>
 </div>
 
-This document should be structured similar to a dataset, with variable names in the first row [@broman_data_2018]. There are several necessary fields to include in this document, as well as several optional fields (see Figure \@ref(fig:fig8-17)) [@grynoch_resource_2023].
+This document should be structured similar to a dataset, with variable names in the first row [@broman_data_2018]. There are several necessary fields to include in this document, as well as several optional fields (see Table \@ref(tab:tab8-1)) [@grynoch_resource_2023].
 
-<div class="figure" style="text-align: center">
-<img src="img/dictionary.PNG" alt="Fields to include in a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig8-17)Fields to include in a data dictionary</p>
-</div>
+
+Table: (\#tab:tab8-1)Fields to include in a data dictionary
+
+|Fields to Include                                                           |Optional Fields to Include                                             |
+|:---------------------------------------------------------------------------|:----------------------------------------------------------------------|
+|Variable name                                                               |Skip patterns                                                          |
+|Variable label (what is this item)                                          |Required item (were participants allowed to skip this item)            |
+|Variable type/format                                                        |Variable universe (who received this item)                             |
+|Allowable values/range (including labels associated with categorical codes) |Notes (such as versions/changes to the variable)                       |
+|Assigned missing values                                                     |Associated scale/subscale                                              |
+|Transformations                                                             |Time periods this item is available (if study is longitudinal)         |
+|Variable origin (primary/derived)                                           |Item order                                                             |
+|                                                                            |Remove item (should this item be removed before publicly sharing data) |
+
 
 You should build one data dictionary for each instrument you plan to collect, including both original data collection instruments as well as external data sources (e.g., school records data source). If there are five data sources in your data sources catalog, you should end up with five data dictionaries. 
 
@@ -366,18 +391,19 @@ When you are collecting data for an original source, there are a few things that
 2. Your style guide already created
     - We will talk more about style guides in Chapter \@ref(style), but this document will provide team or project standards for naming variables and coding response values.  
 3. Documentation for your measures
-    - If you are collecting data using existing measures (i.e. existing scales, existing standardized assessments), you will want to collect any documentation on those measures such as technical documents or copies of instruments. You will want your documentation to provide information such as:  
-      - What items make up the measures/scales/assessment? What is the exact wording of the items?  
+    - If you are collecting data using existing measures (i.e., existing scales, existing standardized assessments), you will want to collect any documentation on those measures such as technical documents or copies of instruments. You will want your documentation to provide information such as:  
+      - What items are included in the measure? What is the exact wording of the items?  
+      - How are items divided by subscales?
       - How are items coded? What are allowable values? 
-      - Are there any calculations/scoring/reverse coding needed?  
+      - Are there any calculations/scoring/reverse coding needed? 
       - If items are entered into a scoring program and then exported, what variables are exported?
-    - See Figure \@ref(fig:fig8-18) for example of the information that could be pulled from a publication if using the Connor Davidson Resilience Scale (CD-RISC) [@connor_development_2003].
+    - See Figure \@ref(fig:fig8-16) for an example of the information that could be pulled from a publication if you were using the Math Anxiety Scale for Teachers (MAST) [@ganley_construct_2019].
 4. Any data element standards that you plan to use
     - See Section \@ref(collect-design) for an overview of existing data element standards
 
 <div class="figure" style="text-align: center">
-<img src="img/cdrisc.PNG" alt="Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)" width="90%" />
-<p class="caption">(\#fig:fig8-18)Pulling relevant information for the Connor Davidson Resilience Scale (CD-RISC)</p>
+<img src="img/fig8-16.PNG" alt="Pulling relevant information for the Math Anxiety Scale for Teachers (MAST) from a publication" width="100%" />
+<p class="caption">(\#fig:fig8-16)Pulling relevant information for the Math Anxiety Scale for Teachers (MAST) from a publication</p>
 </div>
 
 All measures/items for each instrument will be included in the data dictionary. As you build your data dictionaries, consider the following:
@@ -396,19 +422,19 @@ All measures/items for each instrument will be included in the data dictionary. 
     - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
       - Primary keys (e.g., `stu_id`, `rater_id`)
       - Foreign keys (e.g., `tch_id` in a student file)
-      - Grouping variables (e.g., `treatment`, `cohort`, `cluster`, `dosage`, `block`)
-      - Time component (e.g., `wave`, `time`, `year`)
+      - Grouping variables (e.g., `treatment`, `cohort`, `cluster`, `block`)
+      - Time component (e.g., `wave`, `time`, `year`, `session`)
       - Derived variables
-        - This includes both variables your team derives (e.g., mean scores, reverse coded variables, variable checks) as well as variables derived from any scoring programs (e.g., percentile ranks, grade equivalent scores)
+        - This includes both variables your team derives (e.g., `mean scores`, `reverse coded variables`, `variable checks`) as well as variables derived from any scoring programs (e.g., `percentile ranks`, `standard scores`)
           - Make sure to account for anomalies such as how to calculate scores with missing data
-      - Metadata (Variables that your tool collects such as IPAddress, completion, language)
+      - Metadata (Variables that your tool collects such as `IP Address`, `completion`, `language`)
   - What items should be removed before public data sharing (i.e., personally identifiable information)
 
-For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig8-19) uses items from Patterns of Adaptive Learning Scales (PALS) [@midgley_manual_2000]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
+For demonstration purposes only, the data dictionary in Figure \@ref(fig:fig8-17) uses a few items from the MAST scale [@ganley_construct_2019]. In an actual research study your dictionary would most likely include many more items and a variety of measures.
 
 <div class="figure" style="text-align: center">
-<img src="img/dictionary3.PNG" alt="Example student survey data dictionary" width="100%" />
-<p class="caption">(\#fig:fig8-19)Example student survey data dictionary</p>
+<img src="img/fig8-17.PNG" alt="Example teacher survey data dictionary" width="100%" />
+<p class="caption">(\#fig:fig8-17)Example teacher survey data dictionary</p>
 </div>
 
 The last step of creating your data dictionary, as it should be for every document you create in this documentation phase, is to review the document with your team. Gather your DMWG and review the following types of questions:
@@ -455,7 +481,7 @@ The process described in this section is a manual, time consuming process. This 
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|Data dictionary template ^[https://docs.google.com/spreadsheets/d/1R-5TIUvAhJRDucVhq4dNg00RR1CG7uQ6MRhje0BBC20]|
+|Crystal Lewis|Data dictionary template ^[https://osf.io/ynqcu]|
 
 
 ### Codebook
@@ -464,16 +490,21 @@ Codebooks provide descriptive, variable-level information as well univariate sum
 
 The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset [@icpsr_guide_2011].
 
-<div class="figure" style="text-align: center">
-<img src="img/codebook.PNG" alt="Codebook content that overlaps and is unique to a data dictionary" width="90%" />
-<p class="caption">(\#fig:fig8-20)Codebook content that overlaps and is unique to a data dictionary</p>
-</div>
 
-Figure \@ref(fig:fig8-21) is an example codebook from the United States Department of Health and Human Services [-@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022].
+Table: (\#tab:tab8-2)Codebook content that overlaps and is unique to a data dictionary
+
+|Overlapping Information |New Information         |
+|:-----------------------|:-----------------------|
+|Variable name           |Existing values/ranges  |
+|Variable label          |Existing missing values |
+|Variable type/format    |Summary statistics      |
+|Value labels            |Weighting               |
+
+Figure \@ref(fig:fig8-18) is an example codebook created in R using the `memisc` package [@elff_memisc_2023].
 
 <div class="figure" style="text-align: center">
-<img src="img/codebook2.PNG" alt="Example codebook from the SCOPE Coach Survey" width="80%" />
-<p class="caption">(\#fig:fig8-21)Example codebook from the SCOPE Coach Survey</p>
+<img src="img/fig8-18.PNG" alt="Example teacher survey codebook content" width="100%" />
+<p class="caption">(\#fig:fig8-18)Example teacher survey codebook content</p>
 </div>
 
 In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data is out of range or unexpected values appear.
@@ -491,30 +522,43 @@ Last, you may notice as you review codebooks, that many will start with several 
 
 ## Metadata {#metadata}
 
-The last type of documentation to discuss is metadata, which is created in the "prepare for archiving" phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_training_team_cessda_2017; @danish_national_forum_for_research_data_management_metadata_2023]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data [@wilkinson_fair_2016; @logan_data_2021; @uk_data_service_research_2023].
+The last type of documentation to discuss is metadata, which is typically created in the archiving or data sharing phase. When depositing your data in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_training_team_cessda_2017; @danish_national_forum_for_research_data_management_metadata_2023]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data [@logan_data_2021; @uk_data_service_research_2023 ; @wilkinson_fair_2016].
 
-For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_2023]. As you deposit your data, the repository may have you fill out a form that contains descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_2023; @danish_national_forum_for_research_data_management_metadata_2023]. The information from this form will become your metadata. Figure \@ref(fig:fig8-22) is an example of an intake form for the the Figshare repository ([https://figshare.com/](https://figshare.com/)).
+For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_2023]. As you deposit your data, the repository may have you fill out a form. The information collected from this intake form will become your metadata. Figure \@ref(fig:fig8-19) is an example of a metadata form for OSF ([https://osf.io](https://osf.io)).
 
 <div class="figure" style="text-align: center">
-<img src="img/metadata4.PNG" alt="Example intake metadata form for Figshare repository, captured January 13, 2023" width="70%" />
-<p class="caption">(\#fig:fig8-22)Example intake metadata form for Figshare repository, captured January 13, 2023</p>
+<img src="img/fig8-19.PNG" alt="Example metadata intake form for OSF" width="100%" />
+<p class="caption">(\#fig:fig8-19)Example metadata intake form for OSF</p>
 </div>
 
-The most common metadata elements [@dahdul_research_2023; @hayslett_libguides_2022] are included in Figure \@ref(fig:fig8-23).
+These metadata forms typically contain descriptive (description of project and files), administrative (licensing and ownership as well as technical information), and structural (relationships between objects) metadata [@cofield_libguides_2023; @danish_national_forum_for_research_data_management_metadata_2023]. Commonly collected metadata elements [@dahdul_research_2023; @hayslett_libguides_2022] are shown in Table \@ref(tab:tab8-3).
+
+
+Table: (\#tab:tab8-3)Common metadata elements
+
+|Element             |Description                                                                                                                          |
+|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+|Title               |Name of the resource                                                                                                                 |
+|Creator             |Names and institutions of the people who created the resource                                                                        |
+|Date                |Key dates associated with the resource                                                                                               |
+|Description         |Description of the resource                                                                                                          |
+|Keyword/Subject     |Keywords describing the content of the resource                                                                                      |
+|Type                |Nature of your resource                                                                                                              |
+|Language            |Language of the resource                                                                                                             |
+|Identifier          |Unique identification code, such as a Digital Object Identifier (DOI), assigned to the resource, usually generated by the repository |
+|Coverage            |Geographic coverage                                                                                                                  |
+|Funding agencies    |Organization who funded the research                                                                                                 |
+|Access restrictions |Where and how your resource can be accessed by other researchers                                                                     |
+|Copyright           |Copyright date and type                                                                                                              |
+|Format              |What format is your resource in                                                                                                      |
+
+Depending on the repository, at minimum, you will enter basic project-level metadata similar to what is shown in Table \@ref(tab:tab8-3). However, you may be required, or have the option, to enter more comprehensive information, such as project-level information covered in your research protocol (e.g., setting and sample, study procedures). You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_2023; @ldbase_information_2023]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
+
+Once entered into the form, the repository typically converts entries into both human-readable and machine-readable, searchable formats such as XML (Extensible Markup Language) or JSON-LD (JavaScript Object Notation-Linked Data). We can see what this metadata looks like to humans once it is submitted. On the left of Figure \@ref(fig:fig8-20) is an example of how ICPSR displays metadata on a project page in the Child and Family Data Archive [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022]. On the right, notice we also have the option to download the metadata in one of four machine-readable formats, Dublin Core and DDI are exported as XML while DATS 2.2 and DCAT-US are exported as JSON. 
 
 <div class="figure" style="text-align: center">
-<img src="img/metadata.PNG" alt="Common metadata elements" width="80%" />
-<p class="caption">(\#fig:fig8-23)Common metadata elements</p>
-</div>
-
-
-Depending on the repository, at minimum, you will enter basic project-level metadata similar to above, but you may be required or have the option to enter more comprehensive information, such as project-level information covered in your research protocol. You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_2023; @ldbase_information_2023]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
-
-Once entered into the form, the repository converts entries into both human-readable and machine-readable, searchable formats such as XML (Extensible Markup Language) or JSON-LD (JavaScript Object Notation-Linked Data). We can see what this metadata looks like to humans once it is submitted. Figure \@ref(fig:fig8-24) is an example of how ICPSR Open displays the metadata information on a project page [@page_design_2020]. Notice we even have the option to download the XML formatted metadata files in one of two standards (see Section \@ref(metastandards)) if we want as well. 
-
-<div class="figure" style="text-align: center">
-<img src="img/metadata_project.PNG" alt="Example metadata displayed on an ICPSR Open project page" width="95%" />
-<p class="caption">(\#fig:fig8-24)Example metadata displayed on an ICPSR Open project page</p>
+<img src="img/fig8-20.PNG" alt="Example metadata displayed on an ICPSR Child and Family Data Archive project" width="100%" />
+<p class="caption">(\#fig:fig8-20)Example metadata displayed on an ICPSR Child and Family Data Archive project</p>
 </div>
 
 There are other ways metadata can be gathered as well. For instance, for variable-level metadata, rather than having users input metadata, repositories may create metadata from the deposited statistical data files that contain inherent metadata (such as variable types or labels) or from deposited documentation such as data dictionaries or codebooks [@icpsr_icpsr_2023].
@@ -526,28 +570,40 @@ If your repository provides limited forms for metadata entry, you can also choos
 Metadata standards, typically field specific, establish a common way to describe your data which improves data interoperability as well as the ability of users to find, understand, and use data. Metadata standards can be applied in several ways [@bolam_guides_2022; @ddi_alliance_controlled_2023]. 
 
 1. Formats: What machine-readable format should metadata be in?  
-2. Schema: What fields are recommended verses mandatory for project, dataset, and variable level metadata?
+2. Schema: What elements are recommended verses mandatory for project, dataset, and variable-level metadata?
 3. Controlled vocabularies: A controlled list of terms used to index and retrieve data.
 
-Many fields have chosen metadata standards to adhere to. Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@schemaorg_schemaorg_2023]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon metadata standards in the field of education [@institute_of_education_sciences_frequently_2023].
+Many fields have chosen metadata standards to adhere to (see Figure \@ref(fig:fig8-21)). Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@schemaorg_schemaorg_2023]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed upon metadata standards in the field of education [@institute_of_education_sciences_frequently_2023].
 
 <div class="figure" style="text-align: center">
-<img src="img/metadata_standards.PNG" alt="A sampling of field metadata standards" width="70%" />
-<p class="caption">(\#fig:fig8-25)A sampling of field metadata standards</p>
+<img src="img/fig8-21.PNG" alt="A sampling of field metadata standards" width="100%" />
+<p class="caption">(\#fig:fig8-21)A sampling of field metadata standards</p>
 </div>
 
-It can be helpful to see how standards differ as well as overlap. The @ddi_alliance_mapping_2023 put together this table in Figure \@ref(fig:fig8-26) for instance, mapping the DDI Elements (and vocabularies) to the Dublin Core, two commonly used standards.
+It can be helpful to see how standards differ as well as overlap. Table \@ref(tab:tab8-4), for instance, is a sampling of a larger table put together by the @ddi_alliance_mapping_2023, mapping elements of the Dublin Core to DDI Version 2.
+
+
+Table: (\#tab:tab8-4)A comparison of Dublin Core standards to DDI Version 2 standards
+
+|DC Element  |DDI Element           |Notes                                                   |
+|:-----------|:---------------------|:-------------------------------------------------------|
+|Title       |\<titl\> 2.1.1.1      |Title of Data Collection                                |
+|Creator     |\<AuthEnty\> 2.1.2.1  |Authoring Entity of Data Collection                     |
+|Subject     |\<keyword\> 2.2.1.1   |Keyword(s)                                              |
+|            |\<topcClas\> 2.2.1.2  |Topic Classification                                    |
+|Description |\<abstract\> 2.2.2    |Abstract                                                |
+|Publisher   |\<producer\> 2.1.3.1  |Producer of Data Collection                             |
+|Contributor |\<othId\> 2.1.2.2     |Other Identification/Acknowledgements - Data Collection |
+|Date        |\<prodDate\> 2.1.3.3  |Production Date - Data Collection                       |
+|Type        |\<dataKind\> 2.2.3.10 |Kind of Data                                            |
+|Format      |\<fileType\> 3.1.5    |Type of File                                            |
+|Identifier  |\<IDNo\> 2.1.1.5      |ID Number - Data Collection                             |
+
+We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from an ICPSR Child and Family Data Archive project [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022] (Figure \@ref(fig:fig8-22)). You can start to see the differences and similarities across standards. 
 
 <div class="figure" style="text-align: center">
-<img src="img/metadata_mapping.PNG" alt="A comparison of DDI Version 2 standards to Dublin Core standards" width="70%" />
-<p class="caption">(\#fig:fig8-26)A comparison of DDI Version 2 standards to Dublin Core standards</p>
-</div>
-
-We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from the ICPSR Open project we saw above [@page_design_2020]. You can start to see the differences and similarities across standards. 
-
-<div class="figure" style="text-align: center">
-<img src="img/standard_compare.PNG" alt="Metadata comparison from an AERA Open project" width="100%" />
-<p class="caption">(\#fig:fig8-27)Metadata comparison from an AERA Open project</p>
+<img src="img/fig8-22.PNG" alt="Comparing a Dublin Core metadata file and a DDI 2.5 metadata file from an ICPSR Child and Family Data Archive Project" width="100%" />
+<p class="caption">(\#fig:fig8-22)Comparing a Dublin Core metadata file and a DDI 2.5 metadata file from an ICPSR Child and Family Data Archive Project</p>
 </div>
 
 If you plan to archive your data, first check with your repository to see if they follow any standards. For example, both the OSF [@gueguen_new_2023] and Figshare [@figshare_figshare_2023] repositories currently use the DataCite schema, while ICPSR uses the DDI standard [@icpsr_icpsr_2023]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.

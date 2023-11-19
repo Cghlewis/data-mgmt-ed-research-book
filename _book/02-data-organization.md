@@ -4,14 +4,14 @@ Before we jump into the data life cycle, we need to have a basic understanding o
 
 ## Basics of a dataset
 
-In education research, data is often collected internally by your team using an instrument such as a questionnaire, an observation, an interview, or an assessment. However, data may also be collected from external entities, such as districts, states, or other agencies.
+In education research, data is often collected internally by your team using an instrument such as a questionnaire, an observation form, an interview guide, or an assessment. However, data may also be collected by external entities, such as districts, states, or other agencies.
 
 Those data come in many forms (e.g., video, transcripts, documents, data files), represented as text, numbers, or multimedia [@usgs_what_2023]. In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. These datasets are single tables (or flat files) organized in a rectangular format which allow the data to be machine-readable. 
 
 These rectangular (also called tabular) datasets are made up of columns and rows. 
 
 <div class="figure" style="text-align: center">
-<img src="img/rectangle.PNG" alt="Basic format of a dataset" width="80%" />
+<img src="img/fig3-1.PNG" alt="Basic format of a dataset" width="100%" />
 <p class="caption">(\#fig:fig3-1)Basic format of a dataset</p>
 </div>
 
@@ -45,7 +45,7 @@ The rows in your dataset are aligned with subjects (also called records or cases
 The cells are the observations associated with each case in your data. Cells are made up of key/value pairs, created at the intersection of a column and a row. Consider an example where we collect a survey from students. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value/observation that corresponds to that row/column pair (i.e., that participant and that question).
 
 <div class="figure" style="text-align: center">
-<img src="img/cell_value.PNG" alt="Representation of a cell value" width="70%" />
+<img src="img/fig3-2.PNG" alt="Representation of a cell value" width="100%" />
 <p class="caption">(\#fig:fig3-2)Representation of a cell value</p>
 </div>
 
@@ -54,11 +54,10 @@ The cells are the observations associated with each case in your data. Cells are
 
 In order for your dataset to be machine-readable and analyzable, it should adhere to a set of structural rules [@broman_data_2018; @wickham_tidy_2014]. 
 
-
-1. The first rule is that your data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
+1. The first rule is that data should make a rectangle. The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 
 <div class="figure" style="text-align: center">
-<img src="img/rectangle2.PNG" alt="A comparison of non-rectangular and rectangular data" width="100%" />
+<img src="img/fig3-3.PNG" alt="A comparison of non-rectangular and rectangular data" width="100%" />
 <p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
 </div>
 
@@ -68,16 +67,16 @@ In order for your dataset to be machine-readable and analyzable, it should adher
     - For numeric values, measure in consistent units and keep consistent decimal places
 
 <div class="figure" style="text-align: center">
-<img src="img/consistent_values.PNG" alt="A comparison of inconsistent and uniform variable values" width="100%" />
+<img src="img/fig3-4.PNG" alt="A comparison of inconsistent and uniform variable values" width="100%" />
 <p class="caption">(\#fig:fig3-4)A comparison of inconsistent and uniform variable values</p>
 </div>
 
 
-3. Your columns should adhere to your variable type.
+3. Columns should adhere to your expected variable type.
     - For example, if you have a numeric variable, such as `age`, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable as text.
   
 <div class="figure" style="text-align: center">
-<img src="img/var_type.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
+<img src="img/fig3-5.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
 <p class="caption">(\#fig:fig3-5)A comparison of variables adhering and not adhering to a data type</p>
 </div>
   
@@ -85,7 +84,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
     - For example, rather than combining the number of incidents and the number of enrolled students in the same variable, separate this information into two variables. This allows you to aggregate information as needed (e.g., calculate an incident rate).
   
 <div class="figure" style="text-align: center">
-<img src="img/two_things.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
+<img src="img/fig3-6.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
 <p class="caption">(\#fig:fig3-6)A comparison of two things being measured in one variable and two things being measured across two variables</p>
 </div>
 
@@ -96,7 +95,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
       - If an empty cell is implied to be 0, fill the cells with an actual 0
 
 <div class="figure" style="text-align: center">
-<img src="img/explicit.PNG" alt="A comparison of variables with empty cells and variables with not empty cells" width="100%" />
+<img src="img/fig3-7.PNG" alt="A comparison of variables with empty cells and variables with not empty cells" width="100%" />
 <p class="caption">(\#fig:fig3-7)A comparison of variables with empty cells and variables with not empty cells</p>
 </div>
 
@@ -104,7 +103,7 @@ In order for your dataset to be machine-readable and analyzable, it should adher
     - If you want to indicate information, add an indicator variable to do this rather than cell coloring    
     
 <div class="figure" style="text-align: center">
-<img src="img/cell_colorv02.PNG" alt="A comparison of variables with implicit values and variables with explicit values" width="100%" />
+<img src="img/fig3-8.PNG" alt="A comparison of variables with implicit values and variables with explicit values" width="100%" />
 <p class="caption">(\#fig:fig3-8)A comparison of variables with implicit values and variables with explicit values</p>
 </div>
 
@@ -132,21 +131,21 @@ Joining tables horizontally, also called merging, involves matching rows by one 
 To better understand horizontal joins, let's take the simple example in Figure \@ref(fig:fig3-10), where we only have a primary keys (`stu_id`) in each table, no foreign keys. Here we collected two forms from students (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge because each student only appears once in each table. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-10.PNG" alt="Linking data through primary keys" width="90%" />
+<img src="img/fig3-10.PNG" alt="Linking data through primary keys" width="100%" />
 <p class="caption">(\#fig:fig3-10)Linking data through primary keys</p>
 </div>
 
 However, we are often not only collecting data across different forms, but we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let's look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure \@ref(fig:fig3-11) shows how we can now link the foreign key in the student assessment (`tch_id`) with the primary key (`tch_id`) in the teacher survey. In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="90%" />
+<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="100%" />
 <p class="caption">(\#fig:fig3-11)Linking data through foreign keys</p>
 </div>
 
 And as you can imagine, as we add more forms, the database structure begins to become even more complex. Figure \@ref(fig:fig3-12) is an example where we collected two forms from students (a survey and an assessment), two forms from teachers (a survey and an observation), and one form from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Forms within participant types can be linked by primary keys, and forms across participant types can be linked by foreign keys.
 
 <div class="figure" style="text-align: center">
-<img src="img/link2v02.PNG" alt="Linking data through primary and foreign keys" width="70%" />
+<img src="img/fig3-12.PNG" alt="Linking data through primary and foreign keys" width="100%" />
 <p class="caption">(\#fig:fig3-12)Linking data through primary and foreign keys</p>
 </div>
 
@@ -182,7 +181,7 @@ When we structure our data in a wide format, all data collected on a unique subj
 In order to structure data in wide format, we join our tables horizontally. Before joining though, each wave of data collection will be appended to a variable name to create unique variable names. Figure \@ref(fig:fig3-14) shows of an example of how we could structure two waves of data collection in wide format. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-14.PNG" alt="Example linking forms across time in wide format" width="80%" />
+<img src="img/fig3-14.PNG" alt="Example linking forms across time in wide format" width="100%" />
 <p class="caption">(\#fig:fig3-14)Example linking forms across time in wide format</p>
 </div>
 

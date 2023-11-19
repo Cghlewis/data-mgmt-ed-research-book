@@ -1,7 +1,7 @@
 # Data Cleaning {#clean}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_clean.PNG" alt="Data cleaning in the research project life cycle" width="80%" />
+<img src="img/fig14-1.PNG" alt="Data cleaning in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig14-1)Data cleaning in the research project life cycle</p>
 </div>
 
@@ -29,7 +29,7 @@ Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig
     - This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis [@reynolds_basics_2022]. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book. 
 
 <div class="figure" style="text-align: center">
-<img src="img/clean_data.PNG" alt="The three phases of data" width="80%" />
+<img src="img/fig14-2.PNG" alt="The three phases of data" width="100%" />
 <p class="caption">(\#fig:fig14-2)The three phases of data</p>
 </div>
 
@@ -65,13 +65,13 @@ In many ways, writing this data cleaning plan will be a very personalized proces
 
 
 <div class="figure" style="text-align: center">
-<img src="img/data_clean_check.PNG" alt="Data cleaning checklist" width="80%" />
+<img src="img/fig14-3.PNG" alt="Data cleaning checklist" width="100%" />
 <p class="caption">(\#fig:fig14-3)Data cleaning checklist</p>
 </div>
 
 As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps are fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file [@borer_simple_2009; @broman_data_2018]. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth (SSOT) for that data source. If you make errors in your data cleaning process, you should always be able to go back to your SSOT to start over again if you need to. Second, reviewing your raw data should always be step number two. Waiting to review your data until after you've started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file. 
 
-### Checklist steps {#clean-check}
+### Checklist steps {#clean-steps}
 
 Let's review what each step specifically involves so that as you write your data cleaning plan, you are able to determine which steps are relevant to cleaning your specific data source.
 
@@ -87,7 +87,7 @@ Let's review what each step specifically involves so that as you write your data
       - Are the variable types and values as expected?
 
 <div class="figure" style="text-align: center">
-<img src="img/review_raw.PNG" alt="Reviewing rows and columns in a raw data file" width="100%" />
+<img src="img/fig14-4.PNG" alt="Reviewing rows and columns in a raw data file" width="100%" />
 <p class="caption">(\#fig:fig14-4)Reviewing rows and columns in a raw data file</p>
 </div>
 
@@ -114,9 +114,12 @@ In the special case where you purposefully collect duplicate observations on a p
     - Figure \@ref(fig:fig14-5) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., `first_name` and `last_name`) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
 <div class="figure" style="text-align: center">
-<img src="img/de-identify.PNG" alt="Process of creating a de-identified dataset" width="90%" />
+<img src="img/fig14-5.PNG" alt="Process of creating a de-identified dataset" width="100%" />
 <p class="caption">(\#fig:fig14-5)Process of creating a de-identified dataset</p>
 </div>
+
+> **Note** <br> <br>
+At this point in data cleaning, if your data contain open-text responses, you should be reviewing free text for identifiable information. Remove any instance of names and replace with a placeholder such as <name> to indicate the information was redacted.
 
 6. Drop any irrelevant columns not included in your data dictionary
     - Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.
@@ -125,7 +128,7 @@ In the special case where you purposefully collect duplicate observations on a p
     - As discussed in Section \@ref(structure-rules), a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable. 
 
 <div class="figure" style="text-align: center">
-<img src="img/clean_split.PNG" alt="Splitting one column into multiple columns" width="80%" />
+<img src="img/fig14-6.PNG" alt="Splitting one column into multiple columns" width="100%" />
 <p class="caption">(\#fig:fig14-6)Splitting one column into multiple columns</p>
 </div>
 
@@ -138,7 +141,7 @@ In the special case where you purposefully collect duplicate observations on a p
       - As an example, it may be that you need to remove unexpected characters such as `$` or `%` that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
 
 <div class="figure" style="text-align: center">
-<img src="img/clean_normalize.PNG" alt="Normalizing a variable" width="40%" />
+<img src="img/fig14-7.PNG" alt="Normalizing a variable" width="50%" />
 <p class="caption">(\#fig:fig14-7)Normalizing a variable</p>
 </div>
 
@@ -153,7 +156,7 @@ In the special case where you purposefully collect duplicate observations on a p
 In the case of Figure \@ref(fig:fig14-7), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.
 
 <div class="figure" style="text-align: center">
-<img src="img/clean_standardize.PNG" alt="Standardizing a variable" width="40%" />
+<img src="img/fig14-8.PNG" alt="Standardizing a variable" width="50%" />
 <p class="caption">(\#fig:fig14-8)Standardizing a variable</p>
 </div>
 
@@ -169,7 +172,7 @@ It's important to normalize before updating your variable types. Updating your v
     - You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item)
 
 <div class="figure" style="text-align: center">
-<img src="img/clean_reverse.PNG" alt="Reverse coding a variable" width="30%" />
+<img src="img/fig14-9.PNG" alt="Reverse coding a variable" width="50%" />
 <p class="caption">(\#fig:fig14-9)Reverse coding a variable</p>
 </div>
 
@@ -247,11 +250,11 @@ As noted in Section \@ref(style-time), in many cases it's actually best to not j
     - If at some point after merging or appending your data, you find you need to reshape data into a new format, this restructuring process will need to be added to your data cleaning process. 
 
 > **Note** <br><br>
-If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure \@ref(fig:fig14-12)), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure \@ref(fig:fig14-10)), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.
 
 <div class="figure" style="text-align: center">
-<img src="img/clean_reshape.PNG" alt="A comparison of long and wide format" width="80%" />
-<p class="caption">(\#fig:fig14-12)A comparison of long and wide format</p>
+<img src="img/fig14-10.PNG" alt="A comparison of long and wide format" width="100%" />
+<p class="caption">(\#fig:fig14-10)A comparison of long and wide format</p>
 </div>
 
 19. Save your clean data
@@ -298,7 +301,7 @@ However, writing code alone will not provide all of the desired benefits. There 
 1. Follow a coding style guide
     - As discussed in Section \@ref(style-code), coding best practices such as using relative file paths,  including comments, and recording session information, allow your processes to be more reproducible and reduces errors. Adding best practices to a code style guide ensures that all team members are setting up their files in a consistent manner, further improving the usability of code.
 1. Review your data upon import
-    - As we discussed in Section \@ref(clean-check), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
+    - As we discussed in Section \@ref(clean-steps), it is imperative that you review your data before beginning to clean it to ensure you have a thorough understanding of what is happening in your file. This review process can become even more relevant if you are reusing a syntax file to clean data collected multiple times (e.g., in a longitudinal study). You may expect your syntax to run flawlessly each time period, yet if anything changes in the data collection or entry process (e.g., a variable name changed, a new item is added, a new variable category is added), your data cleaning syntax will no longer work as intended. It’s best to find this out before you start the cleaning process so you can adjust your data cleaning plan and your code as needed. 
 1. Do all transformations in code
     - Cleaning data using code only improves reproducibility if you do all transformations, no matter how small, in the code. No transformations should be done to your data outside of code, even if you think it is something insignificant. Once you work outside of your code, your chain of processing is lost and your work is no longer reproducible. Code files should contain every transformation you make from the raw data to your clean data.
 1. Don’t do anything random 
@@ -306,14 +309,14 @@ However, writing code alone will not provide all of the desired benefits. There 
       - If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) [@klein_practical_2018]. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.
       - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop the second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
 1. Check each transformation
-    - As mentioned in Section \@ref(clean-check), check your work along the way, don’t wait until the end of your script. For each transformation in your data:
+    - As mentioned in Section \@ref(clean-steps), check your work along the way, don’t wait until the end of your script. For each transformation in your data:
       - Review your variables/cases before and after the transformations.
       - Review all errors and warning codes
         - Some warnings may be innocuous (just messages)
         - Some errors are telling you that your code did not run, you need to fix something
         - Other warnings are telling you that your code did run but it did not run as you expected it to. If you don’t pay attention to these warnings, you may end up with unexpected results. 
 1. Validate your data before exporting and review after exporting
-    - As we discussed in Section \@ref(clean-check), before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
+    - As we discussed in Section \@ref(clean-steps), before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
       - While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE (e.g., test that `stu_id` falls within the range of 1000--2000).
     - After exporting your data, open the exported file. Does everything look as you expected (e.g., maybe you expected missing data to export as blanks but they exported as "NA")?
 1. Do code review

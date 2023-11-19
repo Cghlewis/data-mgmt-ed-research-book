@@ -2,15 +2,15 @@
 
 ```{r fig12-1, fig.cap="Data capture in the research project life cycle", out.width = "90%"}
 
-knitr::include_graphics("img/lifecycle_capture.PNG")
+knitr::include_graphics("img/fig12-1.PNG")
 
 ```
 
 After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a flat file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
 
-```{r fig12-2, fig.cap="Common data capture methods", out.width = "60%"}
+```{r fig12-2, fig.cap="Common data capture methods"}
 
-knitr::include_graphics("img/capture.PNG")
+knitr::include_graphics("img/fig12-2.PNG")
 
 ```
 
@@ -36,7 +36,7 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
     - In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
       - Do you want to export the text values or numeric values for categorical items?
       - How do you want to export "select all" questions?
-        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column. As you can imagine, the former option can get messy if your response options contain commas (see Figure \@ref(fig:fig12-3)).
+        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column, where the variable often contains a `1` to denote the item was selected. As you can imagine, the former option can get messy if your response options contain commas (see Figure \@ref(fig:fig12-3)).
       - How do you want to recode seen but missing values? 
         - This option is commonly provided because "select all" questions are often split out into multiple variables, where a `1` indicates the option was selected, and blank represents either the option was **not selected** or that the item was skipped entirely. 
         - Typically tools provide the option to recode to *0* or *-99*. You can also choose not to recode and leave those responses as blank. If the types of missing data do not matter to your study, then leaving missing values as blank is typically the most straightforward option. However, adding an extreme value like *-99* can make it easier to know if those blank "select all" values are a "no" response (recoded to *-99*) or if those values were never seen and actually represent a missing value (left as blank).
@@ -139,7 +139,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
     
 ```{r fig12-4, fig.cap="The flow of the decisions to make regarding the data entry process"}
 
-knitr::include_graphics("img/data_entry_process2.PNG")
+knitr::include_graphics("img/fig12-4.PNG")
 
 ```
 
@@ -160,10 +160,10 @@ Last, it is important to integrate quality control into this data entry process.
     - There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways. 
     - However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your "master" raw data file.
       - Figure \@ref(fig:fig12-5) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
-  
-```{r fig12-5, out.width = "60%", fig.cap="A report displaying differences between two entry files"}
 
-knitr::include_graphics("img/double-enter.PNG")
+```{r fig12-5, fig.cap="A report displaying differences between two entry files"}
+
+knitr::include_graphics("img/fig12-5.PNG")
 
 ```
   
@@ -188,7 +188,7 @@ Non-public, or restricted-use, data sources are files that cannot be directly ac
 
 ```{r fig12-6, fig.cap="Example non-public confidential data request process"}
 
-knitr::include_graphics("img/data_request_process.PNG")
+knitr::include_graphics("img/fig12-6.PNG")
 
 ```
 
@@ -208,7 +208,7 @@ Figure \@ref(fig:fig12-7) is an example of how you might provide this informatio
 
 ```{r fig12-7, fig.cap="Example variable request for an external data provider"}
 
-knitr::include_graphics("img/collect_request.PNG")
+knitr::include_graphics("img/fig12-7.PNG")
 
 ```
 
@@ -233,9 +233,9 @@ knitr::include_graphics("img/collect_request.PNG")
 
 Figure \@ref(fig:fig12-8) is an example of a document you can ask your data provider to complete.
 
-```{r fig12-8, out.width = "80%", fig.cap="Sample documentation form for an external data provider to complete"}
+```{r fig12-8, fig.cap="Sample documentation form for an external data provider to complete"}
 
-knitr::include_graphics("img/collect_document.PNG")
+knitr::include_graphics("img/fig12-8.PNG")
 
 ```
 

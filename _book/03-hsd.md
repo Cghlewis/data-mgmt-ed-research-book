@@ -6,12 +6,27 @@ In addition to understanding how to organize data, we also need a foundational u
 
 When working with human subjects there are two types of identifiers you may collect in your study, direct and indirect. Direct identifiers are unique to an individual and can be used to identify a participant. Indirect identifiers are not necessarily unique to a particular individual, but if combined with other information they could be used to identify a participant [@kopper_data_2023].
 
-<div class="figure" style="text-align: center">
-<img src="img/identifiers.PNG" alt="Examples of direct and indirect identifiers" width="80%" />
-<p class="caption">(\#fig:fig4-1)Examples of direct and indirect identifiers</p>
-</div>
+<br>
 
-A term often used when discussing identifiable information is personally identifiable information (PII). This term broadly refers to information that can be used to identify a participant. There is no agreed upon list for what fields should be included in a list of PII but generally it includes both the direct and indirect types of information shown in Figure \@ref(fig:fig4-1).
+
+Table: (\#tab:tab4-1)Examples of direct and indirect identifiers
+
+|Direct Identifiers                |Indirect Identifiers       |
+|:---------------------------------|:--------------------------|
+|Name                              |Age                        |
+|Initials                          |Race                       |
+|Address                           |Ethnicity                  |
+|Phone number                      |Income                     |
+|Email address                     |Education level            |
+|Social security number            |Gender                     |
+|IP Address                        |Occupation                 |
+|ID numbers (student ID, state ID) |Date of birth              |
+|License numbers                   |ZIP Code                   |
+|Account numbers                   |Special education services |
+|                                  |Data collection date       |
+|                                  |Verbatim responses         |
+
+A term often used when discussing identifiable information is personally identifiable information (PII). This term broadly refers to information that can be used to identify a participant. There is no agreed upon list for what fields should be included in a list of PII but generally it includes both the direct and indirect types of information shown in Table \@ref(tab:tab4-1).
 
 When collecting data and creating datasets, you will be working with one or more of these four types of data files.
 

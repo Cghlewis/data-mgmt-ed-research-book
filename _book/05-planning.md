@@ -1,7 +1,7 @@
 # Planning Data Management {#plan}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_plan2.PNG" alt="Planning in the research project life cycle" width="80%" />
+<img src="img/fig6-1.PNG" alt="Planning in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
 </div>
 
@@ -33,16 +33,16 @@ Along with your existing data management plan and other grant application materi
 
 **Planning checklists**
 
-- Roles and Responsibilities ^[https://docs.google.com/document/d/1o_QsM9N492XgMhRE4ef9GaGVNzvfO4sR]
-- Task Management ^[https://docs.google.com/document/d/131cHp9-_NET3futvKH7ECV39rTSTEULE]
-- Documentation ^[https://docs.google.com/document/d/1M372uOtVutLxt7VZgCZnxPVDUSTQmm15]
-- Data Collection ^[https://docs.google.com/document/d/1nvjMHeDmJkQtTT4CoLpUcroYknSDAQyj]
-- Data Tracking ^[https://docs.google.com/document/d/1YM3q0aNEpQAalorr3fs4dXH2aCuompNk]
-- Data Capture ^[https://docs.google.com/document/d/18fL9M4TKi0k6cC2ubK0VD5Res9yXsS92]
-- Data Storage and Security ^[https://docs.google.com/document/d/1mxxGaDvFPlQaR7M3wSmwWTgkHa5yiT4t]
-- Data Cleaning ^[https://docs.google.com/document/d/12Jx4soafWiZF-1y-ESu1n37aDa-Pa4ZS]
-- Data Archiving ^[https://docs.google.com/document/d/1lLBoSbNCAUJnmbvgdPjEYDVvGl6QMVZwcdx-5ewQybM]
-- Data Sharing ^[https://docs.google.com/document/d/1Bsbjx9aCZlsr8XbLRp3llhJxDkIi56iD]
+- Roles and Responsibilities ^[https://osf.io/ghtc6]
+- Task Management ^[https://osf.io/8x3s4]
+- Documentation ^[https://osf.io/bckh8]
+- Data Collection ^[https://osf.io/ckwtr]
+- Data Tracking ^[https://osf.io/ahz4f]
+- Data Capture ^[https://osf.io/pc8nt]
+- Data Storage and Security ^[https://osf.io/y3z9s]
+- Data Cleaning ^[https://osf.io/7t4rg]
+- Data Archiving ^[https://osf.io/u4exh]
+- Data Sharing ^[https://osf.io/jkgwz]
 
 > **Note** <br> <br>
 If this is your first time working through this book, these checklists are a great way to summarize content from each chapter. As you learn best practices for a phase, pull up the checklist specific to that chapter to begin thinking through which practices are feasible for your specific project. 
@@ -56,7 +56,7 @@ For example, one team may collect survey data on paper because their participant
 Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making process, based on a @borghi_promoting_2022 flow chart. Of course, in real life we are often choosing between many more than just two options!
 
 <div class="figure" style="text-align: center">
-<img src="img/decision-diagram.PNG" alt="A simplified decision-making process" width="60%" />
+<img src="img/fig6-2.PNG" alt="A simplified decision-making process" width="100%" />
 <p class="caption">(\#fig:fig6-2)A simplified decision-making process</p>
 </div>
 
@@ -92,28 +92,28 @@ The last step of this planning phase is to build your workflows. Workflows allow
 Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig6-3) works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 
 <div class="figure" style="text-align: center">
-<img src="img/workflow1.PNG" alt="A simple workflow template" width="100%" />
+<img src="img/fig6-3.PNG" alt="A simple workflow template" width="100%" />
 <p class="caption">(\#fig:fig6-3)A simple workflow template</p>
 </div>
 
 Here is how we might complete this diagram for a student survey.
 
 <div class="figure" style="text-align: center">
-<img src="img/workflow2.PNG" alt="Example student survey workflow" width="100%" />
+<img src="img/fig6-4.PNG" alt="Example student survey workflow" width="100%" />
 <p class="caption">(\#fig:fig6-4)Example student survey workflow</p>
 </div>
 
 But the format truly does not matter. Figure \@ref(fig:fig6-5) is a diagram of the same student survey workflow as above, with more detailed added, and this time using a swimlane template instead, where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
 
 <div class="figure" style="text-align: center">
-<img src="img/swimlane2.PNG" alt="Example student survey workflow using a swimlane template" width="100%" />
+<img src="img/fig6-5.PNG" alt="Example student survey workflow using a swimlane template" width="100%" />
 <p class="caption">(\#fig:fig6-5)Example student survey workflow using a swimlane template</p>
 </div>
 
 If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig6-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_grant_2021] in order to better capture the expected timeline.
 
 <div class="figure" style="text-align: center">
-<img src="img/gantt.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
+<img src="img/fig6-6.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
 <p class="caption">(\#fig:fig6-6)Example student survey workflow using a Gantt chart</p>
 </div>
 
@@ -153,5 +153,3 @@ There are many existing tools that allow teams to assign and track tasks, schedu
 - Asana
 
 Of course, as with all processes we've discussed so far, a task management system is only useful if your team is trained to use it, is invested in using it, and actually uses it as part of their daily routine. So make sure to consider this as you choose what tool, if any, is right for you.
-
-

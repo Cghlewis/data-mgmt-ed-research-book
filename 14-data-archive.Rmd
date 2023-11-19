@@ -1,12 +1,12 @@
 # Data Archiving {#store-long}
 
-```{r fig15-1, fig.cap="Long-term data storage in the research project life cycle", out.width = "80%"}
+```{r fig15-1, fig.cap="Long-term data storage in the research project life cycle"}
 
-knitr::include_graphics("img/lifecycle_archive.PNG")
+knitr::include_graphics("img/fig15-1.PNG")
 
 ```
 
-Once you have gone through all cycles of data collection and you are preparing to wrap up your grant, you will need to switch gears and start thinking about implementing your archiving plan to ensure that your files are still accessible and usable, long after a project is complete. While your project may be ending, there are still many reasons to retain your data long-term including future analyses, opportunities to make corrections (e.g., going back to paper files if an error is found in the data), and data retention requirements from funders and institutions. In this section we will discuss how to care for files internally, while public data sharing and archiving will be discussed in Chapter \@ref(share). However, these processes (preparing to internally archive and preparing to publicly share data) will most likely be happening at the same time.
+Once you have gone through all cycles of data collection and you are preparing to wrap up your grant, you will need to switch gears and start thinking about archiving your data to ensure that your files are still accessible and usable, long after a project is complete. While your project may be ending, there are still many reasons to retain your data long-term including future analyses, opportunities to make corrections (e.g., going back to paper files if an error is found in the data), and data retention requirements from funders and institutions. In this section we will discuss how to care for files internally, while public data sharing and archiving will be discussed in Chapter \@ref(share). However, these processes (preparing to internally archive and preparing to publicly share data) will most likely be happening at the same time.
 
 ## Long-term storage
 
@@ -30,29 +30,34 @@ Once you understand requirements, make a plan for retention and destruction. If 
             - Move relevant documentation from other locations to this folder (e.g., data dictionaries, project-level documentation)
     - When it comes time to destroy data, make sure to permanently delete files, including all backups of files. When deleting PII, this often involves more than just moving files to the trash can on your computer. Work with your institution IT department during this process.
 
-Last, make sure to document your plan, including time frames for retention and destruction, in the appropriate locations (e.g., DMP, research protocol, informed consent agreements, team data security policy). Assign and document responsibilities for short-term tasks such as boxing or destruction of physical files, as well as ongoing long-term tasks such as maintenance of files.
-
-<br>
-
+<br>    
 ```{r tab15-1}
 
 library(tidyverse)
 
 tibble::tribble (~Type, ~`Non-proprietary formats`, ~`Other commonly accepted formats`,
-                "Text documentation", "PDF, TXT, HTML, XML", "DOCX",
+                "Text documentation", "TXT, HTML, XML", "PDF, DOCX",
                  "Rectangular documentation", "CSV", "XLSX",
                  "Datasets", "CSV, TSV", "SPSS, STATA, SAS, R, XLSX") %>%
   knitr::kable(caption = "Potential long-term storage file types")
   
 ```
 
+Last, make sure to document your plan, including time frames for retention and destruction, in the appropriate locations (e.g., DMP, research protocol, informed consent agreements, team data security policy). Assign and document responsibilities for short-term tasks such as boxing or destruction of physical files, as well as ongoing long-term tasks such as maintenance of files.
+
+**Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Kristin Briney |Project Close-Out Checklist for Research Data ^[https://authors.library.caltech.edu/records/yr0y9-z4q70]|
+
 ## Internal data use {#store-long-use}
 
-At the end of a project, or possibly earlier in the project, team members will want to begin analyzing data. It is important to consider where you will store finalized datasets for internal use, how you will notify team members of their availability, and how you will allow team members, and other research collaborators, to access data. Most likely you will not want researchers going in to folders and grabbing datasets without consulting with a core team member first. Therefore, it is important to develop a system for providing data to researchers on an as-needed basis. Create a data request process for team members, or external collaborators, to request access to finalized study datasets. Several things will need to be considered.
+At the end of a project, or possibly earlier in the project, team members will want to begin analyzing data. It is important to consider how you will make team members aware of what data is available and how you will allow team members, and other research collaborators, to access data. Most likely you will not want researchers going in to folders and grabbing datasets without consulting with a core team member first. Therefore, it is important to develop a system for providing data to researchers on an as-needed basis. Create a data request process for team members, or external collaborators, to request access to finalized study datasets. Several things will need to be considered.
 
 1. Add descriptions of the finalized datasets to a data inventory to inform your team of their availability (see Section \@ref(document-inventory))  
 2. Design a system for requesting access (e.g., designate a person to email, develop a survey form that is submitted to a designated person)
-    - In that system, the researcher should describe what data they are requesting (i.e., what variables, from what time periods), as well as the purpose of their analysis. It may be helpful to build a data request process that involves providing data dictionaries and other documentation to researchers to review before requesting data.
+    - In that system, the researcher should describe what data they are requesting, including the exact variables they need and from what time periods, as well as the purpose of their analysis. It may be helpful to build a data request process that involves providing data dictionaries and other documentation to researchers to review before requesting data.
     - This system should also include collecting any required agreement forms from requestors (e.g., data sharing agreements)
 3. Decide who needs to review the request to ensure the application is complete (e.g., a data manager), and who needs to give final approval for the data request submission (e.g., a PI)
 4. Design a system for gathering data for requestors (e.g., will you provide researchers with full datasets or will you narrow datasets based on specific requests)
@@ -67,29 +72,22 @@ Here is an example of how you might structure a data request folder.
 
 data_requests/
 ├── data_request_log.xlsx
-│   ├── lastname1_firstname1_2023-03-02
-|       ├── projname_lname-fname_data-sharing-agreement_2023-04-08.pdf
-│       ├── projname_stu_svy_data-dictionary.xlsx
-│       └── projname_lname-fname_stu_svy_clean_2023-05-02.csv
-│   ├── lastname2_firstname2_2023-03-19
-│       ├── archive
-│           ├── changelog.xlsx
-|           └── projname_tch_svy_clean_2023-05-15.csv
-|       ├── projname_lname2-fname2_data-sharing-agreement_2023-04-22.pdf
-│       ├── projname_tch_svy_data-dictionary.xlsx
-|       └── projname_lname2-fname2_tch_svy_clean_2023-06-10.csv
-|   
+├── lastname1_firstname1_2023-03-02
+|   ├── projname_lname-fname_data-sharing-agreement_2023-04-08.pdf
+│   ├── projname_lname-fname_stu_svy_clean_2023-05-02.csv
+│   └── projname_stu_svy_data-dictionary.xlsx
+├── lastname2_firstname2_2023-03-19
+│   ├── archive
+│   |   ├── changelog.xlsx
+|   |   └── projname_tch_svy_clean_2023-05-15.csv
+|   ├── projname_lname2-fname2_data-sharing-agreement_2023-04-22.pdf
+│   ├── projname_lname2-fname2_tch_svy_clean_2023-06-10.csv
+|   └── projname_tch_svy_data-dictionary.xlsx
 └── ...
 
 ```
 
 Ultimately, you want to establish a standardized and efficient process that reduces the burden on team members responsible for reviewing, approving, and fulfilling data requests and also removes any ambiguity about how users should request access to data [@institute_of_education_sciences_slds_2019]. As always, roles and responsibilities will need to be assigned to each step of this process. Often the person who facilitates internal data requests for one project, will likely be the same person that fulfills data requests for all projects. Document this request process in your data security policy (see Section \@ref(document-security)) so that team members know how to request data and who to work with.
-
-**Resources**
-
-|Source|Resource|
-|--------|-----------|
-|Kristin Briney |Project Close-Out Checklist for Research Data ^[https://authors.library.caltech.edu/records/yr0y9-z4q70]|
 
 ## Using a repository
 

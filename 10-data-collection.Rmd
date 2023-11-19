@@ -1,8 +1,8 @@
 # Data Collection {#collect}
 
-```{r fig11-1, fig.cap="Data collection in the research project life cycle", out.width = "80%"}
+```{r fig11-1, fig.cap="Data collection in the research project life cycle"}
 
-knitr::include_graphics("img/lifecycle_track.PNG")
+knitr::include_graphics("img/fig11-1.PNG")
 
 ```
 
@@ -23,7 +23,7 @@ In addition to planning data collection logistics for your original data sources
 
 ```{r fig11-2, fig.cap="Common education research data collection methods"}
 
-knitr::include_graphics("img/data_collected7.PNG")
+knitr::include_graphics("img/fig11-2.PNG")
 
 ```
 
@@ -95,7 +95,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig11-3)):
 
 1. Gathering internal feedback on items
-    - As discussed in Section \@ref(document-dictionary), once all items for each instrument have been added to your data dictionary, have your data management working group (see Chapter \@ref(plan)) review the data dictionary and provide feedback
+    - As discussed in Section \@ref(document-dictionary), once all items for each instrument have been added to a data dictionary, have your data management working group (see Chapter \@ref(plan)) review the data dictionary and provide feedback
 2. Piloting an instrument for content
     - Once your DMWG has approved the items to be collected, the second phase of piloting can begin. Create a printable draft of your instrument that can be shared with people in your study population and gather feedback. Consult with your IRB to determine if approval is required before piloting your instrument with your study population.
 3. Piloting the instrument for data related issues
@@ -105,7 +105,7 @@ Last, as you move through the piloting phases, remember to make updates not only
 	  
 ```{r fig11-3, fig.cap="Data collection instrument pilot phases"}
 
-knitr::include_graphics("img/pilot2.PNG")
+knitr::include_graphics("img/fig11-3.PNG")
 
 ```
 
@@ -137,10 +137,20 @@ Once content piloting is completed, teams should be ready to begin building thei
 
 While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_2020;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_2023].
 
-```{r fig11-4, fig.cap="Comparison of data collection tool benefits"}
+```{r tab11-1}
 
-knitr::include_graphics("img/collect_benefits2.PNG")
+library(tidyverse)
 
+tibble::tribble (~"Electronic Data Collection Benefits", ~"Paper Data Collection Benefits",
+                "Able to build in data validation to collect accurate and uniform information", "Intuitive to create and use (no training required)",
+                 "Scalable (easier to reuse, edit, and maintain)", "Easy to do cognitive checks (eyeball for errors)",
+                 "Efficient (reduces both cost and effort associated with printing, collecting, and entering data)", "Easier to catch errors early on (in the field)",
+                 "Able to use automated logic to prevent inconsistencies in data", "",
+                "Response validation reduces the chances of missing data", "",
+                "Potential to reach broader populations (e.g., crowdsourcing)", "",
+                "Quicker turnaround of analysis-ready data and provides the opportunity to build real-time reporting pipelines (e.g., using APIs)", "") %>%
+  knitr::kable(caption = "Comparison of data collection tool benefits")
+  
 ```
 
 > **Note** <br> <br>
@@ -164,11 +174,11 @@ The process for building your tools with the end in mind is fairly different for
 
 #### Electronic data collection {#collect-electronic}
 
-If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig11-5), but instead you export data that looks like the image on the right, then you understand how important it is to spend time planning how data will be collected in your tool. 
+If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig11-4), but instead you export data that looks like the image on the right, then you understand how important it is to spend time planning how data will be collected in your tool. 
 
-```{r fig11-5, fig.cap="A comparison of data collected without planning and data collected with planning"}
+```{r fig11-4, fig.cap="A comparison of data collected without planning and data collected with planning"}
 
-knitr::include_graphics("img/fig11-5.PNG")
+knitr::include_graphics("img/fig11-4.PNG")
 
 ```
 
@@ -247,11 +257,11 @@ There are many situations where collecting data electronically may not be feasib
 
 Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig11-4)). Using the feedback collected, edit your tool as needed before sending it out into the field.
 
-Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary (see Figure \@ref(fig:fig11-6)) [@hart_florida_2018].
+Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary. See Figure \@ref(fig:fig11-5) for an example of an annotated instrument from wave 1 of The Florida State Twin Registry project shared in the LDbase repository [@hart_florida_2018].
 
-```{r fig11-6, fig.cap="Annotated instrument from The Florida State Twin Registry project", out.width = "80%"}
+```{r fig11-5, fig.cap="Annotated parent survey from wave 1 The Florida State Twin Registry project"}
 
-knitr::include_graphics("img/annotated_instrument.PNG")
+knitr::include_graphics("img/fig11-5.PNG")
 
 ```
 
@@ -298,15 +308,15 @@ There are many ways you might consider collecting unique identifiers other than 
 
 If you take paper forms into the field consider doing the following to connect your data to a participant [@otoole_data_2018; @reynolds_basics_2022].
 
-- Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then use either a removable label with participant name and other relevant information and place that over the ID or attach a cover sheet with this information. When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
+- Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then use either a removable label with participant name and other relevant information and place that over the ID or attach a cover sheet with this information (see Figure \@ref(fig:fig11-6)). When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
   - It is this ID only that you will enter into your data entry form during the data capture process, no name.
   - Removing the label/cover sheet also ensures that your data entry team only sees the study ID when they enter data, increasing privacy by minimizing the number of people who see see participant names.
   - It is important to double and triple check study identifiers against your participant database to make sure the information is correct before removing the label or cover sheet
   - Make a plan for the labels/cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
 
-```{r fig11-7, fig.cap="Example cover sheet for a paper data collection instrument", out.width = "90%"}
+```{r fig11-6, fig.cap="Example cover sheet for a paper data collection instrument"}
 
-knitr::include_graphics("img/cover_sheet2.PNG")
+knitr::include_graphics("img/fig11-6.PNG")
 
 ```
 
@@ -389,16 +399,16 @@ If your data collection efforts include field data collection (e.g., data collec
   - Do another round of data checks in the field once the data collector returns physical forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
   - Ensure that all data and equipment is accounted for and returned to the office
   - Be available for trouble shooting as needed
-- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-8))
+- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-7))
   - The project coordinator may do this round of checking as they are tracking information in the participant database
   - If any issues are found, note that in the tracking database and send the form back out to the field for correction
   - If paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
 - When a wave of data collection wraps up, collect feedback from data collectors to improve future data collection efforts
   - What went well? What didn't?
 
-```{r fig11-8, fig.cap="A series of spot checks that occur with paper data"}
+```{r fig11-7, fig.cap="A series of spot checks that occur with paper data"}
 
-knitr::include_graphics("img/spot_check.PNG")
+knitr::include_graphics("img/fig11-7.PNG")
 
 ```
 
@@ -487,13 +497,13 @@ Last, implement quality control checks for bots or fraudulent responses before a
 
 ## Review
 
-Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-9) helps us to see when these practices fit into the different phases our workflow.
+Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-8) helps us to see when these practices fit into the different phases our workflow.
 
 Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed.
 
-```{r fig11-9, fig.cap = "Integrating quality assurance and control into a data collection workflow"}
+```{r fig11-8, fig.cap = "Integrating quality assurance and control into a data collection workflow"}
 
-knitr::include_graphics("img/data_collect_workflow3.PNG")
+knitr::include_graphics("img/fig11-8.PNG")
 
 ```
 

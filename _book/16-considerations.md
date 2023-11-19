@@ -6,13 +6,13 @@ Up until this point, we have mostly focused on a simplistic workflow for one tea
 
 Multi-site, or multi-team, collaborations require additional planning around roles and responsibilities, workflows, and standards. Jumping into multi-site collaborations with out spending time cross-team planning often leads to unfortunate data security and quality concerns. Before a project begins, consider documenting expectations in a collaboration agreement. Review everything in a typical data management checklist but come to an agreement on decisions. The following types of multi-site issues should also be addressed [@briney_data_2015; @schmitt_data_2011].
 
-- How will teams maintain consistency in procedures across sites? (e.g. shared SOPs, shared style guides, oversight of practices)
+- How will teams maintain consistency in procedures across sites? (e.g., shared SOPs, shared style guides, oversight of practices)
   - If each site is handling their own data tracking, capture, entry, and cleaning procedures, it is imperative that these processes are standardized to allow for datasets to be integrated.
 - How will teams handle data ownership?
 - What are the roles and responsibilities across sites?
 - What tools will be used to allow for multi-site data tracking, collection, entry, storage, and sharing?
 
-Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying out expectations for team collaborations (Figure \@ref(fig:fig16-1)). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. 
+Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying out expectations for team collaborations (Figure \@ref(fig:fig17-1)). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. 
 
 - Responsible: The site is responsible for completing this task.
 - Accountable: The site provides oversight, ensuring the the task is completed with fidelity.
@@ -22,8 +22,8 @@ Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying 
 Assigning levels of responsibility to each site allows collaborators to clearly see what is expected from them in a project. Within site tasks can then be further assigned to specific roles.
 
 <div class="figure" style="text-align: center">
-<img src="img/raci.PNG" alt="Example of a RACI chart for a multi-site project collaboration" width="80%" />
-<p class="caption">(\#fig:fig16-1)Example of a RACI chart for a multi-site project collaboration</p>
+<img src="img/fig17-1.PNG" alt="Example of a RACI chart for a multi-site project collaboration" width="80%" />
+<p class="caption">(\#fig:fig17-1)Example of a RACI chart for a multi-site project collaboration</p>
 </div>
 
 ### Multi-project teams

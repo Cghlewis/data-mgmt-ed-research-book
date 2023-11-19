@@ -99,7 +99,7 @@
 </h1>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-1"></span>
-<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="80%"><p class="caption">
+<img src="img/fig9-1.PNG" alt="Style guide in the research project life cycle" width="100%"><p class="caption">
 Figure 9.1: Style guide in the research project life cycle
 </p>
 </div>
@@ -121,9 +121,9 @@ Figure 9.1: Style guide in the research project life cycle
 <li>Styling your syntax files</li>
 </ol>
 <p>While some best practices will be provided below, ultimately the rules you choose to add to each style guide should be chosen based on which practices work best for your projects and your team. Whatever rules you settle on, write them in a style guide so that everyone is following the same rules within and across projects.</p>
-<div id="general-good-practices" class="section level2" number="9.1">
+<div id="style-practices" class="section level2" number="9.1">
 <h2>
-<span class="header-section-number">9.1</span> General good practices<a class="anchor" aria-label="anchor" href="#general-good-practices"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.1</span> General good practices<a class="anchor" aria-label="anchor" href="#style-practices"><i class="fas fa-link"></i></a>
 </h2>
 <p>Before we dive in to particular types of style guides, there are a few things to understand about how computers read names in order to understand the “why” behind some of these practices.</p>
 <ol style="list-style-type: decimal">
@@ -206,7 +206,7 @@ Figure 9.1: Style guide in the research project life cycle
 </ul>
 </li>
 <li>With the exception of <code>-</code> and <code>_</code>, don’t use special characters in your folder names</li>
-<li>Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned above).</li>
+<li>Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned in Section <a href="style.html#style-practices">9.1</a>).</li>
 </ul>
 <p><strong>Example directory structure style guide</strong></p>
 <pre><code>1. All project directories follow this hierarchical metadata structure  
@@ -221,37 +221,53 @@ Figure 9.1: Style guide in the research project life cycle
     - No spaces or special characters in folder names  
     - Only use lower case letters  
     - Use `-` to separate words  
+    - Consistently named across waves of data collection
 3. All previous versions of files must be placed into their respective "archive" folder
         - A changelog should be placed in all data "archive" folders to document changes between file versions
 </code></pre>
 <p><strong>Example directory structure created using a style guide</strong></p>
 <pre><code>project_new/
-│   ├── planning
-|       ├── grant_mgmt
-|          └── proposal_docs
-|       ├── meetings
-|          ├── agendas
-|          └── notes
-|   ├── project_mgmt
-|       ├── hiring_materials
-|       └── scheduling_materials
-|   ├── documentation
-|       ├── data_dictionaries
-|       ├── project_new_data_sources_catalog.xlsx
-|       ├── research_protocol
-|       └── sops
-|   ├── tracking
-│       ├── parent_consents
-│       └── participant_tracking_database
-│   ├── data
-│       ├── cohort_1
-│           ├── student
-|               ├── survey
-|                   ├── archive
-|                       └── changelog.txt
-|               ├── assessment
-|                   ├── archive
-|                       └── changelog.txt
+├── planning
+|   ├── grant_mgmt
+|   |   ├── proposal_docs
+|   |   |   └── ...
+|   ├── meetings
+|   |   ├── agendas
+|   |   |   └── ...
+|   |   ├── notes
+|   |   |   └── ...
+├── documentation
+|   ├── data_dictionaries
+|   |   └── ...
+|   ├── data_sources_catalog.xlsx
+|   ├── irb
+|   |   ├── consent_forms
+|   |   |   └── ...
+|   |   ├── instruments
+|   |   |   └── ...
+|   |   └── research_protocol.docx
+|   ├── sops
+|   |   └── ...
+|   └── ...
+├── data_collection
+|   ├── hiring_materials
+|   |   └── ...
+|   ├── scheduling_materials
+|   |   └── ...
+├── tracking
+│   ├── parent_consents
+|   |   └── ...
+│   └── participant_tracking_database.accdb
+├── data
+│   ├── cohort1
+│   |   ├── student
+|   |   |   ├── survey
+|   |   |   |   ├── archive
+|   |   |   |   |  └── changelog.txt
+|   |   |   |   └── ...
+|   |   |   └── ... 
+|   |   └── ...
+|   └── ...   
 └── ...
 </code></pre>
 </div>
@@ -261,7 +277,7 @@ Figure 9.1: Style guide in the research project life cycle
 </h2>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-2"></span>
-<img src="img/xkcd.png" alt="Documents, from Randall Munroe’s xkcd" width="30%"><p class="caption">
+<img src="img/fig9-2.png" alt="Documents, from Randall Munroe’s xkcd" width="50%"><p class="caption">
 Figure 9.2: Documents, from Randall Munroe’s xkcd
 </p>
 </div>
@@ -302,7 +318,7 @@ Figure 9.2: Documents, from Randall Munroe’s xkcd
 </ul>
 </li>
 <li>If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (<code>01_</code>, <code>02_</code>)</li>
-<li>Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (<code>student</code> = <code>stu</code>).
+<li>Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (student = <code>stu</code>).
 <ul>
 <li>This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase “stu_obs_raw”).</li>
 </ul>
@@ -331,18 +347,18 @@ Figure 9.2: Documents, from Randall Munroe’s xkcd
   - Date (always add)
   - Version (if necessary)
 7. Format dates as YYYY-MM-DD
-8. If there are multiple versions of a document on the same date, version using v# with a leading 0.
+8. If there are multiple versions of a document on the same date, version using _v# with a leading 0.
 9. Use the following abbreviations
   - student = stu
   - survey = svy
   - wave = w
-  - project math efficacy = me
+  - project new = pn
 </code></pre>
 <p><strong>Example file names created using a style guide</strong></p>
-<pre><code>me_stu_svy_sop_2022-08-01.docx
-me_w1_stu_svy_raw_2022-11-03.csv
-me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
-me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
+<pre><code>pn_stu_svy_sop_2022-08-01.docx
+pn_w1_stu_svy_raw_2022-11-03.csv
+pn_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
+pn_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
 </code></pre>
 </div>
 <div id="style-varname" class="section level2" number="9.4">
@@ -406,7 +422,9 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
 </li>
 </ul>
 </li>
-<li>If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.</li>
+<li>If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects. It also allows you to easily reuse code snippets across projects (e.g., for scoring a measure).<br>
+</li>
+<li>Choose standard abbreviations or phrases to denote the types of variable you are working with (standard score = <code>ss</code>). Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier <span class="citation">(<a href="references.html#ref-riederer_column_2020" role="doc-biblioref">Riederer 2020</a>)</span>.</li>
 <li>Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
 <ul>
 <li>Snake case (scale_sum) – preferred method for variable names
@@ -420,46 +438,40 @@ me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
 </li>
 <li>If a variable includes a “select all” option, start all associated variables with the same prefix (<code>cert_elem</code>, <code>cert_secondary</code>, <code>cert_leader</code>, <code>cert_other</code>). Again this allows you to easily see grouped items, as well as easily programatically manipulate those items as needed.</li>
 <li>Consider denoting reverse coding in the variable name to reduce confusion (<code>anx1_r</code>)</li>
-<li>Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier <span class="citation">(<a href="references.html#ref-riederer_column_2020" role="doc-biblioref">Riederer 2020</a>)</span>.
-<ul>
-<li>mean = mean</li>
-<li>scaled score = ss</li>
-<li>percentile rank = pr</li>
-</ul>
-</li>
-<li>Include an indication of the instrument in the variable name. This can also help with the unique variable name requirement above.
-<ul>
-<li>t = teacher self-report</li>
-<li>s = student self-report</li>
-<li>tr = teacher rating of student</li>
-<li>d = district student records</li>
-<li>
-<code>t_conf1</code>, <code>s_anx2</code>, <code>tr_relate4</code>, <code>d_gender</code>
-</li>
-</ul>
-</li>
+<li>Include an indication of the reporter in the variable name (student self-report = <code>s</code>). This can also help with the unique variable name requirement above.</li>
+<li>Choose an order for variable name metadata (e.g., reporter -&gt; variable name -&gt; item number/type)</li>
 </ul>
 <p><strong>Example variable naming style guide</strong></p>
 <pre><code>1. Use snake case
 2. Keep names under 32 characters
 3. Use meaningful variable names
 4. Use unique variable names within and across data sources
-5. If part of a scale, use scale abbreviation plus item number from the scale
-6. Include an indication of the instrument as a prefix in the variable name
+5. If part of a scale, use scale/subscale abbreviation plus item number from the scale. If the scale has been used in another project, keep the same name from previous projects.
+6. Include an indication of the reporter as a prefix in the variable name
   - student self-report = s_
   - teacher self-report = t_
-  - parent report on students = p_
   - district student records = d_
-7. Denote reverse coded variables using suffix `_r`
+7. Denote reverse coded variables using suffix _r
+8. Use the following abbreviations
+  - mean = m
+  - standard score = ss
+  - percentile rank = pr
+  - other, open text = text
+  - date = dt
 </code></pre>
 <p><strong>Example variable names created using a style guide</strong></p>
-<pre><code>s_anx1
-s_anx1_r
+<pre><code>s_wj_lwi_dt
+s_wj_lwi1
+s_wj_lwi2
+s_wj_lwi_ss
+s_wj_lwi_pr
 s_gender
 d_gender
-t_gender
+t_profdev
+t_profdev_text
 t_stress5
-p_relate
+t_stress5_r
+t_stress_m
 </code></pre>
 <div id="style-time" class="section level3" number="9.4.1">
 <h3>
@@ -574,13 +586,33 @@ Figure 9.3: Examples of how time might be added to your data based on a variety 
 <li>If you use numeric values, use extreme values that do not actually occur in your data</li>
 <li>Use your values consistently within and across variables</li>
 </ol>
-<p>In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Figure <a href="style.html#fig:fig9-4">9.4</a>).</p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig9-4"></span>
-<img src="img/missing2.PNG" alt="Example missing value code schema used for numeric variables" width="100%"><p class="caption">
-Figure 9.4: Example missing value code schema used for numeric variables
-</p>
-</div>
+<p>In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Table <a href="style.html#tab:tab9-1">9.1</a>).</p>
+<div class="inline-table"><table class="table table-sm">
+<caption>
+<span id="tab:tab9-1">Table 9.1: </span>Example missing value code schema used for numeric variables</caption>
+<thead><tr class="header">
+<th align="left">Code/Value</th>
+<th align="left">Label</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">-99</td>
+<td align="left">Unit nonresponse (entire instrument not completed)</td>
+</tr>
+<tr class="even">
+<td align="left">-98</td>
+<td align="left">Item skipped</td>
+</tr>
+<tr class="odd">
+<td align="left">-97</td>
+<td align="left">Item not applicable</td>
+</tr>
+<tr class="even">
+<td align="left">-96</td>
+<td align="left">Don’t know</td>
+</tr>
+</tbody>
+</table></div>
 <blockquote>
 <p><strong>Note</strong> <br><br>
 It is important to note here that there is a difference between a string value of “NA” or “NULL” that is inserted, verses an <code>NA</code> or <code>NULL</code> value that is assigned to blank values by a specific platform. For instance, blank numeric values in R are represented as the symbol NA. Yet this value is treated as missing, not as the string “NA”.</p>
@@ -596,11 +628,12 @@ It is important to note here that there is a difference between a string value o
 <li>Consider building and implementing coding templates <span class="citation">(<a href="references.html#ref-castaneda_nice_2019" role="doc-biblioref">Castañeda 2019</a>; <a href="references.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>
 <ul>
 <li>Templates can standardize the format of syntax files (such as using standard headers to break up code)</li>
-<li>They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)</li>
+<li>They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created) <span class="citation">(<a href="references.html#ref-alexander_telling_2023" role="doc-biblioref">Alexander 2023</a>)</span>
+</li>
 </ul>
 </li>
 </ul>
-<p>One example of what this might look.</p>
+<p>One example of what a template might look like in R.</p>
 <pre><code>#### Overview ####
 # Associated project: 
 # Script purpose:
@@ -610,13 +643,19 @@ It is important to note here that there is a difference between a string value o
 # Code checked by:
 # Code checked date:
 
+
 #### Workspace setup ####
 
 # Settings, packages, root paths
 
+
+#### Data import ####
+
+
 #### Cleaning code section 1 ####
 
-#### Cleaning code section 2 ####
+
+#### Cleaning code section 1 ####
 ...
 </code></pre>
 <ul>
@@ -677,7 +716,7 @@ It is important to note here that there is a difference between a string value o
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#style"><span class="header-section-number">9</span> Style guide</a></li>
-<li><a class="nav-link" href="#general-good-practices"><span class="header-section-number">9.1</span> General good practices</a></li>
+<li><a class="nav-link" href="#style-practices"><span class="header-section-number">9.1</span> General good practices</a></li>
 <li><a class="nav-link" href="#directory-structure"><span class="header-section-number">9.2</span> Directory structure</a></li>
 <li><a class="nav-link" href="#file-naming"><span class="header-section-number">9.3</span> File naming</a></li>
 <li>
@@ -704,7 +743,7 @@ It is important to note here that there is a difference between a string value o
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

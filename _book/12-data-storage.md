@@ -1,7 +1,7 @@
 # Data Storage and Security {#store}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_store.PNG" alt="Data storage in the research project life cycle" width="80%" />
+<img src="img/fig13-1.PNG" alt="Data storage in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig13-1)Data storage in the research project life cycle</p>
 </div>
 

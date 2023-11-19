@@ -99,14 +99,14 @@
 </h1>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-1"></span>
-<img src="img/lifecycle_capture.PNG" alt="Data capture in the research project life cycle" width="90%"><p class="caption">
+<img src="img/fig12-1.PNG" alt="Data capture in the research project life cycle" width="90%"><p class="caption">
 Figure 12.1: Data capture in the research project life cycle
 </p>
 </div>
 <p>After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a flat file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter <a href="structure.html#structure">3</a>). In this chapter we will review common ways to capture data based on three data collection methods (see Figure <a href="capture.html#fig:fig12-2">12.2</a>). Similar to data collection, it is possible for data errors to occur during this phase. In reviewing data capture methods, we will also cover how data quality can be managed during this phase.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-2"></span>
-<img src="img/capture.PNG" alt="Common data capture methods" width="60%"><p class="caption">
+<img src="img/fig12-2.PNG" alt="Common data capture methods" width="100%"><p class="caption">
 Figure 12.2: Common data capture methods
 </p>
 </div>
@@ -154,7 +154,7 @@ Figure 12.2: Common data capture methods
 <li>Do you want to export the text values or numeric values for categorical items?</li>
 <li>How do you want to export “select all” questions?
 <ul>
-<li>Depending on your chosen file type, you may be allowed to choose how you want to format “select all” questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column. As you can imagine, the former option can get messy if your response options contain commas (see Figure <a href="capture.html#fig:fig12-3">12.3</a>).</li>
+<li>Depending on your chosen file type, you may be allowed to choose how you want to format “select all” questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column, where the variable often contains a <code>1</code> to denote the item was selected. As you can imagine, the former option can get messy if your response options contain commas (see Figure <a href="capture.html#fig:fig12-3">12.3</a>).</li>
 </ul>
 </li>
 <li>How do you want to recode seen but missing values?
@@ -244,7 +244,7 @@ It is important to never make changes directly to the raw data files. This also 
 <span class="header-section-number">12.2.1</span> Choose a quality data entry tool<a class="anchor" aria-label="anchor" href="#choose-a-quality-data-entry-tool"><i class="fas fa-link"></i></a>
 </h3>
 <p>When choosing a data entry tool, if you are already using a relational database for your participant tracking, it may make the most sense to use this same database for data entry so that data can be stored in one location and tables can be linked (e.g., REDCap, FileMaker, Microsoft Access). However, if you need to choose a new tool for data entry, the criteria for choosing one will be similar to those reviewed in Section <a href="collect.html#collect-tools">11.2.3</a>. Considerations for project needs, security, costs, and data quality should all still be reviewed.</p>
-<p>In addition to reviewing those criteria, it can also be very beneficial to use a tool that allows you to create entry forms, similar to the form we saw in Figure <a href="track.html#fig:fig10-8">10.8</a>, rather than entering directly into a spreadsheet. Building a data entry form that is laid out similar to the paper form can help reduce errors in data entry. Data that is entered into the form is then fed into a table that can be exported.</p>
+<p>In addition to reviewing those criteria, it can also be very beneficial to use a tool that allows you to create entry forms, similar to the form we saw in Figure <a href="track.html#fig:fig10-8">10.7</a>, rather than entering directly into a spreadsheet. Building a data entry form that is laid out similar to the paper form can help reduce errors in data entry. Data that is entered into the form is then fed into a table that can be exported.</p>
 <p>If however, you choose to use a spreadsheet program such as SPSS or Microsoft Excel for data entry, it is important to be aware of some of the limitations and possible issues with these tools including:</p>
 <ul>
 <li>Possible formatting issues
@@ -328,7 +328,7 @@ It is important to never make changes directly to the raw data files. This also 
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-4"></span>
-<img src="img/data_entry_process2.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%"><p class="caption">
+<img src="img/fig12-4.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%"><p class="caption">
 Figure 12.4: The flow of the decisions to make regarding the data entry process
 </p>
 </div>
@@ -358,7 +358,7 @@ The exception to this rule is if you collected an assessment that requires entry
 <li>There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways.</li>
 <li>However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your “master” raw data file.
 <ul>
-<li>Figure <a href="capture.html#fig:fig12-5">12.5</a> is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the <code>diffdf</code> package <span class="citation">(<a href="references.html#ref-gower-page_diffdf_2020" role="doc-biblioref">Gower-Page and Martin 2020</a>)</span> was run to check for errors and a report was returned <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html" class="uri"&gt;https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html&lt;/a&gt;&lt;/p&gt;'><sup>84</sup></a>. You can see that it identifies an error in our <code>stress1</code> variable. Entry file 1 (<em>BASE</em>) has a different value than entry file 2 (<em>COMPARE</em>). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.</li>
+<li>Figure <a href="capture.html#fig:fig12-5">12.5</a> is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the <code>diffdf</code> package <span class="citation">(<a href="references.html#ref-gower-page_diffdf_2020" role="doc-biblioref">Gower-Page and Martin 2020</a>)</span> was run to check for errors and a report was returned <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html" class="uri"&gt;https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html&lt;/a&gt;&lt;/p&gt;'><sup>86</sup></a>. You can see that it identifies an error in our <code>stress1</code> variable. Entry file 1 (<em>BASE</em>) has a different value than entry file 2 (<em>COMPARE</em>). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.</li>
 </ul>
 </li>
 </ul>
@@ -366,7 +366,7 @@ The exception to this rule is if you collected an assessment that requires entry
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-5"></span>
-<img src="img/double-enter.PNG" alt="A report displaying differences between two entry files" width="60%"><p class="caption">
+<img src="img/fig12-5.PNG" alt="A report displaying differences between two entry files" width="100%"><p class="caption">
 Figure 12.5: A report displaying differences between two entry files
 </p>
 </div>
@@ -397,7 +397,7 @@ If you are entering data into a proprietary scoring system that does not provide
 <p>Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure <a href="capture.html#fig:fig12-6">12.6</a>). It is important to begin looking into this during your planning phase to understand when the request should be initiated. This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section <a href="hsd.html#hsd">4</a> (e.g., informed consent, DUA, confidentiality agreement).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-6"></span>
-<img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%"><p class="caption">
+<img src="img/fig12-6.PNG" alt="Example non-public confidential data request process" width="100%"><p class="caption">
 Figure 12.6: Example non-public confidential data request process
 </p>
 </div>
@@ -423,7 +423,7 @@ Figure 12.6: Example non-public confidential data request process
 <p>Figure <a href="capture.html#fig:fig12-7">12.7</a> is an example of how you might provide this information to a data provider.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-7"></span>
-<img src="img/collect_request.PNG" alt="Example variable request for an external data provider" width="100%"><p class="caption">
+<img src="img/fig12-7.PNG" alt="Example variable request for an external data provider" width="100%"><p class="caption">
 Figure 12.7: Example variable request for an external data provider
 </p>
 </div>
@@ -467,7 +467,7 @@ Figure 12.7: Example variable request for an external data provider
 <p>Figure <a href="capture.html#fig:fig12-8">12.8</a> is an example of a document you can ask your data provider to complete.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-8"></span>
-<img src="img/collect_document.PNG" alt="Sample documentation form for an external data provider to complete" width="80%"><p class="caption">
+<img src="img/fig12-8.PNG" alt="Sample documentation form for an external data provider to complete" width="100%"><p class="caption">
 Figure 12.8: Sample documentation form for an external data provider to complete
 </p>
 </div>
@@ -512,7 +512,7 @@ When working with external datasets, it is possible to encounter inconsistencies
 <li>Typically the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.</li>
 </ul>
 </li>
-<li>If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education’s Common Core of Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://nces.ed.gov/ccd/" class="uri"&gt;https://nces.ed.gov/ccd/&lt;/a&gt;&lt;/p&gt;'><sup>85</sup></a> or EDFacts <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www2.ed.gov/about/inits/ed/edfacts/index.html" class="uri"&gt;https://www2.ed.gov/about/inits/ed/edfacts/index.html&lt;/a&gt;&lt;/p&gt;'><sup>86</sup></a>. Or if you are needing to use multiple data sources, other tools, such as the Urban Institute’s Education Data Portal <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://educationdata.urban.org/documentation/" class="uri"&gt;https://educationdata.urban.org/documentation/&lt;/a&gt;&lt;/p&gt;'><sup>87</sup></a>, have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.</li>
+<li>If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education’s Common Core of Data <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://nces.ed.gov/ccd/" class="uri"&gt;https://nces.ed.gov/ccd/&lt;/a&gt;&lt;/p&gt;'><sup>87</sup></a> or EDFacts <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www2.ed.gov/about/inits/ed/edfacts/index.html" class="uri"&gt;https://www2.ed.gov/about/inits/ed/edfacts/index.html&lt;/a&gt;&lt;/p&gt;'><sup>88</sup></a>. Or if you are needing to use multiple data sources, other tools, such as the Urban Institute’s Education Data Portal <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://educationdata.urban.org/documentation/" class="uri"&gt;https://educationdata.urban.org/documentation/&lt;/a&gt;&lt;/p&gt;'><sup>89</sup></a>, have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.</li>
 </ol>
 <p>Once files are extracted, store them according to your data storage plans (see Chapter <a href="store.html#store">13</a>) and name them according to your style guide rules.</p>
 
@@ -559,7 +559,7 @@ When working with external datasets, it is possible to encounter inconsistencies
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-10-23.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

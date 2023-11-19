@@ -1,14 +1,14 @@
 # Data Capture {#capture}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_capture.PNG" alt="Data capture in the research project life cycle" width="90%" />
+<img src="img/fig12-1.PNG" alt="Data capture in the research project life cycle" width="90%" />
 <p class="caption">(\#fig:fig12-1)Data capture in the research project life cycle</p>
 </div>
 
 After the data collection period is complete, the next phase in the cycle is to capture the data, meaning extracting, creating, or acquiring a flat file that we can save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
 
 <div class="figure" style="text-align: center">
-<img src="img/capture.PNG" alt="Common data capture methods" width="60%" />
+<img src="img/fig12-2.PNG" alt="Common data capture methods" width="100%" />
 <p class="caption">(\#fig:fig12-2)Common data capture methods</p>
 </div>
 
@@ -34,7 +34,7 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
     - In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
       - Do you want to export the text values or numeric values for categorical items?
       - How do you want to export "select all" questions?
-        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column. As you can imagine, the former option can get messy if your response options contain commas (see Figure \@ref(fig:fig12-3)).
+        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically your options are to export them in one variable, where each option is separated by a comma, or you can split each option into its own column, where the variable often contains a `1` to denote the item was selected. As you can imagine, the former option can get messy if your response options contain commas (see Figure \@ref(fig:fig12-3)).
       - How do you want to recode seen but missing values? 
         - This option is commonly provided because "select all" questions are often split out into multiple variables, where a `1` indicates the option was selected, and blank represents either the option was **not selected** or that the item was skipped entirely. 
         - Typically tools provide the option to recode to *0* or *-99*. You can also choose not to recode and leave those responses as blank. If the types of missing data do not matter to your study, then leaving missing values as blank is typically the most straightforward option. However, adding an extreme value like *-99* can make it easier to know if those blank "select all" values are a "no" response (recoded to *-99*) or if those values were never seen and actually represent a missing value (left as blank).
@@ -135,7 +135,7 @@ While building a reliable data entry tool is absolutely important in ensuring da
 1. Who will enter data and who will oversee this process? (i.e., creating entry forms, answering questions, conducting final checks)
     
 <div class="figure" style="text-align: center">
-<img src="img/data_entry_process2.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
+<img src="img/fig12-4.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
 <p class="caption">(\#fig:fig12-4)The flow of the decisions to make regarding the data entry process</p>
 </div>
 
@@ -156,9 +156,9 @@ Last, it is important to integrate quality control into this data entry process.
     - There are varying ways you can make corrections at this point. You can make corrections just to one form, you can make corrections to both forms, or you can make corrections in a third, new form that contains all of the correct data. Different tools will handle this in different ways. 
     - However, if you are creating your own system, consider making corrections in both forms. In this way, you make a correction to which ever entry file has the error. Once all corrections are made, you can run your comparison system again, which will now let you know if all errors have been corrected. Once all errors are fixed, you can simply choose either file to be your "master" raw data file.
       - Figure \@ref(fig:fig12-5) is an example using this process. Data has been entered in two spreadsheets. Then both files were imported into R where, in this particular example, a function from the `diffdf` package [@gower-page_diffdf_2020] was run to check for errors and a report was returned ^[https://cghlewis.github.io/data-wrangling-functions/compare-data-frames/compare-df.html]. You can see that it identifies an error in our `stress1` variable. Entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). I would now need to go back to the original files to see what the actual reported answer was and fix the value in the corresponding file. If the value was incorrect in both files, I would correct it in both and then run my comparison system again to ensure no more errors exist before handing the file off.
-  
+
 <div class="figure" style="text-align: center">
-<img src="img/double-enter.PNG" alt="A report displaying differences between two entry files" width="60%" />
+<img src="img/fig12-5.PNG" alt="A report displaying differences between two entry files" width="100%" />
 <p class="caption">(\#fig:fig12-5)A report displaying differences between two entry files</p>
 </div>
   
@@ -182,7 +182,7 @@ It is common in education research to also capture external supplemental data so
 Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., school records data, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process (see Figure \@ref(fig:fig12-6)). It is important to begin looking into this during your planning phase to understand when the request should be initiated. This process may or may not be part of larger request for research process (e.g., if also collecting original data in school districts). In addition to an application or proposal, this request process may also include the submission of one or more of the agreements discussed in Section \@ref(hsd) (e.g., informed consent, DUA, confidentiality agreement). 
 
 <div class="figure" style="text-align: center">
-<img src="img/data_request_process.PNG" alt="Example non-public confidential data request process" width="100%" />
+<img src="img/fig12-6.PNG" alt="Example non-public confidential data request process" width="100%" />
 <p class="caption">(\#fig:fig12-6)Example non-public confidential data request process</p>
 </div>
 
@@ -201,7 +201,7 @@ If not already included in the provider's data request process, it is important 
 Figure \@ref(fig:fig12-7) is an example of how you might provide this information to a data provider.
 
 <div class="figure" style="text-align: center">
-<img src="img/collect_request.PNG" alt="Example variable request for an external data provider" width="100%" />
+<img src="img/fig12-7.PNG" alt="Example variable request for an external data provider" width="100%" />
 <p class="caption">(\#fig:fig12-7)Example variable request for an external data provider</p>
 </div>
 
@@ -227,7 +227,7 @@ Figure \@ref(fig:fig12-7) is an example of how you might provide this informatio
 Figure \@ref(fig:fig12-8) is an example of a document you can ask your data provider to complete.
 
 <div class="figure" style="text-align: center">
-<img src="img/collect_document.PNG" alt="Sample documentation form for an external data provider to complete" width="80%" />
+<img src="img/fig12-8.PNG" alt="Sample documentation form for an external data provider to complete" width="100%" />
 <p class="caption">(\#fig:fig12-8)Sample documentation form for an external data provider to complete</p>
 </div>
 

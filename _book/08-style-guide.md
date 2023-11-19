@@ -1,7 +1,7 @@
 # Style guide {#style}
 
 <div class="figure" style="text-align: center">
-<img src="img/lifecycle_team_doc.PNG" alt="Style guide in the research project life cycle" width="80%" />
+<img src="img/fig9-1.PNG" alt="Style guide in the research project life cycle" width="100%" />
 <p class="caption">(\#fig:fig9-1)Style guide in the research project life cycle</p>
 </div>
 
@@ -27,7 +27,7 @@ For the remainder of this chapter, we will spend time reviewing some good practi
 
 While some best practices will be provided below, ultimately the rules you choose to add to each style guide should be chosen based on which practices work best for your projects and your team. Whatever rules you settle on, write them in a style guide so that everyone is following the same rules within and across projects.
 
-## General good practices
+## General good practices {#style-practices}
 
 Before we dive in to particular types of style guides, there are a few things to understand about how computers read names in order to understand the "why" behind some of these practices.
 
@@ -73,7 +73,7 @@ When deciding how to structure your project directories (the organization of you
 - Never use spaces in your folder names
     - Use `_` or `-` to separate words
 - With the exception of `-` and `_`, don't use special characters in your folder names
-- Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned above).
+- Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned in Section \@ref(style-practices)).
 
 **Example directory structure style guide**
 
@@ -90,6 +90,7 @@ When deciding how to structure your project directories (the organization of you
     - No spaces or special characters in folder names  
     - Only use lower case letters  
     - Use `-` to separate words  
+    - Consistently named across waves of data collection
 3. All previous versions of files must be placed into their respective "archive" folder
         - A changelog should be placed in all data "archive" folders to document changes between file versions
 
@@ -99,32 +100,47 @@ When deciding how to structure your project directories (the organization of you
 
 ```
 project_new/
-│   ├── planning
-|       ├── grant_mgmt
-|          └── proposal_docs
-|       ├── meetings
-|          ├── agendas
-|          └── notes
-|   ├── project_mgmt
-|       ├── hiring_materials
-|       └── scheduling_materials
-|   ├── documentation
-|       ├── data_dictionaries
-|       ├── project_new_data_sources_catalog.xlsx
-|       ├── research_protocol
-|       └── sops
-|   ├── tracking
-│       ├── parent_consents
-│       └── participant_tracking_database
-│   ├── data
-│       ├── cohort_1
-│           ├── student
-|               ├── survey
-|                   ├── archive
-|                       └── changelog.txt
-|               ├── assessment
-|                   ├── archive
-|                       └── changelog.txt
+├── planning
+|   ├── grant_mgmt
+|   |   ├── proposal_docs
+|   |   |   └── ...
+|   ├── meetings
+|   |   ├── agendas
+|   |   |   └── ...
+|   |   ├── notes
+|   |   |   └── ...
+├── documentation
+|   ├── data_dictionaries
+|   |   └── ...
+|   ├── data_sources_catalog.xlsx
+|   ├── irb
+|   |   ├── consent_forms
+|   |   |   └── ...
+|   |   ├── instruments
+|   |   |   └── ...
+|   |   └── research_protocol.docx
+|   ├── sops
+|   |   └── ...
+|   └── ...
+├── data_collection
+|   ├── hiring_materials
+|   |   └── ...
+|   ├── scheduling_materials
+|   |   └── ...
+├── tracking
+│   ├── parent_consents
+|   |   └── ...
+│   └── participant_tracking_database.accdb
+├── data
+│   ├── cohort1
+│   |   ├── student
+|   |   |   ├── survey
+|   |   |   |   ├── archive
+|   |   |   |   |  └── changelog.txt
+|   |   |   |   └── ...
+|   |   |   └── ... 
+|   |   └── ...
+|   └── ...   
 └── ...
 
 ```
@@ -132,7 +148,7 @@ project_new/
 ## File naming
 
 <div class="figure" style="text-align: center">
-<img src="img/xkcd.PNG" alt="Documents, from Randall Munroe’s xkcd" width="30%" />
+<img src="img/fig9-2.PNG" alt="Documents, from Randall Munroe’s xkcd" width="50%" />
 <p class="caption">(\#fig:fig9-2)Documents, from Randall Munroe’s xkcd</p>
 </div>
 
@@ -161,7 +177,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
   - If you plan to version using a number, consider left padding with 0 before single digit numbers to keep the file name the same length as it grows (`v01`, `v02`).
   - As mentioned in Section \@ref(document-change), it is possible to version programatically using tools like Git and GitHub. However, these tools are not always practical for education research, and the tools that are used in the field (e.g., SharePoint) often don't have a way of documenting differences between versions. A more practical means of versioning, at least major file changes, may be to manually version files and track changes in a changelog.
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`)
-- Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (`student` = `stu`). 
+- Choose abbreviations and/or consistent terms to use for common names/phrases and add them to your style guide (student = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
 - Keep redundant metadata in the file name
   - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
@@ -186,22 +202,22 @@ A file naming style guide helps us to name files in a way that allows us to answ
   - Date (always add)
   - Version (if necessary)
 7. Format dates as YYYY-MM-DD
-8. If there are multiple versions of a document on the same date, version using v# with a leading 0.
+8. If there are multiple versions of a document on the same date, version using _v# with a leading 0.
 9. Use the following abbreviations
   - student = stu
   - survey = svy
   - wave = w
-  - project math efficacy = me
+  - project new = pn
 
 ```
 
 **Example file names created using a style guide**
 
 ```
-me_stu_svy_sop_2022-08-01.docx
-me_w1_stu_svy_raw_2022-11-03.csv
-me_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
-me_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
+pn_stu_svy_sop_2022-08-01.docx
+pn_w1_stu_svy_raw_2022-11-03.csv
+pn_w1_stu_svy_cleaning_syntax_2023-01-22_v01.R
+pn_w1_stu_svy_cleaning_syntax_2023-01-22_v02.R
 
 ```
     
@@ -238,7 +254,8 @@ This style guide will be a necessary document to have before you start to create
   - Instead of naming gender `q1`, name it `gender`
   - If a variable is a part of a scale, consider using an abbreviation of that scale plus the scale item number (`anx1`, `anx2`, `anx3`)
     - Not only does this allow you to easily associate an item with a scale, but it also allows you to programatically select and manipulate scale items (for example, sum all items that start with "anx")
-- If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects.
+- If you have used the question/scale before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects. It also allows you to easily reuse code snippets across projects (e.g., for scoring a measure).  
+- Choose standard abbreviations or phrases to denote the types of variable you are working with (standard score = `ss`). Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier [@riederer_column_2020].
 - Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
   - Snake case (scale_sum) – preferred method for variable names
     - While pascal case and camel case are also options, the use of underscores helps more clearly delineate relevant pieces of metadata in your variable names
@@ -246,16 +263,8 @@ This style guide will be a necessary document to have before you start to create
   - Train case (Scale-Sum) – don’t use for variable names
 - If a variable includes a "select all" option, start all associated variables with the same prefix (`cert_elem`, `cert_secondary`, `cert_leader`, `cert_other`). Again this allows you to easily see grouped items, as well as easily programatically manipulate those items as needed.
 - Consider denoting reverse coding in the variable name to reduce confusion (`anx1_r`)
-- Choose abbreviations and standard phrases to use across all variables. Using controlled vocabularies improves interpretation and also makes data exploration and manipulation easier [@riederer_column_2020].
-  - mean = mean
-  - scaled score = ss
-  - percentile rank = pr
-- Include an indication of the instrument in the variable name. This can also help with the unique variable name requirement above.
-  - t = teacher self-report
-  - s = student self-report
-  - tr = teacher rating of student
-  - d = district student records
-  - `t_conf1`, `s_anx2`, `tr_relate4`, `d_gender`
+- Include an indication of the reporter in the variable name (student self-report = `s`). This can also help with the unique variable name requirement above. 
+- Choose an order for variable name metadata (e.g., reporter -> variable name -> item number/type)
 
 **Example variable naming style guide**
 
@@ -264,26 +273,36 @@ This style guide will be a necessary document to have before you start to create
 2. Keep names under 32 characters
 3. Use meaningful variable names
 4. Use unique variable names within and across data sources
-5. If part of a scale, use scale abbreviation plus item number from the scale
-6. Include an indication of the instrument as a prefix in the variable name
+5. If part of a scale, use scale/subscale abbreviation plus item number from the scale. If the scale has been used in another project, keep the same name from previous projects.
+6. Include an indication of the reporter as a prefix in the variable name
   - student self-report = s_
   - teacher self-report = t_
-  - parent report on students = p_
   - district student records = d_
-7. Denote reverse coded variables using suffix `_r`
+7. Denote reverse coded variables using suffix _r
+8. Use the following abbreviations
+  - mean = m
+  - standard score = ss
+  - percentile rank = pr
+  - other, open text = text
+  - date = dt
 
 ```
 
 **Example variable names created using a style guide**
 
 ```
-s_anx1
-s_anx1_r
+s_wj_lwi_dt
+s_wj_lwi1
+s_wj_lwi2
+s_wj_lwi_ss
+s_wj_lwi_pr
 s_gender
 d_gender
-t_gender
+t_profdev
+t_profdev_text
 t_stress5
-p_relate
+t_stress5_r
+t_stress_m
 
 ```
 
@@ -364,12 +383,17 @@ Ultimately, whichever method you choose, there are several guidelines you should
 2. If you use numeric values, use extreme values that do not actually occur in your data
 3. Use your values consistently within and across variables
 
-In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Figure \@ref(fig:fig9-4)).
+In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Table \@ref(tab:tab9-1)).
 
-<div class="figure" style="text-align: center">
-<img src="img/missing2.PNG" alt="Example missing value code schema used for numeric variables" width="100%" />
-<p class="caption">(\#fig:fig9-4)Example missing value code schema used for numeric variables</p>
-</div>
+
+Table: (\#tab:tab9-1)Example missing value code schema used for numeric variables
+
+|Code/Value |Label                                              |
+|:----------|:--------------------------------------------------|
+|-99        |Unit nonresponse (entire instrument not completed) |
+|-98        |Item skipped                                       |
+|-97        |Item not applicable                                |
+|-96        |Don't know                                         |
 
 > **Note** <br> <br> 
 It is important to note here that there is a difference between a string value of "NA" or "NULL" that is inserted, verses an `NA` or `NULL` value that is assigned to blank values by a specific platform. For instance, blank numeric values in R are represented as the symbol NA. Yet this value is treated as missing, not as the string "NA".
@@ -380,9 +404,9 @@ If your team plans to clean data using code it can be very helpful to create a c
 
 - Consider building and implementing coding templates [@castaneda_nice_2019; @farewell_my_2018] 
   - Templates can standardize the format of syntax files (such as using standard headers to break up code)
-  - They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created)
+  - They also standardize the summary information provided at the beginning of your syntax (code author, project name, date created) [@alexander_telling_2023]
 
-One example of what this might look.
+One example of what a template might look like in R.
   
 ```
 #### Overview ####
@@ -394,13 +418,19 @@ One example of what this might look.
 # Code checked by:
 # Code checked date:
 
+
 #### Workspace setup ####
 
 # Settings, packages, root paths
 
+
+#### Data import ####
+
+
 #### Cleaning code section 1 ####
 
-#### Cleaning code section 2 ####
+
+#### Cleaning code section 1 ####
 ...
 
 ```
