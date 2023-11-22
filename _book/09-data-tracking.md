@@ -70,11 +70,11 @@ Let's compare a very simple example of building a tracking database using a rela
 
 #### Relational model
 
-In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+In Figure \@ref(fig:fig10-2) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
 <div class="figure" style="text-align: center">
-<img src="img/participant1v01.PNG" alt="Participant database built using a relational model" width="100%" />
-<p class="caption">(\#fig:fig10-3)Participant database built using a relational model</p>
+<img src="img/fig10-2.PNG" alt="Participant database built using a relational model" width="100%" />
+<p class="caption">(\#fig:fig10-2)Participant database built using a relational model</p>
 </div>
 
 We can see here that across each table we have no duplicated information. The student table only contains student-level information, the teacher table only contains teacher-level information, and the school table only contains school-level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
@@ -89,23 +89,23 @@ Say for example, we needed to pull a roster of students for each teacher. We cou
 
 Table: (\#tab:tab10-1)Example roster created by querying our relational database tables
 
-| t_l_name  | t_f_name  |  s_l_name  | s_f_name | grade |
-|:---------:|:---------:|:----------:|:--------:|:-----:|
-|  Hoover   | Elizabeth |  Simpson   |   Lisa   |   2   |
-|  Hoover   | Elizabeth |   Wiggum   |  Ralph   |   2   |
-| Krabappel |   Edna    |   Prince   |  Martin  |   4   |
-| Krabappel |   Edna    |  Simpson   |   Bart   |   4   |
-| Krabappel |   Edna    | Van Houten | Milhouse |   4   |
+| t_l_name | t_f_name | s_l_name | s_f_name | grade |
+|:--------:|:--------:|:--------:|:--------:|:-----:|
+|  Clark   |   Jana   |  Arnold  | Darnell  |   2   |
+|  Clark   |   Jana   |  Watts   |  Irene   |   2   |
+| Ramirez  |   Bill   |  Dixon   | Ernesto  |   4   |
+| Ramirez  |   Bill   |  Gibson  |   Emma   |   4   |
+| Ramirez  |   Bill   | Webster  |  Grant   |   4   |
 
 Depending on the design of your study and the structure of the database model, writing these queries can become more complicated. Again, this is where you want to strike a balance between creating a structure that reduces inefficiencies in data entry but also isn't too complicated to query based on the expertise of your team.
 
 #### Non-relational model
 
-Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig10-4)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors [@borer_simple_2009].
+Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig10-3)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors [@borer_simple_2009].
 
 <div class="figure" style="text-align: center">
-<img src="img/participant2v02.PNG" alt="Participant database built in using a non-relational model" width="100%" />
-<p class="caption">(\#fig:fig10-4)Participant database built in using a non-relational model</p>
+<img src="img/fig10-3.PNG" alt="Participant database built in using a non-relational model with duplicated variables denoted by rectangles" width="100%" />
+<p class="caption">(\#fig:fig10-3)Participant database built in using a non-relational model with duplicated variables denoted by rectangles</p>
 </div>
 
 > **Note** <br> <br>
@@ -122,11 +122,11 @@ Before you can begin to design your database, you will need to think through the
 3. What fields do you want to include in each table?
 4. If using a relational table design, what fields will you use to relate tables?
 
-Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-5) I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
+Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-4) I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-5.PNG" alt="Example participant database model" width="80%" />
-<p class="caption">(\#fig:fig10-5)Example participant database model</p>
+<img src="img/fig10-4.PNG" alt="Example participant database model using two separate tables for tracking across waves" width="100%" />
+<p class="caption">(\#fig:fig10-4)Example participant database model using two separate tables for tracking across waves</p>
 </div>
 
 I have designed this database model in this way:
@@ -139,11 +139,11 @@ I have designed this database model in this way:
 2. I have connected my tables through primary and foreign keys (`tch_id` and `sch_id`)
 3. With information separated into four tables, I can also now limit access as needed (e.g., only allow data entry staff access to the de-identified tables, or restricting entry to only the current wave of data preventing accidental overwriting of existing data)
 
-The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-6)).
+The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-5)).
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-6.PNG" alt="Example participant database model" width="80%" />
-<p class="caption">(\#fig:fig10-6)Example participant database model</p>
+<img src="img/fig10-5.PNG" alt="Example participant database model using one table to track data across waves" width="100%" />
+<p class="caption">(\#fig:fig10-5)Example participant database model using one table to track data across waves</p>
 </div>
 
 While these examples are for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project. 
@@ -241,26 +241,26 @@ Your last consideration when building your database will be, how do you want you
 
 ### Entering data in a spreadsheet view
 
-Your first option is to manually enter data in a spreadsheet format for each participant in a row. This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access.  There are both pros and cons to this method.
+Your first option is to manually enter data in a spreadsheet format for each participant in a row (see Figure \@ref(fig:fig10-6)). This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access.  There are both pros and cons to this method.
 
 - Pros: This is the quickest and easiest method. It also allows you to view all the data holistically.
 - Cons: This method can lead to errors if someone enters data on the wrong row/record.
 
 <div class="figure" style="text-align: center">
-<img src="img/datasheet-view-new.PNG" alt="Example spreadsheet view data entry" width="100%" />
-<p class="caption">(\#fig:fig10-7)Example spreadsheet view data entry</p>
+<img src="img/fig10-6.PNG" alt="Example spreadsheet view data entry" width="100%" />
+<p class="caption">(\#fig:fig10-6)Example spreadsheet view data entry</p>
 </div>
 
 ### Entering data in a form
 
-Your second option is to create a form that is linked to your tables. As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, FileMaker, REDCap, and even Google Forms which populates into Google Sheets.
+Your second option is to create a form that is linked to your tables (see Figure \@ref(fig:fig10-7)). As you enter data in your forms, it automatically populates your tables with the information. This option is possible in many systems including Microsoft Access, FileMaker, REDCap, and even Google Forms which populates into Google Sheets.
 
 - Pros: This method reduces data entry errors as you are only working on one participant form at a time
 - Cons: Takes some time, and possibly expertise, to set up the data entry forms
 
 <div class="figure" style="text-align: center">
-<img src="img/form-view-new.PNG" alt="Example form view data entry" width="70%" />
-<p class="caption">(\#fig:fig10-8)Example form view data entry</p>
+<img src="img/fig10-7.PNG" alt="Example form view data entry" width="100%" />
+<p class="caption">(\#fig:fig10-7)Example form view data entry</p>
 </div>
 
 
@@ -276,12 +276,12 @@ Participant unique identifiers are numeric or alphanumeric values and typically 
 Before assigning identifiers, it can be very helpful to develop an ID schema during your planning phase, and document that schema in an SOP (see Section \@ref(document-sop)). In developing that schema, there are several best practices to consider.
 
 1. Participants must keep this same identifier for the entire project.
-    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure \@ref(fig:fig10-10)). The participant still keeps the same ID throughout the study. In these cases, you will use a combination of variables to identify the unique instances of that participant (e.g., `stu_id` and `cohort`).
+    - This even applies in circumstances where a participant has the opportunity to be re-recruited into your study (as seen in Figure \@ref(fig:fig10-8)). The participant still keeps the same ID throughout the study. In these cases, you will use a combination of variables to identify the unique instances of that participant (e.g., `stu_id` and `cohort`).
     - Having a static participant ID allows you to track the flow of each participant through your study and provides the added benefit of helping to measure dosage.
 
 <div class="figure" style="text-align: center">
-<img src="img/dupe_id.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" />
-<p class="caption">(\#fig:fig10-10)Example of keeping participant IDs for the entire study</p>
+<img src="img/fig10-8.PNG" alt="Example of keeping participant IDs for the entire study" width="70%" />
+<p class="caption">(\#fig:fig10-8)Example of keeping participant IDs for the entire study</p>
 </div>
 
 2. Participant identifiers must be unique within and across entities
@@ -297,11 +297,14 @@ Before assigning identifiers, it can be very helpful to develop an ID schema dur
     - Embedding information such as teacher IDs, school IDs, treatment, or cohort also has the potential to cause problems. In longitudinal studies, depending on the study design, it is possible that students move to other study teachers, teachers move to other study schools, or participants get re-recruited into other cohorts. Any of these issues would cause problems if this information was embedded into an ID because the ID would no longer reflect accurate information and would require IDs to be changed, breaking best practice #1. Again, these additional identifiers can be tracked as separate variables (e.g., `stu_id`, `tch_id`, `sch_id`, `cohort`, `treatment`, `wave`) and added to forms and datasets as needed
 5. Last, while less important during the data tracking phase, in your study datasets these identifiers should be stored as character variables. Even if an ID variable is all numbers, it should be stored as character type. This helps prevent people from inappropriately working with these values (i.e., taking a mean of an ID variable).
 
-<div class="figure" style="text-align: center">
-<img src="img/id_schema.PNG" alt="Example of a study id schema created using best practices" width="100%" />
-<p class="caption">(\#fig:fig10-9)Example of a study id schema created using best practices</p>
-</div>
+<br>
 
+
+Table: (\#tab:tab10-2)Example of a study id schema created using best practices
+
+|stu_id        |tch_id       |sch_id     |
+|:-------------|:------------|:----------|
+|12000 -- 1300 |2000 -- 3000 |300 -- 500 |
 
 > **Note** <br> <br>
 The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.

@@ -119,7 +119,7 @@ In the special case where you purposefully collect duplicate observations on a p
 </div>
 
 > **Note** <br> <br>
-At this point in data cleaning, if your data contain open-text responses, you should be reviewing free text for identifiable information. Remove any instance of names and replace with a placeholder such as <name> to indicate the information was redacted.
+At this point in data cleaning, if your data contain open-text responses, you should be reviewing free text for identifiable information. Remove any instance of names and replace with a placeholder such as \<name\> to indicate the information was redacted.
 
 6. Drop any irrelevant columns not included in your data dictionary
     - Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.
