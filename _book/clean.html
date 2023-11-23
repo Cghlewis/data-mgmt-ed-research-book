@@ -75,7 +75,7 @@
 <li><a class="" href="plan.html"><span class="header-section-number">5</span> Planning Data Management</a></li>
 <li><a class="" href="roles.html"><span class="header-section-number">6</span> Project Roles and Responsibilities</a></li>
 <li><a class="" href="document.html"><span class="header-section-number">7</span> Documentation</a></li>
-<li><a class="" href="style.html"><span class="header-section-number">8</span> Style guide</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">8</span> Style Guide</a></li>
 <li><a class="" href="track.html"><span class="header-section-number">9</span> Data Tracking</a></li>
 <li><a class="" href="collect.html"><span class="header-section-number">10</span> Data Collection</a></li>
 <li><a class="" href="capture.html"><span class="header-section-number">11</span> Data Capture</a></li>
@@ -83,7 +83,7 @@
 <li><a class="active" href="clean.html"><span class="header-section-number">13</span> Data Cleaning</a></li>
 <li><a class="" href="store-long.html"><span class="header-section-number">14</span> Data Archiving</a></li>
 <li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
-<li><a class="" href="additional-considerations.html"><span class="header-section-number">16</span> Additional considerations</a></li>
+<li><a class="" href="additional-considerations.html"><span class="header-section-number">16</span> Additional Considerations</a></li>
 <li><a class="" href="glossary.html"><span class="header-section-number">17</span> Glossary</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
@@ -98,8 +98,8 @@
 <span class="header-section-number">13</span> Data Cleaning<a class="anchor" aria-label="anchor" href="#clean"><i class="fas fa-link"></i></a>
 </h1>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-1"></span>
-<img src="img/fig14-1.PNG" alt="Data cleaning in the research project life cycle" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-1"></span>
+<img src="img/fig13-1.PNG" alt="Data cleaning in the research project life cycle" width="100%"><p class="caption">
 Figure 13.1: Data cleaning in the research project life cycle
 </p>
 </div>
@@ -122,7 +122,7 @@ Figure 13.1: Data cleaning in the research project life cycle
 <span class="header-section-number">13.1</span> Data cleaning for data sharing<a class="anchor" aria-label="anchor" href="#data-cleaning-for-data-sharing"><i class="fas fa-link"></i></a>
 </h2>
 <p>Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted <span class="citation">(<a href="references.html#ref-cook_how-guide_2021" role="doc-biblioref">Cook et al. 2021</a>; <a href="references.html#ref-neild_sharing_2022" role="doc-biblioref">Neild, Robinson, and Agufa 2022</a>; <a href="references.html#ref-van_dijk_open_2021" role="doc-biblioref">Dijk, Schatschneider, and Hart 2021</a>)</span>. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.</p>
-<p>Ultimately, you can think of data in three distinct phases (see Figure <a href="clean.html#fig:fig14-2">13.2</a>).</p>
+<p>Ultimately, you can think of data in three distinct phases (see Figure <a href="clean.html#fig:fig13-2">13.2</a>).</p>
 <ol style="list-style-type: decimal">
 <li>Raw data
 <ul>
@@ -142,8 +142,8 @@ Figure 13.1: Data cleaning in the research project life cycle
 </li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-2"></span>
-<img src="img/fig14-2.PNG" alt="The three phases of data" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-2"></span>
+<img src="img/fig13-2.PNG" alt="The three phases of data" width="100%"><p class="caption">
 Figure 13.2: The three phases of data
 </p>
 </div>
@@ -172,7 +172,7 @@ Figure 13.2: The three phases of data
 <li>However, it is possible to use your implicit knowledge of a participant or a data source (i.e., ghost knowledge) <span class="citation">(<a href="references.html#ref-boykis_ghosts_2021" role="doc-biblioref">Boykis 2021</a>)</span> to determine if values are inaccurate (e.g., a value exists for a school where you know data was not collected that wave).</li>
 <li>It is also possible to check for alignment of variable values within and across sources to determine accuracy
 <ul>
-<li>For example, in a student-level dataset, if grade level = 2, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district.</li>
+<li>For example, in a student-level dataset, if <code>grade_level</code> = <em>2</em>, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district.</li>
 </ul>
 </li>
 </ul>
@@ -206,11 +206,11 @@ Figure 13.2: The three phases of data
 <h2>
 <span class="header-section-number">13.3</span> Data cleaning checklist<a class="anchor" aria-label="anchor" href="#clean-check"><i class="fas fa-link"></i></a>
 </h2>
-<p>Recall from Section <a href="document.html#document-plan">7.3.3</a>, that it is helpful to write a data cleaning plan, for each dataset in your data sources catalog (see Section <a href="document.html#document-catalog">7.2.2</a>), before you begin cleaning your raw data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure <a href="document.html#fig:fig8-15">7.15</a>).</p>
-<p>In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section <a href="clean.html#clean-criteria">13.2</a>, it can be helpful to follow a standardized checklist of data cleaning steps (see Figure <a href="clean.html#fig:fig14-3">13.3</a>). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.</p>
+<p>Recall from Section <a href="document.html#document-plan">7.3.3</a>, that it is helpful to write a data cleaning plan, for each dataset in your data sources catalog (see Section <a href="document.html#document-catalog">7.2.2</a>), before you begin cleaning your raw data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure <a href="document.html#fig:fig7-15">7.15</a>).</p>
+<p>In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section <a href="clean.html#clean-criteria">13.2</a>, it can be helpful to follow a standardized checklist of data cleaning steps (see Figure <a href="clean.html#fig:fig13-3">13.3</a>). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.</p>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-3"></span>
-<img src="img/fig14-3.PNG" alt="Data cleaning checklist" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-3"></span>
+<img src="img/fig13-3.PNG" alt="Data cleaning checklist" width="100%"><p class="caption">
 Figure 13.3: Data cleaning checklist
 </p>
 </div>
@@ -227,7 +227,7 @@ Figure 13.3: Data cleaning checklist
 <li>Part of accessing your raw data may also involve putting it into an analyzable format (e.g., if your second row of data is variable labels, you will want to drop that second row in this process so that you are only left with variable names in the first row and values associated with each variable in all remaining cells).</li>
 </ul>
 </li>
-<li>Do a basic review of your raw data
+<li>Do a basic review of your raw data (see Figure <a href="clean.html#fig:fig13-4">13.4</a>)
 <ul>
 <li>Check the rows in your data
 <ul>
@@ -244,8 +244,8 @@ Figure 13.3: Data cleaning checklist
 </li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-4"></span>
-<img src="img/fig14-4.PNG" alt="Reviewing rows and columns in a raw data file" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-4"></span>
+<img src="img/fig13-4.PNG" alt="Reviewing rows and columns in a raw data file" width="100%"><p class="caption">
 Figure 13.4: Reviewing rows and columns in a raw data file
 </p>
 </div>
@@ -293,13 +293,13 @@ In the special case where you purposefully collect duplicate observations on a p
 <li>De-identify data
 <ul>
 <li>If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter <a href="share.html#share">15</a>, we will also discuss dealing with indirect identifiers before publicly sharing your data.</li>
-<li>Figure <a href="clean.html#fig:fig14-5">13.5</a> shows what a data de-identification process looks like <span class="citation">(<a href="references.html#ref-otoole_data_2018" role="doc-biblioref">O’Toole et al. 2018</a>)</span>. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., <code>first_name</code> and <code>last_name</code>) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.</li>
+<li>Figure <a href="clean.html#fig:fig13-5">13.5</a> shows what a data de-identification process looks like <span class="citation">(<a href="references.html#ref-otoole_data_2018" role="doc-biblioref">O’Toole et al. 2018</a>)</span>. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., <code>first_name</code> and <code>last_name</code>) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.</li>
 </ul>
 </li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-5"></span>
-<img src="img/fig14-5.PNG" alt="Process of creating a de-identified dataset" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-5"></span>
+<img src="img/fig13-5.PNG" alt="Process of creating a de-identified dataset" width="100%"><p class="caption">
 Figure 13.5: Process of creating a de-identified dataset
 </p>
 </div>
@@ -313,15 +313,15 @@ At this point in data cleaning, if your data contain open-text responses, you sh
 <li>Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.</li>
 </ul>
 </li>
-<li>Split columns as needed
+<li>Split columns as needed (see Figure <a href="clean.html#fig:fig13-6">13.6</a>)
 <ul>
 <li>As discussed in Section <a href="structure.html#structure-rules">2.2</a>, a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable.</li>
 </ul>
 </li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-6"></span>
-<img src="img/fig14-6.PNG" alt="Splitting one column into multiple columns" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-6"></span>
+<img src="img/fig13-6.PNG" alt="Splitting one column into multiple columns" width="100%"><p class="caption">
 Figure 13.6: Splitting one column into multiple columns
 </p>
 </div>
@@ -331,7 +331,7 @@ Figure 13.6: Splitting one column into multiple columns
 <li>Rename variables to correspond with the names provided in your data dictionary.</li>
 </ul>
 </li>
-<li>Normalize variables
+<li>Normalize variables (see Figure <a href="clean.html#fig:fig13-7">13.7</a>)
 <ul>
 <li>Here, the term normalize is used to summarize the process of returning a variable to its normal state</li>
 <li>Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why?
@@ -343,8 +343,8 @@ Figure 13.6: Splitting one column into multiple columns
 </li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-7"></span>
-<img src="img/fig14-7.PNG" alt="Normalizing a variable" width="50%"><p class="caption">
+<span style="display:block;" id="fig:fig13-7"></span>
+<img src="img/fig13-7.PNG" alt="Normalizing a variable" width="50%"><p class="caption">
 Figure 13.7: Normalizing a variable
 </p>
 </div>
@@ -364,11 +364,11 @@ Figure 13.7: Normalizing a variable
 </ol>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-In the case of Figure <a href="clean.html#fig:fig14-7">13.7</a>, this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.</p>
+In the case of Figure <a href="clean.html#fig:fig13-8">13.8</a>, this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.</p>
 </blockquote>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-8"></span>
-<img src="img/fig14-8.PNG" alt="Standardizing a variable" width="50%"><p class="caption">
+<span style="display:block;" id="fig:fig13-8"></span>
+<img src="img/fig13-8.PNG" alt="Standardizing a variable" width="50%"><p class="caption">
 Figure 13.8: Standardizing a variable
 </p>
 </div>
@@ -388,13 +388,13 @@ It’s important to normalize before updating your variable types. Updating your
 <ul>
 <li>If your categorical value codes (see Chapter <a href="style.html#style-codes">8.5</a>) do not match your data dictionary, now is the time to recode those (e.g., you expected “no” = 1, but the data exported as “no” = 14)</li>
 <li>As discussed in Chapter <a href="structure.html#structure-rules">2.2</a>, this also includes recoding implicit values, explicitly (e.g., if a missing value is implied to be 0, recode them to 0)</li>
-<li>You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item)</li>
+<li>You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item) (see Figure <a href="clean.html#fig:fig13-9">13.9</a>)</li>
 </ul>
 </li>
 </ol>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-9"></span>
-<img src="img/fig14-9.PNG" alt="Reverse coding a variable" width="50%"><p class="caption">
+<span style="display:block;" id="fig:fig13-9"></span>
+<img src="img/fig13-9.PNG" alt="Reverse coding a variable" width="40%"><p class="caption">
 Figure 13.9: Reverse coding a variable
 </p>
 </div>
@@ -538,11 +538,11 @@ As noted in Section <a href="style.html#style-time">8.4.1</a>, in many cases it�
 </ol>
 <blockquote>
 <p><strong>Note</strong> <br><br>
-If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig14-10">13.10</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure <a href="clean.html#fig:fig13-10">13.10</a>), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.</p>
 </blockquote>
 <div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:fig14-10"></span>
-<img src="img/fig14-10.PNG" alt="A comparison of long and wide format" width="100%"><p class="caption">
+<span style="display:block;" id="fig:fig13-10"></span>
+<img src="img/fig13-10.PNG" alt="A comparison of long and wide format" width="100%"><p class="caption">
 Figure 13.10: A comparison of long and wide format
 </p>
 </div>
@@ -684,7 +684,7 @@ Figure 13.10: A comparison of long and wide format
 </tr></thead>
 <tbody><tr class="odd">
 <td>Travis Gerke</td>
-<td>R Code Review Checklist <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>90</sup></a>
+<td>R Code Review Checklist <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/tgerke/r-code-review-checklist" class="uri"&gt;https://github.com/tgerke/r-code-review-checklist&lt;/a&gt;&lt;/p&gt;'><sup>91</sup></a>
 </td>
 </tr></tbody>
 </table></div>
@@ -754,7 +754,7 @@ Figure 13.10: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-22.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -1,8 +1,8 @@
 # Data Storage and Security {#store}
 
-```{r fig13-1, fig.cap="Data storage in the research project life cycle"}
+```{r fig12-1, fig.cap="Data storage in the research project life cycle"}
 
-knitr::include_graphics("img/fig13-1.PNG")
+knitr::include_graphics("img/fig12-1.PNG")
 
 ```
 

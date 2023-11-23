@@ -1,8 +1,8 @@
 # Data Cleaning {#clean}
 
-```{r fig14-1, fig.cap="Data cleaning in the research project life cycle"}
+```{r fig13-1, fig.cap="Data cleaning in the research project life cycle"}
 
-knitr::include_graphics("img/fig14-1.PNG")
+knitr::include_graphics("img/fig13-1.PNG")
 
 ```
 
@@ -19,7 +19,7 @@ What is important to emphasize here is that data cleaning needs to happen every 
 
 Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted [@cook_how-guide_2021; @neild_sharing_2022; @van_dijk_open_2021]. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.
 
-Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig:fig14-2)).
+Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig:fig13-2)).
 
 1. Raw data
     - This is the untouched raw file that comes directly from your data collection source. If your data is collected electronically, this is the file you extract from your tool. If your data is collected on paper, this is the data that has been entered into a machine-readable format.
@@ -29,9 +29,9 @@ Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig
 3. Your analytic data
     - This dataset is created from the general clean dataset (either by your team or by other researchers), but is further altered for a specific analysis [@reynolds_basics_2022]. This dataset will typically also be publicly shared in a repository at the time of publication to allow for replication of the associated analysis. Since this dataset is analysis specific, we will not discuss this type of data cleaning in this book. 
 
-```{r fig14-2, fig.cap="The three phases of data"}
+```{r fig13-2, fig.cap="The three phases of data"}
 
-knitr::include_graphics("img/fig14-2.PNG")
+knitr::include_graphics("img/fig13-2.PNG")
 
 ```
 
@@ -48,7 +48,7 @@ Before cleaning our data, we need to have a shared understanding for what we exp
     - Oftentimes there is no way to know whether a value is true or not. 
       - However, it is possible to use your implicit knowledge of a participant or a data source (i.e., ghost knowledge) [@boykis_ghosts_2021] to determine if values are inaccurate (e.g., a value exists for a school where you know data was not collected that wave). 
       - It is also possible to check for alignment of variable values within and across sources to determine accuracy
-        - For example, in a student-level dataset, if grade level = 2, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district. 
+        - For example, in a student-level dataset, if `grade_level` = *2*, their teacher ID should be associated with a 2nd grade teacher. Or, a date of birth collected from a student survey should match date of birth collected from a school district. 
 4. Consistent
     - Variable values are consistently measured, formatted, or coded within a column (e.g., all values of survey date are formatted as YYYY-MM-DD).
     - Across repeated collections of the same form, all variables are consistently measured, formatted, or coded as well (e.g., free/reduced priced lunch is consistently coded using the same code/label pair across all cohorts).
@@ -61,14 +61,14 @@ Before cleaning our data, we need to have a shared understanding for what we exp
     
 ## Data cleaning checklist {#clean-check}
 
-Recall from Section \@ref(document-plan), that it is helpful to write a data cleaning plan, for each dataset in your data sources catalog (see Section \@ref(document-catalog)), before you begin cleaning your raw data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure \@ref(fig:fig8-15)).
+Recall from Section \@ref(document-plan), that it is helpful to write a data cleaning plan, for each dataset in your data sources catalog (see Section \@ref(document-catalog)), before you begin cleaning your raw data. Writing this plan early on allows you to get feedback on your planned alterations, and it also provides structure to your cleaning process, preventing you from meandering and potentially forgetting important steps. This plan does not need to be overly detailed, but it should include actionable steps to walk through when cleaning your data (see Figure \@ref(fig:fig7-15)).
 
-In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section \@ref(clean-criteria), it can be helpful to follow a standardized checklist of data cleaning steps (see Figure \@ref(fig:fig14-3)). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.
+In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, in order to produce datasets that consistently meet the data quality standards discussed in Section \@ref(clean-criteria), it can be helpful to follow a standardized checklist of data cleaning steps (see Figure \@ref(fig:fig13-3)). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.
 
 
-```{r fig14-3, fig.cap="Data cleaning checklist"}
+```{r fig13-3, fig.cap="Data cleaning checklist"}
 
-knitr::include_graphics("img/fig14-3.PNG")
+knitr::include_graphics("img/fig13-3.PNG")
 
 ```
 
@@ -82,16 +82,16 @@ Let's review what each step specifically involves so that as you write your data
     - If you use code to clean your data, you will read your raw data file into a statistical program (e.g., R, Stata) and export a clean data file, ensuring the raw data file is never touched. If you manually clean your data, you should make a copy of the raw data file and rename it to your clean data file, ensuring you are not writing over your SSOT. 
     - Part of accessing your raw data may also involve putting it into an analyzable format (e.g., if your second row of data is variable labels, you will want to drop that second row in this process so that you are only left with variable names in the first row and values associated with each variable in all remaining cells).
 
-2. Do a basic review of your raw data
+2. Do a basic review of your raw data (see Figure \@ref(fig:fig13-4))
     - Check the rows in your data
       - Do the number of cases in your data match the number of tracked forms in your participant tracking database? Are there any duplicates?
     - Check the columns in your data
       - Do the number of variables in your data dictionary match the number of variables in your dataset? Remember we are only looking for variables that are captured directly from our source (i.e., not derived variables).
       - Are the variable types and values as expected?
 
-```{r fig14-4, fig.cap="Reviewing rows and columns in a raw data file"}
+```{r fig13-4, fig.cap="Reviewing rows and columns in a raw data file"}
 
-knitr::include_graphics("img/fig14-4.PNG")
+knitr::include_graphics("img/fig13-4.PNG")
 
 ```
 
@@ -115,11 +115,11 @@ In the special case where you purposefully collect duplicate observations on a p
 
 5. De-identify data
     - If confidentiality was promised to participants, you will need to make sure your data is de-identified. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. At this point we are focusing on removing direct identifiers only, but in Chapter \@ref(share), we will also discuss dealing with indirect identifiers before publicly sharing your data.
-    - Figure \@ref(fig:fig14-5) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., `first_name` and `last_name`) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
+    - Figure \@ref(fig:fig13-5) shows what a data de-identification process looks like [@otoole_data_2018]. Dataset 1 would be the incoming raw data with identifiers, Dataset 2 would be a roster exported from your participant database, and Dataset 3 is your de-identified dataset, created by joining Dataset 1 with Dataset 2 on your unique identifier/s (e.g., `first_name` and `last_name`) and dropping your identifying variables. I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, we want to completely avoid hand entry of study IDs. Hand entry is error-prone and can lead to many mistakes.
 
-```{r fig14-5, fig.cap="Process of creating a de-identified dataset"}
+```{r fig13-5, fig.cap="Process of creating a de-identified dataset"}
 
-knitr::include_graphics("img/fig14-5.PNG")
+knitr::include_graphics("img/fig13-5.PNG")
 
 ```
 
@@ -129,26 +129,26 @@ At this point in data cleaning, if your data contain open-text responses, you sh
 6. Drop any irrelevant columns not included in your data dictionary
     - Here you can think of examples such as the metadata collected by a survey platform. These columns may be completely irrelevant to your study and cause clutter in your final dataset.
     
-7. Split columns as needed
+7. Split columns as needed (see Figure \@ref(fig:fig13-6))
     - As discussed in Section \@ref(structure-rules), a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable. 
 
-```{r fig14-6, fig.cap="Splitting one column into multiple columns"}
+```{r fig13-6, fig.cap="Splitting one column into multiple columns"}
 
-knitr::include_graphics("img/fig14-6.PNG")
+knitr::include_graphics("img/fig13-6.PNG")
 
 ```
 
 8. Rename variables
     - Rename variables to correspond with the names provided in your data dictionary.
     
-9. Normalize variables
+9. Normalize variables (see Figure \@ref(fig:fig13-7))
     - Here, the term normalize is used to summarize the process of returning a variable to its normal state
     - Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why? 
       - As an example, it may be that you need to remove unexpected characters such as `$` or `%` that are preventing your variables from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
 
-```{r fig14-7, fig.cap="Normalizing a variable", out.width= "50%"}
+```{r fig13-7, fig.cap="Normalizing a variable", out.width= "50%"}
 
-knitr::include_graphics("img/fig14-7.PNG")
+knitr::include_graphics("img/fig13-7.PNG")
 
 ```
 
@@ -160,11 +160,11 @@ knitr::include_graphics("img/fig14-7.PNG")
       - Or it may mean collapsing categories of free text categorical variables (e.g., 'm' | 'M' | 'male' = 'male')
 
 > **Note** <br> <br>
-In the case of Figure \@ref(fig:fig14-7), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.
+In the case of Figure \@ref(fig:fig13-8), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Linking keys need to be standardized across files before linking can occur.
 
-```{r fig14-8, fig.cap="Standardizing a variable", out.width= "50%"}
+```{r fig13-8, fig.cap="Standardizing a variable", out.width= "50%"}
 
-knitr::include_graphics("img/fig14-8.PNG")
+knitr::include_graphics("img/fig13-8.PNG")
 
 ```
 
@@ -177,11 +177,11 @@ It's important to normalize before updating your variable types. Updating your v
 12. Recode variables
     - If your categorical value codes (see Chapter \@ref(style-codes)) do not match your data dictionary, now is the time to recode those (e.g., you expected "no" = 1, but the data exported as "no" = 14)
     - As discussed in Chapter \@ref(structure-rules), this also includes recoding implicit values, explicitly (e.g., if a missing value is implied to be 0, recode them to 0)
-    - You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item)
+    - You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item) (see Figure \@ref(fig:fig13-9))
 
-```{r fig14-9, fig.cap="Reverse coding a variable", out.width= "50%"}
+```{r fig13-9, fig.cap="Reverse coding a variable", out.width= "40%"}
 
-knitr::include_graphics("img/fig14-9.PNG")
+knitr::include_graphics("img/fig13-9.PNG")
 
 ```
 
@@ -259,11 +259,11 @@ As noted in Section \@ref(style-time), in many cases it's actually best to not j
     - If at some point after merging or appending your data, you find you need to reshape data into a new format, this restructuring process will need to be added to your data cleaning process. 
 
 > **Note** <br><br>
-If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure \@ref(fig:fig14-10)), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.
+If working with longitudinal data, having your time component concatenated to the beginning or end of a variable name (as it is in Figure \@ref(fig:fig13-10)), rather than embedded into your variable name, makes this back and forth restructuring process much easier to do in statistical programs.
 
-```{r fig14-10, fig.cap="A comparison of long and wide format"}
+```{r fig13-10, fig.cap="A comparison of long and wide format"}
 
-knitr::include_graphics("img/fig14-10.PNG")
+knitr::include_graphics("img/fig13-10.PNG")
 
 ```
 

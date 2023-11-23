@@ -1,8 +1,8 @@
 # Project Roles and Responsibilities {#roles}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig7-1.PNG" alt="Planning in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig7-1)Planning in the research project life cycle</p>
+<img src="img/fig6-1.PNG" alt="Planning in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
 </div>
 
 Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons including the following [@uk_data_service_research_2023]:
@@ -15,31 +15,31 @@ Part of the DMP and planning data management phase, as noted in previous chapter
 
 Before diving in to how to assign and document roles for a project, it is important to get an understanding of typical roles on an education research project team. Your team may be lucky enough to have all of, or several of, these roles. Other times, just one person, such as the Principal Investigator (PI), may take on all or multiple of these roles. With that said, if your budget allows it, I highly recommend hiring individuals to fill each of the roles mentioned below to allow team members to specialize and excel in their area of expertise. While learning all aspects of a project is highly recommended to create a cohesive team that works collaboratively, team members that take on too many project roles can be spread too thin and project goals may suffer.
 
-### PI and Co-PI
+### Investigators
 
-The PIs (or project directors), as well as Co-PIs, are the individuals who prepare and submit the grant proposal and are responsible for the administration of that grant. There are often more than one PI on a project including at least someone with content area knowledge as well as a methodologist. PIs and Co-PIs have varying levels of involvement in research projects and are typically, not always, more hands off in the day to day administration. Even if some tasks are delegated to other research staff, PIs and Co-PIs are ultimately responsible for Institutional Review Board (IRB) submissions and for meeting IRB requirements, as well as for submitting MOUs, budgets, effort reporting, continuing review reports, and any final technical finding reports.
+The investigators, also know as PIs (primary investigators) and Co-PIs, are the individuals who prepare and submit the grant proposal and are responsible for the administration of that grant. There are often more than one PI on a project including at least someone with content area knowledge as well as a methodologist. PIs and Co-PIs have varying levels of involvement in research projects and are typically, not always, more hands off in the day to day administration. Even if some tasks are delegated to other research staff, PIs and Co-PIs are ultimately responsible for Institutional Review Board (IRB) submissions and for meeting IRB requirements, as well as for submitting MOUs, budgets, effort reporting, continuing review reports, and any final technical finding reports.
 
-### Project Coordinator
+### Project coordinator
 
 The project coordinator (or project manager) is an essential member of the research team. As the name implies, this person typically coordinates all research activities and ensures compliance with agencies such as the Institutional Review Board. Tasks they may oversee include recruitment and consenting of participants, creation of data collection materials, creation of protocols, training data collectors, data collection scheduling, and more. The project coordinator may also supervise many of the other research team roles, such as research assistants.
 
-### Data Manager
+### Data manager
 
 The data manager is also an essential member of the team. This person is responsible for the organizing, cleaning, documenting, storing, and dissemination of research project data. This team member works very closely with the project coordinator, as well as the PI, to ensure that data management is considered throughout the project life cycle. Tasks a data manager may oversee include data storage, security and access, building data collection and tracking tools, cleaning and validating data, data documentation, and organizing data for sharing purposes.
 
 This role is vital in maintaining the standardization of data practices. If you do not have the budget to hire a full-time data manager, make sure to assign someone on your team to oversee the flow of data, ensuring that throughout the project, data is documented, collected, entered, cleaned, and stored consistently and securely. 
 
-### Project Team Members
+### Project team members
 
 This role refers to any staff hired to help implement a research project which may include full-time staff members, with titles such a research or project assistants for instance, or it may include part-time graduate students. Project team members are typically out in the field, collecting data, or they may also assist in other areas such as preparing data collection materials or assisting with data management. Senior project team members may also assist in implementing training or acting as data collection leads in the field.
 
-### Other Roles
+### Other roles
 
-The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned above, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in the diagram above. Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied (see Figure \@ref(fig:fig7-2)). Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
+The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research institution. Some teams may include additional roles, not mentioned previously, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in Figure \@ref(fig:fig6-1). Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied (see Figure \@ref(fig:fig6-2)). Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig7-2.PNG" alt="Life cycle diagram updated to show hidden processes" width="100%" />
-<p class="caption">(\#fig:fig7-2)Life cycle diagram updated to show hidden processes</p>
+<img src="img/fig6-2.PNG" alt="Life cycle diagram updated to show hidden processes" width="100%" />
+<p class="caption">(\#fig:fig6-2)Life cycle diagram updated to show hidden processes</p>
 </div>
 
 
@@ -84,18 +84,18 @@ There are many reasons to document staff roles and responsibilities and to store
 2. As new tasks arise, team members can refer to the document to see who is best fitted for the assignment.  
 3. Last, reviewing roles and responsibilities in a document also helps you more clearly see what responsibilities are assigned and how they are assigned. After reviewing the document you can make further revisions if responsibilities need to be added or further redistributed in any way.
 
-Figure \@ref(fig:fig7-3) is one example of a roles and responsibilities document that organizes information by roles. Note that this document only lists overarching responsibilities, not specific steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Section \@ref(document-sop)) where names are attached to each task. 
+Figure \@ref(fig:fig6-3) is one example of a roles and responsibilities document that organizes information by roles. Note that this document only lists overarching responsibilities, not specific steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Section \@ref(document-sop)) where names are attached to each task. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig7-3.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
-<p class="caption">(\#fig:fig7-3)Roles and responsibilities document organized by role</p>
+<img src="img/fig6-3.PNG" alt="Roles and responsibilities document organized by role" width="70%" />
+<p class="caption">(\#fig:fig6-3)Roles and responsibilities document organized by role</p>
 </div>
 
-However, this document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig7-4) is an example of organizing information by phases of the research life cycle. 
+However, this document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig6-4) is an example of organizing information by phases of the research life cycle. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig7-4.PNG" alt="Roles and responsibilities organized by phase" width="70%" />
-<p class="caption">(\#fig:fig7-4)Roles and responsibilities organized by phase</p>
+<img src="img/fig6-4.PNG" alt="Roles and responsibilities organized by phase" width="70%" />
+<p class="caption">(\#fig:fig6-4)Roles and responsibilities organized by phase</p>
 </div>
 
 Last, any additional information can be added to these documents to help clarify responsibilities.

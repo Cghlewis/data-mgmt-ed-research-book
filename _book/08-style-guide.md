@@ -1,8 +1,8 @@
-# Style guide {#style}
+# Style Guide {#style}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig9-1.PNG" alt="Style guide in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig9-1)Style guide in the research project life cycle</p>
+<img src="img/fig8-1.PNG" alt="Style guide in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig8-1)Style guide in the research project life cycle</p>
 </div>
 
 A style guide provides general agreed upon rules for the formatting of information. As mentioned in Chapter \@ref(document), style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file versioning, file structure, and even coding practices.
@@ -148,11 +148,11 @@ project_new/
 ## File naming
 
 <div class="figure" style="text-align: center">
-<img src="img/fig9-2.PNG" alt="Documents, from Randall Munroe’s xkcd" width="50%" />
-<p class="caption">(\#fig:fig9-2)Documents, from Randall Munroe’s xkcd</p>
+<img src="img/fig8-2.PNG" alt="Documents, from Randall Munroe’s xkcd" width="50%" />
+<p class="caption">(\#fig:fig8-2)Documents, from Randall Munroe’s xkcd</p>
 </div>
 
-As seen in Figure \@ref(fig:fig9-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
+As seen in Figure \@ref(fig:fig8-2), many of us are pretty bad at naming files in a consistent and usable way. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).
 
 Our file names alone should be able to answer questions such as:
 
@@ -320,11 +320,11 @@ Before adding a time component, either as a new variable or as part of a variabl
   - `wave 2` = spring of the study year
   - `wave 3` = fall of the follow up year
     
-However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
+However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure \@ref(fig:fig8-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig9-3.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%" />
-<p class="caption">(\#fig:fig9-3)Examples of how time might be added to your data based on a variety of scenarios</p>
+<img src="img/fig8-3.PNG" alt="Examples of how time might be added to your data based on a variety of scenarios" width="100%" />
+<p class="caption">(\#fig:fig8-3)Examples of how time might be added to your data based on a variety of scenarios</p>
 </div>
 
 With all of that said, during an active project, it is actually best to not add a time component to your data, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period (e.g., `proja_w1_stu_svy_clean.csv`. There are a few benefits of this method.
@@ -386,7 +386,7 @@ Ultimately, whichever method you choose, there are several guidelines you should
 In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Table \@ref(tab:tab9-1)).
 
 
-Table: (\#tab:tab9-1)Example missing value code schema used for numeric variables
+Table: (\#tab:tab8-1)Example missing value code schema used for numeric variables
 
 |Code/Value |Label                                              |
 |:----------|:--------------------------------------------------|

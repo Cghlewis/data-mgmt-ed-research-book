@@ -1,8 +1,8 @@
 # Planning Data Management {#plan}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig6-1.PNG" alt="Planning in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig6-1)Planning in the research project life cycle</p>
+<img src="img/fig5-1.PNG" alt="Planning in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig5-1)Planning in the research project life cycle</p>
 </div>
 
 Planning data management is distinct from the 2-5 page data management plan (DMP) discussed in the Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (e.g., how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites). Team members such as investigators, project coordinators, and data managers, may be assisting in both planning processes.
@@ -11,7 +11,7 @@ Planning data management is distinct from the 2-5 page data management plan (DMP
 
 Funder required data management plans are hopeful outlines for future practices. However, the broad theory behind our DMPs do not actually prepare us for the complex implementation of those plans in practice [@borycz_implementing_2021]. Therefore, it is important to spend time, before your project begins, planning and preparing for data management. It is an upfront time investment but this sort of slow science leads to better data outcomes. Reproducibility begins in the planning phase. Taking time to create, document, and train staff on data management standards before your project begins helps to ensure that your processes are implemented with fidelity and can be replicated consistently throughout the entire study. 
 
-Planning the day to day management of your project data has many other benefits as well. It allows you to anticipate and overcome barriers to managing your data, such as communication issues, training needs, or potential tool issues. This type of planning also saves you time in the long run, removing the last minute scrambling that can occur when trying to organize your data at the end of a project. Last, this type of planning can mitigate errors. Viewing errors as problems created by poorly planned workflows, rather than individual failures, helps us to see how data management planning can lead to better data [@strand_error_2021]. While data management planning can not remove all chances of errors creeping into your data [@eaker_what_2016], it can most certainly reduce those errors and prevent them from "compounding over time" [@alston_beginners_2021, p.4].
+Planning the day-to-day management of your project data has many other benefits as well. It allows you to anticipate and overcome barriers to managing your data, such as communication issues, training needs, or potential tool issues. This type of planning also saves you time in the long run, removing the last minute scrambling that can occur when trying to organize your data at the end of a project. Last, this type of planning can mitigate errors. Viewing errors as problems created by poorly planned workflows, rather than individual failures, helps us to see how data management planning can lead to better data [@strand_error_2021]. While data management planning can not remove all chances of errors creeping into your data [@eaker_what_2016], it can most certainly reduce those errors and prevent them from "compounding over time" [@alston_beginners_2021, p.4].
 
 ## Goals of planning
 
@@ -49,15 +49,15 @@ If this is your first time working through this book, these checklists are a gre
 
 ### Decision-making process
 
-This decision-making process is personalized. Borghi and Van Gulick [@borghi_promoting_2022] view this process as a series of steps that a research team chooses, out of all the many possibilities not chosen. Maybe you won’t always be able to implement the “best practices” but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and rules and regulations.
+This decision-making process is personalized. @borghi_promoting_2022 view this process as a series of steps that a research team chooses, out of all the many possibilities not chosen. Maybe you won’t always be able to implement the “best practices” but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and rules and regulations.
 
 For example, one team may collect survey data on paper because their participants are young children, hand enter it into Microsoft Excel because that is the only tool they have access to, and double enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand enter the data into FileMaker because that is the tool their team is familiar with, and double enter 100% because they have the budget and capacity to do that.
 
-Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making process, based on a @borghi_promoting_2022 flow chart. Of course, in real life we are often choosing between many more than just two options!
+Figure \@ref(fig:fig5-2) is a very simplified example of the decision-making process, based on a @borghi_promoting_2022 flow chart. Of course, in real life we are often choosing between many more than just two options!
 
 <div class="figure" style="text-align: center">
-<img src="img/fig6-2.PNG" alt="A simplified decision-making process" width="100%" />
-<p class="caption">(\#fig:fig6-2)A simplified decision-making process</p>
+<img src="img/fig5-2.PNG" alt="A simplified decision-making process" width="100%" />
+<p class="caption">(\#fig:fig5-2)A simplified decision-making process</p>
 </div>
 
 ### Checklist considerations
@@ -89,32 +89,32 @@ The last step of this planning phase is to build your workflows. Workflows allow
 - Student paper assessment
 - Student school records
 
-Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig6-3) works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
+Your diagrams should include the who, what, where, and when of each task in the process. Adding these details are what make the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig5-3) works very well for thinking through high level workflows. Remember, this is a repeatable process. So while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig6-3.PNG" alt="A simple workflow template" width="100%" />
-<p class="caption">(\#fig:fig6-3)A simple workflow template</p>
+<img src="img/fig5-3.PNG" alt="A simple workflow template" width="100%" />
+<p class="caption">(\#fig:fig5-3)A simple workflow template</p>
 </div>
 
-Here is how we might complete this diagram for a student survey.
+Figure \@ref(fig:fig5-4) is how we might complete a very simplified diagram for a student survey.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig6-4.PNG" alt="Example student survey workflow" width="100%" />
-<p class="caption">(\#fig:fig6-4)Example student survey workflow</p>
+<img src="img/fig5-4.PNG" alt="Example simplified student survey workflow" width="100%" />
+<p class="caption">(\#fig:fig5-4)Example simplified student survey workflow</p>
 </div>
 
-But the format truly does not matter. Figure \@ref(fig:fig6-5) is a diagram of the same student survey workflow as above, with more detailed added, and this time using a swimlane template instead, where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
+But the format truly does not matter. Figure \@ref(fig:fig5-5) is a diagram of the same student survey workflow as Figure \@ref(fig:fig5-4), but with more detail added, and this time using a swimlane template where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig6-5.PNG" alt="Example student survey workflow using a swimlane template" width="100%" />
-<p class="caption">(\#fig:fig6-5)Example student survey workflow using a swimlane template</p>
+<img src="img/fig5-5.PNG" alt="Example student survey workflow using a swimlane template" width="100%" />
+<p class="caption">(\#fig:fig5-5)Example student survey workflow using a swimlane template</p>
 </div>
 
-If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig6-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_grant_2021] in order to better capture the expected timeline.
+If you have a working data collection timeline (see Section \@ref(document-supplement)) already created, you can even build time into your workflow. Figure \@ref(fig:fig5-6) is another example of the same survey workflow again, this time displayed using a Gantt chart [@duru_grant_2021] in order to better capture the expected timeline.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig6-6.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
-<p class="caption">(\#fig:fig6-6)Example student survey workflow using a Gantt chart</p>
+<img src="img/fig5-6.PNG" alt="Example student survey workflow using a Gantt chart" width="100%" />
+<p class="caption">(\#fig:fig5-6)Example student survey workflow using a Gantt chart</p>
 </div>
 
 

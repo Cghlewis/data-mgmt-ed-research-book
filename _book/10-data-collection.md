@@ -1,8 +1,8 @@
 # Data Collection {#collect}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-1.PNG" alt="Data collection in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig11-1)Data collection in the research project life cycle</p>
+<img src="img/fig10-1.PNG" alt="Data collection in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig10-1)Data collection in the research project life cycle</p>
 </div>
 
 When collecting original data as part of your study (i.e., you are administering your own survey or assessment as opposed to using an externally collected data source), data management best practices should be interwoven throughout your data collection process. Unfortunately, quality data doesn't just happen because an instrument is created and data is collected. It takes careful consideration, structure, and care on the part of the entire team. The number one way to improve the integrity of your data is to spend time planning your data collection efforts. Not only does planning minimize errors, it also keeps your data secure, valid, and relieves future data cleaning headaches. 
@@ -11,7 +11,7 @@ When collecting original data as part of your study (i.e., you are administering
 
 When planning your data collection efforts, first pull out your data sources catalog (see Section \@ref(document-catalog)). This document will be a guide during your data collection planning period. Recall that every row in that document is an original instrument to be collected for your study. Some of your data sources may also include external datasets, which we will discuss in Chapter \@ref(capture).
 
-In addition to planning data collection logistics for your original data sources (i.e. how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. As shown in Figure \@ref(fig:fig11-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
+In addition to planning data collection logistics for your original data sources (i.e., how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. As shown in Figure \@ref(fig:fig11-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the tools, the data management team is overseeing that the data collected from the tool aligns with expectations set in the data dictionary. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
 
 1. Quality assurance practices that happen before data is collected
     - Best practices associated with designing and building your data collection instruments
@@ -21,11 +21,11 @@ In addition to planning data collection logistics for your original data sources
 ## Quality assurance {#collect-assurance}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-2.PNG" alt="Common education research data collection methods" width="100%" />
-<p class="caption">(\#fig:fig11-2)Common education research data collection methods</p>
+<img src="img/fig10-2.PNG" alt="Common education research data collection methods" width="100%" />
+<p class="caption">(\#fig:fig10-2)Common education research data collection methods</p>
 </div>
 
-Education researchers collect original data in many ways (see Figure \@ref(fig:fig11-2)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (i.e., think questionnaires, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
+Education researchers collect original data in many ways (see Figure \@ref(fig:fig10-2)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (i.e., think questionnaires, assessments, observation forms, or a progress monitoring form on a website), yet if developed poorly, they can produce some of the most problematic data issues. On the flip side, if the practices discussed in this chapter are implemented, forms can also be the easiest tool to remedy issues with. 
 
 The focus on forms is not to discount the importance of data collected through other means such as video or audio recording, where issues such as participant privacy and data security and integrity should absolutely also be considered. However, even with those types of data collection efforts, often teams are ultimately still coding that data using some sort of form (e.g., observation form), further supporting the need to build forms that collect quality data.
 
@@ -90,7 +90,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 
 ### Pilot the instrument
 
-Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig11-3)):
+Gathering feedback on your instruments is an integral part to the quality assurance process. There are three phases to piloting an instrument [@dime_analytics_survey_2021] (see Figure \@ref(fig:fig10-3)):
 
 1. Gathering internal feedback on items
     - As discussed in Section \@ref(document-dictionary), once all items for each instrument have been added to a data dictionary, have your data management working group (see Chapter \@ref(plan)) review the data dictionary and provide feedback
@@ -102,8 +102,8 @@ Gathering feedback on your instruments is an integral part to the quality assura
 Last, as you move through the piloting phases, remember to make updates not only in your tool but also in your data dictionary and any other relevant documentation (e.g., data cleaning plan). 
 	  
 <div class="figure" style="text-align: center">
-<img src="img/fig11-3.PNG" alt="Data collection instrument pilot phases" width="100%" />
-<p class="caption">(\#fig:fig11-3)Data collection instrument pilot phases</p>
+<img src="img/fig10-3.PNG" alt="Data collection instrument pilot phases" width="100%" />
+<p class="caption">(\#fig:fig10-3)Data collection instrument pilot phases</p>
 </div>
 
 
@@ -132,10 +132,10 @@ Once content piloting is completed, teams should be ready to begin building thei
     - Does the tool have version control?
     - Does the tool have features to deal with fraud/bots?
 
-While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the above criteria, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_2020;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_2023].
+While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the the criteria mentioned in this section, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_2020;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_2023] (See Table \@ref(tab:tab10-1)).
 
 
-Table: (\#tab:tab11-1)Comparison of data collection tool benefits
+Table: (\#tab:tab10-1)Comparison of data collection tool benefits
 
 |Electronic Data Collection Benefits                                                                                              |Paper Data Collection Benefits                     |
 |:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------|
@@ -168,11 +168,11 @@ The process for building your tools with the end in mind is fairly different for
 
 #### Electronic data collection {#collect-electronic}
 
-If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig11-4), but instead you export data that looks like the image on the right, then you understand how important it is to spend time planning how data will be collected in your tool. 
+If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig10-4), but instead you export data that looks like the image on the right, then you understand how important it is to spend time planning how data will be collected in your tool. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-4.PNG" alt="A comparison of data collected without planning and data collected with planning" width="100%" />
-<p class="caption">(\#fig:fig11-4)A comparison of data collected without planning and data collected with planning</p>
+<img src="img/fig10-4.PNG" alt="A comparison of data collected without planning and data collected with planning" width="100%" />
+<p class="caption">(\#fig:fig10-4)A comparison of data collected without planning and data collected with planning</p>
 </div>
 
 The first thing you will want to do before building your tool is bring out your data dictionary. This data dictionary will be your guide as you build your instrument. Some tools, such as REDCap, provide the option to upload your data dictionary which can then be used to automate the creation of data collection forms as opposed to building them from scratch [@patridge_research_2018].
@@ -219,7 +219,7 @@ However, if you are building your instrument manually, adhering to the following
     - Are all response options accounted for and coded as they should be?
     - Is skip logic shown as expected?
 
-Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig11-5)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actively try to break things [@kopper_questionnaire_2020]. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If there are problems with the tool, now is the time to find out. 
+Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig10-4)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels). Let team members know that they should actively try to break things [@kopper_questionnaire_2020]. Try to enter nonsensical values, try to skip items, try to enter duplicate entries. If there are problems with the tool, now is the time to find out. 
 
 After sample responses are collected from team members, export the sample data using your chosen data capture process (see Chapter \@ref(capture)) and review the data for the following:
 
@@ -248,13 +248,13 @@ There are many situations where collecting data electronically may not be feasib
       - How to navigate branching logic (e.g., include visual arrows)
 3. Only ask for one piece of information per question to reduce confusion in interpretation
 
-Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig11-4)). Using the feedback collected, edit your tool as needed before sending it out into the field.
+Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig10-4)). Using the feedback collected, edit your tool as needed before sending it out into the field.
 
-Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary. See Figure \@ref(fig:fig11-5) for an example of an annotated instrument from wave 1 of The Florida State Twin Registry project shared in the LDbase repository [@hart_florida_2018].
+Last, unless paper data it is collected using a machine-readable form, it will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name, value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary. See Figure \@ref(fig:fig10-5) for an example of an annotated instrument from wave 1 of The Florida State Twin Registry project shared in the LDbase repository [@hart_florida_2018].
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-5.PNG" alt="Annotated parent survey from wave 1 The Florida State Twin Registry project" width="100%" />
-<p class="caption">(\#fig:fig11-5)Annotated parent survey from wave 1 The Florida State Twin Registry project</p>
+<img src="img/fig10-5.PNG" alt="Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)" width="100%" />
+<p class="caption">(\#fig:fig10-5)Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)</p>
 </div>
 
 #### Identifiers
@@ -269,7 +269,7 @@ When building data collection tools, no matter if they are paper or electronic, 
 - There is too much room for error
   - If names are hand entered, there are endless issues with case sensitivity, spelling errors, special characters, spacing, and so forth
 
-All of the above issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers (see Section \@ref(clean-check) for more information about this process).
+All of these issues make it very difficult to link data. If you do decide to collect names, remember that you will need to remove names during data processing and replace them with your unique study identifiers (see Section \@ref(clean-check) for more information about this process).
 
 Rather than having to de-identify your data through this cleaning process, another option is to collect a different type of unique identifier, or pre-link unique study identifiers and names in your instrument, removing many of these issues [@dime_analytics_data_2021; @gibson_survey_2020]. We will discuss these methods separately for electronic data and paper data.
 
@@ -300,15 +300,15 @@ There are many ways you might consider collecting unique identifiers other than 
 
 If you take paper forms into the field consider doing the following to connect your data to a participant [@otoole_data_2018; @reynolds_basics_2022].
 
-- Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then use either a removable label with participant name and other relevant information and place that over the ID or attach a cover sheet with this information (see Figure \@ref(fig:fig11-6)). When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
+- Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then use either a removable label with participant name and other relevant information and place that over the ID or attach a cover sheet with this information (see Figure \@ref(fig:fig10-6)). When you return to the office, you can remove the name label/cover sheet and be left with only the ID on the form.
   - It is this ID only that you will enter into your data entry form during the data capture process, no name.
   - Removing the label/cover sheet also ensures that your data entry team only sees the study ID when they enter data, increasing privacy by minimizing the number of people who see see participant names.
   - It is important to double and triple check study identifiers against your participant database to make sure the information is correct before removing the label or cover sheet
   - Make a plan for the labels/cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-6.PNG" alt="Example cover sheet for a paper data collection instrument" width="100%" />
-<p class="caption">(\#fig:fig11-6)Example cover sheet for a paper data collection instrument</p>
+<img src="img/fig10-6.PNG" alt="Example cover sheet for a paper data collection instrument" width="100%" />
+<p class="caption">(\#fig:fig10-6)Example cover sheet for a paper data collection instrument</p>
 </div>
 
 ### Ensure compliance {#collect-irb}
@@ -390,7 +390,7 @@ If your data collection efforts include field data collection (e.g., data collec
   - Do another round of data checks in the field once the data collector returns physical forms to the on-site central location (e.g., if data collectors have set up in the teacher's lounge)
   - Ensure that all data and equipment is accounted for and returned to the office
   - Be available for trouble shooting as needed
-- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig11-7))
+- Do another round of physical data spot checking as soon as the data is returned to the office (see Figure \@ref(fig:fig10-7))
   - The project coordinator may do this round of checking as they are tracking information in the participant database
   - If any issues are found, note that in the tracking database and send the form back out to the field for correction
   - If paper forms are mailed back to you from participants, rather than returned from field data collectors, it is still important to do in-office spot checks. If at all possible, reach out to those participants for any corrections.
@@ -398,8 +398,8 @@ If your data collection efforts include field data collection (e.g., data collec
   - What went well? What didn't?
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-7.PNG" alt="A series of spot checks that occur with paper data" width="100%" />
-<p class="caption">(\#fig:fig11-7)A series of spot checks that occur with paper data</p>
+<img src="img/fig10-7.PNG" alt="A series of spot checks that occur with paper data" width="100%" />
+<p class="caption">(\#fig:fig10-7)A series of spot checks that occur with paper data</p>
 </div>
 
 **Tracking sheet templates**
@@ -487,13 +487,13 @@ Last, implement quality control checks for bots or fraudulent responses before a
 
 ## Review
 
-Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig11-8) helps us to see when these practices fit into the different phases our workflow.
+Recall from Chapter \@ref(plan), we discussed designing and visualizing a data collection workflow during your planning phase. As we've learned from this chapter, errors can happen at any point in the workflow so it is important to consider the entire data collection process holistically and integrate both quality assurance and quality control procedures throughout. Figure \@ref(fig:fig10-8) helps us to see when these practices fit into the different phases our workflow.
 
 Once your workflow is developed and quality assurance and control practices are integrated, consider how you will ensure that your team implements these practices with fidelity. Document the specifics of your plan in an SOP (see Chapter \@ref(document)), including assigning roles and responsibilities for each task in the process. Last, train your team on how to implement the data collection SOP, and implement refresher trainings as needed.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-8.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%" />
-<p class="caption">(\#fig:fig11-8)Integrating quality assurance and control into a data collection workflow</p>
+<img src="img/fig10-8.PNG" alt="Integrating quality assurance and control into a data collection workflow" width="100%" />
+<p class="caption">(\#fig:fig10-8)Integrating quality assurance and control into a data collection workflow</p>
 </div>
 
 **Instrument Workflow Resources**

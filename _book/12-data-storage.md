@@ -1,8 +1,8 @@
 # Data Storage and Security {#store}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig13-1.PNG" alt="Data storage in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig13-1)Data storage in the research project life cycle</p>
+<img src="img/fig12-1.PNG" alt="Data storage in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig12-1)Data storage in the research project life cycle</p>
 </div>
 
 As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study. Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.

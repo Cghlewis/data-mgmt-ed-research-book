@@ -1,8 +1,8 @@
 # Data Management Plan {#dmp}
 
-```{r fig5-1, fig.cap="Data management plan in the research project life cycle"}
+```{r fig4-1, fig.cap="Data management plan in the research project life cycle"}
 
-knitr::include_graphics("img/fig5-1.PNG")
+knitr::include_graphics("img/fig4-1.PNG")
 
 ```
 
@@ -11,7 +11,7 @@ knitr::include_graphics("img/fig5-1.PNG")
 Since 2013, even earlier for the National Science Foundation, most federal agencies that education researchers work with have required a data management plan (DMP) as part of their funding application [@holdren_ostp_2013]. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan for a research study that will result in data that can be shared with confidence, and free from errors, uncertainty, or violations of confidentiality. President Obama’s May 2013 Executive Order declared that “the default state of new and modernized government information resources shall be open and machine readable" [@the_white_house_executive_2013]. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release [@nelson_ostp_2022]. Even sooner than this, organizations like the National Institutes of Health (NIH) mandated that grant applicants, beginning January 2023, must submit a plan for both managing and sharing project data [@national_institutes_of_health_final_2023]. The National Science Foundation (NSF) also released version 2.0 of their public access plan in February of 2023, describing how the agency plans to ensure that all scientific data, funded by the NSF and associated with peer-reviewed publications, is publicly shared [@national_science_foundation_nsf_2023].
 
 > **Note** <br> <br>
-In the last year, agencies have begun revising the phrase "data management plan" to include the word "sharing" to better represent the shifting emphasis on sharing publicly funded data. As an example, NIH now uses the term Data Management and Sharing Plan (DMS Plan), while the Institute of Education Sciences (IES) has chosen to use the term Data Sharing and Management Plan (DSMP) ^[https://ies.ed.gov/funding/pdf/2024_84305a.pdf]. For the sake of simplicity, the term DMP is used throughout this book to generally represent these plans, no matter the precise name, across all federal agencies.
+In the last year, agencies have begun revising the phrase "data management plan" to include the word "sharing" to better represent the shifting emphasis on sharing publicly funded data. As an example, NIH now uses the term Data Management and Sharing (DMS) Plan^[https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html], while the Institute of Education Sciences (IES) has chosen to use the term Data Sharing and Management Plan (DSMP)^[https://ies.ed.gov/funding/pdf/2024_84305a.pdf]. For the sake of simplicity, the term DMP is used throughout this book to generally represent these plans, no matter the precise name, across all federal agencies.
 
 ### Why are DMPs important?
 
@@ -94,11 +94,11 @@ Some fields you can add to this catalog include:
 - How confidentiality will be secured
 - Data sharing method
 
-Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a hypothetical study. In this example, if we only collected data for one year, we would end up with six datasets at the end of our study, three teacher-level files and three student-level files. In chapter \@ref(share), we will discuss whether to share these as separate datasets, or larger files combined by unit of analysis (e.g., combined student-level file, combined teacher-level file).
+Figure \@ref(fig:fig4-2) is a simplified example of building this catalog for a hypothetical study. In this example, if we only collected data for one year, we would end up with six datasets at the end of our study, three teacher-level files and three student-level files. In Chapter \@ref(share), we will discuss whether to share these as separate datasets, or larger files combined by unit of analysis (e.g., combined student-level file, combined teacher-level file).
 
-```{r fig5-2, fig.cap="Example data sources catalog"}
+```{r fig4-2, fig.cap="Example data sources catalog"}
 
-knitr::include_graphics("img/fig5-2.PNG")
+knitr::include_graphics("img/fig4-2.PNG")
 
 ```
 

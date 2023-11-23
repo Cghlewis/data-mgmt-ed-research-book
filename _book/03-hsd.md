@@ -4,12 +4,12 @@ In addition to understanding how to organize data, we also need a foundational u
 
 ## Identifiability of a dataset
 
-When working with human subjects there are two types of identifiers you may collect in your study, direct and indirect. Direct identifiers are unique to an individual and can be used to identify a participant. Indirect identifiers are not necessarily unique to a particular individual, but if combined with other information they could be used to identify a participant [@kopper_data_2023].
+When working with human subjects there are two types of identifiers you may collect in your study, direct and indirect (see Table \@ref(tab:tab3-1)). Direct identifiers are unique to an individual and can be used to identify a participant. Indirect identifiers are not necessarily unique to a particular individual, but if combined with other information they could be used to identify a participant [@kopper_data_2023].
 
 <br>
 
 
-Table: (\#tab:tab4-1)Examples of direct and indirect identifiers
+Table: (\#tab:tab3-1)Examples of direct and indirect identifiers
 
 |Direct Identifiers                |Indirect Identifiers       |
 |:---------------------------------|:--------------------------|
@@ -26,7 +26,7 @@ Table: (\#tab:tab4-1)Examples of direct and indirect identifiers
 |                                  |Data collection date       |
 |                                  |Verbatim responses         |
 
-A term often used when discussing identifiable information is personally identifiable information (PII). This term broadly refers to information that can be used to identify a participant. There is no agreed upon list for what fields should be included in a list of PII but generally it includes both the direct and indirect types of information shown in Table \@ref(tab:tab4-1).
+A term often used when discussing identifiable information is personally identifiable information (PII). This term broadly refers to information that can be used to identify a participant. There is no agreed upon list for what fields should be included in a list of PII but generally it includes both the direct and indirect types of information shown in Table \@ref(tab:tab3-1).
 
 When collecting data and creating datasets, you will be working with one or more of these four types of data files.
 

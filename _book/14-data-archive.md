@@ -1,8 +1,8 @@
 # Data Archiving {#store-long}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig15-1.PNG" alt="Long-term data storage in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig15-1)Long-term data storage in the research project life cycle</p>
+<img src="img/fig14-1.PNG" alt="Long-term data storage in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig14-1)Long-term data storage in the research project life cycle</p>
 </div>
 
 Once you have gone through all cycles of data collection and you are preparing to wrap up your grant, you will need to switch gears and start thinking about archiving your data to ensure that your files are still accessible and usable, long after a project is complete. While your project may be ending, there are still many reasons to retain your data long-term including future analyses, opportunities to make corrections (e.g., going back to paper files if an error is found in the data), and data retention requirements from funders and institutions. In this section we will discuss how to care for files internally, while public data sharing and archiving will be discussed in Chapter \@ref(share). However, these processes (preparing to internally archive and preparing to publicly share data) will most likely be happening at the same time.
@@ -20,7 +20,7 @@ Once you understand requirements, make a plan for retention and destruction. If 
   - Electronic
     - For electronic data long-term storage, you will want to consider two things, file formats and storage location [@borer_simple_2009; @briney_data_2015].
       - File formats 
-        - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete (see Table \@ref(tab:tab15-1)). This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
+        - First, choose file types that are widely used (i.e., don't require proprietary software) for both accessibility as well as preventing your file formats from becoming obsolete (see Table \@ref(tab:tab14-1)). This means that you can still keep copies of your files in a format such as SPSS if you prefer, but it is good practice to have a second copy of your data in a non-proprietary format such as CSV. Your documentation file formats should also be considered. Formats such as PDF or TXT are often recommended for long-term storage of text documents while CSV is a good format for tabular data dictionaries.
       - Storage location
         - Similar to choosing file formats, choose a storage location that is accessible and not at risk of becoming corrupt or obsolete (e.g., think obsolescence of floppy disks). Also, make sure that you are able to continue restricting access as needed. If your short-term storage solution meets these requirements (e.g., your institution network drive), you may not need to do anything different in preparing for long-term storage, but it will be important to continue implementing good practices to keep your data safe (e.g., continuing data backups, checking that hardware and software is up to date).  
         - Within your storage location, consider moving all finalized datasets (i.e., cleaned and de-identified) into a "master data" folder for ease of accessibility. Restrict access to reduce unintended modification of files.
@@ -31,7 +31,7 @@ Once you understand requirements, make a plan for retention and destruction. If 
 
 <br>    
 
-Table: (\#tab:tab15-1)Potential long-term storage file types
+Table: (\#tab:tab14-1)Potential long-term storage file types
 
 |Type                      |Non-proprietary formats |Other commonly accepted formats |
 |:-------------------------|:-----------------------|:-------------------------------|
@@ -65,7 +65,6 @@ At the end of a project, or possibly earlier in the project, team members will w
 Here is an example of how you might structure a data request folder.
   
 ```
-
 data_requests/
 ├── data_request_log.xlsx
 ├── lastname1_firstname1_2023-03-02

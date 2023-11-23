@@ -16,7 +16,7 @@ Without agreed-upon standards in the field, it is important for research teams t
 
 There are both external pressures and personal reasons to care about developing research data management standards for your projects.
 
-### External Reasons
+### External reasons
 
 1.  **Funder compliance**: Any researcher applying for federal funding will be required to submit a data management plan (see Chapter \@ref(dmp)) along with their grant proposal [@holdren_ostp_2013; @nelson_ostp_2022]. The contents of these plans may vary slightly across agencies but the shared purpose of these documents is to facilitate good data management practices and to mandate open sharing of data to maximize scientific outputs and benefits to society. Along with this mandatory data sharing policy, comes the incentive to manage your data for the purposes of data sharing [@borghi_promoting_2022].
 
@@ -46,7 +46,7 @@ There are also many compelling personal reasons to manage your data in a reprodu
 
 7.  **Improves data security**: Quality data management and preservation practices reduce the risk of lost or stolen data, the risk of data becoming corrupted or inaccessible, and the risk of breaking confidentiality agreements.
 
-## Existing Frameworks
+## Existing frameworks
 
 Data management does not live in a space all alone. It co-exists with other frameworks that impact how and why data is managed and it is important to be familiar with them as they will provide a foundation for you as you build your data management structures.
 
@@ -84,7 +84,7 @@ The SEER principles, developed in 2018 by Institute of Education Sciences (IES),
 -   Facilitate generalization of study findings
 -   Support scaling of promising results
 
-### Open Science
+### Open science
 
 The concept of open science has pushed quality data management to the forefront, bringing visibility to its cause, as well as advances in practices and urgency to implement them. Open Science aims to make scientific research and dissemination accessible for all, making the need for good data management practices absolutely necessary. Open science advocates for transparent and reproducible practices through means such as open data, open analysis, open materials, preregistration, and open access [@van_dijk_open_2021]. Organizations, such as the Center for Open Science ([https://www.cos.io](https://www.cos.io/)), have become a well-known proponent of open science, offering the open science framework (OSF) [@foster_open_2017] as a tool to promote open science through the entire research life cycle. Furthermore, many education funders have aligned their fundee requirements with these open science practices, such as openly sharing study data and preregistration of study methods.
 
@@ -97,15 +97,15 @@ When working with specific populations, there may be other principles to conside
 Before moving forward in this book it is important to have a shared understanding of terminology used. Many concepts in education research have synonymous terms that can be used interchangeably. Across different institutions, researchers may use all or some of these terms. Please review the [Glossary](#glossary) to gain a better understanding of how terms will be used throughout this book.
 
 
-## The Research Life Cycle
+## The research life cycle
 
 The remainder of this book will be organized into chapters that provide best practices for each phase of the research data life cycle. It is imperative to understand this life cycle in order to see the flow of data through a project, as well as to understand how everything in a project is connected. If phases are skipped, the whole project will suffer.
 
-You can see in Figure \@ref(fig:fig2-1), how throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
+You can see in Figure \@ref(fig:fig1-1), how throughout the project, data management roles and project coordination roles work in parallel and collaboratively. These teams may be made up of the same people or different members, but either way, both workflows must happen and they must work together.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig2-1.PNG" alt="The research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig2-1)The research project life cycle</p>
+<img src="img/fig1-1.PNG" alt="The research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig1-1)The research project life cycle</p>
 </div>
 
 Let's walk through this chart.

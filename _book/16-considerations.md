@@ -1,4 +1,4 @@
-# Additional considerations
+# Additional Considerations
 
 Up until this point, we have mostly focused on a simplistic workflow for one team with one project. However, it is becoming more common for projects to include multi-site collaborations (e.g., a grant shared across multiple research institutions), and for teams to have multiple projects. Both of these add complexity to data management which I will briefly address.
 
@@ -12,7 +12,7 @@ Multi-site, or multi-team, collaborations require additional planning around rol
 - What are the roles and responsibilities across sites?
 - What tools will be used to allow for multi-site data tracking, collection, entry, storage, and sharing?
 
-Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying out expectations for team collaborations (Figure \@ref(fig:fig17-1)). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. 
+Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying out expectations for team collaborations (Figure \@ref(fig:fig16-1)). In these charts, each site is assigned to a task as either responsible, accountable, consulted, or informed. 
 
 - Responsible: The site is responsible for completing this task.
 - Accountable: The site provides oversight, ensuring the the task is completed with fidelity.
@@ -22,8 +22,8 @@ Documents, such as a RACI matrix [@miranda_raci_2022], can be helpful in laying 
 Assigning levels of responsibility to each site allows collaborators to clearly see what is expected from them in a project. Within site tasks can then be further assigned to specific roles.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig17-1.PNG" alt="Example of a RACI chart for a multi-site project collaboration" width="80%" />
-<p class="caption">(\#fig:fig17-1)Example of a RACI chart for a multi-site project collaboration</p>
+<img src="img/fig16-1.PNG" alt="Example of a RACI chart for a multi-site project collaboration" width="80%" />
+<p class="caption">(\#fig:fig16-1)Example of a RACI chart for a multi-site project collaboration</p>
 </div>
 
 ### Multi-project teams

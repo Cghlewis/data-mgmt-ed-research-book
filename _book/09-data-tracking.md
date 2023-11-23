@@ -1,8 +1,8 @@
 # Data Tracking {#track}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-1.PNG" alt="Tracking in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig10-1)Tracking in the research project life cycle</p>
+<img src="img/fig9-1.PNG" alt="Tracking in the research project life cycle" width="100%" />
+<p class="caption">(\#fig:fig9-1)Tracking in the research project life cycle</p>
 </div>
 
 During your project you will want to be able to answer both progress and summary questions about your recruitment and data collection activities.
@@ -41,7 +41,7 @@ A thorough and complete participant database that is updated regularly is benefi
 
 ## Building your database
 
-While the tracking phase appears after collection in Figure \@ref(fig:fig10-1), it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools, in the "Create Instruments" phase. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
+While the tracking phase appears after collection in Figure \@ref(fig:fig9-1), it is most beneficial to build this database before you begin recruiting participants, typically during the same time that you are building your data collection tools, in the "Create Instruments" phase. This way, as your team recruits participants, you can record information such as name, consent status, and any other necessary identifying contact information in the participant database and begin assigning participants study IDs. Depending on your database system, you may even be able to scan and upload copies of your consent forms into the database.
 
 While a project coordinator can build this database, it can be helpful to consult with a data manager, or someone with relational database expertise, when creating this system. This ensures that your system is set up efficiently and comprehensively.
 
@@ -70,24 +70,24 @@ Let's compare a very simple example of building a tracking database using a rela
 
 #### Relational model
 
-In Figure \@ref(fig:fig10-2) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
+In Figure \@ref(fig:fig9-2) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (which uniquely identify rows in each table) and foreign keys (which includes values that correspond to the primary key of another table). Our keys are all unique study identifiers that we have assigned to our study participants.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-2.PNG" alt="Participant database built using a relational model" width="100%" />
-<p class="caption">(\#fig:fig10-2)Participant database built using a relational model</p>
+<img src="img/fig9-2.PNG" alt="Participant database built using a relational model" width="100%" />
+<p class="caption">(\#fig:fig9-2)Participant database built using a relational model</p>
 </div>
 
 We can see here that across each table we have no duplicated information. The student table only contains student-level information, the teacher table only contains teacher-level information, and the school table only contains school-level information. This is a huge time saver. Imagine if a teacher's last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table. 
 If we want to see a table with both student and teacher information, we can simply query our database to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple queries that can then be used at any time by any user. 
 
-Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables above by `tch_id` and then pulls the relevant teacher and student information from both tables, seen in Table \@ref(tab:tab10-1).
+Say for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this SQL query that joins the student and teacher tables from Figure \@ref(fig:fig9-2) by `tch_id` and then pulls the relevant teacher and student information from both tables, seen in Table \@ref(tab:tab9-1).
 
 `SELECT t_l_name, t_f_name, s_l_name, s_f_name,  grade`    
 `FROM Student INNER JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
 `ORDER BY t_l_name, t_f_name, s_l_name, s_f_name`    
 
 
-Table: (\#tab:tab10-1)Example roster created by querying our relational database tables
+Table: (\#tab:tab9-1)Example roster created by querying our relational database tables
 
 | t_l_name | t_f_name | s_l_name | s_f_name | grade |
 |:--------:|:--------:|:--------:|:--------:|:-----:|
@@ -101,11 +101,11 @@ Depending on the design of your study and the structure of the database model, w
 
 #### Non-relational model
 
-Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig10-3)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors [@borer_simple_2009].
+Now imagine that we built a non-relational database, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure \@ref(fig:fig9-3)). Since we are unable to set up a system that links these tables together, we need to enter redundant information into each table (such as teacher or school name) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the student table, and if any teacher names change, we will need to update it in both the teacher table and in the student table for every student associated with that teacher. This requires more entry time and creates the opportunity for more data entry errors [@borer_simple_2009].
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-3.PNG" alt="Participant database built in using a non-relational model with duplicated variables denoted by rectangles" width="100%" />
-<p class="caption">(\#fig:fig10-3)Participant database built in using a non-relational model with duplicated variables denoted by rectangles</p>
+<img src="img/fig9-3.PNG" alt="Participant database built in using a non-relational model with duplicated variables denoted by rectangles" width="100%" />
+<p class="caption">(\#fig:fig9-3)Participant database built in using a non-relational model with duplicated variables denoted by rectangles</p>
 </div>
 
 > **Note** <br> <br>
@@ -122,11 +122,11 @@ Before you can begin to design your database, you will need to think through the
 3. What fields do you want to include in each table?
 4. If using a relational table design, what fields will you use to relate tables?
 
-Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig10-4) I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
+Once you make decisions regarding these questions, you can begin to design your database schema. It can be helpful to visualize your database model during this process. In Figure \@ref(fig:fig9-4) I am designing a database model for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-4.PNG" alt="Example participant database model using two separate tables for tracking across waves" width="100%" />
-<p class="caption">(\#fig:fig10-4)Example participant database model using two separate tables for tracking across waves</p>
+<img src="img/fig9-4.PNG" alt="Example participant database model using two separate tables for tracking across waves" width="100%" />
+<p class="caption">(\#fig:fig9-4)Example participant database model using two separate tables for tracking across waves</p>
 </div>
 
 I have designed this database model in this way:
@@ -139,11 +139,11 @@ I have designed this database model in this way:
 2. I have connected my tables through primary and foreign keys (`tch_id` and `sch_id`)
 3. With information separated into four tables, I can also now limit access as needed (e.g., only allow data entry staff access to the de-identified tables, or restricting entry to only the current wave of data preventing accidental overwriting of existing data)
 
-The model above is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-5)).
+The model in Figure \@ref(fig:fig9-4) is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig9-5)).
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-5.PNG" alt="Example participant database model using one table to track data across waves" width="100%" />
-<p class="caption">(\#fig:fig10-5)Example participant database model using one table to track data across waves</p>
+<img src="img/fig9-5.PNG" alt="Example participant database model using one table to track data across waves" width="100%" />
+<p class="caption">(\#fig:fig9-5)Example participant database model using one table to track data across waves</p>
 </div>
 
 While these examples are for a fairly simple scenario, you can hopefully see how you might extrapolate this model to more entities and more waves of data collection, as well as how you might modify it to better meet the needs of your specific project. 
@@ -223,7 +223,7 @@ There are many criteria to consider when choosing a tool to build your database 
 - Data quality protection
   - Can you set up data quality constraints (e.g., restrict input values/types)? 
   
-There are many tool options you can choose from. A sampling of those options are below. These tools represent a wide range from the criteria above. Take some time to review your options to see which one best meets your needs.
+There are many tool options you can choose from. A sampling of those options are below. These tools represent a wide range from the criteria in this section. Take some time to review your options to see which one best meets your needs.
 
   - Microsoft Access
   - Microsoft Excel
@@ -241,14 +241,14 @@ Your last consideration when building your database will be, how do you want you
 
 ### Entering data in a spreadsheet view
 
-Your first option is to manually enter data in a spreadsheet format for each participant in a row (see Figure \@ref(fig:fig10-6)). This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access.  There are both pros and cons to this method.
+Your first option is to manually enter data in a spreadsheet format for each participant in a row (see Figure \@ref(fig:fig9-6)). This would be the most common (or only) option when using tools such as Microsoft Excel or Google Sheets. However, you can also use this option when entering into other database tools such as Microsoft Access.  There are both pros and cons to this method.
 
 - Pros: This is the quickest and easiest method. It also allows you to view all the data holistically.
 - Cons: This method can lead to errors if someone enters data on the wrong row/record.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-6.PNG" alt="Example spreadsheet view data entry" width="100%" />
-<p class="caption">(\#fig:fig10-6)Example spreadsheet view data entry</p>
+<img src="img/fig9-6.PNG" alt="Example spreadsheet view data entry" width="100%" />
+<p class="caption">(\#fig:fig9-6)Example spreadsheet view data entry</p>
 </div>
 
 ### Entering data in a form
