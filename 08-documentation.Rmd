@@ -630,7 +630,7 @@ tibble::tribble (~"Element", ~"Description",
 
 Depending on the repository, at minimum, you will enter basic project-level metadata similar to what is shown in Table \@ref(tab:tab7-3). However, you may be required, or have the option, to enter more comprehensive information, such as project-level information covered in your research protocol (e.g., setting and sample, study procedures). You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_2023; @ldbase_information_2023]. All of the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 
-Once entered into the form, the repository typically converts entries into both human-readable and machine-readable, searchable formats such as XML (Extensible Markup Language) or JSON-LD (JavaScript Object Notation-Linked Data). We can see what this metadata looks like to humans once it is submitted. On the left of Figure \@ref(fig:fig7-20) is an example of how ICPSR displays metadata on a project page in the Child and Family Data Archive [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022]. On the right, notice we also have the option to download the metadata in one of four machine-readable formats, Dublin Core and DDI are exported as XML while DATS 2.2 and DCAT-US are exported as JSON. 
+Once entered into the form, the repository typically converts entries into both human-readable and machine-readable, searchable formats such as XML (Extensible Markup Language) or JSON-LD (JavaScript Object Notation-Linked Data). We can see what this metadata looks like to humans once it is submitted. On the left of Figure \@ref(fig:fig7-20) is an example of how ICPSR displays metadata on a project page in the Child and Family Data Archive [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2023]. On the right, notice we also have the option to download the metadata in one of four machine-readable formats, Dublin Core and DDI are exported as XML while DATS 2.2 and DCAT-US are exported as JSON. 
 
 ```{r fig7-20, fig.cap="Example metadata displayed on an ICPSR Child and Family Data Archive project"}
 
@@ -680,7 +680,7 @@ tibble::tribble (~"DC Element", ~"DDI Element", ~"Notes",
   
 ```
 
-We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from an ICPSR Child and Family Data Archive project [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2022] (Figure \@ref(fig:fig7-22)). You can start to see the differences and similarities across standards. 
+We can see what this metadata comparison actually looks like if we download the Dublin Core and the DDI 2.5 XML format metadata files from an ICPSR Child and Family Data Archive project [@united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2023] (Figure \@ref(fig:fig7-22)). You can start to see the differences and similarities across standards. 
 
 ```{r fig7-22, fig.cap="Comparing a Dublin Core metadata file and a DDI 2.5 metadata file from an ICPSR Child and Family Data Archive Project"}
 

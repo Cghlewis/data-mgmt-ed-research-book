@@ -68,6 +68,8 @@ When collecting identifiable data, there are laws, policies, departments, and ag
 
 2. IT department: Institutional information technology (IT) departments often vet data collection, transfer, and storage tools and are the authority on what tools are approved for research use. They may also be your source for determining classification levels for data security.
 
+3. Office of research or sponsored programs: Institutions often have an administrative body that serves as a signatory authority and can help negotiate terms and conditions for certain types of agreements.
+
 ### Agreements
 
 1. Informed consent/assent: Consent involves informing a participant of what data will be collected for your research study and how it will be handled and used, as well as obtaining a participant's voluntary agreement to participate in your study. If your study involves participants under the age of 18, you may also be required to obtain a participant assent form, in addition to a parent/guardian consent form.
@@ -88,8 +90,8 @@ Throughout the remaining chapters of this book we will review ways to keep ident
 1. In most situations it will be important to get consent to collect identifiers. Consult with your local IRB to determine what is required. See Section \@ref(collect-irb)
 1. Collect as few identifiers as possible. Only collect what is necessary. See Section \@ref(collect-design) for more information.
 1. Follow rules laid out in applicable laws, policies, and agreements when collecting, storing, and sharing data. This includes, but is not limited to, using approved tools for data collection, capture, and storage, assigning appropriate data access levels, and transmitting data using approved methods. See Chapters \@ref(collect), \@ref(capture), \@ref(store), and \@ref(store-long) for more information.
-1. Remove names in data and replace them with codes (i.e., unique study identifiers). See Chapter \@ref(track) for more information.
-1. Fully de-identify data before data sharing. See Chapter \@ref(clean) for more information.
-1. Use data sharing agreements and controlled-access as needed when publicly sharing data. See Chapter \@ref(share) for more information.
+1. Remove names in data and replace them with codes (i.e., unique study identifiers). See Section \@ref(track-ids) and Section \@ref(clean-steps) for more information.
+1. Fully de-identify data before publicly sharing data. See Chapter \@ref(share-risk) for more information.
+1. Use data sharing agreements and controlled-access as needed when publicly sharing data. See Section \@ref(share-able) for more information.
 
 

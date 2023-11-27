@@ -124,6 +124,7 @@ the-research-life-cycle
 structure
 basics-of-a-dataset
 structure-columns
+column-attributes
 rows
 cells
 structure-rules
@@ -286,7 +287,7 @@ processing-of-files
 share-combine
 file-formats
 assess-disclosure-risk
-mitigating-disclosure-risk
+share-risk
 final-review-of-disclosure-risk
 what-documentation-to-share
 file-formats-1
