@@ -100,6 +100,15 @@ fig:fig15-2
 fig:fig15-3
 fig:fig15-4
 fig:fig16-1
+intro
+why-this-book
+lack-of-training-resources-and-standards
+consequences
+about-this-book
+what-this-book-will-cover
+what-this-book-will-not-cover
+who-this-book-is-for
+final-note
 rdm
 what-is-research-data-management
 data-management-standards

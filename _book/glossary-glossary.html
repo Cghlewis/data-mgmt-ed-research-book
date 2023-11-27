@@ -67,23 +67,24 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="intro.html"><span class="header-section-number">1</span> Introduction</a></li>
 <li><a class="" href="rdm.html"><span class="header-section-number">2</span> Research Data Management Overview</a></li>
-<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Structure</a></li>
+<li><a class="" href="structure.html"><span class="header-section-number">3</span> Data Organization</a></li>
 <li><a class="" href="hsd.html"><span class="header-section-number">4</span> Human Subjects Data</a></li>
 <li><a class="" href="dmp.html"><span class="header-section-number">5</span> Data Management Plan</a></li>
 <li><a class="" href="plan.html"><span class="header-section-number">6</span> Planning Data Management</a></li>
 <li><a class="" href="roles.html"><span class="header-section-number">7</span> Project Roles and Responsibilities</a></li>
 <li><a class="" href="document.html"><span class="header-section-number">8</span> Documentation</a></li>
-<li><a class="" href="style.html"><span class="header-section-number">9</span> Style guide</a></li>
+<li><a class="" href="style.html"><span class="header-section-number">9</span> Style Guide</a></li>
 <li><a class="" href="track.html"><span class="header-section-number">10</span> Data Tracking</a></li>
 <li><a class="" href="collect.html"><span class="header-section-number">11</span> Data Collection</a></li>
 <li><a class="" href="capture.html"><span class="header-section-number">12</span> Data Capture</a></li>
 <li><a class="" href="store.html"><span class="header-section-number">13</span> Data Storage and Security</a></li>
 <li><a class="" href="clean.html"><span class="header-section-number">14</span> Data Cleaning</a></li>
-<li><a class="" href="share.html"><span class="header-section-number">15</span> Data Sharing</a></li>
-<li><a class="" href="wrapping-it-up-1.html"><span class="header-section-number">16</span> Wrapping It Up</a></li>
-<li><a class="" href="call-to-action.html"><span class="header-section-number">17</span> Call to Action</a></li>
+<li><a class="" href="store-long.html"><span class="header-section-number">15</span> Data Archiving</a></li>
+<li><a class="" href="share.html"><span class="header-section-number">16</span> Data Sharing</a></li>
+<li><a class="" href="additional-considerations.html"><span class="header-section-number">17</span> Additional Considerations</a></li>
 <li><a class="active" href="glossary-glossary.html">Glossary {#glossary}</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
@@ -121,7 +122,7 @@
 </tr>
 <tr class="odd">
 <td align="left">Append</td>
-<td align="left">NA</td>
+<td align="left">vertical join, join columns</td>
 <td align="left">Stacking datasets on top of each other (matching variables).</td>
 </tr>
 <tr class="even">
@@ -157,7 +158,7 @@
 <tr class="even">
 <td align="left">Confidentiality</td>
 <td align="left">NA</td>
-<td align="left">Confidentiality concerns data, ensuring participants agree to how their private and identifable information will be managed and disseminated.</td>
+<td align="left">Confidentiality concerns data, ensuring participants agree to how their private and identifiable information will be managed and disseminated.</td>
 </tr>
 <tr class="odd">
 <td align="left">Control</td>
@@ -175,6 +176,16 @@
 <td align="left">The recorded factual material commonly accepted in the scientific community as necessary to validate research findings. (OMB Circular A-110)</td>
 </tr>
 <tr class="even">
+<td align="left">Data repository</td>
+<td align="left">data archive</td>
+<td align="left">A storage location for researchers to deposit data and supporting materials associated with their research.</td>
+</tr>
+<tr class="odd">
+<td align="left">Data structure</td>
+<td align="left">NA</td>
+<td align="left">A way of organizing data to allow for more efficient processing and storage. In particular, repeated measures data can be structured in either long or wide format.</td>
+</tr>
+<tr class="even">
 <td align="left">Data type</td>
 <td align="left">measurement unit, variable format, variable class</td>
 <td align="left">A classification that specifies what types of values are contained in a variable and what kinds of operations can be performed on that variable. Examples of types include numeric, character, logical, or datetime.</td>
@@ -185,29 +196,39 @@
 <td align="left">An organized collection of related data stored in tables that can be linked together by a common identifier.</td>
 </tr>
 <tr class="even">
-<td align="left">Dataset</td>
-<td align="left">data set, dataframe, spreadsheet, rectangular data, tabular data</td>
-<td align="left">A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (e.g., teacher dataset, student dataset).</td>
+<td align="left">Database design</td>
+<td align="left">database schema, data modeling</td>
+<td align="left">A collection of decisions regarding how tables, or datasets, will be organized and related to one another</td>
 </tr>
 <tr class="odd">
+<td align="left">Dataset</td>
+<td align="left">data set, dataframe, spreadsheet, rectangular data, tabular data, table</td>
+<td align="left">A structured collection of data usually stored in tabular form. A research study usually produces one final dataset per entity/unit (e.g., teacher dataset, student dataset).</td>
+</tr>
+<tr class="even">
 <td align="left">De-identified data</td>
 <td align="left">anonymized data</td>
 <td align="left">Identifying information has been removed or distorted and the data can no longer be re-associated with the underlying individual (the linking key no longer exists).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Derived data</td>
-<td align="left">NA</td>
+<td align="left">calculated values</td>
 <td align="left">Data created through transformations of existing data (e.g., mean scores).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Direct identifiers</td>
 <td align="left">NA</td>
 <td align="left">These variables are unique to an individual and can be used to directly identify a participant (e.g., name, email address).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Directory</td>
 <td align="left">file structure, file tree</td>
 <td align="left">A cataloging structure for files and folders on your computer.</td>
+</tr>
+<tr class="even">
+<td align="left">Disclosure risk</td>
+<td align="left">NA</td>
+<td align="left">The risk of re-identifying a participant and the harm that may come from that disclosure.</td>
 </tr>
 <tr class="odd">
 <td align="left">Experimental data</td>
@@ -216,7 +237,7 @@
 </tr>
 <tr class="even">
 <td align="left">Extant data</td>
-<td align="left">secondary data, administrative data</td>
+<td align="left">secondary data, administrative data, third-party data</td>
 <td align="left">Existing data generated/collected by external organizations at an earlier point in time (e.g., school records).</td>
 </tr>
 <tr class="odd">
@@ -227,162 +248,172 @@
 <tr class="even">
 <td align="left">File formats</td>
 <td align="left">NA</td>
-<td align="left">Education research data is typically collected in one of three file formats: text( .txt, .pdf, .docx), tabular (.xlsx, .csv, .sav) , multimedia (.mpeg, .wav).</td>
+<td align="left">A way that information is encoded for storage on a computer. There are both proprietary (e.g., SPSS, XLSX) and non-proprietary formats (e.g., CSV, TXT).</td>
 </tr>
 <tr class="odd">
+<td align="left">Foreign key</td>
+<td align="left">NA</td>
+<td align="left">One or more variables associated with unique values in another table</td>
+</tr>
+<tr class="even">
 <td align="left">Human subject</td>
 <td align="left">NA</td>
 <td align="left">The Common Rule (45 CFR 46) definition of a human subject is a living individual about whom an investigator conducting research obtains; 1) Data through intervention or interaction with the individual, or 2) identifiable private information.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">HIPAA</td>
 <td align="left">NA</td>
 <td align="left">The Health Insurance Portability and Accountability Act is a federal law covering the protection of sensitive health information.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Identifiable data</td>
 <td align="left">NA</td>
 <td align="left">Data that includes personally identifiable information.</td>
 </tr>
-<tr class="even">
-<td align="left">Indirect identifiers</td>
-<td align="left">NA</td>
-<td align="left">These variables do not alone identify a particular individual (e.g., ethnicity, gender), but if combined with other information or if category numbers are small, they could be used to identify a participant</td>
-</tr>
 <tr class="odd">
+<td align="left">Indirect identifiers</td>
+<td align="left">quasi-identifiers</td>
+<td align="left">These variables do not alone identify a particular individual (e.g., ethnicity, gender), but if combined with other information, they could be used to identify a participant</td>
+</tr>
+<tr class="even">
 <td align="left">Instrument</td>
 <td align="left">NA</td>
 <td align="left">A mechanism designed to collect original data (e.g., observation form, questionnaire, assessment)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Limited data set</td>
 <td align="left">NA</td>
-<td align="left">Under the HIPAA Privacy Rule, a limited datasest is one in which 16 of the 18 HIPAA protected identifiers have been removed. Age, dates, and city/state/zipcode can remain. A limited dataset may be disclosed to external parties without authorization for specified purposes and often a data use agreement is required. This dataset is not considered de-identified and must be safeguarded against unauthorized access.</td>
-</tr>
-<tr class="odd">
-<td align="left">Longitudinal</td>
-<td align="left">NA</td>
-<td align="left">Data is collected on participants over a period of time.</td>
+<td align="left">Under the HIPAA Privacy Rule, a limited datasest is one in which 16 of the 18 HIPAA protected identifiers have been removed. Age, dates, and city/state/ZIP Code can remain. A limited dataset may be disclosed to external parties without authorization for specified purposes and often a data use agreement is required. This dataset is not considered de-identified and must be safeguarded against unauthorized access.</td>
 </tr>
 <tr class="even">
+<td align="left">Longitudinal data</td>
+<td align="left">repeated measures</td>
+<td align="left">The same information is collected from the same subjects at multiple time points.</td>
+</tr>
+<tr class="odd">
 <td align="left">Measure</td>
 <td align="left">NA</td>
 <td align="left">In this book, I use the term measure broadly to refer to a collection of items used to measure an outcome (e.g., an existing scale, an existing academic assessment).</td>
 </tr>
-<tr class="odd">
-<td align="left">Merge</td>
-<td align="left">join, link</td>
-<td align="left">Combining datasets together in a side by side manner (matching on one or more unique identifiers).</td>
-</tr>
 <tr class="even">
+<td align="left">Merge</td>
+<td align="left">horizontal join, join rows, link</td>
+<td align="left">Combining datasets together in a side-by-side manner (matching on one or more unique identifiers).</td>
+</tr>
+<tr class="odd">
 <td align="left">Missing data</td>
 <td align="left">NA</td>
 <td align="left">Occurs when there is no data stored in a variable for a particular observation/respondent.</td>
 </tr>
+<tr class="even">
+<td align="left">Normalize</td>
+<td align="left">NA</td>
+<td align="left">In this book, the term normalize is used to refer to returning a value to its normal, or expected state</td>
+</tr>
 <tr class="odd">
 <td align="left">Observational data</td>
 <td align="left">NA</td>
-<td align="left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention. This includes many formats that education researchers collect data with (e.g., survey, observation, assessment).</td>
+<td align="left">Data collected from a study where researchers are observing the effect of an intervention without manipulating who is exposed to the intervention.</td>
 </tr>
 <tr class="even">
+<td align="left">Original data</td>
+<td align="left">primary data</td>
+<td align="left">First hand data that is generated/collected by the research team as part of the research study.</td>
+</tr>
+<tr class="odd">
 <td align="left">Participant database</td>
 <td align="left">study roster, master list, master key, linking key, tracking database</td>
 <td align="left">This database, or spreadsheet, includes any identifiable information on your participants as well as their assigned study ID. It is your only own means of linking your confidential research study data to a participant’s true identity. It is also used to track data collected across time and measures as well as participant attrition.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Path</td>
 <td align="left">file path</td>
 <td align="left">A string of characters used to locate files in your directory system.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Personally identifiable information</td>
 <td align="left">PII, personal data</td>
 <td align="left">This includes direct identifiers (e.g., name and email), as well as indirect identifiers that, if combined with other variables or if in small enough numbers, could identify a participant (e.g., full birthdate and place of birth).</td>
 </tr>
-<tr class="odd">
-<td align="left">Primary data</td>
-<td align="left">original data</td>
-<td align="left">First hand data that is generated/collected by the research team as part of the research study.</td>
-</tr>
 <tr class="even">
+<td align="left">Primary key</td>
+<td align="left">NA</td>
+<td align="left">One or more variables that uniquely define rows in your data</td>
+</tr>
+<tr class="odd">
 <td align="left">Privacy</td>
 <td align="left">NA</td>
 <td align="left">Privacy concerns people, ensuring they are given control to the access of themselves and their information.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Private data</td>
 <td align="left">NA</td>
 <td align="left">Highly restricted and typically not publicly shared, or is shared with limited access (i.e., passwords, illegal behaviors, medical records, financial information).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Protected health information</td>
 <td align="left">PHI</td>
 <td align="left">The HIPAA Privacy Rule provides protections for 18 identifiers held by covered entities providing health care services.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Qualitative data</td>
 <td align="left">NA</td>
 <td align="left">Non-numeric data typically made up of text, images, video, or other artifacts.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Quantitative data</td>
 <td align="left">NA</td>
 <td align="left">Numerical data that can be analyzed with statistical methods.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Randomized controlled trial</td>
 <td align="left">RCT</td>
 <td align="left">A study design that randomly assigns participants to a control or treatment condition. In education research you often hear about two types of RCTs. The first being the Individual-Level Randomized Controlled Trial (I-RCT) in which individuals (such as students) are randomized directly to the treatment or control group. The second is a Cluster Randomized Controlled Trial (C-RCT), sometimes also called group-randomized, in which clusters of students (such as classrooms) are randomized.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Raw data</td>
 <td align="left">primary, untouched</td>
 <td align="left">Unprocessed data collected directly from a source.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Replicable</td>
 <td align="left">NA</td>
 <td align="left">Being able to produce the same results if the same procedures are used with different materials.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Reproducible</td>
 <td align="left">NA</td>
 <td align="left">Being able to produce the same results using the same materials and procedures.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Research</td>
 <td align="left">NA</td>
 <td align="left">The Common Rule (45 CFR 46) definition of research is a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Restricted-use data</td>
 <td align="left">non-public data</td>
 <td align="left">A dataset that cannot be publicly released due to containing sensitive information or a combination of variables that could enable identification. These data require controlled access conditions and may be shared through data use agreements or other application processes.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Safe harbor method</td>
 <td align="left">NA</td>
 <td align="left">Under the HIPAA Privacy Rule, there are two methods of de-identification. The Safe Harbor method allows covered entities to treat data as de-identified if all 18 PHI variables are removed.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Sensitive data</td>
 <td align="left">protected data</td>
 <td align="left">An umbrella term that encompasses proprietary, ethical, contractual, or private information that should be protected from unwarranted disclosure. There are varying levels of data sensitivity.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Scale</td>
 <td align="left">NA</td>
 <td align="left">Similar to the term “measure”, this is a collection of items used to measure an outcome. However, I typically use this term to more specifically refer to questionnaires that have had psychometric properties assessed. Scales may also be made up of subscales (i.e., groupings of items).</td>
 </tr>
-<tr class="even">
-<td align="left">Simulation data</td>
-<td align="left">NA</td>
-<td align="left">Data generated through imitations of a real-world process using computer models.</td>
-</tr>
 <tr class="odd">
-<td align="left">Standardization</td>
+<td align="left">Standardize</td>
 <td align="left">NA</td>
-<td align="left">Developing a set of agreed upon technical standards and applying them within and across all research projects.</td>
+<td align="left">Developing and implementing a set of consistent procedures</td>
 </tr>
 <tr class="even">
 <td align="left">Study</td>
@@ -401,17 +432,17 @@
 </tr>
 <tr class="odd">
 <td align="left">Tool</td>
-<td align="left">NA</td>
+<td align="left">platform</td>
 <td align="left">A means used to collect data using an instrument (e.g., a paper form, an online survey platform)</td>
 </tr>
 <tr class="even">
 <td align="left">Treatment</td>
-<td align="left">experiment</td>
+<td align="left">NA</td>
 <td align="left">The individual or group receives the intervention.</td>
 </tr>
 <tr class="odd">
 <td align="left">Unique participant identifier</td>
-<td align="left">study ID, site ID, unique identifier (UID), subject ID, participant code, record id</td>
+<td align="left">study ID, site ID, unique identifier (UID), subject ID, participant code, record ID</td>
 <td align="left">This is a numeric or alphanumeric identifier that is unique to every participant or site in order to create confidential and de-identified data. These identifiers allow researchers to link data across time or measure.</td>
 </tr>
 <tr class="even">
@@ -433,7 +464,7 @@
 </table></div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="call-to-action.html"><span class="header-section-number">17</span> Call to Action</a></div>
+<div class="prev"><a href="additional-considerations.html"><span class="header-section-number">17</span> Additional Considerations</a></div>
 <div class="next"><a href="references.html">References</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -441,8 +472,8 @@
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/blob/master/17-glossary.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/edit/master/17-glossary.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/blob/master/18-glossary.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/Cghlewis/data-mgmt-ed-research-book/edit/master/18-glossary.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -454,7 +485,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-08-30.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-11-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
