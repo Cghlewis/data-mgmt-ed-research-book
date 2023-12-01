@@ -144,5 +144,5 @@ It can be difficult to estimate the costs of everything that is associated with 
 |National Institutes of Mental Health Data Archive | NDA Data Submission Cost Estimation Tool^[https://s3.amazonaws.com/nda.nih.gov/Documents/NDA_Data_Submission_Cost_Estimation_Tool.xlsx]|
 |UK Data Service | Data management costing tool and checklist ^[https://ukdataservice.ac.uk//app/uploads/costingtool.pdf]|
 |University of Twente | Estimating RDM costs review list ^[https://www.utwente.nl/en/service-portal/services/lisa/resources/files/library-public/dcc-rdm-costs-estimation.pdf]|
-|Utrecht University| Estimating the costs of data management review list ^[https://www.utwente.nl/en/service-portal/services/lisa/resources/files/library-public/dcc-rdm-costs-estimation.pdf]|
+|Utrecht University| Estimating the costs of data management review list ^[https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management]|
 
