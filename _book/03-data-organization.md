@@ -1,6 +1,6 @@
 # Data Organization {#structure}
 
-Before jumping into the project life cycle, we need to have a basic understanding of what data looks like. Understanding the basics of data organization helps us to make informed decisions throughout the data life cycle that will result in clear, analyzable information.
+Before jumping into the project life cycle, we need to have a basic understanding of what data looks like. Understanding the basics of data organization helps us to make informed decisions throughout the research life cycle that will result in clear, analyzable information.
 
 ## Basics of a dataset
 
@@ -111,7 +111,8 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 </div>
 
 6. All variables should be explicit (Figure \@ref(fig:fig3-8)). No variables should be implied using color coding.
-    - If you want to indicate information, add an indicator variable to do this rather than cell coloring.    
+    - If you want to indicate information, add an indicator variable to do this rather than cell coloring.   
+
 <div class="figure" style="text-align: center">
 <img src="img/fig3-8.PNG" alt="A comparison of information being indicated through cell color and information being provided in an indicator variable" width="100%" />
 <p class="caption">(\#fig:fig3-8)A comparison of information being indicated through cell color and information being provided in an indicator variable</p>
@@ -180,7 +181,7 @@ Let's take a simple example where we collected a survey from two different sites
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Placeholder blog post ^[]|
+|Crystal Lewis | Placeholder blog post ^[placeholder]|
 |Data Carpentry | A review of different types of horizontal joins ^[https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html]|
 |David E. Caughlin| A review of horizontal and vertical joins ^[https://rforhr.com/join.html]|
 

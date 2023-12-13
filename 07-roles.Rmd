@@ -97,6 +97,6 @@ knitr::include_graphics("img/fig7-4.PNG")
 Last, any additional information can be added to these documents to help clarify responsibilities, such as:
 
 - Links to related standard operating procedures (e.g., for building a participant tracking database you may link to the specific SOP that lays out steps for building the tool).
-- Names of other staff members (if any) that assist with or also contribute to each responsibility
+- Names of other staff members (if any) that assist with or also contribute to each responsibility.
 - Timing of each responsibility (e.g., weekly, ongoing, the month of February).
 - Name of team members who will take on responsibilities in case of a team member's absence.

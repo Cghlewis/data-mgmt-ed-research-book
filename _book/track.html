@@ -321,11 +321,11 @@ Figure 10.4: Participant database built using a non-relational model with duplic
 <li>What fields do you want to include in each table?</li>
 <li>If using a relational database, what fields will you use to relate tables?</li>
 </ol>
-<p>Once you make decisions regarding these questions, you can begin to design your database. It can be helpful to visualize your database schema during this process. In Figure <a href="track.html#fig:fig10-5">10.5</a> I am designing a database schema for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.</p>
+<p>Once you make decisions regarding these questions, you can begin to design your database. It can be helpful to visualize your database schema during this process. In Figure <a href="track.html#fig:fig10-5">10.5</a> I am designing a relational database schema for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-5"></span>
-<img src="img/fig10-5.PNG" alt="Example participant database model using two separate tables for tracking across waves" width="80%"><p class="caption">
-Figure 10.5: Example participant database model using two separate tables for tracking across waves
+<img src="img/fig10-5.PNG" alt="Example participant database relational model using two separate tables for tracking across waves" width="80%"><p class="caption">
+Figure 10.5: Example participant database relational model using two separate tables for tracking across waves
 </p>
 </div>
 <p>I have designed this database model in this way:</p>
@@ -350,8 +350,8 @@ Figure 10.5: Example participant database model using two separate tables for tr
 <p>The model in Figure <a href="track.html#fig:fig10-5">10.5</a> is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated (or compound) primary key that uses both <code>tch_id</code> and <code>wave</code> to uniquely identify rows since <code>tch_id</code> would now be duplicated for each wave of data collection (see Figure <a href="track.html#fig:fig10-6">10.6</a>).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-6"></span>
-<img src="img/fig10-6.PNG" alt="Example participant database model using one table to track data across waves" width="80%"><p class="caption">
-Figure 10.6: Example participant database model using one table to track data across waves
+<img src="img/fig10-6.PNG" alt="Example participant database relational model using one table to track data across waves" width="80%"><p class="caption">
+Figure 10.6: Example participant database relational model using one table to track data across waves
 </p>
 </div>
 <p>If we entered some data into the Teacher Wave Data table in Figure <a href="track.html#fig:fig10-6">10.6</a>, it might look something like Figure <a href="track.html#fig:fig10-7">10.7</a>. We can see that <code>tch_id</code> repeats but the rows are unique when combined with <code>wave</code>.</p>

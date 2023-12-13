@@ -76,5 +76,4 @@ For summary purposes, this appendix provides a high-level overview of some of th
   
 **Sharing** (Chapter \@ref(share))
 
-- Share data and documentation in an open repository for public access.
-  - Use controlled access as needed.
+- Share data and documentation in an open repository, using controlled access as needed.

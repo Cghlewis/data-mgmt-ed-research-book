@@ -139,11 +139,11 @@ Before you can begin to design your database, you will need to think through the
 3. What fields do you want to include in each table?
 4. If using a relational database, what fields will you use to relate tables?
 
-Once you make decisions regarding these questions, you can begin to design your database. It can be helpful to visualize your database schema during this process. In Figure \@ref(fig:fig10-5) I am designing a database schema for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
+Once you make decisions regarding these questions, you can begin to design your database. It can be helpful to visualize your database schema during this process. In Figure \@ref(fig:fig10-5) I am designing a relational database schema for a scenario where I will only be collecting information from teachers and schools, over two waves of data collection.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-5.PNG" alt="Example participant database model using two separate tables for tracking across waves" width="80%" />
-<p class="caption">(\#fig:fig10-5)Example participant database model using two separate tables for tracking across waves</p>
+<img src="img/fig10-5.PNG" alt="Example participant database relational model using two separate tables for tracking across waves" width="80%" />
+<p class="caption">(\#fig:fig10-5)Example participant database relational model using two separate tables for tracking across waves</p>
 </div>
 
 I have designed this database model in this way:
@@ -159,8 +159,8 @@ I have designed this database model in this way:
 The model in Figure \@ref(fig:fig10-5) is absolutely not the only way you can design your tables. There may be more efficient or more appropriate ways to design this database, but again as long as you are not duplicating information, build what works for you. As an example of a potentially more efficient way to structure this database, I could combine all waves of data collection into one table and create a concatenated (or compound) primary key that uses both `tch_id` and `wave` to uniquely identify rows since `tch_id` would now be duplicated for each wave of data collection (see Figure \@ref(fig:fig10-6)).
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-6.PNG" alt="Example participant database model using one table to track data across waves" width="80%" />
-<p class="caption">(\#fig:fig10-6)Example participant database model using one table to track data across waves</p>
+<img src="img/fig10-6.PNG" alt="Example participant database relational model using one table to track data across waves" width="80%" />
+<p class="caption">(\#fig:fig10-6)Example participant database relational model using one table to track data across waves</p>
 </div>
 
 If we entered some data into the Teacher Wave Data table in Figure \@ref(fig:fig10-6), it might look something like Figure \@ref(fig:fig10-7). We can see that `tch_id` repeats but the rows are unique when combined with `wave`.
