@@ -33,16 +33,16 @@ Along with your existing data management plan and other grant application materi
 
 **Planning checklists**
 
-- Roles and Responsibilities ^[https://osf.io/ghtc6]
-- Task Management ^[https://osf.io/8x3s4]
-- Documentation ^[https://osf.io/bckh8]
-- Data Collection ^[https://osf.io/ckwtr]
-- Data Tracking ^[https://osf.io/ahz4f]
-- Data Capture ^[https://osf.io/pc8nt]
-- Data Storage and Security ^[https://osf.io/y3z9s]
-- Data Cleaning ^[https://osf.io/7t4rg]
-- Data Archiving ^[https://osf.io/u4exh]
-- Data Sharing ^[https://osf.io/jkgwz]
+- Roles and Responsibilities ([https://osf.io/ghtc6](https://osf.io/ghtc6))
+- Task Management ([https://osf.io/8x3s4](https://osf.io/8x3s4)
+- Documentation ([https://osf.io/bckh8](https://osf.io/bckh8))
+- Data Collection ([https://osf.io/ckwtr](https://osf.io/ckwtr))
+- Data Tracking ([https://osf.io/ahz4f](https://osf.io/ahz4f))
+- Data Capture ([https://osf.io/pc8nt](https://osf.io/pc8nt))
+- Data Storage and Security ([https://osf.io/y3z9s](https://osf.io/y3z9s))
+- Data Cleaning ([https://osf.io/7t4rg](https://osf.io/7t4rg))
+- Data Archiving ([https://osf.io/u4exh](https://osf.io/u4exh))
+- Data Sharing ([https://osf.io/jkgwz](https://osf.io/jkgwz))
 
 > **Note** <br> <br>
 If this is your first time working through this book, these checklists are a great way to summarize content from each chapter. As you learn best practices for a phase, pull up the checklist specific to that chapter to begin thinking through which practices are feasible for your specific project. 

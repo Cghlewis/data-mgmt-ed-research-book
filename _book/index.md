@@ -1,7 +1,7 @@
 ---
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-12-12"
+date: "2023-12-13"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -54,12 +54,12 @@ With that said, there is a long list of people I would like to acknowledge for t
 
 There were many people who graciously allowed me to interview them about their current data management practices. They are Mary McCraken, Ryan Estrellado, Kim Manturuk, Beth Chance, Jessica Logan, Rebecca Schmidt, Sara Hart, and Kerry Shea. These interviews were integral to supplementing my personal knowledge with the broader experience of others in the field. Yet, they affirmed that yes, data management is hard, especially in the context of some of the complicated study designs we work with in education research, and that everyone who works in this field wishes that better training, support systems, and standards existed. Thank you to everyone who gave me an hour of their time to share their experiences and knowledge! I also have to give a special thank you to Jessica Logan for being the first person I met who appreciates all things data management as much as I do, and since having our interview, has provided invaluable support while working on this book.
 
-I also want to thank everyone who took the time to read and provide feedback on chapters of this book for me. This includes Meghan Harris, Alexis Swanz, Allyson Hanson, Rohan Alexander, Peter Higgins, Emily Riederer, Priyanka Gagneja, Jennifer Huck, Danielle Pico, Kristin Briney, Hope Lancaster, Gizem Solmaz-Ratzlaff, Crystal Steltenpohl, Leigh McLean, Jessica Logan, Chris Schatschneider, Tara Reynolds, Kerry Shea, Joscelin Rocha-Hidalgo, John Muschelli, and Sara Hart. Your revisions and insight helped make this a more cohesive and useful book!
+Thank you to David Grubbs and Curtis Hill at CRC Press for supporting me through the publishing process. Also, thank you to everyone who took the time to read and provide feedback on chapters of this book for me. This includes Meghan Harris, Alexis Swanz, Allyson Hanson, Rohan Alexander, Peter Higgins, Emily Riederer, Priyanka Gagneja, Jennifer Huck, Danielle Pico, Kristin Briney, Hope Lancaster, Gizem Solmaz-Ratzlaff, Crystal Steltenpohl, Leigh McLean, Jessica Logan, Chris Schatschneider, Tara Reynolds, Kerry Shea, Joscelin Rocha-Hidalgo, John Muschelli, and Sara Hart. Your revisions and insight helped make this a more cohesive and useful book! 
 
 A special thank you to Keith Herman as well. Many years ago he suggested I write a book titled Data Management in Large-Scale Education Research, which seemed unimaginable to me to me at the time. Thank you to Keith for believing I could do something I didn't even know was possible.
 
 Much appreciation to Wendy Reinke as well. Joining a project where she had already created documentation and tracking systems was my first glimpse into building tools that help you manage data, and my love of research data management grew out of this experience.
 
-I want to say thank you to the POWER Data Management Issues in Education Research Hub. Regularly meeting with this group of data managers, researchers, students, and professors over the last two years has been an amazing source of both support and learning and has greatly increased my understanding of data management.
+I want to say thank you to the POWER Issues in Data Management in Education Research Hub. Regularly meeting with this group of data managers, researchers, students, and professors over the last two years has been an amazing source of both support and learning and has greatly increased my understanding of data management.
 
 Last, thank you to Josh for fully supporting me in the decision to write this book and to Fox for being the reason I remember to step away from my computer from time to time and have fun.
