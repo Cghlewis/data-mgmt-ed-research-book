@@ -172,7 +172,7 @@ However, as covered in Chapter \@ref(clean), it can be beneficial to also share 
 
 Most importantly though, if sharing in a repository, check to see if there are any data format requirements. ICPSR, for example, encourages submission of files with embedded metadata, such as SPSS, Stata, or SAS files [@icpsr_start_2023]. They then use these files and curate them into ASCII data with setup files to accompany statistical programs. As another example, the National Archive of Criminal Justice Data used by the National Institute of Justice (NIJ), prefers SPSS formats for quantitative data, but will also accept Stata or SAS files [@national_archive_of_criminal_justice_data_guidelines_2023].
 
-#### Assess disclosure risk
+#### Assess disclosure risk {#share-assess}
 
 Before publicly sharing study data, it is imperative that you conduct a disclosure risk assessment. In conducting this assessment, review variables that could potentially identify a participant, either directly or indirectly, and also review sensitive variables that have the potential to cause harm to participants if their identity is disclosed.
 

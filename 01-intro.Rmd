@@ -6,7 +6,7 @@ In 2013, without knowing that the term research data management existed, I accep
 
 In my time in that position, I learned to plan, schedule, and track data collection activities, create data collection and capture tools, organize and document data inputs, and produce usable data outputs. Yet I didn't learn to do those things through any formal training. There were no books, courses, or workshops that I learned from. I learned from colleagues and a large amount of trial and error. Since then, as I have met more investigators, data managers, and project coordinators in education research, I realize this is a common method for learning data management---mentoring and "winging it". And while learning data management through these informal methods helps us get by, the ramifications of this unstandardized system are felt by both the project team and future data users.
 
-## Why this book
+## Why this book?
 
 Research data management is becoming more complicated. We are collecting more data, in sometimes very novel ways, and using more complex technologies, all while increasing the visibility of our work with the push for data sharing and open science practices [@briney_data_2015; @nelson_ostp_2022]. Ad hoc data management practices may have worked for us in the past, but now others need to understand our processes as well, requiring researchers to be more thoughtful in planning their data management routines.
 

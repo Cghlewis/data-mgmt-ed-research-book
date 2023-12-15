@@ -22,7 +22,7 @@ When planning a storage and security process, for data files in particular, it i
     - In terms of electronic data, institutions have different licenses or partnerships with varying software companies and they may approve and not approve different tools (e.g., Dropbox, SharePoint, Box, Google Drive).
 
 3. Consider compliance.
-    - Make note of any data storage laws, policies, or agreements that your data is subject too (e.g., IRB policies, data sharing agreements, funder policies).
+    - Make note of any data storage laws, policies, or agreements that your data is subject to (e.g., IRB policies, data sharing agreements, funder policies).
 
 4. Review classification levels.
     - Review each data source's classification level (see \@ref(hsd-dcl)) to ensure that you are choosing storage solutions that are appropriate for the sensitivity level your data.

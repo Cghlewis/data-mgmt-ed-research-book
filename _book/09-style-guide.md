@@ -303,7 +303,7 @@ This style guide will be a necessary document to have before you start to create
   - If a variable is a part of a scale, consider using an abbreviation of that scale plus the scale item number (`anx1`, `anx2`, `anx3`).
     - Not only does this allow you to easily associate an item with a scale, but it also allows you to programmatically select and manipulate scale items (for example, sum all items that start with "anx").
 - If you have used an item before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects. It also allows you to easily reuse code snippets across projects (e.g., for scoring a measure).  
-- Choose standard abbreviations to denote the types of variable you are working with (standard score = `ss`). Using controlled vocabularies improves interpretation and makes data exploration and manipulation easier [@riederer_column_2020].
+- Choose standard abbreviations to denote the types of variables you are working with (standard score = `ss`). Using controlled vocabularies improves interpretation and makes data exploration and manipulation easier [@riederer_column_2020].
 - Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
   - Snake case (scale_sum) – preferred method for variable names
     - While pascal case and camel case are also options, the use of underscores helps more clearly delineate relevant pieces of metadata in your variable names.

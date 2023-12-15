@@ -88,7 +88,7 @@ Throughout the remaining chapters of this book, we will review ways to keep iden
 1. Collect as few identifiers as possible. Only collect what is necessary. See Section \@ref(collect-design) for more information.
 1. Follow rules laid out in applicable laws, policies, and agreements when collecting, storing, and sharing data. This includes, but is not limited to, using approved tools for data collection, capture, and storage, assigning appropriate data access levels, and transmitting data using approved methods. See Chapters \@ref(collect), \@ref(capture), \@ref(store), and \@ref(store-long) for more information.
 1. Remove names in data and replace them with codes (i.e., unique study identifiers). See Section \@ref(track-ids) and Section \@ref(clean-steps) for more information.
-1. Fully de-identify data before publicly sharing it. See Section \@ref(share-risk) for more information.
+1. Fully de-identify data before publicly sharing it. See Section \@ref(share-assess) for more information.
 1. Use data sharing agreements and controlled access as needed when publicly sharing data. See Section \@ref(share-able) for more information.
 
 

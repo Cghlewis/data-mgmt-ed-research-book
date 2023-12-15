@@ -295,7 +295,7 @@ what-data-to-share
 processing-of-files
 share-combine
 file-formats
-assess-disclosure-risk
+share-assess
 share-risk
 sharing-controlled-access-data
 what-documentation-to-share

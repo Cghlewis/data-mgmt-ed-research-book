@@ -40,6 +40,10 @@ link-citations: yes
 >
 > **Lexi Swanz**, Vanderbilt University
 
+> Crystal Lewis has translated years of experience in applied research into a practical and indispensable guide to all aspects of data management across the educational research cycle. This book provides everything you need to perfect your data management practices and engage in research that is consistent with open science principles and the ever evolving demands of grant funding agencies.
+>
+> **Dan Cohen**, SRI International
+
 ## Book key features {-}
 
 This book includes the following key features:

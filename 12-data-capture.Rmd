@@ -82,18 +82,19 @@ Here is an example of data capture steps you might add to a student survey data 
 
 ```
 [Project Coordinator Name]
+
 1. Download a CSV file with the following options selected
-  - Use numeric values
-  - Recode seen but unanswered questions as -99
-  - Split multi-response fields into columns
+    - Use numeric values
+    - Recode seen but unanswered questions as -99
+    - Split multi-response fields into columns
 2. Save the file in wave# -> student -> survey -> raw
-  - Name the file "pn_w#_stu_svy_raw_YYYY-MM-DD.csv"
+    - Name the file "pn_w#_stu_svy_raw_YYYY-MM-DD.csv"
 3. Add a README to the folder as needed to describe any known issues with the data
-  - Add a changelog as needed when new datasets are downloaded
+    - Add a changelog as needed when new datasets are downloaded
 4. Open and review the file
-  - Compare the variables in the file to the data dictionary to ensure the file looks as expected
-  - Compare the number of rows in the file to the number of surveys tracked as complete in the participant tracking database
-    - If the numbers do not align, correct errors (or note them in a README) and redownload the survey as needed.
+    - Compare the variables in the file to the data dictionary to ensure the file looks as expected
+    - Compare the number of rows in the file to the number of surveys tracked as complete in the participant tracking database
+      - If the numbers do not align, correct errors (or note them in a README) and redownload the survey as needed.
 5. Notify the data manager that the data is ready for cleaning.
 
 ```

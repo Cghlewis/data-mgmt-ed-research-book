@@ -6,7 +6,7 @@ knitr::include_graphics("img/fig6-1.PNG")
 
 ```
 
-Planning data management is distinct from the 2-5 page data management plan (DMP) discussed in the Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (e.g., how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites). Team members such as investigators, project coordinators, and data managers, may be assisting in both planning processes.
+Planning data management is distinct from the 2--5 page data management plan (DMP) discussed in the Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (e.g., how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites). Team members such as investigators, project coordinators, and data managers, may be assisting in both planning processes.
 
 ## Why spend time on planning?
 
