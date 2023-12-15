@@ -190,8 +190,8 @@ project_new/
 ## File naming {#style-file}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig9-2.PNG" alt="Documents, from xkcd.com" width="50%" />
-<p class="caption">(\#fig:fig9-2)Documents, from xkcd.com</p>
+<img src="img/fig9-2.PNG" alt="&quot;Documents&quot;, from xkcd.com" width="100%" />
+<p class="caption">(\#fig:fig9-2)"Documents", from xkcd.com</p>
 </div>
 
 As seen in Figure \@ref(fig:fig9-2), naming files in a consistent and usable way is hard. We are often in a rush to save our files and maybe don't consider how unclear our file names will be for future users (including ourselves).

@@ -88,8 +88,9 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 
 |Source|Resource|
 |--------|-----------|
-|Sarah Kopper, Katie Parry|Survey design ^[https://www.povertyactionlab.org/resource/survey-design]|
+|Jessica Kay Flake, Eiko Fried| Measurement Schmeasurement: Questionable Measurement Practices and How to Avoid Them ^[https://doi.org/10.1177/2515245920952393]|
 |Pew Research Center|Writing survey questions ^[https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/]|
+|Sarah Kopper, Katie Parry|Survey design ^[https://www.povertyactionlab.org/resource/survey-design]|
 |Stefanie Stantcheva| How to run surveys: A guide to creating your own identifying variation and revealing the invisible ^[https://www.nber.org/system/files/working_papers/w30527/w30527.pdf]|
 |World Bank|Survey content-focused pilot checklist ^[https://dimewiki.worldbank.org/Checklist:_Content-focused_Pilot]|
 
@@ -258,7 +259,7 @@ Once your tool is created, you will want to pilot the instrument with your team 
 Last, unless paper data are collected using a machine-readable form, they will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name and value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary. See Figure \@ref(fig:fig11-5) for an example of an annotated instrument from wave 1 of The Florida State Twin Registry project shared in the LDbase repository [@hart_florida_2018].
 
 <div class="figure" style="text-align: center">
-<img src="img/fig11-5.PNG" alt="Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)" width="80%" />
+<img src="img/fig11-5.PNG" alt="Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)" width="100%" />
 <p class="caption">(\#fig:fig11-5)Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)</p>
 </div>
 

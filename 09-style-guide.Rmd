@@ -190,7 +190,7 @@ project_new/
 
 ## File naming {#style-file}
 
-```{r fig9-2, fig.cap="Documents, from xkcd.com", out.width = "50%"}
+```{r fig9-2, fig.cap="\"Documents\", from xkcd.com"}
 
 knitr::include_graphics("img/fig9-2.PNG")
 

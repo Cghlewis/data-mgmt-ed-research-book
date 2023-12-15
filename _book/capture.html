@@ -132,7 +132,6 @@ Figure 12.2: Common data capture methods
 <ul>
 <li>Most electronic data collection tools provide an option to export to one or more file formats (e.g., SPSS, CSV, XLSX). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider include:
 <ul>
-<li>Do you want the text values for categorical responses or the numeric values? Your choice may limit your options (e.g., text values may be available in a CSV but not in an SPSS file).</li>
 <li>Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options (e.g., an SPSS file allows you to export the numeric values while also being able to view the variable and value labels in the file).</li>
 <li>Do you want a non-proprietary, interoperable format? If yes, you will want to capture data in file type, such as CSV, that does not require proprietary software to view.</li>
 <li>Will any file types create issues for your variables?
@@ -151,25 +150,23 @@ Figure 12.2: Common data capture methods
 </li>
 <li>What additional formatting options need to be considered?
 <ul>
-<li>In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
+<li>In addition to choosing a file type, there may be other options that your tool allows you to consider. The available options and how they are worded will vary depending on what tool you use. However, examples of options you may encounter include:
 <ul>
-<li>How do you want to export “select all” questions?
+<li>Options to export the text values for categorical fields or to export the numeric values associated with each category. Your options may be limited by your chosen file type (e.g., text values may be available in a CSV but not in an SPSS file).</li>
+<li>Options for formatting “select all” (or multi-option) questions. Typically tools provide two options (see Figure <a href="capture.html#fig:fig12-3">12.3</a>).
+<ol style="list-style-type: decimal">
+<li>Export all selections in one variable, where each selection is separated by a comma. As you can imagine, this can get messy if you export text responses that contain commas.</li>
+<li>Split each option into its own column.</li>
+</ol>
+</li>
+<li>Options for recoding seen but unanswered questions.
 <ul>
-<li>Depending on your chosen file type, you may be allowed to choose how you want to format “select all” questions. Typically tools provide two options (see Figure <a href="capture.html#fig:fig12-3">12.3</a>):
-<ul>
-<li>To export them in one variable, where each option is separated by a comma. As you can imagine, this can get messy if your response options contain commas.</li>
-<li>Or, to split each option into its own column, where the variable usually contains a <code>1</code> to denote the item was selected.</li>
+<li>Some tools may allow you to recode these blanks to a value such as <em>-99</em>. Selecting this option enables you to better determine if values are missing because they were not seen or if they were seen and purposefully skipped. This can be especially helpful for “select all” questions where cell values are blank when an option is not selected. When no options are selected, it can be difficult to determine if the entire question was skipped or if options were purposefully not selected, unless seen but unanswered cells are recoded.</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Do you want to recode seen but missing values?
+<li>Options to not export variables tagged as identifiers.
 <ul>
-<li>Among other reasons, this option is often provided because when “select all” questions are exported as multiple variables, they are commonly formatted with values of <code>1</code> or blank, with blanks indicating that the option was purposefully not selected <strong>or</strong> that the “select all” question was skipped entirely (see the right table in Figure <a href="capture.html#fig:fig12-3">12.3</a>).
-<ul>
-<li>In order to differentiate between actual skipped items and items that were seen but not selected (i.e., a “no” response to the option), you may have the option to recode seen but missing values to a value such as <em>0</em> or <em>-99</em>.</li>
-</ul>
-</li>
+<li>If your tool allows you to tag certain fields as identifiable (e.g., name, email), you may have the option to exclude those variables in your export.</li>
 </ul>
 </li>
 </ul>
@@ -179,8 +176,8 @@ Figure 12.2: Common data capture methods
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig12-3"></span>
-<img src="img/fig12-3.PNG" alt="Two different ways you may export a select all question" width="100%"><p class="caption">
-Figure 12.3: Two different ways you may export a select all question
+<img src="img/fig12-3.PNG" alt='Two different ways you may export a "select all" question' width="100%"><p class="caption">
+Figure 12.3: Two different ways you may export a “select all” question
 </p>
 </div>
 <ol start="4" style="list-style-type: decimal">
@@ -196,18 +193,9 @@ Figure 12.3: Two different ways you may export a select all question
 </li>
 <li>What documentation needs to accompany the data capture?
 <ul>
-<li>As discussed in Section <a href="document.html#document-dataset">8.3</a>, there are additional documents that can be helpful to include alongside the file.
-<ul>
-<li>A README can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of (see Section <a href="document.html#document-read">8.3.1</a>).<br>
+<li>A README can be very beneficial to store alongside the file if there is anything in the file that a future person managing the data should be aware of (see Section <a href="document.html#document-read">8.3.1</a>).<br>
 </li>
-<li>A changelog can also be very beneficial (see Section <a href="document.html#document-change">8.3.2</a>). It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Who will capture the data?
-<ul>
-<li>It doesn’t necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign the data collection supervisor the responsibility of documenting any relevant information in the README.</li>
+<li>A changelog can also be very beneficial (see Section <a href="document.html#document-change">8.3.2</a>) to store with this file. It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.</li>
 </ul>
 </li>
 <li>What checks need to happen before this data is handed off?
@@ -229,6 +217,11 @@ Figure 12.3: Two different ways you may export a select all question
 </li>
 </ul>
 </li>
+<li>Who will capture the data?
+<ul>
+<li>It doesn’t necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign the data collection supervisor the responsibility of documenting any relevant information in a README.</li>
+</ul>
+</li>
 </ol>
 <blockquote>
 <p><strong>Note</strong></p>
@@ -239,7 +232,23 @@ Figure 12.3: Two different ways you may export a select all question
 <span class="header-section-number">12.1.1</span> Documenting electronic data capture<a class="anchor" aria-label="anchor" href="#documenting-electronic-data-capture"><i class="fas fa-link"></i></a>
 </h3>
 <p>All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a CSV file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.</p>
-<p>As discussed in Chapter <a href="plan.html#plan">6</a>, your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we’ve learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors, but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.</p>
+<p>As discussed in Chapter <a href="plan.html#plan">6</a>, your data capture process should be added to your workflow diagram and then detailed in an SOP (see Section <a href="document.html#document-sop">8.2.7</a>). All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we’ve learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors, but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.</p>
+<p>Here is an example of data capture steps you might add to a student survey data collection SOP.</p>
+<pre><code>[Project Coordinator Name]
+1. Download a CSV file with the following options selected
+  - Use numeric values
+  - Recode seen but unanswered questions as -99
+  - Split multi-choice fields into columns
+2. Save the file in wave# -&gt; student -&gt; survey -&gt; raw
+  - Name the file "pn_w#_stu_svy_raw_YYYY-MM-DD.csv"
+3. Add a README to the folder as needed to describe any known issues with the data
+  - Add a changelog as needed when new datasets are downloaded
+4. Open and review the file
+  - Compare the variables in the file to the data dictionary to ensure the file looks as expected
+  - Compare the number of rows in the file to the number of surveys tracked as complete in the participant tracking database
+    - If the numbers do not align, correct errors (or note them in a README) and redownload the survey as needed.
+5. Notify the data manager that the data is ready for cleaning.
+</code></pre>
 </div>
 </div>
 <div id="capture-paper" class="section level2" number="12.2">
@@ -618,7 +627,7 @@ Figure 12.8: Sample documentation form for an external data provider to complete
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-12-13.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2023-12-14.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -25,7 +25,6 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
     - If you are using devices that do not connect to the internet, consider how you will securely pull files off of those devices.
 1. What file type will the data be captured in?
     - Most electronic data collection tools provide an option to export to one or more file formats (e.g., SPSS, CSV, XLSX). It is important to choose a file type that is analyzable (i.e., rectangular formatted), as opposed to something like a PDF file. The rectangular file type you choose will mostly depend on your project plans. Things to consider include:
-      - Do you want the text values for categorical responses or the numeric values? Your choice may limit your options (e.g., text values may be available in a CSV but not in an SPSS file).
       - Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options (e.g., an SPSS file allows you to export the numeric values while also being able to view the variable and value labels in the file).
       - Do you want a non-proprietary, interoperable format? If yes, you will want to capture data in file type, such as CSV, that does not require proprietary software to view.
       - Will any file types create issues for your variables?
@@ -33,16 +32,17 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
       - Is there a file structure that you don't want to work with?
         - As an example, the structure of an SPSS file may look different compared to an XLSX file depending on the tool. In a tool like Qualtrics, an XLSX or CSV file may export with multiple header rows whereas an SPSS file does not.
 1. What additional formatting options need to be considered?
-    - In addition to choosing a file type, there may be other options that your tool allows you to consider. Examples of what these might look like are:
-      - How do you want to export "select all" questions?
-        - Depending on your chosen file type, you may be allowed to choose how you want to format "select all" questions. Typically tools provide two options (see Figure \@ref(fig:fig12-3)):
-          - To export them in one variable, where each option is separated by a comma. As you can imagine, this can get messy if your response options contain commas.
-          - Or, to split each option into its own column, where the variable usually contains a `1` to denote the item was selected.
-      - Do you want to recode seen but missing values? 
-        - Among other reasons, this option is often provided because when "select all" questions are exported as multiple variables, they are commonly formatted with values of `1` or blank, with blanks indicating that the option was purposefully not selected **or** that the "select all" question was skipped entirely (see the right table in Figure \@ref(fig:fig12-3)). 
-          - In order to differentiate between actual skipped items and items that were seen but not selected (i.e., a "no" response to the option), you may have the option to recode seen but missing values to a value such as *0* or *-99*.
+    - In addition to choosing a file type, there may be other options that your tool allows you to consider. The available options and how they are worded will vary depending on what tool you use. However, examples of options you may encounter include:
+      - Options to export the text values for categorical fields or to export the numeric values associated with each category. Your options may be limited by your chosen file type (e.g., text values may be available in a CSV but not in an SPSS file).
+      - Options for formatting "select all" (or multi-option) questions. Typically tools provide two options (see Figure \@ref(fig:fig12-3)).
+        1. Export all selections in one variable, where each selection is separated by a comma. As you can imagine, this can get messy if you export text responses that contain commas.
+        2. Split each option into its own column. 
+      - Options for recoding seen but unanswered questions. 
+        - Some tools may allow you to recode these blanks to a value such as *-99*. Selecting this option enables you to better determine if values are missing because they were not seen or if they were seen and purposefully skipped. This can be especially helpful for “select all” questions where cell values are blank when an option is not selected. When no options are selected, it can be difficult to determine if the entire question was skipped or if options were purposefully not selected, unless seen but unanswered cells are recoded. 
+      - Options to not export variables tagged as identifiers.
+        - If your tool allows you to tag certain fields as identifiable (e.g., name, email), you may have the option to exclude those variables in your export.
 
-```{r fig12-3, fig.cap="Two different ways you may export a select all question"}
+```{r fig12-3, fig.cap="Two different ways you may export a \"select all\" question"}
 
 knitr::include_graphics("img/fig12-3.PNG")
 
@@ -55,19 +55,18 @@ knitr::include_graphics("img/fig12-3.PNG")
     - While your tool may provide a name for your file, it may need to be renamed something more meaningful based on your style guide rules (see Section \@ref(style-file)). Most importantly, name your files consistently across data sources and waves.
       
 6. What documentation needs to accompany the data capture?  
-    - As discussed in Section \@ref(document-dataset), there are additional documents that can be helpful to include alongside the file.  
-      - A README can be very beneficial to include if there is anything in the file that a future person managing the data should be aware of (see Section \@ref(document-read)).  
-      - A changelog can also be very beneficial (see Section \@ref(document-change)). It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.  
-      
-7. Who will capture the data?  
-    - It doesn't necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign the data collection supervisor the responsibility of documenting any relevant information in the README.  
+      - A README can be very beneficial to store alongside the file if there is anything in the file that a future person managing the data should be aware of (see Section \@ref(document-read)).  
+      - A changelog can also be very beneficial (see Section \@ref(document-change)) to store with this file. It is common to have to redownload a raw data file due to errors found or new participants added. A changelog can help the team both identify the most recent version of a raw data file, as well as understand the differences between files.  
     
-8. What checks need to happen before this data is handed off?  
+7. What checks need to happen before this data is handed off?  
     - It is important for the person responsible for data capture to do a basic review of the file before handing this data off for the next step.  
       - Does the format of the file look as expected? Does it have data in it? Are all the variables there as expected?  
       - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with completed data in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data.  
         - Was a participant accidentally dropped from the file? Is someone incorrectly marked as complete in the tracking database? Are there duplicate entries in the file?  
           - If there are errors that can be corrected (e.g., someone incorrectly tracked a data point, a participant was left off in the capture process), those corrections should be made now. If there are corrections that involve manipulating the raw data (e.g., reconciling duplicate IDs in the data, an ID incorrectly entered in the data), those corrections should not be made at this time. Instead, those should be added to a README file to be corrected in the data cleaning phase. 
+
+8. Who will capture the data?  
+    - It doesn't necessarily matter who takes on this responsibility. What matters most is that the person has the expertise to capture the data and that this responsibility is documented. If the person capturing the data is not the person who oversees data collection, it is important to still assign the data collection supervisor the responsibility of documenting any relevant information in a README.
   
 > **Note**
 >
@@ -77,7 +76,27 @@ knitr::include_graphics("img/fig12-3.PNG")
 
 All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a CSV file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.
 
-As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP. All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors, but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.
+As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP (see Section \@ref(document-sop)). All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors, but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.
+
+Here is an example of data capture steps you might add to a student survey data collection SOP.
+
+```
+[Project Coordinator Name]
+1. Download a CSV file with the following options selected
+  - Use numeric values
+  - Recode seen but unanswered questions as -99
+  - Split multi-choice fields into columns
+2. Save the file in wave# -> student -> survey -> raw
+  - Name the file "pn_w#_stu_svy_raw_YYYY-MM-DD.csv"
+3. Add a README to the folder as needed to describe any known issues with the data
+  - Add a changelog as needed when new datasets are downloaded
+4. Open and review the file
+  - Compare the variables in the file to the data dictionary to ensure the file looks as expected
+  - Compare the number of rows in the file to the number of surveys tracked as complete in the participant tracking database
+    - If the numbers do not align, correct errors (or note them in a README) and redownload the survey as needed.
+5. Notify the data manager that the data is ready for cleaning.
+
+```
 
 ## Paper data capture {#capture-paper}
 

@@ -1,7 +1,7 @@
 ---
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-12-13"
+date: "2023-12-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -20,6 +20,10 @@ link-citations: yes
 
 ## Endorsements {-}
 
+> Imagine having a seasoned researcher's best advice at your fingertips---this is precisely what this book offers. It's a well-crafted blend of practical know-how and scholarly wisdom, perfect for anyone about to or currently managing research data. With clarity and a touch of scholarly flair, Crystal Lewis transforms complex concepts into clear, actionable steps. It's packed with real-world examples, straightforward templates, and checklists that take the guesswork out of data management. Whether you're a seasoned investigator, a data manager, or a student stepping into the world of research, this book will undoubtedly become a staple in your professional toolkit, enhancing the quality and impact of your work. This book is a resource that speaks your language, understands your challenges, and respects the depth of your work. In summary, this book is not just a guide; it's a mentor in print form.
+>
+> **Joscelin Rocha-Hidalgo**, Pennsylvania State University
+
 > *Data Management in Large-Scale Education Research* is a game changer for education researchers wanting to improve their research practices. The book seamlessly blends theory and practice, offering a pragmatic guide for ethically and systematically managing and sharing data.
 >
 > **Crystal Steltenpohl**, Center for Open Science
@@ -31,6 +35,10 @@ link-citations: yes
 > Education researchers: do not skip this book! Crystal Lewis gives you the tools you need to manage your data better in order to make your project run smoothly.
 >
 > **Kristin Briney**, Biology Librarian, California Institute of Technology, and author of [Data Management for Researchers: Organize, Maintain and Share Your Data for Research Success](https://pelagicpublishing.com/products/data-management-for-researchers-briney)
+
+> An outstanding guide for those learning how to manage large-scale data in the social sciences. The book embraces the tenets of open science, highlighting the importance of reproducible science.
+>
+> **Lexi Swanz**, Vanderbilt University
 
 ## Book key features {-}
 
