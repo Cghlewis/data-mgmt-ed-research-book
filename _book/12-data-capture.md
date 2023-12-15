@@ -32,7 +32,7 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
 1. What additional formatting options need to be considered?
     - In addition to choosing a file type, there may be other options that your tool allows you to consider. The available options and how they are worded will vary depending on what tool you use. However, examples of options you may encounter include:
       - Options to export the text values for categorical fields or to export the numeric values associated with each category. Your options may be limited by your chosen file type (e.g., text values may be available in a CSV but not in an SPSS file).
-      - Options for formatting "select all" (or multi-option) questions. Typically tools provide two options (see Figure \@ref(fig:fig12-3)).
+      - Options for formatting "select all" (or multi-response) questions. Typically tools provide two options (see Figure \@ref(fig:fig12-3)).
         1. Export all selections in one variable, where each selection is separated by a comma. As you can imagine, this can get messy if you export text responses that contain commas.
         2. Split each option into its own column. 
       - Options for recoding seen but unanswered questions. 
@@ -82,7 +82,7 @@ Here is an example of data capture steps you might add to a student survey data 
 1. Download a CSV file with the following options selected
   - Use numeric values
   - Recode seen but unanswered questions as -99
-  - Split multi-choice fields into columns
+  - Split multi-response fields into columns
 2. Save the file in wave# -> student -> survey -> raw
   - Name the file "pn_w#_stu_svy_raw_YYYY-MM-DD.csv"
 3. Add a README to the folder as needed to describe any known issues with the data
