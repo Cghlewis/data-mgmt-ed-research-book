@@ -144,7 +144,8 @@ hsd-dcl
 hsd-oversight
 hsd-laws
 hsd-institution
-agreements
+hsd-permission
+hsd-agree
 funders
 protecting-human-subjects-data
 dmp

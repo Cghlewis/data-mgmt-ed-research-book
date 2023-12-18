@@ -49,7 +49,7 @@ It is important to review your institution's data classification levels, or data
 
 ## Human subjects data oversight {#hsd-oversight}
 
-When collecting identifiable data, there are laws, policies, departments, and agreements that may impact how you collect and manage that data. Below we will review some of the most commonly encountered oversight in education research.
+When working with human subjects data, there are laws, policies, departments, and agreements that may impact how you collect and manage that data. Below we will review some of the most commonly encountered oversight in education research.
 
 ### Regulations and laws {#hsd-laws}
 
@@ -67,13 +67,17 @@ When collecting identifiable data, there are laws, policies, departments, and ag
 
 3. Office of research or sponsored programs: Institutions often have an administrative body that serves as a signatory authority and can help negotiate terms and conditions for certain types of agreements [@washington_university_in_st_louis_roles_2023].
 
-### Agreements
+### External permission {#hsd-permission}
 
-1. Informed consent/assent: Consent involves informing a participant of what data will be collected for your research study and how it will be handled and used, as well as obtaining a participant's voluntary agreement to participate in your study. If your study involves participants under the age of 18, you may also be required to obtain a participant assent form, in addition to a parent/guardian consent form.
+1. External permission: When planning to conduct research in schools, many districts require researchers to submit requests for research ^[Information about these requests can often be found on district websites.]. The requirements for these requests vary by district but they often include an application or proposal outlining research plans, as well as other supporting documents (e.g., copies of data collection instruments, IRB approval, agreement forms). This submission is then typically reviewed by a committee for possible approval. A similar research or data permission process may also be required when requesting access to non-public data sources such as statewide longitudinal data systems. See Figure \@ref(fig:fig12-6) for an example of what these request processes might look like.  
+
+### Agreements {#hsd-agree}
+
+1. Informed consent/assent: Often required by an IRB, consent involves informing a participant of what data will be collected for your research study and how it will be handled and used, as well as obtaining a participant's voluntary agreement to participate in your study. If your study involves participants under the age of 18, you may also be required to obtain a participant assent form, in addition to a parent/guardian consent form.
 
 2. DUA: A data use agreement (DUA), also sometimes referred to as a data sharing agreement (DSA), is a contractual agreement that provides the terms and conditions for sharing data. DUAs are commonly written for data sharing when partnering with school districts or state agencies. As an example, a DUA may include the terms for sharing, working with, and storing education records data. However, DUAs can be used to provide guidance for outgoing data as well (i.e., a researcher is sharing their original data with an agency). DUAs can be standalone documents or may be incorporated into other documents such as a memorandum of understanding (MOU).
 
-3. NDA: Non-disclosure agreements (NDAs), which also may be synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_2023] and are legally enforceable agreements.
+3. NDA: Non-disclosure agreements (NDAs), sometimes synonymous with confidentiality agreements, restrict the use of proprietary or confidential information [@university_of_washington_sharing_2023] and are legally enforceable agreements. These may be required when partnering with districts or other agencies.
 
 ### Funders
 
