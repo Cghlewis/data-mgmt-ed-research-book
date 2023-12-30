@@ -1,7 +1,7 @@
 ---
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2023-12-18"
+date: "2023-12-30"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -16,7 +16,7 @@ link-citations: yes
 
 # Welcome {-}
 
-<img src="book_featured.PNG" class="cover" width="250" height="328"/>This is the in-progress version of *Data Management in Large-Scale Education Research*. When completed, this book will be published by CRC Press. 
+<img src="book_featured.PNG" class="cover" width="250" height="328"/>This is the in-progress version of *Data Management in Large-Scale Education Research*. When completed, this book will be published by [CRC Press](https://www.routledge.com/Data-Management-in-Large-Scale-Education-Research/Lewis/p/book/9781032622798). 
 
 ## Endorsements {-}
 
