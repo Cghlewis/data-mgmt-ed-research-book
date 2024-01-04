@@ -1,7 +1,7 @@
 ---
 title: "Data Management in Large-Scale Education Research"
 author: "Crystal Lewis"
-date: "2024-01-02"
+date: "2024-01-04"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -47,6 +47,10 @@ link-citations: yes
 > This book is a treasure for those in field of Education and beyond. Many practicing statisticians and industry data scientists have never endured the process of collecting their own data, and statistical education largely assumes away such complexities, taking complete and correct data as a given. Lewis' incredibly clear and readable book can be a revelation to data analysts on the complexity, nuances, and subjectivity that goes into data collection. This framework will undoubtedly help many consider how to handle bias and complexity in their own analysis and better manage their derivative data products with the level of care that Lewis provides to her readers.
 >
 > **Emily Riederer**, Capital One, and author of [R Markdown Cookbook](https://www.routledge.com/R-Markdown-Cookbook/Xie-Dervieux-Riederer/p/book/9780367563837)
+
+> *Data Management in Large-Scale Education Research* covers all angles of data management, spanning the entire research life cycle. This book helps readers critically think through how to set up processes to ensure you have accurate data in the end. It clearly explains data management topics that are commonly confusing, unknown, or simply forgotten, as well as addresses new requirements in education research.  Checklists and workflows are also provided to help readers complete tasks in an organized fashion. This book is a great resource that will save your team time in researching how to manage data and will get your study started on the right foot, with confidence.
+>
+> **Tara Reynolds**, Data Manager, Florida Center for Reading Research
 
 ## Book key features {-}
 
