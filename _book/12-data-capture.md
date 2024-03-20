@@ -1,15 +1,15 @@
 # Data Capture {#capture}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-1.PNG" alt="Data capture in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig12-1)Data capture in the research project life cycle</p>
+<img src="img/fig12-1.PNG" alt="Data capture in the research project life cycle." width="100%" />
+<p class="caption">(\#fig:fig12-1)Data capture in the research project life cycle.</p>
 </div>
 
 After the data collection period is complete, the next phase in the cycle is to capture the data. Here we are extracting, creating, or acquiring a flat file, consisting of data previously collected electronically or on paper, that we can then save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-2.PNG" alt="Common data capture methods" width="80%" />
-<p class="caption">(\#fig:fig12-2)Common data capture methods</p>
+<img src="img/fig12-2.PNG" alt="Common data capture methods." width="80%" />
+<p class="caption">(\#fig:fig12-2)Common data capture methods.</p>
 </div>
 
 
@@ -26,23 +26,23 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
       - Do you want embedded metadata, such as variable and value labels, in your raw file? Again, your choice will narrow your options (e.g., an SPSS file allows you to export the numeric values while also being able to view the variable and value labels in the file).
       - Do you want a non-proprietary, interoperable format? If yes, you will want to capture data in file type, such as CSV, that does not require proprietary software to view.
       - Will any file types create issues for your variables?
-        - For instance, XLSX is well-known for applying unwanted formatting to values. As an example, if your assessment tool collects age in the format of "years-months", oftentimes Microsoft Excel will change this variable into a date, converting a value such as "10-2" (10 years and 2 months old) to "2-Oct". A more suitable file type in this situation may be a CSV or TXT file, which do not apply formatting.
+        - For instance, XLSX is well known for applying unwanted formatting to values. As an example, if your assessment tool collects age in the format of "years-months", oftentimes Microsoft Excel will change this variable into a date, converting a value such as "10-2" (10 years and 2 months old) to "2-Oct". A more suitable file type in this situation may be a CSV or TXT file, which do not apply formatting.
       - Is there a file structure that you don't want to work with?
         - As an example, the structure of an SPSS file may look different compared to an XLSX file depending on the tool. In a tool like Qualtrics, an XLSX or CSV file may export with multiple header rows whereas an SPSS file does not.
 1. What additional formatting options need to be considered?
-    - In addition to choosing a file type, there may be other options that your tool allows you to consider. The available options and how they are worded will vary depending on what tool you use. However, examples of options you may encounter include:
+    - First and foremost, take time to understand the default options of your tool. From there, your tool may provide alternatives to the default. The available options and how they are worded will vary depending on what tool you use. However, examples of options you may encounter include:
       - Options to export the text values for categorical fields or to export the numeric values associated with each category. Your options may be limited by your chosen file type (e.g., text values may be available in a CSV but not in an SPSS file).
-      - Options for formatting "select all" (or multi-response) questions. Typically tools provide two options (see Figure \@ref(fig:fig12-3)).
+      - Options for formatting "select all that apply" (or multiple response) questions. Typically tools provide two options (see Figure \@ref(fig:fig12-3)).
         1. Export all selections in one variable, where each selection is separated by a comma. As you can imagine, this can get messy if you export text responses that contain commas.
         2. Split each option into its own column. 
       - Options for recoding seen but unanswered questions. 
-        - Some tools may allow you to recode these blanks to a value such as *-99*. Selecting this option enables you to better determine if values are missing because they were not seen or if they were seen and purposefully skipped. This can be especially helpful for “select all” questions where cell values are blank when an option is not selected. When no options are selected, it can be difficult to determine if the entire question was skipped or if options were purposefully not selected, unless seen but unanswered cells are recoded. 
+        - Some tools may allow you to recode these blanks to a value such as *-99*. Selecting this option enables you to better determine if values are missing because they were not seen or if they were seen and purposefully skipped. This can be especially helpful for multiple response questions where cell values are blank when an option is not selected. When no options are selected, it can be difficult to determine if the entire question was skipped or if options were purposefully not selected, unless seen but unanswered cells are recoded. 
       - Options to not export variables tagged as identifiers.
         - If your tool allows you to tag certain fields as identifiable (e.g., name, email), you may have the option to exclude those variables in your export.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-3.PNG" alt="Two different ways you may export a &quot;select all&quot; question" width="100%" />
-<p class="caption">(\#fig:fig12-3)Two different ways you may export a "select all" question</p>
+<img src="img/fig12-3.PNG" alt="Two different ways you may export a &quot;select all that apply&quot; question." width="100%" />
+<p class="caption">(\#fig:fig12-3)Two different ways you may export a "select all that apply" question.</p>
 </div>
 
 4. Where will the file be stored?  
@@ -67,13 +67,13 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
   
 > **Note**
 >
-> It is important to never make changes directly to the raw data files. This also includes not making changes directly to the data in your data collection tool. If you see errors in the raw data file that can't be fixed by simply re-downloading the data, make notes in a README for future correction as noted earlier in this section. Those corrections can be made in the data cleaning process. The one exception to this rule is if you accidentally collect data on a non-consented participant. In this case, it may be best to delete data for this participant directly in your data collection tool so that no record is kept.
+> It is important to never make changes directly to the raw data files. This also includes not making changes directly to the data in your data collection tool. If you see errors in the raw data file that can't be fixed by simply re-downloading the data, make notes in a README for future correction as noted earlier in this section. Those corrections can be made in the data cleaning process. Doing this ensures that your raw data always reflects the true values that the participant reported and allows you to track data lineage. The one exception to this rule is if you accidentally collect data on a non-consented participant. In this case, it may be best to delete data for this participant directly in your data collection tool so that no record is kept.
 
 ### Documenting electronic data capture
 
 All of these decisions should be made and documented during the time you are developing data collection tools. Making these decisions early allows you to also implement them during the pilot testing and data checking processes. For instance, if you plan to capture your data by exporting a CSV file from your data collection platform with a variety of options selected, you will want to use this same method during your data piloting and data checking process. This allows you to know exactly what your data will look like once data collection is complete and make adjustments as needed.
 
-As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP (see Section \@ref(document-sop)). All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors, but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture, as well as people responsible for subsequent phases such as data cleaning.
+As discussed in Chapter \@ref(plan), your data capture process should be added to your workflow diagram and then detailed in an SOP (see Section \@ref(document-sop)). All of the decisions in this process should exist in the relevant SOP. This ensures that workflows are standardized and reproducible. As we've learned in this section, one deviation from the SOP has the potential to produce a very different data product (e.g., the format of a CSV file compared to an SPSS file can vary). Not only can this produce errors, but it can also undermine the reproducibility of a data cleaning pipeline. Imagine a scenario where a data cleaning syntax is written to import a CSV file with an expected format, and that format changes. The pipeline is no longer reproducible. Last, documenting a timeline for when this data capture process should occur can also be beneficial for both the person responsible for data capture and people responsible for subsequent phases such as data cleaning.
 
 Here is an example of data capture steps you might add to a student survey data collection SOP.
 
@@ -108,7 +108,7 @@ As you can imagine, manually entering data comes with the potential for many dat
 
 ### Choose a quality data entry tool
 
-Unless you are entering data into a required proprietary assessment scoring tool, you will need to choose a data entry tool. When choosing this tool, if you are already using a relational database for your participant tracking, it may make the most sense to use this same database for data entry so that data can be stored in one location and tables can be linked (e.g., REDCap, FileMaker, Microsoft Access). However, if you need to choose a new tool for data entry, the criteria for choosing one will be similar to those reviewed in Section \@ref(collect-tools). Considerations for project needs, security, costs, and data quality should all still be reviewed.
+Unless you are entering data into a proprietary scoring tool associated with your instrument, you will need to choose a data entry tool. When choosing this tool, if you are already using a relational database for your participant tracking, it may make the most sense to use this same database for data entry so that data can be stored in one location and tables can be linked (e.g., REDCap, FileMaker, Microsoft Access). However, if you need to choose a new tool for data entry, the criteria for choosing one will be similar to those reviewed in Section \@ref(collect-tools). Considerations for project needs, security, costs, and data quality should all still be reviewed.
 
 In addition to reviewing those criteria, it can also be very beneficial to use a tool that allows you to create entry forms (also called data entry screens), similar to the form we saw in Figure \@ref(fig:fig10-9), rather than entering directly into a spreadsheet. Building a data entry screen that is laid out similar to the paper form can help reduce errors in data entry. Data that is entered into the form is then fed into a table that can be exported.
 
@@ -139,8 +139,8 @@ Before using your data entry tool, you will want to pilot it for issues, just li
 While building a reliable data entry tool is absolutely important in ensuring data quality, developing a clear and standard data entry process is even more important. Figure \@ref(fig:fig12-4) shows a series of decisions to make regarding the data entry process.
     
 <div class="figure" style="text-align: center">
-<img src="img/fig12-4.PNG" alt="The flow of the decisions to make regarding the data entry process" width="100%" />
-<p class="caption">(\#fig:fig12-4)The flow of the decisions to make regarding the data entry process</p>
+<img src="img/fig12-4.PNG" alt="The flow of the decisions to make regarding the data entry process." width="100%" />
+<p class="caption">(\#fig:fig12-4)The flow of the decisions to make regarding the data entry process.</p>
 </div>
 
 Let's walk through some of the decisions to be made.
@@ -160,11 +160,12 @@ Let's walk through some of the decisions to be made.
       - Someone who has circled more than one response to an item?
       - Someone who has written responses in the margin?
       - Someone who has written a value out of range or an unallowable response?
+          - In general, I recommend to enter the exact values a participant has provided and rectify errors during the cleaning process. However, there may be reasons your team has to deal with certain errors during the entry process (e.g., your entry form is set up to only allow values 1--3 and a participant has provided a value of 4).
 1. How should team members denote that a form has been entered?
     - For example, staff can write their initials on a form after entry and then files can be stored in a new drawer or location to denote first or second entry.
 1. What steps should be performed before moving on to the next phase of data cleaning?
     - Similar to the process in Section \@ref(capture-electronic), it is imperative that whoever is overseeing the data entry process do a check of the data before handing it off for the next step of data cleaning. 
-    - Most importantly, check to see that the correct number of participants exist in the file compared to the number of participants with data marked as collected in your tracking database (i.e., no duplicate entries, no missing entries). 
+    - Most importantly, check to see that the correct number of participants exists in the file compared to the number of participants with data marked as collected in your tracking database (i.e., no duplicate entries, no missing entries). 
       - If data entry or data tracking errors exist, fix mistakes as needed before finalizing the entry process.
 1. Last, what file type should be exported or saved (e.g., CSV, XLSX, SPSS), where should the files be stored, and how should they be named?
     - Store according to your storage rules (see Chapter \@ref(store)) and name files according to your style guide (see Section \@ref(style-file)).
@@ -178,7 +179,7 @@ Let's walk through some of the decisions to be made.
 
 #### Double entry
 
-Last, data quality can be further improved by double entering data. In their studies, @schmitt_data_2011 have found an error-rate between 5-10% when data are entered only once and that having a second person double-check data entry improves data quality. While there are several ways of double checking data including visual checking and read aloud methods, the double entry method has been shown to be the most reliable error-reducing technique [@barchard_comparing_2020], ensuring that what is displayed on the paper form is what is entered into the database. A typical double entry process looks something like this.
+Last, data quality can be further improved by double entering data. In their studies, @schmitt_data_2011 have found an error-rate between 5% and 10% when data are entered only once and that having a second person double-check data entry improves data quality. While there are several ways of double checking data including visual checking and read aloud methods, the double entry method has been shown to be the most reliable error-reducing technique [@barchard_comparing_2020], ensuring that what is displayed on the paper form is what is entered into the database. A typical double entry process looks something like this.
 
 1. A designated team member creates two identical entry forms. One person enters forms in the first entry screen, a different person enters forms in the second entry screen. Depending on your tool this might be two separate files, two separate tabs in a spreadsheet, or two separate tables or forms in a database.
     - It is important here that the second entry is completed by a different person so that systematic errors that are created by one person's interpretation of information are not repeated across files. 
@@ -192,13 +193,13 @@ The following is one example of what this process could look like.
 
 1. Data is entered into two spreadsheets following quality assurance and control procedures. Then, both files are imported into R.
 2. A function from the `diffdf` package [@gower-page_diffdf_2020] is run to check for errors and a report is returned (see Figure \@ref(fig:fig12-5)).
-    - You can see that it identifies an error in our `mast1` variable. For `tch_id` = *1235*, entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). 
+    - You can see that it identifies an error in our `t_mast1` variable. For `tch_id` = *236*, entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). 
 3. Paper forms are checked to see what the true reported answer is and then value is corrected in the corresponding entry file. If the value is incorrect in both entry files, both files are corrected. 
 4. Updated files are imported back into R and the comparison system is run again to ensure no more errors exist.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-5.PNG" alt="A report displaying differences between two entry files" width="100%" />
-<p class="caption">(\#fig:fig12-5)A report displaying differences between two entry files</p>
+<img src="img/fig12-5.PNG" alt="A report displaying differences between two entry files." width="100%" />
+<p class="caption">(\#fig:fig12-5)A report displaying differences between two entry files.</p>
 </div>
   
 Depending on the amount of data that is collected this can be a time-consuming process. Double data entry is a matter of weighing costs and benefits. While double entering all of your data is the best way to reduce data errors, the cost of double entering all of your data might be too high, and you may decide to only double enter a portion of your data and gain a smaller benefit.
@@ -221,30 +222,29 @@ It is common in education research to also capture external supplemental data so
 Non-public, or restricted-use, data sources are files that cannot be directly accessed from a public website (e.g., student education records, statewide longitudinal data systems). These data are typically individual-level and may contain sensitive, usually identifiable, information or a combination of variables that could enable identification. Acquiring these sources usually involves a data request process. Every data request system will be different but Figure \@ref(fig:fig12-6) provides an example of what this process might look like. If conducting research in schools, requesting student education records may already be a part of your research request process (see Section \@ref(hsd-permission)). It is important to begin looking into this during your planning phase to understand when the request should be initiated. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-6.PNG" alt="Example non-public confidential data request process" width="100%" />
-<p class="caption">(\#fig:fig12-6)Example non-public confidential data request process</p>
+<img src="img/fig12-6.PNG" alt="Example non-public confidential data request process." width="100%" />
+<p class="caption">(\#fig:fig12-6)Example non-public confidential data request process.</p>
 </div>
 
 If not already included in the provider's data request process, it is important to add quality assurance to the process by sharing the following information with a provider.
 
-1. The periods you are requesting data for (e.g., 2023-24 school year)
+1. The periods you are requesting data for (e.g., 2023--2024 school year)
 2. The variables you are requesting
     - If you plan to link data, make sure your list includes a unique identifier that allows you to link the external data to your existing original data.  
 3. Variable details
-    - If you are planning to combine data from multiple sources (e.g., multiple school districts), this can require hours of harmonization to make data comparable due to variations in how data is collected across agencies. It can be helpful to let providers know exactly how you would like variables to be formatted including:
+    - Giving the provider details regarding your preferred variable format can help standardize inputs across sources (e.g., multiple school districts) and reduce confusion [@feeney_using_2021]. Some external data providers will be able to accommodate your specific requests, others will not. If the provider is able to accommodate your specific needs, the following types of information can be helpful to provide: 
       - Variable type (e.g., numeric, text)
       - Variable formats (e.g., `DOB` as YYYY-MM-DD)
       - Value coding (e.g., specify how to code FRPL categories)
       - How to handle missing data (e.g., leave cell blank)
       - How to aggregate summary data (e.g., number of days absent for the full year **or** by term)
       - For calculated variables (e.g., age at assessment) consider requesting the raw inputs to calculate your own values (e.g., request date of assessment and DOB)
-    -  This can help standardize inputs and reduce confusion in interpretation [@feeney_using_2021].
 
-Figure \@ref(fig:fig12-7) is an example of how you might provide this information to a provider.
+Figure \@ref(fig:fig12-7) is an example of how you might format this information for a provider.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-7.PNG" alt="Example variable request for an external data provider" width="100%" />
-<p class="caption">(\#fig:fig12-7)Example variable request for an external data provider</p>
+<img src="img/fig12-7.PNG" alt="Example variable request for an external data provider." width="100%" />
+<p class="caption">(\#fig:fig12-7)Example variable request for an external data provider.</p>
 </div>
 
 You will also want to make sure you acquire the following information:
@@ -263,14 +263,14 @@ You will also want to make sure you acquire the following information:
       - What each variable represents
       - Allowable variable ranges
       - Categorical code definitions
-      - How each variable is captured or calculated (e.g., hand entered)
+      - How each variable is captured or calculated (e.g., hand-entered)
       - The universe for each variable (e.g., grades *3--5*)
       - Any data quality concerns about any of the variables
     - If you receive new exports each year, make sure to request documentation each year. It is possible that the way variables are collected or recorded change over time.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-8.PNG" alt="Sample documentation form for an external data provider to complete" width="100%" />
-<p class="caption">(\#fig:fig12-8)Sample documentation form for an external data provider to complete</p>
+<img src="img/fig12-8.PNG" alt="Sample documentation form for an external data provider to complete." width="100%" />
+<p class="caption">(\#fig:fig12-8)Sample documentation form for an external data provider to complete.</p>
 </div>
 
 Once you receive external files, make sure to perform quality control checks before saving them and preparing for further data cleaning. 
@@ -288,7 +288,7 @@ Once you receive external files, make sure to perform quality control checks bef
 
 ### Public data sources 
 
-Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some organizations may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:
+Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual-level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some organizations may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:
 
 1. Extract the data early on in your project.
     - Even if it is not the most up to date data that you need, it's important to get a sense early on for what the data looks like (e.g., what variables are included, what file types data are stored in, how the files are structured). This helps you prepare for future data wrangling needs.
@@ -301,10 +301,10 @@ Publicly available data sources are typically aggregated (i.e., state, district,
       - This documentation helps make you aware of any known issues in the data.
 3. Do not hesitate to reach out for help.
     - Typically, the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
-4. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ([https://nces.ed.gov/ccd/](https://nces.ed.gov/ccd/)) or EDFacts ([https://www2.ed.gov/about/inits/ed/edfacts/index.html](https://www2.ed.gov/about/inits/ed/edfacts/index.html). If you are needing to use multiple data sources, other tools, such as the Urban Institute Education Data Explorer [https://educationdata.urban.org/data-explorer](https://educationdata.urban.org/data-explorer), have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
+4. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ([https://nces.ed.gov/ccd/](https://nces.ed.gov/ccd/)) or EDFacts ([https://www2.ed.gov/about/inits/ed/edfacts/index.html](https://www2.ed.gov/about/inits/ed/edfacts/index.html)). If you are needing to use multiple data sources, other tools, such as the Urban Institute Education Data Explorer ([https://educationdata.urban.org/data-explorer](https://educationdata.urban.org/data-explorer)), have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
 5. Once files are extracted, store them according to your data storage plans (see Chapter \@ref(store)) and name them according to your style guide rules.
 
 ### Documenting external data capture
 
-Make sure every step of your external data capture process is documented in the appropriate locations (e.g., SOP, research protocol). Responsibilities will need to be assigned throughout this process, from investigating data request procedures, to communicating with providers, to acquiring data files. As mentioned in Section \@ref(document-extant), you will also want to make sure these data sources are documented in a data dictionary. It is possible your data source will come with its own data dictionary, but for continuity, you may need to reformat that document to match how your other project data dictionaries are formatted. If your data source does not come with a data dictionary, you will want to create one for this source. This will not only be useful for data cleaning and validation purposes, but also for data sharing purposes later on.
+Make sure every step of your external data capture process is documented in the appropriate locations (e.g., SOP, research protocol). Responsibilities will need to be assigned throughout this process, from investigating data request procedures, to communicating with providers, to acquiring data files. As mentioned in Section \@ref(document-extant), you will also want to make sure these data sources are documented in a data dictionary. It is possible your data source will come with its own data dictionary, but for continuity, you may need to reformat that document to match how your other project data dictionaries are formatted. If your data source does not come with a data dictionary, you will want to create one for this source. This will be useful not only for data cleaning and validation purposes, but also for data sharing purposes later on.
 

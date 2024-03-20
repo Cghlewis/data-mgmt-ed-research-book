@@ -1,6 +1,6 @@
 # Documentation {#document}
 
-```{r fig8-1, fig.cap="Data documentation in the research project life cycle"}
+```{r fig8-1, fig.cap="Data documentation in the research project life cycle."}
 
 knitr::include_graphics("img/fig8-1.PNG")
 
@@ -17,9 +17,9 @@ Documentation is a collection of files containing procedural and descriptive inf
 - Ensuring others use and interpret data accurately
 - Providing searchability through metadata
 
-This chapter will cover four levels of documentation: team-level, project-level, dataset-level, and variable-level. Even though we are currently discussing the documentation phase, some of these documents will be created earlier or later than this phase, and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a human-readable format that works well for your team (e.g., Word, PDF, TXT, Google Doc, XLSX, HTML, OneNote, etc.). With that said, you will want to have a long-term plan for converting these documents, as needed, into formats that are both interoperable and sustainable for archiving and sharing (see Chapter \@ref(store-long) for more information).
+This chapter will cover four levels of documentation: Team-level, project-level, dataset-level, and variable-level. Even though we are currently discussing the documentation phase, some of these documents will be created earlier or later than this phase, and the timing will be discussed in each section. During a project, while you are actively using your documents, the format of these documents does not matter. Choose a human-readable format that works well for your team (Word, PDF, TXT, Google Doc, XLSX, HTML, OneNote, etc.). With that said, you will want to have a long-term plan for converting these documents, as needed, into formats that are both interoperable and sustainable for archiving and sharing (see Chapter \@ref(store-long) for more information).
 
-The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder and other governing bodies. No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Creating documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret documents more easily. These documents are best created by the team member who directly oversees the process, and sometimes that may include a collaborative effort (for example, both a project coordinator and a data manager may build documents together). Ultimately though, all your documents should be reviewed with your data management working group (DMWG) in order to gather feedback and reach consensus (see Chapter \@ref(plan)). 
+The documents below are all recommended and will help you successfully run your project. You can create as many or as few of these documents as you wish. The documents you choose to produce should be based on what is best for your project and your team, as well as what is required by your funder and other governing bodies. No matter which documents you choose to implement, it is important to create templates for your documents and implement them consistently within, and even across projects. Creating documentation using templates, or consistent formats and fields, reduces duplication in efforts (no need to reinvent the wheel) and allows your team to interpret documents more easily. These documents are best created by the team member who directly oversees the process, and sometimes that may include a collaborative effort (for example, both a project coordinator and a data manager may build documents together). Ultimately, though, all your documents should be reviewed with your data management working group (DMWG) in order to gather feedback and reach consensus (see Chapter \@ref(plan)). 
 
 Each type of documentation discussed below is a living document to be updated as procedures change, or new information is received. As seen in the cyclical section of Figure \@ref(fig:fig8-1), team members should revisit documentation each time new data is collected, or more often if needed, to ensure documentation still aligns with actual practices. If changes are made and not added to documentation over long periods of time, you will find that you no longer remember what happened and that information will be lost. It will also be important to version your documents (i.e., track major changes) along the way so that staff know that they are working with the most recent version and can see when and why documents have been updated. 
 
@@ -31,7 +31,7 @@ Creating and maintaining these documents **is an investment**. However, the retu
 
 Team-level data management documentation typically contains data governance rules that apply to the entire team, across all projects. While these documents can be amended any time, they should be started long before you apply for a grant, when your lab, center, or institution is formed (see Figure \@ref(fig:fig8-2)). 
 
-```{r fig8-2, fig.cap="Team-level documentation in the research project life cycle"}
+```{r fig8-2, fig.cap="Team-level documentation in the research project life cycle."}
 
 knitr::include_graphics("img/fig8-2.PNG")
 
@@ -58,7 +58,7 @@ A lab manual, or team handbook, creates common knowledge across your team [@mehr
 
 A wiki is a webpage that allows users to collaboratively edit and manage content (Figure \@ref(fig:fig8-3)). It can either be created alongside the lab manual or as an alternative to the lab manual. Wikis can be built and housed in many tools (e.g., SharePoint, Teams, Notion, GitHub). While some lab wikis are public, most are not and can be restricted to invited users only. Wikis are a great way to keep disparate documents and pieces of information, for both administrative and data related purposes, organized in a central, accessible location. Your wiki can include links to important documents and policies, or you can also add text directly to the wiki to describe certain procedures. Rather than sending team members to multiple different folders for frequently requested information, you can refer them to your one wiki page.
 
-```{r fig8-3, fig.cap="Example team wiki with links to frequently requested information"}
+```{r fig8-3, fig.cap="Example team wiki with links to frequently requested information."}
 
 knitr::include_graphics("img/fig8-3.PNG")
 
@@ -71,16 +71,16 @@ Project-level wikis can also be created and are useful in centralizing frequentl
 
 |Source|Resource|
 |--------|-----------|
-|Aly Lab| Example public lab wiki ^[https://osf.io/mdh87/wiki/home/]|
-|Notion|Company home wiki template ^[https://www.notion.so/Company-home-240047f7526c4b0091681dc6c95b7e76]|
-|SYNC Lab| Example public lab wiki ^[https://eur-synclab.github.io/]|
+|Aly Lab| Example public lab wiki^[https://osf.io/mdh87/wiki/home/]|
+|Notion|How to build a wiki for your company^[https://www.notion.so/help/guides/how-to-build-a-wiki-for-your-company]|
+|SYNC Lab| Example public lab wiki^[https://eur-synclab.github.io/]|
 
 
 ### Onboarding and offboarding
 
 *When to create: Team document phase*
 
-While an **onboarding** checklist will mainly consist of non-data related, administrative information such as how to sign up for an email or how to get set up on your laptop, it should also contain several data-specific pieces of information to get staff generally acclimated to working with data in their new role. 
+While an **onboarding** checklist will mainly consist of non-data related, administrative information such as how to sign up for an email or how to get set up on your laptop, it should also contain several data-specific pieces of information to get staff generally acclimated to working with data in their new role. This ensures that everyone is receiving consistent information about data practices and standards [@briney_foundational_2020].
   
 Similarly, while an **offboarding** checklist will contain a lot of procedural information about returning equipment and handing off tasks, it should also contain information specific to data management and documentation that help maintain data integrity and security.
 
@@ -96,8 +96,8 @@ knitr::include_graphics("img/fig8-4.PNG")
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Sample data topics to add to an onboarding checklist ^[https://osf.io/yzsc8]|
-|Crystal Lewis | Sample data topics to add to an offboarding checklist ^[https://osf.io/h4kwf]|
+|Crystal Lewis | Sample data topics to add to an onboarding checklist^[https://osf.io/yzsc8]|
+|Crystal Lewis | Sample data topics to add to an offboarding checklist^[https://osf.io/h4kwf]|
 
 ### Data inventory {#document-inventory}
 
@@ -109,9 +109,10 @@ A data inventory maps all datasets collected by the research team across all pro
 -   Dates that each dataset was collected
 -   Details about each dataset (what the dataset contains, how it is organized, what questions can be answered with the data)
 -   How datasets are related
+-   Links to relevant documentation
 -   Storage location of each dataset or who to contact for access
 
-```{r fig8-5, fig.cap="Example data inventory document"}
+```{r fig8-5, fig.cap="Example data inventory document."}
 
 knitr::include_graphics("img/fig8-5.PNG")
 
@@ -125,7 +126,7 @@ A team-level data security policy is a set of formal guidelines for working with
 
 Ideas of content to include in a team-level data security policy are included in Figure \@ref(fig:fig8-6).
 
-```{r fig8-6, fig.cap="Example of content to include in a team data security policy"}
+```{r fig8-6, fig.cap="Example of content to include in a team data security policy."}
 
 knitr::include_graphics("img/fig8-6.PNG")
 
@@ -143,14 +144,14 @@ knitr::include_graphics("img/fig8-6.PNG")
 
 *When to create: Team document phase, planning data management phase*
 
-A style guide is a set of standards for the formatting of information. It improves consistency and creates a shared understanding within and across files and projects. This document includes conventions for procedures such as variable naming, variable value coding, file naming, file structure, and even coding practices. It can be created in one large document or separate files for each type of procedure. I highly recommend applying your style guide consistently across all projects, hence why this is included in the team documentation. Since style guides are so important, and there are many recommended practices to cover, I have given this document its own chapter. See Chapter \@ref(style) for more information.
+A style guide is a set of standards for the formatting of information. It improves consistency and creates a shared understanding within and across files and projects. This document includes conventions for procedures such as variable naming, variable value coding, file naming, file structure, and even coding practices. It can be created in one large document or separate files for each type of procedure. I highly recommend applying your style guide consistently across all projects which is why this is included in the team documentation. Since style guides are so important, and there are many recommended practices to cover, I have given this document its own chapter. See Chapter \@ref(style) for more information.
 
 **Templates and resources**
 
 |Source|Resource|
 |--------|-----------|
-|Hadley Wickham | Example R coding style guide ^[https://style.tidyverse.org/]|
-|Strategic Data Project| Example style guide ^[https://hwpi.harvard.edu/files/sdp/files/sdp-toolkit-coding-style-guide.pdf]|
+|Hadley Wickham | Example R coding style guide^[https://style.tidyverse.org/]|
+|Strategic Data Project| Example style guide^[https://hwpi.harvard.edu/files/sdp/files/sdp-toolkit-coding-style-guide.pdf]|
 
 
 ## Project-level
@@ -199,7 +200,7 @@ Action Items:
 
 ```
 
-All meeting notes should be stored in a central location where team members can reference them as needed (e.g., a planning folder with notes ordered by date, a running document linked on a project wiki page). After the planning phase is complete, any decisions should be formally documented in applicable team, project, data, or variable-level documents (e.g., research protocol, SOPs, style guide, or roles and responsibilities documents). Even beyond the planning phase though, all meeting decisions and discussions should continue to be documented in meeting notes and used to update formal documentation as needed.
+All meeting notes should be stored in a central location where team members can reference them as needed (e.g., a planning folder with notes ordered by date, a running document linked on a project wiki page). After the planning phase is complete, any decisions should be formally documented in applicable team-, project-, data-, or variable-level documents (e.g., research protocol, SOPs, style guide, or roles and responsibilities documents). Even beyond the planning phase, though, all meeting decisions and discussions should continue to be documented in meeting notes and used to update formal documentation as needed.
 
 ### Roles and responsibilities document
 
@@ -211,9 +212,8 @@ Using the checklists reviewed during the DMP and planning phase, your team shoul
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Roles and responsibilities template organized by phase in long format ^[https://osf.io/hdqt4]|
-|Crystal Lewis | Roles and responsibilities template organized by phase in wide format ^[https://osf.io/5n2ke]|
-|Crystal Lewis | Roles and responsibilities template organized by role ^[https://osf.io/3yp7x]|
+|Crystal Lewis | Roles and responsibilities template organized by phase in wide format^[https://osf.io/5n2ke]|
+|Crystal Lewis | Roles and responsibilities template organized by role^[https://osf.io/3yp7x]|
 
 
 ### Research protocol {#document-protocol}
@@ -222,7 +222,7 @@ Using the checklists reviewed during the DMP and planning phase, your team shoul
 
 The research protocol is a comprehensive project plan that describes the what, who, when, where, and how of your study. Many of the decisions made while writing your data management plan and reviewing your planning checklists will be summarized in this document. If you are submitting your study to an Institutional Review Board, you will most likely be required to submit this document as part of your application. A research protocol assists the board in determining if your methods provide adequate protection for human subjects. In addition to serving this required purpose, the research protocol is also an excellent document to share along with your data at the time of data sharing, and an excellent resource for you when writing technical reports or manuscripts. This document provides the context needed for you and others to effectively interpret and use your data. Make sure to follow your institution's specific template if provided, but items commonly included in a protocol are shown in Figure \@ref(fig:fig8-7).
 
-```{r fig8-7, fig.cap="Common research protocol elements"}
+```{r fig8-7, fig.cap="Common research protocol elements."}
 
 knitr::include_graphics("img/fig8-7.PNG")
 
@@ -234,11 +234,11 @@ When it comes time to deposit your data in a repository, the protocol can be rev
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|A template to create a project-level summary document for data sharing (based on an IRB research protocol) ^[https://osf.io/q6g8d]|
-|Jeffrey Shero, Sara Hart|IRB protocol template with a focus on data sharing ^[https://figshare.com/articles/preprint/IRB_Protocol_Template/13218797]|
-|The Ohio State University| Protocol template ^[http://orrp.osu.edu/files/2011/10/GuidelinesforWritingaResearchProtocol.pdf]|
-|University of Missouri| Protocol template ^[https://docs.research.missouri.edu/human_subjects/templates/Social_Behavioral_Educational_Protocol_Template.docx]|
-|University of Washington| Protocol checklist ^[https://depts.washington.edu/wildfire/resources/protckl.pdf]|
+|Crystal Lewis|A template to create a project-level summary document for data sharing (based on an IRB research protocol)^[https://osf.io/q6g8d]|
+|Jeffrey Shero, Sara Hart|IRB protocol template with a focus on data sharing^[https://figshare.com/articles/preprint/IRB_Protocol_Template/13218797]|
+|The Ohio State University| Protocol template^[http://orrp.osu.edu/files/2011/10/GuidelinesforWritingaResearchProtocol.pdf]|
+|University of Missouri| Protocol template^[https://docs.research.missouri.edu/human_subjects/templates/Social_Behavioral_Educational_Protocol_Template.docx]|
+|University of Washington| Protocol checklist^[https://depts.washington.edu/wildfire/resources/protckl.pdf]|
 
 ### Supplemental documents {#document-supplement}
 
@@ -250,7 +250,7 @@ While these documents can absolutely stand alone, I am calling these supplementa
 
 The first supplemental document that I highly recommend creating is a visual representation of your data collection timeline. When you first create a timeline, it will be based on your best estimate of the time it will take to complete milestones, but like all documents we've discussed, it can be updated as you learn more about the reality of the workload. This document can be both a helpful planning tool (for both project and data teams) in preparing for times of heavier and lighter workloads, as well as an excellent document to share with future data users to better understand waves of data collection. There is no one format for how to create this document. Figure \@ref(fig:fig8-8) is an example of one way to visualize a data collection timeline.
 
-```{r fig8-8, fig.cap="Example data collection timeline"}
+```{r fig8-8, fig.cap="Example data collection timeline."}
 
 knitr::include_graphics("img/fig8-8.PNG")
 
@@ -260,9 +260,9 @@ knitr::include_graphics("img/fig8-8.PNG")
 
 *When to create: After data collection*
 
-A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. As seen in Figure \@ref(fig:fig8-9), these diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams [@schulz_consort_2010]. They provide a means to understand how participants are randomized and assigned to treatment groups. As you can imagine though, this diagram cannot be started until participants are recruited and enrolled, and it must be updated as each wave of data is collected. Your participant tracking database, which we will discuss in Chapter \@ref(track), will inform the creation of this diagram.
+A participant flow diagram displays the movement of participants through a study, assisting researchers in better understanding milestones such as eligibility, enrollment, and final sample counts. As seen in Figure \@ref(fig:fig8-9), these diagrams are helpful for assessing study attrition and reasons for missing data can be described in the diagram [@nahmias_effects_2022]. In randomized controlled trial studies, these visualizations are more formally referred to as CONSORT (Consolidated Standards of Reporting Trials) diagrams [@schulz_consort_2010]. They provide a means to understand how participants are randomized and assigned to treatment groups. As you can imagine, though, this diagram cannot be started until participants are recruited and enrolled, and it must be updated as each wave of data is collected. Your participant tracking database, which we will discuss in Chapter \@ref(track), will inform the creation of this diagram.
 
-```{r fig8-9, fig.cap="Example participant flow diagram"}
+```{r fig8-9, fig.cap="Example participant flow diagram."}
 
 knitr::include_graphics("img/fig8-9.PNG")
 
@@ -272,7 +272,7 @@ knitr::include_graphics("img/fig8-9.PNG")
 
 *When to create: Create instruments phase*
 
-Unless a form is proprietary, actual copies of instruments can be included as supplemental documentation. This includes copies of surveys, assessments, forms, and so forth. It can also include any technical documents associated with your instruments or measures (i.e., a technical document for an assessment or a publication associated with a measure you used). Sometimes researchers will annotate instruments to show how items were named or coded.
+Unless a form is proprietary, actual copies of instruments can be included as supplemental documentation. This includes copies of surveys, assessments, and other forms. It can also include any technical documents associated with your instruments or measures (i.e., a technical document for an assessment or a publication associated with a measure you used). Sometimes researchers will annotate instruments to show how items were named or coded.
 
 4. Flowchart of data collection instruments
 
@@ -280,7 +280,7 @@ Unless a form is proprietary, actual copies of instruments can be included as su
 
 You can also include flowcharts of how participants are provided or assigned to different instruments or screeners to help users better understand issues such as missing data (see Figure \@ref(fig:fig8-10)).
 
-```{r fig8-10, fig.cap="Example instrument decision making flowchart"}
+```{r fig8-10, fig.cap="Example instrument decision making flowchart."}
 
 knitr::include_graphics("img/fig8-10.PNG")
 
@@ -298,7 +298,7 @@ Informed consent forms (see Section \@ref(collect-irb)) can also be added as an 
 
 While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_2023]. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision-making processes. If you recall from Chapter \@ref(plan), every step we added to a data collection workflow is then added to an SOP, and the details fleshed out. Not only will you have an SOP for each source of data you are collecting (i.e., teacher survey, student assessments, teacher observation), you should also have SOPs for any other decisions or processes that need to be repeated in a reproducible manner or followed in a specific way to maintain compliance [@hollmann_ten_2020]. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig8-11). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
 
-```{r fig8-11, fig.cap="Examples of data management SOPs to create"}
+```{r fig8-11, fig.cap="Examples of data management SOPs to create."}
 
 knitr::include_graphics("img/fig8-11.PNG")
 
@@ -306,19 +306,19 @@ knitr::include_graphics("img/fig8-11.PNG")
 
 In addition to giving staff instruction on how to perform tasks, SOPs also create transparency in practices, allow for continuity when staff turnover or go out on leave, create standardization in procedures, and last, because an SOP should include versioning information, they allow you to accurately report changes in procedures throughout the project. You will want to create a template that is used consistently across all procedures, by all staff who build SOPs (see Figure \@ref(fig:fig8-12) for an example). 
 
-```{r fig8-12, fig.cap="Standard operating procedure minimal template"}
+```{r fig8-12, fig.cap="Standard operating procedure minimal template."}
 
 knitr::include_graphics("img/fig8-12.PNG")
 
 ```
 
-In developing your SOP template, you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools, terminology, or documentation. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**, lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, or methods of communication (e.g., email vs instant message), should be included. Additions such as screenshots, links to other SOPs or workflow diagrams, or even links to online tutorials or staff-created how-to videos can also be embedded. Last, any time revisions are made to the SOP, clarifying information about the update is added to the **revision** section and a new version of the SOP is saved (see Section 9.3 for ideas on how to version a file name). This allows you to keep track of what changes were made over time, including when they were made and who made them. 
+In developing your SOP template, you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools, terminology, or documentation. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**, lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, or methods of communication (e.g., email vs instant message) should be included. Additions such as screenshots, links to other SOPs or workflow diagrams, or even links to online tutorials or staff-created how-to videos can also be embedded. Last, any time revisions are made to the SOP, clarifying information about the update is added to the **revision** section and a new version of the SOP is saved (see Section 9.3 for ideas on how to version a file name). This allows you to keep track of what changes were made over time, including when they were made and who made them. 
 
 **Templates and resources**
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|SOP template ^[https://osf.io/yq3np]|
+|Crystal Lewis|SOP template^[https://osf.io/yq3np]|
 
 
 ## Dataset-level {#document-dataset}
@@ -329,7 +329,7 @@ Dataset-level documentation applies solely to your datasets and includes informa
 
 *When to create: At any time they are useful*
 
-A README is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no frills manner. READMEs can be used in many different ways, but I will cover three ways they are often used in data management.
+A README is a plain text document that contains information about your files. These stem from the field of computer science but are now prevalent in the research world. These documents are a way to convey pertinent information to collaborators in a simple, no-frills manner. READMEs can be used in many different ways, but I will cover three ways they are often used in data management.
 
 1. For conveying information to your colleagues
     - Imagine a scenario where a study participant reaches out to a project coordinator to let them know that they entered the incorrect ID in their survey. When the project coordinator downloads the raw data file to be cleaned by the data manager, they also create a file named "readme.txt" that contains this information and it is saved alongside the data file in the raw data folder. Now, when the data manager goes to retrieve the data file, they will see that a README is included and know to review that document first.
@@ -356,7 +356,7 @@ Example README used to convey information about steps in a process
 3. For providing information about a set of files in a directory
     - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets. This README can include things like a description of the files, how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes, or acronyms used in datasets, or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository. 
 
-```{r fig8-13, fig.cap="Example README for conveying information about files in a directory"}
+```{r fig8-13, fig.cap="Example README for conveying information about files in a directory."}
 
 knitr::include_graphics("img/fig8-13.PNG")
 
@@ -366,8 +366,8 @@ knitr::include_graphics("img/fig8-13.PNG")
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | README template for sharing information about a set of files in a directory ^[https://osf.io/tk4cb]|
-|Crystal Lewis| README template for sharing project-level information ^[https://osf.io/d3pum]|
+|Crystal Lewis | README template for sharing information about a set of files in a directory^[https://osf.io/tk4cb]|
+|Crystal Lewis| README template for sharing project-level information^[https://osf.io/d3pum]|
 
 ### Changelog {#document-change}
 
@@ -387,7 +387,7 @@ In its simplest form a changelog should contain the following [@schmitt_data_201
   
 It can also be helpful to record additional information such as who made the change and a link to any code used to transform the data [@cessda_training_team_cessda_2017].
 
-```{r fig8-14, fig.cap="Example changelog for a clean student survey data file"}
+```{r fig8-14, fig.cap="Example changelog for a clean student survey data file."}
 
 knitr::include_graphics("img/fig8-14.PNG")
 
@@ -397,7 +397,7 @@ knitr::include_graphics("img/fig8-14.PNG")
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|Changelog template ^[https://osf.io/trw6b]|
+|Crystal Lewis| Changelog template^[https://osf.io/trw6b]|
 
 
 ### Data cleaning plan {#document-plan}
@@ -410,7 +410,7 @@ This document can be started in the documentation phase, but will most likely co
 
 A data cleaning plan should be based on agreed-upon norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently (see Section \@ref(clean-criteria)). These norms can be operationalized into a checklist of transformations that can inform your data cleaning plan, along with your data dictionary and other relevant documentation. We will review what types of transformations you should consider adding to your data cleaning plan in Section \@ref(clean-check). 
 
-An example of a simplified data cleaning plan for a student survey file.
+An example of a simple data cleaning plan for a student survey file.
 
 ```
 1. Import raw data
@@ -431,13 +431,13 @@ An example of a simplified data cleaning plan for a student survey file.
 
 ## Variable-level
 
-When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. Variable-level documentation tells us all pertinent information about the variables in our datasets: variable names, descriptions, types, and allowable values. While this documentation is often used to interpret existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data. We will discuss this more throughout the chapters in this book.
+When we think about data management, I think this is most likely the first type of documentation that pops into people's minds. Variable-level documentation tells us all pertinent information about the variables in our datasets: Variable names, descriptions, types, and allowable values. While this documentation is often used to interpret existing datasets, it can also serve many other vital purposes including guiding the construction of data collection instruments, assisting in data cleaning, or validating the accuracy of data. We will discuss this more throughout the chapters in this book.
 
 ### Data dictionary {#document-dictionary}
 
 *When to create: Documentation phase, sometimes the data capture phase for external datasets*
 
-A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@bordelon_guides_2023; @gonzales_ten_2022; @uc_merced_library_what_2023]. This document is most useful if created during the documentation phase and used throughout a study for both planning and interpretation purposes (see Figure \@ref(fig:fig8-15)) [@lewis_using_2022; @van_bochove_data_2023]. 
+A data dictionary is a rectangular formatted collection of names, definitions, and attributes about variables in a dataset [@gonzales_ten_2022; @uc_merced_library_what_2023]. This document is most useful if created during the documentation phase and used throughout a study for both planning and interpretation purposes (see Figure \@ref(fig:fig8-15)) [@lewis_using_2022; @van_bochove_data_2023]. 
 
 ```{r fig8-15, fig.cap="The many uses for a data dictionary"}
 
@@ -445,7 +445,7 @@ knitr::include_graphics("img/fig8-15.PNG")
 
 ```
 
-A data dictionary is typically structured so that each row represents a variable in your dataset, and each column represents a field of information about that variable [@broman_data_2018; @grynoch_resource_2023]. There are several necessary fields to include in a data dictionary, as well as several optional fields (see Table \@ref(tab:tab8-1)).
+A data dictionary is typically structured so that each row corresponds to a variable in your dataset, and each column represents a field of information about that variable [@broman_data_2018; @grynoch_resource_2024]. There are several necessary fields to include in a data dictionary, as well as several optional fields (see Table \@ref(tab:tab8-1)).
 
 <br>
 
@@ -467,7 +467,7 @@ tibble::tribble (~"Fields to Include", ~"Optional Fields to Include",
 ```
 
 
-You should build one data dictionary for each instrument you plan to collect, including both original data collection instruments as well as external data sources (e.g., student education records). If there are five data sources in your data sources catalog, you should end up with five data dictionaries. 
+You should build one data dictionary for each instrument you plan to collect, including both original data collection instruments and external data sources (e.g., student education records). If there are five data sources in your data sources catalog, you should end up with five data dictionaries. 
 
 #### Creating a data dictionary for an original data source {#document-original}
 
@@ -478,17 +478,21 @@ When you are collecting original data, there are a few things that are helpful t
 2. Your style guide
     - We will talk more about style guides in Chapter \@ref(style), but this document will provide team or project standards for naming variables and coding response values.  
 3. Documentation for your measures
-    - If you are collecting data using existing measures (i.e., existing scales, existing standardized assessments), you will want to collect any documentation on those measures, such as technical documents or copies of instruments. You will want your documentation to provide information such as:  
-      - What items are included in the measure? What is the exact wording of the items?  
-      - How are items divided by subscales?
-      - How are items coded? What are allowable values? 
-      - Are there any calculations/scoring/reverse coding needed? 
-      - If items are entered into a scoring program and then exported, what variables are exported?
-    - See Figure \@ref(fig:fig8-16) for an example of the information that could be pulled from a publication if you were using the Math Anxiety Scale for Teachers (MAST) [@ganley_construct_2019].
-4. Any data element standards that you plan to use
+    - You will need a draft of all items that will be included in your instrument
+      - If you are collecting data using existing measures (i.e., existing scales, existing standardized assessments), you will want to collect any documentation on those measures, such as technical documents or copies of instruments. 
+        - You will want your documentation to provide information such as:  
+          - What items are included in the measure? What is the exact wording of the items?  
+          - How are items divided by subscales?
+          - How are items coded? What are allowable values? 
+          - Are there any calculations/scoring/reverse coding needed? 
+          - If items are entered into a scoring program and then exported, what variables are exported?
+        - See Figure \@ref(fig:fig8-16) for an example of the information that could be pulled from a publication if you were using the Math Anxiety Scale for Teachers (MAST)
+ [@ganley_construct_2019].
+      - If you have used any items in former projects, also pull data dictionaries from previous projects as it can be helpful to collect data consistently across projects
+4. Any data element standards that you plan to use [@uc_merced_library_what_2023]
     - See Section \@ref(collect-design) for an overview of existing data element standards
 
-```{r fig8-16, fig.cap="Pulling relevant information for the Math Anxiety Scale for Teachers (MAST)"}
+```{r fig8-16, fig.cap="Pulling relevant information for the Math Anxiety Scale for Teachers (MAST)."}
 
 knitr::include_graphics("img/fig8-16.PNG")
 
@@ -497,14 +501,17 @@ knitr::include_graphics("img/fig8-16.PNG")
 All measures/items for each instrument will be included in the data dictionary. As you build your data dictionaries, consider the following:
 
   - Item names
-    - Are your variable names meeting the requirements laid out in your style guide? 
+    - Are your variable names meeting the requirements laid out in your style guide?
+    - If you have used an item before, how was it named in the previous project?
     - Are there any field standards that dictate how an item should be named?
   - Item wording
     - If your items come from an existing scale, does the item wording match the wording in the scale documentation? Do you plan to reword the item?
+    - If you have used an item before, how was it worded in the previous project?
     - Are there any field standards that dictate how an item should be worded?
   - Item value codes for categorical items
     - If your items come from an existing scale, does your value coding (the numeric values assigned to your categorical response options) align with the coding laid out in the scale documentation? 
     - If your items do not come from an existing scale, does your value coding align with the requirements in your style guide? 
+    - If you have used an item before, how was it coded in the previous project?
     - Are there any field standards that dictate how an item's values should be coded?
   - What additional items will make up your final dataset? Consider items that will be derived, collected through metadata, or added in. All of these should be included in your data dictionary. 
     - Unique study identifiers (see Section \@ref(structure-database))
@@ -520,7 +527,7 @@ All measures/items for each instrument will be included in the data dictionary. 
 
 Figure \@ref(fig:fig8-17) provides an example of simplified teacher survey data dictionary, including items from the MAST scale [@ganley_construct_2019]. 
 
-```{r fig8-17, fig.cap="Example teacher survey data dictionary"}
+```{r fig8-17, fig.cap="Example teacher survey data dictionary."}
 
 knitr::include_graphics("img/fig8-17.PNG")
 
@@ -530,7 +537,7 @@ The last step of creating your data dictionary, is to review the document with y
 
   - Is everyone in agreement about how variables are named, acceptable variable ranges, how values are coded, and the variable types and formats? 
   - Is everyone in agreement about which participants receive each item (e.g., everyone or only a specific group)?  
-  - Does the team want to adjust any of the item wording? 
+  - Does the team want to adjust any of the item wordings? 
   - Does the data dictionary include everything the team plans to collect? Are any items missing?
       - If additional items are added to instruments at later points in a longitudinal collection, adding fields to your data dictionary, such as `time periods available`, can be really helpful to future users in understanding why some items may be missing data at certain time points.
   - Does the dictionary include all the variables you plan to derive? (i.e., either derived by your team, or by an external scoring system)? 
@@ -570,14 +577,14 @@ The process described in this section is a manual, time consuming process. This 
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis|Data dictionary template ^[https://osf.io/ynqcu]|
+|Crystal Lewis|Data dictionary template^[https://osf.io/ynqcu]|
 
 
 ### Codebook {#document-codebook}
 
 *When to create: Data cleaning and validation phase, prepare for archive phase*
 
-Codebooks provide descriptive, variable-level information as well univariate summary statistics which allow users to understand the contents of a dataset without ever opening it. Unlike a data dictionary, a codebook is created **after** your data is collected and cleaned, and its value lies in data interpretation and data validation. 
+Codebooks provide descriptive, variable-level information as well as univariate summary statistics which allows users to understand the contents of a dataset without ever opening it. Unlike a data dictionary, a codebook is created **after** your data is collected and cleaned, and its value lies in data interpretation and data validation. 
 
 The codebook contains some information that overlaps with a data dictionary, but is more of a summary document of what actually exists in your dataset [@icpsr_guide_2011] (see Table \@ref(tab:tab8-2)).
 
@@ -596,11 +603,11 @@ tibble::tribble (~"Overlapping Information", ~"New Information",
   
 ```
 
-In addition to being an excellent resource for users to review your data without ever opening the file, this document may also help you catch errors in your data if out of range or unexpected values appear. 
+In addition to being an excellent resource for users to review your data without ever opening the file [@university_of_iowa_libraries_metadata_2024], this document may also help you catch errors in your data if out of range or unexpected values appear. 
 
-You can create separate codebooks per dataset or have them all contained in one document, linked through a table of contents. Unlike a data dictionary, which I recommend creating manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebooks, including point and click statistical programs such as SPSS, or with a little programming knowledge you can more flexibly design codebooks using programs like R or SAS. The R programming language in particular has many packages that will create and export codebooks in a variety of formats from your existing dataset ^[https://github.com/Cghlewis/codebook-pkg-comparison]. Figure \@ref(fig:fig8-18) is an example codebook created in R using the `memisc` package [@elff_memisc_2023].
+You can create separate codebooks per dataset or have them all contained in one document, linked through a table of contents. Unlike a data dictionary, which I recommend creating manually, a codebook should be created through an automated process. Automating codebooks will not only save you tons of time, but it will also reduce errors that are made in manual entry. You can use many tools to create codebooks, including point and click statistical programs such as SPSS, or with a little programming knowledge you can more flexibly design codebooks using programs like R or SAS. The R programming language in particular has many packages that will create and export codebooks in a variety of formats from your existing dataset. Figure \@ref(fig:fig8-18) is an example codebook created in R using the `memisc` package^[https://osf.io/d3tx4] [@elff_memisc_2023].
 
-```{r fig8-18, fig.cap="Example teacher survey codebook content"}
+```{r fig8-18, fig.cap="Example teacher survey codebook content."}
 
 knitr::include_graphics("img/fig8-18.PNG")
 
@@ -612,8 +619,8 @@ Last, you may notice as you review codebooks created by other researchers, many 
 
 |Source|Resource|
 |--------|-----------|
-|ICPSR | Guide to Codebooks ^[https://www.icpsr.umich.edu/files/deposit/Guide-to-Codebooks_v1.pdf]|
-|National Center for Health Statistics | Example codebook ^[https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2020/adult-codebook.pdf]|
+|ICPSR | Guide to Codebooks^[https://www.icpsr.umich.edu/files/deposit/Guide-to-Codebooks_v1.pdf]|
+|National Center for Health Statistics | Example codebook^[https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/NHIS/2020/adult-codebook.pdf]|
 
 ## Repository metadata {#document-metadata}
 
@@ -621,9 +628,9 @@ Last, you may notice as you review codebooks created by other researchers, many 
 
 When it comes time to deposit a project or resource in a repository, you will submit two types of documentation, human-readable documentation, which includes any of the documents we've previously discussed, and metadata. Metadata, data about your data, is documentation that is meant to be processed by machines and serves the purpose of making your files searchable [@cessda_training_team_cessda_2017; @danish_national_forum_for_research_data_management_metadata_2023]. Metadata aids in the cataloging, citing, discovering, and retrieving of data and its creation is a critical step in creating FAIR data (see Section \@ref(rdm-fair)) [@logan_data_2021; @uk_data_service_research_2023 ; @wilkinson_fair_2016].
 
-For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_2023]. As you deposit your data, the repository may have you fill out a form. The information collected from this intake form will become your metadata. Figure \@ref(fig:fig8-19) is an example of a metadata form for OSF ([https://osf.io](https://osf.io)).
+For the most part, no additional work is needed to create metadata when depositing your data in a repository. It will simply be created as part of the depositing process [@cessda_training_team_cessda_2017;@university_of_iowa_libraries_metadata_2024]. As you deposit your data, the repository may have you fill out a form. The details collected from this intake form are converted into both human- and machine-readable information (i.e., metadata). Figure \@ref(fig:fig8-19) is an example of a metadata form for OSF ([https://osf.io](https://osf.io)).
 
-```{r fig8-19, fig.cap="Example metadata intake form for OSF"}
+```{r fig8-19, fig.cap="Example metadata intake form for OSF."}
 
 knitr::include_graphics("img/fig8-19.PNG")
 
@@ -665,13 +672,13 @@ If your repository provides limited forms for metadata entry, you can also choos
 
 Metadata standards, typically field specific, establish a common way to describe your data which improves data interoperability as well as the ability of users to find, understand, and use data. Metadata standards can be applied in several ways [@bolam_guides_2022; @cofield_libguides_2023]. 
 
-1. Formats: What machine-readable format should metadata be in? 
-2. Schema: What elements are recommended verses mandatory for project, dataset, and variable-level metadata?
+1. Formats: What machine-readable format should metadata be in (e.g., XML, JSON)? 
+2. Schema: What elements are recommended verses mandatory for project-, dataset-, and variable-level metadata?
 3. Controlled vocabularies: A controlled list of terms used to index and retrieve data.
 
 Many fields have chosen metadata standards to adhere to [@berry_guides_2022; @bolam_guides_2022] (see Figure \@ref(fig:fig8-20)). Some fields, like psychology [@kline_technical_2018], are developing their own metadata standards, including formats, schemas, and vocabularies grounded in the FAIR principles and the Schema.org schema [@schemaorg_schemaorg_2023]. Yet, the Institute of Education Sciences recognizes that there are currently no agreed-upon metadata standards in the field of education [@institute_of_education_sciences_frequently_2023].
 
-```{r fig8-20, fig.cap="A sampling of field metadata standards"}
+```{r fig8-20, fig.cap="A sampling of field metadata standards."}
 
 knitr::include_graphics("img/fig8-20.PNG")
 
@@ -679,13 +686,13 @@ knitr::include_graphics("img/fig8-20.PNG")
 
 If you plan to archive your data, first check with your repository to see if they follow any standards. For example, both the OSF [@gueguen_new_2023] and Figshare [@figshare_figshare_2023] repositories currently use the DataCite schema, while ICPSR uses the DDI standard [@icpsr_icpsr_2023]. If the repository does use certain standards, work with them to ensure your metadata adheres to those standards. Some repositories may even provide curation support free or for a fee. But as I mentioned earlier, depending on your repository, adding metadata to your project may require no additional work on your part. The repository may simply have you enter information into a form and convert all information for you.
 
-If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_metadata_2023], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
+If no standards are provided by your repository and you plan to create your own metadata, you can choose any standard that works for you. Oftentimes researchers may choose to pick a more general standard such as DataCite or Dublin Core [@university_of_iowa_libraries_metadata_2024], and in the field of education, most researchers are at least familiar with the DDI standard so that is another good option. Remember, if you do choose to adhere to a standard, this decision should be documented in your data management plan.
 
 **Resources**
 
 |Source|Resource|
 |--------|-----------|
-|Registry of Research Data Repositories|A searchable database of repositories and their metadata standards ^[https://www.re3data.org/]|
+|Registry of Research Data Repositories|A searchable database of repositories and their metadata standards^[https://www.re3data.org/]|
 
 ## Wrapping it up
 

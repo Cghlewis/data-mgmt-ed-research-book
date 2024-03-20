@@ -1,6 +1,6 @@
 # Style Guide {#style}
 
-```{r fig9-1, fig.cap="Style guide in the research project life cycle"}
+```{r fig9-1, fig.cap="Style guide in the research project life cycle."}
 
 knitr::include_graphics("img/fig9-1.PNG")
 
@@ -11,7 +11,7 @@ A style guide provides general rules for the formatting of information. As menti
 Style guides create standardization within and across projects. The benefits of using them consistently include:
 
 - Creating interoperability: This allows data to easily be combined or compared across forms or time.
-- Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to both humans and computers.
+- Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to both humans and computers. This in turn prevents errors such as accidentally using the wrong file or incorrectly interpreting a variable.
 - Increasing reproducibility: If the organization of your file paths, file naming, or variable naming constantly change, it undermines the reproducibility of any data management or analysis code you have written.
 
 Style guides can be created for individual projects, but they can also be created at the team level, to be applied across all projects. Most importantly, they should be created before a project kicks off so you can implement them as soon as your project begins. If you do not have a team-wide style guide already created, you most likely will want to create a project-level style guide during your planning phase so that you can begin setting up your directory structures and file naming standards before you start creating and saving project-related files. 
@@ -32,8 +32,7 @@ Before we dive into particular types of style guides, there are a few things to 
 
 1. Avoid spaces. 
     - Command line operations and some operating systems do not support them, so it is best to avoid them all together. Furthermore, they can often break a URL when shared.
-    - The underscore (`_`) and hyphen (`-`) are good delimiters to use in place of spaces.
-      - It is worth noting that (`_`) can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
+    - The underscore (`_`) and hyphen (`-`) are generally good delimiters to use in place of spaces. An exception to this rule is denoted in Section \@ref(style-varname).
 2. With the exception of (`_`) and (`-`), avoid special characters.
     - Examples include but are not limited to `?`, `.`, `*`, `\`, `/`, `+`, `'`, `&`, `"`.
     - Computers assign specific meaning to many of these special characters.
@@ -72,15 +71,15 @@ Top level phase folders
 ```
 project_new/
 ├── phase1
-|   ├── planning
-|   |   └── ...
 |   ├── documentation
+|   |   └── ...
+|   ├── planning
 |   |   └── ...
 |   └── ...
 ├── phase2
-|   ├── planning
-|   |   └── ...
 |   ├── documentation
+|   |   └── ...
+|   ├── planning
 |   |   └── ...
 |   └── ...
 └── ...
@@ -91,13 +90,13 @@ Top level content folders
 
 ```
 project_new/
-├── planning
+├── documentation
 |   ├── phase1
 |   |   └── ...
 |   ├── phase2
 |   |   └── ...
 |   └── ...
-├── documentation
+├── planning
 |   ├── phase1
 |   |   └── ...
 |   ├── phase2
@@ -115,6 +114,7 @@ project_new/
     - Use `_` or `-` to separate words.
 - With the exception of `-` and `_`, don't use special characters in your folder names.
 - Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned in Section \@ref(style-practices)).
+- If you prefer your folders to appear in a specific order, add the order number to the beginning of the folder name, with leading zeros to ensure proper sorting (`01_`, `02_`).
 
 **Example directory structure style guide**
 
@@ -141,7 +141,7 @@ project_new/
 
 ```
 project_new/
-├── planning
+├── 01_planning
 |   ├── grant_mgmt
 |   |   ├── proposal_docs
 |   |   |   └── ...
@@ -149,7 +149,7 @@ project_new/
 |   |   ├── agendas
 |   |   |   └── ...
 |   └── ...
-├── documentation
+├── 02_documentation
 |   ├── consent_forms
 |   |   └── ...
 |   ├── data_dictionaries
@@ -161,26 +161,27 @@ project_new/
 |   ├── sops
 |   |   └── ...
 |   └── ...
-├── data_collection
+├── 03_data_collection
 |   ├── hiring_materials
 |   |   └── ...
 |   ├── scheduling_materials
 |   |   └── ...
 |   └── ...
-├── tracking
+├── 04_tracking
 │   ├── parent_consents
 |   |   └── ...
 │   └── participant_tracking_database.accdb
-├── data
+├── 05_data
 │   ├── cohort1
 │   |   ├── student
 |   |   |   ├── survey
-|   |   |   |   └── clean
+|   |   |   |   ├── clean
 |   |   |   |   |   ├── archive
 |   |   |   |   |   |   └── changelog.txt
-|   |   |   |   └── raw
+|   |   |   |   ├── raw
 |   |   |   |   |   ├── archive
 |   |   |   |   |   |   └── changelog.txt
+|   |   |   |   └── ...  
 |   |   |   └── ... 
 |   |   └── ...
 |   └── ...   
@@ -190,7 +191,7 @@ project_new/
 
 ## File naming {#style-file}
 
-```{r fig9-2, fig.cap="\"Documents\", from xkcd.com"}
+```{r fig9-2, fig.cap="\"Documents\", from xkcd.com."}
 
 knitr::include_graphics("img/fig9-2.PNG")
 
@@ -210,6 +211,7 @@ A file naming style guide helps us to name files in a way that allows us to answ
 - No PII should be used in a file name (e.g., participant name).
 - Never use spaces between words.
   - Use (`-`) or (`_`) to separate words. 
+  - It is worth noting that (`_`) may be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
 - With the exception of (`_`) and (`-`), never use special characters.
 - Be consistent with delimiters and capitalization. Follow an existing naming convention (see Section \@ref(style-practices)).
 - Consider limiting the number of allowable characters to prevent hitting your path limit.
@@ -285,16 +287,16 @@ This style guide will be a necessary document to have before you start to create
     - Mplus is 8
     - R is 10,000
   - With this said, do not limit yourself to 8 characters based on the fact that one future user may use a program like Mplus. Consider the balance between character limit and interpretation. It is very difficult to make good human-readable variable names under 8 characters. It is much easier to make them under 32. Also, most of your users will be using a program with a limit of 32 or more. If you have one potential Mplus user, they can always rename your variables for their specific analysis.
-- Use the same variable name across time in a project.
-  - If an item is named `anx1` in the fall, name that same item `anx1` again in the spring (see Section \@ref(style-time) for a discussion on accounting for time).
 - Don’t use spaces or special characters, except (`_`). They are not allowed in most programs.
   - Even the (`-`) is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign.
   - While (`.`) is allowed in R and SPSS it is not allowed in Stata so it’s best to avoid using it.
-- Do not start a variable name with a number. This is not allowed in many statistical programs.
+- Do not start a variable name with a number. This is not allowed in many statistical programs.  
+- Do not embed indicator information into variable names.
+  - Cohort, treatment, site, or other grouping information should be added as its own variable in a dataset, not embedded into variable names. This allows your data to be combined across groups as needed.
 - All variable names should be unique.
-  - This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project. The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).
-  - So, for example, if you collect student gender from a survey and you also collect student gender from district student records, differentiate between the two (`s_gender` and `d_gender`).
-  - The exception here is variables collected across time. Identical variables should be named consistently across waves of data collection. See Section \@ref(style-time) for more information about accounting for time.
+  - This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project (e.g., across a teacher survey and a student survey). The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).
+  - The exception to this rule is if you are collecting the same variables across time. In this case, identical variables should be named consistently across waves of data collection to allow easier comparison of information. 
+    - If an item is named `anx1` in the fall, name that same item `anx1` again in the spring (see Section 9.4.1 for a discussion on accounting for time).
 - If you substantively change an item (substantive wording OR response options change) after at least one round of data has been collected, version your variable names to reduce errors in interpretation.
   - For example, revised `anx1` becomes `anx1_v2`.
 
@@ -305,6 +307,7 @@ This style guide will be a necessary document to have before you start to create
   - If a variable is a part of a scale, consider using an abbreviation of that scale plus the scale item number (`anx1`, `anx2`, `anx3`).
     - Not only does this allow you to easily associate an item with a scale, but it also allows you to programmatically select and manipulate scale items (for example, sum all items that start with "anx").
 - If you have used an item before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects. It also allows you to easily reuse code snippets across projects (e.g., for scoring a measure).  
+  - If you choose not to reuse variable names across projects, it will be important for your team to create a document mapping comparable names to facilitate potential future data integration.
 - Choose standard abbreviations to denote the types of variables you are working with (standard score = `ss`). Using controlled vocabularies improves interpretation and makes data exploration and manipulation easier [@riederer_column_2020].
 - Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
   - Snake case (scale_sum) – preferred method for variable names
@@ -313,7 +316,9 @@ This style guide will be a necessary document to have before you start to create
   - Train case (Scale-Sum) – don’t use for variable names
 - If a variable includes a "select all" option, start all associated variables with the same prefix (`cert_elem`, `cert_secondary`, `cert_leader`, `cert_other`). Again, this allows you to easily see grouped items, as well as easily programmatically manipulate those items as needed.
 - Consider denoting reverse coding in the variable name to reduce confusion (`anx1_r`).
-- Include an indication of the reporter in the variable name (student self-report = `s`). This can also help with the unique variable name requirement above. 
+- Include an indication of the reporter in the variable name (student self-report = `s`, district student records = `d`, teacher self-report = `t`, parent report = `p`).
+  - Doing this allows you to consistently name comparable variables to improve interpretation while still creating unique variable names. 
+    - For example, if you collect student gender from a survey and from district student records you can use the names `s_gender` and `d_gender`
 - Choose an order for variable name metadata (e.g., reporter -> variable name -> item number/type).
 
 **Example variable naming style guide**
@@ -381,7 +386,7 @@ Before adding a time component, either as a new variable or as part of a variabl
     
 However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure \@ref(fig:fig9-3) provides just a few examples of how you might account for time in your data based on different scenarios. 
 
-```{r fig9-3, fig.cap="Examples of adding to your data based on a variety of scenarios"}
+```{r fig9-3, fig.cap="Examples of adding time to your data based on a variety of scenarios."}
 
 knitr::include_graphics("img/fig9-3.PNG")
 
@@ -390,9 +395,9 @@ knitr::include_graphics("img/fig9-3.PNG")
 With all of that said, **during an active project, it is actually best to not add a time component to your data**, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period (e.g., `pn_w1_stu_svy_clean_v01.csv`). There are a few benefits of this method.
 
 1. Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave [@reynolds_basics_2022].
-2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point. 
+2. Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging files that later need to be re-combined because you find an error in a dataset at some point. 
 
-Therefore, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should not be added until it is necessary (e.g., when you need to combine files, when you are publicly sharing data). Once you are ready, it is fairly easy to add a time variable or to concatenate time to variable names using a statistical program, such as R ^[placeholder], or even in a program like Microsoft Excel.
+Therefore, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should not be added until it is necessary (e.g., when you need to combine files, when you are publicly sharing data). Once you are ready, it is fairly easy to add a time variable or to concatenate time to variable names using a statistical program, such as R^[https://osf.io/xumg4], or even in a program like Microsoft Excel.
 
 ## Value coding {#style-codes}
 
@@ -400,9 +405,9 @@ Oftentimes in education research we codify categorical values. This coding of va
 
 If you are planning to code any categorical variable values for your study, it can be helpful to include general guidelines in your style guide for assigning those codes. Some general good practices are outlined below.
 
-First, if you are using a pre-existing measure, assign codes and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later based on those measures.
+First, if you are using a pre-existing measure, assign codes and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later based on those measures. Similarly, if you have used items before in previous projects, consider keeping the same coding from prior projects to improve interpretation and usability of those variables.
 
-Otherwise, if you are assigning your own codes, following these guidelines:
+Otherwise, if you are assigning new codes, follow these guidelines to improve interpretation and decrease user errors:
 
 - Codes must be unique.
   - Do: Assign "yes" = 1 | "no" = 0
@@ -417,7 +422,10 @@ Otherwise, if you are assigning your own codes, following these guidelines:
   - Do: Assign "yes" = 1 | "no" = 0 as the value for all yes/no items 
   - Don't: Assign "yes" = 1 | "no" = 0 for some variables, and "yes" = 1 | "no" = 2 for others
     - The exception here is if a pre-existing measure determines how values are coded. In that case, there may be some inconsistency across items.
-- Likert-type scale response options should be ordered in a logical way.
+- Align codes with response options as best as possible.
+  - Do: Assign “none” = 0 | “1” = 1 | “2” = 2 | “3 or more” = 3
+  - Don’t: Assign “none” = 1 | “1” = 2 | “2” = 3 | “3 or more” = 4
+- Likert-type scale codes should be logically ordered.
   - Do: Assign "strongly disagree" = 1 | "disagree" = 2 | "agree" = 3 | "strongly agree" = 4 
   - Don't: Assign "strongly disagree" = 1 | "disagree" = 3 | "agree" = 4 | "strongly agree" = 2
     - The exception here is if a pre-existing measure tells you to code variables in a different way.

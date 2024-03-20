@@ -12,7 +12,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
 
 - Develop style guide.
 - Choose storage locations.
-  - Build directory structures for electronic data and physical. folder structures for paper data.
+  - Build directory structures for electronic data and physical folder structures for paper data.
 - Develop a data management working group (DMWG).
   - Schedule planning meetings and keep meeting notes.
     - Review checklists.
@@ -33,7 +33,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
 - Create data dictionaries.
 - Start data cleaning plans.
 
-**Create instruments** (Chapter \@ref(track) and Chapter \@ref(collect))
+**Create instruments** (Chapters \@ref(track) and \@ref(collect))
 
 - Create participant tracking database.
 - Create data collection instruments.

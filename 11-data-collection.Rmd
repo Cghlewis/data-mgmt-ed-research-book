@@ -1,6 +1,6 @@
 # Data Collection {#collect}
 
-```{r fig11-1, fig.cap="Data collection in the research project life cycle"}
+```{r fig11-1, fig.cap="Data collection in the research project life cycle."}
 
 knitr::include_graphics("img/fig11-1.PNG")
 
@@ -21,7 +21,7 @@ In addition to planning data collection logistics for your original data sources
 
 ## Quality assurance {#collect-assurance}
 
-```{r fig11-2, fig.cap="Common education research data collection methods"}
+```{r fig11-2, fig.cap="Common education research data collection methods."}
 
 knitr::include_graphics("img/fig11-2.PNG")
 
@@ -43,7 +43,7 @@ We will discuss each of these phases below.
 
 > **Note**
 >
-> If you are collecting data using a standardized assessment, along with a provided instrument (e.g., a computer-adaptive testing program, a testing booklet), most of the information in this section will not be applicable as it is best to adhere to all guidelines provided by the assessment company. You can skip to Section \@ref(collect-irb). 
+> If you are collecting data using a standardized assessment, along with a provided tool (e.g., a computer-adaptive testing program, a testing booklet), most of the information in this section will not be applicable as it is best to adhere to all guidelines provided by the assessment company. You can skip to Section \@ref(collect-irb). 
 
 ### Questionnaire design {#collect-design}
 
@@ -53,6 +53,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 
 1. Follow technical documentation for existing scales.
     - If using an existing scale, as discussed in Section \@ref(document-original), make sure to follow any technical documentation associated with that scale (e.g., item wording, response options, item order). This ensures that you are using the scale as intended, and also improves opportunities to integrate data or replicate findings across other studies that have used the same scales.
+    - If you have used a measure before in a previous project, it is also beneficial to keep wording and response options consistent across projects for similar reasons.
 1. Use existing standards if possible.
     - Organizations such as the National Institutes of Health and the National Center for Education Statistics have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
         - Reduces bias
@@ -62,14 +63,14 @@ While some instruments (e.g., cognitive assessments) typically have standardized
         - Improves interpretation of information
 1. Make sure questions are clearly worded and answer choices are clear and comprehensive.
 	- Consider how the language might be interpreted. Is the question wording confusing? Can the response options be misinterpreted?
-	    - Rather than asking "What county are you from?" when looking for the participant's current location, be more specific and ask, "What county do you currently reside in?".
+	    - Rather than asking "What county are you from?" when looking for the participant's current location, be more specific and ask, "What county do you currently reside in?"
 	    - Rather than asking "Which parent are you?" and providing the response options "m" and "f", where "m" and "f" could be interpreted as "male" or "female", clearly write out the response options and make sure they are comprehensive ("mother", "father", "legal guardian", and so forth).
 	    - Rather than asking "Do your children not have siblings?" which can be confusing, remove the negative and ask, "Do your children have siblings?" [@reynolds_basics_2022].
 	 - Is the question leading/biased?
 	    - Are the response options ordered in a leading way?
 	 - Is there more than one way to answer this question?
 	    - Are response categories mutually exclusive and exhaustive [@icpsr_guide_2020]?
-1. Consider data ethics in your questionnaire design [@gaddy_principles_2020; @kaplowitz_5_2020; @kopper_survey_2021; @mathematica_tips_2023; @narvaiz_data_2023].
+1. Consider data ethics in your questionnaire design [@frederick_four_2020; @gaddy_principles_2020; @kaplowitz_5_2020; @kopper_survey_2023; @mathematica_tips_2023].
     - Consider the why of each item and tie your questions to outcomes.
         - Don't cause undue burden on participants by collecting more data just to have more data.
         - If collecting demographic information, provide an explanation of why that information is necessary and how it will be used in your research.
@@ -77,8 +78,8 @@ While some instruments (e.g., cognitive assessments) typically have standardized
       - Does it have potential to do harm to participants? Do the benefits outweigh the risks?
       - If sensitive questions are included, make sure to discuss how you will protect respondent's information.
     -  Make questions inclusive of the population while also capturing the categories relevant for research.
-        - If a question is multiple choice, still include an "other" option with an open-text field.
         - For demographic information, allow participants to select more than one option.
+        - If a demographic question is multiple choice, still include an "other" or "prefer to self-describe" option with an open-text field.
 	  - Consider including one general free-text field in your survey to allow participants to provide additional information that they feel was not captured elsewhere.
 1. Limit the collection of personally identifiable information (PII).
     - Collecting identifiable information is a balancing act between protecting participant confidentiality and collecting the information necessary to implement a study. We often need to collect some identifying information either for the purposes of record linking or for purposes related to study outcomes (e.g., scoring an assessment based on participant's age). 
@@ -90,11 +91,11 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 
 |Source|Resource|
 |--------|-----------|
-|Jessica Kay Flake, Eiko Fried| Measurement Schmeasurement: Questionable Measurement Practices and How to Avoid Them ^[https://doi.org/10.1177/2515245920952393]|
-|Pew Research Center|Writing survey questions ^[https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/]|
-|Sarah Kopper, Katie Parry|Survey design ^[https://www.povertyactionlab.org/resource/survey-design]|
-|Stefanie Stantcheva| How to run surveys: A guide to creating your own identifying variation and revealing the invisible ^[https://www.nber.org/system/files/working_papers/w30527/w30527.pdf]|
-|World Bank|Survey content-focused pilot checklist ^[https://dimewiki.worldbank.org/Checklist:_Content-focused_Pilot]|
+|Jessica Kay Flake, Eiko Fried| Measurement Schmeasurement: Questionable Measurement Practices and How to Avoid Them^[https://doi.org/10.1177/2515245920952393]|
+|Pew Research Center|Writing survey questions^[https://www.pewresearch.org/our-methods/u-s-surveys/writing-survey-questions/]|
+|Sarah Kopper, Katie Parry|Survey design^[https://www.povertyactionlab.org/resource/survey-design]|
+|Stefanie Stantcheva| How to run surveys: A guide to creating your own identifying variation and revealing the invisible^[https://www.nber.org/system/files/working_papers/w30527/w30527.pdf]|
+|World Bank|Survey content-focused pilot checklist^[https://dimewiki.worldbank.org/Checklist:_Content-focused_Pilot]|
 
 ### Pilot the instrument
 
@@ -109,7 +110,7 @@ Gathering feedback on your instruments is an integral part to the quality assura
 
 Last, as you move through the piloting phases, remember to make updates not only in your tool but also in your data dictionary and any other relevant documentation (e.g., data cleaning plan). 
 	  
-```{r fig11-3, fig.cap="Data collection instrument pilot phases"}
+```{r fig11-3, fig.cap="Data collection instrument pilot phases."}
 
 knitr::include_graphics("img/fig11-3.PNG")
 
@@ -128,7 +129,7 @@ Once content piloting is completed, teams should be ready to begin building thei
     - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
     - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, options to embed data, options to calculate scores in the tool)?
 1. Compliance and security
-    - Consider the classification level of each data source (See Chapter \@ref(hsd))
+    - Consider the classification level of each data source (see Chapter \@ref(hsd))
       - Which tools are approved by your institution to protect the sensitivity level of your data?
     - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
     - Does the tool include data backups?
@@ -142,7 +143,7 @@ Once content piloting is completed, teams should be ready to begin building thei
     - Does the tool have version control?
     - Does the tool have features to deal with fraud/bots?
 
-While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the the criteria mentioned in this section, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_2020;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_2023] (See Table \@ref(tab:tab11-1)).
+While there are a variety of tool options, in a nutshell when it comes to data collected via forms, data collection tools can be categorized in one of two ways---electronic or paper. In addition to choosing tools based on the criteria mentioned in this section, there are some general benefits associated with each method that should also be considered, especially when the research team has control over how the data collection tool is built [@cohen_research_2007; @douglas_data_2023; @gibson_data_2021; @icpsr_guide_2020;  @malow_redcap-based_2021; @society_of_critical_care_medicine_building_2018; @van_bochove_data_2023] (see Table \@ref(tab:tab11-1)).
 
 <br>
 
@@ -179,13 +180,13 @@ tibble::tribble (~"Electronic Data Collection Benefits", ~"Paper Data Collection
 
 ### Build with the end in mind {#collect-build}
 
-As you create your data collection tool, you will want to build it with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_research_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. The process for building your tools with the end in mind is fairly different for electronic tools compared to paper forms so we are going to talk about these two processes separately.
+As you create your data collection tool, you will want to build it with the end in mind. This means taking time to consider how the data you collect will be translated into a dataset [@beals_data_2014; @lewis_how_2022; @uk_data_service_research_2023]. Recall from Chapter \@ref(structure), we ultimately need our data to be in a rectangular format, organized according to the basic data organization rules, in order to be analyzable. The process for building your tools with the end in mind is fairly different for electronic tools compared to paper forms, so we are going to talk about these two processes separately.
 
 #### Electronic data collection {#collect-electronic}
 
 If you have ever created a data collection instrument and expected it to export data that looks like the image on the left of Figure \@ref(fig:fig11-4), but instead you export data that looks like the image on the right, then you understand how important it is to spend time planning how data will be collected in your tool. 
 
-```{r fig11-4, fig.cap="A comparison of data collected without planning and data collected with planning"}
+```{r fig11-4, fig.cap="A comparison of data collected without planning and data collected with planning."}
 
 knitr::include_graphics("img/fig11-4.PNG")
 
@@ -208,16 +209,16 @@ The first thing you will want to do before building your tool is bring out your 
       - Restrict entry to the type assigned in your data dictionary (e.g., numeric).
       - Restrict entry to the format assigned in your data dictionary (e.g., *YYYY-MM-DD*).
       - Restrict ranges based on allowable ranges in your data dictionary (e.g., *1--50*).
-          - This could even include validating against previous responses (e.g., if "SchoolA" was selected in a previous question, grade level should be between *6--8*, if "SchoolB" was selected, grade level should be between *7--8*).
+          - This could even include validating against previous responses (e.g., if "SchoolA" was selected in a previous question, grade level should be between *6 and 8*, if "SchoolB" was selected, grade level should be between *7 and 8*).
     - Response validation
       - Consider the use of forced-response and request-response options to reduce missing data.
         - Forced-response options do not allow participants to move forward without completing an item. Request-response options notify a respondent if they skip a question and ask if they still would like to move forward without responding.
-        - Be aware that adding a forced-response option to sensitive questions has the potential to be harmful and produce bad data. If adding a forced-response option to a sensitive question, consider allowing those participants to opt-out in another way (e.g., "Prefer not to answer"). 
+        - Be aware that adding a forced-response option to sensitive questions has the potential to be harmful and produce bad data. If adding a forced-response option to a sensitive question, consider allowing those participants to opt-out in another way (e.g., "Prefer not to answer") (@kaplowitz_5_2020; @kopper_survey_2023). 
 1. Choose an appropriate type and format to display each item.
     - Become familiar with the various question types available in your tool (e.g., rank order, multiple choice, text box, slider scale).
     - Become familiar with the various formats (e.g., radio button, drop-down, checkbox).
     - For example, if your item is a rank order question (ranking three items), creating this question as a multi-line, free-text entry form may lead to duplicate entries (such as entering a rank of *1* more than once). However, using something like a rank order question type with a drag and drop format ensures that participants are not allowed to duplicate rankings.
-1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20) use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023].
+1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20), use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023].
     - For example, list school name as a drop-down item rather than having participants enter a school name.
       - This prevents variation in text entry (e.g., "Sunvalley Middle", "sunvalley", "Snvally Middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values.
 1. If there is an infinite number of response options for an item or the number of options is large, use an open-text box.
@@ -234,7 +235,7 @@ The first thing you will want to do before building your tool is bring out your 
     - Are all response options accounted for and coded as they should be?
     - Is skip logic shown as expected?
 
-Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig11-3)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels, other branching options). Let team members know that they should actively try to break things---try to enter nonsensical values, try to skip items, try to enter duplicate entries [@kopper_questionnaire_2020]. If there are problems with the tool, now is the time to find out. 
+Once your tool is created, the last step is to pilot for data issues (see Figure \@ref(fig:fig11-3)). Collect sample responses from team members. Create a feedback checklist for them to complete as they review the instrument [@gibson_survey_2020]. Assign different reviewers to enter the survey using varying criteria (e.g., different schools, different grade levels, other branching options). Let team members know that they should actively try to break things---try to enter nonsensical values, try to skip items, try to enter duplicate entries [@kopper_questionnaire_2023]. If there are problems with the tool, now is the time to find out. 
 
 After sample responses are collected from team members, export the sample data using your chosen data capture process (see Chapter \@ref(capture)). Comparing the export to your data dictionary, review the data for the following:
 
@@ -243,7 +244,7 @@ After sample responses are collected from team members, export the sample data u
 3. Are there unexpected values for variables?
 4. Are there missing values where you expect data?
 5. Are there unexpected variable formats?
-6. Is data exporting in an analyzable, rectangular format? (see Chapter \@ref(structure))
+6. Is data exporting in an analyzable, rectangular format? (see Chapter \@ref(structure)).
 
 If any issues are found either through team feedback or while reviewing the exported sample data, take time to update the tool as needed before starting data collection. This is also the time to update your documentation. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data, you learn that a "select all" question exports differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary. This is also a great time to update your data cleaning plan (see Section \@ref(document-plan)) with any new transformations that will be required. 
 
@@ -253,7 +254,7 @@ There are many situations where collecting data electronically may not be feasib
 
 1. Use your data dictionary as a guide as you create your paper form.
     - Make sure all questions are included and all response options are accurately added to the form.
-2. Have clear instructions for how to complete the paper form [@kopper_survey_2021].
+2. Have clear instructions for how to complete the paper form [@kopper_survey_2023].
    - Make sure to not only have overall instructions at the top of the form but also have explicit instructions for how each question should be completed.
       - Where to write answers (e.g., not in the margin)
       - How answers should be recorded (e.g., *YYYY-MM-DD*, 3-digit number)
@@ -263,9 +264,9 @@ There are many situations where collecting data electronically may not be feasib
 
 Once your tool is created, you will want to pilot the instrument with your team for data issues (see Figure \@ref(fig:fig11-4)). Using the feedback collected, edit your tool as needed before sending it out into the field.
 
-Last, unless paper data are collected using a machine-readable form, they will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name and value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary. See Figure \@ref(fig:fig11-5) for an example of an annotated instrument from wave 1 of The Florida State Twin Registry project shared in the LDbase repository [@hart_florida_2018].
+Last, unless paper data are collected using a machine-readable form, they will need to be manually entered into an electronic format during the data capture phase. While we will talk about data entry specifically in Section \@ref(capture-paper), this point in instrument creation is a great time to create an annotated instrument [@neild_sharing_2022]. This includes taking a copy of your instrument and writing the associated codes alongside each item (i.e., variable name and value codes). This annotated instrument can be useful during the data entry process and serve as a linking key between your instrument and your data dictionary. See Figure \@ref(fig:fig11-5) for an example of an annotated instrument from wave 1 of the Florida State Twin Registry project shared in the LDbase repository [@hart_florida_2018].
 
-```{r fig11-5, fig.cap="Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)"}
+```{r fig11-5, fig.cap="Annotated parent survey from wave 1 The Florida State Twin Registry project (2018)."}
 
 knitr::include_graphics("img/fig11-5.PNG")
 
@@ -273,7 +274,7 @@ knitr::include_graphics("img/fig11-5.PNG")
 
 #### Identifiers
 
-When building data collection tools, no matter if they are paper or electronic, it is vitally important to make sure you are collecting unique identifiers [@kopper_survey_2021]. Whether you have participants enter a unique identifier into a form or you link study ID (see Section \@ref(track-ids)) to each form in some other way, it's important to not accidentally collect anonymous data. Without unique identifiers in your data, you will be unable to link data across time and forms. If possible, you want to avoid collecting names as unique identifiers for the following reasons [@mckenzie_falsehoods_2010]:
+When building data collection tools, no matter if they are paper or electronic, it is vitally important to make sure you are collecting unique identifiers [@kopper_survey_2023]. Whether you have participants enter a unique identifier into a form or you link study ID (see Section \@ref(track-ids)) to each form in some other way, it's important to not accidentally collect anonymous data. Without unique identifiers in your data, you will be unable to link data across time and forms. If possible, you want to avoid collecting names as unique identifiers for the following reasons [@mckenzie_falsehoods_2010]:
 
 - To protect confidentiality, we want to use names as little as possible on forms.
   - If they are used on forms, we want to remove them as soon as possible.
@@ -300,7 +301,7 @@ There are many ways you might consider collecting unique identifiers other than 
 1. Create unique links for participants
     - Many tools will allow you to preload a contact list of participants (from your participant tracking database) that includes both their names and study IDs. Using this list, the tool can create unique links for each participant. This is the most error-proof way to ensure study IDs are entered correctly. 
     - When you export your data, the correct ID is already linked to each participant and you can choose to not export identifying information (e.g., names, emails) in the data. 
-    - If using this method, make sure to build a data check into the system. For example, when a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?". In order to protect participant identities, do not share full names. 
+    - If using this method, make sure to build a data check into the system. For example, when a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?" In order to protect participant identities, do not share full names. 
       - If they say yes, they move forward. If they say no, the system redirects them to someone to contact. This ensures that participants are not completing someone else’s survey and IDs are connected to the correct participant.
 2. Provide one link to all participants and separately, in an email, in person, or by mail, provide participants with their study ID to enter into the system. 
     - This might be a preferred method if you are collecting data in a computer lab or on tablets at a school site, or if your tool does not have the option to create unique links.
@@ -319,10 +320,10 @@ If you take paper forms into the field consider doing the following to connect y
 - Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then attach a cover sheet with participant name and other relevant information (see Figure \@ref(fig:fig11-6)). When you return to the office, you can remove the cover sheet and be left with only the ID on the form.
   - It is this ID only that you will enter into your data entry form during the data capture process, no name.
   - Removing the cover sheet ensures that your data entry team only sees the study ID when they enter data, increasing privacy by minimizing the number of people who see participant names.
-  - However, before removing the cover sheet, double check study identifiers against your participant database to make sure the information is correct 
+  - However, before removing the cover sheet, double-check study identifiers against your participant database to make sure the information is correct 
   - Make a plan for the cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
 
-```{r fig11-6, fig.cap="Example cover sheet for a paper data collection instrument"}
+```{r fig11-6, fig.cap="Example cover sheet for a paper data collection instrument."}
 
 knitr::include_graphics("img/fig11-6.PNG")
 
@@ -341,7 +342,7 @@ Informed consent agreements, and assents for participants under the age of 18, a
   - Consider offering tiered levels of consent for participants who may not want all of their data publicly shared but will allow some.
 - Don’t promise that research analyses of the collected data will be limited to certain topics.
   - Do say that data may be used for future research and share general purposes (e.g., replication, new analyses).
-- Do review the ways you plan to de-identify data and be thoughtful when considering risks of re-identification (e.g., small sample size for sub-groups).
+- Do review the ways you plan to de-identify data and be thoughtful when considering risks of re-identification (e.g., small sample size for subgroups).
 
 There are essentially three different ways you can go about obtaining consent for data sharing [@gilmore_practical_2018]. 
 
@@ -365,13 +366,13 @@ If you are required to collect consent for your study, quality assurance should 
 
 |Source|Resource|
 |--------|-----------|
-|Anja Sautmann| Annotated informed consent checklist ^[https://www.povertyactionlab.org/sites/default/files/research-resources/rr_irb_annotated-informed-consent-checklist_0.pdf]|
-|Holly Lane, Wilhemina van Dijk|Example parent consent ^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
-|ICPSR | Recommended Informed Consent Language for Data Sharing ^[https://www.icpsr.umich.edu/web/pages/datamanagement/confidentiality/conf-language.html]|
-|Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet ^[https://osf.io/3czbx]
-|Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing ^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
+|Anja Sautmann| Annotated informed consent checklist^[https://www.povertyactionlab.org/sites/default/files/research-resources/rr_irb_annotated-informed-consent-checklist_0.pdf]|
+|Holly Lane, Wilhemina van Dijk|Example parent consent^[https://www.ldbase.org/system/files/documents/2021-04/HS-ParentConsent.txt]|
+|ICPSR | Recommended Informed Consent Language for Data Sharing^[https://www.icpsr.umich.edu/web/pages/datamanagement/confidentiality/conf-language.html]|
+|Jeffrey Shero, et al.| Informed consent and waiver of consent cheat sheet^[https://osf.io/3czbx]
+|Jeffrey Shero, Sara Hart| Informed consent template with a focus on data sharing^[https://figshare.com/articles/preprint/Informed_Consent_Template/13218773]|
 |Melissa Kline Struhl|Lookit consent form template 5^[https://github.com/lookit/research-resources/blob/master/Legal/Lookit%20consent%20form%20template%205.md]|
-|University of Virginia| A collection of consent and assent templates ^[https://research.virginia.edu/irb-sbs/consent-templates]|
+|University of Virginia| A collection of consent and assent templates^[https://research.virginia.edu/irb-sbs/consent-templates]|
 
 ## Quality control {#collect-control}
 
@@ -417,7 +418,7 @@ If your data collection efforts include field data collection (e.g., data collec
 - When a wave of data collection wraps up, collect feedback from data collectors to improve future data collection efforts.
   - What went well? What didn't?
 
-```{r fig11-7, fig.cap="A series of spot checks that occur with paper data"}
+```{r fig11-7, fig.cap="A series of spot checks that occur with paper data."}
 
 knitr::include_graphics("img/fig11-7.PNG")
 
@@ -429,7 +430,7 @@ knitr::include_graphics("img/fig11-7.PNG")
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis| Field tracking sheet template ^[https://docs.google.com/spreadsheets/d/1CeIXvTBtU9O3GNzfFaAMtb69Z2HyOLuPQWsxy7jOWdU/edit?usp=sharing]|
+|Crystal Lewis| Field tracking sheet template ^[https://osf.io/hd2w3]|
 
 ### Ongoing data checks
 
@@ -455,14 +456,16 @@ Throughout data collection your team should be tracking the completion of forms 
 
 Some tracking best practices include:
 
-1. Only track data that you physically have (paper or electronic).
+1. Track daily during data collection.
+    - Do not wait until the end of data collection to track what data was collected for each participant.
+    - Tracking daily helps ensure that you don't miss the opportunity to collect data that you *thought* you had but never actually collected.
+2. Only track data that you physically have (paper or electronic).
     - Never track data as "complete" that someone just tells you they collected. 
       - You can always mark this information in a "notes" field but do not track it as "complete" until you have the physical data. 
-2. Track daily during data collection.
-    - Do not wait until the end of data collection to track what data was collected.
-    - This helps ensure that you don't miss the opportunity to collect data that you *thought* you had but never actually collected.
 3. Only track complete data as "complete".
-    - Review all data before marking it as "complete", including consents, assents, and other administrative forms. Make tracking the step immediately after your spot checking process. If a form is only partially completed and you plan to send it back out to the field for completion, mark this in the "notes" but do not mark it as "completed". If you have a "partially completed" option, you can mark this option.
+    - Review all data before marking it as "complete".
+    - For paper files, make tracking the step immediately after your spot-checking process. If a form is only partially completed and you plan to send it back out to the field for completion, mark this in the "notes" but do not mark it as "completed". If you have a "partially completed" option, you can mark this option.
+    - For electronic files, make tracking the step immediately following your data quality checks. If a form is only partially completed, mark this appropriately in your tracking database.
 
 As mentioned in Chapter \@ref(track), if you use a tool such as REDCap for both collection and tracking, you may not need to do any manual tracking. Completion fields may automatically update as data is collected. You'll need to determine what is needed based on your specific scenario.
 

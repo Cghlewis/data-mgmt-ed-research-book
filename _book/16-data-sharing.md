@@ -1,23 +1,23 @@
 # Data Sharing {#share}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig16-1.PNG" alt="Data sharing in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig16-1)Data sharing in the research project life cycle</p>
+<img src="img/fig16-1.PNG" alt="Data sharing in the research project life cycle." width="100%" />
+<p class="caption">(\#fig:fig16-1)Data sharing in the research project life cycle.</p>
 </div>
 
 Throughout a project, teams are internally sharing data and materials with a variety of people (e.g., team members, collaborators, funders) who use that information for a variety of purposes (e.g., analyses, reports, to answer questions). Yet, at the end of a project, or possibly earlier, it's important for researchers to also consider making their research data available for broader public use. However, publicly sharing project data and materials requires a lot of consideration. In this chapter we will first review reasons why you should publicly share your data, and then we will work through a series of decisions to make before sharing your data.
 
 ## Why share your data? {#share-why}
 
-The most notable reason for openly sharing data is that there are a growing number of supporting organizations (e.g., funders, journals, institutions) that are requiring researchers to share data. Federal agencies in particular want to ensure that there is free, open access to taxpayer-funded funded research [@nelson_ostp_2022]. Beyond requirements though, there are many other reasons researchers should want to share their data. One, it benefits the scientific community by improving rigor. Sharing both data and code helps to discourage fabrication and encourages validation of results through both replication and reproducibility of findings [@alston_beginners_2021; @cook_how-guide_2021; @gonzales_ten_2022; @institute_of_education_sciences_policy_2023; @klein_practical_2018; @levenstein_data_2018; @logan_data_2021; @meyer_practical_2018]. Allowing other researchers to reuse your data also reduces the need to duplicate data collection efforts, saving time, energy, and money [@gonzales_ten_2022; @levenstein_data_2018; @icpsr_guide_2020], as well as reducing the burden on the communities that are frequently targeted for data collection [@gaddy_principles_2020]. It also encourages diversity of analysis and perspectives [@icpsr_guide_2020; @levenstein_data_2018]. Not only may researchers have novel questions not considered by the original investigators, open data also provides the opportunity for researchers to improve upon or experiment with new methods, as well as combine datasets to facilitate new discoveries [@cook_how-guide_2021; @institute_of_education_sciences_policy_2023; @logan_data_2021; @meyer_practical_2018]. Openly sharing data also provides equitable access to high-quality datasets for early career scholars, students, and underrepresented researchers who otherwise may not have the budget, staff, or connections to collect data [@icpsr_guide_2020; @logan_data_2021]. Last, data sharing can have the unintended benefit of promoting more efficient and sustainable data management practices [@klein_practical_2018]. Knowing that data and documentation will eventually be shared outside of the team may motivate researchers to think hard about how to organize their data management practices in a way that will produce materials that they are proud to publicly share. This is not to say that data sharing is without challenges, including the additional time, energy and resources required by a team to prepare data for sharing. However, planning your data management practices around your data sharing plan early on can help reduce any significant burden that may otherwise be caused by data sharing [@klein_practical_2018; @levenstein_data_2018].
+The most notable reason for openly sharing data is that there are a growing number of supporting organizations (e.g., funders, journals, institutions) that are requiring researchers to share data. Federal agencies in particular want to ensure that there is free, open access to taxpayer-funded funded research [@nelson_ostp_2022]. Beyond requirements though, there are many other reasons researchers should want to share their data. One, it benefits the scientific community by improving rigor. Sharing both data and code helps to discourage fabrication and encourages validation of results through both replication and reproducibility of findings [@alston_beginners_2021; @cook_how-guide_2021; @gonzales_ten_2022; @institute_of_education_sciences_policy_2023; @klein_practical_2018; @levenstein_data_2018; @logan_data_2021; @meyer_practical_2018]. Allowing other researchers to reuse your data also reduces the need to duplicate data collection efforts, saving time, energy, and money [@gonzales_ten_2022; @levenstein_data_2018; @icpsr_guide_2020], as well as reducing the burden on the communities that are frequently targeted for data collection [@gaddy_principles_2020]. It also encourages diversity of analysis and perspectives [@icpsr_guide_2020; @levenstein_data_2018]. Not only may researchers have novel questions not considered by the original investigators, open data also provides the opportunity for researchers to improve upon or experiment with new methods, as well as combine datasets to facilitate new discoveries [@cook_how-guide_2021; @institute_of_education_sciences_policy_2023; @logan_data_2021; @meyer_practical_2018]. Openly sharing data also provides equitable access to high-quality datasets for early career scholars, students, and underrepresented researchers who otherwise may not have the budget, staff, or connections to collect data [@icpsr_guide_2020; @logan_data_2021]. Last, data sharing can have the unintended benefit of promoting more efficient and sustainable data management practices [@klein_practical_2018]. Knowing that data and documentation will eventually be shared outside of the team may motivate researchers to think hard about how to organize their data management practices in a way that will produce materials that they are proud to publicly share. This is not to say that data sharing is without challenges, including the additional time, energy, and resources required by a team to prepare data for sharing. However, planning your data management practices around your data sharing plan early on can help reduce any significant burden that may otherwise be caused by data sharing [@klein_practical_2018; @levenstein_data_2018].
 
 ## Data sharing flow chart
 
-There is a series of decisions to be made when sharing your data (see Figure \@ref(fig:fig16-2)). While in some cases data sharing may not occur until the end of your project, many of your data sharing decisions will actually need to be made at the beginning of your project, when you write your data management plan (DMP) (see Chapter \@ref(dmp)). These decisions will inform both your workflow during your active project, as well as the steps you need to perform when preparing your data for archiving. 
+There is a series of decisions to be made when sharing your data (see Figure \@ref(fig:fig16-2)). While in some cases data sharing may not occur until the end of your project, many of your data sharing decisions will actually need to be made at the beginning of your project, when you write your data management plan (DMP) (see Chapter \@ref(dmp)). These decisions will inform both your workflow during your active project and the steps you need to perform when preparing your data for archiving. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig16-2.PNG" alt="Decisions to be made before publicly sharing study data" width="100%" />
-<p class="caption">(\#fig:fig16-2)Decisions to be made before publicly sharing study data</p>
+<img src="img/fig16-2.PNG" alt="Decisions to be made before publicly sharing study data." width="100%" />
+<p class="caption">(\#fig:fig16-2)Decisions to be made before publicly sharing study data.</p>
 </div>
 
 In this section we will walk through the flow chart, discussing what information is needed to make decisions as well as best practices associated with each decision. 
@@ -29,7 +29,7 @@ When it comes to data, there are three degrees of sharing [@ghent_university_sha
 1. Open data
     - This is data that can be publicly shared with no constraints. These are typically data with no ownership concerns and that have minimal disclosure risk (e.g., de-identified, not highly sensitive).
 2. Controlled data
-    - These are data that are not openly shared, but can be shared in other ways under restricted access and use conditions. This typically involves a data request system including an application and/or data use agreements, and only after a request is approved can data be accessed. This includes things such as data with more than minimal disclosure risk (e.g., highly sensitive information, identifiable information).
+    - These are data that are not openly shared, but can be shared in other ways under restricted access and use conditions. This typically involves a data request system including an application and/or data use agreements, and only after a request is approved can data be accessed. This includes data with more than minimal disclosure risk (e.g., highly sensitive information, identifiable information, information that data owners want shared in more restrictive ways).
 3. Closed data
     - These are data that cannot be shared due to legal, ethical, or technical reasons (e.g., proprietary data, data use agreements forbid it, participant consent does not allow data sharing).
     - In these cases, it may still be possible to share some data (i.e., summary statistics, metadata, documentation), to allow the information to be discoverable, reusable, and citable [@logan_data_2021; @neild_sharing_2022].
@@ -46,7 +46,7 @@ It is important to make decisions based on the philosophy of "as open as possibl
 
 ### Where to share?
 
-Once you've decided that you are able to share data, either publicly or in a more restrictive manner, you then need to decide where you want to share data. There are many options for sharing your data, with some options being better than others. In most situations, the best option for sharing data will be a public data repository. This may be a repository chosen by you, or it may be a repository designated by a funder or other organization supporting your work. In most cases this is the ideal data sharing location. There are many benefits to sharing in a public repository [@neild_sharing_2022; @uk_data_service_research_2023].
+Once you've decided that you are able to share data, either publicly or in a more restrictive manner, you then need to decide where you want to share data. There are many options for sharing your data, with some options being better than others. In most situations, the best option for sharing data will be a public data repository. This may be a repository chosen by you, or it may be a repository designated by a funder or other organization supporting your work. There are many benefits to sharing in a public repository [@neild_sharing_2022; @uk_data_service_research_2023].
 
 - It meets the FAIR principles of making your data both findable and accessible (Section \@ref(rdm-fair)).
 - It is the preferred method of data sharing for many supporters (e.g., NIH, IES) and it may be required by others (e.g., NIJ, NIMH, journals such as AMPPS).
@@ -61,19 +61,20 @@ However, due to supporter requirements (e.g., agency partner, institution, funde
     - While this method provides the benefits of reducing the burden on your staff and securely storing your data, this option is not available at all academic institutions and these repositories may provide less service offerings than a public repository. Furthermore, data stored in an institutional archive, as opposed to a public repository, may be less findable for researchers outside of your institution.
 2. Deposit with a partner agency.
     - In some cases, data sharing may only be allowed if you deposit the data with an agency that you partnered with for the study (e.g., a school district). In this case, all data requests will go through that partner.
-3. Share through a lab, personal, or project website.
-    - While this system provides some accessibility, it is not sustainable. This method requires a significant commitment from your team. Sharing in this way requires to you publicize your site to increase visibility, as well as commit the resources to building and maintaining a secure and reliable data request pipeline. Furthermore, websites change and links break, reducing the long-term accessibility of your data. 
-4. Supplemental materials attached to an article or stored on a publisher’s website.
+3. Supplemental materials attached to an article or stored on a publisher’s website.
     - A concern with this method is that materials will be lost if a journal changes publishers or a publisher changes its website.
+4. Share through a lab, personal, or project website.
+    - Using this method you may allow participants to freely download datasets from the site, or they may be required to go through an application process first before accessing data. 
+    - While this system provides some accessibility, it requires a significant commitment from your team. Sharing in this way requires to you publicize your site to increase visibility, as well as commit the resources to building and maintaining a secure and reliable data sharing pipeline. Furthermore, websites change and links break, reducing the long-term accessibility of your data. 
 5. Informal peer-to-peer sharing.
-    - Here data owners share data with peers on an as-needed basis. In a best case scenario, a systematic data request process, similar to the internal one discussed in Section \@ref(store-long-use), is used. Yet, while informal methods may work fine for peers, it doesn’t make a broader audience aware of the availability of your data and keeps the burden of data maintenance and responding to requests on you and your staff. 
+    - Here data owners share data with peers on an as-needed basis. While this method may work fine for peers, it doesn’t make a broader audience aware of the availability of your data and keeps the burden of data maintenance and responding to requests on you and your staff. 
     - This type of sharing is often synonymous with using a “data available upon request” statement in a publication. While these statements do make broader audiences aware of your data, there are several studies that have found that these data availability statements rarely result in access to data [@stodden_empirical_2018; @vines_availability_2014]. A better alternative is to already have data shared in a location and direct people to that system (e.g., link to a repository).
 
-Figure \@ref(fig:fig16-3), modified from a flow chart created by @borghi_promoting_2022, can help you work through the process of choosing where to share each data source. Ultimately though, no matter where you choose to share your data, it is important to make this decision early on because it will impact many of the other decisions that need to be made. In particular, if you choose to deposit data in a repository, you will want to review repository-specific requirements and standards to make sure they are accounted for in your DMP (e.g., data format requirements, metadata standards used) and in your data management processes throughout the study. Making this decision early on also allows you to begin creating a schedule for ongoing data deposits throughout your study if that is something you want to consider doing, or if it is required by your funder [@icpsr_guide_2020].
+Figure \@ref(fig:fig16-3), modified from a flow chart created by @borghi_promoting_2022, can help you work through the process of choosing where to share each data source. Ultimately though, no matter where you choose to share your data, it is important to make this decision early on because it will impact many of the other decisions that need to be made. In particular, if you choose to deposit data in a repository, you will want to review repository-specific requirements and standards to make sure they are accounted for in your DMP (e.g., data format requirements, metadata standards used) and in your data management processes throughout the study. Making this decision early on also allows you to begin creating a schedule for ongoing data deposits throughout your study if that is something you want to consider doing, or if it is required by your funder or other supporter [@icpsr_guide_2020].
 
 <div class="figure" style="text-align: center">
-<img src="img/fig16-3.PNG" alt="A series of decisions to make when deciding where to share data" width="100%" />
-<p class="caption">(\#fig:fig16-3)A series of decisions to make when deciding where to share data</p>
+<img src="img/fig16-3.PNG" alt="A series of decisions to make when deciding where to share data." width="100%" />
+<p class="caption">(\#fig:fig16-3)A series of decisions to make when deciding where to share data.</p>
 </div>
 
 #### Choosing a repository
@@ -134,7 +135,14 @@ At this point, you may be ready to choose a repository to share your data in. Th
     - This includes things like tracking number of downloads and tracking citations.
 
 14. Does the repository have appropriate security measures in place?
-    - This includes measures for both the security of the data itself (e.g., maintaining backups), as well as measures to ensure participant privacy (e.g., ensuring only authorized users are able to access restricted data).
+    - This includes measures for both the security of the data itself (e.g., maintaining backups) and measures to ensure participant privacy (e.g., ensuring only authorized users are able to access restricted data).
+    
+**Resources**
+
+|Source|Resource|
+|--------|-----------|
+|Institute of Education Sciences |Data repository comparison chart on page 27^[https://ies.ed.gov/ncee/pubs/2022004/pdf/2022004.pdf]|
+|Shelley Stall, et al. |Generalist repository comparison chart^[https://zenodo.org/records/7946938]|
     
 ### What data to share
 
@@ -146,7 +154,7 @@ Before sharing, review any existing agreements or licenses associated with each 
 
 #### Processing of files
 
-As discussed in Chapter \@ref(clean), there are three levels of data files, raw, clean, and analytic. When publicly sharing project data, it's often best to not share your raw datasets. This may seem counterintuitive to ideas of transparency and reproducibility, but in education research these raw datasets often contain identifiable information, and despite our best efforts to collect comprehensible data, they typically do not meet our data quality criteria. They tend to still require some sample cleaning (e.g., removing duplicates), as well as some variable renaming, recoding, or other transformations to ensure variables are not misused or misinterpreted by future users.
+As discussed in Chapter \@ref(clean), there are three levels of data files, raw, clean, and analytic. When publicly sharing project data, it's often best to not share your raw datasets. This may seem counterintuitive to ideas of transparency and reproducibility, but in education research these raw datasets often contain identifiable information, and despite our best efforts to collect comprehensible data, they typically do not meet our data quality criteria. They tend to still require some sample cleaning (e.g., removing duplicates), as well as some variable renaming, recoding, or other transformations to ensure that data are not misused or misinterpreted by future researchers.
 
 Instead it is more useful to share the general clean datasets discussed in Chapter \@ref(clean). These datasets have all direct identifiers removed, they have been curated to allow for easier interpretation of variables, and they contain all of the information necessary to validate any research findings. In the same repository, it is also possible to share any analytic datasets created that will allow replication of findings in any specific reports or publications. 
 
@@ -158,7 +166,8 @@ If you are collecting data across time, across different forms, or across differ
     - Combining datasets may be a great option for longitudinal studies with many waves of data collection. Combining files across time can reduce the burden for future researchers who want to view all data across time for each unit of analysis. You may consider merging data into a wide format for each participant level (e.g., student-level dataset, teacher-level dataset, school-level dataset), where all forms associated with each case are found in one row. See Section \@ref(structure-datastructure) for more information on how to combine files in this way. 
 
 - Separate files
-    - Uploading datasets separately is another option. Keeping data in separate files reduces file size. It may also make it easier for future researchers to work with data. For instance, if a user is only interested in one instrument collected from one participant group, having the datasets separated allows researchers to download just the file for that one instrument, rather than downloading a larger dataset and dropping variables not relevant to their research. If sharing longitudinal datasets separately, you will want to decide if you want to go ahead and add time components to your variable names (e.g., `w1_`, `w2_`), or add a time component variable (e.g., `wave`) to your datasets, removing the need for future users to have to do this step when combining data (see Section \@ref(style-time) for more information on adding time to your dataset).
+    - On the flip side, sharing data in separate files may reduce burden for researchers interested in individual datasets. For instance, if a user is only interested in one instrument collected from one participant group, having the datasets separated allows researchers to download just the file for that one instrument, rather than downloading a larger dataset and dropping variables not relevant to their research. 
+    - If sharing longitudinal datasets separately, decide now if you want to go ahead and add time components to your variable names (e.g., `w1_`, `w2_`), or add a time component variable (e.g., `wave`) to your datasets, removing the need for future users to have to do this step when combining data (see Section \@ref(style-time) for more information on adding time to your dataset).
     - When sharing datasets separately, also consider developing a folder and file naming structure that allows researchers to easily know what files they are working with. Also make sure that all files have identifiers (i.e., keys) necessary to link datasets. Last, you'll want to include a README for future users that helps clarify how datasets can be combined (refer to Section \@ref(document-read) for more information).
 
 #### File formats
@@ -167,20 +176,20 @@ Most funders require data to be shared in an electronic format, and for quantita
 
 However, as covered in Chapter \@ref(clean), it can be beneficial to also share data in formats that have embedded metadata (e.g., SPSS, Stata). Providing your data in both a non-proprietary format and a proprietary format that is widely used in the field, can give your users options while also protecting your data from obsolescence [@institute_of_education_sciences_frequently_2023; @neild_sharing_2022].
 
-Most importantly though, if sharing in a repository, check to see if there are any data format requirements. ICPSR, for example, encourages submission of files with embedded metadata, such as SPSS, Stata, or SAS files [@icpsr_start_2023]. They then use these files and curate them into ASCII data with setup files to accompany statistical programs. As another example, the National Archive of Criminal Justice Data used by the National Institute of Justice (NIJ), prefers SPSS formats for quantitative data, but will also accept Stata or SAS files [@national_archive_of_criminal_justice_data_guidelines_2023].
+Most importantly, though, if sharing in a repository, check to see if there are any data format requirements. ICPSR, for example, encourages submission of files with embedded metadata, such as SPSS, Stata, or SAS files [@icpsr_start_2023]. They then use these files and curate them into ASCII data with setup files to accompany statistical programs. As another example, the National Archive of Criminal Justice Data used by the National Institute of Justice (NIJ) prefers SPSS formats for quantitative data, but will also accept Stata or SAS files [@national_archive_of_criminal_justice_data_guidelines_2023].
 
 #### Assess disclosure risk {#share-assess}
 
 Before publicly sharing study data, it is imperative that you conduct a disclosure risk assessment. In conducting this assessment, review variables that could potentially identify a participant, either directly or indirectly, and also review sensitive variables that have the potential to cause harm to participants if their identity is disclosed.
 
 1. Direct identifiers
-    - As discussed in Chapter \@ref(hsd), these are identifiers that are unique to an individual and can be used to directly identify a participant (e.g., name, email, IP address, student ID). It can be helpful to mark these identifiers in your data dictionary early on to keep track of what should be removed. If you are unsure exactly what direct identifiers to check for, the 18 protected health identifiers listed in the HIPAA Safe Harbor De-Identification Method ^[https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance] is a good starting point. FERPA ^[https://www.ecfr.gov/current/title-34/subtitle-A/part-99] also provides a list of personally identifiable information (PII) to review.
+    - As discussed in Chapter \@ref(hsd), these are identifiers that are unique to an individual and can be used to directly identify a participant (e.g., name, email, IP address, student ID). It can be helpful to mark these identifiers in your data dictionary early on to keep track of what should be removed. If you are unsure exactly what direct identifiers to check for, the 18 protected health identifiers listed in the HIPAA Safe Harbor De-Identification Method ^[https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance] are a good starting point. FERPA ^[https://www.ecfr.gov/current/title-34/subtitle-A/part-99] also provides a list of personally identifiable information (PII) to review.
 
 2. Indirect identifiers
     - While our dataset may be technically de-identified after removing our direct identifiers, it is still important to consider the possibility of deductive disclosure [@institute_of_education_sciences_frequently_2023]. Research has shown that it is possible to re-identify someone through a combination of indirect identifiers [@sweeney_k-anonymity_2002] (see Table \@ref(tab:tab4-1) for examples). Further care must be taken to consider if there are any other ways participants can potentially be re-identified in our data. This includes considering the following.
       - Open-ended questions: These variables may contain information that can directly or indirectly identify individuals.
       - Outliers: If someone has extreme values for a variable, it may be easier to identify that individual.
-      - Small cell sizes: If there is only one person who took a survey on a particular date, or only one person who fits in a specific demographic category, it is easier to re-identify that individual. The NCES Standard 4-2-10, suggests that all categories have at least 3 cases to minimize risk [@seastrom_nces_2002], while others may recommend more stringent requirements such as a minimum of 5 cases [@schatschneider_-identification_2021].
+      - Small cell sizes: If there is only one person who took a survey on a particular date, or only one person who fits in a specific demographic category, it is easier to re-identify that individual. The NCES Standard 4-2-10, suggests that all categories have at least three cases to minimize risk [@seastrom_nces_2002], while others may recommend more stringent requirements such as a minimum of five cases [@schatschneider_-identification_2021].
         - Combinations of variables, or crosstabs, can also create small cell-sizes (e.g., a student may be identifiable by school size + special education status + gender + grade level). Generally, the more indirect identifiers you have in your dataset, the more possible combinations exist, increasing the risk of re-identification [@morehouse_responsible_2023].
     - When reviewing this information, consider not only information that the general public may be able to decipher, but also what information may be known to people who know a participant (e.g., administrator, teacher, parent). You also want to consider the amount of potentially publicly available information about a participant or site (e.g., administrative datasets, social media data) and the likelihood that public information could be used to re-identify someone (i.e., by linking public data with your study data) [@filip_san_2023; @meyer_practical_2018; @neild_sharing_2022].
 
@@ -216,19 +225,19 @@ In most cases, these easily applied methods should be satisfactory. However, in 
 - Perturbing: Adding random statistical noise to the data (e.g., multiply all values of a variable by a random number).
 - Microaggregation: Replace an individual's value in a cell with the average value of their small group.
 
-The process of de-identifying data before data sharing should not be done alone. Schedule one or more meetings with your data management working group to review data and develop a plan. Bring in outside expertise as needed, especially when implementing more advanced data de-identification techniques. Last, make sure to document your de-identification methods in the appropriate locations (e.g., research protocol, data cleaning plan, data dictionary).
+The process of de-identifying data before data sharing should not be done alone. Schedule one or more meetings with your data management working group to review data and develop a plan. Bring in outside expertise as needed, especially when implementing more advanced data de-identification techniques. Last, it is imperative that you document your de-identification methods in the appropriate locations (e.g., research protocol, data cleaning plan, data dictionary) so that you and future users can track all processing done to your data.
 
 **Resources**
 
 |Source|Resource|
 |--------|-----------|
-|Alena Filip |Table 2 provides pros and cons of various de-identification methods ^[https://www.sjsu.edu/research/docs/irb-data-management-handbook.pdf]|
-|J-PAL| Table 3 provides a list of direct and indirect identifiers and recommended removal methods ^[https://www.povertyactionlab.org/resource/data-de-identification]|
+|Alena Filip |Table 2 provides pros and cons of various de-identification methods^[https://www.sjsu.edu/research/docs/irb-data-management-handbook.pdf]|
+|J-PAL| Table 3 provides a list of direct and indirect identifiers and recommended removal methods^[https://www.povertyactionlab.org/resource/data-de-identification]|
 
 
 ##### Sharing controlled access data
 
-If you find that de-identifying your data alters it in a way that distorts data quality or structure, or if you believe that the risks of sharing your data are still more than minimal, you should consider sharing in a controlled manner [@icpsr_guide_2020; @meyer_practical_2018; @morehouse_responsible_2023; @neild_sharing_2022; @schatschneider_-identification_2021]. As discussed in Section \@ref(share-able), it is still possible to share these files through restricted access. In a repository these files can be shared through means such as secure downloads, virtual data enclaves, or even onsite data enclaves. Access to these restricted data are permitted only through an application process where requestors complete a detailed data use agreement. See Figure \@ref(fig:fig16-4) for an example of a restricted access dataset available from the @united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2023 in the ICPSR data repository.
+If you find that de-identifying your data alters it in a way that distorts data quality or structure, or if you believe that the risks of sharing your data are still more than minimal, you should consider sharing in a controlled manner [@icpsr_guide_2020; @meyer_practical_2018; @morehouse_responsible_2023; @neild_sharing_2022; @schatschneider_-identification_2021]. As discussed in Section \@ref(share-able), it is still possible to share these files through restricted access. In a repository these files can be shared through means such as secure downloads, virtual data enclaves, or even onsite data enclaves. Access to these restricted data is permitted only through an application process where requestors complete a detailed data use agreement. See Figure \@ref(fig:fig16-4) for an example of a restricted access dataset available from the @united_states_department_of_health_and_human_services_administration_for_children_and_families_office_of_planning_research_and_evaluation_study_2023 in the ICPSR data repository.
 
 <div class="figure" style="text-align: center">
 <img src="img/fig16-4.PNG" alt="An example of restricted access data on ICPSR" width="100%" />
@@ -241,13 +250,13 @@ If you are not sharing data in a repository that allows you to share restricted 
 
 In the 2022 OSTP memo [@nelson_ostp_2022], it is stated that all federal agencies will be expected to develop data sharing policies that elicit free and open access to scientific data that is of "sufficient quality to validate and replicate research findings". As we've learned throughout this book, sharing data alone is not sufficient to enable data reuse [@hardwicke_data_2018]. It must be accompanied by thorough documentation to allow a user to understand data provenance. In considering data documentation, you should not only consider the amount of documentation, but also the quality. The higher quality of documentation you provide, the higher likelihood that your data will be reused [@goodman_ten_2014].  
 
-In deciding exactly what documents to share, check with your funder to see if specific documents are required. If you are depositing your data in a repository, check what is required there as well. Each repository may mandate or suggest types of documentation to provide. ICPSR for example provides suggested documentation to include, such as codebooks, instruments, README files, project summary documents, and publications [@icpsr_start_2023].
+In deciding exactly what documents to share, check with your funder to see if specific documents are required. If you are depositing your data in a repository, check what is required there as well. Each repository may mandate or suggest types of documentation to provide. ICPSR, for example, provides suggested documentation to include, such as codebooks, instruments, README files, project summary documents, and publications [@icpsr_start_2023].
 
 You will want to share documents from all levels of your project (project, data, and variable). Each level of documentation will provide unique contributions to help users understand the background of your project, how files are related, and how to interpret and use variables. Ideas of what to share from each level are provided (see Chapter \@ref(document) for more details about each of these documents).
 
 1. Project-level documentation
     - Research protocol
-      - This document, which may be called other names (e.g., project summary document), provides the what, who, when, where, and how of your study. It is the summation of everything that occurred in a study and provides users with all of the background knowledge necessary to correctly interpret and use your data. 
+      - This document, which may be called other names (e.g., project summary document^[https://osf.io/q6g8d]), provides the what, who, when, where, and how of your study. It is the summation of everything that occurred in a study and provides users with all of the background knowledge necessary to correctly interpret and use your data. 
       - Along with your research protocol, you can also share a variety of other helpful supplemental documents including, but not limited to:
         - Participant flow diagrams
         - Timelines
@@ -298,7 +307,7 @@ Point interested users to any related literature and/or documentation.
     - Dataset-level README
       - In this case, a README organized in a rectangular or other format can be very helpful to describe a set of files in a specific folder (e.g., a student data folder). This README can list out every file in the folder and provide information that allows users to understand what each file contains as well as how datasets may be linked. This is especially beneficial in cases where you are sharing individual files with the expectation that future users will link them on their own time. Adding this README clarifies what identifiers can be used to link files (see Figure \@ref(fig:fig8-13) for an example).
     - Syntax files
-      - In most cases, it is unlikely you are going to want to publicly share your data cleaning code. For one, you are typically not sharing the raw data associated with your cleaning code, so your cleaning code is not useful for reproducibility purposes. Second, depending on the amount of data you collected and the amount of cleaning that was required for your data, cleaning code can be overwhelming for a future user to sift through. Sometimes it can be 20 or more scripts if you have multiple instruments collected, across multiple participant groups, and multiple waves. Most likely this is not helpful for anyone, outside of just learning more about your coding practices (which can actually be very helpful for teaching and learning purposes). In most cases though, it is not necessary to share your data cleaning code unless you really want to. However, if you plan to share analytic files in your repository, it is imperative that you share any code associated with the creation of those analytic datasets as well as any code necessary to reproduce findings [@renbarger_champions_2022].
+      - In most cases, it is unlikely you are going to want to publicly share your data cleaning code. For one, you are typically not sharing the raw data associated with your cleaning code, so your cleaning code is not useful for reproducibility purposes. Second, depending on the amount of data you collected and the amount of cleaning that was required for your data, cleaning code can be overwhelming for a future user to sift through. Sometimes it can be 20 or more scripts if you have multiple instruments collected, across multiple participant groups, and multiple waves. Most likely this is not helpful for anyone, outside of just learning more about your coding practices (which can actually be very helpful for teaching and learning purposes). In most cases, though, it is not necessary to share your data cleaning code unless you really want to. However, if you plan to share analytic files in your repository, it is imperative that you share any code associated with the creation of those analytic datasets as well as any code necessary to reproduce findings [@renbarger_champions_2022].
     - Data cleaning plans
       - While it is not always necessary to share your data cleaning code, especially when you are not sharing your raw data, it can be helpful to share your data cleaning plans. Providing these plans allows some transparency into the decision-making process that occurred when transforming your raw data into your clean shareable data, which may help future users with interpretation.
 
@@ -319,9 +328,9 @@ If not depositing in a repository, or if your repository has no strict requireme
 
 ### When to share
 
-The most important thing to consider here is what is required by your funder, or other supporters. Federal funders will likely have required time frames. As an example, NIH expects that researchers will share their data no later than at the time of publication or by the end of their grant, whichever comes first [@national_institutes_of_health_update_2021]. While other funders, such as the National Institute of Mental Health (NIMH), have expectations that grant awardees will share data throughout the grant on an regular schedule [@national_institute_of_mental_health_notice_2023]. 
+The most important thing to consider here is what is required by your funder, or other supporters. Federal funders will likely have required time frames. As an example, NIH expects that researchers will share their data no later than at the time of publication or by the end of their grant, whichever comes first [@national_institutes_of_health_update_2021]. While other funders, such as the National Institute of Mental Health (NIMH), have expectations that grant awardees will share data throughout the grant on a regular schedule [@national_institute_of_mental_health_notice_2023]. 
 
-Your repository may also have preferences for when data should be deposited. For example, while data can be deposited at any time with ICPSR, they recommend to begin uploading data as soon as possible after data collection to allow time for data curation [@icpsr_when_2023]. If you choose to make ongoing deposits of data, you will want to consider if you would like to embargo your data until you are required to share. This means you delay the public release of your data until a later time point of your choosing. This allows you to continually deposit your data, for example to reduce the workload at the end of your study, while also allowing you sole access to your data while your project is active. If you choose to deposit data on an ongoing basis, make sure that your repository allows you to edit, update, and version your data if errors are found or changes are needed at any point during the project.
+Your repository may also have preferences for when data should be deposited. For example, while data can be deposited at any time with ICPSR, they recommend beginning uploading data as soon as possible after data collection to allow time for data curation [@icpsr_when_2023]. If you choose to make ongoing deposits of data, you will want to consider if you would like to embargo your data until you are required to share. This means you delay the public release of your data until a later time point of your choosing. This allows you to continually deposit your data, for example to reduce the workload at the end of your study, while also allowing you sole access to your data while your project is active. If you choose to deposit data on an ongoing basis, make sure that your repository allows you to edit, update, and version your data if errors are found or changes are needed at any point during the project.
 
 ## Repository file structure {#share-file}
 
@@ -331,15 +340,15 @@ Here is an example of one way you might set up a repository for a small project 
 
 ```
 study_name/
-├── README.txt (project-level)
-├── documentation
-|   ├── study_name_project_summary_document.pdf
-|   ├── study_name_stu_svy_data-dictionary.csv
-|   ├── study_name_tch_svy_data-dictionary.csv
+├── 00_README.txt (project-level)
+├── 01_documentation
 |   ├── data_cleaning_plans
 |   |   ├── study_name_stu_svy_data_cleaning_plan.txt
 |   |   └── study_name_tch_svy_data_cleaning_plan.txt
-├── data
+|   ├── study_name_project_summary_document.pdf
+|   ├── study_name_stu_svy_data-dictionary.csv
+|   ├── study_name_tch_svy_data-dictionary.csv
+├── 02_data
 |   ├── stu
 |   ├── README.txt (dataset-level)
 |   |   ├── w1
@@ -356,7 +365,7 @@ study_name/
 |   |   ├── w2
 |   |   |   ├── study_name_w2_tch_svy_clean.csv
 |   |   |   └── study_name_w2_tch_svy_clean.sav
-├── analysis (if relevant to this repository)
+├── 03_analysis (if relevant to this repository)
 |   ├── README.txt
 |   |   └── ...
 |   ├── data (this would contain analytic data files)
@@ -379,12 +388,9 @@ study_name/
 
 ## Roles and responsibilities
 
-As with every phase in the research life cycle, it is so important to assign roles and responsibilities throughout this process. At the beginning of your project, take an inventory of the expertise and capacity you have to share data and take note of any gaps. 
+As with every phase in the research life cycle, it is so important to assign roles and responsibilities throughout this process. Make a checklist of everything that needs to happen in this data sharing process and assign someone to every task. Many of the required tasks (e.g., data cleaning, documentation) should not require additional planning, as those roles and responsibilities are designated in other phases. However, there are several new tasks that will be specific to this phase (e.g., creating data use agreements, assessing disclosure risk), and some tasks will vary depending on if you are sharing through a repository/institutional archive (e.g., communicating with repository staff, troubleshooting issues) or sharing on your own (e.g., developing a data request and sharing system). Even after data has been shared, depending on how and where your data is shared, you may also need to assign responsibilities for ongoing maintenance (e.g., responding to access requests). 
 
-- Do you need more expertise in data de-identification techniques? 
-- Do you need more expertise in developing data use agreements or assigning licenses? 
-
-If yes, begin looking into who may fill these gaps (e.g., research data librarians, methodologists, data curation specialists at your repository). Consider all of the responsibilities that will need to be covered during this process. Many of the required tasks (e.g., data cleaning, documentation) will not require additional planning, as those roles and responsibilities are designated in other phases. However, there are several new tasks that will be specific to this phase (e.g., creating data use agreements, assessing disclosure risk), and some tasks will vary depending on if you are sharing through a repository or institutional archive (e.g., communicating with repository staff, troubleshooting issues) or sharing on your own (e.g., developing a data request and sharing system). Even after data has been shared, depending on how and where your data is shared, you may also need to assign responsibilities for ongoing maintenance (e.g., responding to access requests). Once your data sharing plan is formalized, it should be documented in all necessary locations (e.g., DMP, research protocol, SOPs, informed consent forms).
+As you begin assigning roles, you may discover that additional expertise is needed, especially for things like the data de-identification process or developing data sharing agreements. If yes, also begin looking into who may fill these gaps (e.g., research data librarians, methodologists, data curation specialists at your repository). Once your data sharing plan is formalized, it should be documented in all necessary locations (e.g., DMP, research protocol, SOPs, informed consent forms).
 
 A few organizations have put together data sharing checklists. These checklists may help you begin assigning team members to specified responsibilities.
 
@@ -392,16 +398,16 @@ A few organizations have put together data sharing checklists. These checklists 
 
 |Source|Resource|
 |--------|-----------|
-|Data Curation Network |A standardized set of steps and checklists for reviewing datasets before publicly sharing ^[https://datacurationnetwork.org/outputs/workflows/]|
-|Institute of Education Sciences| Data sharing checklist on page 30 ^[https://ies.ed.gov/ncee/pubs/2022004/pdf/2022004.pdf]|
-|Andrea S. Towse, et al.|Table 1 provides a checklist of data quality checks for data sharing ^[https://www.tandfonline.com/doi/full/10.1080/00224545.2021.1938811]|
+|Data Curation Network |A standardized set of steps and checklists for reviewing datasets before publicly sharing^[https://datacurationnetwork.org/outputs/workflows/]|
+|Institute of Education Sciences| Data sharing checklist on page 30^[https://ies.ed.gov/ncee/pubs/2022004/pdf/2022004.pdf]|
+|Andrea S. Towse, et al.|Table 1 provides a checklist of data quality checks for data sharing^[https://www.tandfonline.com/doi/full/10.1080/00224545.2021.1938811]|
 
 
 ## Revisions
 
 When publicly sharing study data and materials, researchers are often concerned that errors may be found [@beaudry_open_2022; @houtkoop_data_2018; @levenstein_data_2018]. If errors are found in your data after publicly sharing, while not ideal, it is important to recognize that you are not the first person this has happened to. Other researchers have come across errors in their data after sharing and have successfully made plans for addressing the problem [@aboumatar_perspective_2021; @bishop_bishopblog_2014; @grave_scientists_2021; @laskowski_what_2020; @strand_scientists_2020]. Depending on how you've shared and used your data, there are different ways to address these errors.
 
-First, if you have used your data in a publication, contact your journal to make them aware of the errors you found. The journal may provide options including the opportunity to revise or retract your article. Next, you will want to update your shared data.
+First, if you have used your data in a publication, contact your journal to make them aware of the errors you found. The journal may provide options, including the opportunity to revise or retract your article. Next, you will want to update your shared data.
 
 If your data is shared in a repository or institutional archive:
 
@@ -417,4 +423,4 @@ If your data is not in a repository or institutional archive:
 
 2. Then, consider personally reaching out to anyone who has submitted a data request to notify them of the errors in the data.
 
-While the potential for others to find errors is often viewed as a consequence to data sharing, we can also view this as an opportunity to do better science. Giving others the chance to catch errors in our data, that we may not have otherwise caught [@bishop_bishopblog_2014; @klein_practical_2018; @schoen_guest_2023], allows us to make corrections, ensuring that our findings are not derived based on inaccurate data. Data sharing also provides incentive for us to implement more rigorous data management practices that hopefully improve data integrity and create less concern for future errors [@klein_practical_2018; @strand_error_2021]. 
+While the potential for others to find errors is often viewed as a consequence to data sharing, we can also view this as an opportunity to do better science. Giving others the chance to catch errors in our data, that we may not have otherwise caught [@bishop_bishopblog_2014; @klein_practical_2018; @schoen_guest_2023] allows us to make corrections, ensuring that our findings are not derived based on inaccurate data. Data sharing also provides incentive for us to implement more rigorous data management practices that hopefully improve data integrity and create less concern for future errors [@klein_practical_2018; @strand_error_2021]. 

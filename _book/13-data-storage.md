@@ -1,8 +1,8 @@
 # Data Storage and Security {#store}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig13-1.PNG" alt="Data storage in the research project life cycle" width="100%" />
-<p class="caption">(\#fig:fig13-1)Data storage in the research project life cycle</p>
+<img src="img/fig13-1.PNG" alt="Data storage in the research project life cycle." width="100%" />
+<p class="caption">(\#fig:fig13-1)Data storage in the research project life cycle.</p>
 </div>
 
 As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study. Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.
@@ -25,7 +25,7 @@ When planning a storage and security process, for data files in particular, it i
     - Make note of any data storage laws, policies, or agreements that your data is subject to (e.g., IRB policies, data sharing agreements, funder policies).
 
 4. Review classification levels.
-    - Review each data source's classification level (see \@ref(hsd-dcl)) to ensure that you are choosing storage solutions that are appropriate for the sensitivity level your data.
+    - Review each data source's classification level (see Section \@ref(hsd-dcl)) to ensure that you are choosing storage solutions that are appropriate for the sensitivity level your data.
 
 This process should help narrow down your data storage solutions for each data source. However, from there a series of decisions need to be made depending on the type of data you are working with, paper (e.g., a paper consent form) or electronic (e.g., a CSV file of questionnaire data, a Microsoft Access participant tracking database). The remainder of this section will review a series of decisions to make for each type of data, as well as provide some best practices along the way.
 
@@ -41,7 +41,7 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
       - Comfort level of your team: It is helpful to choose a storage space that your team is comfortable working in or that you have the ability to train them in how to use it.
       - Accessibility: Consider the accessibility of your storage location for users (e.g., how staff access the location off-site), as well as the compatibility with different operating system.
       - Collaboration: Consider how the storage method handles multi-user editing of files.
-      - File sharing: It can be very beneficial to use a storage platform that allows file sharing through links, rather than sharing the actual file. This way if updates are made to the file, those changes are shown in the link, rather than having to send an updated version of the file.
+      - File sharing: It can be very beneficial to use a storage platform that allows file sharing through links, rather than sharing the actual file. Not only does this better control file access, it also reduces burden and confusion. As an example, if small updates are made to a file after sharing, rather than having to send an updated version, those changes are reflected in the linked file.
       - Costs: Consider if there are any costs associated with your potential storage solutions.
 
 2. Choose a final storage location.
@@ -49,8 +49,7 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
   
 3. Design your folder structure according to your style guide.
     - Following your style guide, create a folder structure **before** team members begin storing files so that they are stored consistently. 
-      - If not already designated in your style guide, note that a best practice, and possibly a mandate from your institution, is to store your participant tracking database separately from your research study data (i.e., a separate folder with restricted access). Not only does the participant tracking database contain personally identifiable information (PII), it is also the one linking key between your study codes and your participant names and should not be stored alongside your datasets.
-      - Similarly, any informed consent forms collected electronically should also not be stored alongside research study data. They should be stored in a separate, secure location.
+      - –	Importantly, make sure to set up your structure in a way that stores identifiable information (e.g., participant tracking database, consent forms) separate from your research study data.
 
 4. Set up additional security systems.
     - Data backups
@@ -66,18 +65,18 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
     - Secure your devices [@otoole_data_2018; @princeton_university_best_2023].
       - Choose safe passwords to protect devices.
       - Do not leave devices open and unattended when working in the field.
-      - Have protection on your devices (e.g., up to date antivirus software, firewall, encryption).
-      - When working remotely, use password protected Wi-Fi and use secure connections (e.g., VPN, 2FA) when working with data files.
+      - Have protection on your devices (e.g., up-to-date antivirus software, firewall, encryption).
+      - When working remotely, use password-protected Wi-Fi and use secure connections (e.g., VPN, 2FA) when working with data files.
       - Any files stored on detachable media (e.g., external hard drives, CDs, flash drives) should typically be stored behind two locks when not in use (e.g., a locked file cabinet in a locked storage room).
     - Securely transmit data files.
-      - When transmitting data, either internally or externally, it is important that you use secure methods, especially when data contain PII. As a general rule, no moderate or highly sensitive data should be transmitted via email. Use a secure, institution approved, file transfer method that includes encryption.
+      - When transmitting data, either internally or externally, it is important that you use secure methods, especially when data contain PII. As a general rule, no moderate or highly sensitive data should be transmitted via email. Use a secure, institution-approved, file transfer method that includes encryption.
       
 ### Paper data {#store-paper}
 
 Working with paper data involves reviewing another set of decisions when planning for data storage and security. 
 
 1. Choose a final storage location.
-    - After reviewing available locations as well as applicable laws, policies, and agreements, you will want to consider additional criteria such as accessibility of the storage site, your physical storage size needs, storage costs, and the security of the location. Most commonly required for any files containing PII, is to store them behind two locks.
+    - After reviewing available locations as well as applicable laws, policies, and agreements, you will want to consider additional criteria such as accessibility of the storage site, your physical storage size needs, storage costs, and the security of the location. Most commonly required for any files containing PII is to store them behind two locks.
 
 2. Consistently structure your file cabinets and folders.
     - While you may not have a style guide created for organizing physical folders and files, it is still important to consistently structure and name them for clarity. As an example, organize drawers by time period (e.g., wave 1), and further organize folders by data source (e.g., student survey).
@@ -91,6 +90,6 @@ Whether working with electronic or paper data, make sure to assign responsibilit
 
 ## Documentation and dissemination
 
-After you make a plan for short-term data storage, that plan should be added to all necessary documentation (e.g., DMP, research protocol, informed consent forms, SOPs). Once your plan has been approved, it is important to not deviate from that plan unless your revisions have also been approved. This is especially important in the case of informed consents. Once participants have agreed to data storage terms in the consent (e.g., how identifying information will be stored separate from study data), those terms should be honored.
+After you make a plan for short-term data storage, that plan should be added to all necessary documentation (e.g., DMP, research protocol, informed consent forms, SOPs). Once your plan has been approved, it is important to not deviate from that plan unless your revisions have also been approved. This is especially important in the case of agreements (e.g., informed consent, data sharing agreements), where it is important to honor any terms laid out in those agreements. 
 
-Last, all information needs to be disseminated to team members to ensure fidelity to your data storage and security plan. Add pertinent information to documents that staff are required to review (i.e., team data security policy or onboarding/offboarding checklists) to ensure the information is reviewed. In addition, make sure to embed this information into any team or project related staff training.
+Last, all information needs to be disseminated to team members to ensure fidelity to your data storage and security plan. Add pertinent information to documents that staff are required to review (i.e., team data security policy or onboarding/offboarding checklists) to ensure the information is reviewed. In addition, make sure to embed this information into any team or project-related staff training.

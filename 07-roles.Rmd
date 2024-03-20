@@ -1,12 +1,12 @@
 # Project Roles and Responsibilities {#roles}
 
-```{r fig7-1, fig.cap="Planning in the research project life cycle"}
+```{r fig7-1, fig.cap="Planning in the research project life cycle."}
 
 knitr::include_graphics("img/fig7-1.PNG")
 
 ```
 
-Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons including the following [@uk_data_service_research_2023]:
+Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons, including the following [@uk_data_service_research_2023]:
 
 1. It allows team members to begin standardizing workflows.
 1. When team members know exactly what is expected of them, it keeps data more secure.
@@ -14,7 +14,7 @@ Part of the DMP and planning data management phase, as noted in previous chapter
 
 ## Research project roles
 
-Before diving in to how to assign and document roles for a project, it is important to get an understanding of typical roles on an education research project team. Your team may be lucky enough to have all, or several of these roles. Other times, just one person, such as the principal investigator, may take on all or multiple of these roles. With that said, if your budget allows it, I highly recommend hiring individuals to fill each of the roles mentioned below to allow team members to specialize and excel in their area of expertise. While learning all aspects of a project is highly recommended to create a cohesive team that works collaboratively, team members that take on too many project roles can be spread too thin and project goals may suffer.
+Before diving in to how to assign and document roles for a project, it is important to get an understanding of typical roles on an education research project team [@elsevier_author_services_research_2021]. Your team may be lucky enough to have all, or several of these roles. Other times, just one person, such as the principal investigator, may take on all or multiple of these roles. With that said, if your budget allows it, I highly recommend hiring individuals to fill each of the roles mentioned below to allow team members to specialize and excel in their area of expertise. While learning all aspects of a project is highly recommended to create a cohesive team that works collaboratively, team members who take on too many project roles can be spread too thin and project goals may suffer.
 
 ### Investigators
 
@@ -36,9 +36,9 @@ This role refers to any staff hired to help implement a research project which m
 
 ### Other roles
 
-The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research center. Some teams may include additional roles, not mentioned previously, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in Figure \@ref(fig:fig7-1). Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take for instance, the role of a coach implementing an intervention that is being studied (see Figure \@ref(fig:fig7-2)). Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
+The size of a research team and the roles that exist are dependent on factors such as funding, the type of research study, the intervention being studied, or the organization of your specific research center. Some teams may include additional roles, not mentioned previously, such as research director, lab manager, software engineer, database manager, postdoc, analyst, statistician, administrative professional, hourly data collector, outreach coordinator, or coach/interventionist, all who may assist in the research cycle in other ways. Some of these roles will assist in the research data life cycle as seen in Figure \@ref(fig:fig7-1). Some may be on a path that is hidden from the diagram but still happening, behind the scenes, alongside the process. Take, for instance, the role of a coach implementing an intervention that is being studied (see Figure \@ref(fig:fig7-2)). Their tasks aren't shown on the original diagram but their work is happening alongside the data collection cycle. 
 
-```{r fig7-2, fig.cap="Life cycle diagram updated to show hidden processes"}
+```{r fig7-2, fig.cap="Life cycle diagram updated to show hidden processes."}
 
 knitr::include_graphics("img/fig7-2.PNG")
 
@@ -47,12 +47,12 @@ knitr::include_graphics("img/fig7-2.PNG")
 
 ## Assigning roles and responsibilities
 
-Early on in a project you may start to generally assign roles in your data management plan (DMP). Remember if you submitted a DMP, you are often required to state who will be responsible for activities such as data integrity and security. Then, once your project is funded and you start to have a better idea of your goals and your budget, you can flesh out the details of your roles. During the planning phase, using tools such as your planning checklists will help you think through more specific responsibilities associated with each role. When assigning roles and responsibilities, there are several factors to consider [@valentine_best_2011].
+Early on in a project you may start to generally assign roles in your data management plan (DMP). Remember if you submitted a DMP, you are often required to state who will be responsible for activities such as data integrity and security. Then, once your project is funded and you start to have a better idea of your goals and your budget, you can flesh out the details of your roles. During the planning phase, using tools such as your planning checklists will help you think through more specific responsibilities associated with each role. When assigning roles and responsibilities, there are several factors to consider [@helm_cultivating_2022; @valentine_best_2011].
 
 1. Required skill set
     - In assigning roles and responsibilities, consider the skills that are needed to be successful in each position. For example, when considering the role of a data manager and the responsibilities associated with that role, you may look for skills in the following buckets: 
       - Interpersonal skills (Detail-oriented, organized, good communicator)  
-      - Domain skills (Experience working with education data, understands data privacy - FERPA, HIPAA)  
+      - Domain skills (Experience working with education data, understands data privacy---FERPA, HIPAA)  
       - Technical skills (Understanding of data organization, experience building data pipelines, coding experience, specific software/tool experience)  
     - The specific skills needed for each role will depend on your project needs as well as the skill sets of the other team members.
 
@@ -80,7 +80,7 @@ There are many reasons to document staff roles and responsibilities and to store
 
 Figure \@ref(fig:fig7-3) is one example of a roles and responsibilities document that organizes information by roles. Note that this document only lists overarching responsibilities, not detailed steps associated with tasks. Specific actionable steps will be laid out in other process documentation such as standard operating procedures (see Section \@ref(document-sop)), where names are attached to each task. 
 
-```{r fig7-3, fig.cap="Roles and responsibilities document organized by role", out.width = "70%"}
+```{r fig7-3, fig.cap="Roles and responsibilities document organized by role.", out.width = "70%"}
 
 knitr::include_graphics("img/fig7-3.PNG")
 
@@ -88,7 +88,7 @@ knitr::include_graphics("img/fig7-3.PNG")
 
 However, this document can be laid out in any format that conveys the information clearly to your team. Figure \@ref(fig:fig7-4) is an example of organizing information by phases of the research life cycle. 
 
-```{r fig7-4, fig.cap="Roles and responsibilities organized by phase", out.width = "70%"}
+```{r fig7-4, fig.cap="Roles and responsibilities organized by phase.", out.width = "70%"}
 
 knitr::include_graphics("img/fig7-4.PNG")
 
@@ -97,6 +97,6 @@ knitr::include_graphics("img/fig7-4.PNG")
 Last, any additional information can be added to these documents to help clarify responsibilities, such as:
 
 - Links to related standard operating procedures (e.g., for building a participant tracking database you may link to the specific SOP that lays out steps for building the tool).
-- Names of other staff members (if any) that assist with or also contribute to each responsibility.
+- Names of other staff members (if any) who assist with or also contribute to each responsibility.
 - Timing of each responsibility (e.g., weekly, ongoing, the month of February).
 - Name of team members who will take on responsibilities in case of a team member's absence.

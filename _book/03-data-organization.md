@@ -9,8 +9,8 @@ In education research, data is often collected internally by a team using an ins
 Those data come in many forms (e.g., video, transcripts, documents, data files), represented as text, numbers, or multimedia [@usgs_what_2023]. In the world of quantitative education research, we are often working with digital data in the form of a dataset, a structured collection of data. A dataset is organized in a rectangular format which allows the information to be machine-readable. Rectangular, also called tabular, datasets are made up of columns and rows (see Figure \@ref(fig:fig3-1)). 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-1.PNG" alt="Basic format of a dataset" width="100%" />
-<p class="caption">(\#fig:fig3-1)Basic format of a dataset</p>
+<img src="img/fig3-1.PNG" alt="Basic format of a dataset." width="100%" />
+<p class="caption">(\#fig:fig3-1)Basic format of a dataset.</p>
 </div>
 
 ### Columns {#structure-columns}
@@ -23,7 +23,7 @@ The columns in your dataset will consist of the following types of variables:
   - These may be indicators you create (e.g., cohort, treatment, time).
   - Or they me be variables derived for summary purposes (e.g., means, sum scores).
 - Identifier variables
-  - Unless your data is collected anonymously, you must also include values that uniquely identify subjects in your data (e.g., a student unique identifier).
+  - You must also include values that uniquely identify subjects in your data (e.g., a student unique identifier).
   - See Section \@ref(track-ids) for more information on creating unique identifier variables.
 
 #### Column attributes
@@ -57,8 +57,8 @@ The rows in your dataset are aligned with subjects (also called records or cases
 The cells are the observations associated with each case in your data. Cells are made up of key/value pairs, created at the intersection of a column and a row (see Figure \@ref(fig:fig3-2)). Consider an example where we collect a survey (also called a questionnaire) from students. In this dataset, each row is made up of a unique student in our study, each column is an item from the survey, and each cell contains a value that corresponds to that row/column pair (i.e., that participant and that question).
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-2.PNG" alt="Representation of a cell value" width="100%" />
-<p class="caption">(\#fig:fig3-2)Representation of a cell value</p>
+<img src="img/fig3-2.PNG" alt="Representation of a cell value." width="100%" />
+<p class="caption">(\#fig:fig3-2)Representation of a cell value.</p>
 </div>
 
 ## Dataset organization rules {#structure-rules}
@@ -68,8 +68,8 @@ In order for your dataset to be machine-readable and analyzable, it should adher
 1. The first rule is that data should make a rectangle (Figure \@ref(fig:fig3-3)). The first row of your data should be your variable names (only use one row for this). The remaining data should be made up of values in cells.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-3.PNG" alt="A comparison of non-rectangular and rectangular data" width="100%" />
-<p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data</p>
+<img src="img/fig3-3.PNG" alt="A comparison of non-rectangular and rectangular data." width="100%" />
+<p class="caption">(\#fig:fig3-3)A comparison of non-rectangular and rectangular data.</p>
 </div>
 
 2. Column values should be consistent (Figure \@ref(fig:fig3-4)). Both humans and machines have difficulty categorizing information that is not measured, coded, or formatted consistently.
@@ -78,8 +78,8 @@ In order for your dataset to be machine-readable and analyzable, it should adher
     - For numeric values, measure in consistent units and keep consistent decimal places.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-4.PNG" alt="A comparison of inconsistent and uniform variable values" width="100%" />
-<p class="caption">(\#fig:fig3-4)A comparison of inconsistent and uniform variable values</p>
+<img src="img/fig3-4.PNG" alt="A comparison of inconsistent and uniform variable values." width="100%" />
+<p class="caption">(\#fig:fig3-4)A comparison of inconsistent and uniform variable values.</p>
 </div>
 
 
@@ -87,16 +87,16 @@ In order for your dataset to be machine-readable and analyzable, it should adher
     - For example, if you have a numeric variable, such as `age`, but you add a cell value that is text, your variable no longer adheres to your variable type. Machines will now read this variable type as character.
   
 <div class="figure" style="text-align: center">
-<img src="img/fig3-5.PNG" alt="A comparison of variables adhering and not adhering to a data type" width="100%" />
-<p class="caption">(\#fig:fig3-5)A comparison of variables adhering and not adhering to a data type</p>
+<img src="img/fig3-5.PNG" alt="A comparison of variables adhering and not adhering to a data type." width="100%" />
+<p class="caption">(\#fig:fig3-5)A comparison of variables adhering and not adhering to a data type.</p>
 </div>
   
 4. A variable should only collect one piece of information (Figure \@ref(fig:fig3-6)). This allows you to more easily work with your variables.
     - For example, rather than combining the number of incidents and the number of enrolled students in the same variable, separate this information into two variables. This allows you to aggregate information as needed (e.g., calculate an incident rate).
   
 <div class="figure" style="text-align: center">
-<img src="img/fig3-6.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables" width="100%" />
-<p class="caption">(\#fig:fig3-6)A comparison of two things being measured in one variable and two things being measured across two variables</p>
+<img src="img/fig3-6.PNG" alt="A comparison of two things being measured in one variable and two things being measured across two variables." width="100%" />
+<p class="caption">(\#fig:fig3-6)A comparison of two things being measured in one variable and two things being measured across two variables.</p>
 </div>
 
 5. All cell values should be explicit (Figure \@ref(fig:fig3-7)). This means all cells that are not missing values should be filled with a value. 
@@ -106,16 +106,16 @@ In order for your dataset to be machine-readable and analyzable, it should adher
       - If an empty cell is implied to be *0*, fill the cells with an actual *0*.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-7.PNG" alt="A comparison of variables with empty cells and variables with not empty cells" width="100%" />
-<p class="caption">(\#fig:fig3-7)A comparison of variables with empty cells and variables with not empty cells</p>
+<img src="img/fig3-7.PNG" alt="A comparison of variables with empty cells and variables with not empty cells." width="100%" />
+<p class="caption">(\#fig:fig3-7)A comparison of variables with empty cells and variables with not empty cells.</p>
 </div>
 
 6. All variables should be explicit (Figure \@ref(fig:fig3-8)). No variables should be implied using color coding.
     - If you want to indicate information, add an indicator variable to do this rather than cell coloring.   
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-8.PNG" alt="A comparison of information being indicated through cell color and information being provided in an indicator variable" width="100%" />
-<p class="caption">(\#fig:fig3-8)A comparison of information being indicated through cell color and information being provided in an indicator variable</p>
+<img src="img/fig3-8.PNG" alt="A comparison of information being indicated through cell color and information being provided in an indicator variable." width="100%" />
+<p class="caption">(\#fig:fig3-8)A comparison of information being indicated through cell color and information being provided in an indicator variable.</p>
 </div>
 
 ## Linking data {#structure-link}
@@ -131,8 +131,8 @@ A database is "an organized collection of data stored as multiple datasets" [@us
 In database terminology, each dataset we have is considered a "table". Each table includes one or more variables that uniquely define rows in your data (i.e., a primary key). Tables may also contain variables associated with unique values in another table (i.e., foreign keys) [@wickham_r_2023]. See Figure \@ref(fig:fig3-9) for an example of three tables that contain primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Furthermore, tables can be joined either horizontally or vertically.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-9.PNG" alt="Three tables with primary and foreign keys" width="100%" />
-<p class="caption">(\#fig:fig3-9)Three tables with primary and foreign keys</p>
+<img src="img/fig3-9.PNG" alt="Three tables with primary and foreign keys." width="100%" />
+<p class="caption">(\#fig:fig3-9)Three tables with primary and foreign keys.</p>
 </div>
 
 #### Horizontal joins
@@ -144,27 +144,27 @@ There are several different types of horizontal joins (e.g., left, right, inner,
 To better understand horizontal joins, let's take the simple example in Figure \@ref(fig:fig3-10), where we only have a primary key (`stu_id`) in each table, no foreign keys. Here we collected data from students using two different instruments (a survey and an assessment). When we join these tables on our primary key, it will be a one-to-one merge because each student only appears once in each table. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-10.PNG" alt="Linking data through primary keys" width="70%" />
-<p class="caption">(\#fig:fig3-10)Linking data through primary keys</p>
+<img src="img/fig3-10.PNG" alt="Linking data through primary keys." width="70%" />
+<p class="caption">(\#fig:fig3-10)Linking data through primary keys.</p>
 </div>
 
-However, we are often not only collecting data using a variety of instruments, we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let's look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure \@ref(fig:fig3-11) shows how we can now link the foreign key in the student assessment (`tch_id`) with the primary key in the teacher survey (`tch_id`). In this scenario, we are doing a many to one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. 
+However, we are often not only collecting data using a variety of instruments, we are also collecting nested data across different entities (e.g., students, nested in classrooms, nested in schools). Let's look at another example where we collected data from both students (an assessment) and teachers (a survey). Figure \@ref(fig:fig3-11) shows how we can now link the foreign key in the student assessment (`tch_id`) with the primary key in the teacher survey (`tch_id`). In this scenario, we are doing a many-to-one join (i.e., multiple students are associated with the same teacher), meaning upon merging, teacher data will be repeated for all students in their classroom. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-11.PNG" alt="Linking data through foreign keys" width="100%" />
-<p class="caption">(\#fig:fig3-11)Linking data through foreign keys</p>
+<img src="img/fig3-11.PNG" alt="Linking data through foreign keys." width="100%" />
+<p class="caption">(\#fig:fig3-11)Linking data through foreign keys.</p>
 </div>
 
 As you can imagine, as we add more tables, the database structure begins to become even more complex. Figure \@ref(fig:fig3-12) is an example where we collected data from students (a survey and an assessment), from teachers (a survey and an observation), and from schools (an intake form). While the linking structure begins to look more complex, we see that we can still link all of our data through primary and foreign keys. Tables within participant types can be linked by primary keys, and tables across participant types can be linked by foreign keys.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-12.PNG" alt="Linking data through primary and foreign keys" width="100%" />
-<p class="caption">(\#fig:fig3-12)Linking data through primary and foreign keys</p>
+<img src="img/fig3-12.PNG" alt="Linking data through primary and foreign keys." width="100%" />
+<p class="caption">(\#fig:fig3-12)Linking data through primary and foreign keys.</p>
 </div>
 
 > **Note**
 >
-> It is important to note here, that if you do not have unique identifiers in your tables, as is in the case of anonymous data, you will be unable to join data horizontally.
+> It is important to note here, that if you do not have common unique identifiers across tables, as is in the case of anonymous data, you will be unable to join data horizontally.
 
 #### Vertical joins
 
@@ -173,17 +173,21 @@ Joining tables vertically, also called appending, involves stacking tables on to
 Let's take a simple example where we collected a survey from two different sites. Those surveys were entered into two separate tables and we want to combine that data. Figure \@ref(fig:fig3-13) shows how we could vertically join those tables.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-13.PNG" alt="Appending data across sites" width="100%" />
-<p class="caption">(\#fig:fig3-13)Appending data across sites</p>
+<img src="img/fig3-13.PNG" alt="Appending data across sites." width="100%" />
+<p class="caption">(\#fig:fig3-13)Appending data across sites.</p>
 </div>
+
+> **Note**
+>
+> In this Section (\@ref(structure-link)) I am loosely using the term "join" to provide a unifying framework for the different ways you can combine data. However, stacking data vertically is not technically considered a join, commonly defined as matching dataset rows by a common key. Terms such as append or union are more conventionally used in the field to describe stacking data in this way.
 
 **Resources**
 
 |Source|Resource|
 |--------|-----------|
-|Crystal Lewis | Placeholder blog post ^[placeholder]|
-|Data Carpentry | A review of different types of horizontal joins ^[https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html]|
-|David E. Caughlin| A review of horizontal and vertical joins ^[https://rforhr.com/join.html]|
+|Crystal Lewis | A review of horizontal and vertical joins^[https://cghlewis.com/blog/joins/]|
+|Data Carpentry | A review of different types of horizontal joins^[https://tavareshugo.github.io/r-intro-tidyverse-gapminder/08-joins/index.html]|
+|David E. Caughlin| A review of horizontal and vertical joins^[https://rforhr.com/join.html]|
 
 ### Data structure {#structure-datastructure}
 
@@ -196,21 +200,21 @@ When we structure our data in a wide format, all data collected on a unique subj
 To structure data in wide format, we join our tables horizontally. Before joining though, each wave of data collection will be appended to a variable name to create unique names. Figure \@ref(fig:fig3-14) shows of an example of how we could structure two waves of data collection in wide format. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-14.PNG" alt="Example linking tables across time in wide format" width="80%" />
-<p class="caption">(\#fig:fig3-14)Example linking tables across time in wide format</p>
+<img src="img/fig3-14.PNG" alt="Example linking tables across time in wide format." width="80%" />
+<p class="caption">(\#fig:fig3-14)Example linking tables across time in wide format.</p>
 </div>
 
 #### Long format
 
 Another way to structure longitudinal data is in long format. Here a participant can, and often will, repeat in your dataset, and unique rows will now be identified through a combination of variables (e.g., `stu_id` and `wave` together will be your primary key). 
 
-To structure data in long format, we join our tables vertically. In this scenario, we no longer add the data collection wave to variable names. However, a time period variable should be added to denote the wave associated with each row of data. Figure \@ref(fig:fig3-15) shows of an example of how we could structure two waves of data collection in long format. 
+To structure data in long format, we join our tables vertically. In this scenario, we no longer add the data collection wave to variable names. However, a time period variable should be added to denote the wave associated with each row of data. Figure \@ref(fig:fig3-15) shows an example of how we could structure two waves of data collection in long format. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig3-15.PNG" alt="Example linking tables across time in long format" width="100%" />
-<p class="caption">(\#fig:fig3-15)Example linking tables across time in long format</p>
+<img src="img/fig3-15.PNG" alt="Example linking tables across time in long format." width="100%" />
+<p class="caption">(\#fig:fig3-15)Example linking tables across time in long format.</p>
 </div>
 
-#### Choosing wide vs long {#structure-reshape}
+#### Choosing wide versus long {#structure-reshape}
 
-There are different reasons for structuring your longitudinal data one way or another. Storing data in long format is usually considered to be more efficient than storing in wide format, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically require data to be in long format, where the unit of analysis is each measurement for the subject [@grace-martin_wide_2013]. It may be that you structure data in one format for one reason (e.g., storing or sharing), and then restructure data into another format a different reason (e.g., analysis). Luckily, this type of restructuring can be done fairly quickly in many statistical programs ^[placeholder]. We will further review decision making around data structure in Chapters \@ref(clean) and \@ref(share).
+There are different reasons for structuring your longitudinal data one way or another. Storing data in long format is usually considered to be more efficient than storing in wide format, potentially requiring less memory. However, when it comes time for analysis, specific data structures may be required. For example, repeated measure procedures typically require data to be in wide format, where the unit of analysis is the subject. While mixed model procedures typically require data to be in long format, where the unit of analysis is each measurement for the subject [@grace-martin_wide_2013]. It may be that you structure data in one format for one reason (e.g., storing or sharing), and then restructure data into another format a different reason (e.g., analysis). Luckily, this type of restructuring can be done fairly quickly in many statistical programs^[https://osf.io/xumg4]. We will further review decision making around data structure in Chapters \@ref(clean) and \@ref(share).

@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 9 Style Guide | Data Management in Large-Scale Education Research</title>
 <meta name="author" content="Crystal Lewis">
-<meta name="description" content="Figure 9.1: Style guide in the research project life cycle  A style guide provides general rules for the formatting of information. As mentioned in Chapter 8, style guides can be created to...">
+<meta name="description" content="Figure 9.1: Style guide in the research project life cycle.  A style guide provides general rules for the formatting of information. As mentioned in Chapter 8, style guides can be created to...">
 <meta name="generator" content="bookdown 0.29 with bs4_book()">
 <meta property="og:title" content="Chapter 9 Style Guide | Data Management in Large-Scale Education Research">
 <meta property="og:type" content="book">
 <meta property="og:image" content="/book_featured.PNG">
-<meta property="og:description" content="Figure 9.1: Style guide in the research project life cycle  A style guide provides general rules for the formatting of information. As mentioned in Chapter 8, style guides can be created to...">
+<meta property="og:description" content="Figure 9.1: Style guide in the research project life cycle.  A style guide provides general rules for the formatting of information. As mentioned in Chapter 8, style guides can be created to...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 9 Style Guide | Data Management in Large-Scale Education Research">
-<meta name="twitter:description" content="Figure 9.1: Style guide in the research project life cycle  A style guide provides general rules for the formatting of information. As mentioned in Chapter 8, style guides can be created to...">
+<meta name="twitter:description" content="Figure 9.1: Style guide in the research project life cycle.  A style guide provides general rules for the formatting of information. As mentioned in Chapter 8, style guides can be created to...">
 <meta name="twitter:image" content="/book_featured.PNG">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -101,15 +101,15 @@
 </h1>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-1"></span>
-<img src="img/fig9-1.PNG" alt="Style guide in the research project life cycle" width="100%"><p class="caption">
-Figure 9.1: Style guide in the research project life cycle
+<img src="img/fig9-1.PNG" alt="Style guide in the research project life cycle." width="100%"><p class="caption">
+Figure 9.1: Style guide in the research project life cycle.
 </p>
 </div>
 <p>A style guide provides general rules for the formatting of information. As mentioned in Chapter <a href="document.html#document">8</a>, style guides can be created to standardize procedures such as variable naming, variable value coding, file naming, file structure, and even coding practices.</p>
 <p>Style guides create standardization within and across projects. The benefits of using them consistently include:</p>
 <ul>
 <li>Creating interoperability: This allows data to easily be combined or compared across forms or time.</li>
-<li>Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to both humans and computers.</li>
+<li>Improving interpretation: Consistent and clear structure, naming, and coding allows your files and variables to be findable and understandable to both humans and computers. This in turn prevents errors such as accidentally using the wrong file or incorrectly interpreting a variable.</li>
 <li>Increasing reproducibility: If the organization of your file paths, file naming, or variable naming constantly change, it undermines the reproducibility of any data management or analysis code you have written.</li>
 </ul>
 <p>Style guides can be created for individual projects, but they can also be created at the team level, to be applied across all projects. Most importantly, they should be created before a project kicks off so you can implement them as soon as your project begins. If you do not have a team-wide style guide already created, you most likely will want to create a project-level style guide during your planning phase so that you can begin setting up your directory structures and file naming standards before you start creating and saving project-related files.</p>
@@ -131,11 +131,7 @@ Figure 9.1: Style guide in the research project life cycle
 <li>Avoid spaces.
 <ul>
 <li>Command line operations and some operating systems do not support them, so it is best to avoid them all together. Furthermore, they can often break a URL when shared.</li>
-<li>The underscore (<code>_</code>) and hyphen (<code>-</code>) are good delimiters to use in place of spaces.
-<ul>
-<li>It is worth noting that (<code>_</code>) can be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).</li>
-</ul>
-</li>
+<li>The underscore (<code>_</code>) and hyphen (<code>-</code>) are generally good delimiters to use in place of spaces. An exception to this rule is denoted in Section <a href="style.html#style-varname">9.4</a>.</li>
 </ul>
 </li>
 <li>With the exception of (<code>_</code>) and (<code>-</code>), avoid special characters.
@@ -203,28 +199,28 @@ Figure 9.1: Style guide in the research project life cycle
 <p>Top level phase folders</p>
 <pre><code>project_new/
 ├── phase1
-|   ├── planning
-|   |   └── ...
 |   ├── documentation
+|   |   └── ...
+|   ├── planning
 |   |   └── ...
 |   └── ...
 ├── phase2
-|   ├── planning
-|   |   └── ...
 |   ├── documentation
+|   |   └── ...
+|   ├── planning
 |   |   └── ...
 |   └── ...
 └── ...
 </code></pre>
 <p>Top level content folders</p>
 <pre><code>project_new/
-├── planning
+├── documentation
 |   ├── phase1
 |   |   └── ...
 |   ├── phase2
 |   |   └── ...
 |   └── ...
-├── documentation
+├── planning
 |   ├── phase1
 |   |   └── ...
 |   ├── phase2
@@ -243,6 +239,7 @@ Figure 9.1: Style guide in the research project life cycle
 </li>
 <li>With the exception of <code>-</code> and <code>_</code>, don’t use special characters in your folder names.</li>
 <li>Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned in Section <a href="style.html#style-practices">9.1</a>).</li>
+<li>If you prefer your folders to appear in a specific order, add the order number to the beginning of the folder name, with leading zeros to ensure proper sorting (<code>01_</code>, <code>02_</code>).</li>
 </ul>
 <p><strong>Example directory structure style guide</strong></p>
 <pre><code>1. All project directories follow this hierarchical metadata structure  
@@ -263,7 +260,7 @@ Figure 9.1: Style guide in the research project life cycle
 </code></pre>
 <p><strong>Example directory structure created using a style guide</strong></p>
 <pre><code>project_new/
-├── planning
+├── 01_planning
 |   ├── grant_mgmt
 |   |   ├── proposal_docs
 |   |   |   └── ...
@@ -271,7 +268,7 @@ Figure 9.1: Style guide in the research project life cycle
 |   |   ├── agendas
 |   |   |   └── ...
 |   └── ...
-├── documentation
+├── 02_documentation
 |   ├── consent_forms
 |   |   └── ...
 |   ├── data_dictionaries
@@ -283,26 +280,27 @@ Figure 9.1: Style guide in the research project life cycle
 |   ├── sops
 |   |   └── ...
 |   └── ...
-├── data_collection
+├── 03_data_collection
 |   ├── hiring_materials
 |   |   └── ...
 |   ├── scheduling_materials
 |   |   └── ...
 |   └── ...
-├── tracking
+├── 04_tracking
 │   ├── parent_consents
 |   |   └── ...
 │   └── participant_tracking_database.accdb
-├── data
+├── 05_data
 │   ├── cohort1
 │   |   ├── student
 |   |   |   ├── survey
-|   |   |   |   └── clean
+|   |   |   |   ├── clean
 |   |   |   |   |   ├── archive
 |   |   |   |   |   |   └── changelog.txt
-|   |   |   |   └── raw
+|   |   |   |   ├── raw
 |   |   |   |   |   ├── archive
 |   |   |   |   |   |   └── changelog.txt
+|   |   |   |   └── ...  
 |   |   |   └── ... 
 |   |   └── ...
 |   └── ...   
@@ -315,8 +313,8 @@ Figure 9.1: Style guide in the research project life cycle
 </h2>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-2"></span>
-<img src="img/fig9-2.png" alt='"Documents", from xkcd.com' width="100%"><p class="caption">
-Figure 9.2: “Documents”, from xkcd.com
+<img src="img/fig9-2.png" alt='"Documents", from xkcd.com.' width="100%"><p class="caption">
+Figure 9.2: “Documents”, from xkcd.com.
 </p>
 </div>
 <p>As seen in Figure <a href="style.html#fig:fig9-2">9.2</a>, naming files in a consistent and usable way is hard. We are often in a rush to save our files and maybe don’t consider how unclear our file names will be for future users (including ourselves).</p>
@@ -333,6 +331,7 @@ Figure 9.2: “Documents”, from xkcd.com
 <li>Never use spaces between words.
 <ul>
 <li>Use (<code>-</code>) or (<code>_</code>) to separate words.</li>
+<li>It is worth noting that (<code>_</code>) may be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).</li>
 </ul>
 </li>
 <li>With the exception of (<code>_</code>) and (<code>-</code>), never use special characters.</li>
@@ -429,23 +428,27 @@ pn_w1_stu_svy_clean_syntax_v02.R
 <li>With this said, do not limit yourself to 8 characters based on the fact that one future user may use a program like Mplus. Consider the balance between character limit and interpretation. It is very difficult to make good human-readable variable names under 8 characters. It is much easier to make them under 32. Also, most of your users will be using a program with a limit of 32 or more. If you have one potential Mplus user, they can always rename your variables for their specific analysis.</li>
 </ul>
 </li>
-<li>Use the same variable name across time in a project.
-<ul>
-<li>If an item is named <code>anx1</code> in the fall, name that same item <code>anx1</code> again in the spring (see Section <a href="style.html#style-time">9.4.1</a> for a discussion on accounting for time).</li>
-</ul>
-</li>
 <li>Don’t use spaces or special characters, except (<code>_</code>). They are not allowed in most programs.
 <ul>
 <li>Even the (<code>-</code>) is not allowed in programs such as R and SPSS as it can be mistaken for a minus sign.</li>
 <li>While (<code>.</code>) is allowed in R and SPSS it is not allowed in Stata so it’s best to avoid using it.</li>
 </ul>
 </li>
-<li>Do not start a variable name with a number. This is not allowed in many statistical programs.</li>
+<li>Do not start a variable name with a number. This is not allowed in many statistical programs.<br>
+</li>
+<li>Do not embed indicator information into variable names.
+<ul>
+<li>Cohort, treatment, site, or other grouping information should be added as its own variable in a dataset, not embedded into variable names. This allows your data to be combined across groups as needed.</li>
+</ul>
+</li>
 <li>All variable names should be unique.
 <ul>
-<li>This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project. The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).</li>
-<li>So, for example, if you collect student gender from a survey and you also collect student gender from district student records, differentiate between the two (<code>s_gender</code> and <code>d_gender</code>).</li>
-<li>The exception here is variables collected across time. Identical variables should be named consistently across waves of data collection. See Section <a href="style.html#style-time">9.4.1</a> for more information about accounting for time.</li>
+<li>This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project (e.g., across a teacher survey and a student survey). The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).</li>
+<li>The exception to this rule is if you are collecting the same variables across time. In this case, identical variables should be named consistently across waves of data collection to allow easier comparison of information.
+<ul>
+<li>If an item is named <code>anx1</code> in the fall, name that same item <code>anx1</code> again in the spring (see Section 9.4.1 for a discussion on accounting for time).</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>If you substantively change an item (substantive wording OR response options change) after at least one round of data has been collected, version your variable names to reduce errors in interpretation.
@@ -466,7 +469,10 @@ pn_w1_stu_svy_clean_syntax_v02.R
 </li>
 </ul>
 </li>
-<li>If you have used an item before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects. It also allows you to easily reuse code snippets across projects (e.g., for scoring a measure).<br>
+<li>If you have used an item before, consider keeping the variable name the same across projects. This can be very useful if you ever want to combine data across projects. It also allows you to easily reuse code snippets across projects (e.g., for scoring a measure).
+<ul>
+<li>If you choose not to reuse variable names across projects, it will be important for your team to create a document mapping comparable names to facilitate potential future data integration.</li>
+</ul>
 </li>
 <li>Choose standard abbreviations to denote the types of variables you are working with (standard score = <code>ss</code>). Using controlled vocabularies improves interpretation and makes data exploration and manipulation easier <span class="citation">(<a href="references.html#ref-riederer_column_2020" role="doc-biblioref">Riederer 2020</a>)</span>.</li>
 <li>Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
@@ -482,7 +488,16 @@ pn_w1_stu_svy_clean_syntax_v02.R
 </li>
 <li>If a variable includes a “select all” option, start all associated variables with the same prefix (<code>cert_elem</code>, <code>cert_secondary</code>, <code>cert_leader</code>, <code>cert_other</code>). Again, this allows you to easily see grouped items, as well as easily programmatically manipulate those items as needed.</li>
 <li>Consider denoting reverse coding in the variable name to reduce confusion (<code>anx1_r</code>).</li>
-<li>Include an indication of the reporter in the variable name (student self-report = <code>s</code>). This can also help with the unique variable name requirement above.</li>
+<li>Include an indication of the reporter in the variable name (student self-report = <code>s</code>, district student records = <code>d</code>, teacher self-report = <code>t</code>, parent report = <code>p</code>).
+<ul>
+<li>Doing this allows you to consistently name comparable variables to improve interpretation while still creating unique variable names.
+<ul>
+<li>For example, if you collect student gender from a survey and from district student records you can use the names <code>s_gender</code> and <code>d_gender</code>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Choose an order for variable name metadata (e.g., reporter -&gt; variable name -&gt; item number/type).</li>
 </ul>
 <p><strong>Example variable naming style guide</strong></p>
@@ -547,16 +562,16 @@ t_stress_m
 <p>However, when not working with cohorts or if you have a dataset that does not fall within your pre-defined data collection periods, you can choose any values that work for you. Figure <a href="style.html#fig:fig9-3">9.3</a> provides just a few examples of how you might account for time in your data based on different scenarios.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig9-3"></span>
-<img src="img/fig9-3.PNG" alt="Examples of adding to your data based on a variety of scenarios" width="100%"><p class="caption">
-Figure 9.3: Examples of adding to your data based on a variety of scenarios
+<img src="img/fig9-3.PNG" alt="Examples of adding time to your data based on a variety of scenarios." width="100%"><p class="caption">
+Figure 9.3: Examples of adding time to your data based on a variety of scenarios.
 </p>
 </div>
 <p>With all of that said, <strong>during an active project, it is actually best to not add a time component to your data</strong>, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period (e.g., <code>pn_w1_stu_svy_clean_v01.csv</code>). There are a few benefits of this method.</p>
 <ol style="list-style-type: decimal">
 <li>Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">T. Reynolds, Schatschneider, and Logan 2022</a>)</span>.</li>
-<li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging datasets that later need to be re-combined because you find an error in an individual dataset at some point.</li>
+<li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging files that later need to be re-combined because you find an error in a dataset at some point.</li>
 </ol>
-<p>Therefore, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should not be added until it is necessary (e.g., when you need to combine files, when you are publicly sharing data). Once you are ready, it is fairly easy to add a time variable or to concatenate time to variable names using a statistical program, such as R <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;placeholder&lt;/p&gt;"><sup>58</sup></a>, or even in a program like Microsoft Excel.</p>
+<p>Therefore, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should not be added until it is necessary (e.g., when you need to combine files, when you are publicly sharing data). Once you are ready, it is fairly easy to add a time variable or to concatenate time to variable names using a statistical program, such as R<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://osf.io/xumg4" class="uri"&gt;https://osf.io/xumg4&lt;/a&gt;&lt;/p&gt;'><sup>57</sup></a>, or even in a program like Microsoft Excel.</p>
 </div>
 </div>
 <div id="style-codes" class="section level2" number="9.5">
@@ -565,8 +580,8 @@ Figure 9.3: Examples of adding to your data based on a variety of scenarios
 </h2>
 <p>Oftentimes in education research we codify categorical values. This coding of values helps in data entry, data scoring, and data analysis. As an example, rather than referring to the lengthier values of “yes” or “no” in a variable, we may code those values into a code/label pair. The code can be numeric (e.g., “yes” = 1 | “no” = 0) or character (e.g., “yes” = ‘y’ | “no” = ‘n’), depending on your needs. Ultimately, only the code appears in your data, while the code/label pair is represented in your data dictionary, allowing users to interpret the meaning of each code.</p>
 <p>If you are planning to code any categorical variable values for your study, it can be helpful to include general guidelines in your style guide for assigning those codes. Some general good practices are outlined below.</p>
-<p>First, if you are using a pre-existing measure, assign codes and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later based on those measures.</p>
-<p>Otherwise, if you are assigning your own codes, following these guidelines:</p>
+<p>First, if you are using a pre-existing measure, assign codes and labels in the manner that the technical documentation tells you to assign codes. That will be important for any further derivations you need to make later based on those measures. Similarly, if you have used items before in previous projects, consider keeping the same coding from prior projects to improve interpretation and usability of those variables.</p>
+<p>Otherwise, if you are assigning new codes, follow these guidelines to improve interpretation and decrease user errors:</p>
 <ul>
 <li>Codes must be unique.
 <ul>
@@ -596,7 +611,13 @@ Figure 9.3: Examples of adding to your data based on a variety of scenarios
 </li>
 </ul>
 </li>
-<li>Likert-type scale response options should be ordered in a logical way.
+<li>Align codes with response options as best as possible.
+<ul>
+<li>Do: Assign “none” = 0 | “1” = 1 | “2” = 2 | “3 or more” = 3</li>
+<li>Don’t: Assign “none” = 1 | “1” = 2 | “2” = 3 | “3 or more” = 4</li>
+</ul>
+</li>
+<li>Likert-type scale codes should be logically ordered.
 <ul>
 <li>Do: Assign “strongly disagree” = 1 | “disagree” = 2 | “agree” = 3 | “strongly agree” = 4</li>
 <li>Don’t: Assign “strongly disagree” = 1 | “disagree” = 3 | “agree” = 4 | “strongly agree” = 2
@@ -795,7 +816,7 @@ Figure 9.3: Examples of adding to your data based on a variety of scenarios
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-03-01.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-03-20.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

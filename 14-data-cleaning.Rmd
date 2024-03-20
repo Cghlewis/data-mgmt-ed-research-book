@@ -1,13 +1,13 @@
 # Data Cleaning {#clean}
 
-```{r fig14-1, fig.cap="Data cleaning in the research project life cycle"}
+```{r fig14-1, fig.cap="Data cleaning in the research project life cycle."}
 
 knitr::include_graphics("img/fig14-1.PNG")
 
 ```
 
 Even with the most well-designed data collection and capture efforts, data still require at least some additional processing before it is in a format that you will feel confident in sharing. What is done in the data processing, or data cleaning phase, will largely depend on the planned transformations for your data, as well as the level of quality assurance and control processes implemented during collection and capture. In this chapter we will review some standard data cleaning steps that should be considered for every education research project. 
-What is important to emphasize here, is that if you are collecting longitudinal data, data cleaning needs to happen every wave of data collection. Once a wave of data has been collected and captured and the raw data has been stored, your data cleaning process should begin. In a best case scenario, the data cleaning is wrapped up before your next wave of data collection. Cleaning data each wave, as opposed to waiting until the end of your project, has two large benefits.
+What is important to emphasize here, is that if you are collecting longitudinal data, data cleaning needs to happen every wave of data collection. Once a wave of data has been collected and captured and the raw data has been stored, your data cleaning process should begin. In a best-case scenario, the data cleaning is wrapped up before your next wave of data collection. Cleaning data each wave, as opposed to waiting until the end of your project, has two large benefits.
 
 1. Allows you to catch errors early on and fix them.
     - While cleaning your data you may find that all data is missing unexpectedly for one of your variables, or that values are incorrectly coded, or that you forgot to restrict the input type. If you are cleaning data each wave, you are able to then correct any errors in your instrument in order to collect better data next round.
@@ -16,7 +16,7 @@ What is important to emphasize here, is that if you are collecting longitudinal 
 
 ## Data cleaning for data sharing {#clean-type}
 
-Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted [@cook_how-guide_2021; @neild_sharing_2022; @van_dijk_open_2021]. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labelled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.
+Data cleaning is the process of organizing and transforming raw data into a dataset that can be easily accessed and analyzed. Data cleaning can essentially result in two different types of datasets; a dataset curated for general data sharing purposes, and a dataset cleaned for a specific analysis. The former means that the dataset is still in its true, raw form, but has been de-identified and minimally altered to allow the data to be correctly interpreted [@cook_how-guide_2021; @neild_sharing_2022; @van_dijk_open_2021]. A dataset cleaned for general data sharing means that it includes the entire study sample (no one is removed), all missing data is still labeled as missing (no imputation is done), and no analysis-specific variables have been calculated. Any further cleaning is taken care of in another phase of cleaning during analyses.
 
 Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig:fig14-2)).
 
@@ -54,7 +54,7 @@ Before cleaning our data, we need to have a shared understanding for what we exp
 5. De-identified
     - If confidentiality is promised to participants, data needs to be de-identified. At the early phases of data cleaning, this simply means that all direct identifiers (see Chapter \@ref(hsd)) are removed from the data and replaced with study codes (i.e., participant unique identifier). Before publicly sharing data, additional work may be required to remove indirect identifiers as well and we will discuss this more in Chapter \@ref(share).
 6. Interpretable
-    - Variables are named to match your data dictionary and those names are both human and machine-readable (see Section \@ref(style-varname)). As needed, variable and value labels are added as embedded metadata to aid in interpretation.
+    - Variables are named to match your data dictionary and those names are both human- and machine-readable (see Section \@ref(style-varname)). As needed, variable and value labels are added as embedded metadata to aid in interpretation.
 7. Analyzable
     - The dataset is in a rectangular (rows and columns), machine-readable format and adheres to basic data organization rules (see Section \@ref(structure-rules)).
     
@@ -65,13 +65,13 @@ Recall from Section \@ref(document-plan), that it is helpful to write a data cle
 In many ways, writing this data cleaning plan will be a very personalized process. The steps needed to wrangle your raw data into a quality dataset will vary greatly depending on what is happening in your specific raw data file. However, to produce datasets that consistently meet the data quality standards discussed in Section \@ref(clean-criteria), it can be helpful to follow a standardized checklist of data cleaning steps (see Figure \@ref(fig:fig14-3)). These steps, although very general here, once elaborated on in your data cleaning plan, for your specific data source, can help you produce a dataset that meets our data quality standards. Following this checklist helps to ensure that data is cleaned in a consistent and standardized manner within and across projects.
 
 
-```{r fig14-3, fig.cap="Data cleaning checklist"}
+```{r fig14-3, fig.cap="Data cleaning checklist."}
 
 knitr::include_graphics("img/fig14-3.PNG")
 
 ```
 
-As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps are fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file [@borer_simple_2009; @broman_data_2018]. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth for that data source. If you make errors in your data cleaning process, you should always be able to go back to your raw data to start over again if you need to. Second, reviewing your data should always be step number two. Waiting to review your data until after you've started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file. 
+As you write your data cleaning plan, you can add the checklist steps that are relevant to your data and remove the steps that are not relevant. The order of the steps is fluid and can be moved around as needed. There are two exceptions to this. First, accessing your raw data will always be number one of course, and the most important rule here is to never work directly in the raw data file [@borer_simple_2009; @broman_data_2018]. Either make a copy of the file or connect to your raw file in other ways where you are not directly editing the file. Your raw data file is your single source of truth for that data source. If you make errors in your data cleaning process, you should always be able to go back to your raw data to start over again if you need to. Second, reviewing your data should always be step number two. Waiting to review your data until after you've started cleaning means that you may waste hours of time cleaning data only to learn later that participants are missing, your data is not organized as expected, or even that you are working with the wrong file. 
 
 ### Checklist steps {#clean-steps}
 
@@ -82,12 +82,12 @@ Let's review what each step specifically involves so that as you write your data
 
 2. Do a basic review of your raw data (see Figure \@ref(fig:fig14-4)).
     - Check the rows in your data
-      - Do the number of cases in your data match the number of tracked forms in your participant tracking database? Are there any duplicates? Is anyone missing?
+      - Does the number of cases in your data match the number of tracked forms in your participant tracking database? Are there any duplicates? Is anyone missing?
     - Check the columns in your data
-      - Do the number of variables in your data dictionary match the number of variables in your dataset? Remember we are only looking for variables that are captured directly from our source (i.e., not variables that are derived during this cleaning process).
+      - Does the number of variables in your data dictionary match the number of variables in your dataset? Remember we are only looking for variables that are captured directly from our source (i.e., not variables that are derived during this cleaning process).
       - Are the variable types and values as expected?
 
-```{r fig14-4, fig.cap="Reviewing rows and columns in a raw data file"}
+```{r fig14-4, fig.cap="Reviewing rows and columns in a raw data file."}
 
 knitr::include_graphics("img/fig14-4.PNG")
 
@@ -108,9 +108,9 @@ knitr::include_graphics("img/fig14-4.PNG")
         
 4. Adjust the sample.
     - Remove duplicate cases.
-      - First, make sure your duplicates are true duplicates (i.e., not incorrectly entered identifiers or data entry errors). Any incorrect identifiers, or forms accidentally entered more than once by the data entry team, should be corrected at this time. 
-        - If the error comes from the data entry process (e.g., a team member entered an ID incorrectly, a team member entered a form twice), it can be helpful to go back to your data entry files and fix those errors at the source. Then export new files and start the data cleaning process over again at step 1. 
-        - If the error comes directly from a data collection instrument (e.g., a participant entered an incorrect ID into the web-based form), those errors can be corrected in the data cleaning process.
+      - First, make sure your duplicates are true duplicates (i.e., not incorrectly entered identifiers or data entry errors). 
+        - If the error comes from the data entry process (e.g., a team member entered an ID incorrectly, a team member entered a form twice), it can be helpful to go back to your data entry files and fix those errors at the source. This way your raw data always reflects the true values reported by a participant, improving your ability to track data lineage. Then export new files and start the data cleaning process over again at step 1. 
+        - If the error comes directly from a data collection instrument (e.g., a participant entered an incorrect ID into the web-based form), those errors can be corrected now, in the data cleaning process.
       - If you have true duplicates (i.e., a participant completed a form more than once), duplicates will need to be removed. Follow the decisions written in your documentation (e.g., research protocol, SOP) to ensure you are removing duplicates consistently (e.g., always keep the first complete record of a form).
     - Remove any participants who are not part of your final sample (i.e., did not meet inclusion criteria).
 
@@ -119,12 +119,12 @@ knitr::include_graphics("img/fig14-4.PNG")
 > In the special case where you purposefully collect duplicate observations on a participant (i.e., for reliability purposes), you will only want to keep one row per participant in your final study dataset. Again, a decision rule will need to be added to documentation so duplicates are dealt with consistently (e.g., always keep the primary observer's record).
 
 5. De-identify data.
-    - If confidentiality was promised to participants, you will need to de-identify your data. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. This process creates coded data (see Chapter \@ref(hsd) for a refesher). 
+    - If confidentiality was promised to participants, you will need to de-identify your data. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. This process creates coded data (see Chapter \@ref(hsd) for a refresher). 
     - At this point we are focusing on removing direct identifiers only, but in Chapter \@ref(share), we will also discuss dealing with indirect identifiers before publicly sharing your data.
     - Figure \@ref(fig:fig14-5) shows what this data de-identification process might look like [@otoole_data_2018]. In order to create a "coded data" file, we horizontally join our "raw data" file with our "roster file" using our unique identifiers (which in this case are `first_name` and `last_name`), and then drop our identifying variables.
       - I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, you want to completely avoid hand entry of study IDs because it is error-prone and can lead to many mistakes.
 
-```{r fig14-5, fig.cap="Process of creating a de-identified dataset"}
+```{r fig14-5, fig.cap="Process of creating a de-identified dataset."}
 
 knitr::include_graphics("img/fig14-5.PNG")
 
@@ -140,7 +140,7 @@ knitr::include_graphics("img/fig14-5.PNG")
 7. Split columns as needed (see Figure \@ref(fig:fig14-6)).
     - As discussed in Section \@ref(structure-rules), a variable should only collect one piece of information. Here you will split one variable into multiple variables so that only one thing is measured per variable. 
 
-```{r fig14-6, fig.cap="Splitting one column into multiple columns"}
+```{r fig14-6, fig.cap="Splitting one column into multiple columns."}
 
 knitr::include_graphics("img/fig14-6.PNG")
 
@@ -154,7 +154,7 @@ knitr::include_graphics("img/fig14-6.PNG")
     - Compare the variable types in your raw data to the variable types you expected in your data dictionary. Do they align? If no, why? 
       - As an example, it may be that you need to remove unexpected characters such as `$` or `%` that are preventing a variable from being a numeric type. Or it could be accidentally inserted white space or letters in your variable.
 
-```{r fig14-7, fig.cap="Normalizing a variable", out.width= "50%"}
+```{r fig14-7, fig.cap="Normalizing a variable.", out.width= "50%"}
 
 knitr::include_graphics("img/fig14-7.PNG")
 
@@ -162,16 +162,16 @@ knitr::include_graphics("img/fig14-7.PNG")
 
 10. Standardize variables.
     - Here, I am using term standardize to convey the process of checking for consistency.
-    - Are columns consistently measured, coded, and formatted according to your data dictionary? If no, they need to be standardized.
+    - Are columns consistently measured, categorized, and formatted according to your data dictionary? If no, they need to be standardized.
       - This may involve rescaling variables (e.g., `age` measured in months in wave 1 and `age` measured in years in wave 2 would need to be rescaled).
       - This may mean updating a variable format (e.g., converting to a consistent date format).
-      - Or it may mean collapsing categories of free text categorical variables (e.g., m | M | male = "male").
+      - Or it may mean collapsing categories of free text categorical variables (e.g., "m" | "M" | "male" = "male").
 
 > **Note**
 >
 > In the case of Figure \@ref(fig:fig14-8), this kind of standardization needs to happen before you can perform steps such as joining on names for de-identification purposes. Keys need to be standardized across files before linking can occur.
 
-```{r fig14-8, fig.cap="Standardizing a variable", out.width= "50%"}
+```{r fig14-8, fig.cap="Standardizing a variable.", out.width= "50%"}
 
 knitr::include_graphics("img/fig14-8.PNG")
 
@@ -182,14 +182,14 @@ knitr::include_graphics("img/fig14-8.PNG")
 
 > **Note**
 >
-> It's important to normalize before updating your variable types. Updating your variable types before normalizing could result in lost data (i.e., converting a character column to numeric, when the column still contains cells with character values, will often recode those cells to missing).
+> It's important to normalize before updating your variable types. Updating your variable types before normalizing could result in lost data (e.g., converting a character column to numeric, when the column still contains cells with character values, will often result in those cells being recoded to missing).
     
 12. Recode variables
     - If your categorical value codes (see Chapter \@ref(style-codes)) do not match your data dictionary, now is the time to recode those (e.g., you expected "no" = 1, but the data exported as "no" = 14)
     - As discussed in Chapter \@ref(structure-rules), this also includes recoding implicit values, explicitly (e.g., if missing values are implied to be *0*, recode them to *0*)
     - You can also recode any variables as planned in your data dictionary (e.g., a reverse coded item) (see Figure \@ref(fig:fig14-9))
 
-```{r fig14-9, fig.cap="Reverse coding a variable", out.width= "40%"}
+```{r fig14-9, fig.cap="Reverse coding a variable.", out.width= "40%"}
 
 knitr::include_graphics("img/fig14-9.PNG")
 
@@ -197,13 +197,13 @@ knitr::include_graphics("img/fig14-9.PNG")
 
 13. Construct additional variables
     - This is not the time to construct analysis-specific variables. This is the time to create or calculate variables that should always be a part of the core study dataset. These variables should be chosen by your data management working group early on and added to your data dictionary. Examples of variables you might add:
-    - time components (e.g., `wave`)
-    - grouping variables (e.g., `treatment`)
-    - foreign keys (e.g., `sch_id` in a teacher file)
-    - measure composite or summary scores
-    - completion variables or data quality flags
-    - variables created for scoring purposes (e.g., `age`)
-    - variables that you want added to the core sharing dataset (e.g., categorizing an open-ended text response variable)
+      - time components (e.g., `wave`)
+      - grouping variables (e.g., `treatment`)
+      - foreign keys (e.g., `sch_id` in a teacher file)
+      - measure composite or summary scores
+      - completion variables or data quality flags
+      - variables created for scoring purposes (e.g., `age`)
+      - variables that you want added to the core sharing dataset (e.g., categorizing an open-ended text response variable)
 
 > **Note**
 >
@@ -218,7 +218,7 @@ knitr::include_graphics("img/fig14-9.PNG")
     - While future data users may not have a license for the proprietary file type, these file formats can often be opened in free/open source software (e.g., GNU PSPP) or can be easily imported into a variety of other statistical programs that can interpret the metadata (e.g., importing SPSS files into R or Stata).
 
 16. Data validation
-    - It is good practice to assume that some amount of error is inevitable, even with the best data management practices in place. Errors in the data can happen for many reasons, some of which come from mistakes during the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, joining errors). Yet, errors won't be found if you don't actively look for them [@palmer_advice_2023]. At minimum you should always validate, or check, your data for errors at the end of your data cleaning process. Ideally though, you should be checking every one of your transformations along the way as well. This can be something as simple as checking category counts of categorical variables, or means of numeric variables, both before and after transformations.
+    - It is good practice to assume that some amount of error is inevitable, even with the best data management practices in place. Errors in the data can happen for many reasons, some of which come from mistakes during the data collection and capture process, others come from the data cleaning process (e.g., coding errors, calculation errors, joining errors). Yet, errors won't be found if you don't actively look for them [@palmer_advice_2023]. At a minimum you should always validate, or check, your data for errors at the end of your data cleaning process. Ideally, though, you should be checking every one of your transformations along the way as well. This can be something as simple as checking category counts of categorical variables, or means of numeric variables, both before and after transformations.
     - After your data is cleaned, begin with the manual method of opening your data and eyeballing it. Believe it or not, this can actually be a very useful error-catching technique. However, it should not be your only technique. You should also create tables, calculate summary and reliability statistics, and create univariate and bivariate plots to search for errors. Codebooks are great documents for summarizing and reviewing a lot of this information [@arslan_how_2019]. 
     - You can organize your data validation process by our data quality criteria. The following is a sampling of checks you should complete during your validation process, organized by our criteria [@cessda_training_team_cessda_2017; @icpsr_guide_2020;@strand_error_2021; @reynolds_basics_2022; @uk_data_service_research_2023].
       1. Complete
@@ -227,7 +227,7 @@ knitr::include_graphics("img/fig14-9.PNG")
           - Check for missing columns/too many columns.
       2. Valid and Consistent
           - Check variables for unallowed categories or values out of range.
-            - Checking by groups can also help illuminate issues (e.g., compare age and grade level) [@riederer_make_2021].
+            - Checking by groups can also help illuminate issues (e.g., check age by grade level) [@riederer_make_2021].
           - Check for invalid, non-unique, or missing study IDs.
           - Check for incorrect variable types.
           - Check for incorrect formatting.
@@ -240,14 +240,20 @@ knitr::include_graphics("img/fig14-9.PNG")
       5. Interpretable
           - Are all variables correctly named?
           - Is metadata applied to all variables? Is the metadata accurate (e.g., value labels correct, variable labels correct)?
-    - If during your validation process you find errors, you first want to determine where the errors originated (i.e., data entry, data export, data cleaning), and correct them in the appropriate location. If errors occurred in the data entry or data export/saving process, this may involve creating a new raw data file and starting the cleaning process again at step 1. 
-      - If, however, you find true values that are inaccurate, uninterpretable, or outside of a valid range (i.e., they represent what the participant actually reported), you will need to make a personal decision on how to deal with those. Some examples of how you might deal with true errors include:
-        - Leave the data as is, make a note of the errors in documentation, and allow future researchers to deal with those values during the analysis process.
-        - Assign a value code (e.g., "inaccurate value" = -90) to recode those values to.
-        - Create data quality indicator variables to denote which cells have untrustworthy values (e.g., `age` contains the true values and `age_q` contains "no concerns" = 0 | "quality concerns" = 1).
-        - If you find inconsistencies across different sources, you could choose one form as your source of truth and recode values based on that form.
-        - If there are true errors where the correct answer can be easily inferred (e.g., a 3-item rank order question is completed as 1, 2, 4), sometimes logical or deductive editing can be used in those cases and the value is replaced with the logical correction [@ipums_usa_introduction_2023; @seastrom_nces_2002]. 
-      - No matter what your decision is, **make sure it is documented** in the appropriate places for future users (e.g., data dictionary, data cleaning plan, research protocol).
+    - If during your validation process you find errors, you first want to determine where the errors originated, and correct them in the appropriate location. Errors may come from the following sources:
+      1. Documentation errors
+          - If there is an error in documentation (e.g., you added a variable to your data dictionary that you did not actually collect, the ranges set for a variable were incorrect), correct the error in your documentation.
+      2. Data cleaning errors
+          - If an error occurred in your cleaning process (e.g., a variable was recoded incorrectly, a transformation was missed in the cleaning process), fix the error in your process and begin cleaning again at step 1.
+      3. Data capture errors
+          - If the error occurred in your data entry or data export process (e.g., a variable value was incorrectly entered by a team member, a file was exported using the incorrect export options), fix the error at the source and export a new file. Begin your cleaning process again at step 1.
+          - If the error is found in an externally captured source (e.g., student education records), consider reaching out to that provider to determine if there was an error in their process that can potentially be corrected on their end. If a new file is extracted, begin the cleaning process again at step 1.
+      4. If you find true values that are inaccurate, uninterpretable, or outside of a valid range (i.e., they represent what the participant actually reported), you will need to make a personal decision on how to deal with those. No matter what choices your team makes in this process, **make sure they are documented** in the appropriate places for future users (e.g., data dictionary, data cleaning plan, research protocol). Some examples of how you might deal with true errors include:
+          - Leave the data as is, make a note of the errors in documentation, and allow future researchers to deal with those values during the analysis process.
+          - Assign a value code (e.g., "inaccurate value" = -90) to recode those values to.
+          - Create data quality indicator variables to denote which cells have untrustworthy values (e.g., `age` contains the true values and `age_q` contains "no concerns" = 0 | "quality concerns" = 1).
+          - If you find inconsistencies across different sources, you could choose one form as your source of truth and recode values based on that form.
+          - If there are true errors where the correct answer can be easily inferred (e.g., a 3-item rank order question is completed as 1, 2, 4), sometimes logical or deductive editing can be used in those cases and the value is replaced with the logical correction [@ipums_usa_introduction_2023; @seastrom_nces_2002].
 
 At this point, your dataset should be clean. However, there may be additional transformations to be performed depending on how you plan to store and/or share your datasets.
 
@@ -285,7 +291,7 @@ knitr::include_graphics("img/fig14-10.PNG")
 
 ## Data cleaning workflow
 
-Data cleaning is not a standalone process. It should be part of a larger, well-planned workflow that is designed to produce standardized, reproducible, and reliable datasets. Ignoring this planning and jumping into data cleaning in a haphazard way only leads to more work after the cleaning process, having to organize messy work so that others can understand what was done. Assign someone to oversee and implement this workflow and designate a time frame for when data cleaning should both begin and be finalized each wave.
+Data cleaning is not a standalone process. It should be part of a larger, well-planned workflow that is designed to produce standardized, reproducible, and reliable datasets. Ignoring this planning and jumping into data cleaning in a haphazard way only leads to more work after the cleaning process, having to organize messy work so that others can understand what was done. Assign someone to oversee and implement this workflow and designate a time frame for when data cleaning should both begin and be finalized each wave. Then, document this information in the SOP associated with each data source. A high-level summary of your data cleaning procedures should also exist in documents such as your data management plan and your research protocol.
 
 ### Preliminary steps
 
@@ -308,10 +314,10 @@ Once you gather your documentation, you are ready to begin the data cleaning pro
 
 While you can clean data through a point and click method in a program like SPSS or Microsoft Excel, cleaning data manually is typically not reproducible, leads to errors, and is time consuming. The number one practice that you can implement to improve the reproducibility, reliability, and efficiency of this workflow is to clean data using code [@borer_simple_2009]. The code can be written in any program your team chooses (e.g., R, SAS, Stata, SPSS) and saved in a syntax, or script file, that can then be re-run again at any point. While writing code may seem time consuming up front, it has numerous benefits.  
 
-  - It helps you to be more thoughtful in your data cleaning process.  
-  - It allows others to review your work and catch potential errors.  
-  - It can actually save you an enormous amount of time in the future if you plan to clean data for the same form multiple times (in say a longitudinal study).  
-  - It allows others to reproduce your work. By simply re-running your code file, they should be able to get the same resulting dataset that you created.   
+  - It can actually save you an enormous amount of time in the future if you plan to clean data for the same form multiple times (in say a longitudinal study).
+  - Being able to see and track each of your steps helps you to be more thoughtful in your data cleaning process.  
+  - It allows others to review your process in order to provide feedback as well as catch potential errors.  
+  - It makes your work more easily reproducible. By simply re-running your code file, anyone should be able to get the same resulting dataset that you created.   
 
 However, writing code alone will not provide all of the desired benefits. There is more that must be considered.
 
@@ -333,11 +339,8 @@ However, writing code alone will not provide all of the desired benefits. There 
       - Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop the second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.
 1. Check each transformation.
     - As mentioned in Section \@ref(clean-steps), check your work along the way, don’t wait until the end of your script. For each transformation in your data:
-      - Review your variables/cases before and after the transformations.
-      - Review all errors and warning codes.
-        - Some warnings may be innocuous (just messages).
-        - Some errors are telling you that your code did not run, you need to fix something.
-        - Other warnings are telling you that your code did run but it did not run as you expected it to. If you don’t pay attention to these warnings, you may end up with unexpected results. 
+      - Review your variables/cases before and after the transformations. Did the transformation work as you expected it to?
+      - Review all errors and warning codes. Some messages will be innocuous, while others may be telling you that something unexpected happened.
 1. Validate your data before exporting and review after exporting.
     - As we discussed in Section \@ref(clean-steps), before exporting data you will want to run through your final list of sanity checks, based on our data quality criteria, to make sure no mistakes are missed.
       - While eyeballing summary information is helpful, consider writing tests based on your expectations, that produce a result of TRUE or FALSE (e.g., test that `stu_id` falls within the range of 1000--2000).
@@ -351,7 +354,7 @@ However, writing code alone will not provide all of the desired benefits. There 
 
 |Source|Resource|
 |--------|-----------|
-|Travis Gerke | R Code Review Checklist ^[https://github.com/tgerke/r-code-review-checklist]|
+|Travis Gerke | R Code Review Checklist^[https://github.com/tgerke/r-code-review-checklist]|
 
 ### Cleaning data manually
 
@@ -365,7 +368,7 @@ While cleaning data with code is the preferred method for the reasons previously
 
 ### Data versioning practices
 
-The last part of the workflow to consider is where you will store your data and how you will version it. First, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. During an active project, it is typically best to store clean datasets in their respective individual folders (e.g., wave1 -> student -> survey -> clean folder), rather than moving all clean files to a separate "master folder". If changes need to be made to files, it is easier to keep track of files in their original locations. Ultimately though, what is most important is to not copy files across folders during an active project. Keep one single copy of each clean dataset for authenticity purposes [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. At the end of your project, you may consider moving or copying files to a "master folder" for archiving purposes (see Section \@ref(store-long-use)).
+The last part of the workflow to consider is where you will store your data and how you will version it. First, as you export or save your clean datasets, make sure to name them appropriately to differentiate between raw and clean datasets. During an active project, it is typically best to store clean datasets in their respective individual folders (e.g., wave1 -> student -> survey -> clean folder), rather than moving all clean files to a separate "master folder". If changes need to be made to files, it is easier to keep track of files in their original locations. Ultimately, though, what is most important is to not copy files across folders during an active project. Keep one single copy of each clean dataset for authenticity purposes [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. At the end of your project, you may consider moving or copying files to a "master folder" for archiving purposes (see Section \@ref(store-long-use)).
 
 After your clean datasets are saved, it is common to find an error in your data and/or your code at a later point. Yet, once you’ve begun using your data or you've shared it with others, it will be imperative that you do not save over existing versions of those files. You will need to version both your code and your data, following the guidelines laid out in your style guide. Versioning your file names, and keeping track of those different versions in a changelog (see Section \@ref(document-change)), allows you to track data lineage, helping users understand where the data originated as well as all transformations made to the data. While you can version any files that you choose, I am specifically referring to final files here, not in-progress, working files that have not yet been used or shared with others.
 
