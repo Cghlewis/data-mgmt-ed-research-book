@@ -280,21 +280,21 @@ Repository overview
 Provide an overview of the directory structure and files, for example:
 
 study_name/
-|-- README.txt
+|-- 00_README.txt
 |-- documentation
-	|--study_name_project_summary_document.pdf
-	|--study_name_data_dictionary.xlsx
-	|--study_name_stu_svy_data_cleaning_plan.txt
+	|-- study_name_data_dictionary.xlsx
+	|-- study_name_project_summary_document.pdf
+	|-- study_name_stu_svy_data_cleaning_plan.txt
 |-- data
- 	|-- README.txt
-	|--study_name_w1_stu_svy_clean.csv
-	|--study_name_w2_stu_svy_clean.csv
+ 	|-- 00_README.txt
+	|-- study_name_w1_stu_svy_clean.csv
+	|-- study_name_w2_stu_svy_clean.csv
 |-- analysis
-	|--README.txt
-	|--data
-	|--manuscripts
-	|--output
-	|--syntax
+	|-- 00_README.txt
+	|-- data
+	|-- manuscripts
+	|-- output
+	|-- syntax
 
 Applicable instructions
 Any instructions/tools necessary to use files or replicate results.
@@ -350,7 +350,7 @@ study_name/
 |   ├── study_name_tch_svy_data-dictionary.csv
 ├── 02_data
 |   ├── stu
-|   ├── README.txt (dataset-level)
+|   ├── 00_README.txt (dataset-level)
 |   |   ├── w1
 |   |   |   ├── study_name_w1_stu_svy_clean.csv (CSV format)
 |   |   |   └── study_name_w1_stu_svy_clean.sav (SPSS format)
@@ -358,7 +358,7 @@ study_name/
 |   |   |   ├── study_name_w2_stu_svy_clean.csv
 |   |   |   └── study_name_w2_stu_svy_clean.sav
 |   ├── tch
-|   ├── README.txt (dataset-level)
+|   ├── 00_README.txt (dataset-level)
 |   |   ├── w1
 |   |   |   ├── study_name_w1_tch_svy_clean.csv
 |   |   |   └── study_name_w1_tch_svy_clean.sav
@@ -366,7 +366,7 @@ study_name/
 |   |   |   ├── study_name_w2_tch_svy_clean.csv
 |   |   |   └── study_name_w2_tch_svy_clean.sav
 ├── 03_analysis (if relevant to this repository)
-|   ├── README.txt
+|   ├── 00_README.txt
 |   |   └── ...
 |   ├── data (this would contain analytic data files)
 |   |   └── ...

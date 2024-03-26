@@ -94,7 +94,7 @@ In setting up this rectangular formatted document, each row represents a unique 
 - How confidentiality will be secured
 - Data sharing method
 
-Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a hypothetical study. Ultimately, each data source in your catalog, multiplied by the number of cohorts and/or waves it is collected, will give you an estimate of the final number of distinct data files at the end of your study. In Figure \@ref(fig:fig5-2), if we only collected data for one year, we would end up with six datasets at the end of our study, three teacher-level files and three student-level files. In Chapter \@ref(share), we will discuss whether to share these as separate datasets, or larger files combined by unit of analysis (e.g., combined student-level file, combined teacher-level file).
+Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a hypothetical study. Ultimately, each data source in your catalog, multiplied by the number of cohorts and/or waves it is collected, will give you an estimate of the final number of distinct data files at the end of your study. In Figure \@ref(fig:fig5-2), if we only collected data for one year, we would end up with six datasets at the end of our study, one teacher-level file and five student-level files. In Chapter \@ref(share), we will discuss whether to share these as separate datasets, or larger files combined by unit of analysis (e.g., combined student-level file, combined teacher-level file).
 
 <div class="figure" style="text-align: center">
 <img src="img/fig5-2.PNG" alt="Example data sources catalog." width="100%" />
