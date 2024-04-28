@@ -226,9 +226,9 @@ A file naming style guide helps us to name files in a way that allows us to answ
 - If your files need to be run in a sequential order, add the order number to the beginning of the file name, with leading zeros to ensure proper sorting (`01_`, `02_`).
 - Choose abbreviations to use for common phrases (student = `stu`). 
   - This helps reduce file name character lengths and also creates standardized, searchable metadata, which can allow you to more easily, programmatically retrieve files (for example, retrieve all files containing the phrase "stu_obs_raw").
-- Keep redundant metadata in the file name.
+- Keep redundant metadata (information) in the file name.
   - This reduces confusion if you ever move a file to a different folder or send a file to a collaborator. It also makes your files searchable.
-  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder, always put the project name in the file name, even if the file is currently housed in a project folder, or always put the word "raw" or "clean" in the file name, even if the file is housed in a "raw" or "clean" folder.
+  - For example, always put the data collection wave in a file name, even if the file is currently housed in a specific wave folder, always put the project acronym in the file name, even if the file is currently housed in a project folder, or always put the word "raw" or "clean" in a data file name, even if the file is housed in a "raw" or "clean" folder.
 - Choose an order for file name metadata (e.g., project -> time -> participant -> instrument).
 
 **Example file naming style guide**

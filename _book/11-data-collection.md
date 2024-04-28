@@ -85,7 +85,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 
 <br>
 
-**Survey Design Resources**
+**Resources**
 
 |Source|Resource|
 |--------|-----------|
@@ -163,7 +163,7 @@ Table: (\#tab:tab11-1)Comparison of data collection tool benefits
 >
 > However, when collecting data on various tablets in the field, if the forms are offline and cannot be later connected to a web-based form, then all data will be stored individually on each tablet. This not only may be less secure (e.g., a tablet becomes corrupted), it may also require additional data wrangling work including downloading data from each tablet to a secure storage location each day and then combining all files into a single dataset. If you use an electronic tool but your site does not have internet, consider using one of the many tools (e.g., Qualtrics, SurveyCTO) that allow you to collect data using their offline app and then upload that data back to the platform once you have an internet connection again.
 
-**Tool Comparison Resources**
+**Resources**
 
 |Source|Resource|
 |--------|-----------|
@@ -416,7 +416,7 @@ If your data collection efforts include field data collection (e.g., data collec
 
 <br>
 
-**Tracking sheet templates**
+**Templates**
 
 |Source|Resource|
 |--------|-----------|
@@ -516,7 +516,7 @@ Once your workflow is developed and quality assurance and control practices are 
 <p class="caption">(\#fig:fig11-8)Integrating quality assurance and control into a data collection workflow</p>
 </div>
 
-**Instrument Workflow Resources**
+**Resources**
 
 |Source|Resource|
 |--------|-----------|
