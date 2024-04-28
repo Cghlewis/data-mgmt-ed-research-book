@@ -35,9 +35,9 @@ A thorough and complete participant database that is updated regularly is benefi
     - Integrating this database into your daily workflow allows your team to easily report the status of data collection activities (e.g., as of today we have completed 124 out of 150 assessments). Furthermore, checking and tracking incoming data daily, compared to after data collection is complete, reduces the likelihood of missing data.
     - Last, thorough tracking allows you to explain missing data in reports and publications (e.g., teacher 1234 went on maternity leave).
 3. Sample rostering
-    - At any time, you can pull a study roster from this database that accurately reflects a participant's current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your CONSORT diagram.
+    - At any time, you can pull a study roster from this database that accurately reflects a participant's current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your CONSORT diagram (see Section \@ref(document-supplement)).
 4. Data cleaning
-    - As part of your data cleaning process, all raw dataset sample sizes should be compared against what is reported as complete in your tracking database to ensure that no participants are missing from your final datasets
+    - As part of your data cleaning process, all raw dataset sample sizes should be compared against what is reported as complete in your tracking database to ensure that no participants are missing from your final datasets.
     - Furthermore, this database can be used for de-identifying data. If data is collected with identifiers such as name, a roster from the tracking database can be used to merge in unique study identifiers so that name can be removed. A similar process can be used to merge in other assigned variables contained in the database such as treatment or cohort.
 
 ## Building your database
@@ -87,7 +87,7 @@ Understanding all the ways to optimize your relational database is outside the s
 |Omar Elgabry |A series of posts on database fundamentals^[https://medium.com/omarelgabrys-blog/database-introduction-part-1-4844fada1fb0]|
 |The Nobles |Normalization of Database, the Easy Way^[https://medium.com/swlh/normalization-of-database-the-easy-way-98f96a7a6863]|
 
-Let's compare a very simple example of building a tracking database using a relational model and a non-relational model. In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (denoted by ovals) and foreign keys (denoted by rectangles). Our keys are all unique study identifiers that we have assigned to our study participants (see Section \@ref(track-ids) for more information on assigning these IDs).
+Let's compare a very simple example of building a tracking database using a relational model and a non-relational model. In Figure \@ref(fig:fig10-3) we have three entities we need to track in our database---schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Our keys are all unique study identifiers that we have assigned to our study participants (see Section \@ref(track-ids) for more information on assigning these IDs).
 
 <div class="figure" style="text-align: center">
 <img src="img/fig10-3.PNG" alt="Participant database built using a relational model." width="100%" />
@@ -98,7 +98,7 @@ We can see that across each table we have no duplicated information. The Student
 
 If we want to see a table with both student and teacher information, we can simply query our database (i.e., make a request) to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple code that can then be used at any time by any user. 
 
-Say, for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this one written in SQL (structured query language), that joins the student and teacher tables from Figure \@ref(fig:fig10-3) by `tch_id` and then pulls the relevant teacher and student information from both tables.
+Say, for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this one written in SQL (Structured Query Language), that joins the student and teacher tables from Figure \@ref(fig:fig10-3) by `tch_id` and then pulls the relevant teacher and student information from both tables.
 
 `SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.s_grade_level`    
 `FROM Student LEFT JOIN Teacher ON Student.tch_id = Teacher.tch_id`    
@@ -211,7 +211,7 @@ Below are ideas of fields you may consider adding to your database. Depending on
 
 #### Structuring fields
 
-As you choose your fields you also need to make some decisions about how you will structure those fields.
+As you choose your fields you also need to make decisions about how you will structure those fields.
 
 1. Set data types for your fields (e.g., character, integer, date)
     - Restrict entry values to only allowable data types to reduce errors
@@ -241,7 +241,7 @@ There are many criteria to consider when choosing a tool to build your database 
 - Consider security.
   - Which tools are approved by your institution to protect the sensitivity level of this data (see Chapter \@ref(hsd))?
   - Can you limit access to the entire database? To specific tables?
-    - If multiple people are entering data, you may want to restrict access/editing capabilities for some. tables
+    - If multiple people are entering data, you may want to restrict access/editing capabilities for some. tables.
   - Protect data loss.
     - Can you backup the system?
     - Can you protect against overwriting data?
@@ -316,8 +316,8 @@ This schema sets the parameters for how participant identifiers are assigned as 
     - When you have multiple rounds of recruitment, it is important to have a procedure in place to check for participants who may already be in your database (e.g., search participant names before adding them into the database). Without this system in place, it is possible that you bring a participant back into your database under a new ID. 
 
 <div class="figure" style="text-align: center">
-<img src="img/fig10-10.PNG" alt="Example of keeping participant IDs for the entire study." width="70%" />
-<p class="caption">(\#fig:fig10-10)Example of keeping participant IDs for the entire study.</p>
+<img src="img/fig10-10.PNG" alt="Example of keeping the same participant IDs for the entire study." width="70%" />
+<p class="caption">(\#fig:fig10-10)Example of keeping the same participant IDs for the entire study.</p>
 </div>
 
 2. Participant identifiers must be unique within and across entities.
@@ -344,7 +344,7 @@ This schema sets the parameters for how participant identifiers are assigned as 
 
 > **Note**
 >
-> The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.
+> The only time you will not assign unique study identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.
 
 ## Summary
 
@@ -354,4 +354,5 @@ The tracking phase is one of the most important data management practices in an 
 2. Keep one single source of truth. Don't have information stored in multiple locations.
 3. Keep your tracking system secure. Don't allow unauthorized access to participant information (see Chapter \@ref(store) for more information).
 4. Assign your participant unique IDs using best practices covered in Section \@ref(track-ids).
+5. Integrate data tracking into your daily workflow during data collection (see Section \@ref(track-field) for more information).
 

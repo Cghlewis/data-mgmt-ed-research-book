@@ -1,6 +1,6 @@
 # Documentation {#document}
 
-```{r fig8-1, fig.cap="Data documentation in the research project life cycle."}
+```{r fig8-1, fig.cap="Documentation in the research project life cycle."}
 
 knitr::include_graphics("img/fig8-1.PNG")
 
@@ -272,7 +272,7 @@ knitr::include_graphics("img/fig8-9.PNG")
 
 *When to create: Create instruments phase*
 
-Unless a form is proprietary, actual copies of instruments can be included as supplemental documentation. This includes copies of surveys, assessments, and other forms. It can also include any technical documents associated with your instruments or measures (i.e., a technical document for an assessment or a publication associated with a measure you used). Sometimes researchers will annotate instruments to show how items were named or coded.
+Unless a form is proprietary, actual copies of instruments can be included as supplemental documentation. This includes copies of surveys, assessments, and other forms. It can also include any technical documents associated with your instruments or measures (i.e., a technical document for an assessment or a publication associated with a measure you used). Sometimes researchers will annotate instruments to show how items were named or coded (see Figure \@ref(fig:fig11-5)).
 
 4. Flowchart of data collection instruments
 
@@ -296,7 +296,7 @@ Informed consent forms (see Section \@ref(collect-irb)) can also be added as an 
 
 *When to create: Documentation phase*
 
-While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_2023]. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision-making processes. If you recall from Chapter \@ref(plan), every step we added to a data collection workflow is then added to an SOP, and the details fleshed out. Not only will you have an SOP for each source of data you are collecting (i.e., teacher survey, student assessments, teacher observation), you should also have SOPs for any other decisions or processes that need to be repeated in a reproducible manner or followed in a specific way to maintain compliance [@hollmann_ten_2020]. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig8-11). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
+While the research protocol provides summary information for all decisions and procedures associated with a project, we still need documents to inform how the procedures are actually implemented on a daily basis [@nucats_standard_2023]. Standard operating procedures (SOPs) provide a set of detailed instructions for routine tasks and decision-making processes. If you recall from Chapter \@ref(plan), every step we added to a data collection workflow is then added to an SOP, and the details fleshed out. Not only will you have an SOP for each source of data you are collecting (i.e., teacher survey, student assessments, teacher observation), you should also have SOPs for any other decisions or processes that need to be repeated consistently or followed in a specific way to maintain compliance [@hollmann_ten_2020]. Many of the decisions laid out in your protocol will be further detailed in an SOP. Examples of data management procedures to include in an SOP are provided in Figure \@ref(fig:fig8-11). Additional project management tasks such as recruitment procedures, personnel training, data collection scheduling, or in-field data collection routines, should also be documented in SOPs, ensuring fidelity of implementation for all project procedures.
 
 ```{r fig8-11, fig.cap="Examples of data management SOPs to create."}
 
@@ -304,7 +304,7 @@ knitr::include_graphics("img/fig8-11.PNG")
 
 ```
 
-In addition to giving staff instruction on how to perform tasks, SOPs also create transparency in practices, allow for continuity when staff turnover or go out on leave, create standardization in procedures, and last, because an SOP should include versioning information, they allow you to accurately report changes in procedures throughout the project. You will want to create a template that is used consistently across all procedures, by all staff who build SOPs (see Figure \@ref(fig:fig8-12) for an example). 
+In addition to giving staff instruction on how to perform tasks, SOPs also create transparency in practices, allow for continuity when staff turnover or go out on leave, create standardization in procedures, and last, because an SOP should include versioning information, they allow you to accurately report changes in procedures throughout the project. You will want to create a template that is used consistently by all staff who write SOPs (see Figure \@ref(fig:fig8-12) for an example). 
 
 ```{r fig8-12, fig.cap="Standard operating procedure minimal template."}
 
@@ -312,7 +312,7 @@ knitr::include_graphics("img/fig8-12.PNG")
 
 ```
 
-In developing your SOP template, you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools, terminology, or documentation. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**, lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Each step should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, or methods of communication (e.g., email vs instant message) should be included. Additions such as screenshots, links to other SOPs or workflow diagrams, or even links to online tutorials or staff-created how-to videos can also be embedded. Last, any time revisions are made to the SOP, clarifying information about the update is added to the **revision** section and a new version of the SOP is saved (see Section 9.3 for ideas on how to version a file name). This allows you to keep track of what changes were made over time, including when they were made and who made them. 
+In developing your SOP template, you should begin with **general information** about the scope and purpose of the procedure, as well as any relevant tools, terminology, or documentation. This provides context for the user and gives them the background to use and interpret the SOP. The next section in the SOP template, **procedures**, lists all steps in order. Each step provides the name of the staff member/s associated with that activity to ensure no ambiguity. Steps should be as detailed as possible so that you could hand your SOP over to any new staff member, with no background in this process, and be confident they can implement the procedure with little trouble. Specifics such as names of files and links to their locations, names of contacts, or methods of communication (e.g., email vs instant message) should be included. Additions such as screenshots, links to other SOPs or workflow diagrams, or even links to online tutorials or staff-created how-to videos can also be embedded. Last, any time revisions are made to the SOP, clarifying information about the update is added to the **revision** section and a new version of the SOP is saved (see Section \@ref(style-file) for ideas on how to version a file name). This allows you to keep track of what changes were made over time, including when they were made and who made them. 
 
 **Templates and resources**
 
@@ -323,7 +323,7 @@ In developing your SOP template, you should begin with **general information** a
 
 ## Dataset-level {#document-dataset}
 
-Dataset-level documentation applies solely to your datasets and includes information about what they contain and how they are related. It also captures things such as planned transformations, potential issues to be aware of, and any alterations made to the data. In addition to being helpful descriptive information, a huge reason for creating dataset documentation is authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. Preserving data lineage by tracking transformations and errors found is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
+Dataset-level documentation applies to your datasets and includes information about what they contain and how they are related. It also captures things such as planned transformations, potential issues to be aware of, and any alterations made to the data. In addition to being helpful descriptive information, a huge reason for creating dataset documentation is authenticity. Datasets go through many iterations of processing which can result in multiple versions of a dataset [@cessda_training_team_cessda_2017; @uk_data_service_research_2023]. Preserving data lineage by tracking transformations and errors found is key to ensuring that you know where your data come from, what processing has already been completed, and that you are using the correct version of the data. 
 
 ### Readme {#document-read}
 
@@ -354,7 +354,7 @@ Example README used to convey information about steps in a process
 ```
 
 3. For providing information about a set of files in a directory
-    - It can be helpful to add README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets. This README can include things like a description of the files, how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes, or acronyms used in datasets, or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository. 
+    - It can be helpful to add a README to the top of your directories when both sharing data internally with colleagues, or when sharing files in an external repository. Doing so can provide information about what datasets are available in the directory and pertinent information about those datasets. This README can include things like a description of the files, how the datasets are related and can be linked, information associated with different versions, definitions of common prefixes, suffixes, or acronyms used in datasets, or instrument response rates. Figure \@ref(fig:fig8-13) is an example README that can be used to describe all data sources shared in a project repository. 
 
 ```{r fig8-13, fig.cap="Example README for conveying information about files in a directory."}
 
@@ -406,7 +406,7 @@ knitr::include_graphics("img/fig8-14.PNG")
 
 A data cleaning plan is a written proposal outlining how you plan to transform your raw data into clean, usable data. This document contains no code and is not technical skills dependent. A data cleaning plan is created for each dataset listed in your data sources catalog (see Section \@ref(document-catalog)). Since this document lays out your intended transformations for each raw dataset, it allows any team member to provide feedback on the data cleaning process. 
 
-This document can be started in the documentation phase, but will most likely continue to be updated throughout the study. Typically, the person responsible for cleaning the data will write the data cleaning plans, but the documents can then be brought to a planning meeting allowing your DMWG to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. In addition to the changelog, this data cleaning plan (as well as any syntax used and a changelog) provides all documentation necessary to assess data provenance, a historical record of a data file's journey. 
+This document can be started in the documentation phase, but will most likely continue to be updated throughout the study. Typically, the person responsible for cleaning the data will write the data cleaning plans, but the documents can then be brought to a planning meeting allowing your DMWG to provide input on the plan. This ensures that everyone agrees on the transformations to be performed. Once finalized, this data cleaning plan serves as a guide in the cleaning process. In addition to the changelog, this data cleaning plan (as well as any syntax used) provides all documentation necessary to assess data provenance, a historical record of a data file's journey. 
 
 A data cleaning plan should be based on agreed-upon norms for what constitutes a clean dataset to help ensure that all datasets are cleaned and formatted consistently (see Section \@ref(clean-criteria)). These norms can be operationalized into a checklist of transformations that can inform your data cleaning plan, along with your data dictionary and other relevant documentation. We will review what types of transformations you should consider adding to your data cleaning plan in Section \@ref(clean-check). 
 
@@ -421,7 +421,7 @@ An example of a simple data cleaning plan for a student survey file.
 6. Fix variable types as needed
 7. Reverse code anx1, anx2, anx3
 8. Calculate anx_mean
-9. Merge in treatment and tch_id variables from roster file
+9. Merge in treatment from roster file
 10. Add missing value codes
 11. Add variable and value labels based on data dictionary
 12. Run final data validation checks
@@ -488,9 +488,9 @@ When you are collecting original data, there are a few things that are helpful t
           - If items are entered into a scoring program and then exported, what variables are exported?
         - See Figure \@ref(fig:fig8-16) for an example of the information that could be pulled from a publication if you were using the Math Anxiety Scale for Teachers (MAST)
  [@ganley_construct_2019].
-      - If you have used any items in former projects, also pull data dictionaries from previous projects as it can be helpful to collect data consistently across projects
+      - If you have used any items in former projects, also pull data dictionaries from previous projects as it can be helpful to collect data consistently across projects.
 4. Any data element standards that you plan to use [@uc_merced_library_what_2023]
-    - See Section \@ref(collect-design) for an overview of existing data element standards
+    - See Section \@ref(collect-design) for an overview of existing data element standards.
 
 ```{r fig8-16, fig.cap="Pulling relevant information for the Math Anxiety Scale for Teachers (MAST)."}
 
@@ -547,7 +547,7 @@ The last step of creating your data dictionary, is to review the document with y
 Not all research study data will be gathered through original data collection methods. You may be capturing supplemental external data sources from organizations like school districts or state departments of education. If at all possible, start gathering information about your external data sources early on, during the planning and documentation phases, and begin adding that information into a data dictionary. Starting this process early will help you prepare for future data capture and cleaning processes.
 
 - If the data source is public, you may be able to easily find codebooks or data dictionaries for the data source. If not, download a sample of the data to learn what variables exist in the source and how they are formatted. 
-- If the data source is non-public, request documentation ahead of time from your partner (see Section \@ref(capture-extant)).
+- If the data source is non-public, request documentation ahead of time from the provider (see Section \@ref(capture-extant)).
 
 However, it is possible that you may not be able to access this information until you acquire the actual data during the data capture phase. If documentation is provided along with the data, begin reviewing the data to ensure that the documentation matches what you see in the data. Integrate that information into your project data dictionary.
 
@@ -567,7 +567,7 @@ In most situations these questions will not be easily answered without documenta
 - Contact the person who cleaned the data (if cleaned) to see what transformations they completed on the raw data.  
 - If applicable, request access to the original instruments to review exact question wording, item response options, skip patterns, etc.
 
-Ultimately you should end up with a data dictionary structured similarly to Figure \@ref(fig:fig8-17). You may add additional fields that help you keep track of further changes (e.g., a column for the old variable name and a column for your new variable name), and your transformations section may become more verbose as the values assigned previously may not align with the values you prefer based on your style guide or the original measures. Otherwise, the data dictionary should still be constructed in the same manner mentioned in Section \@ref(document-original).
+Ultimately you should end up with a data dictionary structured similarly to Figure \@ref(fig:fig8-17). You may add additional fields that help you keep track of further changes (e.g., a column for the old variable name and a column for your new variable name), and your transformations section may become more verbose as the values assigned previously may not align with the values you prefer based on your style guide or other standards. Otherwise, the data dictionary should still be constructed in the same manner mentioned in Section \@ref(document-original).
 
 #### Time well spent
 

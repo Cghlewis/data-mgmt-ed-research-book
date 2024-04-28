@@ -1,11 +1,11 @@
 # Project Roles and Responsibilities {#roles}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig7-1.PNG" alt="Planning in the research project life cycle." width="100%" />
-<p class="caption">(\#fig:fig7-1)Planning in the research project life cycle.</p>
+<img src="img/fig7-1.PNG" alt="Planning roles in the research project life cycle." width="100%" />
+<p class="caption">(\#fig:fig7-1)Planning roles in the research project life cycle.</p>
 </div>
 
-Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities. In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons, including the following [@uk_data_service_research_2023]:
+Part of the DMP and planning data management phase, as noted in previous chapters, will include assigning roles and responsibilities (see Figure \@ref(fig:fig7-1)). In terms of data management, it is important to assign and document roles, not just presume roles, for many reasons, including the following [@uk_data_service_research_2023]:
 
 1. It allows team members to begin standardizing workflows.
 1. When team members know exactly what is expected of them, it keeps data more secure.
@@ -21,7 +21,7 @@ The investigators, also know as PIs (principal investigators) and co-PIs, are th
 
 ### Project coordinator
 
-The project coordinator (or project manager) is an essential member of the research team. As the name implies, this person typically coordinates all research activities and ensures compliance with agencies such as the IRB. Tasks they may oversee include recruitment and consenting of participants, creation of data collection materials, creation of protocols and standard operating procedures (SOPs), training data collectors, data collection scheduling, and more. The project coordinator may also supervise many of the other research team roles, such as research assistants.
+The project coordinator (or project manager) is an essential member of the research team. As the name implies, this person typically coordinates all research activities and ensures compliance with oversight such as the IRB. Tasks they may oversee include recruitment and consenting of participants, creation of data collection materials, creation of protocols and standard operating procedures (SOPs), training data collectors, data collection scheduling, and more. The project coordinator may also supervise many of the other research team roles, such as research assistants.
 
 ### Data manager
 
@@ -55,7 +55,7 @@ Early on in a project you may start to generally assign roles in your data manag
     - The specific skills needed for each role will depend on your project needs as well as the skill sets of the other team members.
 
 2. Training needs
-    - In addition to considering skills needed for certain roles, also consider what training is needed to fulfill assigned responsibilities. In roles that work with data, training may include mandated courses from a program like the Collaborative Institutional Training Initiative (CITI) or it may be signing up for training on how to use a specific device or software. Make sure that your team members are well-equipped to perform their responsibilities before the project begins.
+    - In addition to considering skills needed for certain roles, also consider what training is needed to fulfill assigned responsibilities. In roles that work with data, training may include mandated courses from a program like the Collaborative Institutional Training Initiative (CITI) or it may involve signing up for training on how to use a specific device or software. Make sure that your team members are well-equipped to perform their responsibilities before the project begins.
 
 3. Estimated costs
     - If you are working on roles and responsibilities after your grant has been funded, then your grant budget has already been submitted. However, it can still be helpful to think through costs associated with roles (based on the experience/skill set of the person filling the role) or even broken down by associated responsibilities (based on things like percent effort or time to complete each task). If discrepancies between the original budget and updated costs are found, funders often allow investigators to amend budgets.

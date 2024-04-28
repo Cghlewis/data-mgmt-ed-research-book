@@ -206,7 +206,7 @@ metastandards
 wrapping-it-up
 style
 style-practices
-directory-structure
+style-directory
 style-file
 style-varname
 style-time
@@ -245,7 +245,7 @@ building-consent-forms
 collect-control
 collect-field
 ongoing-data-checks
-tracking-data-collection
+track-field
 collecting-data-consistently
 bot-detection
 review

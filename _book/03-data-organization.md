@@ -1,6 +1,6 @@
 # Data Organization {#structure}
 
-Before jumping into the project life cycle, we need to have a basic understanding of what data looks like. Understanding the basics of data organization helps us to make informed decisions throughout the research life cycle that will result in clear, analyzable information.
+Before jumping into the project life cycle, we need to have a basic understanding of what data looks like. Understanding the basics of data organization helps us to make informed decisions throughout the life cycle that will result in clear, analyzable information.
 
 ## Basics of a dataset
 

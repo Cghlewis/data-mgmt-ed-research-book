@@ -10,20 +10,20 @@ For summary purposes, this appendix provides a high-level overview of some of th
 
 **Planning** (Chapter \@ref(plan))
 
-- Develop style guide.
+- Develop style guide (see Chapter \@ref(style) for more information).
 - Choose storage locations.
   - Build directory structures for electronic data and physical folder structures for paper data.
 - Develop a data management working group (DMWG).
   - Schedule planning meetings and keep meeting notes.
     - Review checklists.
     - Develop workflows.
+- Create data collection timeline.
 - Assign roles and responsibilities.
 - Initiate any necessary processes (e.g., data request, Institutional Review Board application).
 
 **Document** (Chapter \@ref(document))
 
 - Create research protocol.
-- Create data collection timeline.
 - Create SOPs.
   - ID schema
   - Consent process
@@ -41,7 +41,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
   
 **Collect data** (Chapter \@ref(collect))
 
-- Implement quality assurance procedures in the field.
+- Implement quality control procedures in the field.
 
 **Track data** (Chapter \@ref(track))
 

@@ -7,7 +7,7 @@
 
 ## History and purpose
 
-Since 2013, even earlier for the National Science Foundation (NSF), most federal agencies that education researchers work with have required a data management plan (DMP) as part of their funding application [@holdren_ostp_2013]. While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan a research study that will result in data that can be shared with confidence, and free from errors, uncertainty, or violations of confidentiality. President Obama’s May 2013 Executive Order declared that “the default state of new and modernized government information resources shall be open and machine readable" [@the_white_house_executive_2013]. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release [@nelson_ostp_2022]. Even sooner than this, organizations like the National Institutes of Health (NIH) mandated that grant applicants, beginning January 2023, must submit a plan for both managing and sharing project data [@national_institutes_of_health_final_2023]. The National Science Foundation also released version 2.0 of their public access plan in February of 2023, describing how the agency plans to ensure that all scientific data, funded by the NSF and associated with peer-reviewed publications, is publicly shared [@national_science_foundation_nsf_2023].
+Since 2013, even earlier for the National Science Foundation (NSF), most federal agencies that education researchers work with have required a data management plan (DMP) as part of their funding application [@holdren_ostp_2013] (See Figure \@ref(fig:fig5-1)). While the focus of these plans is mostly on the future outcome of data sharing, the data management plan is a means of ensuring that researchers will thoughtfully plan a research study that will result in data that can be shared with confidence, and free from errors, uncertainty, or violations of confidentiality. President Obama’s May 2013 Executive Order declared that “the default state of new and modernized government information resources shall be open and machine readable" [@the_white_house_executive_2013]. In August of 2022, the Office of Science and Technology Policy (OSTP) doubled down on their data sharing policy and issued a memorandum stating that all federal agencies must update their public access policies no later than December 31, 2025, to make federally funded publications and their supporting data accessible to the public with no embargo on their release [@nelson_ostp_2022]. Even sooner than this, organizations like the National Institutes of Health (NIH) mandated that grant applicants, beginning January 2023, must submit a plan for both managing and sharing project data [@national_institutes_of_health_final_2023]. The National Science Foundation also released version 2.0 of their public access plan in February of 2023, describing how the agency plans to ensure that all scientific data, funded by the NSF and associated with peer-reviewed publications, is publicly shared [@national_science_foundation_nsf_2023].
 
 > **Note**
 >
@@ -42,8 +42,8 @@ What to include in a DMP varies some across funding agencies and the landscape o
     - What documentation will you share?
       - Consider project-level, dataset-level, and variable-level documentation.
     - What format will your documentation be in? (e.g., XML, CSV, PDF)
-1. Standards (see Chapters \@ref(document) and \@ref(collect))
-    - Do you plan to use any standards for things such as metadata, data collection (e.g., common data elements), or data formatting?
+1. Standards (see Chapters \@ref(document), \@ref(collect), and \@ref(share))
+    - Do you plan to use any standards for things such as metadata, data collection, or data formatting?
 1. Data preservation (see Chapter \@ref(share))
     - Where will data be archived for public sharing?
       - Many agencies are now requiring applicants to name a specific data repository in this section.
@@ -71,7 +71,7 @@ Again, the specifics of what should be included in each category will vary by fu
   - Institute of Education Sciences^[https://ies.ed.gov/funding/datasharing_implementation.asp], ^[https://ies.ed.gov/funding/pdf/2024_84305a.pdf]
   - National Institutes of Health^[https://sharing.nih.gov/data-management-and-sharing-policy/planning-and-budgeting-DMS/writing-a-data-management-and-sharing-plan]
   - National Institute of Justice^[https://nij.ojp.gov/funding/data-archiving]
-  - National Science Foundation^[https://www.nsf.gov/bfa/dias/policy/dmpdocs/ehr.pdf]
+  - National Science Foundation^[https://new.nsf.gov/funding/data-management-plan]
   
 ## Creating a data sources catalog {#dmp-catalog}
 
@@ -104,7 +104,7 @@ Figure \@ref(fig:fig5-2) is a simplified example of building this catalog for a 
 
 ## Getting help
 
-Since DMPs are written before a project is funded, and therefore before additional staff members may be hired, oftentimes the investigators developing the grant proposal are the ones who write the DMP. However, when constructing your DMP it is well worth your time to enlist help. If you have an existing data manager or data team, you will most certainly want to consult with them when writing your plan to ensure your decisions are feasible. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. Also, if you plan to share your final data with a repository or institutional archive you will want to contact their team when writing your plan as well. The repository may have its own requirements for how and when data must be shared, and it is helpful to outline those guidelines in your data management plan at the time of submission. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
+Since DMPs are written before a project is funded, and therefore before additional staff members may be hired, oftentimes the investigators developing the grant proposal are the ones who write the DMP. However, when constructing your DMP it is well worth your time to enlist help. If you have an existing data manager or data team, you will most certainly want to consult with them when writing your plan to ensure your decisions are feasible. If you work for a university system, your research data librarians are also excellent resources with a wealth of knowledge about writing comprehensive data management plans. Also, if you plan to share your final data in a repository or institutional archive you will want to contact their team when writing your plan as well. The repository may have its own requirements for how and when data must be shared, and it is helpful to outline those guidelines in your data management plan at the time of submission. Last, you may want to obtain the help of your colleagues. Your colleagues have likely written DMPs before and many people are willing to share their plans as a way to help others better understand what to include.
 
 As mentioned before, your DMP is a living document, and you can always update your plan during or after your project completion. It may be helpful to keep in contact with your program officer regarding any potential changes throughout your project.
 
@@ -133,7 +133,7 @@ Effective data management requires a significant investment. Funding agencies ac
 - Developing data documentation
 - Depositing data for long-term sharing in a repository
 
-It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. The necessary dollar amount will vary depending on the size of your project, the expertise needed, and your specific data management plan. Recommendations suggest allocating anywhere from 5% to 30% of your budget for data stewardship [@mons_invest_2020; @mohr_making_2024; @reynolds_data_2014]. Luckily a few organizations have developed resources to aid in estimating these costs. Exercise caution when using tools though; they may not always account for every cost and could result in an underestimation of costs [@michigan_state_university_budgeting_2023].
+It can be difficult to estimate the costs of everything that is associated with the vast landscape of managing data. The necessary dollar amount will vary depending on the size of your project, the expertise needed, and your specific data management plan. Recommendations suggest allocating anywhere from 5% to 30% of your budget for data stewardship [@mons_invest_2020; @mohr_making_2024; @reynolds_data_2014]. Luckily a few organizations have developed resources to aid in estimating these costs. Exercise caution when using tools though; they may not always account for every expense and could result in an underestimation of costs [@michigan_state_university_budgeting_2023].
 
 **Resources**
 

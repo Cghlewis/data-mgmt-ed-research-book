@@ -142,12 +142,12 @@ Figure 10.1: Tracking in the research project life cycle.
 </li>
 <li>Sample rostering
 <ul>
-<li>At any time, you can pull a study roster from this database that accurately reflects a participant’s current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your CONSORT diagram.</li>
+<li>At any time, you can pull a study roster from this database that accurately reflects a participant’s current status. The tracking information contained in this tool also aids in the creation of documentation including the flow of participants in your CONSORT diagram (see Section <a href="document.html#document-supplement">8.2.6</a>).</li>
 </ul>
 </li>
 <li>Data cleaning
 <ul>
-<li>As part of your data cleaning process, all raw dataset sample sizes should be compared against what is reported as complete in your tracking database to ensure that no participants are missing from your final datasets</li>
+<li>As part of your data cleaning process, all raw dataset sample sizes should be compared against what is reported as complete in your tracking database to ensure that no participants are missing from your final datasets.</li>
 <li>Furthermore, this database can be used for de-identifying data. If data is collected with identifiers such as name, a roster from the tracking database can be used to merge in unique study identifiers so that name can be removed. A similar process can be used to merge in other assigned variables contained in the database such as treatment or cohort.</li>
 </ul>
 </li>
@@ -230,7 +230,7 @@ Figure 10.2: A decision tree for choosing whether to build a participant trackin
 </tr>
 </tbody>
 </table></div>
-<p>Let’s compare a very simple example of building a tracking database using a relational model and a non-relational model. In Figure <a href="track.html#fig:fig10-3">10.3</a> we have three entities we need to track in our database—schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (denoted by ovals) and foreign keys (denoted by rectangles). Our keys are all unique study identifiers that we have assigned to our study participants (see Section <a href="track.html#track-ids">10.4</a> for more information on assigning these IDs).</p>
+<p>Let’s compare a very simple example of building a tracking database using a relational model and a non-relational model. In Figure <a href="track.html#fig:fig10-3">10.3</a> we have three entities we need to track in our database—schools, teachers, and students. We built a very simple database with one table for each entity. Within each table we added fields that we need to collect on these subjects. We have also set up our tables to include primary keys (denoted by rectangles) and foreign keys (denoted by ovals). Our keys are all unique study identifiers that we have assigned to our study participants (see Section <a href="track.html#track-ids">10.4</a> for more information on assigning these IDs).</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-3"></span>
 <img src="img/fig10-3.PNG" alt="Participant database built using a relational model." width="100%"><p class="caption">
@@ -239,7 +239,7 @@ Figure 10.3: Participant database built using a relational model.
 </div>
 <p>We can see that across each table we have no duplicated information. The Student Table only contains student-level information, the Teacher Table only contains teacher-level information, and the School Table only contains school-level information. This is a huge time saver. Imagine if a teacher’s last name changes. Rather than updating that name in multiple places, we now only update it once, in the teacher table and make a note of the previous name in the <code>notes</code> field.</p>
 <p>If we want to see a table with both student and teacher information, we can simply query our database (i.e., make a request) to create a new table. In some programs, this type of querying may be a simple point and click option, in other programs it may require someone to write some simple code that can then be used at any time by any user.</p>
-<p>Say, for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this one written in SQL (structured query language), that joins the student and teacher tables from Figure <a href="track.html#fig:fig10-3">10.3</a> by <code>tch_id</code> and then pulls the relevant teacher and student information from both tables.</p>
+<p>Say, for example, we needed to pull a roster of students for each teacher. We could easily create and run a query, such as this one written in SQL (Structured Query Language), that joins the student and teacher tables from Figure <a href="track.html#fig:fig10-3">10.3</a> by <code>tch_id</code> and then pulls the relevant teacher and student information from both tables.</p>
 <p><code>SELECT Teacher.t_l_name, Teacher.t_f_name, Student.s_l_name, Student.s_f_name,  Student.s_grade_level</code><br><code>FROM Student LEFT JOIN Teacher ON Student.tch_id = Teacher.tch_id</code><br><code>ORDER BY t_l_name, t_f_name, s_l_name, s_f_name</code></p>
 <p>The resulting output is Table <a href="track.html#tab:tab10-1">10.1</a>.</p>
 <div class="inline-table"><table class="table table-sm">
@@ -418,7 +418,7 @@ Figure 10.7: An example of data that contains a concatenated primary key.
 <h4>
 <span class="header-section-number">10.2.3.1</span> Structuring fields<a class="anchor" aria-label="anchor" href="#structuring-fields"><i class="fas fa-link"></i></a>
 </h4>
-<p>As you choose your fields you also need to make some decisions about how you will structure those fields.</p>
+<p>As you choose your fields you also need to make decisions about how you will structure those fields.</p>
 <ol style="list-style-type: decimal">
 <li>Set data types for your fields (e.g., character, integer, date)
 <ul>
@@ -479,7 +479,7 @@ Figure 10.7: An example of data that contains a concatenated primary key.
 <li>Which tools are approved by your institution to protect the sensitivity level of this data (see Chapter <a href="hsd.html#hsd">4</a>)?</li>
 <li>Can you limit access to the entire database? To specific tables?
 <ul>
-<li>If multiple people are entering data, you may want to restrict access/editing capabilities for some. tables</li>
+<li>If multiple people are entering data, you may want to restrict access/editing capabilities for some. tables.</li>
 </ul>
 </li>
 <li>Protect data loss.
@@ -585,8 +585,8 @@ Figure 10.9: Example form view data entry
 </ol>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-10"></span>
-<img src="img/fig10-10.PNG" alt="Example of keeping participant IDs for the entire study." width="70%"><p class="caption">
-Figure 10.10: Example of keeping participant IDs for the entire study.
+<img src="img/fig10-10.PNG" alt="Example of keeping the same participant IDs for the entire study." width="70%"><p class="caption">
+Figure 10.10: Example of keeping the same participant IDs for the entire study.
 </p>
 </div>
 <ol start="2" style="list-style-type: decimal">
@@ -623,7 +623,7 @@ Figure 10.11: Example of a student changing teachers during a research study.
 <p><br></p>
 <blockquote>
 <p><strong>Note</strong></p>
-<p>The only time you will not assign unique identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.</p>
+<p>The only time you will not assign unique study identifiers is when you collect anonymous data. In this situation you will not be able to assign identifiers since you will not know who participants are. However, it is still possible to assign identifiers to known entities such as school sites if anonymity is required.</p>
 </blockquote>
 </div>
 <div id="summary" class="section level2" number="10.5">
@@ -636,6 +636,7 @@ Figure 10.11: Example of a student changing teachers during a research study.
 <li>Keep one single source of truth. Don’t have information stored in multiple locations.</li>
 <li>Keep your tracking system secure. Don’t allow unauthorized access to participant information (see Chapter <a href="store.html#store">13</a> for more information).</li>
 <li>Assign your participant unique IDs using best practices covered in Section <a href="track.html#track-ids">10.4</a>.</li>
+<li>Integrate data tracking into your daily workflow during data collection (see Section <a href="collect.html#track-field">11.3.3</a> for more information).</li>
 </ol>
 </div>
 </div>
@@ -681,7 +682,7 @@ Figure 10.11: Example of a student changing teachers during a research study.
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-03-26.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-04-28.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

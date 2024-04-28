@@ -5,7 +5,7 @@
 <p class="caption">(\#fig:fig6-1)Planning in the research project life cycle.</p>
 </div>
 
-Planning data management is distinct from the two-to-five-page data management plan (DMP) discussed in Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (e.g., how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites). Team members such as investigators, project coordinators, and data managers may be assisting in both planning processes.
+Planning data management is distinct from the two-to-five-page data management plan (DMP) discussed in Chapter \@ref(dmp). Here we are spending a few weeks, maybe months, meeting regularly with our team and gathering information to develop detailed instructions for how we plan to manage data according to our DMP. This data management planning happens at the same time that the project team is planning for project implementation (e.g., how to collect data, how to hire staff, what supplies are needed, how to recruit participants, how to communicate with sites) (see Figure \@ref(fig:fig6-1)). Team members such as investigators, project coordinators, and data managers may be assisting in both planning processes.
 
 ## Why spend time on planning?
 
@@ -49,9 +49,9 @@ If this is your first time working through this book, these checklists are a gre
 
 ### Decision-making process
 
-This decision-making process is personalized. @borghi_promoting_2022 view this process as a series of steps that a research team chooses, out of all the many possibilities not chosen. Maybe you won’t always be able to implement the best practices but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and rules and regulations.
+This decision-making process during this planning phase is personalized. @borghi_promoting_2022 view this process as a series of steps that a research team chooses, out of all the many possibilities not chosen. Maybe you won’t always be able to implement the best practices but you can decide what is good enough for your team based on motivations, incentives, needs, resources, skill set, and requirements.
 
-For example, one team may collect survey data on paper because their participants are young children, hand-enter it into Microsoft Excel because that is the only tool they have access to, and double-enter 20% because they don’t have the capacity to enter more than that. Another team may collect paper data because they are collecting data in the field, hand-enter the data into FileMaker because that is the tool their team is familiar with, and double-enter 100% because they have the budget and capacity to do that.
+For example, one team may collect survey data on paper because their participants are young children, hand-enter it into Microsoft Excel because that is the only tool they have access to, and double-enter 20% because they don’t have the capacity to enter more than that. Another team may choose to collect paper data because they are collecting data in the field, hand-enter the data into FileMaker because that is the tool their team is familiar with, and double-enter 100% because they have the budget and capacity to do that.
 
 Figure \@ref(fig:fig6-2) is a very simplified example of the decision-making process, based on a @borghi_promoting_2022 flow chart. Of course, in real life we are often choosing between many more than just two options!
 
@@ -76,20 +76,20 @@ It's important to consider how each team and project are unique as you work thro
 4. Your budget
     - Do you have the budget to implement all of the practices you want to implement, or will you need to plan something more feasible?
 5. Complexity of your project
-    - The size of your project, the amount and types of data you are collecting, the number of participants or the populations you are collecting data from, the sensitivity level of the data you are collecting, the number of sites you are collecting data at, and the number of partners and decision-makers you are working with, all factor into your data management planning
+    - The size of your project, the amount and types of data you are collecting, the number of participants or the populations you are collecting data from, the sensitivity level of the data you are collecting, the number of sites you are collecting data at, and the number of partners and decision-makers you are working with, all factor into your data management planning.
 6. Shared investment
     - Is your entire team invested in quality data management? 
     - Is the entire team motivated to adhere to the standards and instructions laid out in your data management planning? If no, what safeguards can you implement to help prevent errors from creeping into your data?
 
 ## Data management workflow
 
-The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a repeatable series of sequential tasks [@lucidchart_what_2019] that help you move through the stages of the research life cycle in an organized and efficient manner. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that shows actionable steps in your data management process. The order of steps should follow the general order of the data management life cycle (specifically the data collection cycle). Your team will want to have a workflow diagram for every source in your data sources catalog (see Section \@ref(dmp-catalog)). So, for example, if you collect the following three items, you will have three workflow diagrams.
+The last step of this planning phase is to build your workflows. Workflows allow data management to be seamlessly integrated into your data collection process. Often illustrated with a flow diagram, a workflow is a repeatable series of sequential tasks [@lucidchart_what_2019] that help you move through the stages of the research life cycle in an organized and efficient manner. As you walk through your checklists, you can begin to enter your decisions into a workflow diagram that shows actionable steps in your data management process. The order of steps should follow the general order of the data management life cycle (specifically the data collection cycle). Your team will want to have a workflow diagram for every source in your data sources catalog (see Section \@ref(dmp-catalog)). So, for example, if you collect the following three instruments, you will have three workflow diagrams.
 
 - Student online survey
 - Student paper assessment
 - Student school records
 
-Your diagrams should include the who, what, where, and when of each task in the process. Adding these details is what makes the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig6-3) works well for thinking through high-level workflows. Remember, this is a repeatable process. So, while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
+Your diagrams should include the who, what, how, where, and when of each task in the process. Adding these details is what makes the process actionable [@borycz_implementing_2021]. Your diagram can be displayed in any format that works for you and it can be as simple or as detailed as you want it to be. A template like the one in Figure \@ref(fig:fig6-3) works well for thinking through high-level workflows. Remember, this is a repeatable process. So, while this diagram is linear (steps laid out in the chronological order in which we expect them to happen), this process will be repeated every time we collect this same piece of data.
 
 <div class="figure" style="text-align: center">
 <img src="img/fig6-3.PNG" alt="A simple workflow template." width="100%" />
@@ -103,7 +103,7 @@ Figure \@ref(fig:fig6-4) is how we might complete a simplified diagram for a stu
 <p class="caption">(\#fig:fig6-4)Example simplified student survey workflow.</p>
 </div>
 
-But the format truly does not matter. Figure \@ref(fig:fig6-5) is a diagram of the same student survey workflow as Figure \@ref(fig:fig6-4), but with more detail added, and this time using a swimlane diagram where each lane displays the tasks associated with that individual and the iterative processes that occur within and across lanes.
+But the format truly does not matter. Figure \@ref(fig:fig6-5) is a diagram of the same student survey workflow as Figure \@ref(fig:fig6-4), but with more detail added, and this time using a swimlane diagram where each lane displays the tasks associated with the individual and the iterative processes that occur within and across lanes.
 
 <div class="figure" style="text-align: center">
 <img src="img/fig6-5.PNG" alt="Example student survey workflow using a swimlane diagram." width="100%" />

@@ -9,7 +9,7 @@ When collecting original data as part of your study (i.e., you are administering
 
 ## Quality assurance and control
 
-When planning your data collection efforts, you'll want to have your data sources catalog available (see Section \@ref(document-catalog)). This document will be a guide during your data collection planning period. Recall that every row in that document is an original instrument to be collected for your study. Some of your data sources may also include external datasets, which we will discuss in Chapter \@ref(capture).
+When planning your data collection efforts, you'll want to have your data sources catalog available (see Section \@ref(document-catalog)). This document will be a guide during your data collection planning period. Recall that each row in that document is an original instrument to be collected for your study. Some of your data sources may also include external datasets, which we will discuss in Chapter \@ref(capture).
 
 In addition to planning data collection logistics for your original data sources (i.e., how will data be collected, who will collect it, and when), teams should spend time prior to data collection anticipating potential data integrity problems that may arise during data collection and putting procedures in place that will reduce those errors [@dime_analytics_data_2021; @northern_illinois_university_data_2023]. As shown in Figure \@ref(fig:fig11-1), creating data collection instruments is typically a collaborative effort between the project management and data management team members. Even if the project management team builds the data collection tools, the data management team is overseeing that the data collected from the tools aligns with expectations set in the data dictionaries. In this chapter we will review two types of practices that both project management and data management team members can implement that will improve the integrity of your data.
 
@@ -25,14 +25,14 @@ In addition to planning data collection logistics for your original data sources
 <p class="caption">(\#fig:fig11-2)Common education research data collection methods.</p>
 </div>
 
-Education researchers collect original data in many ways (see Figure \@ref(fig:fig11-2)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (i.e., think questionnaires, assessments, observation forms, or a progress monitoring form on a website), yet if poorly developed, they can produce some of the most problematic data issues. 
+Education researchers collect original data in many ways (see Figure \@ref(fig:fig11-2)). The focus of this chapter will be on data collected via forms (i.e., a document with spaces to respond to questions). Forms are widely used to collect data in education research (i.e., think questionnaires, assessments, observation forms, or a progress monitoring form), yet if poorly developed, they can produce some of the most problematic data issues. 
 
 The focus on forms is not to discount the importance of data collected through other means such as video or audio recording, where issues such as participant privacy and data security and integrity should absolutely also be considered. However, even with those types of data collection efforts, often teams are ultimately still coding that data using some sort of form (e.g., observation form), further supporting the need to build forms that collect quality data.
 
 When collecting information using forms you can certainly do your best to fix data errors after data collection during a cleaning process. However, one of the most effective ways to ensure quality data is to correct it at the source. This means designing items and building data collection tools in a way that produces valid, reliable, and more secure data. When creating your original data collection instruments, there are five ways to collect higher quality data.
 
 1. Using good questionnaire design principles
-2. Implementing a series of pilot test
+2. Implementing a series of pilot tests
 3. Choosing data collection tools that meet your needs
 4. Building your instrument with the end in mind
 5. Ensuring compliance
@@ -53,16 +53,16 @@ While some instruments (e.g., cognitive assessments) typically have standardized
     - If using an existing scale, as discussed in Section \@ref(document-original), make sure to follow any technical documentation associated with that scale (e.g., item wording, response options, item order). This ensures that you are using the scale as intended, and also improves opportunities to integrate data or replicate findings across other studies that have used the same scales.
     - If you have used a measure before in a previous project, it is also beneficial to keep wording and response options consistent across projects for similar reasons.
 1. Use existing standards if possible.
-    - Organizations such as the National Institutes of Health and the National Center for Education Statistics have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting commonly used variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
-        - Reduces bias
-        - Allows for harmonization of data across your own research studies and also across the field
+    - Organizations such as the National Institutes of Health and the National Center for Education Statistics have developed repositories (Common Data Elements^[https://www.nlm.nih.gov/oet/ed/cde/tutorial/03-100.html] and Common Education Data Standards^[https://ceds.ed.gov/]) of standardized question wording paired with a set of allowable response options for commonly used data elements. Using standards when collecting variables, such as demographics, provides the following benefits [@icpsr_introduction_2022; @kush_fair_2020]:
+        - Reduces bias.
+        - Allows for harmonization of data across your own research studies and also across the field.
             - This allows researchers to draw conclusions using larger samples or by comparing data over time.
             - It also reduces the costs of integrating datasets.
-        - Improves interpretation of information
+        - Improves interpretation of information.
 1. Make sure questions are clearly worded and answer choices are clear and comprehensive.
 	- Consider how the language might be interpreted. Is the question wording confusing? Can the response options be misinterpreted?
-	    - Rather than asking "What county are you from?" when looking for the participant's current location, be more specific and ask, "What county do you currently reside in?"
-	    - Rather than asking "Which parent are you?" and providing the response options "m" and "f", where "m" and "f" could be interpreted as "male" or "female", clearly write out the response options and make sure they are comprehensive ("mother", "father", "legal guardian", and so forth).
+	    - Rather than asking "What county are you from?" when looking for the participant's current location, be more specific and ask, "What county do you currently reside in?".
+	    - Rather than asking "Which parent are you?" and providing the response options "m" and "f" (where "m" and "f" could be interpreted as "male" or "female"), clearly write out the response options and make sure they are comprehensive ("mother", "father", "legal guardian", and so forth).
 	    - Rather than asking "Do your children not have siblings?" which can be confusing, remove the negative and ask, "Do your children have siblings?" [@reynolds_basics_2022].
 	 - Is the question leading/biased?
 	    - Are the response options ordered in a leading way?
@@ -81,7 +81,7 @@ While some instruments (e.g., cognitive assessments) typically have standardized
 	  - Consider including one general free-text field in your survey to allow participants to provide additional information that they feel was not captured elsewhere.
 1. Limit the collection of personally identifiable information (PII).
     - Collecting identifiable information is a balancing act between protecting participant confidentiality and collecting the information necessary to implement a study. We often need to collect some identifying information either for the purposes of record linking or for purposes related to study outcomes (e.g., scoring an assessment based on participant's age). 
-    - As a general rule, you only want to collect PII that is absolutely necessary for your project, and no more [@gaddy_principles_2020]. As discussed in Chapter \@ref(hsd), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., date of birth). Before sharing your data, all PII will need to be removed or altered to protect confidentiality.
+    - As a general rule, you only want to collect PII that is absolutely necessary for your project, and no more [@gaddy_principles_2020]. As discussed in Chapter \@ref(hsd), PII can include both direct identifiers (e.g., name or email) as well as indirect identifiers (e.g., date of birth). Before sharing your data, all PII will need to be removed or altered to protect confidentiality (see Section \@ref(share-assess).
 
 <br>
 
@@ -126,7 +126,7 @@ Once content piloting is completed, teams should be ready to begin building thei
     - What are the technical requirements for the tool (i.e., will internet be available if you plan to use a web-based tool)?
     - Does the tool have customizable features that are necessary for your instrument (e.g., branching logic, automated email reminders, options to embed data, options to calculate scores in the tool)?
 1. Compliance and security
-    - Consider the classification level of each data source (see Chapter \@ref(hsd))
+    - Consider the classification level of each data source (see Chapter \@ref(hsd)).
       - Which tools are approved by your institution to protect the sensitivity level of your data?
     - If collecting anonymous data, do you have the option to anonymize responses in the tool (e.g., remove IP Address and other identifying metadata collected by the tool)?
     - Does the tool include data backups?
@@ -198,8 +198,8 @@ The first thing you will want to do before building your tool is bring out your 
     - Many times, tools assign a default value to your response options and these values may not align with what you've designated in your data dictionary.
     - As you edit your survey, continue to check that your coded values did not change due to reordering, removal, or addition of new response options.
 1. Add data validation to reduce errors and missing data [@uk_data_service_research_2023].
-    - Content validation for open-text boxes
-      - Restrict entry to the type assigned in your data dictionary (e.g., numeric).
+    - Content validation for open-text boxes.
+      - Restrict entry to the variable type assigned in your data dictionary (e.g., numeric).
       - Restrict entry to the format assigned in your data dictionary (e.g., *YYYY-MM-DD*).
       - Restrict ranges based on allowable ranges in your data dictionary (e.g., *1--50*).
           - This could even include validating against previous responses (e.g., if "SchoolA" was selected in a previous question, grade level should be between *6 and 8*, if "SchoolB" was selected, grade level should be between *7 and 8*).
@@ -207,11 +207,11 @@ The first thing you will want to do before building your tool is bring out your 
       - Consider the use of forced-response and request-response options to reduce missing data.
         - Forced-response options do not allow participants to move forward without completing an item. Request-response options notify a respondent if they skip a question and ask if they still would like to move forward without responding.
         - Be aware that adding a forced-response option to sensitive questions has the potential to be harmful and produce bad data. If adding a forced-response option to a sensitive question, consider allowing those participants to opt-out in another way (e.g., "Prefer not to answer") (@kaplowitz_5_2020; @kopper_survey_2023). 
-1. Choose an appropriate type and format to display each item.
+1. Choose an appropriate question type and format to display each item.
     - Become familiar with the various question types available in your tool (e.g., rank order, multiple choice, text box, slider scale).
     - Become familiar with the various formats (e.g., radio button, drop-down, checkbox).
     - For example, if your item is a rank order question (ranking three items), creating this question as a multi-line, free-text entry form may lead to duplicate entries (such as entering a rank of *1* more than once). However, using something like a rank order question type with a drag and drop format ensures that participants are not allowed to duplicate rankings.
-1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20), use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023].
+1. If there is an finite number of response options for an item, and the number isn’t too large (less than ~ 20), use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023].
     - For example, list school name as a drop-down item rather than having participants enter a school name.
       - This prevents variation in text entry (e.g., "Sunvalley Middle", "sunvalley", "Snvally Middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values.
 1. If there is an infinite number of response options for an item or the number of options is large, use an open-text box.
@@ -237,7 +237,7 @@ After sample responses are collected from team members, export the sample data u
 3. Are there unexpected values for variables?
 4. Are there missing values where you expect data?
 5. Are there unexpected variable formats?
-6. Is data exporting in an analyzable, rectangular format? (see Chapter \@ref(structure)).
+6. Is data exporting in an analyzable, rectangular format (see Chapter \@ref(structure))?
 
 If any issues are found either through team feedback or while reviewing the exported sample data, take time to update the tool as needed before starting data collection. This is also the time to update your documentation. As you review your exported file, update your data dictionary to reflect any unexpected variables that are included (e.g., metadata), any unexpected formatting, as well as any newly discovered recoding or calculations that will be required during the data cleaning process. As an example, if upon downloading your sample data, you learn that a "select all" question exports differently than you expected, now is the time to add this information, along with any necessary future transformations, to your data dictionary. This is also a great time to update your data cleaning plan (see Section \@ref(document-plan)) with any new transformations that will be required. 
 
@@ -288,9 +288,9 @@ Rather than having to de-identify your data through this cleaning process, anoth
 
 ##### Electronic Data
 
-There are many ways you might consider collecting unique identifiers other than names. A few possible options are provided below. The method you choose will depend on your data collection design, your participant population, your tool capabilities, and your team expertise.
+When collecting electronic data, there are many ways you might consider collecting unique identifiers other than names. A few possible options are provided below. The method you choose will depend on your data collection design, your participant population, your tool capabilities, and your team expertise.
 
-1. Create unique links for participants
+1. Create unique links for participants.
     - Many tools will allow you to preload a contact list of participants (from your participant tracking database) that includes both their names and study IDs. Using this list, the tool can create unique links for each participant. This is the most error-proof way to ensure study IDs are entered correctly. 
     - When you export your data, the correct ID is already linked to each participant and you can choose to not export identifying information (e.g., names, emails) in the data. 
     - If using this method, make sure to build a data check into the system. For example, when a participant opens their unique link, verify their identity by asking, “Are you {first name}?” or "Are your initials {initials}?" In order to protect participant identities, do not share full names. 
@@ -312,8 +312,8 @@ If you take paper forms into the field consider doing the following to connect y
 - Write the study ID, and any other relevant identifiers (e.g., school ID and teacher ID), on each page of your data collection form and then attach a cover sheet with participant name and other relevant information (see Figure \@ref(fig:fig11-6)). When you return to the office, you can remove the cover sheet and be left with only the ID on the form.
   - It is this ID only that you will enter into your data entry form during the data capture process, no name.
   - Removing the cover sheet ensures that your data entry team only sees the study ID when they enter data, increasing privacy by minimizing the number of people who see participant names.
-  - However, before removing the cover sheet, double-check study identifiers against your participant database to make sure the information is correct 
-  - Make a plan for the cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point)
+  - However, before removing the cover sheet, double-check study identifiers against your participant database to make sure the information is correct.
+  - Make a plan for the cover sheets (either shred them if they are no longer needed, or store them securely in a locked file cabinet and shred them at a later point).
 
 <div class="figure" style="text-align: center">
 <img src="img/fig11-6.PNG" alt="Example cover sheet for a paper data collection instrument." width="100%" />
@@ -432,7 +432,7 @@ If you collect data via a web-based form, you will want to perform frequent data
   - Are items being skipped that should not be skipped?
   - Are participants/data collectors not finishing forms?
 - Checks for ranges and formats
-  - Are values in unexpected formats or falling outside of unexpected ranges?
+  - Are values in unexpected formats or falling outside of expected ranges?
 - Checks for duplicate forms
   - Are there duplicate entries for participants?
 - Is skip logic working as expected?
@@ -440,7 +440,7 @@ If you collect data via a web-based form, you will want to perform frequent data
 
 Some of these checks can be performed programmatically (i.e., you can write a script in a program such as R to pull and check for things like out of range values on a recurring schedule). Other checks may require manual effort (e.g., such as downloading your data on a recurring schedule and reviewing open-ended questions for nonsensical responses). If errors are found, consider revising your instrument to prevent future errors if this is possible without jeopardizing the consistency of your data.
 
-### Tracking data collection
+### Tracking data collection {#track-field}
 
 Throughout data collection your team should be tracking the completion of forms (e.g., consents, paperwork, data collection forms) in your participant database (see Chapter \@ref(track)). This includes paper forms, electronic forms stored on devices, as well as web-based data coming in. Your team may designate one person to track data (e.g., the project coordinator), or they may designate multiple. If you are working across multiple sites, with multiple teams, you will most likely have one or more people at each site tracking data as it comes in. 
 
@@ -464,7 +464,7 @@ As mentioned in Chapter \@ref(track), if you use a tool such as REDCap for both 
 It is important to collect data consistently for the entire project to ensure interoperability and harmonization of information. Keep the following consistent across repeated collections of the same form (e.g., Spanish and English version of a form, Site A and Site B form, wave 1 and wave 2 of collecting a form):
 
 - Variable names
-  - Use the same names for the same items
+  - Use the same names for the same items.
   - Remember that it's best to not add a time component to your variable names at this time (See Section \@ref(style-time) for more information).
 - Variable types and formats
   - For example, if `gender` is collected as a numeric variable on one form, keep it as a numeric variable for all forms.

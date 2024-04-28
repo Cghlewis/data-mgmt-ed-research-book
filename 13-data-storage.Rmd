@@ -6,7 +6,7 @@ knitr::include_graphics("img/fig13-1.PNG")
 
 ```
 
-As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study. Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.
+As you begin to capture data, it is important to have a well-planned structure for securely storing and working with that data during an active study (see Figure \@ref(fig:fig13-1)). Not only do you need a plan for storing data files, but you also need a plan for storing other project files (e.g., meeting notes, documentation, participant tracking databases). Your team should implement this structure early on so that files are stored consistently and securely for the entire project, not just once the data collection life cycle begins. There are several goals to keep in mind when setting up your file storage and security system for an active project.
 
 1. File security: Ensuring that your files are not lost, corrupted, or edited unexpectedly.
 2. Protecting confidentiality: Making sure that sensitive information is not seen or accessed by unauthorized individuals.
@@ -32,7 +32,7 @@ This process should help narrow down your data storage solutions for each data s
 
 ### Electronic data {#store-electronic}
 
-Once you have reviewed all relevant information from Section \@ref(store-plan), several more decisions will need to be made when deciding on and setting up your structures for storing and securely working with electronic data.
+Once you have reviewed all relevant information from Section \@ref(store-plan), several more decisions will need to be made when choosing and setting up your structures for storing and securely working with electronic data.
 
 1. Review additional criteria.
     - After narrowing down storage solutions based on available tools (e.g., cloud storage, institution network drive, personal device) that meet your compliance needs, electronic data storage locations can be further narrowed based on other criteria.
@@ -49,18 +49,18 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
     - While you may be allowed to store files in different locations depending on their sensitivity level, a more effective solution is to create a collaborative research environment [@uk_data_service_research_2023]. To do this, designate the highest level of security needed (e.g., an institution network drive), and keep all, or as many as possible, project-related files stored in that same location, assigning access to files and folders as needed. Keeping all files located in a central, consistent location often provides the benefit of data security (e.g., user access controls, not having different versions of documents on different computers) as well as accessibility (e.g., team members can find documents).
   
 3. Design your folder structure according to your style guide.
-    - Following your style guide, create a folder structure **before** team members begin storing files so that they are stored consistently. 
+    - Following your style guide (see Section \@ref(style-directory)), create a folder structure **before** team members begin storing files so that they are stored consistently. 
       - –	Importantly, make sure to set up your structure in a way that stores identifiable information (e.g., participant tracking database, consent forms) separate from your research study data.
 
 4. Set up additional security systems.
-    - Data backups
+    - Data backups.
       - It is important to regularly backup up your data. Consider using something similar to the 3-2-1 rule, keeping three copies of your data, on two different types of storage media, in more than one location to guard against data loss [@briney_data_2015; @uk_data_service_research_2023]. Talk with your institution IT department for help with setting up this system.
-    - User access
+    - User access.
       - Assign user access to folders and files based on sensitivity levels, quality control needs, and applicable policies, agreements, or plans.
 
 5. Designate rules for working securely with data.
     - Complete required trainings (e.g., CITI trainings, IT training, internal training).
-    - Consistently name folders and files according to the style guide.
+    - Consistently name folders and files according to the style guide (see Sections \@ref(style-directory) and \@ref(style-file)).
     - Do not keep copies of files.
       - Outside of making data backups, do not keep copies of files in different folders. This opens the door for edits being made to one copy and not the other. If this happens, team members may be working with different versions of files. If you want to have a copy of a file in more than one location (e.g., an SOP in the "documentation" folder and the "project_coordination" folder), some storage systems allow you to link to documents from other location (i.e., the "project_coordination" folder contains a link to an SOP in the "documentation" folder).
     - Secure your devices [@otoole_data_2018; @princeton_university_best_2023].

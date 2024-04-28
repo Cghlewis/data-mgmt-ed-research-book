@@ -6,7 +6,7 @@ knitr::include_graphics("img/fig12-1.PNG")
 
 ```
 
-After the data collection period is complete, the next phase in the cycle is to capture the data. Here we are extracting, creating, or acquiring a flat file, consisting of data previously collected electronically or on paper, that we can then save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
+After the data collection period is complete, the next phase in the cycle is to capture the data (see Figure \@ref(fig:fig12-1)). Here we are extracting, creating, or acquiring a flat file, consisting of data previously collected electronically or on paper, that we can then save in our designated storage location. In quantitative research we typically want to capture data in an electronic, rectangular format that can be easily analyzed or shared (see Chapter \@ref(structure)). In this chapter we will review common ways to capture data based on three data collection methods (see Figure \@ref(fig:fig12-2)). Similar to data collection, it is possible for data errors to occur during this phase.  In reviewing data capture methods, we will also cover how data quality can be managed during this phase.
 
 ```{r fig12-2, fig.cap="Common data capture methods.", out.width = "80%"}
 
@@ -61,7 +61,7 @@ knitr::include_graphics("img/fig12-3.PNG")
 7. What checks need to happen before this data is handed off?  
     - It is important for the person responsible for data capture to do a basic review of the file before handing this data off for the next step.  
       - Does the format of the file look as expected? Does it have data in it? Are all the variables there as expected?  
-      - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with completed data in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data.  
+      - Are all participants in the data? This is an excellent time to compare the number of unique participants in the file to the number of participants with data marked as complete in your participant tracking database. If these numbers do not match, the person in charge of data capture should begin reconciling errors before handing off this data.  
         - Was a participant accidentally dropped from the file? Is someone incorrectly marked as complete in the tracking database? Are there duplicate entries in the file?  
           - If there are errors that can be corrected (e.g., someone incorrectly tracked a data point, a participant was left off in the capture process), those corrections should be made now. If there are corrections that involve manipulating the raw data (e.g., reconciling duplicate IDs in the data, an ID incorrectly entered in the data), those corrections should not be made at this time. Instead, those should be added to a README file to be corrected in the data cleaning phase. 
 
@@ -94,8 +94,8 @@ Here is an example of data capture steps you might add to a student survey data 
 4. Open and review the file
     - Compare the variables in the file to the data dictionary to ensure the file looks as expected
     - Compare the number of rows in the file to the number of surveys tracked as complete in the participant tracking database
-      - If the numbers do not align, correct errors (or note them in a README) and redownload the survey as needed.
-5. Notify the data manager that the data is ready for cleaning.
+      - If the numbers do not align, correct errors (or note them in a README) and redownload the survey as needed
+5. Notify the data manager that the data is ready for cleaning
 
 ```
 
@@ -164,7 +164,7 @@ Let's walk through some of the decisions to be made.
       - Someone who has circled more than one response to an item?
       - Someone who has written responses in the margin?
       - Someone who has written a value out of range or an unallowable response?
-          - In general, I recommend to enter the exact values a participant has provided and rectify errors during the cleaning process. However, there may be reasons your team has to deal with certain errors during the entry process (e.g., your entry form is set up to only allow values 1--3 and a participant has provided a value of 4).
+          - In general, I recommend to enter the exact values a participant has provided and rectify errors during the cleaning process. However, there may be reasons your team has to deal with certain errors during the entry process (e.g., your entry form is set up to only allow values *1--3* and a participant has provided a value of *4*).
 1. How should team members denote that a form has been entered?
     - For example, staff can write their initials on a form after entry and then files can be stored in a new drawer or location to denote first or second entry.
 1. What steps should be performed before moving on to the next phase of data cleaning?
@@ -176,9 +176,9 @@ Let's walk through some of the decisions to be made.
 
 > **Note**
 >
-> As a reminder, the data capture phase is a time to do only that, capture the data that is already collected. This is not a time to score, calculate, or add additional fields. This is a time to enter the exact items that are found on the form. Creating additional variables or performing further data quality checks will occur during the data cleaning phase.
+> In general, the data capture phase is a time to do only that, capture the data that is already collected. This is not a time to score, calculate, or add additional fields. This is a time to enter the items that are found on the form. Creating additional variables or performing further data quality checks will occur during the data cleaning phase.
 >
-> The exception to this rule is if you collected an assessment that requires entry into a proprietary scoring program. Once data is entered, these tools often export a file that includes derived scores for the assessment, and these are still considered raw captured data sources. 
+> An exception to this rule is if you collected an assessment that requires entry into a proprietary scoring program. Once data is entered, these tools often export a file that includes derived scores for the assessment, and these are still considered raw captured data sources. 
 
 
 #### Double entry
@@ -196,9 +196,9 @@ Last, data quality can be further improved by double entering data. In their stu
 The following is one example of what this process could look like.
 
 1. Data is entered into two spreadsheets following quality assurance and control procedures. Then, both files are imported into R.
-2. A function from the `diffdf` package [@gower-page_diffdf_2020] is run to check for errors and a report is returned (see Figure \@ref(fig:fig12-5)).
+2. A function from the `diffdf` package^[https://osf.io/saut6] [@gower-page_diffdf_2020] is run to check for errors and a report is returned (see Figure \@ref(fig:fig12-5)).
     - You can see that it identifies an error in our `t_mast1` variable. For `tch_id` = *236*, entry file 1 (*BASE*) has a different value than entry file 2 (*COMPARE*). 
-3. Paper forms are checked to see what the true reported answer is and then value is corrected in the corresponding entry file. If the value is incorrect in both entry files, both files are corrected. 
+3. Paper forms are checked to see what the true reported answer is and then the value is corrected in the corresponding entry file. If the value is incorrect in both entry files, both files are corrected. 
 4. Updated files are imported back into R and the comparison system is run again to ensure no more errors exist.
 
 ```{r fig12-5, fig.cap="A report displaying differences between two entry files."}
@@ -220,7 +220,7 @@ It is possible that you may collect paper data using forms which can be scanned 
 
 ## Extant data {#capture-extant}
 
-It is common in education research to also capture external supplemental data sources to either link to your original data sources or to describe information about your sample. The process for capturing this externally collected data will vary widely depending on the source. Furthermore, the quality and usability of the data can also vary widely. In this section we are going to review some practices that will help you acquire better, more interpretable data. We will divide this discussion between two types of data sources---non-public and public.
+It is common in education research to also capture external supplemental data sources to either link to your original data sources or to describe information about your sample. The process for capturing this externally collected data will vary widely depending on the source. Furthermore, the quality and usability of the data can also vary greatly. In this section we are going to review some practices that will help you acquire better, more interpretable data. We will divide this discussion between two types of data sources---non-public and public.
 
 ### Non-public data sources
 
@@ -261,7 +261,7 @@ You will also want to make sure you acquire the following information:
     - What file formats will be provided (e.g., CSV files)?
     - When will data be shared (i.e., timeline)?
     - How will data will be shared (e.g., email, drop in a secure folder)? 
-      - If the data contain identifiable information, make sure to use a secure file transfer method (see Chapter \@ref(store)). Once received, make sure to follow any data sharing agreements around how data should be stored.  
+      - If the data contain identifiable information, make sure to use a secure file transfer method (see Chapter \@ref(store)).
 2. Who are the points of contact
     - Not only do you need contact information for acquiring the data, you also need to know who to contact for any questions or concerns that come up after the data is received.
 3. Any documentation to accompany your file
@@ -296,7 +296,7 @@ Once you receive external files, make sure to perform quality control checks bef
 
 ### Public data sources 
 
-Publicly available data sources are typically aggregated (i.e., state, district, or school level) or de-identified individual-level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some organizations may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:
+Publicly available data sources are typically aggregated (i.e., state-, district-, or school-level) or de-identified individual-level datasets that are available through various agencies such as state departments of education or federal agencies. These datasets are often extracted by downloading a file, although some organizations may have more sophisticated API capabilities. The quality of these datasets may vary. A few tips for working with publicly available datasets are:
 
 1. Extract the data early on in your project.
     - Even if it is not the most up to date data that you need, it's important to get a sense early on for what the data looks like (e.g., what variables are included, what file types data are stored in, how the files are structured). This helps you prepare for future data wrangling needs.
@@ -309,7 +309,7 @@ Publicly available data sources are typically aggregated (i.e., state, district,
       - This documentation helps make you aware of any known issues in the data.
 3. Do not hesitate to reach out for help.
     - Typically, the site will include contact information for questions. Never hesitate to reach out to that contact if there is something you do not understand in the data.
-4. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the Department of Education's Common Core of Data ([https://nces.ed.gov/ccd/](https://nces.ed.gov/ccd/)) or EDFacts ([https://www2.ed.gov/about/inits/ed/edfacts/index.html](https://www2.ed.gov/about/inits/ed/edfacts/index.html)). If you are needing to use multiple data sources, other tools, such as the Urban Institute Education Data Explorer ([https://educationdata.urban.org/data-explorer](https://educationdata.urban.org/data-explorer)), have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
+4. If extracting data across states (e.g., Missouri Department of Elementary and Secondary Education and Oklahoma State Department of Education), be aware that the information may not be easily comparable. While you may find that some states use similar standards, it is common for states to collect and store data in different ways (e.g., different state assessments, different ways of reporting enrollment). Depending on your data needs, it may be better to use a data source that aggregates information across states. Examples of such data sources include the National Center for Education Statistics' Common Core of Data ([https://nces.ed.gov/ccd/](https://nces.ed.gov/ccd/)) or EDFacts ([https://www2.ed.gov/about/inits/ed/edfacts/index.html](https://www2.ed.gov/about/inits/ed/edfacts/index.html)). If you are needing to use multiple data sources, other tools, such as the Urban Institute's Education Data Explorer ([https://educationdata.urban.org/data-explorer](https://educationdata.urban.org/data-explorer)), have even harmonized variables and documentation across several federal government datasets, allowing researchers to access multiple data sources in a single site.
 5. Once files are extracted, store them according to your data storage plans (see Chapter \@ref(store)) and name them according to your style guide rules.
 
 ### Documenting external data capture

@@ -1,6 +1,6 @@
 # Style Guide {#style}
 
-```{r fig9-1, fig.cap="Style guide in the research project life cycle."}
+```{r fig9-1, fig.cap="Style guide development in the research project life cycle."}
 
 knitr::include_graphics("img/fig9-1.PNG")
 
@@ -44,7 +44,7 @@ Before we dive into particular types of style guides, there are a few things to 
     - Train case (Scale-Sum)
 4. Character length matters. Computers are unable to read names that surpass a certain character length. This applies to file paths, file names, and variable names. Considerations for each type of limit are reviewed below.
 
-## Directory structure
+## Directory structure {#style-directory}
 
 When deciding how to structure your project directories (the organization of folders and files within an operating system), there are several things you want to consider.
 
@@ -111,8 +111,8 @@ project_new/
 - Consider setting a character limit on folder names (again to reduce problems with hitting path character limits).
 - Make your folder names meaningful and easy to interpret.
 - Don't use spaces in your folder names.
-    - Use `_` or `-` to separate words.
-- With the exception of `-` and `_`, don't use special characters in your folder names.
+    - Use (`_`) or (`-`) to separate words.
+- With the exception of (`-`) and (`_`), don't use special characters in your folder names.
 - Be consistent with delimiters and capitalization. Follow an existing naming convention (as mentioned in Section \@ref(style-practices)).
 - If you prefer your folders to appear in a specific order, add the order number to the beginning of the folder name, with leading zeros to ensure proper sorting (`01_`, `02_`).
 
@@ -133,7 +133,7 @@ project_new/
     - Use (_) to separate words  
     - Consistently named across waves of data collection
 3. All previous versions of files must be placed into their respective "archive" folder
-        - A changelog should be placed in all data "archive" folders to document changes between file versions
+    - A changelog should be placed in all data "archive" folders to document changes between file versions
 
 ```
 
@@ -211,12 +211,12 @@ A file naming style guide helps us to name files in a way that allows us to answ
 - No PII should be used in a file name (e.g., participant name).
 - Never use spaces between words.
   - Use (`-`) or (`_`) to separate words. 
-  - It is worth noting that (`_`) may be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
+  - It is worth noting that underscores may be difficult to read when file paths are shared in links that are underlined to denote that the path is clickable (for example when sharing a SharePoint link to a document).
 - With the exception of (`_`) and (`-`), never use special characters.
 - Be consistent with delimiters and capitalization. Follow an existing naming convention (see Section \@ref(style-practices)).
 - Consider limiting the number of allowable characters to prevent hitting your path limit.
   - For instance, @harvard_longwood_research_data_management_file_2023 recommends keeping file names to 40-50 characters.
-- Format dates consistently and do not use forward slashes (`/`) to separate parts of a date. It is beneficial to format dates using the ISO 8601 standard in one of these two ways:
+- Format dates consistently and do not use forward slashes (`/`) to separate parts of a date. It is beneficial to format dates using the ISO 8601 standard in one of these two ways [@international_organization_for_standardization_iso_2017]:
   - *YYYY-MM-DD* or *YYYYMMDD*
     - Using the ISO 8601 standard ensures that dates are consistently formatted and correctly interpreted (e.g., "06-01-2023" is interpreted as DD-MM-YYYY in Europe, while it is often interpreted as MM-DD-YYYY in the U.S.).
   - While using delimiters between parts of the date adds characters to your variable names, it also may be clearer for users to interpret. Either of these date formats will be sortable.
@@ -425,10 +425,10 @@ Otherwise, if you are assigning new codes, follow these guidelines to improve in
 - Align codes with response options as best as possible.
   - Do: Assign “none” = 0 | “1” = 1 | “2” = 2 | “3 or more” = 3
   - Don’t: Assign “none” = 1 | “1” = 2 | “2” = 3 | “3 or more” = 4
+      - The exception here is if a pre-existing measure tells you to code variables in a different way.
 - Likert-type scale codes should be logically ordered.
   - Do: Assign "strongly disagree" = 1 | "disagree" = 2 | "agree" = 3 | "strongly agree" = 4 
   - Don't: Assign "strongly disagree" = 1 | "disagree" = 3 | "agree" = 4 | "strongly agree" = 2
-    - The exception here is if a pre-existing measure tells you to code variables in a different way.
     
 ### Missing value coding {#style-missing}
 
@@ -468,7 +468,7 @@ tibble::tribble (~"Code/Value", ~"Label",
 
 > **Note**
 >
-> It is important to note here that there is a difference between a string value of "NA" or "NULL" that is inserted, versus an `NA` or `NULL` value that is assigned to blank values by a specific platform. For instance, blank numeric values in R are represented as the symbol `NA`. Yet this value is treated as missing, not as the string "NA".
+> It is important to note here that there is a difference between a string value of "NA" or "NULL" that is inserted, versus an `NA` or `NULL` value that is assigned to blank values by a specific tool. For instance, blank numeric values in R are represented as the symbol `NA`. Yet this value is treated as missing, not as the string "NA".
 
 ## Coding {#style-code}
 
