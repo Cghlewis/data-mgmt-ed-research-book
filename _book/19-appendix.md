@@ -54,7 +54,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
   
 **Store** (Chapter \@ref(store))
   
-- Store all raw data and documents for project.
+- Store all raw data and documents for project using secure procedures.
   
 **Clean and Validate** (Chapter \@ref(clean))
 
