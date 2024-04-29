@@ -1,6 +1,6 @@
 # Appendix {#appendix} 
 
-For summary purposes, this appendix provides a high-level overview of some of the most common activities that occur in each phase of the research data management life cycle. 
+For summary purposes, this appendix provides a high-level overview of some of the most common data management activities that occur in each phase of the research life cycle. 
 
 **DMP** (Chapter \@ref(dmp))
 
@@ -13,7 +13,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
 - Develop style guide (see Chapter \@ref(style) for more information).
 - Choose storage locations.
   - Build directory structures for electronic data and physical folder structures for paper data.
-- Develop a data management working group (DMWG).
+- Organize a data management working group (DMWG).
   - Schedule planning meetings and keep meeting notes.
     - Review checklists.
     - Develop workflows.
@@ -36,21 +36,21 @@ For summary purposes, this appendix provides a high-level overview of some of th
 **Create instruments** (Chapters \@ref(track) and \@ref(collect))
 
 - Create participant tracking database.
-- Create data collection instruments.
+- Create data collection instruments using quality assurance practices.
 - Develop consent forms and include data sharing language.
   
 **Collect data** (Chapter \@ref(collect))
 
-- Implement quality control procedures in the field.
+- Implement quality control procedures during collection.
 
-**Track data** (Chapter \@ref(track))
+**Track data** (Chapter \@ref(track) and \@ref(collect))
 
 - Track incoming data daily in a participant tracking database.
 
 **Capture data** (Chapter \@ref(capture))
 
 - Capture original paper and electronic data.
-- Capture external data.
+- Capture external data as needed.
   
 **Store** (Chapter \@ref(store))
   
@@ -58,10 +58,10 @@ For summary purposes, this appendix provides a high-level overview of some of th
   
 **Clean and Validate** (Chapter \@ref(clean))
 
-- Clean data.
+- Clean data following standardized checklist and data cleaning plans.
 - Validate data (e.g., create a codebook to check for errors).
 - Store clean data.
-- Create participant flow diagram.
+- Create participant flow diagram (see Chapter \@ref(document)).
   
 **Version** (Chapter \@ref(clean))
 
