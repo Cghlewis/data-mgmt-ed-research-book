@@ -61,7 +61,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
 - Clean data following standardized checklist and data cleaning plans.
 - Validate data (e.g., create a codebook to check for errors).
 - Store clean data.
-- Create participant flow diagram (see Chapter \@ref(document)).
+- Create participant flow diagram (see Section \@ref(document-supplement) for more information).
   
 **Version** (Chapter \@ref(clean))
 
@@ -70,7 +70,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
 **Prepare to archive** (Chapter \@ref(store-long))
 
 - Prepare paper and electronic data for long-term storage.
-- Update data inventory with new project datasets.
+- Update data inventory with new project datasets (see Section \@ref(document-inventory) for more information).
 - Develop an internal data reuse process.
 - Prepare data and documentation for open sharing (more information in Chapter \@ref(share)).
   
