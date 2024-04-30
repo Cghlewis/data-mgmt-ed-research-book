@@ -34,7 +34,7 @@ Ultimately, you can think of data in three distinct phases (see Figure \@ref(fig
 
 ## Data quality criteria {#clean-criteria}
 
-Before cleaning our data, we need to have a shared understanding for what we expect our data to look like once it is cleaned. Adhering to common standards for data quality allows our data to be consistently cleaned and organized within and across projects. There are several data quality criteria that are commonly agreed upon [@decoster_systematic_2023; @elgabry_ultimate_2019; @schmidt_facilitating_2021; @van_bochove_data_2023]. Upon cleaning your data for general data sharing, your data should meet the following criteria.
+Before cleaning our data, we need to have a shared understanding for what we expect our data to look like once it is cleaned. Adhering to common standards for data quality allows our data to be consistently cleaned and organized within and across projects. There are several data quality criteria that are commonly agreed upon [@decoster_systematic_2023; @elgabry_ultimate_2019; @schmidt_facilitating_2021; @towse_making_2021; @van_bochove_data_2023]. Upon cleaning your data for general data sharing, your data should meet the following criteria.
 
 1. Complete
     - The number of rows in your dataset should match the number of completed forms tracked in your participant tracking database. This means that all forms that you collected have been captured (either entered or retrieved). It also means that you have removed all extraneous data that doesn’t belong (e.g., duplicates, participants who aren’t in the final sample).
@@ -354,7 +354,7 @@ While cleaning data with code is the preferred method for the reasons previously
 
 2. Once you begin cleaning your data manually, it is imperative that you document every transformation to enable reproducibility. This may look different depending on the tool you use. 
     - If cleaning data using the point and click menu in a program such as SPSS, when performing a transformation use a "paste" type button to copy all associated commands into a syntax file that can easily be reused [@kathawalla_easing_2021].
-    - If using a program such as Microsoft Excel for data cleaning, add notes into your data cleaning plan that are detailed enough to allow anyone to replicate your exact data cleaning process by hand [@the_carpentries_data_2023].
+    - If using a program such as Microsoft Excel for data cleaning, add notes into your data cleaning plan that are detailed enough to allow anyone to replicate your exact data cleaning process by hand [@hoyt_datacarpentryspreadsheet-ecology-lesson_2023].
 
 ### Data versioning practices
 

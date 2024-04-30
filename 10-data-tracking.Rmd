@@ -54,7 +54,7 @@ This database may be a standalone structure, used only for tracking and anonymiz
 Before we discuss how to build this database, it is helpful to have a basic understanding of the benefits of using different types of databases. There are essentially two types of databases commonly used for tracking---relational and non-relational. 
 
 1. Relational database
-    - Relational databases are typically built in a database software system (e.g., FileMaker, Microsoft Access). In this database, information is organized into tables made up of records (rows) and fields (columns), and tables can be related through keys [@bourgeois_information_2014; @chen_database_2022].
+    - Relational databases are typically built in a database software system (e.g., FileMaker, Microsoft Access). In this database, information is organized into tables made up of records (rows) and fields (columns), and tables can be related through keys [@bourgeois_information_2014; @chen_description_2022].
 2. Non-relational database
     - Here I am loosely using the term "non-relational database" to describe tables of information that are not linked (think tabs in a spreadsheet). This type of database is usually built in a spreadsheet program (e.g., Microsoft Excel). While this is technically not considered a database, we will continue to use the term "database", even if this system is built using a spreadsheet program. 
 
