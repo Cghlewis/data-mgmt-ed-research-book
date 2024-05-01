@@ -121,7 +121,7 @@ knitr::include_graphics("img/fig14-4.PNG")
 5. De-identify data.
     - If confidentiality was promised to participants, you will need to de-identify your data. If your data does not already contain your assigned study IDs, replace all direct identifiers (e.g., names, emails) in your data with study IDs using a roster from your participant tracking database. This process creates coded data (see Chapter \@ref(hsd) for a refresher). 
     - At this point we are focusing on removing direct identifiers only, but in Chapter \@ref(share), we will also discuss dealing with indirect identifiers before publicly sharing your data.
-    - Figure \@ref(fig:fig14-5) shows what this data de-identification process might look like [@otoole_data_2018]. In order to create a "coded data" file, we horizontally join our "raw data" file with our "roster file" using our unique identifiers (which in this case are `first_name` and `last_name`), and then drop our identifying variables.
+    - Figure \@ref(fig:fig14-5) shows what this data de-identification process might look like [@otoole_data_2018]. In order to create a coded data file, we horizontally join our "raw data" file with our "roster file" using our unique identifiers (which in this case are `first_name` and `last_name`), and then drop our identifying variables.
       - I want to emphasize the importance of using a join in your program of choice, as opposed to replacing names with IDs by hand entering identifiers. If at all possible, you want to completely avoid hand entry of study IDs because it is error-prone and can lead to many mistakes.
 
 ```{r fig14-5, fig.cap="Process of creating a de-identified dataset."}
