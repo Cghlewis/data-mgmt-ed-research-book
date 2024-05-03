@@ -218,7 +218,7 @@ The first thing you will want to do before building your tool is bring out your 
     - Become familiar with the various question types available in your tool (e.g., rank order, multiple choice, text box, slider scale).
     - Become familiar with the various formats (e.g., radio button, drop-down, checkbox).
     - For example, if your item is a rank order question (ranking three items), creating this question as a multi-line, free-text entry form may lead to duplicate entries (such as entering a rank of *1* more than once). However, using something like a rank order question type with a drag and drop format ensures that participants are not allowed to duplicate rankings.
-1. If there is an finite number of response options for an item, and the number isn’t too large (less than ~ 20), use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023].
+1. If there is a finite number of response options for an item, and the number isn’t too large (less than ~ 20), use controlled vocabularies (i.e., a pre-defined list of values) rather than an open-text field [@openaire_eu_basics_2018; @uk_data_service_research_2023].
     - For example, list school name as a drop-down item rather than having participants enter a school name.
       - This prevents variation in text entry (e.g., "Sunvalley Middle", "sunvalley", "Snvally Middle"), which ultimately creates unnecessary data cleaning work and may even lead to unusable values.
 1. If there is an infinite number of response options for an item or the number of options is large, use an open-text box.
