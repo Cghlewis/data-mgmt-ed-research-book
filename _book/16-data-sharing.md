@@ -405,7 +405,7 @@ A few organizations have put together data sharing checklists. These checklists 
 
 ## Revisions
 
-When publicly sharing study data and materials, researchers are often concerned that errors may be found [@beaudry_open_2022; @houtkoop_data_2018; @levenstein_data_2018]. If errors are found in your data after publicly sharing, while not ideal, it is important to recognize that you are not the first person this has happened to. Other researchers have come across errors in their data after sharing and have successfully made plans for addressing the problem [@aboumatar_perspective_2021; @bishop_data_2014; @grave_scientists_2021; @laskowski_what_2020; @strand_scientists_2020]. Depending on how you've shared and used your data, there are different ways to address these errors.
+When publicly sharing study data and materials, researchers are often concerned that errors may be found [@beaudry_open_2022; @houtkoop_data_2018; @levenstein_data_2018]. If errors are found in your data after publicly sharing, while not ideal, it is important to recognize that you are not the first person this has happened to. Other researchers have come across errors in their data after sharing and have successfully made plans for addressing the problem [@aboumatar_perspective_2021; @grave_scientists_2021; @laskowski_what_2020; @strand_scientists_2020]. Depending on how you've shared and used your data, there are different ways to address these errors.
 
 First, if you have used your data in a publication, contact your journal to make them aware of the errors you found. The journal may provide options, including the opportunity to revise or retract your article. Next, you will want to update your shared data.
 

@@ -662,7 +662,7 @@ Figure 14.10: A comparison of long and wide format
 <ul>
 <li>Everything in your syntax must be replicable. Yet, there are a few scenarios where, without even realizing it, you could be producing different results each time you run your code.
 <ul>
-<li>If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG) <span class="citation">(<a href="references.html#ref-klein_practical_2018" role="doc-biblioref">Klein et al. 2018</a>)</span>. This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.</li>
+<li>If you randomly generate any numbers in your data (e.g., study IDs), use an algorithmic pseudorandom number generator (PRNG). This can be easily done in most statistical programs by setting a seed. Every time the PRNG is run with the same seed, it will produce the same results (i.e., the same set of random numbers). Without this, you will get a new random set of numbers each time your syntax is run.</li>
 <li>Another example is when you are removing duplicate cases. Be purposeful about how you remove those duplicates. Do not assume your raw data will always come in the same order. Set parameters in your syntax before dropping cases (e.g., order by date then drop the second occurrence of a case). Otherwise, if at some point, someone unexpectedly shuffles your raw data around and you re-run your syntax, you may end up dropping different duplicate cases.</li>
 </ul>
 </li>
@@ -777,7 +777,7 @@ Figure 14.10: A comparison of long and wide format
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-05-13.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-06-01.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

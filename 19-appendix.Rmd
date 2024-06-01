@@ -11,7 +11,7 @@ For summary purposes, this appendix provides a high-level overview of some of th
 **Planning** (Chapter \@ref(plan))
 
 - Develop style guide (see Chapter \@ref(style) for more information).
-- Choose storage locations.
+- Choose storage locations (see Chapter \@ref(store)).
   - Build directory structures for electronic data and physical folder structures for paper data.
 - Organize a data management working group (DMWG).
   - Schedule planning meetings and keep meeting notes.
