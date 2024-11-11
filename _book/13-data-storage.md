@@ -49,7 +49,7 @@ Once you have reviewed all relevant information from Section \@ref(store-plan), 
   
 3. Design your folder structure according to your style guide.
     - Following your style guide (see Section \@ref(style-directory)), create a folder structure **before** team members begin storing files so that they are stored consistently. 
-      - –	Importantly, make sure to set up your structure in a way that stores identifiable information (e.g., participant tracking database, consent forms) separate from your research study data.
+      - Importantly, make sure to set up your structure in a way that stores identifiable information (e.g., participant tracking database, consent forms) separate from your research study data.
 
 4. Set up additional security systems.
     - Data backups.
