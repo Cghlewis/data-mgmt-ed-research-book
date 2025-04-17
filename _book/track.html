@@ -88,7 +88,7 @@
 <li><a class="" href="glossary.html"><span class="header-section-number">18</span> Glossary</a></li>
 <li><a class="" href="appendix.html"><span class="header-section-number">19</span> Appendix</a></li>
 <li><a class="" href="errata.html">Errata</a></li>
-<li><a class="" href="references-1.html">References</a></li>
+<li><a class="" href="references.html">References</a></li>
 </ul>
 
         <div class="book-extra">
@@ -115,7 +115,7 @@ Figure 10.1: Tracking in the research project life cycle.
 <p>Questions like these will arise many times throughout your study for both internal project coordination purposes, as well as for external progress reporting and publication purposes. Yet, how will you answer these questions? Will you dig through papers, search through emails, and download in-progress data, each time you need to answer a question about the status of your project activities? A better solution is to track all project activities in a participant tracking database.</p>
 <p>A participant tracking database is an essential component of both project management and data management. This database contains all study participants, their relevant study information, as well as tracking information about their completion of project milestones. This database has two underlying purposes.</p>
 <ol style="list-style-type: decimal">
-<li>To serve as a roster of study participants and a “master key” <span class="citation">(<a href="references-1.html#ref-pacific_university_oregon_data_2014" role="doc-biblioref">Pacific University Oregon 2014</a>)</span> that houses both identifying participant information as well as assigned unique study identifiers.</li>
+<li>To serve as a roster of study participants and a “master key” <span class="citation">(<a href="references.html#ref-pacific_university_oregon_data_2014" role="doc-biblioref">Pacific University Oregon 2014</a>)</span> that houses both identifying participant information as well as assigned unique study identifiers.</li>
 <li>To aid in project coordination and reporting, tracking the movement of participants as well as completion of milestones, throughout a study.</li>
 </ol>
 <p>This database is considered your single source of truth concerning everything that happened throughout the duration of your project. Any time a participant consents to participate, drops from the study, changes their name, completes a data collection instrument, is provided a payment, or moves locations, a project coordinator, or other designated team member, updates the information in this one location. Tracking administrative information in this one database, rather than across disparate spreadsheets, emails, and papers, ensures that you always have one definitive source to refer to when seeking answers about your sample and your project activities.</p>
@@ -169,7 +169,7 @@ Figure 10.1: Tracking in the research project life cycle.
 <ol style="list-style-type: decimal">
 <li>Relational database
 <ul>
-<li>Relational databases are typically built in a database software system (e.g., FileMaker, Microsoft Access). In this database, information is organized into tables made up of records (rows) and fields (columns), and tables can be related through keys <span class="citation">(<a href="references-1.html#ref-bourgeois_information_2014" role="doc-biblioref">Bourgeois 2014</a>; <a href="references-1.html#ref-chen_description_2022" role="doc-biblioref">Chen 2022</a>)</span>.</li>
+<li>Relational databases are typically built in a database software system (e.g., FileMaker, Microsoft Access). In this database, information is organized into tables made up of records (rows) and fields (columns), and tables can be related through keys <span class="citation">(<a href="references.html#ref-bourgeois_information_2014" role="doc-biblioref">Bourgeois 2014</a>; <a href="references.html#ref-chen_description_2022" role="doc-biblioref">Chen 2022</a>)</span>.</li>
 </ul>
 </li>
 <li>Non-relational database
@@ -190,7 +190,7 @@ Figure 10.2: A decision tree for choosing whether to build a participant trackin
 <h4>
 <span class="header-section-number">10.2.1.1</span> Relational database<a class="anchor" aria-label="anchor" href="#relational-database"><i class="fas fa-link"></i></a>
 </h4>
-<p>Using a relational database to track participant information, compared to disconnected tabs in a spreadsheet, has many benefits including reducing data entry errors and improving efficiency <span class="citation">(<a href="references-1.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
+<p>Using a relational database to track participant information, compared to disconnected tabs in a spreadsheet, has many benefits including reducing data entry errors and improving efficiency <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
 <p>There are three general steps for building a relational database.</p>
 <ol style="list-style-type: decimal">
 <li>Create tables made up of fields (i.e., variables)</li>
@@ -297,7 +297,7 @@ Figure 10.3: Participant database built using a relational model.
 <h4>
 <span class="header-section-number">10.2.1.2</span> Non-relational database<a class="anchor" aria-label="anchor" href="#non-relational-database"><i class="fas fa-link"></i></a>
 </h4>
-<p>Now imagine that we built a non-relational model, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure <a href="track.html#fig:fig10-4">10.4</a>). Since we are unable to link these tables together, we need to enter redundant information into each table (denoted by rectangles) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the Student Table, and if any teacher names change, we will need to update it in both the Teacher Table and in the Student Table for every student associated with that teacher. While this model may work fine for smaller studies, you can imagine how duplicating information would increase data entry time and create more opportunity for data entry errors for a larger, more complicated study with several tables of information <span class="citation">(<a href="references-1.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
+<p>Now imagine that we built a non-relational model, such as three tabs in an Excel spreadsheet, to track our participant information (see Figure <a href="track.html#fig:fig10-4">10.4</a>). Since we are unable to link these tables together, we need to enter redundant information into each table (denoted by rectangles) in order to see that information within each table without having to flip back and forth across tables to find the information we need. For example, we now have to enter repeating teacher and school names in the Student Table, and if any teacher names change, we will need to update it in both the Teacher Table and in the Student Table for every student associated with that teacher. While this model may work fine for smaller studies, you can imagine how duplicating information would increase data entry time and create more opportunity for data entry errors for a larger, more complicated study with several tables of information <span class="citation">(<a href="references.html#ref-borer_simple_2009" role="doc-biblioref">Borer et al. 2009</a>)</span>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:fig10-4"></span>
 <img src="img/fig10-4.PNG" alt="Participant database built using a non-relational model with duplicated variables denoted by rectangles." width="100%"><p class="caption">

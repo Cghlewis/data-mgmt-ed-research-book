@@ -2,84 +2,84 @@
 
 The following corrections have been made since the book's publication. These corrections only exist in this online version.
 
-## Chapter 1
+**Chapter 1**
 
 No updates
 
-## Chapter 2
+**Chapter 2**
 
 No updates
 
-## Chapter 3
+**Chapter 3**
 
 No updates
 
-## Chapter 4
+**Chapter 4**
 
 No updates
 
-## Chapter 5
+**Chapter 5**
 
 No updates
 
-## Chapter 6
+**Chapter 6**
 
 No updates
 
-## Chapter 7
+**Chapter 7**
 
 No updates
 
-## Chapter 8
+**Chapter 8**
 
 No updates
 
-## Chapter 9 
+**Chapter 9**
 
 No updates
 
-## Chapter 10
+**Chapter 10**
 
 No updates
 
-## Chapter 11
+**Chapter 11**
 
 No updates
 
-## Chapter 12
+**Chapter 12**
 
 The following information was added to Section \@ref(public-capture) to clarify the importance of documenting the date that public files are extracted.
 
 "When extracting public data files, I highly recommend to always include the date of extraction in the file name (e.g., `name_of_file_YYYY-MM-DD.csv`). Public data is often continually being updated and it is important to document when files were extracted for purposes of reproducibility and data lineage."
 
-## Chapter 13
+**Chapter 13**
 
 No updates
 
-## Chapter 14
+**Chapter 14**
 
 No updates
 
-## Chapter 15
+**Chapter 15**
 
 No updates
 
-## Chapter 16
+**Chapter 16**
 
 No updates
 
-## Chapter 17
+**Chapter 17**
 
 No updates
 
-## Chapter 18
+**Chapter 18**
 
 No updates
 
-## Chapter 19
+**Chapter 19**
 
 No updates
 
-## References
+**References**
 
 Link corrected for Nelson, Alondra. 2022.
