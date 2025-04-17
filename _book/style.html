@@ -87,7 +87,8 @@
 <li><a class="" href="additional-considerations.html"><span class="header-section-number">17</span> Additional Considerations</a></li>
 <li><a class="" href="glossary.html"><span class="header-section-number">18</span> Glossary</a></li>
 <li><a class="" href="appendix.html"><span class="header-section-number">19</span> Appendix</a></li>
-<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="errata.html">Errata</a></li>
+<li><a class="" href="references-1.html">References</a></li>
 </ul>
 
         <div class="book-extra">
@@ -161,7 +162,7 @@ Figure 9.1: Style guide development in the research project life cycle.
 <ul>
 <li>First, consider organizing your directory into a hierarchical folder structure to clearly delineate segments of your projects and improve searchability.
 <ul>
-<li>The alternative to using a folder structure is using metadata and tagging to organize and search for files <span class="citation">(<a href="references.html#ref-cakici_folders_2017" role="doc-biblioref">Cakici 2017</a>; <a href="references.html#ref-fuchs_making_2018" role="doc-biblioref">Fuchs and Kuusniemi 2018</a>; <a href="references.html#ref-krishna_how_2018" role="doc-biblioref">Krishna 2018</a>)</span>.</li>
+<li>The alternative to using a folder structure is using metadata and tagging to organize and search for files <span class="citation">(<a href="references-1.html#ref-cakici_folders_2017" role="doc-biblioref">Cakici 2017</a>; <a href="references-1.html#ref-fuchs_making_2018" role="doc-biblioref">Fuchs and Kuusniemi 2018</a>; <a href="references-1.html#ref-krishna_how_2018" role="doc-biblioref">Krishna 2018</a>)</span>.</li>
 </ul>
 </li>
 <li>When creating your folder structure, strike a balance between a deep and shallow structure.
@@ -175,9 +176,9 @@ Figure 9.1: Style guide development in the research project life cycle.
 </li>
 <li>Examples of file path limits:
 <ul>
-<li>SharePoint/OneDrive path limit is 400 characters <span class="citation">(<a href="references.html#ref-microsoft_restrictions_2023" role="doc-biblioref">Microsoft 2023</a>)</span>
+<li>SharePoint/OneDrive path limit is 400 characters <span class="citation">(<a href="references-1.html#ref-microsoft_restrictions_2023" role="doc-biblioref">Microsoft 2023</a>)</span>
 </li>
-<li>Windows path limit is 260 characters <span class="citation">(<a href="references.html#ref-ashcraft_naming_2022" role="doc-biblioref">Ashcraft 2022</a>)</span>
+<li>Windows path limit is 260 characters <span class="citation">(<a href="references-1.html#ref-ashcraft_naming_2022" role="doc-biblioref">Ashcraft 2022</a>)</span>
 </li>
 </ul>
 </li>
@@ -338,10 +339,10 @@ Figure 9.2: “Documents”, from xkcd.com.
 <li>Be consistent with delimiters and capitalization. Follow an existing naming convention (see Section <a href="style.html#style-practices">9.1</a>).</li>
 <li>Consider limiting the number of allowable characters to prevent hitting your path limit.
 <ul>
-<li>For instance, <span class="citation">Harvard Longwood Research Data Management (<a href="references.html#ref-harvard_longwood_research_data_management_file_2023" role="doc-biblioref">2023</a>)</span> recommends keeping file names to 40-50 characters.</li>
+<li>For instance, <span class="citation">Harvard Longwood Research Data Management (<a href="references-1.html#ref-harvard_longwood_research_data_management_file_2023" role="doc-biblioref">2023</a>)</span> recommends keeping file names to 40-50 characters.</li>
 </ul>
 </li>
-<li>Format dates consistently and do not use forward slashes (<code>/</code>) to separate parts of a date. It is beneficial to format dates using the ISO 8601 standard in one of these two ways <span class="citation">(<a href="references.html#ref-international_organization_for_standardization_iso_2017" role="doc-biblioref">International Organization for Standardization 2017</a>)</span>:
+<li>Format dates consistently and do not use forward slashes (<code>/</code>) to separate parts of a date. It is beneficial to format dates using the ISO 8601 standard in one of these two ways <span class="citation">(<a href="references-1.html#ref-international_organization_for_standardization_iso_2017" role="doc-biblioref">International Organization for Standardization 2017</a>)</span>:
 <ul>
 <li>
 <em>YYYY-MM-DD</em> or <em>YYYYMMDD</em>
@@ -413,7 +414,7 @@ pn_w1_stu_svy_clean_syntax_v02.R
 <p>This style guide will be a necessary document to have before you start to create your data dictionaries. Below are several considerations to review before developing your variable naming style guide. These are broken into two types of rules, those that are non-negotiable requirements that really should be included in your style guide (if you do not follow these rules you will run into serious problems in interpretation for both humans and machines), and then best practice suggestions that are recommended but not required.</p>
 <p><strong>Mandatory:</strong></p>
 <ul>
-<li>Don’t name a variable any keywords or functions used in any programming language (such as <code>if</code>, <code>for</code>, <code>repeat</code>) <span class="citation">(<a href="references.html#ref-r_core_team_r_2023" role="doc-biblioref">R Core Team 2023</a>; <a href="references.html#ref-stangroom_rules_2019" role="doc-biblioref">Stangroom 2019</a>)</span>.</li>
+<li>Don’t name a variable any keywords or functions used in any programming language (such as <code>if</code>, <code>for</code>, <code>repeat</code>) <span class="citation">(<a href="references-1.html#ref-r_core_team_r_2023" role="doc-biblioref">R Core Team 2023</a>; <a href="references-1.html#ref-stangroom_rules_2019" role="doc-biblioref">Stangroom 2019</a>)</span>.</li>
 <li>Set a character limit.
 <ul>
 <li>Most statistical programs have a limit on variable name characters.
@@ -474,7 +475,7 @@ pn_w1_stu_svy_clean_syntax_v02.R
 <li>If you choose not to reuse variable names across projects, it will be important for your team to create a document mapping comparable names to facilitate potential future data integration.</li>
 </ul>
 </li>
-<li>Choose standard abbreviations to denote the types of variables you are working with (standard score = <code>ss</code>). Using controlled vocabularies improves interpretation and makes data exploration and manipulation easier <span class="citation">(<a href="references.html#ref-riederer_column_2020" role="doc-biblioref">Riederer 2020</a>)</span>.</li>
+<li>Choose standard abbreviations to denote the types of variables you are working with (standard score = <code>ss</code>). Using controlled vocabularies improves interpretation and makes data exploration and manipulation easier <span class="citation">(<a href="references-1.html#ref-riederer_column_2020" role="doc-biblioref">Riederer 2020</a>)</span>.</li>
 <li>Be consistent with delimiters and capitalization. Follow an existing naming convention. Most programming languages are case sensitive so consider this when choosing a convention that is feasible for your workflow.
 <ul>
 <li>Snake case (scale_sum) – preferred method for variable names
@@ -568,7 +569,7 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 </div>
 <p>With all of that said, <strong>during an active project, it is actually best to not add a time component to your data</strong>, and to store each dataset as a distinct file, with a clear file name that denotes the appropriate time period (e.g., <code>pn_w1_stu_svy_clean_v01.csv</code>). There are a few benefits of this method.</p>
 <ol style="list-style-type: decimal">
-<li>Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave <span class="citation">(<a href="references.html#ref-reynolds_basics_2022" role="doc-biblioref">T. Reynolds, Schatschneider, and Logan 2022</a>)</span>.</li>
+<li>Naming variables consistently over time (with no time component added) allows you to easily reuse your data collection and data capture tools, as well as your cleaning code, each wave <span class="citation">(<a href="references-1.html#ref-reynolds_basics_2022" role="doc-biblioref">T. Reynolds, Schatschneider, and Logan 2022</a>)</span>.</li>
 <li>Storing files separately prevents you from potentially wasting time combining your data in a way that ends up not actually being useful or from wasting time merging files that later need to be re-combined because you find an error in a dataset at some point.</li>
 </ol>
 <p>Therefore, add rules to your variable naming style guide around how to concatenate time to your variable names, but make an asterisk saying that this time component should not be added until it is necessary (e.g., when you need to combine files, when you are publicly sharing data). Once you are ready, it is fairly easy to add a time variable or to concatenate time to variable names using a statistical program, such as R<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://osf.io/xumg4" class="uri"&gt;https://osf.io/xumg4&lt;/a&gt;&lt;/p&gt;'><sup>57</sup></a>, or even in a program like Microsoft Excel.</p>
@@ -632,12 +633,12 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 <h3>
 <span class="header-section-number">9.5.1</span> Missing value coding<a class="anchor" aria-label="anchor" href="#style-missing"><i class="fas fa-link"></i></a>
 </h3>
-<p>There is little agreement about how missing data should be assigned <span class="citation">(<a href="references.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>. There are essentially two options.</p>
+<p>There is little agreement about how missing data should be assigned <span class="citation">(<a href="references-1.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>. There are essentially two options.</p>
 <ol style="list-style-type: decimal">
 <li>You can choose to leave all missing values blank.
 <ul>
 <li>Benefits of this option is that there is no chance of assigned missing value codes (e.g., <em>-999</em>) being mistaken as actual values.</li>
-<li>The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry <span class="citation">(<a href="references.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>.</li>
+<li>The concern with this method is that there is no way to discern if the value is truly missing, or was potentially erased by accident or skipped over during data entry <span class="citation">(<a href="references-1.html#ref-broman_data_2018" role="doc-biblioref">Broman and Woo 2018</a>)</span>.</li>
 <li>Also, some statistical programs do not allow blank values (e.g., Mplus), and therefore missing values will need to be assigned at some point. Yet, as I mentioned earlier in this chapter, it is best to not make decisions based on one potential use case. It is better to make decisions based on what is the most reasonable way to assign missing values for a general audience.</li>
 </ul>
 </li>
@@ -651,7 +652,7 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 </ol>
 <p>Ultimately, whichever method you choose, there are several guidelines you should follow.</p>
 <ol style="list-style-type: decimal">
-<li>If you decide to fill with defined missing codes, use values that match your variable type (e.g., numeric codes for numeric variables) <span class="citation">(<a href="references.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR 2020</a>; <a href="references.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>
+<li>If you decide to fill with defined missing codes, use values that match your variable type (e.g., numeric codes for numeric variables) <span class="citation">(<a href="references-1.html#ref-icpsr_guide_2020" role="doc-biblioref">ICPSR 2020</a>; <a href="references-1.html#ref-white_nine_2013" role="doc-biblioref">White et al. 2013</a>)</span>
 <ul>
 <li>There is, however, some merit to using text to define missing values in numeric variables to prevent incorrect use of missing values. If you try to run a mean on your variable, you will be immediately notified that this is not possible because your variable will be stored as a character column. If you do not care about the different types of missingness, you could easily then choose to change all missing codes to blank. However, if you do care about the types of missingness and want to keep that included in your variable, you will need to match the variable type.</li>
 </ul>
@@ -698,10 +699,10 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 </h2>
 <p>If your team plans to clean data using code it can be very helpful to create a coding style guide. This style guide can be tailored to a specific language that all staff will use (e.g., R or Stata), or it can be written more generically to apply to any coding language staff use to clean data. Below is a small sampling of good coding practices to consider adding to your guide. If you are looking for guides for a specific language, it can be very helpful to search online for existing style guides in that language.</p>
 <ul>
-<li>Consider building and implementing coding templates <span class="citation">(<a href="references.html#ref-castaneda_nice_2019" role="doc-biblioref">Castañeda 2019</a>; <a href="references.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>.
+<li>Consider building and implementing coding templates <span class="citation">(<a href="references-1.html#ref-castaneda_nice_2019" role="doc-biblioref">Castañeda 2019</a>; <a href="references-1.html#ref-farewell_my_2018" role="doc-biblioref">Farewell 2018</a>)</span>.
 <ul>
 <li>Templates can standardize the format of syntax files (such as using standard headers to break up code).</li>
-<li>They also standardize the summary information provided at the beginning of your syntax (e.g., code author, project name, date created) <span class="citation">(<a href="references.html#ref-alexander_telling_2023" role="doc-biblioref">Alexander 2023</a>)</span>.</li>
+<li>They also standardize the summary information provided at the beginning of your syntax (e.g., code author, project name, date created) <span class="citation">(<a href="references-1.html#ref-alexander_telling_2023" role="doc-biblioref">Alexander 2023</a>)</span>.</li>
 </ul>
 </li>
 </ul>
@@ -741,7 +742,7 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 </li>
 </ul>
 </li>
-<li>Improve code readability by using <span class="citation">(<a href="references.html#ref-wickham_welcome_2021" role="doc-biblioref">Wickham 2021</a>; <a href="references.html#ref-san_martin_stata_2023" role="doc-biblioref">San Martin, Rodriguez-Ramirez, and Suzuki 2023</a>)</span>
+<li>Improve code readability by using <span class="citation">(<a href="references-1.html#ref-wickham_welcome_2021" role="doc-biblioref">Wickham 2021</a>; <a href="references-1.html#ref-san_martin_stata_2023" role="doc-biblioref">San Martin, Rodriguez-Ramirez, and Suzuki 2023</a>)</span>
 <ul>
 <li>spaces</li>
 <li>indentation</li>
@@ -750,7 +751,7 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 </li>
 <li>Use relative file paths for reproducibility.
 <ul>
-<li>In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing a file path, a location where a file lives, in our syntax. Rather than writing the full, absolute file path, it is a good practice to write the path relative to the directory you are working in <span class="citation">(<a href="references.html#ref-wickham_r_2023" role="doc-biblioref">Wickham, Çetinkaya-Rundel, and Grolemund 2023</a>)</span>. Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths.</li>
+<li>In a point and click environment (e.g., Microsoft Excel), we typically open or read in a file by going to <code>file</code> -&gt; <code>open</code> and navigating to the file’s location. However, when writing code, we import a file by writing a file path, a location where a file lives, in our syntax. Rather than writing the full, absolute file path, it is a good practice to write the path relative to the directory you are working in <span class="citation">(<a href="references-1.html#ref-wickham_r_2023" role="doc-biblioref">Wickham, Çetinkaya-Rundel, and Grolemund 2023</a>)</span>. Setting absolute file paths in syntax reduces reproducibility because future users may have different file paths.</li>
 </ul>
 </li>
 </ul>
@@ -816,7 +817,7 @@ Figure 9.3: Examples of adding time to your data based on a variety of scenarios
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2024-11-11.</p>
+    <p>"<strong>Data Management in Large-Scale Education Research</strong>" was written by Crystal Lewis. It was last built on 2025-04-16.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
