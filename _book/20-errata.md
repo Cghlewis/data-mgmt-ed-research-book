@@ -32,7 +32,7 @@ No updates
 
 **Chapter 8**
 
-No updates
+Figure 8.9 updated to fix a typo in one of the boxes.
 
 **Chapter 9**
 
