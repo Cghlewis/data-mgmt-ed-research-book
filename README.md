@@ -1,4 +1,4 @@
-This is the repo for the in-progress version of the book *Data Management in Large-Scale Education Research*. 
+This is the repo for the published book *Data Management in Large-Scale Education Research*. 
 
 You can view the book at https://datamgmtinedresearch.com/
 
