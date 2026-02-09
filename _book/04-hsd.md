@@ -9,6 +9,7 @@ When working with human subjects there are two types of identifiers you may coll
 <br>
 
 
+
 Table: (\#tab:tab4-1)Examples of direct and indirect identifiers
 
 |Direct Identifiers                |Indirect Identifiers       |
@@ -25,6 +26,8 @@ Table: (\#tab:tab4-1)Examples of direct and indirect identifiers
 |Account numbers                   |Special education services |
 |                                  |Data collection date       |
 |                                  |Verbatim responses         |
+
+
 
 A term often used when discussing identifiable information is personally identifiable information (PII). This term broadly refers to information that can be used to identify a participant. There is no agreed-upon list for what fields should be included in a list of PII but generally it includes both the direct and indirect types of information shown in Table \@ref(tab:tab4-1).
 

@@ -41,7 +41,7 @@ As discussed in Chapter \@ref(collect), electronic data can be collected using a
         - If your tool allows you to tag certain fields as identifiable (e.g., name, email), you may have the option to exclude those variables in your export.
 
 <div class="figure" style="text-align: center">
-<img src="img/fig12-3.PNG" alt="Two different ways you may export a &quot;select all that apply&quot; question." width="100%" />
+<img src="img/fig12-3.PNG" alt="Two different ways you may export a "select all that apply" question." width="100%" />
 <p class="caption">(\#fig:fig12-3)Two different ways you may export a "select all that apply" question.</p>
 </div>
 

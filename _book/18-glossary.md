@@ -3,6 +3,7 @@
 <br>
 
 
+
 |Term                                |Other Terms                                                                         |Definition                                                                                                                                                                                                                                                                                                                                |
 |:-----------------------------------|:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Anonymous data                      |NA                                                                                  |Identifying information was never collected. This data can not be linked across time or measures.                                                                                                                                                                                                                                         |
@@ -73,5 +74,7 @@
 |Variable                            |column, field, question, data element                                               |Any phenomenon you are collecting information on/trying to measure. These variables will make up columns in your datasets or databases.                                                                                                                                                                                                   |
 |Variable name                       |header                                                                              |A shortened symbolic name given the variable in your data to represent the information it contains.                                                                                                                                                                                                                                       |
 |Wave                                |time period, time point, event, session                                             |Intervals of data collection over time.                                                                                                                                                                                                                                                                                                   |
+
+
 
 

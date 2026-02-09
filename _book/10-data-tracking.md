@@ -107,6 +107,7 @@ Say, for example, we needed to pull a roster of students for each teacher. We co
 The resulting output is Table \@ref(tab:tab10-1).
 
 
+
 Table: (\#tab:tab10-1)Example roster created by querying our relational database tables
 
 | t_l_name | t_f_name | s_l_name | s_f_name | s_grade_level |
@@ -116,6 +117,8 @@ Table: (\#tab:tab10-1)Example roster created by querying our relational database
 | Ramirez  |   Bill   |  Dixon   | Ernesto  |       4       |
 | Ramirez  |   Bill   |  Gibson  |   Emma   |       4       |
 | Ramirez  |   Bill   | Webster  |  Grant   |       4       |
+
+
 
 Depending on the design of your study and the structure of the database model, writing these queries can become more complicated. It's important to strike a balance between creating a structure that reduces inefficiencies in data entry but also creating something that isn't too complicated to work with based on the expertise of your team.
 
@@ -302,11 +305,14 @@ Participant unique identifiers are numeric or alphanumeric values and typically 
 Before assigning identifiers, it can be very helpful to develop an ID schema during your planning phase (see Table \@ref(tab:tab10-2)), and document that schema in an SOP (see Section \@ref(document-sop)). 
 
 
+
 Table: (\#tab:tab10-2)Example of a study ID schema
 
 |stu_id        |tch_id     |sch_id   |
 |:-------------|:----------|:--------|
 |12000 -- 1300 |200 -- 300 |40 -- 80 |
+
+
 
 This schema sets the parameters for how participant identifiers are assigned as they are entered into your tracking database (i.e., format, range). There are several best practices to consider when developing your participant ID schema.
 

@@ -435,6 +435,7 @@ A data dictionary is typically structured so that each row corresponds to a vari
 <br>
 
 
+
 Table: (\#tab:tab8-1)Fields to include in a data dictionary
 
 |Fields to Include                                                           |Optional Fields to Include                                             |
@@ -447,6 +448,8 @@ Table: (\#tab:tab8-1)Fields to include in a data dictionary
 |Transformations                                                             |Time periods this item is available (if study is longitudinal)         |
 |Variable origin (primary/derived)                                           |Item order                                                             |
 |                                                                            |Remove item (should this item be removed before publicly sharing data) |
+
+
 
 
 You should build one data dictionary for each instrument you plan to collect, including both original data collection instruments and external data sources (e.g., student education records). If there are five data sources in your data sources catalog, you should end up with five data dictionaries. 
@@ -571,6 +574,7 @@ The codebook contains some information that overlaps with a data dictionary, but
 <br>
 
 
+
 Table: (\#tab:tab8-2)Codebook content that overlaps and is unique to a data dictionary
 
 |Overlapping Information |New Information         |
@@ -579,6 +583,8 @@ Table: (\#tab:tab8-2)Codebook content that overlaps and is unique to a data dict
 |Variable label          |Existing missing values |
 |Variable type/format    |Summary statistics      |
 |Value labels            |Weighting               |
+
+
 
 In addition to being an excellent resource for users to review your data without ever opening the file [@university_of_iowa_libraries_metadata_2024], this document may also help you catch errors in your data if out of range or unexpected values appear. 
 
@@ -616,6 +622,7 @@ These metadata forms typically contain descriptive (description of project and f
 <br>
 
 
+
 Table: (\#tab:tab8-3)Common metadata elements
 
 |Element             |Description                                                                                                                          |
@@ -633,6 +640,8 @@ Table: (\#tab:tab8-3)Common metadata elements
 |Access restrictions |Where and how your resource can be accessed by other researchers                                                                     |
 |Copyright           |Copyright date and type                                                                                                              |
 |Format              |What format is your resource in                                                                                                      |
+
+
 
 Depending on the repository, at minimum, you will enter basic project-level metadata similar to what is shown in Table \@ref(tab:tab8-3). However, you may be required, or have the option, to enter more comprehensive information, such as project-level information covered in your research protocol (e.g., setting and sample, study procedures). You may also have the option to enter additional levels of metadata that will help make each level more searchable, such as file-level or variable-level metadata [@gilmore_practical_2018; @icpsr_icpsr_2023; @ldbase_information_2023]. All the information needed for this metadata can be gathered from the documents we've discussed earlier in this chapter. 
 

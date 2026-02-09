@@ -145,6 +145,7 @@ While there are a variety of tool options, in a nutshell when it comes to data c
 <br>
 
 
+
 Table: (\#tab:tab11-1)Comparison of data collection tool benefits
 
 |Electronic Data Collection Benefits                                                                                              |Paper Data Collection Benefits                                        |
@@ -156,6 +157,8 @@ Table: (\#tab:tab11-1)Comparison of data collection tool benefits
 |Opportunity to reduce bias (e.g., through random question ordering)                                                              |                                                                      |
 |Potential to reach broader populations (e.g., crowdsourcing)                                                                     |                                                                      |
 |Quicker turnaround of analysis-ready data and provides the opportunity to build real-time reporting pipelines (e.g., using APIs) |                                                                      |
+
+
 
 > **Note**
 >

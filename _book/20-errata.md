@@ -36,7 +36,7 @@ Figure 8.9 updated to fix a typo in one of the boxes.
 
 **Chapter 9**
 
-No updates
+In Section 9.6, the link to Farewell 2018 is no longer working.
 
 **Chapter 10**
 

@@ -34,6 +34,7 @@ When it comes time to destroy data, make sure to permanently delete files, inclu
 
 <br>    
 
+
 Table: (\#tab:tab15-1)Potential long-term storage file types
 
 |Type                      |Non-proprietary formats |Other commonly accepted formats |
@@ -41,6 +42,8 @@ Table: (\#tab:tab15-1)Potential long-term storage file types
 |Text documentation        |TXT, HTML, XML          |PDF, DOCX                       |
 |Rectangular documentation |CSV                     |XLSX                            |
 |Datasets                  |CSV, TSV                |SPSS, STATA, SAS, R, XLSX       |
+
+
 
 ### Oversight and documentation
 

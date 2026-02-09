@@ -191,7 +191,7 @@ project_new/
 ## File naming {#style-file}
 
 <div class="figure" style="text-align: center">
-<img src="img/fig9-2.PNG" alt="&quot;Documents&quot;, from xkcd.com." width="100%" />
+<img src="img/fig9-2.PNG" alt=""Documents", from xkcd.com." width="100%" />
 <p class="caption">(\#fig:fig9-2)"Documents", from xkcd.com.</p>
 </div>
 
@@ -451,6 +451,7 @@ Ultimately, whichever method you choose, there are several guidelines you should
 In your value coding style guide, you can add general rules to follow, or it may be an appropriate place to actually designate a missing value coding schema for your project (see Table \@ref(tab:tab9-1)).
 
 
+
 Table: (\#tab:tab9-1)Example missing value code schema used for numeric variables
 
 |Code/Value |Label                                              |
@@ -459,6 +460,8 @@ Table: (\#tab:tab9-1)Example missing value code schema used for numeric variable
 |-98        |Item skipped                                       |
 |-97        |Item not applicable                                |
 |-96        |Don't know                                         |
+
+
 
 > **Note**
 >
