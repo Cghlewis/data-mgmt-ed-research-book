@@ -32,6 +32,8 @@ No updates
 
 **Chapter 8**
 
+In Section 8.1.1, the link for Common Topics in Lab Handbooks has been updated.
+
 Figure 8.9 updated to fix a typo in one of the boxes.
 
 **Chapter 9**
@@ -40,7 +42,7 @@ In Section 9.6, the link to Farewell 2018 is no longer working.
 
 **Chapter 10**
 
-No updates
+The link for Pacific University Oregon 2014 is no longer working.
 
 **Chapter 11**
 
@@ -84,4 +86,7 @@ No updates
 
 Link updated for Elgabry, Omar. 2019.
 
+Link updated for Mehr, Samuel. 2020.
+
 Link updated for Nelson, Alondra. 2022.
+

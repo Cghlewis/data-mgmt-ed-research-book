@@ -49,7 +49,7 @@ A lab manual, or team handbook, creates common knowledge across your team [@mehr
 |--------|-----------|
 |Balazs Aczel, et al.| Crowdsourced lab manual template ^[https://docs.google.com/document/d/1LqGdtHg0dMbj9lsCnC1QOoWzIsnSNRTSek6i3Kls2Ik]|
 |Hao Ye, et al.| Crowdsourced list of public lab manuals ^[https://docs.google.com/spreadsheets/d/1kn4A0nR4loUOSDn9Qysd3MqFJ9cGU91dCDM6x9aga-8]|
-|Samuel Mehr |Common Topics in Lab Handbooks ^[https://www.rsb.org.uk/images/biologist/2020/Apr_May_2020_67-2/67.2_Handbook.pdf]|
+|Samuel Mehr |Common Topics in Lab Handbooks ^[https://mehr.nz/pdf/2020_Mehr_Biologist.pdf]|
 
 
 ### Wiki {#wiki}
